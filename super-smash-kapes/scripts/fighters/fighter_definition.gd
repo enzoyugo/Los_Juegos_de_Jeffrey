@@ -57,7 +57,13 @@ func load_victory_texture() -> Texture2D:
 		return victory_texture
 	if victory_texture_path.is_empty():
 		return null
-	return load(victory_texture_path) as Texture2D
+	if ResourceLoader.exists(victory_texture_path):
+		return load(victory_texture_path) as Texture2D
+	if FileAccess.file_exists(victory_texture_path):
+		var img := Image.new()
+		if img.load(victory_texture_path) == OK:
+			return ImageTexture.create_from_image(img)
+	return null
 
 
 func load_fallback_visual_script() -> Script:

@@ -5,10 +5,10 @@ signal match_finished(winner_id: int, summary: Dictionary)
 signal restart_requested
 
 const FIGHTER_SCENE := preload("res://scenes/fighters/Fighter.tscn")
-const STAGE_SCENE := preload("res://scenes/stages/DefensoresDelChacoStage.tscn")
 const BASIC_ATTACK := preload("res://data/attacks/basic_attack.tres")
 const IMPACT_VFX := preload("res://scripts/vfx/impact_vfx.gd")
 const SmashAudio := preload("res://scripts/core/smash_audio_v1.gd")
+const StageCatalog := preload("res://scripts/stages/stage_catalog.gd")
 const RESPAWN_DELAY := 1.15
 const MATCH_SETUP := preload("res://scripts/core/match_setup.gd")
 const FIGHTER_CATALOG := preload("res://scripts/fighters/fighter_catalog.gd")
@@ -19,7 +19,8 @@ var respawn_timers: Dictionary = {}
 var match_over := false
 var debug_enabled := false
 var match_stats: Dictionary = {}
-var stage_visual: DefensoresDelChacoStage
+var stage_visual: Node3D
+var _stage_meta: Dictionary = {}
 var audit_elapsed: float = 0.0
 var audit_next_heartbeat: float = 1.0
 var audit_first_physics_logged: bool = false
@@ -35,15 +36,20 @@ var jeffrey_match_debug_state: Dictionary = {}
 
 func _ready() -> void:
 	_audit("scene ready")
-	_setup_stage()
 	if match_setup == null:
 		match_setup = FIGHTER_CATALOG.default_match_setup()
+	_setup_stage()
 	match_stats = {
 		1: {"kos": 0, "falls": 0, "damage_dealt": 0.0, "damage_taken": 0.0, "attacks_connected": 0},
 		2: {"kos": 0, "falls": 0, "damage_dealt": 0.0, "damage_taken": 0.0, "attacks_connected": 0}
 	}
-	_spawn_fighter(1, Vector3(-4.0, 1.7, 0.0), KapesVisual.P1_COLOR, match_setup.player_1_fighter_id)
-	_spawn_fighter(2, Vector3(4.0, 1.7, 0.0), KapesVisual.P2_COLOR, match_setup.player_2_fighter_id)
+	var spawn_p1: Vector3 = _stage_meta.get("spawn_p1", Vector3(-4.0, 1.7, 0.0))
+	var spawn_p2: Vector3 = _stage_meta.get("spawn_p2", Vector3(4.0, 1.7, 0.0))
+	_spawn_fighter(1, spawn_p1, KapesVisual.P1_COLOR, match_setup.player_1_fighter_id)
+	_spawn_fighter(2, spawn_p2, KapesVisual.P2_COLOR, match_setup.player_2_fighter_id)
+	var stage_name := str(_stage_meta.get("display_name", ""))
+	if stage_name != "" and hud.has_method("set_message"):
+		hud.set_message(stage_name)
 	hud.set_message("¡DALE!")
 	SmashAudio.play_match_start(self)
 	if OS.get_environment("SSK_DISABLE_HUD") == "1":
@@ -118,10 +124,23 @@ func _unhandled_input(event: InputEvent) -> void:
 				visual._refresh_bounds_debug()
 
 func _setup_stage() -> void:
-	var stage := STAGE_SCENE.instantiate()
+	var stage_id := "defensores"
+	if match_setup != null and str(match_setup.stage_id) != "":
+		stage_id = str(match_setup.stage_id)
+	elif OS.get_environment("SSK_STAGE_ID") != "":
+		stage_id = OS.get_environment("SSK_STAGE_ID")
+	_stage_meta = StageCatalog.get_by_id(stage_id)
+	if _stage_meta.is_empty():
+		_stage_meta = StageCatalog.get_by_id(StageCatalog.DEFENSORES)
+	var path := str(_stage_meta.get("scene_path", "res://scenes/stages/DefensoresDelChacoStage.tscn"))
+	var packed := load(path) as PackedScene
+	if packed == null:
+		packed = load("res://scenes/stages/DefensoresDelChacoStage.tscn") as PackedScene
+	var stage := packed.instantiate()
 	add_child(stage)
-	stage_visual = stage as DefensoresDelChacoStage
-	_audit("Defensores stage ready")
+	stage_visual = stage as Node3D
+	_audit("stage ready id=%s" % str(_stage_meta.get("id", stage_id)))
+
 
 func _spawn_fighter(id: int, position: Vector3, color: Color, fighter_id: String) -> void:
 	var fighter: Fighter = FIGHTER_SCENE.instantiate()
@@ -129,9 +148,9 @@ func _spawn_fighter(id: int, position: Vector3, color: Color, fighter_id: String
 	fighter.player_id = id
 	fighter.fighter_id = fighter_id
 	fighter.display_color = color
-	fighter.attack_definition = BASIC_ATTACK
 	var label: String = definition.display_name if definition != null else "P%d" % id
-	fighter.stats = _make_stats(label)
+	fighter.stats = _make_stats(label, fighter_id)
+	fighter.attack_definition = _make_attack(fighter_id)
 	fighter.position = position
 	fighter.name = "Fighter" if id == 1 else "Fighter2"
 	$FighterManager.add_child(fighter)
@@ -140,10 +159,46 @@ func _spawn_fighter(id: int, position: Vector3, color: Color, fighter_id: String
 	fighter.damage_changed.connect(_on_damage_changed)
 	fighter.attack_connected.connect(_on_attack_connected)
 
-func _make_stats(label: String) -> FighterStats:
+
+func _make_stats(label: String, fighter_id: String = "") -> FighterStats:
 	var stats := FighterStats.new()
 	stats.fighter_name = label
+	var profile: Dictionary = FIGHTER_CATALOG.gameplay_profile(fighter_id)
+	if profile.has("walk_speed"):
+		stats.walk_speed = float(profile["walk_speed"])
+	if profile.has("jump_velocity"):
+		stats.jump_velocity = float(profile["jump_velocity"])
+	if profile.has("double_jump_velocity"):
+		stats.double_jump_velocity = float(profile["double_jump_velocity"])
+	if profile.has("weight"):
+		stats.weight = float(profile["weight"])
+	if profile.has("attack_damage"):
+		stats.attack_damage = float(profile["attack_damage"])
+	if profile.has("attack_base_knockback"):
+		stats.attack_base_knockback = float(profile["attack_base_knockback"])
+	if profile.has("attack_knockback_growth"):
+		stats.attack_knockback_growth = float(profile["attack_knockback_growth"])
 	return stats
+
+
+func _make_attack(fighter_id: String) -> AttackDefinition:
+	var attack: AttackDefinition = BASIC_ATTACK.duplicate(true) as AttackDefinition
+	if attack == null:
+		attack = BASIC_ATTACK
+	var profile: Dictionary = FIGHTER_CATALOG.gameplay_profile(fighter_id)
+	if profile.has("attack_damage"):
+		attack.damage = float(profile["attack_damage"])
+	if profile.has("attack_base_knockback"):
+		attack.base_knockback = float(profile["attack_base_knockback"])
+	if profile.has("attack_knockback_growth"):
+		attack.knockback_growth = float(profile["attack_knockback_growth"])
+	if profile.has("startup_seconds"):
+		attack.startup_seconds = float(profile["startup_seconds"])
+	if profile.has("active_seconds"):
+		attack.active_seconds = float(profile["active_seconds"])
+	if profile.has("recovery_seconds"):
+		attack.recovery_seconds = float(profile["recovery_seconds"])
+	return attack
 
 func _handle_ko(fighter: Fighter) -> void:
 	print("KO: P%d | stocks remaining: %d | damage: %.0f%%" % [fighter.player_id, fighter.stocks, fighter.damage_percent])
@@ -286,4 +341,6 @@ func _audit_fighter_state(id: int) -> String:
 	return "%s locked=%s" % [Fighter.FighterState.keys()[fighter.state], fighter.match_locked]
 
 func _outside_blast_zone(position: Vector3) -> bool:
-	return position.x < -19.0 or position.x > 19.0 or position.y < -10.0 or position.y > 18.0
+	var bmin: Vector3 = _stage_meta.get("blast_min", Vector3(-19.0, -10.0, -8.0))
+	var bmax: Vector3 = _stage_meta.get("blast_max", Vector3(19.0, 18.0, 8.0))
+	return position.x < bmin.x or position.x > bmax.x or position.y < bmin.y or position.y > bmax.y

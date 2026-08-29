@@ -14,10 +14,12 @@ Updated through JEFFREY_ART_SMASH_RELEASE_V1.
 | All shell | UI SFX pack | Couch feedback | P0 | First-party WAVs + `GlobalUiAudio` | **CLOSED** |
 | Controllers | Glyph set | Input prompts | P1 | `JeffreyInputHint` text glyphs | **CLOSED (interim)** — neutral labels, not painted SVG atlas |
 | Smash combat | Hit / KO / match SFX | Fight feedback | P1 | `assets/audio/smash/` + `SmashAudioV1` | **CLOSED** |
+| Smash roster | Cartes / Fort / Pájaro | Content expansion | P1 | Stylized procedural + generated portraits | **INTERIM CLOSED** — need painted art |
+| Smash stages | Palacio / Costanera | Content expansion | P1 | Procedural silhouette stages | **INTERIM CLOSED** — need illustrated BGs |
 | Smash KO | Illustrated burst art | Party KO moment | P1 | Large KO text + stage KO state | **OPEN** |
 | Smash / Track / Copa | Painted illustrated podium / banners | Premium hierarchy | P2 | StyleBox banners | **OPEN** |
-| Characters | Additional fighters / outlines | Roster depth | P2 | Tereré + Jaguareté | **OPEN** |
-| Stages | Extra Smash stages | Variety | P2 | Defensores del Chaco | **OPEN** |
+| Characters | Additional fighters / outlines | Roster depth | P2 | 5 production fighters | **OPEN** (polish) |
+| Stages | Extra Smash stages | Variety | P2 | 3 stages live | **OPEN** (more variety) |
 
 ## Notes
 

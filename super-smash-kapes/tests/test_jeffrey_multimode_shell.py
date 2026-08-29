@@ -38,7 +38,9 @@ def test_smash_gameplay_authorities_were_not_rewritten() -> None:
     assert "RESPAWN_DELAY := 1.15" in playground
     assert "Vector3(-4.0, 1.7, 0.0)" in playground
     assert "Vector3(4.0, 1.7, 0.0)" in playground
-    assert "position.x < -19.0 or position.x > 19.0" in playground
+    assert "Vector3(-19.0, -10.0, -8.0)" in playground or "blast_min" in playground
+    catalog = (PROJECT_ROOT / "scripts/stages/stage_catalog.gd").read_text(encoding="utf-8")
+    assert "Vector3(-19.0, -10.0, -8.0)" in catalog
     assert "invulnerability_time = 1.5" in fighter
     assert 'return "p%d_%s" % [player_id, name]' in fighter
     assert "JeffreyCore" not in fighter

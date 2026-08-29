@@ -28,6 +28,7 @@ var smash_host: Node = null
 var track_host: Node = null
 var zombies_host: Node = null
 var pending_mode_id: String = ""
+var pending_stage_id: String = "defensores"
 var pending_match_profile_ids: Array[String] = []
 var pending_participants: Array = []
 var _fading: Control = null
@@ -269,7 +270,10 @@ func _show_character_select() -> void:
 	var screen = CHAR_SELECT.new()
 	screen.mode_id = pending_mode_id
 	screen.participants = _slot_participants()
-	screen.roster_confirmed.connect(_on_characters_confirmed)
+	screen.roster_confirmed.connect(func(parts: Array):
+		pending_stage_id = screen.selected_stage_id
+		_on_characters_confirmed(parts)
+	)
 	if _zombies_browse_characters:
 		screen.cancelled.connect(_show_zombies_menu)
 	else:
@@ -432,6 +436,8 @@ func _host_smash_resolved(context: Dictionary) -> void:
 	if parts.size() >= 2:
 		setup.player_2_profile_id = str(parts[1].get("profile_id", ""))
 		setup.player_2_fighter_id = JeffreyCore.characters.smash_fighter_id_for(str(parts[1].get("character_id", "")))
+	var StageCatalog := preload("res://scripts/stages/stage_catalog.gd")
+	setup.stage_id = pending_stage_id if pending_stage_id != "" else StageCatalog.default_stage_id()
 	_clear_screen()
 	_clear_smash_host()
 	smash_host = (load(MAIN_SCENE_PATH) as PackedScene).instantiate()

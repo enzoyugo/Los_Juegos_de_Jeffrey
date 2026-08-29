@@ -86,7 +86,8 @@ def test_gameplay_scripts_were_not_retuned() -> None:
     assert "func configure_health" in enemy
     assert "zombies_to_spawn = mini(4 + wave * 2, 16)" in waves
     assert "RESPAWN_DELAY := 1.15" in playground
-    assert "position.x < -19.0 or position.x > 19.0" in playground
+    assert "blast_min" in playground
+    assert "Vector3(-19.0, -10.0, -8.0)" in _read("scripts/stages/stage_catalog.gd")
     assert "REAR_LATERAL_GRIP" in track
     assert "damage_percent" in smash
     menu = _read("scripts/ui/jeffrey/zombies_menu_screen.gd")

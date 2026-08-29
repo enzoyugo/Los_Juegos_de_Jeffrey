@@ -16,6 +16,7 @@ const AudioHooks := preload("res://scripts/ui/jeffrey/global_ui_audio.gd")
 
 var mode_id: String = ""
 var participants: Array = []
+var selected_stage_id: String = "defensores"
 var _grid: HBoxContainer
 var _cards: Dictionary = {}
 var _panel_list: VBoxContainer
@@ -23,6 +24,7 @@ var _continue: Button
 var _picker: int = 0
 var _picks: Dictionary = {}
 var _busy: bool = false
+var _stage_row: HBoxContainer
 
 
 func request_back() -> void:
@@ -51,12 +53,14 @@ func _ready() -> void:
 		frame.content.add_child(fallback)
 		Layout.apply_frac(fallback, 0.04, 0.03, 0.5, 0.1)
 
-	var cards_host := CenterContainer.new()
+	var cards_host := ScrollContainer.new()
+	cards_host.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	cards_host.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	frame.content.add_child(cards_host)
-	Layout.apply_frac(cards_host, 0.01, 0.14, 0.68, 0.64)
+	Layout.apply_frac(cards_host, 0.01, 0.12, 0.68, 0.58)
 	_grid = HBoxContainer.new()
 	_grid.alignment = BoxContainer.ALIGNMENT_CENTER
-	_grid.add_theme_constant_override("separation", 36)
+	_grid.add_theme_constant_override("separation", 18)
 	cards_host.add_child(_grid)
 
 	var FitHost := preload("res://scripts/ui/jeffrey/texture_fit_host.gd")
@@ -106,9 +110,42 @@ func _ready() -> void:
 	hints.add_child(Hint.make("confirm", "Elegir", ThemeRef.GOLD))
 	hints.add_child(Hint.make("back", "Volver", ThemeRef.MUTED))
 
+	_build_stage_row(frame.content)
 	_build_cards()
 	_refresh_panel()
 	call_deferred("_focus_first_card")
+
+
+func _build_stage_row(parent: Control) -> void:
+	var StageCatalog := preload("res://scripts/stages/stage_catalog.gd")
+	_stage_row = HBoxContainer.new()
+	_stage_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	_stage_row.add_theme_constant_override("separation", 10)
+	parent.add_child(_stage_row)
+	Layout.apply_frac(_stage_row, 0.04, 0.72, 0.64, 0.06)
+	var title := Layout.outlined_label("ESCENARIO", 12, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_stage_row.add_child(title)
+	for stage in StageCatalog.get_all_stages():
+		var btn := Button.new()
+		btn.text = str(stage.get("display_name", stage.get("id", "?")))
+		btn.custom_minimum_size = Vector2(160, 36)
+		btn.toggle_mode = true
+		btn.button_pressed = str(stage.get("id", "")) == selected_stage_id
+		var sid := str(stage.get("id", "defensores"))
+		btn.pressed.connect(func():
+			selected_stage_id = sid
+			_refresh_stage_buttons()
+		)
+		btn.set_meta("stage_id", sid)
+		_stage_row.add_child(btn)
+
+
+func _refresh_stage_buttons() -> void:
+	if _stage_row == null:
+		return
+	for child in _stage_row.get_children():
+		if child is Button and child.has_meta("stage_id"):
+			(child as Button).button_pressed = str(child.get_meta("stage_id")) == selected_stage_id
 
 
 func _unhandled_input(event: InputEvent) -> void:

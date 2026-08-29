@@ -220,7 +220,9 @@ func _victory_art_for_player(player_id: int, match_setup) -> Texture2D:
 		fighter_id = match_setup.player_1_fighter_id if player_id == 1 else match_setup.player_2_fighter_id
 	if fighter_id == "jaguarete":
 		return _load_tex(JAGUARETE_VICTORY)
-	return _load_tex(TERERE_VICTORY)
+	if fighter_id == "terere":
+		return _load_tex(TERERE_VICTORY)
+	return null
 
 
 func _play_intro() -> void:

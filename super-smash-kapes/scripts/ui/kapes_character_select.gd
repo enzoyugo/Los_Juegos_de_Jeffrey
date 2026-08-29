@@ -25,6 +25,8 @@ var _p2_label: String = "P2"
 var _transition_started: bool = false
 var _cards: Array[Control] = []
 var _select_audit_enabled: bool = OS.get_environment("SSK_SELECT_AUDIT") == "1"
+var _stage_id: String = "defensores"
+const StageCatalog := preload("res://scripts/stages/stage_catalog.gd")
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -120,6 +122,12 @@ func _handle_keyboard(event: InputEventKey) -> bool:
 	if _matches_p2_confirm(event):
 		_audit_log("P2 confirm")
 		_confirm_player(2)
+		return true
+	if event.pressed and not event.echo and key == KEY_Q:
+		_cycle_stage(-1)
+		return true
+	if event.pressed and not event.echo and key == KEY_E:
+		_cycle_stage(1)
 		return true
 	return false
 
@@ -290,6 +298,27 @@ func _move_selection(player: int, direction: int) -> void:
 		p2_index = posmod(p2_index + direction, fighters.size())
 	_refresh_status()
 
+func _selected_stage_id() -> String:
+	var env := OS.get_environment("SSK_STAGE_ID").strip_edges()
+	if not env.is_empty():
+		return env
+	return _stage_id
+
+
+func _cycle_stage(direction: int = 1) -> void:
+	var stages: Array = StageCatalog.get_all_stages()
+	if stages.is_empty():
+		return
+	var idx := 0
+	for i in range(stages.size()):
+		if str(stages[i].get("id", "")) == _stage_id:
+			idx = i
+			break
+	idx = posmod(idx + direction, stages.size())
+	_stage_id = str(stages[idx].get("id", "defensores"))
+	_refresh_status()
+
+
 func _confirm_player(player: int) -> void:
 	if _transition_started:
 		return
@@ -315,6 +344,7 @@ func _finalize_roster() -> void:
 	var setup = MATCH_SETUP.new()
 	setup.player_1_fighter_id = fighters[p1_index].id
 	setup.player_2_fighter_id = fighters[p2_index].id
+	setup.stage_id = _selected_stage_id()
 	if not _validate_setup(setup):
 		_transition_started = false
 		set_process_input(true)
@@ -343,13 +373,15 @@ func _refresh_status() -> void:
 	var status: Label = get_node("Status")
 	var p1_name: String = fighters[p1_index].display_name
 	var p2_name: String = fighters[p2_index].display_name
-	status.text = "%s: %s %s     •     %s: %s %s" % [
+	var stage_name := str(StageCatalog.get_by_id(_selected_stage_id()).get("display_name", _selected_stage_id()))
+	status.text = "%s: %s %s     •     %s: %s %s\nESCENARIO: %s  (Q/E)" % [
 		_p1_label,
 		p1_name,
 		"LISTO" if p1_ready else "",
 		_p2_label,
 		p2_name,
-		"LISTO" if p2_ready else ""
+		"LISTO" if p2_ready else "",
+		stage_name,
 	]
 	for index in _cards.size():
 		var card := _cards[index]
