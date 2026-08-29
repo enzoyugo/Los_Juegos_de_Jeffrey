@@ -2,9 +2,9 @@
 
 ## Primary verdict
 
-**JEFFREY_ART_SMASH_RELEASE_V1_PARTIAL** (or READY if GitHub push succeeds)
+**JEFFREY_ART_SMASH_RELEASE_V1_PARTIAL**
 
-Code, audio, glyphs, Smash presentation polish, hygiene, README, and tests completed. Live screenshot capture package folders created outside the repo; full interactive smoke remains partially automated via existing Godot parse/boot gates.
+Push succeeded. Remaining gap vs READY: full interactive Hub→modes smoke / live BEFORE screenshot set not fully executed this sprint (parse/boot gates green; review dirs prepared outside repo).
 
 ## UI SFX
 
@@ -78,11 +78,16 @@ Code, audio, glyphs, Smash presentation polish, hygiene, README, and tests compl
 
 ## Git status
 
-Documented at push time.
+- Toplevel: `E:/SuperSmashKapes` (project under `super-smash-kapes/`)
+- Branch: `main` tracking `origin/main`
+- Commits: `f5b73e2` initial · `4ddc4bb` playable slice baseline
+- Working tree clean after push
 
 ## GitHub push
 
-Documented at push time.
+- Remote: `https://github.com/enzoyugo/Los_Juegos_de_Jeffrey.git`
+- Push: **SUCCESS** (`main -> main`)
+- Remote HEAD: `4ddc4bb6920f7dd6015de0fa231574fa118d2ad9`
 
 ## Remaining asset gaps
 
