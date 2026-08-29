@@ -2,6 +2,8 @@
 
 **Verdict:** `SMASH_ART_ASSET_PRODUCTION_V1_PARTIAL`
 
+**Git:** `6220205` on `main` (`origin/main` = same)
+
 Hybrid Blender → Godot pipeline is live for three stylized fighters + two stage visuals. Assets pass an **interim (B)** production gate: clearly better than pure procedural capsules for silhouette/identity, not final painted production polish.
 
 ## Blender capability audit
