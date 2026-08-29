@@ -28,35 +28,40 @@ func _ready() -> void:
 	Layout.bind_full(self)
 	var frame = Frame.new()
 	add_child(frame)
-	frame.configure(Assets.HUB_BACKGROUND, "", 0.38, Assets.HUB_CONTROLS)
+	frame.configure(Assets.HUB_BACKGROUND, "", 0.42, Assets.HUB_CONTROLS)
 
 	var title = TitleScript.new()
 	frame.content.add_child(title)
-	Layout.apply_frac(title, 0.20, 0.06, 0.60, 0.10)
+	Layout.apply_frac(title, 0.18, 0.05, 0.64, 0.11)
 	title.configure("OPCIONES", 1, HORIZONTAL_ALIGNMENT_CENTER)
 
 	var panel = PanelScript.new()
-	panel.configure(ThemeRef.Base.ACCENT, 0.9)
+	panel.configure(ThemeRef.Base.GOLD, 0.94)
 	frame.content.add_child(panel)
-	Layout.apply_frac(panel, 0.26, 0.22, 0.48, 0.42)
+	Layout.apply_frac(panel, 0.24, 0.20, 0.52, 0.52)
 
 	var body := VBoxContainer.new()
-	body.add_theme_constant_override("separation", ThemeRef.SPACE_MD)
+	body.add_theme_constant_override("separation", ThemeRef.SPACE_LG)
 	Layout.bind_full(body)
-	body.offset_left = ThemeRef.SPACE_XL
-	body.offset_top = ThemeRef.SPACE_LG
-	body.offset_right = -ThemeRef.SPACE_XL
-	body.offset_bottom = -ThemeRef.SPACE_LG
+	body.offset_left = ThemeRef.SPACE_XL + 8
+	body.offset_top = ThemeRef.SPACE_LG + 8
+	body.offset_right = -(ThemeRef.SPACE_XL + 8)
+	body.offset_bottom = -(ThemeRef.SPACE_LG + 8)
 	panel.add_child(body)
 
+	body.add_child(Layout.outlined_label("AUDIO", ThemeRef.TYPE_SECONDARY, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_LEFT))
 	_master_slider = _add_slider(body, "VOLUMEN GENERAL", "master_volume", 1.0)
 	_music_slider = _add_slider(body, "MÚSICA", "music_volume", 1.0)
 	_sfx_slider = _add_slider(body, "EFECTOS", "sfx_volume", 1.0)
 
+	var actions := HBoxContainer.new()
+	actions.alignment = BoxContainer.ALIGNMENT_CENTER
+	actions.add_theme_constant_override("separation", 16)
+	body.add_child(actions)
 	var apply = JeffreyBtn.new()
 	apply.configure("GUARDAR", JeffreyBtn.Kind.PRIMARY, ThemeRef.BTN_PRIMARY)
 	apply.pressed.connect(_save)
-	body.add_child(apply)
+	actions.add_child(apply)
 
 	var back = BackBtn.new()
 	frame.content.add_child(back)
@@ -65,6 +70,15 @@ func _ready() -> void:
 		AudioHooks.play_back(self)
 		back_pressed.emit()
 	)
+
+	var Hint := preload("res://scripts/ui/jeffrey/components/jeffrey_input_hint.gd")
+	var hints := HBoxContainer.new()
+	hints.alignment = BoxContainer.ALIGNMENT_CENTER
+	hints.add_theme_constant_override("separation", 18)
+	frame.content.add_child(hints)
+	Layout.apply_frac(hints, 0.30, 0.90, 0.40, 0.05)
+	hints.add_child(Hint.make("confirm", "Guardar", ThemeRef.Base.GOLD))
+	hints.add_child(Hint.make("back", "Volver", ThemeRef.Base.MUTED))
 
 	Motion.fade_in(frame, ThemeRef.DURATION_SCREEN)
 	call_deferred("_focus_back", back)

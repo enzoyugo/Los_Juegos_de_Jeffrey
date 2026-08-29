@@ -63,24 +63,34 @@ func _ready() -> void:
 	_grid.add_theme_constant_override("separation", 18)
 	cards_host.add_child(_grid)
 
-	var FitHost := preload("res://scripts/ui/jeffrey/texture_fit_host.gd")
-	var panel = FitHost.new()
-	frame.content.add_child(panel)
-	Layout.apply_frac(panel, 0.70, 0.12, 0.28, 0.66)
-	panel.set_texture(Assets.texture(Assets.CHAR_PLAYERS_PANEL))
+	var panel_host := Control.new()
+	frame.content.add_child(panel_host)
+	Layout.apply_frac(panel_host, 0.70, 0.12, 0.28, 0.66)
+	var plate := PanelContainer.new()
+	Layout.bind_full(plate)
+	var plate_style := StyleBoxFlat.new()
+	plate_style.bg_color = Color(0.05, 0.04, 0.07, 0.94)
+	plate_style.border_color = ThemeRef.GOLD
+	plate_style.set_border_width_all(2)
+	plate_style.corner_radius_top_left = 8
+	plate_style.corner_radius_top_right = 14
+	plate_style.corner_radius_bottom_right = 8
+	plate_style.corner_radius_bottom_left = 14
+	plate_style.content_margin_left = 18
+	plate_style.content_margin_right = 18
+	plate_style.content_margin_top = 16
+	plate_style.content_margin_bottom = 16
+	plate.add_theme_stylebox_override("panel", plate_style)
+	panel_host.add_child(plate)
 	var panel_box := VBoxContainer.new()
 	panel_box.add_theme_constant_override("separation", 8)
-	var panel_margin := MarginContainer.new()
-	Layout.bind_full(panel_margin)
-	panel_margin.add_theme_constant_override("margin_left", 22)
-	panel_margin.add_theme_constant_override("margin_right", 22)
-	panel_margin.add_theme_constant_override("margin_top", 88)
-	panel_margin.add_theme_constant_override("margin_bottom", 36)
-	panel.art_space.add_child(panel_margin)
-	panel_margin.add_child(panel_box)
-	var heading := Layout.outlined_label("TURNO", Styles.SIZE_PANEL_TITLE, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
+	plate.add_child(panel_box)
+	var heading := Layout.outlined_label("ORDEN DE ELECCIÓN", Styles.SIZE_PANEL_TITLE, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
 	Styles.apply(heading, "panel_title")
 	panel_box.add_child(heading)
+	var sub := Layout.outlined_label("TURNO", Styles.SIZE_HELPER, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
+	Styles.apply(sub, "small_helper")
+	panel_box.add_child(sub)
 	var list_scroll := ScrollContainer.new()
 	list_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	list_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED

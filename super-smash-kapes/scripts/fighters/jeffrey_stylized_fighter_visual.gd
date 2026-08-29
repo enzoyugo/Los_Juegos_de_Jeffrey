@@ -141,27 +141,53 @@ func _apply_motion(delta: float) -> void:
 	super._apply_motion(delta)
 	if arm_l == null or arm_r == null:
 		return
-	var swing := sin(fighter.visual_time * 9.0) * 0.22 if _state_label == "RUN" else 0.0
+	var t: float = fighter.visual_time if fighter != null else 0.0
+	var swing := 0.0
+	match _state_label:
+		"RUN":
+			swing = sin(t * 11.0) * 0.38
+		"IDLE":
+			swing = sin(t * 2.4) * 0.08
+		_:
+			swing = 0.0
 	arm_l.rotation.z = 0.2 + swing
 	arm_r.rotation.z = -0.2 - swing
-	if _state_label == "ATTACK":
-		arm_r.rotation.z = -1.2 * facing
-		arm_r.position.x = 0.75
-	elif _state_label == "HITSTUN":
-		arm_l.rotation.z = 0.85
-		arm_r.rotation.z = -0.85
-	if _state_label == "AIR":
-		if leg_l:
-			leg_l.rotation.x = -0.4
-		if leg_r:
-			leg_r.rotation.x = 0.3
-	else:
-		if leg_l:
+	if leg_l and leg_r:
+		if _state_label == "RUN":
+			leg_l.rotation.x = sin(t * 11.0) * 0.55
+			leg_r.rotation.x = -sin(t * 11.0) * 0.55
+		elif _state_label == "AIR":
+			leg_l.rotation.x = -0.45
+			leg_r.rotation.x = 0.35
+		elif _state_label == "IDLE":
+			leg_l.rotation.x = sin(t * 2.4) * 0.04
+			leg_r.rotation.x = -sin(t * 2.4) * 0.04
+		else:
 			leg_l.rotation.x = 0.0
-		if leg_r:
 			leg_r.rotation.x = 0.0
+	if _state_label == "ATTACK":
+		arm_r.rotation.z = -1.35 * facing
+		arm_r.position.x = 0.85
+		arm_r.rotation.x = -0.35
+	elif _state_label == "HITSTUN":
+		arm_l.rotation.z = 0.95
+		arm_r.rotation.z = -0.95
+		if body_pivot:
+			body_pivot.rotation.z = sin(t * 28.0) * 0.08
+	elif _state_label == "KO":
+		if body_pivot:
+			body_pivot.rotation.x = -1.1
 	if accent_node != null and definition != null and str(definition.id) == "fort":
-		accent_node.rotation.y = fighter.visual_time * 4.0
+		accent_node.rotation.y = t * 4.0
+	## Pájaro: wing flap / bob for readability.
+	if definition != null and str(definition.id).begins_with("pajaro"):
+		if body_pivot:
+			body_pivot.position.y = sin(t * 6.0) * 0.04
+		arm_l.rotation.z = 0.55 + sin(t * 14.0) * 0.45
+		arm_r.rotation.z = -0.55 - sin(t * 14.0) * 0.45
+		if _state_label == "ATTACK":
+			arm_r.rotation.z = -1.5
+			arm_l.rotation.z = 0.9
 
 
 func _apply_hit_flash() -> void:

@@ -60,9 +60,45 @@ func setup(id: String, name_text: String, portrait: Texture2D = null, random: bo
 	if _name_label != null:
 		_name_label.text = display_name.to_upper()
 	if _portrait != null:
-		_portrait.texture = portrait
+		_portrait.texture = _portrait_without_cream(portrait)
 		_portrait.visible = portrait != null and not random
 	_refresh()
+
+
+func _portrait_without_cream(src: Texture2D) -> Texture2D:
+	## Punch studio white/cream plates to alpha (Cartes/Fort/Jaguareté crops).
+	if src == null:
+		return null
+	var img: Image = null
+	var path := str(src.resource_path)
+	if path.begins_with("res://") and path.ends_with(".png"):
+		var abs_path := ProjectSettings.globalize_path(path)
+		if FileAccess.file_exists(abs_path):
+			img = Image.load_from_file(abs_path)
+	if img == null:
+		img = src.get_image()
+	if img == null:
+		return src
+	img.convert(Image.FORMAT_RGBA8)
+	var changed := false
+	for y in img.get_height():
+		for x in img.get_width():
+			var c := img.get_pixel(x, y)
+			if c.a < 0.05:
+				continue
+			var near_white := c.r > 0.90 and c.g > 0.90 and c.b > 0.90
+			var cream := c.r > 0.88 and c.g > 0.82 and c.b > 0.78 and absf(c.r - c.g) < 0.12 and absf(c.g - c.b) < 0.14
+			## Soft plate: high luminance, low saturation.
+			var luma := c.r * 0.3 + c.g * 0.59 + c.b * 0.11
+			var sat := maxf(c.r, maxf(c.g, c.b)) - minf(c.r, minf(c.g, c.b))
+			var soft_plate := luma > 0.86 and sat < 0.12
+			if near_white or cream or soft_plate:
+				c.a = 0.0
+				img.set_pixel(x, y, c)
+				changed = true
+	if not changed:
+		return src
+	return ImageTexture.create_from_image(img)
 
 
 func mark_selected(on: bool) -> void:
@@ -97,7 +133,7 @@ func _build() -> void:
 	_portrait = TextureRect.new()
 	_portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	_portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	_portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_portrait.visible = false
 	_art_root.add_child(_portrait)
 	Styles.bind_character_portrait(_portrait)

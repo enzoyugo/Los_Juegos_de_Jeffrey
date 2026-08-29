@@ -269,20 +269,22 @@ func _physics_process(delta: float) -> void:
 		velocity.x = dir.x * Config.ZOMBIE_SPEED * _speed_mul + _knock.x
 		velocity.z = dir.z * Config.ZOMBIE_SPEED * _speed_mul + _knock.z
 		_face(dir)
-		_walk_t += delta * (6.6 + _speed_mul * 1.6)
+		_walk_t += delta * (7.2 + _speed_mul * 2.2)
+		var amp := 0.62 if _speed_mul > 1.05 else 0.48
 		if _arm_l != null:
-			_arm_l.rotation.x = sin(_walk_t) * 0.48
+			_arm_l.rotation.x = sin(_walk_t) * amp
 		if _arm_r != null:
-			_arm_r.rotation.x = sin(_walk_t + PI) * 0.48
+			_arm_r.rotation.x = sin(_walk_t + PI) * amp
 		if _leg_l != null:
-			_leg_l.rotation.x = sin(_walk_t + PI) * 0.38
+			_leg_l.rotation.x = sin(_walk_t + PI) * (amp * 0.85)
 		if _leg_r != null:
-			_leg_r.rotation.x = sin(_walk_t) * 0.38
+			_leg_r.rotation.x = sin(_walk_t) * (amp * 0.85)
 		if _head != null:
-			_head.rotation.y = sin(_walk_t * 0.5) * 0.12
-			_head.rotation.x = -0.18 + sin(_walk_t * 0.7) * 0.05
+			_head.rotation.y = sin(_walk_t * 0.5) * 0.16
+			_head.rotation.x = -0.18 + sin(_walk_t * 0.7) * 0.07
 		if _visual != null:
-			_visual.position.y = absf(sin(_walk_t * 2.0)) * 0.05
+			_visual.position.y = absf(sin(_walk_t * 2.0)) * 0.07
+			_visual.rotation.z = sin(_walk_t) * 0.04
 	else:
 		velocity.x = _knock.x
 		velocity.z = _knock.z

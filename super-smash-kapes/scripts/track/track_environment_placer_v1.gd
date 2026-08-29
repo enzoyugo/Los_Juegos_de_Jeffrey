@@ -13,11 +13,11 @@ const ZONE_GREEN := "green"
 const ZONE_OPEN := "open"
 
 ## Near-road clearance past solid half-width (keeps props off driveline).
-const CLEAR_NEAR := 1.15
-const CLEAR_MID := 6.5
-const CLEAR_FAR := 14.0
-const CLEAR_SKYLINE := 22.0
-const SAMPLE_STRIDE := 2
+const SAMPLE_STRIDE := 1
+const CLEAR_NEAR := 1.05
+const CLEAR_MID := 5.8
+const CLEAR_FAR := 12.5
+const CLEAR_SKYLINE := 20.0
 
 var enabled: bool = true
 var last_stats: Dictionary = {}
@@ -179,48 +179,48 @@ func _place_sample(buckets: Dictionary, kit, sample: Dictionary, zone: String, r
 			ZONE_URBAN:
 				if index % 2 == 0:
 					_push_street_light(buckets, mid + forward * rng.randf_range(-0.8, 0.8), yaw, kit)
-				if index % 4 == 0:
+				if index % 3 == 0:
 					_push(buckets, KitScript.Piece.LOW_WALL, _yawed(mid + lateral * 1.2 + Vector3(0, 0.55, 0), yaw))
-				if index % 5 == 0:
+				if index % 3 == 0:
 					_push(buckets, KitScript.Piece.UTILITY_POLE, _yawed(mid + lateral * 0.8 + Vector3(0, 2.7, 0), yaw))
-				if index % 4 == 0:
+				if index % 3 == 0:
 					if kit.uses_promoted(KitScript.Piece.BUILDING_SMALL_PROMOTED):
 						_push_promoted(buckets, kit, KitScript.Piece.BUILDING_SMALL_PROMOTED, far + forward * rng.randf_range(-1.5, 1.5), yaw + (PI if side > 0.0 else 0.0))
 					else:
 						_push(buckets, KitScript.Piece.BUILDING_SMALL, _yawed(far + Vector3(0, 2.75, 0) + forward * rng.randf_range(-1.5, 1.5), yaw + (PI if side > 0.0 else 0.0)))
-				if index % 7 == 0:
+				if index % 5 == 0:
 					_push(buckets, KitScript.Piece.ROAD_SIGN, _yawed(near + lateral * 0.6 + Vector3(0, 1.2, 0), yaw))
 			ZONE_COMMERCIAL:
-				if index % 3 == 0:
+				if index % 2 == 0:
 					_push_street_light(buckets, mid, yaw, kit)
-				if index % 3 == 0:
+				if index % 2 == 0:
 					_push_billboard(buckets, far + lateral * 2.0, yaw + PI * 0.5 * side, kit)
-				if index % 3 == 0:
+				if index % 2 == 0:
 					if kit.uses_promoted(KitScript.Piece.BUILDING_BLOCK_PROMOTED):
 						_push_promoted(buckets, kit, KitScript.Piece.BUILDING_BLOCK_PROMOTED, far + lateral * 3.0, yaw)
 					else:
 						_push(buckets, KitScript.Piece.BUILDING_BLOCK, _yawed(far + lateral * 3.0 + Vector3(0, 4.25, 0), yaw))
-				if index % 5 == 0:
+				if index % 4 == 0:
 					_push(buckets, KitScript.Piece.ROAD_SIGN, _yawed(mid + Vector3(0, 1.4, 0), yaw))
 			ZONE_GREEN:
-				if index % 2 == 0:
-					if rng.randf() < 0.55:
+				if index % 1 == 0:
+					if rng.randf() < 0.7:
 						_push_palm(buckets, mid + forward * rng.randf_range(-1.0, 1.0), yaw, kit)
 					else:
 						_push_tree(buckets, mid + forward * rng.randf_range(-1.0, 1.0), yaw, kit)
-				if index % 6 == 0:
+				if index % 4 == 0:
 					_push_street_light(buckets, mid + lateral * 1.5, yaw, kit)
-				if index % 8 == 0:
+				if index % 5 == 0:
 					if kit.uses_promoted(KitScript.Piece.BUILDING_SMALL_PROMOTED):
 						_push_promoted(buckets, kit, KitScript.Piece.BUILDING_SMALL_PROMOTED, far + lateral * 4.0, yaw)
 					else:
 						_push(buckets, KitScript.Piece.BUILDING_SMALL, _yawed(far + lateral * 4.0 + Vector3(0, 2.75, 0), yaw))
 			ZONE_OPEN:
-				if index % 4 == 0:
+				if index % 3 == 0:
 					_push(buckets, KitScript.Piece.UTILITY_POLE, _yawed(mid + Vector3(0, 2.7, 0), yaw))
-				if index % 5 == 0:
+				if index % 3 == 0:
 					_push(buckets, KitScript.Piece.ROAD_SIGN, _yawed(near + lateral * 0.5 + Vector3(0, 1.2, 0), yaw))
-				if index % 6 == 0:
+				if index % 4 == 0:
 					_push(buckets, KitScript.Piece.LOW_WALL, _yawed(mid + Vector3(0, 0.55, 0), yaw))
 
 

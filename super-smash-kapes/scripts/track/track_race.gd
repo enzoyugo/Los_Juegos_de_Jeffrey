@@ -307,7 +307,7 @@ func _place_roadside(solids: Array) -> void:
 		if str(item.get("kind", "")) != "road":
 			continue
 		n += 1
-		if n % 5 != 0:
+		if n % 3 != 0:
 			continue
 		var xf: Transform3D = item["transform"]
 		var size: Vector3 = item["size"]
