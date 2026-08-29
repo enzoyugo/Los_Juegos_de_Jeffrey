@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 JeffreyCore="*res://scripts/core/jeffrey/jeffrey_core.gd"
-__MCPRuntimeBridge__="*uid://dubex4hmorbb7"
 
 [display]
 

@@ -4,7 +4,8 @@ extends RefCounted
 const MATCH_SETUP := preload("res://scripts/core/match_setup.gd")
 const FIGHTER_DEFINITION := preload("res://scripts/fighters/fighter_definition.gd")
 const SIZE := preload("res://scripts/fighters/fighter_size_class.gd")
-const STYLIZED := preload("res://scripts/fighters/jeffrey_stylized_fighter_visual.gd")
+const STYLIZED_GLB := preload("res://scripts/fighters/jeffrey_stylized_glb_visual.gd")
+## Procedural builder remains available via fallback_visual_path.
 
 static var _definitions: Dictionary = {}
 
@@ -148,10 +149,10 @@ static func _make_stylized(id: String, display: String, tagline: String, victory
 	def.id = id
 	def.display_name = display
 	def.short_name = display
-	def.visual_script = STYLIZED
+	def.visual_script = STYLIZED_GLB
 	def.fallback_visual_path = "res://scripts/fighters/jeffrey_stylized_fighter_visual.gd"
-	def.production_glb_path = ""
-	def.pipeline_id = "JEFFREY_STYLIZED_V1"
+	def.production_glb_path = "res://assets/fighters/processed/%s/%s_stylized_v1.glb" % [id, id]
+	def.pipeline_id = "JEFFREY_STYLIZED_BLENDER_V1"
 	def.portrait_texture = _load_texture("res://assets/ui/portraits/%s_portrait.png" % id)
 	def.victory_texture_path = "res://assets/ui/victory/%s/%s_victory.png" % [id, id]
 	def.primary_color = primary

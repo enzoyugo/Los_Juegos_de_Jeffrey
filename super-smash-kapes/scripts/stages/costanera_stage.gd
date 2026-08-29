@@ -20,6 +20,7 @@ func _build_platform_colors() -> void:
 func _build_silhouette_props(camera: Camera3D) -> void:
 	var root := Node3D.new()
 	root.name = "CostaneraSilhouette"
+	root.add_to_group("jeffrey_stage_silhouette")
 	root.position = Vector3(0.0, -10.0, -95.0)
 	camera.add_child(root)
 	var river := StandardMaterial3D.new()

@@ -20,6 +20,7 @@ func _build_platform_colors() -> void:
 func _build_silhouette_props(camera: Camera3D) -> void:
 	var root := Node3D.new()
 	root.name = "PalacioSilhouette"
+	root.add_to_group("jeffrey_stage_silhouette")
 	root.position = Vector3(0.0, -6.0, -95.0)
 	camera.add_child(root)
 	var mat := StandardMaterial3D.new()

@@ -145,5 +145,6 @@ func set_message(text: String) -> void:
 
 func show_ko_flash(_player_id: int, accent: Color) -> void:
 	message_label.add_theme_color_override("font_color", accent)
+	message_label.add_theme_constant_override("outline_size", 14)
 	intro_accent.color = Color(accent.r, accent.g, accent.b, 0.0)
 	set_message("KO")
