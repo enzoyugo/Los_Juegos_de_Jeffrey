@@ -52,6 +52,8 @@ func _ready() -> void:
 	var scroll := ScrollContainer.new()
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	## Avoid a stray white scrollbar gutter when the list is short.
+	scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_SHOW_NEVER
 	root.add_child(scroll)
 	_list = VBoxContainer.new()
 	_list.name = "SelectedRowsContainer"
@@ -68,6 +70,11 @@ func set_profile_ids(ids: Array) -> void:
 	for child in _list.get_children():
 		child.queue_free()
 	_list.add_theme_constant_override("separation", 6 if ids.size() > 6 else 10)
+	var scroll := _list.get_parent() as ScrollContainer
+	if scroll != null:
+		scroll.vertical_scroll_mode = (
+			ScrollContainer.SCROLL_MODE_AUTO if ids.size() > 8 else ScrollContainer.SCROLL_MODE_SHOW_NEVER
+		)
 	var index := 0
 	for profile_id in ids:
 		var profile = JeffreyCore.profiles.get_profile(str(profile_id))
