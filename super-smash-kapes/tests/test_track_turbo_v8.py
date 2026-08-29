@@ -139,7 +139,7 @@ def test_firewalls_intact() -> None:
     assert "Incremental constraint-aware assembler" in gen
     assert "MAX_ATTEMPTS" in gen
     cfg = _read("scripts/track/track_config.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in cfg
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in cfg
     assert "ROAD_WIDTH := 11.0" in cfg
     wheel = _read("scripts/track/track_wheel_physics_config.gd")
     assert "SPRING_STRENGTH := 32000.0" in wheel

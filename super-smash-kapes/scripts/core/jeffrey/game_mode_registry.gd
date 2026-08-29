@@ -38,25 +38,25 @@ func register_builtin() -> void:
 	))
 	register_mode(_make(
 		MODE_RACING,
-		"Hotseat",
-		false,
+		"Track",
+		true,
 		2,
 		10,
 		RACING_SCENE,
 		"Una persona corre por vez. Hasta 10 jugadores, mismo auto.",
-		ModeDef.AVAIL_DEVELOPMENT,
+		ModeDef.AVAIL_PLAYABLE,
 		Color("#5aa8b0"),
 		"res://assets/ui/global/mode_cards/hotseat.png"
 	))
 	register_mode(_make(
 		MODE_ZOMBIES,
 		"Zombies",
-		false,
+		true,
 		1,
 		2,
 		ZOMBIES_SCENE,
-		"1–2 jugadores, local, greybox FPS.",
-		ModeDef.AVAIL_DEVELOPMENT,
+		"1–2 jugadores local. Shopping del Sol.",
+		ModeDef.AVAIL_PLAYABLE,
 		Color("#7aaf7a"),
 		"res://assets/ui/global/mode_cards/zombies.png"
 	))

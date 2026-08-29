@@ -28,7 +28,7 @@ def test_handling_constants_frozen() -> None:
     assert "YAW_ASSIST_TORQUE := 420.0" in cfg
     assert "ENGINE_FORCE := 6200.0" in cfg
     assert "SPRING_STRENGTH := 32000.0" in cfg
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
     vis = _read("scripts/track/track_car_visual_config.gd")
     assert "track_car_base_v3_articulated_clean.glb" in vis
     source = PROJECT_ROOT / "assets/vehicles/track/source/track_car_base_v1.glb"

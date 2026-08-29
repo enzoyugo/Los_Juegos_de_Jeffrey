@@ -146,10 +146,12 @@ func _on_copa_revancha(mode_id: String) -> void:
 		else:
 			_host_track({})
 		return
-	if mode_id == ModeRegistry.MODE_ZOMBIES and zombies_host != null and is_instance_valid(zombies_host):
+	if mode_id == ModeRegistry.MODE_ZOMBIES:
 		_clear_screen()
-		if zombies_host.has_method("_restart"):
-			zombies_host.call("_restart")
+		## Never call ZombiesMain._restart under shell hosting — it orphans a fresh
+		## host while zombies_host still points at the freeing instance (VRAM leak).
+		_clear_mode_hosts()
+		_host_zombies({})
 		return
 	_show_game_select()
 
@@ -568,6 +570,10 @@ func _clear_screen() -> void:
 
 
 func _clear_smash_host() -> void:
+	_clear_mode_hosts()
+
+
+func _clear_mode_hosts() -> void:
 	if smash_host != null and is_instance_valid(smash_host):
 		if smash_host.has_method("_stop_match"):
 			smash_host._stop_match()
@@ -579,4 +585,10 @@ func _clear_smash_host() -> void:
 	if zombies_host != null and is_instance_valid(zombies_host):
 		zombies_host.queue_free()
 	zombies_host = null
+	## Sweep orphans from prior _restart bugs or failed transitions.
+	for child in get_children():
+		if child == null or not is_instance_valid(child):
+			continue
+		if child.is_in_group("jeffrey_mode_host"):
+			child.queue_free()
 	get_tree().paused = false

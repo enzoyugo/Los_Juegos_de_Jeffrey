@@ -206,7 +206,7 @@ def test_shared_lightweight_materials_and_no_new_atlas() -> None:
     assert "align_entry_to" in lab
     assert 'CONTROLLER_MODE' not in lab or "BASELINE" in lab
     assert "F5" in lab
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
     assert (PROJECT_ROOT / "scenes/debug/TrackModularKitPilotLab.tscn").exists()
     assert (PROJECT_ROOT / "scenes/track/modules/TrackPiece.tscn").exists()
 

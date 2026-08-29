@@ -32,7 +32,7 @@ def test_track_runtime_authorities_are_split() -> None:
     atlas_import = _read(
         "assets/vehicles/track/source/track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg.import"
     )
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
     assert "SHARED_ATLAS" in config
     assert "_packed_for_mode" in visual
     assert "preload(\"res://assets/vehicles/track/source/track_car_base_v1.glb\")" not in visual
@@ -66,7 +66,7 @@ def test_road_width_and_baseline_canonical_unchanged() -> None:
     assert "ROAD_WIDTH := 11.0" in config
     assert "ROAD_SHOULDER := 0.7" in config
     assert "GUARDRAIL_HEIGHT := 0.9" in config
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in config
 
 
 def test_modular_kit_spec_and_inventory_exist() -> None:

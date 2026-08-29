@@ -81,12 +81,13 @@ func _ready() -> void:
 	Layout.bind_full(summary_margin)
 	summary_margin.add_theme_constant_override("margin_left", 28)
 	summary_margin.add_theme_constant_override("margin_right", 28)
-	summary_margin.add_theme_constant_override("margin_top", 72)
-	summary_margin.add_theme_constant_override("margin_bottom", 110)
+	summary_margin.add_theme_constant_override("margin_top", 56)
+	summary_margin.add_theme_constant_override("margin_bottom", 100)
 	summary.art_space.add_child(summary_margin)
 	summary_margin.add_child(summary_box)
-	_count = Layout.outlined_label("0 SELECCIONADOS", Styles.SIZE_COUNTER, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_count = Layout.outlined_label("0 SELECCIONADOS", 22, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
 	Styles.apply(_count, "counter")
+	_count.add_theme_font_size_override("font_size", 22)
 	summary_box.add_child(_count)
 	var limits := _limits()
 	_limits_label = Layout.outlined_label("MÍN %d · MÁX %d" % [limits.x, limits.y], Styles.SIZE_HELPER, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
@@ -182,10 +183,12 @@ func _rebuild() -> void:
 
 
 func _selected() -> Array[String]:
+	## Card toggle state is the single authority — not a parallel sidebar list.
 	var selected: Array[String] = []
-	for profile_id in JeffreyCore.session.active_player_ids:
-		if _cards.has(profile_id) and _cards[profile_id].button_pressed:
-			selected.append(profile_id)
+	for profile_id in _cards.keys():
+		var card = _cards[profile_id]
+		if card != null and is_instance_valid(card) and card.button_pressed:
+			selected.append(str(profile_id))
 	return selected
 
 

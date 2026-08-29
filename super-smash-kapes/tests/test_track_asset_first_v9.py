@@ -75,7 +75,7 @@ def test_firewalls_intact() -> None:
     assert "CORE_DIR_V8_15M" not in main
     assert "finish_runoff" not in main
     cfg = _read("scripts/track/track_config.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in cfg
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in cfg
     zcfg = _read("scripts/zombies/zombies_config.gd")
     assert "MAIN_ENTRANCE_COST := 1500" in zcfg
     assert "raw_models" not in _read("scripts/zombies/zombies_map.gd")

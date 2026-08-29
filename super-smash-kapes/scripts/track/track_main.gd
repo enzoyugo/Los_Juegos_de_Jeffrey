@@ -6,12 +6,14 @@ signal session_exited
 const Config := preload("res://scripts/track/track_config.gd")
 const RaceScript := preload("res://scripts/track/track_race.gd")
 const CAR_SCENE_PATH := "res://scenes/track/TrackCar.tscn"
+const FOUR_WHEEL_SCENE_PATH := "res://scenes/track/TrackCarWheelPhysics.tscn"
 const CamScript := preload("res://scripts/track/track_camera.gd")
 const TurnsScript := preload("res://scripts/track/track_turn_manager.gd")
 const RecorderScript := preload("res://scripts/track/track_ghost_recorder.gd")
 const GhostScript := preload("res://scripts/track/track_ghost_player.gd")
 const HudScript := preload("res://scripts/track/track_hud.gd")
 const ClockScript := preload("res://scripts/track/track_race_clock.gd")
+## Production authority: articulated 4-wheel RigidBody. Opt out with SSK_TRACK_CONTROLLER=BASELINE.
 
 var participants: Array = []
 var _race
@@ -42,11 +44,15 @@ var _copa_recorded: bool = false
 
 func _spawn_player_car():
 	var override := OS.get_environment("SSK_TRACK_CONTROLLER").strip_edges().to_upper()
-	if override == "4WHEEL" or override == "FOUR_WHEEL_V1":
-		var packed: PackedScene = load("res://scenes/track/TrackCarWheelPhysics.tscn") as PackedScene
-		if packed != null:
-			print("[TRACK_MAIN] controller=FOUR_WHEEL_V1 (SSK_TRACK_CONTROLLER override)")
-			return packed.instantiate()
+	if override == "BASELINE" or override == "FUSED" or override == "TRACKCAR":
+		var baseline: PackedScene = load(CAR_SCENE_PATH) as PackedScene
+		print("[TRACK_MAIN] controller=BASELINE (SSK_TRACK_CONTROLLER override)")
+		return baseline.instantiate()
+	var four_wheel: PackedScene = load(FOUR_WHEEL_SCENE_PATH) as PackedScene
+	if four_wheel != null:
+		print("[TRACK_MAIN] controller=FOUR_WHEEL_V1")
+		return four_wheel.instantiate()
+	push_warning("[TRACK_MAIN] FOUR_WHEEL missing; falling back to BASELINE TrackCar")
 	var CarScene: PackedScene = load(CAR_SCENE_PATH) as PackedScene
 	return CarScene.instantiate()
 
@@ -65,6 +71,8 @@ func setup(roster: Array, seed_value: int = 0, length_id: String = "", difficult
 func _ready() -> void:
 	Config.ensure_actions()
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	add_to_group("jeffrey_mode_host")
+	add_to_group("jeffrey_track_host")
 	_race = RaceScript.new()
 	add_child(_race)
 	_car = _spawn_player_car()

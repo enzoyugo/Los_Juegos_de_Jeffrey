@@ -129,7 +129,7 @@ def test_runtime_uses_v3_not_v2() -> None:
     assert "track_extended_debug_camera.gd" in lab
     assert (PROJECT_ROOT / "scenes/debug/TrackCarSemanticOrientationLab.tscn").exists()
     assert (PROJECT_ROOT / "scenes/debug/TrackCarArticulatedIntegrityLab.tscn").exists()
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
 
 
 def test_compression_authority_units() -> None:
@@ -144,8 +144,9 @@ def test_compression_authority_units() -> None:
     assert abs(local * vis_scale - 0.08) < 1e-9
 
 
-def test_baseline_not_promoted() -> None:
+def test_four_wheel_is_production_default() -> None:
     main = _read("scripts/track/track_main.gd")
-    assert "res://scenes/track/TrackCar.tscn" in main
+    assert "TrackCarWheelPhysics.tscn" in main
+    assert 'override == "BASELINE"' in main
     ghost = _read("scripts/track/track_ghost_player.gd")
     assert "TrackWheelCar" not in ghost

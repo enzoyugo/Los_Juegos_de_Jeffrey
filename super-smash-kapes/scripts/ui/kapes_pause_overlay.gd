@@ -29,14 +29,14 @@ func _ready() -> void:
 	tween.tween_property(self, "modulate:a", 1.0, KapesVisual.FAST_MOTION)
 
 func _build_content() -> void:
-	var title := _label("PAUSA", 62, KapesVisual.WHITE, Vector2(70, 58))
-	var subtitle := _label("LA PELEA ESPERA", 20, KapesVisual.MUTED, Vector2(76, 132))
-	var resume := _button("CONTINUAR", Vector2(70, 220), Vector2(570, 80), 32)
+	var title := _label("PAUSA", 56, KapesVisual.GOLD, Vector2(70, 48))
+	var subtitle := _label("SMASH KAPES", 18, Color("#c47a5a"), Vector2(76, 118))
+	var resume := _button("CONTINUAR", Vector2(70, 200), Vector2(570, 78), 30)
 	resume.pressed.connect(func(): resume_pressed.emit())
 	resume.grab_focus()
-	var restart := _button("REINICIAR", Vector2(70, 315), Vector2(270, 62), 24)
+	var restart := _button("REINICIAR", Vector2(70, 300), Vector2(270, 62), 24)
 	restart.pressed.connect(func(): restart_pressed.emit())
-	var menu := _button("MENÚ PRINCIPAL", Vector2(370, 315), Vector2(270, 62), 24)
+	var menu := _button("VOLVER AL HUB", Vector2(370, 300), Vector2(270, 62), 22)
 	menu.pressed.connect(func(): menu_pressed.emit())
 	var Hint := preload("res://scripts/ui/jeffrey/components/jeffrey_input_hint.gd")
 	var hints := HBoxContainer.new()
@@ -46,7 +46,7 @@ func _build_content() -> void:
 	hints.size = Vector2(570, 36)
 	_panel.add_child(hints)
 	hints.add_child(Hint.make("confirm", "Continuar", KapesVisual.GOLD))
-	hints.add_child(Hint.make("back", "Menú", KapesVisual.MUTED))
+	hints.add_child(Hint.make("back", "Hub", KapesVisual.MUTED))
 	hints.add_child(Hint.make("attack", "Ataque", KapesVisual.P1_COLOR))
 	hints.add_child(Hint.make("jump", "Salto", KapesVisual.P2_COLOR))
 

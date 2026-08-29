@@ -359,24 +359,40 @@ func _build_pause() -> void:
 	Layout.bind_full(_pause)
 	add_child(_pause)
 	var wash := ColorRect.new()
-	wash.color = Color(0, 0, 0, 0.7)
+	wash.color = Color(0.02, 0.01, 0.05, 0.82)
 	Layout.bind_full(wash)
 	_pause.add_child(wash)
+	var card := PanelContainer.new()
+	var card_style := StyleBoxFlat.new()
+	card_style.bg_color = Color(0.05, 0.04, 0.09, 0.96)
+	card_style.border_color = Color("#c084fc")
+	card_style.set_border_width_all(2)
+	card_style.corner_radius_top_left = 8
+	card_style.corner_radius_top_right = 18
+	card_style.corner_radius_bottom_right = 8
+	card_style.corner_radius_bottom_left = 18
+	card_style.content_margin_left = 28
+	card_style.content_margin_right = 28
+	card_style.content_margin_top = 22
+	card_style.content_margin_bottom = 22
+	card.add_theme_stylebox_override("panel", card_style)
+	_pause.add_child(card)
+	Layout.apply_frac(card, 0.34, 0.28, 0.32, 0.44)
 	var box := VBoxContainer.new()
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
 	box.add_theme_constant_override("separation", 12)
-	_pause.add_child(box)
-	Layout.apply_frac(box, 0.35, 0.35, 0.3, 0.3)
-	box.add_child(Layout.outlined_label("PAUSA", 28, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
+	card.add_child(box)
+	box.add_child(Layout.outlined_label("PAUSA", 34, Color("#f5c542"), HORIZONTAL_ALIGNMENT_CENTER))
+	box.add_child(Layout.outlined_label("TRACK", 14, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
 	var resume = GoldButton.new()
-	resume.configure("SEGUIR", Vector2(200, 44))
+	resume.configure("SEGUIR", Vector2(220, 48))
 	resume.pressed.connect(func():
 		show_pause(false)
 		resume_pressed.emit()
 	)
 	box.add_child(resume)
 	var hub = GoldButton.new()
-	hub.configure("HUB", Vector2(200, 44))
+	hub.configure("VOLVER AL HUB", Vector2(220, 44))
 	hub.pressed.connect(func(): hub_pressed.emit())
 	box.add_child(hub)
 	var nxt = GoldButton.new()

@@ -46,22 +46,24 @@ func _check_registries(errors: PackedStringArray) -> void:
 		if not ResourceLoader.exists(smash.scene_path):
 			errors.append("smash scene_path missing: %s" % smash.scene_path)
 	var racing = JeffreyCore.modes.get_mode(ModeRegistryScript.MODE_RACING)
-	if racing == null or racing.enabled or racing.max_players != 10:
-		errors.append("racing placeholder metadata mismatch")
-	if racing != null and racing.availability != "development":
-		errors.append("racing availability should be development")
-	if racing != null and racing.status_label() != "EN DESARROLLO":
+	if racing == null or not racing.enabled or racing.max_players != 10:
+		errors.append("racing mode metadata mismatch")
+	if racing != null and racing.availability != "playable":
+		errors.append("racing availability should be playable")
+	if racing != null and racing.status_label() != "JUGAR":
 		errors.append("racing status_label mismatch")
+	if racing != null and racing.display_name != "Track":
+		errors.append("racing display_name should be Track")
 	if racing != null and not ResourceLoader.exists(racing.scene_path):
-		errors.append("racing greybox scene missing")
+		errors.append("racing scene missing")
 	if racing != null and racing.scene_path.find("TrackMain.tscn") < 0:
-		errors.append("racing should point at Track greybox")
+		errors.append("racing should point at TrackMain")
 	var zombies = JeffreyCore.modes.get_mode(ModeRegistryScript.MODE_ZOMBIES)
-	if zombies == null or zombies.enabled or zombies.max_players != 2:
-		errors.append("zombies placeholder metadata mismatch")
-	if zombies != null and zombies.availability != "development":
-		errors.append("zombies availability should be development")
-	if zombies != null and zombies.status_label() != "EN DESARROLLO":
+	if zombies == null or not zombies.enabled or zombies.max_players != 2:
+		errors.append("zombies mode metadata mismatch")
+	if zombies != null and zombies.availability != "playable":
+		errors.append("zombies availability should be playable")
+	if zombies != null and zombies.status_label() != "JUGAR":
 		errors.append("zombies status_label mismatch")
 	var smash = JeffreyCore.modes.get_mode(ModeRegistryScript.MODE_SMASH)
 	if smash != null and smash.availability != "playable":
@@ -69,9 +71,9 @@ func _check_registries(errors: PackedStringArray) -> void:
 	if smash != null and smash.status_label() != "JUGAR":
 		errors.append("smash status_label mismatch")
 	if zombies != null and not ResourceLoader.exists(zombies.scene_path):
-		errors.append("zombies greybox scene missing")
+		errors.append("zombies scene missing")
 	if zombies != null and zombies.scene_path.find("ZombiesMain.tscn") < 0:
-		errors.append("zombies should point at Zombies greybox")
+		errors.append("zombies should point at ZombiesMain")
 	if JeffreyCore.characters.get_character("terere") == null:
 		errors.append("CharacterRegistry missing terere")
 	if JeffreyCore.characters.get_character("jaguarete") == null:

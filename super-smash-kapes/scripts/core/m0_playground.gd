@@ -211,7 +211,7 @@ func _handle_ko(fighter: Fighter) -> void:
 	if stage_visual != null:
 		if fighter.stocks <= 0 and stage_visual.has_method("show_final_ko"):
 			stage_visual.show_final_ko()
-		else:
+		elif stage_visual.has_method("show_ko"):
 			stage_visual.show_ko()
 	if fighter.stocks <= 0:
 		fighter.eliminate()

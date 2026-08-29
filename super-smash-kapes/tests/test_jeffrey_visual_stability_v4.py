@@ -66,7 +66,7 @@ def test_trackmain_stays_baseline() -> None:
     config = _read("scripts/track/track_config.gd")
     main = _read("scripts/track/track_main.gd")
     lab = _read("scripts/track/track_generator_v2_lab.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in config
     assert "track_generator_v2" not in main
     assert "_mode: String = MODE_FOUR_WHEEL" in lab
     assert "grounded wheels" in lab

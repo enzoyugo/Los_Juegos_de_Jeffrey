@@ -33,7 +33,7 @@ def test_lab_defaults_4wheel_trackmain_stays_baseline() -> None:
     assert "KEY_F2" in lab
     assert "TrackCarWheelPhysics.tscn" in lab
     assert "TrackCar.tscn" in lab
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in config
     assert "track_generator_v2" not in main
 
 

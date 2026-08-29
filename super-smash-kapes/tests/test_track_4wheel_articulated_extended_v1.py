@@ -286,7 +286,7 @@ def test_extended_lab_and_import_flags() -> None:
     assert "ramp_small" in lab
     assert "jump_small" in lab
     assert "boost_straight" in lab
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
     for name in ALL_GLBS:
         text = (CORE / (name + ".import")).read_text(encoding="utf-8")
         assert "gltf/embedded_image_handling=0" in text

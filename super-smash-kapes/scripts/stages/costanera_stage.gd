@@ -31,7 +31,7 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	city.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	city.albedo_color = Color("#152033")
 	for i in range(-4, 5):
-		var h := 6.0 + abs(i) * 1.4 + float(i % 2) * 2.0
+		var h: float = 6.0 + float(absi(i)) * 1.4 + float(i % 2) * 2.0
 		_box(root, city, Vector3(4.5, h, 2), Vector3(i * 7.0, 4.0 + h * 0.5, -2.0))
 	var lamp := StandardMaterial3D.new()
 	lamp.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED

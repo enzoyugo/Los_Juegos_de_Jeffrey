@@ -16,7 +16,7 @@ def test_hud_telemetry_is_safe() -> None:
     assert "int(_car.get(\"debug_grounded_n\"))" not in lab
     assert "Telemetry.debug_int" in lab
     assert "OPTIONAL" in tel or "debug_int" in tel
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
 
 
 def test_pipeline_and_labs_exist() -> None:

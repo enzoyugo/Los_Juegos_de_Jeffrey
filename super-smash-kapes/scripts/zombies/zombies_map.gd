@@ -305,6 +305,7 @@ func _add_sign() -> void:
 
 
 func blender_env_path() -> String:
+	## Production authority: V3. V4.x candidates stay lab-only (firewall + NOT_CANONICAL).
 	if ResourceLoader.exists(BLENDER_ENV_V3):
 		return BLENDER_ENV_V3
 	if ResourceLoader.exists(BLENDER_ENV_V3_ALT):

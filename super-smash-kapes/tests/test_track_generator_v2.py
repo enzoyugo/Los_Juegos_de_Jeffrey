@@ -128,7 +128,7 @@ def test_generator_source_has_reject_reasons_and_accepted() -> None:
 def test_controller_mode_still_baseline() -> None:
     config = _read("scripts/track/track_config.gd")
     main = _read("scripts/track/track_main.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in config
     assert "TrackGeneratorV2" not in main
     assert "track_generator_v2" not in main
 

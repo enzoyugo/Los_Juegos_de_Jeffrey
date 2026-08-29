@@ -37,7 +37,7 @@ def test_zombies_greybox_is_honest() -> None:
     assert "setup" in main
 
 
-def test_zombies_is_wired_as_development_greybox() -> None:
+def test_zombies_is_wired_as_playable_mode() -> None:
     app = _read("scripts/core/jeffrey/jeffrey_app.gd")
     registry = _read("scripts/core/jeffrey/game_mode_registry.gd")
     assert "ZombiesMain.tscn" in app
@@ -45,5 +45,6 @@ def test_zombies_is_wired_as_development_greybox() -> None:
     assert "MODE_ZOMBIES" in app
     assert 'ZOMBIES_SCENE := "res://scenes/zombies/ZombiesMain.tscn"' in registry
     assert "ZombiesComingSoon.tscn" in registry
-    assert "AVAIL_DEVELOPMENT" in registry
+    assert "ModeDef.AVAIL_PLAYABLE" in registry
     assert (PROJECT_ROOT / "scenes/modes/zombies/ZombiesComingSoon.tscn").exists()
+    assert '"Zombies",\n\t\ttrue,' in registry or "Zombies\",\n\t\ttrue" in registry

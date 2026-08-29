@@ -106,7 +106,7 @@ def test_showcases_include_v3_vocabulary() -> None:
 
 def test_controller_mode_baseline_and_handling_frozen() -> None:
     config = _read("scripts/track/track_config.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in config
     handling = _read("scripts/track/track_wheel_physics_config.gd")
     for token in HANDLING_TOKENS:
         assert token in handling, token

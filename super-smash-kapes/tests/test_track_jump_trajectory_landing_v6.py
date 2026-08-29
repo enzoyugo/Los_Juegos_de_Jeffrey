@@ -21,7 +21,7 @@ def test_handling_still_frozen() -> None:
     assert "ENGINE_FORCE := 6200.0" in cfg
     assert "SPRING_STRENGTH := 32000.0" in cfg
     assert "CENTER_OF_MASS_OFFSET := Vector3(0.0, -0.12, 0.06)" in cfg
-    assert 'CONTROLLER_MODE := "BASELINE"' in _read("scripts/track/track_config.gd")
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in _read("scripts/track/track_config.gd")
 
 
 def test_v6_lab_and_gates_exist() -> None:

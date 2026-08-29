@@ -19,20 +19,21 @@ def test_source_glb_untouched_and_articulated_exists() -> None:
     assert processed.resolve() != source.resolve()
 
 
-def test_baseline_controller_remains_canonical() -> None:
+def test_baseline_controller_available_four_wheel_is_default() -> None:
     config = _read("scripts/track/track_config.gd")
     main = _read("scripts/track/track_main.gd")
     car = _read("scripts/track/track_car_controller.gd")
     scene = _read("scenes/track/TrackCar.tscn")
-    assert 'CONTROLLER_MODE := "BASELINE"' in config
     assert "CONTROLLER_FOUR_WHEEL_V1" in config
     assert "BASELINE_TRACK_CONTROLLER" in car
     assert "class_name TrackCarController" in car
     assert "CharacterBody3D" in scene
     assert "res://scripts/track/track_car_controller.gd" in scene
     assert "res://scenes/track/TrackCar.tscn" in main
-    assert "CarScene.instantiate()" in main
+    assert "TrackCarWheelPhysics.tscn" in main
     assert "SSK_TRACK_CONTROLLER" in main
+    assert 'override == "BASELINE"' in main
+    assert "FOUR_WHEEL_V1" in main
 
 
 def test_four_wheel_parallel_architecture() -> None:

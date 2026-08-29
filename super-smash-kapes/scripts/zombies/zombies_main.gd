@@ -43,6 +43,8 @@ func setup(roster: Array) -> void:
 func _ready() -> void:
 	Config.ensure_actions()
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	add_to_group("jeffrey_mode_host")
+	add_to_group("jeffrey_zombies_host")
 	_state = StateScript.new()
 	_waves = WavesScript.new()
 	_map = MapScript.new()
@@ -51,6 +53,8 @@ func _ready() -> void:
 	var Probe := load("res://scripts/debug/jeffrey_resource_probe.gd")
 	if Probe != null:
 		Probe.dump("ZombiesMain.ready", self)
+		var hosts := get_tree().get_nodes_in_group("jeffrey_zombies_host")
+		print("[ZOMBIES_LIFECYCLE] host_count=%d map_children=%d" % [hosts.size(), _map.get_child_count()])
 	_audio = AudioScript.new()
 	add_child(_audio)
 	if _map.main_entrance != null:

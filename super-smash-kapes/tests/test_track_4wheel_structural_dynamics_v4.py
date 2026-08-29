@@ -159,7 +159,7 @@ def test_v3_asset_not_rebuilt() -> None:
 
 def test_baseline_untouched() -> None:
     cfg = _read("scripts/track/track_config.gd")
-    assert 'CONTROLLER_MODE := "BASELINE"' in cfg
+    assert 'CONTROLLER_MODE := "FOUR_WHEEL_V1"' in cfg
     main = _read("scripts/track/track_main.gd")
     assert "TrackCar.tscn" in main
     cam = _read("scripts/track/track_extended_debug_camera.gd")
