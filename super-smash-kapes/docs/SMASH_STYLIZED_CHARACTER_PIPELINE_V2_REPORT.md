@@ -2,6 +2,8 @@
 
 **Verdict:** `SMASH_STYLIZED_CHARACTER_PIPELINE_V2_REVIEW_READY`
 
+**Git:** `3a5d1af` on `main`
+
 **Internal visual grade (Fort V2 candidate):** **B+** — strong interim improvement, **not** production-canonical.
 
 **Human visual approval required before any production catalog swap.**
