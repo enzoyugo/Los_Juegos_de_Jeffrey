@@ -69,3 +69,8 @@ assets/environments/**/blender/
 
 # Local audit scratch
 _rig_audit.txt
+
+# Smash Fort V2 human-review candidates (exception to *_candidate ignore)
+!assets/fighters/processed/fort/fort_stylized_v2_candidate.glb
+!assets/fighters/processed/fort/fort_v2_candidate_portrait.png
+!assets/fighters/processed/fort/fort_v2_candidate_victory.png

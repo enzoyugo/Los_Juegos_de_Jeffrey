@@ -2,6 +2,9 @@ class_name JeffreyStylizedGlbVisual
 extends "res://scripts/fighters/jeffrey_stylized_fighter_visual.gd"
 
 ## Loads first-party stylized production GLB when present; otherwise builds procedural mesh.
+## Optional Fort V2 candidate: set env SSK_FORT_V2_CANDIDATE=1 (does not change production catalog).
+
+const FORT_V2_CANDIDATE_GLB := "res://assets/fighters/processed/fort/fort_stylized_v2_candidate.glb"
 
 var _glb_root: Node3D
 var _used_glb: bool = false
@@ -34,10 +37,17 @@ func _collect_materials(node: Node) -> void:
 			_materials.append(mi.get_active_material(0) as StandardMaterial3D)
 
 
-func _try_load_glb() -> bool:
+func _resolve_glb_path() -> String:
+	if definition != null and str(definition.id) == "fort":
+		if OS.get_environment("SSK_FORT_V2_CANDIDATE") == "1" and ResourceLoader.exists(FORT_V2_CANDIDATE_GLB):
+			return FORT_V2_CANDIDATE_GLB
 	if definition == null:
-		return false
-	var path := str(definition.production_glb_path)
+		return ""
+	return str(definition.production_glb_path)
+
+
+func _try_load_glb() -> bool:
+	var path := _resolve_glb_path()
 	if path.is_empty() or not ResourceLoader.exists(path):
 		return false
 	var packed = load(path)
