@@ -21,7 +21,7 @@ def test_fighter_catalog_registers_new_ids() -> None:
     for fid in NEW_FIGHTERS:
         assert fid in text
     assert "gameplay_profile" in text
-    assert "JEFFREY_STYLIZED_BLENDER_V1" in text or "JEFFREY_STYLIZED_V1" in text
+    assert "JEFFREY_STYLIZED_BLENDER_V1_INTERIM" in text or "JEFFREY_STYLIZED_BLENDER_V1" in text or "JEFFREY_STYLIZED_V1" in text
     assert "jeffrey_stylized" in text
 
 

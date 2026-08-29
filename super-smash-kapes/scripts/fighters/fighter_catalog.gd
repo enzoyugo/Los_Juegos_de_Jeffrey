@@ -152,7 +152,7 @@ static func _make_stylized(id: String, display: String, tagline: String, victory
 	def.visual_script = STYLIZED_GLB
 	def.fallback_visual_path = "res://scripts/fighters/jeffrey_stylized_fighter_visual.gd"
 	def.production_glb_path = "res://assets/fighters/processed/%s/%s_stylized_v1.glb" % [id, id]
-	def.pipeline_id = "JEFFREY_STYLIZED_BLENDER_V1"
+	def.pipeline_id = "JEFFREY_STYLIZED_BLENDER_V1_INTERIM"
 	def.portrait_texture = _load_texture("res://assets/ui/portraits/%s_portrait.png" % id)
 	def.victory_texture_path = "res://assets/ui/victory/%s/%s_victory.png" % [id, id]
 	def.primary_color = primary

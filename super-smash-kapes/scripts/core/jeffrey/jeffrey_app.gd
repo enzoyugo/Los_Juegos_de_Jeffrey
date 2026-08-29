@@ -11,6 +11,7 @@ const TRANSITION := preload("res://scripts/ui/jeffrey/mode_transition_controller
 const COMING_SOON := preload("res://scripts/ui/jeffrey/coming_soon_screen.gd")
 const ZOMBIES_MENU := preload("res://scripts/ui/jeffrey/zombies_menu_screen.gd")
 const ZOMBIES_LOADING := preload("res://scripts/ui/jeffrey/zombies_loading_screen.gd")
+const TRACK_MENU := preload("res://scripts/ui/jeffrey/track_menu_screen.gd")
 const TRACK_SCENE_PATH := "res://scenes/track/TrackMain.tscn"
 const ZOMBIES_SCENE_PATH := "res://scenes/zombies/ZombiesMain.tscn"
 const OPTIONS_SCREEN := preload("res://scripts/ui/jeffrey/options_screen.gd")
@@ -31,6 +32,8 @@ var pending_mode_id: String = ""
 var pending_stage_id: String = "defensores"
 var pending_match_profile_ids: Array[String] = []
 var pending_participants: Array = []
+var pending_track_length_id: String = "media"
+var pending_track_difficulty_id: String = "picante"
 var _fading: Control = null
 var _transition_busy: bool = false
 var _zombies_browse_characters: bool = false
@@ -302,6 +305,28 @@ func _on_characters_confirmed(payload) -> void:
 		_zombies_browse_characters = false
 		_show_zombies_menu()
 		return
+	if pending_mode_id == ModeRegistry.MODE_RACING:
+		_show_track_menu()
+		return
+	_show_mode_transition()
+
+
+func _show_track_menu() -> void:
+	_clear_smash_host()
+	_transition_busy = false
+	pending_mode_id = ModeRegistry.MODE_RACING
+	var screen = TRACK_MENU.new()
+	screen.configure(pending_participants)
+	screen.length_id = pending_track_length_id
+	screen.difficulty_id = pending_track_difficulty_id
+	screen.start_pressed.connect(_on_track_menu_start)
+	screen.back_pressed.connect(_show_character_select)
+	_present(screen)
+
+
+func _on_track_menu_start(length_id: String, difficulty_id: String) -> void:
+	pending_track_length_id = length_id
+	pending_track_difficulty_id = difficulty_id
 	_show_mode_transition()
 
 
@@ -376,7 +401,13 @@ func _host_track(_context: Dictionary) -> void:
 		return
 	track_host = packed.instantiate()
 	if track_host.has_method("setup"):
-		track_host.call("setup", pending_participants)
+		track_host.call(
+			"setup",
+			pending_participants,
+			0,
+			pending_track_length_id,
+			pending_track_difficulty_id
+		)
 	if track_host.has_signal("session_exited"):
 		track_host.connect("session_exited", func(): _finish_mode_to_hub(ModeRegistry.MODE_RACING))
 	add_child(track_host)

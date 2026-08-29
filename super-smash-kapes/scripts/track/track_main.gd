@@ -27,6 +27,7 @@ var _seed_locked: bool = false
 var _seed_pending: bool = false
 var _length_id: String = "media"
 var _difficulty_id: String = "picante"
+var _menu_configured: bool = false
 var _running: bool = false
 var _timer: float = 0.0
 var _next_check: int = 0
@@ -50,10 +51,15 @@ func _spawn_player_car():
 	return CarScene.instantiate()
 
 
-func setup(roster: Array, seed_value: int = 0) -> void:
+func setup(roster: Array, seed_value: int = 0, length_id: String = "", difficulty_id: String = "") -> void:
 	participants = roster.duplicate(true)
 	_seed_locked = seed_value != 0
 	_seed = seed_value if _seed_locked else Config.fresh_seed()
+	if not str(length_id).is_empty():
+		_length_id = str(length_id)
+	if not str(difficulty_id).is_empty():
+		_difficulty_id = str(difficulty_id)
+	_menu_configured = not str(length_id).is_empty() and not str(difficulty_id).is_empty()
 
 
 func _ready() -> void:
@@ -81,7 +87,6 @@ func _ready() -> void:
 	_race.checkpoint_reached.connect(_on_checkpoint)
 	if participants.is_empty():
 		participants = _fallback_roster()
-	_hud.show_setup()
 	_hud.set_status("")
 	_hud.set_seed(_seed)
 	_hud.set_prompt("ACELERAR W   ·   GIRO A/D   ·   DRIFT Shift   ·   PAUSA Esc")
@@ -92,6 +97,12 @@ func _ready() -> void:
 		_cam.snap_to_target()
 	_car.control_enabled = false
 	_check_total = preview.get("checkpoints", []).size()
+	if _menu_configured:
+		## Canonical shell Track Menu already chose length/difficulty.
+		_hud.hide_setup()
+		call_deferred("_on_play", _length_id, _difficulty_id)
+	else:
+		_hud.show_setup()
 
 
 func _unhandled_input(event: InputEvent) -> void:

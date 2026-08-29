@@ -28,7 +28,7 @@ def test_stage_visual_glbs_exist() -> None:
 
 def test_catalog_uses_blender_pipeline() -> None:
     text = (ROOT / "scripts/fighters/fighter_catalog.gd").read_text(encoding="utf-8")
-    assert "JEFFREY_STYLIZED_BLENDER_V1" in text
+    assert "JEFFREY_STYLIZED_BLENDER_V1" in text or "JEFFREY_STYLIZED_BLENDER_V1_INTERIM" in text
     assert "jeffrey_stylized_glb_visual.gd" in text
     for fid in FIGHTERS:
         assert f"{fid}_stylized_v1.glb" in text or "%s_stylized_v1.glb" in text
