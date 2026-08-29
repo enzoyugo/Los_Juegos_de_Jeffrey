@@ -1,0 +1,16 @@
+{
+  "traditional": {
+    "foot_drift": 0.56981,
+    "root_xz": 0.18059,
+    "hip_z_variance": 0.00301,
+    "hand_drift": 0.80422,
+    "visible_foot_slide": true
+  },
+  "semantic_clean": {
+    "foot_drift": 0.23669,
+    "root_xz": 0.02557,
+    "hip_z_variance": 0.00301,
+    "hand_drift": 0.18686,
+    "visible_foot_slide": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "verdict": "SSK_V5_ANIMATION_COMPATIBILITY_READY_FOR_HUMAN_SELECTION",
+  "verdict_blender": "SSK_V5_ANIMATION_COMPATIBILITY_READY_FOR_HUMAN_SELECTION",
+  "godot_labs_ok": true,
+  "errors": {},
+  "v1_untouched": true,
+  "production_untouched": true,
+  "clips_processed": [
+    "idle",
+    "reaction"
+  ],
+  "clips_not_processed": [
+    "punch",
+    "jump",
+    "jump_attack",
+    "rib_hit",
+    "heavy_attack",
+    "ko",
+    "run",
+    "victory"
+  ],
+  "reaction_medium_not_frozen": true
+}

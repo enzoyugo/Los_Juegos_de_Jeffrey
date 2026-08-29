@@ -1,0 +1,18 @@
+{
+  "character": "terere",
+  "rest_size": [
+    189.8331,
+    75.6011,
+    166.2632
+  ],
+  "idle_mid_size": [
+    196.6873,
+    80.0234,
+    161.3356
+  ],
+  "volume_ratio": 1.0642,
+  "max_axis_ratio": 1.0361,
+  "pass": true,
+  "vertices_over_4_before": 7583,
+  "vertices_over_4_after": 0
+}

@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/stages/stage.gd" id="1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_platform"]
+size = Vector3(30, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape_platform"]
+size = Vector3(30, 1, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_soft"]
+size = Vector3(7, 0.35, 2.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape_soft"]
+size = Vector3(7, 0.35, 2.4)
+
+[node name="M0Stage" type="StaticBody3D"]
+script = ExtResource("1")
+collision_layer = 1
+collision_mask = 2
+
+[node name="Visual" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_platform")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape_platform")
+
+[node name="LeftSoftPlatform" type="StaticBody3D" parent="."]
+collision_layer = 1
+
+[node name="Visual" type="MeshInstance3D" parent="LeftSoftPlatform"]
+mesh = SubResource("BoxMesh_soft")
+position = Vector3(-7, 2.85, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftSoftPlatform"]
+shape = SubResource("BoxShape_soft")
+position = Vector3(-7, 2.85, 0)
+one_way_collision = true
+
+[node name="RightSoftPlatform" type="StaticBody3D" parent="."]
+collision_layer = 1
+
+[node name="Visual" type="MeshInstance3D" parent="RightSoftPlatform"]
+mesh = SubResource("BoxMesh_soft")
+position = Vector3(7, 2.85, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RightSoftPlatform"]
+shape = SubResource("BoxShape_soft")
+position = Vector3(7, 2.85, 0)
+one_way_collision = true

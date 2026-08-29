@@ -1,0 +1,33 @@
+{
+	"result": "FAIL_OFFTRACK",
+	"takeoff_vx": -3.28526043891907,
+	"takeoff_yaw_deg": 5.79982525163871,
+	"deck_station": 32.8816070556641,
+	"remaining_deck_m": 3.11839294433594,
+	"ballistic_t": 1.48376775560257,
+	"ballistic_station": 34.8308944702148,
+	"first_vx_t": 0.55,
+	"first_vx_piece": "start",
+	"first_yaw_t": 0.700000000000001,
+	"first_yaw_piece": "start",
+	"impulse_x": {
+		"antiroll": 0.0,
+		"boost": 0.0,
+		"downforce": -3.10955522709523,
+		"lat": -1573.60613300633,
+		"long": -112.811900590484,
+		"rest": 0.0,
+		"susp": 0.0,
+		"tire": -1686.41808790261
+	},
+	"yaw_impulse": {
+		"air_control": -0.0594113667756034,
+		"antiroll": -21.5767449371417,
+		"boost": 0.0,
+		"collision": 0.0,
+		"tire": 1148.63641778569,
+		"yaw_assist": 3.6897219900608
+	},
+	"left_lat": -719.246099953272,
+	"right_lat": -854.36003305306
+}

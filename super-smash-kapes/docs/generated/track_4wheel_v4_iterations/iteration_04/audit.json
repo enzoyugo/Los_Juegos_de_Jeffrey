@@ -1,0 +1,5 @@
+{
+  "iteration": 4,
+  "verdict": "FAIL",
+  "reason": "2 m jump land pad caused 5.9 m/s takeoff (underspeed). Throttle held until takeoff. Same left miss as iter 03."
+}

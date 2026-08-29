@@ -1,0 +1,19 @@
+{
+  "export_format": "GLB",
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_materials": true,
+  "export_colors": true,
+  "export_cameras": false,
+  "export_extras": false,
+  "export_yup": true,
+  "export_apply": false,
+  "export_animations": true,
+  "export_frame_range": true,
+  "export_skins": true,
+  "export_all_influences": false,
+  "export_current_frame": false,
+  "retarget_mode": "clip_relative_to_first_frame",
+  "max_influences": 4,
+  "root_motion": "X=0 Z=0, Hip Y clip-relative scaled"
+}

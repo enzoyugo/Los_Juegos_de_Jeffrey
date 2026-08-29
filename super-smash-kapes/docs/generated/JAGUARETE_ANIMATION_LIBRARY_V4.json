@@ -1,0 +1,127 @@
+{
+  "character": "jaguarete",
+  "retarget": "clip_relative",
+  "rest_size": [
+    186.7794,
+    104.2183,
+    173.1413
+  ],
+  "baked": [
+    {
+      "semantic": "idle",
+      "file": "Idle.fbx",
+      "frames": [
+        1,
+        110
+      ],
+      "loop": true,
+      "volume_ratio": 1.0137,
+      "max_axis_ratio": 1.0856,
+      "pass": true
+    },
+    {
+      "semantic": "jump",
+      "file": "Unarmed Jump.fbx",
+      "frames": [
+        1,
+        71
+      ],
+      "loop": false,
+      "volume_ratio": 4.996,
+      "max_axis_ratio": 1.7632,
+      "pass": true
+    },
+    {
+      "semantic": "air_attack",
+      "file": "Jump Attack.fbx",
+      "frames": [
+        1,
+        115
+      ],
+      "loop": false,
+      "volume_ratio": 1.6549,
+      "max_axis_ratio": 1.0699,
+      "pass": true
+    },
+    {
+      "semantic": "attack_neutral",
+      "file": "Mutant Punch.fbx",
+      "frames": [
+        1,
+        34
+      ],
+      "loop": false,
+      "volume_ratio": 1.0124,
+      "max_axis_ratio": 0.9075,
+      "pass": true
+    },
+    {
+      "semantic": "attack_heavy",
+      "file": "Standing Melee Attack Downward.fbx",
+      "frames": [
+        1,
+        69
+      ],
+      "loop": false,
+      "volume_ratio": 6.0898,
+      "max_axis_ratio": 1.7904,
+      "pass": true
+    },
+    {
+      "semantic": "hit_light",
+      "file": "Reaction.fbx",
+      "frames": [
+        1,
+        56
+      ],
+      "loop": false,
+      "volume_ratio": 2.3575,
+      "max_axis_ratio": 1.1113,
+      "pass": true
+    },
+    {
+      "semantic": "hit_heavy",
+      "file": "Rib Hit.fbx",
+      "frames": [
+        1,
+        31
+      ],
+      "loop": false,
+      "volume_ratio": 2.6045,
+      "max_axis_ratio": 1.3078,
+      "pass": true
+    },
+    {
+      "semantic": "ko",
+      "file": "Falling Back Death.fbx",
+      "frames": [
+        1,
+        79
+      ],
+      "loop": false,
+      "volume_ratio": 3.2742,
+      "max_axis_ratio": 1.4726,
+      "pass": true
+    }
+  ],
+  "failed": [],
+  "skipped": [
+    {
+      "semantic": "run",
+      "reason": "No locomotion FBX in assets/fighters/animations/. Do not map an attack to run."
+    },
+    {
+      "semantic": "victory",
+      "reason": "No celebration clip. Do not map KO/death to victory."
+    },
+    {
+      "file": "Hit To Body.fbx",
+      "reason": "Duplicate hit; Reaction + Rib Hit cover light/heavy."
+    },
+    {
+      "file": "Knocked Out.fbx",
+      "reason": "Duplicate KO; Falling Back Death selected."
+    }
+  ],
+  "output_glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\jaguarete\\jaguarete_game_ready_v4.glb"
+}

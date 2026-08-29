@@ -1,0 +1,360 @@
+{
+  "character": "jaguarete",
+  "solver": "rest_axis_solver_v1",
+  "method": "constraint_world_arms",
+  "shared_generic_solver": true,
+  "rest_source": "edit_bone.matrix_local_with_pose_cleared",
+  "uses_frame_1_as_bind": false,
+  "idle_file": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Idle.fbx",
+  "frame_range": [
+    1,
+    110
+  ],
+  "rest_size": [
+    186.7794,
+    104.2183,
+    173.1413
+  ],
+  "rest_volume": 3370338.765174,
+  "max_volume_ratio": 9.5313,
+  "max_axis_ratio": 2.1017,
+  "max_limb_length_rel_error": 0.0,
+  "max_root_xz": 0.0,
+  "volume_limit": 1.35,
+  "axis_limit": 1.3,
+  "length_rel_tol": 0.04,
+  "volume_pass": false,
+  "length_pass": true,
+  "root_xz_pass": true,
+  "idle_pose_classification": "DEFORMATION_INVALID",
+  "mid_frame_angles": {
+    "L_upperarm_from_down_deg": 120.861,
+    "R_upperarm_from_down_deg": 88.674,
+    "L_forearm_from_down_deg": 150.464,
+    "R_forearm_from_down_deg": 159.365,
+    "L_thigh_from_down_deg": 9.832,
+    "R_thigh_from_down_deg": 9.883,
+    "torso_lean_deg": 0.34,
+    "mean_upperarm_from_down_deg": 104.768
+  },
+  "probes": [
+    {
+      "method": "constraint_world_arms",
+      "max_volume_ratio": 7.7122,
+      "max_axis_ratio": 1.7775,
+      "max_limb_length_rel_error": 0.0,
+      "idle_pose_classification": "DEFORMATION_INVALID",
+      "mid_frame_angles": {
+        "L_upperarm_from_down_deg": 113.951,
+        "R_upperarm_from_down_deg": 81.497,
+        "L_forearm_from_down_deg": 151.058,
+        "R_forearm_from_down_deg": 164.976,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "torso_lean_deg": 14.336,
+        "mean_upperarm_from_down_deg": 97.724
+      },
+      "accepted": false
+    },
+    {
+      "method": "arm_y_aim_only",
+      "max_volume_ratio": 6.9255,
+      "max_axis_ratio": 1.5758,
+      "max_limb_length_rel_error": 0.0,
+      "idle_pose_classification": "DEFORMATION_INVALID",
+      "mid_frame_angles": {
+        "L_upperarm_from_down_deg": 113.951,
+        "R_upperarm_from_down_deg": 81.497,
+        "L_forearm_from_down_deg": 151.058,
+        "R_forearm_from_down_deg": 164.976,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "torso_lean_deg": 14.336,
+        "mean_upperarm_from_down_deg": 97.724
+      },
+      "accepted": false
+    }
+  ],
+  "texture_hashes": {
+    "diffuse": "654179021409871a",
+    "normal": "d21a232eda6d9a1a"
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "volume_ratio": 9.1443,
+      "max_axis_ratio": 2.0266,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01764,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 121.037,
+        "R_upperarm_from_down_deg": 82.413,
+        "L_forearm_from_down_deg": 145.337,
+        "R_forearm_from_down_deg": 164.485,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 101.725
+      }
+    },
+    {
+      "frame": 11,
+      "volume_ratio": 8.9981,
+      "max_axis_ratio": 2.054,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01901,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 125.454,
+        "R_upperarm_from_down_deg": 90.478,
+        "L_forearm_from_down_deg": 146.495,
+        "R_forearm_from_down_deg": 162.605,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 107.966
+      }
+    },
+    {
+      "frame": 21,
+      "volume_ratio": 8.1738,
+      "max_axis_ratio": 2.0555,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01701,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 122.467,
+        "R_upperarm_from_down_deg": 83.506,
+        "L_forearm_from_down_deg": 149.762,
+        "R_forearm_from_down_deg": 163.889,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 102.987
+      }
+    },
+    {
+      "frame": 31,
+      "volume_ratio": 9.4123,
+      "max_axis_ratio": 2.0188,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01705,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 119.556,
+        "R_upperarm_from_down_deg": 76.222,
+        "L_forearm_from_down_deg": 142.799,
+        "R_forearm_from_down_deg": 162.654,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 97.889
+      }
+    },
+    {
+      "frame": 41,
+      "volume_ratio": 8.8097,
+      "max_axis_ratio": 2.0034,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01911,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 116.822,
+        "R_upperarm_from_down_deg": 87.831,
+        "L_forearm_from_down_deg": 149.907,
+        "R_forearm_from_down_deg": 167.007,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 102.327
+      }
+    },
+    {
+      "frame": 51,
+      "volume_ratio": 8.161,
+      "max_axis_ratio": 2.0475,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01965,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 124.115,
+        "R_upperarm_from_down_deg": 95.016,
+        "L_forearm_from_down_deg": 152.84,
+        "R_forearm_from_down_deg": 154.416,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 109.566
+      }
+    },
+    {
+      "frame": 55,
+      "volume_ratio": 8.6611,
+      "max_axis_ratio": 2.0286,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.02022,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 120.861,
+        "R_upperarm_from_down_deg": 88.674,
+        "L_forearm_from_down_deg": 150.464,
+        "R_forearm_from_down_deg": 159.365,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 104.768
+      }
+    },
+    {
+      "frame": 61,
+      "volume_ratio": 8.0352,
+      "max_axis_ratio": 2.0711,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01816,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 127.398,
+        "R_upperarm_from_down_deg": 80.451,
+        "L_forearm_from_down_deg": 148.492,
+        "R_forearm_from_down_deg": 157.976,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 103.924
+      }
+    },
+    {
+      "frame": 71,
+      "volume_ratio": 8.2915,
+      "max_axis_ratio": 2.0745,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01812,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 119.253,
+        "R_upperarm_from_down_deg": 83.77,
+        "L_forearm_from_down_deg": 153.633,
+        "R_forearm_from_down_deg": 165.795,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 101.511
+      }
+    },
+    {
+      "frame": 81,
+      "volume_ratio": 9.5313,
+      "max_axis_ratio": 2.0233,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.0203,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 124.639,
+        "R_upperarm_from_down_deg": 97.186,
+        "L_forearm_from_down_deg": 142.842,
+        "R_forearm_from_down_deg": 153.629,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 110.912
+      }
+    },
+    {
+      "frame": 91,
+      "volume_ratio": 9.422,
+      "max_axis_ratio": 2.0839,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01882,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 136.441,
+        "R_upperarm_from_down_deg": 81.062,
+        "L_forearm_from_down_deg": 138.221,
+        "R_forearm_from_down_deg": 164.84,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 108.751
+      }
+    },
+    {
+      "frame": 101,
+      "volume_ratio": 7.6233,
+      "max_axis_ratio": 2.1017,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01564,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 117.469,
+        "R_upperarm_from_down_deg": 82.87,
+        "L_forearm_from_down_deg": 157.118,
+        "R_forearm_from_down_deg": 169.792,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 100.169
+      }
+    },
+    {
+      "frame": 110,
+      "volume_ratio": 9.1443,
+      "max_axis_ratio": 2.0266,
+      "max_length_rel_error": 0.0,
+      "hip_location": [
+        0.0,
+        -0.01764,
+        0.0
+      ],
+      "angles": {
+        "L_upperarm_from_down_deg": 121.037,
+        "R_upperarm_from_down_deg": 82.413,
+        "L_forearm_from_down_deg": 145.337,
+        "R_forearm_from_down_deg": 164.485,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "torso_lean_deg": 0.34,
+        "mean_upperarm_from_down_deg": 101.725
+      }
+    }
+  ],
+  "output_glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\solver_v1\\jaguarete\\jaguarete_idle_solver_v1.glb",
+  "output_blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\solver_v1\\jaguarete\\jaguarete_idle_solver_v1_preview.blend",
+  "production_v4_untouched": true
+}

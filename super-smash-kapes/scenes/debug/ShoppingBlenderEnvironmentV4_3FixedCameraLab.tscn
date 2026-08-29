@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_sds_blender_v4_3_fixed"]
+
+[ext_resource type="Script" path="res://scripts/debug/shopping_blender_environment_v4_3_fixed_camera_lab.gd" id="1"]
+
+[node name="ShoppingBlenderEnvironmentV4_3FixedCameraLab" type="Node3D"]
+script = ExtResource("1")

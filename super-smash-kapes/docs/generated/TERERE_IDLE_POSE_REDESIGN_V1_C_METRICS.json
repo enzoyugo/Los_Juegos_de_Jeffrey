@@ -1,0 +1,584 @@
+{
+  "method": "canonical_static",
+  "frame_start": 1,
+  "frame_end": 2,
+  "max_volume_ratio": 0.5892,
+  "max_axis_ratio": 0.8776,
+  "max_limb_length_rel_error": 0.0,
+  "max_extreme_verts": 0,
+  "max_root_xz": 0.0,
+  "max_foot_drift": 0.0988,
+  "max_hand_drift": 0.44693,
+  "hip_z_variance": 0.0,
+  "pose_classification": "STANDING_IDLE",
+  "technical_pass": true,
+  "rest_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 112.659,
+      "world_head": [
+        0.21764,
+        0.05158,
+        0.801726
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 87.303,
+      "world_head": [
+        0.416378,
+        0.093318,
+        0.88007
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 90.666,
+      "world_head": [
+        0.573849,
+        0.087846,
+        0.873416
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 89.835,
+      "world_head": [
+        0.728522,
+        0.083189,
+        0.875964
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 112.659,
+      "world_head": [
+        -0.21764,
+        0.05158,
+        0.801726
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 87.303,
+      "world_head": [
+        -0.416378,
+        0.093318,
+        0.88007
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 90.666,
+      "world_head": [
+        -0.57385,
+        0.087846,
+        0.873416
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 89.581,
+      "world_head": [
+        -0.728522,
+        0.083189,
+        0.875964
+      ]
+    },
+    "L_elbow_flex_deg": 3.372,
+    "R_elbow_flex_deg": 3.372
+  },
+  "first_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756485
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.44273,
+        -0.163089,
+        0.800236
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "mid_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756485
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.44273,
+        -0.163089,
+        0.800236
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "last_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756485
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.44273,
+        -0.163089,
+        0.800236
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "principal_axis_ratios": {
+    "x": 0.5684,
+    "y": 1.0345,
+    "z": 1.002
+  },
+  "grounding": {
+    "l_foot_xz_span": 0.0,
+    "r_foot_xz_span": 0.0,
+    "visible_foot_slide": false
+  },
+  "samples": [
+    {
+      "frame": 1,
+      "volume_ratio": 0.5892,
+      "axis_ratio": 0.8776,
+      "limb_length_rel_error": 0.0,
+      "extreme_verts": 0,
+      "root_xz": 0.0,
+      "classification": "STANDING_IDLE",
+      "arm": {
+        "CC_Base_L_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            0.217639,
+            0.014331,
+            0.808397
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "from_down_deg": 34.737,
+          "world_head": [
+            0.419679,
+            0.039986,
+            0.885195
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "from_down_deg": 105.616,
+          "world_head": [
+            0.487033,
+            -0.021403,
+            0.756485
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "from_down_deg": 84.581,
+          "world_head": [
+            0.44273,
+            -0.163089,
+            0.800236
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            -0.217641,
+            0.01433,
+            0.808394
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "from_down_deg": 24.782,
+          "world_head": [
+            -0.419683,
+            0.039984,
+            0.88519
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "from_down_deg": 56.534,
+          "world_head": [
+            -0.475014,
+            0.001711,
+            0.742553
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "from_down_deg": 62.881,
+          "world_head": [
+            -0.346137,
+            0.008145,
+            0.657107
+          ]
+        },
+        "L_elbow_flex_deg": 89.804,
+        "R_elbow_flex_deg": 78.633
+      }
+    },
+    {
+      "frame": 2,
+      "volume_ratio": 0.5892,
+      "axis_ratio": 0.8776,
+      "limb_length_rel_error": 0.0,
+      "extreme_verts": 0,
+      "root_xz": 0.0,
+      "classification": "STANDING_IDLE",
+      "arm": {
+        "CC_Base_L_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            0.217639,
+            0.014331,
+            0.808397
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "from_down_deg": 34.737,
+          "world_head": [
+            0.419679,
+            0.039986,
+            0.885195
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "from_down_deg": 105.616,
+          "world_head": [
+            0.487033,
+            -0.021403,
+            0.756485
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "from_down_deg": 84.581,
+          "world_head": [
+            0.44273,
+            -0.163089,
+            0.800236
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            -0.217641,
+            0.01433,
+            0.808394
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "from_down_deg": 24.782,
+          "world_head": [
+            -0.419683,
+            0.039984,
+            0.88519
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "from_down_deg": 56.534,
+          "world_head": [
+            -0.475014,
+            0.001711,
+            0.742553
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "from_down_deg": 62.881,
+          "world_head": [
+            -0.346137,
+            0.008145,
+            0.657107
+          ]
+        },
+        "L_elbow_flex_deg": 89.804,
+        "R_elbow_flex_deg": 78.633
+      }
+    }
+  ],
+  "character": "terere",
+  "pipeline": "TERERE_IDLE_POSE_REDESIGN_V1",
+  "pose_id": "POSE_C",
+  "label": "CARTOON FIGHTER",
+  "philosophy": "Stronger readable readiness silhouette, still natural, not a boxing caricature.",
+  "animation": false,
+  "copies_raw_mixamo_quaternion": false,
+  "legacy_axis_hack": false,
+  "runtime_retarget": false,
+  "standing_ops": {
+    "CC_Base_Spine01": {
+      "primary": 10.0,
+      "secondary": 0.0
+    },
+    "CC_Base_Head": {
+      "primary": -8.0,
+      "secondary": 0.0
+    },
+    "CC_Base_L_Clavicle": {
+      "primary": 2.0,
+      "secondary": 1.0
+    },
+    "CC_Base_R_Clavicle": {
+      "primary": 2.0,
+      "secondary": 1.0
+    },
+    "CC_Base_L_Upperarm": {
+      "primary": 54.0,
+      "secondary": 30.0
+    },
+    "CC_Base_R_Upperarm": {
+      "primary": 62.0,
+      "secondary": 22.0
+    },
+    "CC_Base_L_Forearm": {
+      "primary": 90.0,
+      "secondary": 0.0
+    },
+    "CC_Base_R_Forearm": {
+      "primary": 82.0,
+      "secondary": 0.0
+    },
+    "CC_Base_L_Hand": {
+      "primary": 4.0,
+      "secondary": 2.0
+    },
+    "CC_Base_R_Hand": {
+      "primary": 5.0,
+      "secondary": 2.0
+    },
+    "CC_Base_L_Calf": {
+      "primary": 40.0,
+      "secondary": 0.0
+    },
+    "CC_Base_R_Calf": {
+      "primary": 40.0,
+      "secondary": 0.0
+    }
+  },
+  "forward_secondary_sign": 1.0,
+  "silhouette": {
+    "spine_from_up_deg": 12.378,
+    "L_upperarm_from_down": 34.737,
+    "R_upperarm_from_down": 24.782,
+    "L_upperarm_down_from_horizontal": 55.263,
+    "R_upperarm_down_from_horizontal": 65.218,
+    "L_elbow_flex": 89.804,
+    "R_elbow_flex": 78.633,
+    "L_knee_flex": 20.402,
+    "R_knee_flex": 42.145,
+    "hands_below_shoulders": true,
+    "shoulder_width": 0.8394,
+    "L_hand_to_torso": 0.4989,
+    "R_hand_to_torso": 0.3463,
+    "L_hand_lateral": 0.4427,
+    "R_hand_lateral": 0.3461,
+    "L_hand_forward": 0.1672,
+    "R_hand_forward": -0.0061,
+    "L_hand_height": 0.8002,
+    "R_hand_height": 0.6571,
+    "center_of_mass_xz": [
+      0.0,
+      0.0
+    ],
+    "L_foot": [
+      0.309501,
+      0.104146,
+      0.171544
+    ],
+    "R_foot": [
+      -0.216379,
+      0.012008,
+      0.162683
+    ],
+    "hip": [
+      0.0,
+      0.0,
+      0.516163
+    ],
+    "possible_hand_body_intersection": false
+  },
+  "screenshots": {
+    "front": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_front.png",
+    "three_quarter": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_three_quarter.png",
+    "side": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_side.png"
+  },
+  "output_glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_c.glb",
+  "output_blend": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_c.blend",
+  "output_glb_sha256": "02407f4b8db9ae7d6a7d84e3fdf43099296d10305cdf8beebd6599242dfeccad",
+  "texture_authority": [
+    {
+      "name": "model_Pbr_Diffuse",
+      "filepath": "//..\\..\\..\\source_rigged\\terere\\actorcore\\autorig_actor.fbm\\model_Pbr_Diffuse.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ],
+      "md5_16": "df16f18e7765e769"
+    },
+    {
+      "name": "model_Pbr_Normal",
+      "filepath": "//..\\..\\..\\source_rigged\\terere\\actorcore\\autorig_actor.fbm\\model_Pbr_Normal.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ],
+      "md5_16": "6e4fac54fed1cd09"
+    }
+  ]
+}

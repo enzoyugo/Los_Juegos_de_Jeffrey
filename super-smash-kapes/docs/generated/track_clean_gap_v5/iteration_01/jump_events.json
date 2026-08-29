@@ -1,0 +1,191 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_ENTRY",
+			"piece": "boost_straight",
+			"pos": [
+				-0.613737940788269,
+				-0.00489281862974167,
+				-34.308952331543
+			],
+			"speed": 26.1064414978027,
+			"t": 2.7,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_EXIT",
+			"piece": "straight_medium",
+			"pos": [
+				-0.820640206336975,
+				-0.0187454298138618,
+				-46.0959053039551
+			],
+			"speed": 34.8045692443848,
+			"t": 3.08333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "RAMP_ENTRY",
+			"piece": "ramp_small",
+			"pos": [
+				-1.24736106395721,
+				0.033552922308445,
+				-70.5102081298828
+			],
+			"speed": 37.7928428649902,
+			"t": 3.73333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "jump_small",
+			"pos": [
+				-1.35971224308014,
+				3.64793419837952,
+				-82.7302780151367
+			],
+			"speed": 14.1714534759521,
+			"t": 4.28333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "TAKEOFF_ZONE",
+			"piece": "jump_small",
+			"pos": [
+				-1.35971224308014,
+				3.64793419837952,
+				-82.7302780151367
+			],
+			"speed": 14.1714534759521,
+			"t": 4.28333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "AIRBORNE_ENTER",
+			"piece": "jump_small",
+			"pos": [
+				-1.35971224308014,
+				3.64793419837952,
+				-82.7302780151367
+			],
+			"speed": 14.1714534759521,
+			"t": 4.28333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "piece=jump_small wheels=4",
+			"grounded": 4,
+			"kind": "FIRST_CONTACT",
+			"piece": "jump_small",
+			"pos": [
+				-1.08829259872437,
+				6.1725172996521,
+				-95.9494934082031
+			],
+			"speed": 10.8548612594604,
+			"t": 5.31666666666665,
+			"throttle": 0.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "FAIL_FIRST_CONTACT_WRONG_PIECE",
+			"piece": "jump_small",
+			"pos": [
+				-1.08829259872437,
+				6.1725172996521,
+				-95.9494934082031
+			],
+			"speed": 10.8548612594604,
+			"t": 5.31666666666665,
+			"throttle": 0.0
+		}
+	],
+	"runs": [
+		{
+			"first_contact": {
+				"boost_active": false,
+				"chassis_pitch": 15.5003356797786,
+				"chassis_roll": 3.4809561781821,
+				"distance_from_landing_deck_start": -6.25050354003906,
+				"grounded": 4,
+				"hit_ids": {
+					"jump_small": 4
+				},
+				"landing_piece": "jump_small",
+				"landing_vy": -1.37386274337769,
+				"piece": "jump_small",
+				"pitch_deg": 15.5003356797786,
+				"pos": [
+					-1.08829259872437,
+					6.1725172996521,
+					-95.9494934082031
+				],
+				"roll_deg": 3.4809561781821,
+				"speed": 10.8548612594604,
+				"t": 5.31666666666665,
+				"throttle": 0.0,
+				"vy": -1.37386274337769,
+				"wheel_count": 4
+			},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 34889.3595088607,
+					"tire": 24000.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_FIRST_CONTACT_WRONG_PIECE",
+			"run": 1,
+			"takeoff": {
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"grounded": 0,
+				"piece": "jump_small",
+				"pitch_deg": 29.9116659982903,
+				"pos": [
+					-1.35971224308014,
+					3.64793419837952,
+					-82.7302780151367
+				],
+				"roll_deg": 0.526603369500605,
+				"speed": 14.1714534759521,
+				"t": 4.28333333333332,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vy": 8.02632522583008
+			}
+		}
+	]
+}

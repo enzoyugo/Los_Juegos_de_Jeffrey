@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ZombiesWeaponData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/zombies/zombies_weapon_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "smg"
+display_name = "SMG"
+damage = 22.0
+fire_rate = 10.0
+mag_size = 30
+reserve_ammo = 90
+reload_time = 1.55
+spread = 0.028
+range_m = 70.0
+automatic = true
+cost = 1800
+ammo_cost = 750

@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://trackcarwheelphysicsv1"]
+
+[ext_resource type="Script" path="res://scripts/track/track_wheel_car.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/track/track_car_visual.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/track/track_arcade_wheel.gd" id="3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_chassis"]
+size = Vector3(1.8, 0.82, 3.55)
+
+[node name="TrackCarWheelPhysics" type="RigidBody3D"]
+collision_layer = 2
+collision_mask = 1
+mass = 420.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, -0.12, 0.06)
+continuous_cd = true
+can_sleep = false
+linear_damp = 0.1
+angular_damp = 1.55
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, 0)
+shape = SubResource("BoxShape3D_chassis")
+
+[node name="WheelPhysicsFL" type="Node3D" parent="."]
+script = ExtResource("3")
+wheel_id = "FL"
+is_front = true
+is_steering = true
+is_driven = true
+
+[node name="WheelPhysicsFR" type="Node3D" parent="."]
+script = ExtResource("3")
+wheel_id = "FR"
+is_front = true
+is_steering = true
+is_driven = true
+
+[node name="WheelPhysicsRL" type="Node3D" parent="."]
+script = ExtResource("3")
+wheel_id = "RL"
+is_front = false
+is_steering = false
+is_driven = true
+
+[node name="WheelPhysicsRR" type="Node3D" parent="."]
+script = ExtResource("3")
+wheel_id = "RR"
+is_front = false
+is_steering = false
+is_driven = true
+
+[node name="VisualRoot" type="Node3D" parent="."]
+script = ExtResource("2")
+use_articulated = true
+
+[node name="CameraAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+
+[node name="DriverHeadAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, 0.35)
+
+[node name="CharacterMount" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0.35)
+
+[node name="ColliderDebug" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, 0)
+visible = false

@@ -1,0 +1,209 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_ENTRY",
+			"piece": "boost_straight",
+			"pos": [
+				-0.155979797244072,
+				-0.00489413738250732,
+				-34.3078918457031
+			],
+			"speed": 26.1055297851563,
+			"t": 2.7,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_EXIT",
+			"piece": "straight_medium",
+			"pos": [
+				0.149224683642387,
+				-0.0187462940812111,
+				-46.092170715332
+			],
+			"speed": 34.8026657104492,
+			"t": 3.08333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "RAMP_ENTRY",
+			"piece": "ramp_takeoff",
+			"pos": [
+				0.420559287071228,
+				0.0323524251580238,
+				-70.5054016113281
+			],
+			"speed": 37.8481712341309,
+			"t": 3.73333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "gap_logical",
+			"pos": [
+				-0.627543091773987,
+				2.92651677131653,
+				-83.9052505493164
+			],
+			"speed": 28.580436706543,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "TAKEOFF_ZONE",
+			"piece": "gap_logical",
+			"pos": [
+				-0.627543091773987,
+				2.92651677131653,
+				-83.9052505493164
+			],
+			"speed": 28.580436706543,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "AIRBORNE_ENTER",
+			"piece": "gap_logical",
+			"pos": [
+				-0.627543091773987,
+				2.92651677131653,
+				-83.9052505493164
+			],
+			"speed": 28.580436706543,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "piece=landing_straight_long wheels=1",
+			"grounded": 1,
+			"kind": "FIRST_CONTACT",
+			"piece": "landing_straight_long",
+			"pos": [
+				-5.26570081710815,
+				1.86704063415527,
+				-124.081604003906
+			],
+			"speed": 18.7457027435303,
+			"t": 5.84999999999998,
+			"throttle": 0.0
+		},
+		{
+			"extra": "",
+			"grounded": 2,
+			"kind": "FAIL_OFFTRACK",
+			"piece": "landing_straight_long",
+			"pos": [
+				-5.61717319488525,
+				1.45066583156586,
+				-128.047668457031
+			],
+			"speed": 10.9256172180176,
+			"t": 6.14999999999998,
+			"throttle": 0.0
+		}
+	],
+	"runs": [
+		{
+			"first_contact": {
+				"boost_active": false,
+				"chassis_pitch": -7.33434336189796,
+				"chassis_roll": -9.99606039748912,
+				"distance_from_landing_deck_start": 32.8816070556641,
+				"grounded": 1,
+				"hit_ids": {
+					"landing_straight_long": 1
+				},
+				"landing_piece": "landing_straight_long",
+				"landing_vy": -6.03742361068726,
+				"piece": "landing_straight_long",
+				"pitch_deg": -7.33434336189796,
+				"pos": [
+					-5.26570081710815,
+					1.86704063415527,
+					-124.081604003906
+				],
+				"roll_deg": -9.99606039748912,
+				"speed": 18.7457027435303,
+				"steer": 0.0,
+				"t": 5.84999999999998,
+				"throttle": 0.0,
+				"vx": -2.34748387336731,
+				"vy": -6.03742361068726,
+				"vz": -18.5981369018555,
+				"wheel_count": 1,
+				"yaw_deg": 9.68199037020536
+			},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 0.0,
+					"tire": 0.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": true,
+				"max_c": 0.0848624122142791,
+				"max_f": 18000.0,
+				"peak_c": {
+					"FL": 0.0334207129478454,
+					"FR": 0.0,
+					"RL": 0.0,
+					"RR": 0.0848624122142791
+				},
+				"peak_f": {
+					"FL": 17879.5235116003,
+					"FR": 1969.70977047109,
+					"RL": 0.0,
+					"RR": 18000.0
+				},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.316666666666667,
+				"time_to_2": 5.96666666666665,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_OFFTRACK",
+			"run": 1,
+			"takeoff": {
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"grounded": 0,
+				"piece": "gap_logical",
+				"pitch_deg": 14.4457151983409,
+				"pos": [
+					-0.627543091773987,
+					2.92651677131653,
+					-83.9052505493164
+				],
+				"roll_deg": 0.901821252298283,
+				"speed": 28.580436706543,
+				"steer": 0.039876054674387,
+				"t": 4.18333333333332,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vx": -3.28526043891907,
+				"vy": 7.98257684707642,
+				"vz": -28.3909931182861,
+				"yaw_deg": 5.79982525163871
+			}
+		}
+	]
+}

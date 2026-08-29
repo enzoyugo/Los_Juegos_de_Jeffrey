@@ -1,0 +1,5 @@
+Jeffrey MCP editor addon.
+Adapted from Godot MCP (https://github.com/elfensky/godot-mcp), MIT.
+Copyright (c) Andrei Lavrenov and contributors.
+Do not copy the Node MCP server, Python tooling, or AI generators into this game repo.
+Remove this folder and the editor_plugins entry in project.godot to uninstall.

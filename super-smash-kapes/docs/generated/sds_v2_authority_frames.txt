@@ -1,0 +1,13 @@
+HUMAN_REVIEW_PENDING
+MAIN_FACADE_WIDE	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_007_ENTRADA_PARKING_1
+MAIN_ENTRANCE_WIDE	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_008_ENTRADA_PARKING_2
+MAIN_ENTRANCE_CLOSE	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_007_ENTRADA_PARKING_1
+PARKING_CENTER	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_001_ESTACIONAMIENTO_MEDIO_01
+PARKING_LEFT	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_009_PARKING_1
+PARKING_RIGHT	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_010_PARKING_2
+PARKING_ISLAND	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_003_ESTACIONAMIENTO_MEDIO_03
+VEHICLE_SCALE	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_011_PARKING_3
+LIGHTING	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_012_PARKING_4
+SIDE_FACADE	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_013_PARKING_5
+URBAN_CONTEXT	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_014_PARKING_6
+NIGHT	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_015_PARKING_SPHERE_1

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_track_width_v7"]
+
+[ext_resource type="Script" path="res://scripts/debug/track_width_camera_drift_lab.gd" id="1"]
+
+[node name="TrackWidthCameraDriftLab" type="Node3D"]
+script = ExtResource("1")

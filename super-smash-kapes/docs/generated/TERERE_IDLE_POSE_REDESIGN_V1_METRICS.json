@@ -1,0 +1,530 @@
+{
+  "pipeline": "TERERE_IDLE_POSE_REDESIGN_V1",
+  "verdict_token": "SSK_TERERE_IDLE_POSE_REDESIGN_V1_READY_FOR_HUMAN_SELECTION",
+  "animation_baked": false,
+  "auto_selected_candidate": null,
+  "wired_into_battle": false,
+  "jaguarete_rebaked": false,
+  "forward_secondary_sign": 1.0,
+  "visibly_distinct": true,
+  "baseline": {
+    "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_semantic_clean_v1.glb",
+    "silhouette": {
+      "spine_from_up_deg": 11.983,
+      "L_upperarm_from_down": 35.484,
+      "R_upperarm_from_down": 27.965,
+      "L_upperarm_down_from_horizontal": 54.516,
+      "R_upperarm_down_from_horizontal": 62.035,
+      "L_elbow_flex": 79.821,
+      "R_elbow_flex": 76.633,
+      "L_knee_flex": 20.402,
+      "R_knee_flex": 42.145,
+      "hands_below_shoulders": true,
+      "shoulder_width": 0.8565,
+      "L_hand_to_torso": 0.5351,
+      "R_hand_to_torso": 0.3892,
+      "L_hand_lateral": 0.5207,
+      "R_hand_lateral": 0.3834,
+      "L_hand_forward": 0.1091,
+      "R_hand_forward": -0.0706,
+      "L_hand_height": 0.6851,
+      "R_hand_height": 0.6259,
+      "center_of_mass_xz": [
+        0.0,
+        0.0
+      ],
+      "L_foot": [
+        0.309501,
+        0.104146,
+        0.171544
+      ],
+      "R_foot": [
+        -0.216379,
+        0.012008,
+        0.162683
+      ],
+      "hip": [
+        0.0,
+        0.0,
+        0.516163
+      ],
+      "possible_hand_body_intersection": false
+    },
+    "screenshots": {
+      "front": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/BASELINE_front.png",
+      "three_quarter": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/BASELINE_three_quarter.png",
+      "side": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/BASELINE_side.png"
+    }
+  },
+  "jaguarete_freeze": {
+    "authority": "JAGUARETE_IDLE_APPROVED_AUTHORITY",
+    "status": "HUMAN_APPROVED_PENDING_PRODUCTION_INTEGRATION",
+    "do_not_rebake": true,
+    "do_not_modify": true,
+    "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/jaguarete/jaguarete_idle_semantic_polished_v1.glb",
+    "blend": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/jaguarete/jaguarete_idle_semantic_polished_v1.blend",
+    "glb_sha256": "e5e4dd145cc454bab39c456a3fbe8f194f56ceab0e9deb8fbb4a87d1686943a4",
+    "glb_bytes": 14151672,
+    "blend_sha256": "dcecb1673ddf52dc41a8719ab61091e0b660e35de022928f4cfad19590eeebec",
+    "animation_name": "idle",
+    "bone_count": 101,
+    "source_pipeline": "SEMANTIC_IDLE_POLISH_V1",
+    "note": "Human approved for now. Pose redesign V1 does not regenerate Jaguarete."
+  },
+  "poses": {
+    "POSE_A": {
+      "label": "RELAXED COMPACT",
+      "philosophy": "Arms low, hands near hips/ribs, relaxed elbows, minimal fight stance.",
+      "healthy": true,
+      "technical_pass": true,
+      "pose_classification": "STANDING_IDLE",
+      "max_volume_ratio": 0.5735,
+      "max_extreme_verts": 0,
+      "max_limb_length_rel_error": 0.0,
+      "roundtrip_ok": true,
+      "roundtrip_bones": 101,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_a.glb",
+      "standing_ops": {
+        "CC_Base_Spine01": {
+          "primary": 8.0,
+          "secondary": 0.0
+        },
+        "CC_Base_Head": {
+          "primary": -6.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Clavicle": {
+          "primary": 4.0,
+          "secondary": 2.0
+        },
+        "CC_Base_R_Clavicle": {
+          "primary": 4.0,
+          "secondary": 2.0
+        },
+        "CC_Base_L_Upperarm": {
+          "primary": 62.0,
+          "secondary": 16.0
+        },
+        "CC_Base_R_Upperarm": {
+          "primary": 66.0,
+          "secondary": 14.0
+        },
+        "CC_Base_L_Forearm": {
+          "primary": 86.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Forearm": {
+          "primary": 84.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Hand": {
+          "primary": 6.0,
+          "secondary": 2.0
+        },
+        "CC_Base_R_Hand": {
+          "primary": 6.0,
+          "secondary": 2.0
+        },
+        "CC_Base_L_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        }
+      },
+      "silhouette": {
+        "spine_from_up_deg": 12.772,
+        "L_upperarm_from_down": 21.155,
+        "R_upperarm_from_down": 16.941,
+        "L_upperarm_down_from_horizontal": 68.845,
+        "R_upperarm_down_from_horizontal": 73.059,
+        "L_elbow_flex": 85.811,
+        "R_elbow_flex": 80.633,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8454,
+        "L_hand_to_torso": 0.4881,
+        "R_hand_to_torso": 0.3285,
+        "L_hand_lateral": 0.457,
+        "R_hand_lateral": 0.3272,
+        "L_hand_forward": 0.1429,
+        "R_hand_forward": -0.029,
+        "L_hand_height": 0.7406,
+        "R_hand_height": 0.6579,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104146,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162683
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      },
+      "screenshots": {
+        "front": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_A_front.png",
+        "three_quarter": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_A_three_quarter.png",
+        "side": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_A_side.png"
+      },
+      "silhouette_from_glb": {
+        "spine_from_up_deg": 12.772,
+        "L_upperarm_from_down": 21.155,
+        "R_upperarm_from_down": 16.94,
+        "L_upperarm_down_from_horizontal": 68.845,
+        "R_upperarm_down_from_horizontal": 73.06,
+        "L_elbow_flex": 85.811,
+        "R_elbow_flex": 80.632,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8454,
+        "L_hand_to_torso": 0.4881,
+        "R_hand_to_torso": 0.3285,
+        "L_hand_lateral": 0.457,
+        "R_hand_lateral": 0.3272,
+        "L_hand_forward": 0.1429,
+        "R_hand_forward": -0.029,
+        "L_hand_height": 0.7406,
+        "R_hand_height": 0.6579,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104147,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162682
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      }
+    },
+    "POSE_B": {
+      "label": "GAME READY",
+      "philosophy": "Hands more forward/up, elbows bent, compact fighting-game stance, small lead/rear asymmetry.",
+      "healthy": true,
+      "technical_pass": true,
+      "pose_classification": "STANDING_IDLE",
+      "max_volume_ratio": 0.5905,
+      "max_extreme_verts": 0,
+      "max_limb_length_rel_error": 0.0,
+      "roundtrip_ok": true,
+      "roundtrip_bones": 101,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_b.glb",
+      "standing_ops": {
+        "CC_Base_Spine01": {
+          "primary": 7.0,
+          "secondary": 0.0
+        },
+        "CC_Base_Head": {
+          "primary": -4.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Clavicle": {
+          "primary": 3.0,
+          "secondary": 1.0
+        },
+        "CC_Base_R_Clavicle": {
+          "primary": 3.0,
+          "secondary": 1.0
+        },
+        "CC_Base_L_Upperarm": {
+          "primary": 50.0,
+          "secondary": 26.0
+        },
+        "CC_Base_R_Upperarm": {
+          "primary": 58.0,
+          "secondary": 20.0
+        },
+        "CC_Base_L_Forearm": {
+          "primary": 90.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Forearm": {
+          "primary": 86.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Hand": {
+          "primary": 8.0,
+          "secondary": 3.0
+        },
+        "CC_Base_R_Hand": {
+          "primary": 7.0,
+          "secondary": 2.0
+        },
+        "CC_Base_L_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        }
+      },
+      "silhouette": {
+        "spine_from_up_deg": 12.968,
+        "L_upperarm_from_down": 36.083,
+        "R_upperarm_from_down": 27.135,
+        "L_upperarm_down_from_horizontal": 53.917,
+        "R_upperarm_down_from_horizontal": 62.865,
+        "L_elbow_flex": 89.804,
+        "R_elbow_flex": 82.633,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8417,
+        "L_hand_to_torso": 0.5043,
+        "R_hand_to_torso": 0.3548,
+        "L_hand_lateral": 0.4551,
+        "R_hand_lateral": 0.3545,
+        "L_hand_forward": 0.162,
+        "R_hand_forward": -0.0122,
+        "L_hand_height": 0.7959,
+        "R_hand_height": 0.6566,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104146,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162683
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      },
+      "screenshots": {
+        "front": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_B_front.png",
+        "three_quarter": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_B_three_quarter.png",
+        "side": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_B_side.png"
+      },
+      "silhouette_from_glb": {
+        "spine_from_up_deg": 12.968,
+        "L_upperarm_from_down": 36.083,
+        "R_upperarm_from_down": 27.135,
+        "L_upperarm_down_from_horizontal": 53.917,
+        "R_upperarm_down_from_horizontal": 62.865,
+        "L_elbow_flex": 89.804,
+        "R_elbow_flex": 82.632,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8417,
+        "L_hand_to_torso": 0.5043,
+        "R_hand_to_torso": 0.3548,
+        "L_hand_lateral": 0.4551,
+        "R_hand_lateral": 0.3545,
+        "L_hand_forward": 0.162,
+        "R_hand_forward": -0.0122,
+        "L_hand_height": 0.7959,
+        "R_hand_height": 0.6566,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104147,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162682
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      }
+    },
+    "POSE_C": {
+      "label": "CARTOON FIGHTER",
+      "philosophy": "Stronger readable readiness silhouette, still natural, not a boxing caricature.",
+      "healthy": true,
+      "technical_pass": true,
+      "pose_classification": "STANDING_IDLE",
+      "max_volume_ratio": 0.5892,
+      "max_extreme_verts": 0,
+      "max_limb_length_rel_error": 0.0,
+      "roundtrip_ok": true,
+      "roundtrip_bones": 101,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_c.glb",
+      "standing_ops": {
+        "CC_Base_Spine01": {
+          "primary": 10.0,
+          "secondary": 0.0
+        },
+        "CC_Base_Head": {
+          "primary": -8.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Clavicle": {
+          "primary": 2.0,
+          "secondary": 1.0
+        },
+        "CC_Base_R_Clavicle": {
+          "primary": 2.0,
+          "secondary": 1.0
+        },
+        "CC_Base_L_Upperarm": {
+          "primary": 54.0,
+          "secondary": 30.0
+        },
+        "CC_Base_R_Upperarm": {
+          "primary": 62.0,
+          "secondary": 22.0
+        },
+        "CC_Base_L_Forearm": {
+          "primary": 90.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Forearm": {
+          "primary": 82.0,
+          "secondary": 0.0
+        },
+        "CC_Base_L_Hand": {
+          "primary": 4.0,
+          "secondary": 2.0
+        },
+        "CC_Base_R_Hand": {
+          "primary": 5.0,
+          "secondary": 2.0
+        },
+        "CC_Base_L_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        },
+        "CC_Base_R_Calf": {
+          "primary": 40.0,
+          "secondary": 0.0
+        }
+      },
+      "silhouette": {
+        "spine_from_up_deg": 12.378,
+        "L_upperarm_from_down": 34.737,
+        "R_upperarm_from_down": 24.782,
+        "L_upperarm_down_from_horizontal": 55.263,
+        "R_upperarm_down_from_horizontal": 65.218,
+        "L_elbow_flex": 89.804,
+        "R_elbow_flex": 78.633,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8394,
+        "L_hand_to_torso": 0.4989,
+        "R_hand_to_torso": 0.3463,
+        "L_hand_lateral": 0.4427,
+        "R_hand_lateral": 0.3461,
+        "L_hand_forward": 0.1672,
+        "R_hand_forward": -0.0061,
+        "L_hand_height": 0.8002,
+        "R_hand_height": 0.6571,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104146,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162683
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      },
+      "screenshots": {
+        "front": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_front.png",
+        "three_quarter": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_three_quarter.png",
+        "side": "E:/SuperSmashKapes/super-smash-kapes/docs/generated/terere_idle_pose_redesign_v1_screenshots/POSE_C_side.png"
+      },
+      "silhouette_from_glb": {
+        "spine_from_up_deg": 12.378,
+        "L_upperarm_from_down": 34.737,
+        "R_upperarm_from_down": 24.782,
+        "L_upperarm_down_from_horizontal": 55.263,
+        "R_upperarm_down_from_horizontal": 65.218,
+        "L_elbow_flex": 89.804,
+        "R_elbow_flex": 78.633,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "hands_below_shoulders": true,
+        "shoulder_width": 0.8394,
+        "L_hand_to_torso": 0.4989,
+        "R_hand_to_torso": 0.3463,
+        "L_hand_lateral": 0.4427,
+        "R_hand_lateral": 0.3461,
+        "L_hand_forward": 0.1672,
+        "R_hand_forward": -0.0061,
+        "L_hand_height": 0.8002,
+        "R_hand_height": 0.6571,
+        "center_of_mass_xz": [
+          0.0,
+          0.0
+        ],
+        "L_foot": [
+          0.309501,
+          0.104147,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162682
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "possible_hand_body_intersection": false
+      }
+    }
+  },
+  "future_motion_architecture": {
+    "executed": false,
+    "rule": "Selected canonical pose is the idle center. Mixamo intra-idle deltas animate around it and must not redefine stance."
+  }
+}

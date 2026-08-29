@@ -1,0 +1,41 @@
+{
+	"boost": {
+		"basis_z": [
+			0.0,
+			0.0,
+			1.0
+		],
+		"origin": [
+			0.0,
+			0.0,
+			-32.0
+		]
+	},
+	"gap_empty": true,
+	"gap_length": 14.0,
+	"gap_road_collision": [],
+	"landing_start": [
+		0.0,
+		0.949903726577759,
+		-95.1999969482422
+	],
+	"layout": "v5",
+	"sequence": [
+		"start",
+		"straight_medium",
+		"boost_straight",
+		"straight_medium",
+		"ramp_takeoff",
+		"gap_logical",
+		"landing_straight_long",
+		"straight_medium",
+		"curve_l_45",
+		"curve_r_45",
+		"finish"
+	],
+	"takeoff_edge": [
+		0.0,
+		2.1899037361145,
+		-81.1999969482422
+	]
+}

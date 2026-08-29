@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_track_drift_v7"]
+
+[ext_resource type="Script" path="res://scripts/debug/track_drift_lab.gd" id="1"]
+
+[node name="TrackDriftLab" type="Node3D"]
+script = ExtResource("1")

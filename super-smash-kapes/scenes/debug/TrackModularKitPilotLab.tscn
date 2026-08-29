@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://trackmodularkitpilotlabv1"]
+
+[ext_resource type="Script" path="res://scripts/track/track_modular_kit_pilot_lab.gd" id="1"]
+
+[node name="TrackModularKitPilotLab" type="Node3D"]
+script = ExtResource("1")

@@ -1,0 +1,1332 @@
+{
+  "terere": {
+    "character": "terere",
+    "mapped_bones": 22,
+    "mean_rest_angle_delta_degrees": 58.8144,
+    "max_rest_angle_delta_degrees": 93.8136,
+    "bones": {
+      "mixamorig5:Hips->CC_Base_Hip": {
+        "source": "mixamorig5:Hips",
+        "target": "CC_Base_Hip",
+        "source_rest_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.694945,
+          0.719063,
+          -8e-06,
+          -1.3e-05
+        ],
+        "rest_correction_quat": [
+          0.694945,
+          -0.719063,
+          8e-06,
+          1.3e-05
+        ],
+        "rest_angle_delta_degrees": 91.9544
+      },
+      "mixamorig5:Spine->CC_Base_Waist": {
+        "source": "mixamorig5:Spine",
+        "target": "CC_Base_Waist",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.818379,
+          0.574679,
+          -1.5e-05,
+          -1.3e-05
+        ],
+        "rest_correction_quat": [
+          0.786874,
+          -0.617113,
+          1.4e-05,
+          1.4e-05
+        ],
+        "rest_angle_delta_degrees": 76.2113
+      },
+      "mixamorig5:Spine1->CC_Base_Spine01": {
+        "source": "mixamorig5:Spine1",
+        "target": "CC_Base_Spine01",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.834943,
+          0.550336,
+          -1.6e-05,
+          -1e-05
+        ],
+        "rest_correction_quat": [
+          0.804701,
+          -0.59368,
+          1.5e-05,
+          1.1e-05
+        ],
+        "rest_angle_delta_degrees": 72.8371
+      },
+      "mixamorig5:Spine2->CC_Base_Spine02": {
+        "source": "mixamorig5:Spine2",
+        "target": "CC_Base_Spine02",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.82421,
+          0.566284,
+          -2e-06,
+          -1e-06
+        ],
+        "rest_correction_quat": [
+          0.793141,
+          -0.609038,
+          1e-06,
+          1e-06
+        ],
+        "rest_angle_delta_degrees": 75.04
+      },
+      "mixamorig5:Neck->CC_Base_NeckTwist01": {
+        "source": "mixamorig5:Neck",
+        "target": "CC_Base_NeckTwist01",
+        "source_rest_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.727358,
+          0.686258,
+          -1.3e-05,
+          -1.2e-05
+        ],
+        "rest_correction_quat": [
+          0.727358,
+          -0.686258,
+          1.3e-05,
+          1.2e-05
+        ],
+        "rest_angle_delta_degrees": 86.6693
+      },
+      "mixamorig5:Head->CC_Base_Head": {
+        "source": "mixamorig5:Head",
+        "target": "CC_Base_Head",
+        "source_rest_quat": [
+          1.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.802987,
+          0.595996,
+          7e-06,
+          1e-06
+        ],
+        "rest_correction_quat": [
+          0.802987,
+          -0.595996,
+          -7e-06,
+          -1e-06
+        ],
+        "rest_angle_delta_degrees": 73.1673
+      },
+      "mixamorig5:LeftShoulder->CC_Base_L_Clavicle": {
+        "source": "mixamorig5:LeftShoulder",
+        "target": "CC_Base_L_Clavicle",
+        "source_rest_quat": [
+          0.443789,
+          0.535472,
+          0.39788,
+          -0.598342
+        ],
+        "target_rest_quat": [
+          0.619798,
+          0.539727,
+          0.460147,
+          -0.335871
+        ],
+        "rest_correction_quat": [
+          0.948117,
+          0.234049,
+          -0.100695,
+          -0.190146
+        ],
+        "rest_angle_delta_degrees": 37.0745
+      },
+      "mixamorig5:LeftArm->CC_Base_L_Upperarm": {
+        "source": "mixamorig5:LeftArm",
+        "target": "CC_Base_L_Upperarm",
+        "source_rest_quat": [
+          0.524309,
+          0.474447,
+          0.474447,
+          -0.524309
+        ],
+        "target_rest_quat": [
+          0.480586,
+          0.497933,
+          0.501688,
+          -0.519046
+        ],
+        "rest_correction_quat": [
+          0.998383,
+          -0.016279,
+          -0.049838,
+          0.021947
+        ],
+        "rest_angle_delta_degrees": 6.5164
+      },
+      "mixamorig5:LeftForeArm->CC_Base_L_Forearm": {
+        "source": "mixamorig5:LeftForeArm",
+        "target": "CC_Base_L_Forearm",
+        "source_rest_quat": [
+          0.525041,
+          0.473637,
+          0.473637,
+          -0.525041
+        ],
+        "target_rest_quat": [
+          0.501698,
+          0.506167,
+          0.482979,
+          -0.508749
+        ],
+        "rest_correction_quat": [
+          0.999022,
+          -0.015514,
+          -0.040759,
+          -0.007281
+        ],
+        "rest_angle_delta_degrees": 5.0682
+      },
+      "mixamorig5:LeftHand->CC_Base_L_Hand": {
+        "source": "mixamorig5:LeftHand",
+        "target": "CC_Base_L_Hand",
+        "source_rest_quat": [
+          0.477786,
+          0.474835,
+          0.511821,
+          -0.53319
+        ],
+        "target_rest_quat": [
+          0.583027,
+          0.376006,
+          0.578882,
+          -0.428479
+        ],
+        "rest_correction_quat": [
+          0.981848,
+          0.186541,
+          0.024798,
+          -0.023717
+        ],
+        "rest_angle_delta_degrees": 21.8671
+      },
+      "mixamorig5:RightShoulder->CC_Base_R_Clavicle": {
+        "source": "mixamorig5:RightShoulder",
+        "target": "CC_Base_R_Clavicle",
+        "source_rest_quat": [
+          0.444151,
+          0.536006,
+          -0.397475,
+          0.597864
+        ],
+        "target_rest_quat": [
+          0.619799,
+          0.539728,
+          -0.460146,
+          0.335871
+        ],
+        "rest_correction_quat": [
+          0.948283,
+          0.2341,
+          0.100674,
+          0.189266
+        ],
+        "rest_angle_delta_degrees": 37.0147
+      },
+      "mixamorig5:RightArm->CC_Base_R_Upperarm": {
+        "source": "mixamorig5:RightArm",
+        "target": "CC_Base_R_Upperarm",
+        "source_rest_quat": [
+          0.523872,
+          0.474929,
+          -0.474929,
+          0.523872
+        ],
+        "target_rest_quat": [
+          0.480584,
+          0.497932,
+          -0.501687,
+          0.51905
+        ],
+        "rest_correction_quat": [
+          0.998429,
+          -0.016302,
+          0.048917,
+          -0.021934
+        ],
+        "rest_angle_delta_degrees": 6.4242
+      },
+      "mixamorig5:RightForeArm->CC_Base_R_Forearm": {
+        "source": "mixamorig5:RightForeArm",
+        "target": "CC_Base_R_Forearm",
+        "source_rest_quat": [
+          0.524707,
+          0.474007,
+          -0.474007,
+          0.524707
+        ],
+        "target_rest_quat": [
+          0.502563,
+          0.505257,
+          -0.48207,
+          0.509661
+        ],
+        "rest_correction_quat": [
+          0.999121,
+          -0.015531,
+          0.038256,
+          0.007266
+        ],
+        "rest_angle_delta_degrees": 4.8051
+      },
+      "mixamorig5:RightHand->CC_Base_R_Hand": {
+        "source": "mixamorig5:RightHand",
+        "target": "CC_Base_R_Hand",
+        "source_rest_quat": [
+          0.475912,
+          0.480903,
+          -0.511105,
+          0.530106
+        ],
+        "target_rest_quat": [
+          0.504071,
+          0.493716,
+          -0.481106,
+          0.520282
+        ],
+        "rest_correction_quat": [
+          0.999023,
+          -0.003438,
+          -0.017151,
+          0.040578
+        ],
+        "rest_angle_delta_degrees": 5.0652
+      },
+      "mixamorig5:LeftUpLeg->CC_Base_L_Thigh": {
+        "source": "mixamorig5:LeftUpLeg",
+        "target": "CC_Base_L_Thigh",
+        "source_rest_quat": [
+          -0.005637,
+          -0.002047,
+          -0.02634,
+          0.999635
+        ],
+        "target_rest_quat": [
+          0.110044,
+          0.109577,
+          0.72938,
+          -0.666249
+        ],
+        "rest_correction_quat": [
+          -0.686063,
+          -0.711172,
+          0.109386,
+          0.107642
+        ],
+        "rest_angle_delta_degrees": 93.3615
+      },
+      "mixamorig5:LeftLeg->CC_Base_L_Calf": {
+        "source": "mixamorig5:LeftLeg",
+        "target": "CC_Base_L_Calf",
+        "source_rest_quat": [
+          0.009911,
+          -0.001814,
+          -0.04315,
+          0.999018
+        ],
+        "target_rest_quat": [
+          0.011783,
+          0.010705,
+          -0.750626,
+          0.660536
+        ],
+        "rest_correction_quat": [
+          0.692374,
+          0.721259,
+          0.018824,
+          0.007049
+        ],
+        "rest_angle_delta_degrees": 92.3634
+      },
+      "mixamorig5:LeftFoot->CC_Base_L_Foot": {
+        "source": "mixamorig5:LeftFoot",
+        "target": "CC_Base_L_Foot",
+        "source_rest_quat": [
+          0.06103,
+          -0.04285,
+          -0.490286,
+          -0.868366
+        ],
+        "target_rest_quat": [
+          0.141128,
+          0.003329,
+          0.124137,
+          -0.982172
+        ],
+        "rest_correction_quat": [
+          0.800492,
+          0.583091,
+          -0.121746,
+          -0.066296
+        ],
+        "rest_angle_delta_degrees": 73.6457
+      },
+      "mixamorig5:LeftToeBase->CC_Base_L_ToeBase": {
+        "source": "mixamorig5:LeftToeBase",
+        "target": "CC_Base_L_ToeBase",
+        "source_rest_quat": [
+          0.065423,
+          -0.046135,
+          -0.718867,
+          -0.690522
+        ],
+        "target_rest_quat": [
+          0.115785,
+          0.050575,
+          -0.047486,
+          -0.990849
+        ],
+        "rest_correction_quat": [
+          0.723581,
+          0.670848,
+          -0.160764,
+          0.02342
+        ],
+        "rest_angle_delta_degrees": 87.2982
+      },
+      "mixamorig5:RightUpLeg->CC_Base_R_Thigh": {
+        "source": "mixamorig5:RightUpLeg",
+        "target": "CC_Base_R_Thigh",
+        "source_rest_quat": [
+          0.005654,
+          0.001731,
+          -0.022333,
+          0.999733
+        ],
+        "target_rest_quat": [
+          0.110109,
+          0.109518,
+          -0.729365,
+          0.666264
+        ],
+        "rest_correction_quat": [
+          0.683187,
+          0.713863,
+          0.11,
+          0.107495
+        ],
+        "rest_angle_delta_degrees": 93.8136
+      },
+      "mixamorig5:RightLeg->CC_Base_R_Calf": {
+        "source": "mixamorig5:RightLeg",
+        "target": "CC_Base_R_Calf",
+        "source_rest_quat": [
+          -0.009905,
+          0.00165,
+          -0.046959,
+          0.998846
+        ],
+        "target_rest_quat": [
+          0.011777,
+          0.010711,
+          0.750626,
+          -0.660536
+        ],
+        "rest_correction_quat": [
+          -0.695121,
+          -0.718616,
+          0.01867,
+          0.006963
+        ],
+        "rest_angle_delta_degrees": 91.9262
+      },
+      "mixamorig5:RightFoot->CC_Base_R_Foot": {
+        "source": "mixamorig5:RightFoot",
+        "target": "CC_Base_R_Foot",
+        "source_rest_quat": [
+          0.060681,
+          -0.040596,
+          0.495237,
+          0.865685
+        ],
+        "target_rest_quat": [
+          0.14115,
+          0.003266,
+          -0.124359,
+          0.982141
+        ],
+        "rest_correction_quat": [
+          0.79707,
+          0.58812,
+          0.120147,
+          0.066025
+        ],
+        "rest_angle_delta_degrees": 74.2975
+      },
+      "mixamorig5:RightToeBase->CC_Base_R_ToeBase": {
+        "source": "mixamorig5:RightToeBase",
+        "target": "CC_Base_R_ToeBase",
+        "source_rest_quat": [
+          0.062383,
+          -0.051119,
+          0.719381,
+          0.689918
+        ],
+        "target_rest_quat": [
+          0.115788,
+          0.050538,
+          0.047469,
+          0.990851
+        ],
+        "rest_correction_quat": [
+          0.722394,
+          0.670978,
+          0.165853,
+          -0.020711
+        ],
+        "rest_angle_delta_degrees": 87.4951
+      }
+    },
+    "target_rest_quats": {
+      "CC_Base_Hip": [
+        0.694945,
+        0.719063,
+        -8e-06,
+        -1.3e-05
+      ],
+      "CC_Base_Waist": [
+        0.818379,
+        0.574679,
+        -1.5e-05,
+        -1.3e-05
+      ],
+      "CC_Base_Spine01": [
+        0.834943,
+        0.550336,
+        -1.6e-05,
+        -1e-05
+      ],
+      "CC_Base_Spine02": [
+        0.82421,
+        0.566284,
+        -2e-06,
+        -1e-06
+      ],
+      "CC_Base_NeckTwist01": [
+        0.727358,
+        0.686258,
+        -1.3e-05,
+        -1.2e-05
+      ],
+      "CC_Base_Head": [
+        0.802987,
+        0.595996,
+        7e-06,
+        1e-06
+      ],
+      "CC_Base_L_Clavicle": [
+        0.619798,
+        0.539727,
+        0.460147,
+        -0.335871
+      ],
+      "CC_Base_L_Upperarm": [
+        0.480586,
+        0.497933,
+        0.501688,
+        -0.519046
+      ],
+      "CC_Base_L_Forearm": [
+        0.501698,
+        0.506167,
+        0.482979,
+        -0.508749
+      ],
+      "CC_Base_L_Hand": [
+        0.583027,
+        0.376006,
+        0.578882,
+        -0.428479
+      ],
+      "CC_Base_R_Clavicle": [
+        0.619799,
+        0.539728,
+        -0.460146,
+        0.335871
+      ],
+      "CC_Base_R_Upperarm": [
+        0.480584,
+        0.497932,
+        -0.501687,
+        0.51905
+      ],
+      "CC_Base_R_Forearm": [
+        0.502563,
+        0.505257,
+        -0.48207,
+        0.509661
+      ],
+      "CC_Base_R_Hand": [
+        0.504071,
+        0.493716,
+        -0.481106,
+        0.520282
+      ],
+      "CC_Base_L_Thigh": [
+        0.110044,
+        0.109577,
+        0.72938,
+        -0.666249
+      ],
+      "CC_Base_L_Calf": [
+        0.011783,
+        0.010705,
+        -0.750626,
+        0.660536
+      ],
+      "CC_Base_L_Foot": [
+        0.141128,
+        0.003329,
+        0.124137,
+        -0.982172
+      ],
+      "CC_Base_L_ToeBase": [
+        0.115785,
+        0.050575,
+        -0.047486,
+        -0.990849
+      ],
+      "CC_Base_R_Thigh": [
+        0.110109,
+        0.109518,
+        -0.729365,
+        0.666264
+      ],
+      "CC_Base_R_Calf": [
+        0.011777,
+        0.010711,
+        0.750626,
+        -0.660536
+      ],
+      "CC_Base_R_Foot": [
+        0.14115,
+        0.003266,
+        -0.124359,
+        0.982141
+      ],
+      "CC_Base_R_ToeBase": [
+        0.115788,
+        0.050538,
+        0.047469,
+        0.990851
+      ]
+    },
+    "note": "Large Mixamo vs ActorCore rest angles are expected (axis convention). Rest-relative transfer absorbs them."
+  },
+  "jaguarete": {
+    "character": "jaguarete",
+    "mapped_bones": 22,
+    "mean_rest_angle_delta_degrees": 61.7465,
+    "max_rest_angle_delta_degrees": 96.1281,
+    "bones": {
+      "mixamorig5:Hips->CC_Base_Hip": {
+        "source": "mixamorig5:Hips",
+        "target": "CC_Base_Hip",
+        "source_rest_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.68279,
+          0.730615,
+          -3e-06,
+          -6e-06
+        ],
+        "rest_correction_quat": [
+          0.68279,
+          -0.730615,
+          3e-06,
+          6e-06
+        ],
+        "rest_angle_delta_degrees": 93.8759
+      },
+      "mixamorig5:Spine->CC_Base_Waist": {
+        "source": "mixamorig5:Spine",
+        "target": "CC_Base_Waist",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.706668,
+          0.707545,
+          -0.0,
+          -4e-06
+        ],
+        "rest_correction_quat": [
+          0.668299,
+          -0.743892,
+          0.0,
+          4e-06
+        ],
+        "rest_angle_delta_degrees": 96.1281
+      },
+      "mixamorig5:Spine1->CC_Base_Spine01": {
+        "source": "mixamorig5:Spine1",
+        "target": "CC_Base_Spine01",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.708719,
+          0.705491,
+          -2e-06,
+          -2e-06
+        ],
+        "rest_correction_quat": [
+          0.670456,
+          -0.741949,
+          2e-06,
+          2e-06
+        ],
+        "rest_angle_delta_degrees": 95.7954
+      },
+      "mixamorig5:Spine2->CC_Base_Spine02": {
+        "source": "mixamorig5:Spine2",
+        "target": "CC_Base_Spine02",
+        "source_rest_quat": [
+          0.998603,
+          -0.052833,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.771875,
+          0.635774,
+          -1e-06,
+          -1e-06
+        ],
+        "rest_correction_quat": [
+          0.737207,
+          -0.675667,
+          1e-06,
+          1e-06
+        ],
+        "rest_angle_delta_degrees": 85.0119
+      },
+      "mixamorig5:Neck->CC_Base_NeckTwist01": {
+        "source": "mixamorig5:Neck",
+        "target": "CC_Base_NeckTwist01",
+        "source_rest_quat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.675554,
+          0.737311,
+          -1.2e-05,
+          -1.3e-05
+        ],
+        "rest_correction_quat": [
+          0.675554,
+          -0.737311,
+          1.2e-05,
+          1.3e-05
+        ],
+        "rest_angle_delta_degrees": 95.0057
+      },
+      "mixamorig5:Head->CC_Base_Head": {
+        "source": "mixamorig5:Head",
+        "target": "CC_Base_Head",
+        "source_rest_quat": [
+          1.0,
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "target_rest_quat": [
+          0.757588,
+          0.652733,
+          7e-06,
+          2e-06
+        ],
+        "rest_correction_quat": [
+          0.757588,
+          -0.652733,
+          -7e-06,
+          -2e-06
+        ],
+        "rest_angle_delta_degrees": 81.496
+      },
+      "mixamorig5:LeftShoulder->CC_Base_L_Clavicle": {
+        "source": "mixamorig5:LeftShoulder",
+        "target": "CC_Base_L_Clavicle",
+        "source_rest_quat": [
+          0.443789,
+          0.535472,
+          0.39788,
+          -0.598342
+        ],
+        "target_rest_quat": [
+          0.501901,
+          0.407416,
+          0.576342,
+          -0.499938
+        ],
+        "rest_correction_quat": [
+          0.969346,
+          0.233882,
+          -0.03215,
+          0.068071
+        ],
+        "rest_angle_delta_degrees": 28.4462
+      },
+      "mixamorig5:LeftArm->CC_Base_L_Upperarm": {
+        "source": "mixamorig5:LeftArm",
+        "target": "CC_Base_L_Upperarm",
+        "source_rest_quat": [
+          0.524309,
+          0.474447,
+          0.474447,
+          -0.524309
+        ],
+        "target_rest_quat": [
+          0.462363,
+          0.466138,
+          0.531412,
+          -0.535292
+        ],
+        "rest_correction_quat": [
+          0.996364,
+          -0.000377,
+          -0.04969,
+          0.069207
+        ],
+        "rest_angle_delta_degrees": 9.7749
+      },
+      "mixamorig5:LeftForeArm->CC_Base_L_Forearm": {
+        "source": "mixamorig5:LeftForeArm",
+        "target": "CC_Base_L_Forearm",
+        "source_rest_quat": [
+          0.525041,
+          0.473637,
+          0.473637,
+          -0.525041
+        ],
+        "target_rest_quat": [
+          0.494655,
+          0.528033,
+          0.489317,
+          -0.486896
+        ],
+        "rest_correction_quat": [
+          0.997208,
+          -0.016653,
+          -0.069252,
+          -0.022411
+        ],
+        "rest_angle_delta_degrees": 8.5643
+      },
+      "mixamorig5:LeftHand->CC_Base_L_Hand": {
+        "source": "mixamorig5:LeftHand",
+        "target": "CC_Base_L_Hand",
+        "source_rest_quat": [
+          0.477786,
+          0.474835,
+          0.511821,
+          -0.53319
+        ],
+        "target_rest_quat": [
+          0.594923,
+          0.316077,
+          0.647968,
+          -0.355387
+        ],
+        "rest_correction_quat": [
+          0.955463,
+          0.295068,
+          -0.004875,
+          -0.001505
+        ],
+        "rest_angle_delta_degrees": 34.3285
+      },
+      "mixamorig5:RightShoulder->CC_Base_R_Clavicle": {
+        "source": "mixamorig5:RightShoulder",
+        "target": "CC_Base_R_Clavicle",
+        "source_rest_quat": [
+          0.444151,
+          0.536006,
+          -0.397475,
+          0.597864
+        ],
+        "target_rest_quat": [
+          0.501902,
+          0.407416,
+          -0.576341,
+          0.499938
+        ],
+        "rest_correction_quat": [
+          0.969273,
+          0.233929,
+          0.032098,
+          -0.068964
+        ],
+        "rest_angle_delta_degrees": 28.4802
+      },
+      "mixamorig5:RightArm->CC_Base_R_Upperarm": {
+        "source": "mixamorig5:RightArm",
+        "target": "CC_Base_R_Upperarm",
+        "source_rest_quat": [
+          0.523872,
+          0.474929,
+          -0.474929,
+          0.523872
+        ],
+        "target_rest_quat": [
+          0.46236,
+          0.466137,
+          -0.53141,
+          0.535297
+        ],
+        "rest_correction_quat": [
+          0.996409,
+          -0.000445,
+          0.048771,
+          -0.069209
+        ],
+        "rest_angle_delta_degrees": 9.7138
+      },
+      "mixamorig5:RightForeArm->CC_Base_R_Forearm": {
+        "source": "mixamorig5:RightForeArm",
+        "target": "CC_Base_R_Forearm",
+        "source_rest_quat": [
+          0.524707,
+          0.474007,
+          -0.474007,
+          0.524707
+        ],
+        "target_rest_quat": [
+          0.514198,
+          0.507739,
+          -0.46873,
+          0.50803
+        ],
+        "rest_correction_quat": [
+          0.999223,
+          -0.017545,
+          0.027816,
+          0.021727
+        ],
+        "rest_angle_delta_degrees": 4.5176
+      },
+      "mixamorig5:RightHand->CC_Base_R_Hand": {
+        "source": "mixamorig5:RightHand",
+        "target": "CC_Base_R_Hand",
+        "source_rest_quat": [
+          0.475912,
+          0.480903,
+          -0.511105,
+          0.530106
+        ],
+        "target_rest_quat": [
+          0.653544,
+          0.260234,
+          -0.614397,
+          0.357315
+        ],
+        "rest_correction_quat": [
+          0.939613,
+          0.333513,
+          -0.075512,
+          0.013939
+        ],
+        "rest_angle_delta_degrees": 40.0266
+      },
+      "mixamorig5:LeftUpLeg->CC_Base_L_Thigh": {
+        "source": "mixamorig5:LeftUpLeg",
+        "target": "CC_Base_L_Thigh",
+        "source_rest_quat": [
+          -0.005637,
+          -0.002047,
+          -0.02634,
+          0.999635
+        ],
+        "target_rest_quat": [
+          0.047626,
+          0.047787,
+          0.73835,
+          -0.671035
+        ],
+        "rest_correction_quat": [
+          -0.690605,
+          -0.720233,
+          0.049304,
+          0.043573
+        ],
+        "rest_angle_delta_degrees": 92.644
+      },
+      "mixamorig5:LeftLeg->CC_Base_L_Calf": {
+        "source": "mixamorig5:LeftLeg",
+        "target": "CC_Base_L_Calf",
+        "source_rest_quat": [
+          0.009911,
+          -0.001814,
+          -0.04315,
+          0.999018
+        ],
+        "target_rest_quat": [
+          0.016039,
+          0.016714,
+          0.706862,
+          -0.706972
+        ],
+        "rest_correction_quat": [
+          -0.73665,
+          -0.675857,
+          0.007717,
+          0.022469
+        ],
+        "rest_angle_delta_degrees": 85.1063
+      },
+      "mixamorig5:LeftFoot->CC_Base_L_Foot": {
+        "source": "mixamorig5:LeftFoot",
+        "target": "CC_Base_L_Foot",
+        "source_rest_quat": [
+          0.06103,
+          -0.04285,
+          -0.490286,
+          -0.868366
+        ],
+        "target_rest_quat": [
+          0.103339,
+          0.001624,
+          0.059195,
+          -0.992882
+        ],
+        "rest_correction_quat": [
+          0.8394,
+          0.533671,
+          -0.098233,
+          -0.03088
+        ],
+        "rest_angle_delta_degrees": 65.8464
+      },
+      "mixamorig5:LeftToeBase->CC_Base_L_ToeBase": {
+        "source": "mixamorig5:LeftToeBase",
+        "target": "CC_Base_L_ToeBase",
+        "source_rest_quat": [
+          0.065423,
+          -0.046135,
+          -0.718867,
+          -0.690522
+        ],
+        "target_rest_quat": [
+          0.080341,
+          0.043781,
+          -0.114254,
+          -0.989229
+        ],
+        "rest_correction_quat": [
+          0.768454,
+          0.625659,
+          -0.126149,
+          0.045985
+        ],
+        "rest_angle_delta_degrees": 79.5694
+      },
+      "mixamorig5:RightUpLeg->CC_Base_R_Thigh": {
+        "source": "mixamorig5:RightUpLeg",
+        "target": "CC_Base_R_Thigh",
+        "source_rest_quat": [
+          0.005654,
+          0.001731,
+          -0.022333,
+          0.999733
+        ],
+        "target_rest_quat": [
+          0.046498,
+          0.046651,
+          -0.740219,
+          0.669132
+        ],
+        "rest_correction_quat": [
+          0.685829,
+          0.724894,
+          0.048627,
+          0.042462
+        ],
+        "rest_angle_delta_degrees": 93.3984
+      },
+      "mixamorig5:RightLeg->CC_Base_R_Calf": {
+        "source": "mixamorig5:RightLeg",
+        "target": "CC_Base_R_Calf",
+        "source_rest_quat": [
+          -0.009905,
+          0.00165,
+          -0.046959,
+          0.998846
+        ],
+        "target_rest_quat": [
+          0.017616,
+          0.018334,
+          -0.706799,
+          0.706957
+        ],
+        "rest_correction_quat": [
+          0.739188,
+          0.672997,
+          0.009318,
+          0.024292
+        ],
+        "rest_angle_delta_degrees": 84.6754
+      },
+      "mixamorig5:RightFoot->CC_Base_R_Foot": {
+        "source": "mixamorig5:RightFoot",
+        "target": "CC_Base_R_Foot",
+        "source_rest_quat": [
+          0.060681,
+          -0.040596,
+          0.495237,
+          0.865685
+        ],
+        "target_rest_quat": [
+          0.065676,
+          -0.003602,
+          -0.060019,
+          0.996028
+        ],
+        "rest_correction_quat": [
+          0.836654,
+          0.54278,
+          0.073484,
+          0.000635
+        ],
+        "rest_angle_delta_degrees": 66.4231
+      },
+      "mixamorig5:RightToeBase->CC_Base_R_ToeBase": {
+        "source": "mixamorig5:RightToeBase",
+        "target": "CC_Base_R_ToeBase",
+        "source_rest_quat": [
+          0.062383,
+          -0.051119,
+          0.719381,
+          0.689918
+        ],
+        "target_rest_quat": [
+          0.044104,
+          0.032067,
+          0.115258,
+          0.991838
+        ],
+        "rest_correction_quat": [
+          0.768313,
+          0.629736,
+          0.097363,
+          -0.060406
+        ],
+        "rest_angle_delta_degrees": 79.5948
+      }
+    },
+    "target_rest_quats": {
+      "CC_Base_Hip": [
+        0.68279,
+        0.730615,
+        -3e-06,
+        -6e-06
+      ],
+      "CC_Base_Waist": [
+        0.706668,
+        0.707545,
+        -0.0,
+        -4e-06
+      ],
+      "CC_Base_Spine01": [
+        0.708719,
+        0.705491,
+        -2e-06,
+        -2e-06
+      ],
+      "CC_Base_Spine02": [
+        0.771875,
+        0.635774,
+        -1e-06,
+        -1e-06
+      ],
+      "CC_Base_NeckTwist01": [
+        0.675554,
+        0.737311,
+        -1.2e-05,
+        -1.3e-05
+      ],
+      "CC_Base_Head": [
+        0.757588,
+        0.652733,
+        7e-06,
+        2e-06
+      ],
+      "CC_Base_L_Clavicle": [
+        0.501901,
+        0.407416,
+        0.576342,
+        -0.499938
+      ],
+      "CC_Base_L_Upperarm": [
+        0.462363,
+        0.466138,
+        0.531412,
+        -0.535292
+      ],
+      "CC_Base_L_Forearm": [
+        0.494655,
+        0.528033,
+        0.489317,
+        -0.486896
+      ],
+      "CC_Base_L_Hand": [
+        0.594923,
+        0.316077,
+        0.647968,
+        -0.355387
+      ],
+      "CC_Base_R_Clavicle": [
+        0.501902,
+        0.407416,
+        -0.576341,
+        0.499938
+      ],
+      "CC_Base_R_Upperarm": [
+        0.46236,
+        0.466137,
+        -0.53141,
+        0.535297
+      ],
+      "CC_Base_R_Forearm": [
+        0.514198,
+        0.507739,
+        -0.46873,
+        0.50803
+      ],
+      "CC_Base_R_Hand": [
+        0.653544,
+        0.260234,
+        -0.614397,
+        0.357315
+      ],
+      "CC_Base_L_Thigh": [
+        0.047626,
+        0.047787,
+        0.73835,
+        -0.671035
+      ],
+      "CC_Base_L_Calf": [
+        0.016039,
+        0.016714,
+        0.706862,
+        -0.706972
+      ],
+      "CC_Base_L_Foot": [
+        0.103339,
+        0.001624,
+        0.059195,
+        -0.992882
+      ],
+      "CC_Base_L_ToeBase": [
+        0.080341,
+        0.043781,
+        -0.114254,
+        -0.989229
+      ],
+      "CC_Base_R_Thigh": [
+        0.046498,
+        0.046651,
+        -0.740219,
+        0.669132
+      ],
+      "CC_Base_R_Calf": [
+        0.017616,
+        0.018334,
+        -0.706799,
+        0.706957
+      ],
+      "CC_Base_R_Foot": [
+        0.065676,
+        -0.003602,
+        -0.060019,
+        0.996028
+      ],
+      "CC_Base_R_ToeBase": [
+        0.044104,
+        0.032067,
+        0.115258,
+        0.991838
+      ]
+    },
+    "note": "Large Mixamo vs ActorCore rest angles are expected (axis convention). Rest-relative transfer absorbs them."
+  },
+  "cross_character": {
+    "common_mapped_bones": 22,
+    "mean_cross_character_rest_delta_degrees": 12.8184,
+    "max_cross_character_rest_delta_degrees": 40.0947,
+    "per_bone_degrees": {
+      "CC_Base_Head": 8.3285,
+      "CC_Base_Hip": 1.9217,
+      "CC_Base_L_Calf": 8.5752,
+      "CC_Base_L_Clavicle": 30.8034,
+      "CC_Base_L_Foot": 8.7012,
+      "CC_Base_L_Forearm": 3.7051,
+      "CC_Base_L_Hand": 13.4928,
+      "CC_Base_L_Thigh": 10.135,
+      "CC_Base_L_ToeBase": 8.7011,
+      "CC_Base_L_Upperarm": 5.7192,
+      "CC_Base_NeckTwist01": 8.3364,
+      "CC_Base_R_Calf": 8.7165,
+      "CC_Base_R_Clavicle": 30.8035,
+      "CC_Base_R_Foot": 11.5074,
+      "CC_Base_R_Forearm": 2.0566,
+      "CC_Base_R_Hand": 40.0947,
+      "CC_Base_R_Thigh": 10.3324,
+      "CC_Base_R_ToeBase": 11.5075,
+      "CC_Base_R_Upperarm": 5.719,
+      "CC_Base_Spine01": 22.9582,
+      "CC_Base_Spine02": 9.9717,
+      "CC_Base_Waist": 19.9167
+    },
+    "generic_retarget_viable": true,
+    "note": "ActorCore vs ActorCore rest bases must match for one shared retarget implementation. Angles are shortest-arc; proportion differences (SHORT vs TALL) of tens of degrees are expected."
+  },
+  "both_generic_viable": true
+}

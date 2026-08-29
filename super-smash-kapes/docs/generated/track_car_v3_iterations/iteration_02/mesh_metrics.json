@@ -1,0 +1,956 @@
+{
+  "label": "V3",
+  "glb": "assets/vehicles/track/processed/track_car_base_v3_articulated_clean.glb",
+  "source_sha256": "b1dd649b39b0c701ccb5b11062b7087579702caa930d8a0b436dd4d581e725af",
+  "source_topology": {
+    "vertices": 24633,
+    "faces": 18169,
+    "connected_components": 3818,
+    "aabb": {
+      "min": [
+        -0.2431640625,
+        0.0,
+        -0.4990234375
+      ],
+      "max": [
+        0.2431640625,
+        0.322265625,
+        0.4990234375
+      ],
+      "size": [
+        0.486328125,
+        0.322265625,
+        0.998046875
+      ],
+      "center": [
+        0.0,
+        0.1611328125,
+        0.0
+      ]
+    },
+    "centroid": [
+      0.00202,
+      0.12473,
+      -0.04109
+    ],
+    "components_head": [
+      {
+        "id": 0,
+        "verts": 272,
+        "centroid": [
+          -0.01131,
+          0.23013,
+          0.01905
+        ],
+        "aabb_size": [
+          0.4375,
+          0.15234,
+          0.96289
+        ],
+        "volume_proxy": 0.064177
+      },
+      {
+        "id": 1,
+        "verts": 159,
+        "centroid": [
+          -0.2101,
+          0.08881,
+          0.27793
+        ],
+        "aabb_size": [
+          0.00781,
+          0.11719,
+          0.11719
+        ],
+        "volume_proxy": 0.000107
+      },
+      {
+        "id": 2,
+        "verts": 143,
+        "centroid": [
+          -0.21981,
+          0.0815,
+          0.28526
+        ],
+        "aabb_size": [
+          0.00977,
+          0.1582,
+          0.16016
+        ],
+        "volume_proxy": 0.000247
+      },
+      {
+        "id": 3,
+        "verts": 143,
+        "centroid": [
+          -0.21999,
+          0.08218,
+          -0.30601
+        ],
+        "aabb_size": [
+          0.00781,
+          0.1582,
+          0.1582
+        ],
+        "volume_proxy": 0.000196
+      },
+      {
+        "id": 4,
+        "verts": 133,
+        "centroid": [
+          0.17115,
+          0.22733,
+          -0.10415
+        ],
+        "aabb_size": [
+          0.11914,
+          0.17383,
+          0.83398
+        ],
+        "volume_proxy": 0.017272
+      },
+      {
+        "id": 5,
+        "verts": 115,
+        "centroid": [
+          -0.20662,
+          0.06279,
+          -0.29986
+        ],
+        "aabb_size": [
+          0.01563,
+          0.08984,
+          0.11914
+        ],
+        "volume_proxy": 0.000167
+      },
+      {
+        "id": 6,
+        "verts": 93,
+        "centroid": [
+          0.21941,
+          0.0859,
+          -0.28798
+        ],
+        "aabb_size": [
+          0.00977,
+          0.125,
+          0.13281
+        ],
+        "volume_proxy": 0.000162
+      },
+      {
+        "id": 7,
+        "verts": 81,
+        "centroid": [
+          0.17131,
+          0.08447,
+          -0.30769
+        ],
+        "aabb_size": [
+          0.00391,
+          0.15039,
+          0.1582
+        ],
+        "volume_proxy": 9.3e-05
+      },
+      {
+        "id": 8,
+        "verts": 77,
+        "centroid": [
+          -0.00752,
+          0.08599,
+          -0.42719
+        ],
+        "aabb_size": [
+          0.38867,
+          0.11133,
+          0.34766
+        ],
+        "volume_proxy": 0.015043
+      },
+      {
+        "id": 9,
+        "verts": 76,
+        "centroid": [
+          0.17288,
+          0.08478,
+          0.28485
+        ],
+        "aabb_size": [
+          0.00586,
+          0.15039,
+          0.16016
+        ],
+        "volume_proxy": 0.000141
+      },
+      {
+        "id": 10,
+        "verts": 70,
+        "centroid": [
+          0.20709,
+          0.08136,
+          -0.26641
+        ],
+        "aabb_size": [
+          0.01562,
+          0.09766,
+          0.06055
+        ],
+        "volume_proxy": 9.2e-05
+      },
+      {
+        "id": 11,
+        "verts": 68,
+        "centroid": [
+          -0.17107,
+          0.08915,
+          0.29685
+        ],
+        "aabb_size": [
+          0.01758,
+          0.125,
+          0.13086
+        ],
+        "volume_proxy": 0.000288
+      },
+      {
+        "id": 12,
+        "verts": 68,
+        "centroid": [
+          0.22096,
+          0.08439,
+          0.28944
+        ],
+        "aabb_size": [
+          0.01172,
+          0.12695,
+          0.12891
+        ],
+        "volume_proxy": 0.000192
+      },
+      {
+        "id": 13,
+        "verts": 66,
+        "centroid": [
+          -0.20756,
+          0.14811,
+          0.15149
+        ],
+        "aabb_size": [
+          0.05078,
+          0.13086,
+          0.60742
+        ],
+        "volume_proxy": 0.004036
+      },
+      {
+        "id": 14,
+        "verts": 61,
+        "centroid": [
+          -0.17023,
+          0.08924,
+          -0.29119
+        ],
+        "aabb_size": [
+          0.00391,
+          0.12891,
+          0.13086
+        ],
+        "volume_proxy": 6.6e-05
+      },
+      {
+        "id": 15,
+        "verts": 61,
+        "centroid": [
+          0.21524,
+          0.13762,
+          -0.31633
+        ],
+        "aabb_size": [
+          0.02344,
+          0.03906,
+          0.10547
+        ],
+        "volume_proxy": 9.7e-05
+      },
+      {
+        "id": 16,
+        "verts": 56,
+        "centroid": [
+          0.2176,
+          0.06955,
+          0.23228
+        ],
+        "aabb_size": [
+          0.01758,
+          0.09766,
+          0.04297
+        ],
+        "volume_proxy": 7.4e-05
+      },
+      {
+        "id": 17,
+        "verts": 56,
+        "centroid": [
+          0.18726,
+          0.06948,
+          -0.30141
+        ],
+        "aabb_size": [
+          0.00586,
+          0.10938,
+          0.11719
+        ],
+        "volume_proxy": 7.5e-05
+      },
+      {
+        "id": 18,
+        "verts": 53,
+        "centroid": [
+          -0.22046,
+          0.1596,
+          -0.29553
+        ],
+        "aabb_size": [
+          0.0625,
+          0.14453,
+          0.36719
+        ],
+        "volume_proxy": 0.003317
+      },
+      {
+        "id": 19,
+        "verts": 53,
+        "centroid": [
+          -0.21284,
+          0.07009,
+          -0.25488
+        ],
+        "aabb_size": [
+          0.01953,
+          0.08203,
+          0.03125
+        ],
+        "volume_proxy": 5e-05
+      },
+      {
+        "id": 20,
+        "verts": 53,
+        "centroid": [
+          0.21696,
+          0.13941,
+          0.27552
+        ],
+        "aabb_size": [
+          0.02344,
+          0.03906,
+          0.10547
+        ],
+        "volume_proxy": 9.7e-05
+      },
+      {
+        "id": 21,
+        "verts": 53,
+        "centroid": [
+          0.18759,
+          0.07072,
+          0.28941
+        ],
+        "aabb_size": [
+          0.00586,
+          0.10937,
+          0.11523
+        ],
+        "volume_proxy": 7.4e-05
+      },
+      {
+        "id": 22,
+        "verts": 51,
+        "centroid": [
+          -0.21218,
+          0.06844,
+          0.33634
+        ],
+        "aabb_size": [
+          0.01758,
+          0.07812,
+          0.03711
+        ],
+        "volume_proxy": 5.1e-05
+      },
+      {
+        "id": 23,
+        "verts": 49,
+        "centroid": [
+          0.17285,
+          0.08514,
+          -0.3059
+        ],
+        "aabb_size": [
+          0.0,
+          0.12305,
+          0.12305
+        ],
+        "volume_proxy": 0.0
+      },
+      {
+        "id": 24,
+        "verts": 48,
+        "centroid": [
+          0.18046,
+          0.13464,
+          -0.31628
+        ],
+        "aabb_size": [
+          0.02148,
+          0.05469,
+          0.11523
+        ],
+        "volume_proxy": 0.000135
+      },
+      {
+        "id": 25,
+        "verts": 45,
+        "centroid": [
+          -0.21135,
+          0.11324,
+          0.23813
+        ],
+        "aabb_size": [
+          0.02148,
+          0.07031,
+          0.04688
+        ],
+        "volume_proxy": 7.1e-05
+      },
+      {
+        "id": 26,
+        "verts": 45,
+        "centroid": [
+          0.21109,
+          0.06424,
+          0.33509
+        ],
+        "aabb_size": [
+          0.02148,
+          0.07617,
+          0.02734
+        ],
+        "volume_proxy": 4.5e-05
+      },
+      {
+        "id": 27,
+        "verts": 44,
+        "centroid": [
+          -0.21196,
+          0.02979,
+          -0.30216
+        ],
+        "aabb_size": [
+          0.01758,
+          0.01953,
+          0.07617
+        ],
+        "volume_proxy": 2.6e-05
+      },
+      {
+        "id": 28,
+        "verts": 43,
+        "centroid": [
+          -0.21264,
+          0.12786,
+          0.32047
+        ],
+        "aabb_size": [
+          0.01758,
+          0.04688,
+          0.05273
+        ],
+        "volume_proxy": 4.3e-05
+      },
+      {
+        "id": 29,
+        "verts": 43,
+        "centroid": [
+          -0.03527,
+          0.19854,
+          -0.47263
+        ],
+        "aabb_size": [
+          0.37109,
+          0.0332,
+          0.03711
+        ],
+        "volume_proxy": 0.000457
+      },
+      {
+        "id": 30,
+        "verts": 43,
+        "centroid": [
+          0.21005,
+          0.11573,
+          -0.35163
+        ],
+        "aabb_size": [
+          0.01953,
+          0.0625,
+          0.04883
+        ],
+        "volume_proxy": 6e-05
+      },
+      {
+        "id": 31,
+        "verts": 42,
+        "centroid": [
+          -0.21243,
+          0.02958,
+          0.28674
+        ],
+        "aabb_size": [
+          0.02148,
+          0.01953,
+          0.07813
+        ],
+        "volume_proxy": 3.3e-05
+      },
+      {
+        "id": 32,
+        "verts": 41,
+        "centroid": [
+          -0.17914,
+          0.13296,
+          0.26493
+        ],
+        "aabb_size": [
+          0.02148,
+          0.05664,
+          0.0957
+        ],
+        "volume_proxy": 0.000116
+      },
+      {
+        "id": 33,
+        "verts": 40,
+        "centroid": [
+          0.15493,
+          0.12271,
+          0.43477
+        ],
+        "aabb_size": [
+          0.22461,
+          0.11133,
+          0.12109
+        ],
+        "volume_proxy": 0.003028
+      },
+      {
+        "id": 34,
+        "verts": 39,
+        "centroid": [
+          0.21126,
+          0.03205,
+          -0.2976
+        ],
+        "aabb_size": [
+          0.01758,
+          0.02344,
+          0.08008
+        ],
+        "volume_proxy": 3.3e-05
+      },
+      {
+        "id": 35,
+        "verts": 38,
+        "centroid": [
+          0.21315,
+          0.09056,
+          0.32257
+        ],
+        "aabb_size": [
+          0.00586,
+          0.08008,
+          0.05664
+        ],
+        "volume_proxy": 2.7e-05
+      },
+      {
+        "id": 36,
+        "verts": 36,
+        "centroid": [
+          -0.21012,
+          0.04725,
+          -0.34619
+        ],
+        "aabb_size": [
+          0.01758,
+          0.05859,
+          0.05078
+        ],
+        "volume_proxy": 5.2e-05
+      },
+      {
+        "id": 37,
+        "verts": 36,
+        "centroid": [
+          0.17291,
+          0.10232,
+          0.28521
+        ],
+        "aabb_size": [
+          0.00195,
+          0.10156,
+          0.12305
+        ],
+        "volume_proxy": 2.4e-05
+      },
+      {
+        "id": 38,
+        "verts": 35,
+        "centroid": [
+          -0.14634,
+          0.25234,
+          -0.09311
+        ],
+        "aabb_size": [
+          0.04687,
+          0.08984,
+          0.3457
+        ],
+        "volume_proxy": 0.001456
+      },
+      {
+        "id": 39,
+        "verts": 34,
+        "centroid": [
+          0.21955,
+          0.08668,
+          0.33996
+        ],
+        "aabb_size": [
+          0.01758,
+          0.10938,
+          0.0332
+        ],
+        "volume_proxy": 6.4e-05
+      }
+    ]
+  },
+  "nodes": [
+    "Body",
+    "Wheel_FL",
+    "Wheel_FR",
+    "Wheel_RL",
+    "Wheel_RR"
+  ],
+  "embedded_images": false,
+  "wheels": {
+    "FL": {
+      "name": "Wheel_FL",
+      "vertices": 3143,
+      "used_vertices": 3143,
+      "faces": 2420,
+      "aabb": {
+        "min": [
+          -0.02159,
+          -0.07328,
+          -0.07926
+        ],
+        "max": [
+          0.03505,
+          0.08297,
+          0.0848
+        ],
+        "size": [
+          0.05664,
+          0.15625,
+          0.16406
+        ],
+        "center": [
+          0.00673,
+          0.00484,
+          0.00277
+        ]
+      },
+      "centroid": [
+        -0.00089,
+        -0.00011,
+        0.00084
+      ],
+      "max_radius": 0.08662,
+      "max_radius_yz": 0.08583,
+      "max_axial": 0.03505,
+      "max_face_edge": 0.06341,
+      "long_faces": [],
+      "thin_faces": [],
+      "vertex_components": 439,
+      "face_components": 439,
+      "dominant_component_faces": 88,
+      "stray_components": [],
+      "outlier_count": 0,
+      "outliers_sample": [],
+      "spin_sweep": {
+        "samples": 24,
+        "max_r": 0.08662,
+        "min_r": 0.08662,
+        "delta_r": 0.0,
+        "aabb_delta": [
+          0.0,
+          0.01021,
+          0.01021
+        ],
+        "pass": true
+      },
+      "gates": {
+        "aabb_compact": true,
+        "radius": true,
+        "no_stray_component": true,
+        "no_long_face": true,
+        "no_thin_sheet": true,
+        "spin_sweep": true,
+        "pass": true
+      }
+    },
+    "FR": {
+      "name": "Wheel_FR",
+      "vertices": 3026,
+      "used_vertices": 3026,
+      "faces": 2312,
+      "aabb": {
+        "min": [
+          -0.03401,
+          -0.07914,
+          -0.07926
+        ],
+        "max": [
+          0.02068,
+          0.07906,
+          0.0809
+        ],
+        "size": [
+          0.05469,
+          0.1582,
+          0.16016
+        ],
+        "center": [
+          -0.00666,
+          -4e-05,
+          0.00082
+        ]
+      },
+      "centroid": [
+        0.00148,
+        0.00075,
+        0.00175
+      ],
+      "max_radius": 0.0838,
+      "max_radius_yz": 0.08168,
+      "max_axial": 0.03401,
+      "max_face_edge": 0.08243,
+      "long_faces": [],
+      "thin_faces": [],
+      "vertex_components": 450,
+      "face_components": 450,
+      "dominant_component_faces": 181,
+      "stray_components": [],
+      "outlier_count": 0,
+      "outliers_sample": [],
+      "spin_sweep": {
+        "samples": 24,
+        "max_r": 0.0838,
+        "min_r": 0.0838,
+        "delta_r": 0.0,
+        "aabb_delta": [
+          0.0,
+          0.00222,
+          0.00222
+        ],
+        "pass": true
+      },
+      "gates": {
+        "aabb_compact": true,
+        "radius": true,
+        "no_stray_component": true,
+        "no_long_face": true,
+        "no_thin_sheet": true,
+        "spin_sweep": true,
+        "pass": true
+      }
+    },
+    "RL": {
+      "name": "Wheel_RL",
+      "vertices": 3165,
+      "used_vertices": 3165,
+      "faces": 2503,
+      "aabb": {
+        "min": [
+          -0.02063,
+          -0.085,
+          -0.07437
+        ],
+        "max": [
+          0.03796,
+          0.08297,
+          0.08774
+        ],
+        "size": [
+          0.05859,
+          0.16797,
+          0.16211
+        ],
+        "center": [
+          0.00866,
+          -0.00102,
+          0.00669
+        ]
+      },
+      "centroid": [
+        0.00253,
+        0.00013,
+        0.00788
+      ],
+      "max_radius": 0.09357,
+      "max_radius_yz": 0.09034,
+      "max_axial": 0.03796,
+      "max_face_edge": 0.06365,
+      "long_faces": [],
+      "thin_faces": [],
+      "vertex_components": 422,
+      "face_components": 422,
+      "dominant_component_faces": 104,
+      "stray_components": [],
+      "outlier_count": 0,
+      "outliers_sample": [],
+      "spin_sweep": {
+        "samples": 24,
+        "max_r": 0.09357,
+        "min_r": 0.09357,
+        "delta_r": 0.0,
+        "aabb_delta": [
+          0.0,
+          0.00622,
+          0.00622
+        ],
+        "pass": true
+      },
+      "gates": {
+        "aabb_compact": true,
+        "radius": true,
+        "no_stray_component": true,
+        "no_long_face": true,
+        "no_thin_sheet": true,
+        "spin_sweep": true,
+        "pass": true
+      }
+    },
+    "RR": {
+      "name": "Wheel_RR",
+      "vertices": 3113,
+      "used_vertices": 3113,
+      "faces": 2371,
+      "aabb": {
+        "min": [
+          -0.03501,
+          -0.07914,
+          -0.07437
+        ],
+        "max": [
+          0.02163,
+          0.07906,
+          0.08774
+        ],
+        "size": [
+          0.05664,
+          0.1582,
+          0.16211
+        ],
+        "center": [
+          -0.00669,
+          -4e-05,
+          0.00669
+        ]
+      },
+      "centroid": [
+        -0.00171,
+        0.00113,
+        0.00897
+      ],
+      "max_radius": 0.09026,
+      "max_radius_yz": 0.0885,
+      "max_axial": 0.03501,
+      "max_face_edge": 0.1115,
+      "long_faces": [],
+      "thin_faces": [],
+      "vertex_components": 449,
+      "face_components": 449,
+      "dominant_component_faces": 168,
+      "stray_components": [],
+      "outlier_count": 0,
+      "outliers_sample": [],
+      "spin_sweep": {
+        "samples": 24,
+        "max_r": 0.09026,
+        "min_r": 0.09026,
+        "delta_r": 0.0,
+        "aabb_delta": [
+          0.0,
+          0.00614,
+          0.00614
+        ],
+        "pass": true
+      },
+      "gates": {
+        "aabb_compact": true,
+        "radius": true,
+        "no_stray_component": true,
+        "no_long_face": true,
+        "no_thin_sheet": true,
+        "spin_sweep": true,
+        "pass": true
+      }
+    }
+  },
+  "body": {
+    "vertices": 12186,
+    "faces": 8563,
+    "aabb": {
+      "min": [
+        -0.2431640625,
+        0.0,
+        -0.4990234375
+      ],
+      "max": [
+        0.2431640625,
+        0.322265625,
+        0.4990234375
+      ],
+      "size": [
+        0.486328125,
+        0.322265625,
+        0.998046875
+      ],
+      "center": [
+        0.0,
+        0.1611328125,
+        0.0
+      ]
+    },
+    "centroid": [
+      -0.00062,
+      0.16483,
+      0.06883
+    ],
+    "z_min": -0.49902,
+    "z_max": 0.49902,
+    "semantic": {
+      "z_min": -0.49902,
+      "z_max": 0.49902,
+      "y_at_zmin": 0.10417,
+      "y_at_zmax": 0.18026,
+      "high_y_mean_z": 0.21582,
+      "pass": true
+    }
+  },
+  "has_nose_marker": true,
+  "has_rear_marker": true
+}

@@ -1,0 +1,234 @@
+{
+  "character": "jaguarete",
+  "mixamo_used": false,
+  "rest_volume": 3370338.7651737183,
+  "rest_size": [
+    186.7794,
+    104.2183,
+    173.1413
+  ],
+  "axes": {
+    "CC_Base_L_Upperarm": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "sign": -1.0,
+      "probe_score": 0.046322,
+      "kind": "lower_arm"
+    },
+    "CC_Base_R_Upperarm": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.046321,
+      "kind": "lower_arm"
+    },
+    "CC_Base_L_Forearm": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": -1.0,
+      "probe_score": 0.024973,
+      "kind": "bend_elbow"
+    },
+    "CC_Base_R_Forearm": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": -1.0,
+      "probe_score": 0.024919,
+      "kind": "bend_elbow"
+    },
+    "CC_Base_L_Thigh": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.06404,
+      "kind": "flex_hip"
+    },
+    "CC_Base_R_Thigh": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.062625,
+      "kind": "flex_hip"
+    },
+    "CC_Base_L_Calf": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.060066,
+      "kind": "bend_knee"
+    },
+    "CC_Base_R_Calf": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.057684,
+      "kind": "bend_knee"
+    },
+    "CC_Base_Spine01": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": -1.0,
+      "probe_score": 0.041143,
+      "kind": "flex_spine"
+    },
+    "CC_Base_Spine02": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 0.074042,
+      "kind": "flex_spine"
+    },
+    "CC_Base_Head": {
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sign": 1.0,
+      "probe_score": 4.3e-05,
+      "kind": "nod_head"
+    }
+  },
+  "armature_modifier": {
+    "armature_name": "Armature",
+    "mesh_name": "skin_original",
+    "armature_modifier_target": "Armature",
+    "use_deform_preserve_volume": false,
+    "armature_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "armature_rotation_euler_deg": [
+      90.0,
+      -0.0,
+      0.0
+    ],
+    "armature_scale": [
+      0.009999999776482582,
+      0.009999999776482582,
+      0.009999999776482582
+    ],
+    "mesh_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mesh_rotation_euler_deg": [
+      -90.0,
+      0.0,
+      0.0
+    ],
+    "mesh_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mesh_parent": "Armature",
+    "bind_note": "Blender 2.83 vertex groups + armature modifier; inverse bind not exposed as a numeric ID property on Mesh."
+  },
+  "influence_stats": {
+    "original": {
+      "vertex_count": 47292,
+      "vertices_over_4_influences": 10797,
+      "max_influences": 6,
+      "vertices_with_helper_or_twist": 27194
+    },
+    "4inf": {
+      "vertex_count": 47292,
+      "vertices_over_4_influences": 0,
+      "max_influences": 4,
+      "vertices_with_helper_or_twist": 25916
+    }
+  },
+  "twist_collapse": {
+    "pairs": [],
+    "twist_assignments_moved": 0
+  },
+  "original_worst": "STRESSED",
+  "original_max_volume_ratio": 2.2133,
+  "four_inf_worst": "STRESSED",
+  "four_inf_max_volume_ratio": 2.2133,
+  "twist_worst": "STRESSED",
+  "twist_max_volume_ratio": 2.2133,
+  "standing": {
+    "original": {
+      "volume_ratio": 1.7281,
+      "max_axis_ratio": 1.0636,
+      "verdict": "STRESSED",
+      "max_vertex_disp": 1.86266,
+      "extreme_vertex_count": 0
+    },
+    "4inf": {
+      "volume_ratio": 1.7281,
+      "max_axis_ratio": 1.0636,
+      "verdict": "STRESSED",
+      "max_vertex_disp": 1.86266,
+      "extreme_vertex_count": 0
+    },
+    "twist_collapsed": {
+      "volume_ratio": 1.7281,
+      "max_axis_ratio": 1.0636,
+      "verdict": "STRESSED",
+      "max_vertex_disp": 1.86266,
+      "extreme_vertex_count": 0
+    }
+  },
+  "scale_apply_experiment": {
+    "applied_rotation_and_scale": true,
+    "volume_ratio_upperarm_60": 0.7924,
+    "verdict": "BROKEN"
+  },
+  "glb_roundtrip": {
+    "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\native_skin_audit\\jaguarete\\jaguarete_native_standing_test.glb",
+    "rest_size": [
+      1.8678,
+      1.0422,
+      1.7314
+    ],
+    "pose_size": [
+      1.8678,
+      1.0422,
+      1.7314
+    ],
+    "volume_ratio_vs_glb_rest": 1.0,
+    "volume_ratio_vs_source_rest": 0.0,
+    "bone_count": 101
+  },
+  "forensics_keys": [],
+  "forensics": {},
+  "csv": "E:\\SuperSmashKapes\\super-smash-kapes\\docs\\generated\\JAGUARETE_NATIVE_SKIN_DEFORMATION.csv",
+  "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\native_skin_audit\\jaguarete\\jaguarete_native_skin_audit.blend",
+  "standing_glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\native_skin_audit\\jaguarete\\jaguarete_native_standing_test.glb",
+  "production_v4_untouched": true
+}

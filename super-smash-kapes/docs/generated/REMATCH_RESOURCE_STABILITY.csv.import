@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d2uuvbub3u4v8"
+
+[deps]
+
+files=["res://docs/generated/REMATCH_RESOURCE_STABILITY.nodes.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.objects.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.resources.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.video.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.texture.translation"]
+
+source_file="res://docs/generated/REMATCH_RESOURCE_STABILITY.csv"
+dest_files=["res://docs/generated/REMATCH_RESOURCE_STABILITY.nodes.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.objects.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.resources.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.video.translation", "res://docs/generated/REMATCH_RESOURCE_STABILITY.texture.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

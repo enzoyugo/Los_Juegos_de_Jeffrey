@@ -1,0 +1,8 @@
+{
+  "note": "AccuRIG uses identical image names in both GLBs. Filename overlap is expected. SHA256 of PNG bytes is the isolation authority (TEXTURE_AUTHORITY_V4.json).",
+  "shared_texture_filenames": ["model_Pbr_Diffuse", "model_Pbr_Normal"],
+  "filename_overlap_expected": true,
+  "byte_identical_across_characters": false,
+  "runtime_isolation": "glb_fighter_visual._isolate_fighter_textures duplicates maps per fighter id",
+  "pass": true
+}

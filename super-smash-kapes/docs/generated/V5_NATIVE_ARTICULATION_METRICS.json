@@ -1,0 +1,4439 @@
+{
+  "generated_at": "2026-08-25T20:35:25.322473",
+  "fighters": {
+    "jaguarete": {
+      "native": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_30",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.7926,
+            "volume_ratio": 0.7926,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.202075,
+              "p50": 0.0,
+              "p95": 0.159436,
+              "p99": 0.192739,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.07649,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.1194,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.12808,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.7863,
+            "volume_ratio": 0.7863,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.390379,
+              "p50": 0.0,
+              "p95": 0.308007,
+              "p99": 0.372344,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.14777,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.23066,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.24743,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_45",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8843,
+            "volume_ratio": 0.8843,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.20261,
+              "p50": 0.0,
+              "p95": 0.166395,
+              "p99": 0.191666,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.07922,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.13744,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8652,
+            "volume_ratio": 0.8652,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.374374,
+              "p50": 0.0,
+              "p95": 0.307458,
+              "p99": 0.354153,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.14638,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.25395,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_wrist_mild",
+            "group": "arm",
+            "semantic": "LEFT_HAND",
+            "bone": "hand_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9854,
+            "volume_ratio": 0.9854,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.057598,
+              "p50": 0.0,
+              "p95": 0.044793,
+              "p99": 0.052742,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.03768,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_index_bend",
+            "group": "hand",
+            "semantic": "LEFT_INDEX_01",
+            "bone": "index_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 1e-06,
+            "displacement": {
+              "max_disp": 0.062971,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.047427,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_02",
+                "bone": "index_02_l",
+                "travel": 0.02592,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_03",
+                "bone": "index_03_l",
+                "travel": 0.04389,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_INDEX_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_MIDDLE_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_middle_bend",
+            "group": "hand",
+            "semantic": "LEFT_MIDDLE_01",
+            "bone": "middle_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 1e-06,
+            "displacement": {
+              "max_disp": 0.0642,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.048863,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_MIDDLE_02",
+                "bone": "middle_02_l",
+                "travel": 0.02352,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_MIDDLE_03",
+                "bone": "middle_03_l",
+                "travel": 0.04402,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_MIDDLE_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_thumb_bend",
+            "group": "hand",
+            "semantic": "LEFT_THUMB_01",
+            "bone": "thumb_01_l",
+            "kind": "finger",
+            "angle_deg": 35.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.074293,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.059708,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_THUMB_02",
+                "bone": "thumb_02_l",
+                "travel": 0.0276,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_THUMB_03",
+                "bone": "thumb_03_l",
+                "travel": 0.04729,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_THUMB_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_all_curl",
+            "group": "hand",
+            "kind": "curl_all",
+            "angle_deg": 30.0,
+            "bones": [
+              {
+                "bone": "index_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "middle_01_l",
+                "axis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "ring_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "pinky_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "thumb_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              }
+            ],
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "displacement": {
+              "max_disp": 0.070012,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.053853,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "exploded": false,
+            "pass": true,
+            "required": true
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0371,
+            "volume_ratio": 1.0371,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.230835,
+              "p50": 0.0,
+              "p95": 0.147019,
+              "p99": 0.222477,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.10246,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.18455,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 6e-06,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_45",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.1265,
+            "volume_ratio": 1.1265,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.341307,
+              "p50": 0.0,
+              "p95": 0.217379,
+              "p99": 0.328948,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.15149,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.27287,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 9e-06,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_60",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0437,
+            "volume_ratio": 1.0437,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.285854,
+              "p50": 0.0,
+              "p95": 0.088033,
+              "p99": 0.268816,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.16504,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 0.9997,
+            "volume_ratio": 0.9997,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.404259,
+              "p50": 0.0,
+              "p95": 0.124497,
+              "p99": 0.380163,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.23341,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_foot_mild",
+            "group": "leg",
+            "semantic": "LEFT_FOOT",
+            "bone": "foot_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0652,
+            "volume_ratio": 1.0652,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.078176,
+              "p50": 0.0,
+              "p95": 0.000389,
+              "p99": 0.074307,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_BALL",
+                "bone": "ball_l",
+                "travel": 0.03488,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_pitch",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "pitch",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0811,
+            "volume_ratio": 1.0811,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.198053,
+              "p50": 0.064783,
+              "p95": 0.178219,
+              "p99": 0.189108,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.11606,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.085969,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_yaw",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0811,
+            "volume_ratio": 1.0811,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.198053,
+              "p50": 0.064783,
+              "p95": 0.178219,
+              "p99": 0.189108,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.11606,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.085969,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_yaw",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 0.9615,
+            "volume_ratio": 0.9615,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.087662,
+              "p50": 0.0,
+              "p95": 0.069888,
+              "p99": 0.079586,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.021886,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_pitch",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "pitch",
+            "angle_deg": 15.0,
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0557,
+            "volume_ratio": 1.0557,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.078284,
+              "p50": 0.0,
+              "p95": 0.045519,
+              "p99": 0.055466,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.01616,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      },
+      "after_clean": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_30",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0399,
+            "volume_ratio": 1.0399,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.208258,
+              "p50": 0.0,
+              "p95": 0.17778,
+              "p99": 0.197888,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.07649,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.12361,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.15285,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0021,
+            "volume_ratio": 1.0021,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.402323,
+              "p50": 0.0,
+              "p95": 0.343444,
+              "p99": 0.382291,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.14777,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.23881,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.29529,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_45",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9916,
+            "volume_ratio": 0.9916,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.202982,
+              "p50": 0.0,
+              "p95": 0.168139,
+              "p99": 0.190213,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.07922,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.14748,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9384,
+            "volume_ratio": 0.9384,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.375061,
+              "p50": 0.0,
+              "p95": 0.310681,
+              "p99": 0.351468,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.14638,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.2725,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_wrist_mild",
+            "group": "arm",
+            "semantic": "LEFT_HAND",
+            "bone": "hand_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0029,
+            "volume_ratio": 1.0029,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.057598,
+              "p50": 0.0,
+              "p95": 0.044793,
+              "p99": 0.052742,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.03768,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_index_bend",
+            "group": "hand",
+            "semantic": "LEFT_INDEX_01",
+            "bone": "index_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.062971,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.047427,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_02",
+                "bone": "index_02_l",
+                "travel": 0.02592,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_03",
+                "bone": "index_03_l",
+                "travel": 0.04389,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_INDEX_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_MIDDLE_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_middle_bend",
+            "group": "hand",
+            "semantic": "LEFT_MIDDLE_01",
+            "bone": "middle_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 1e-06,
+            "displacement": {
+              "max_disp": 0.059006,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.046784,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_MIDDLE_02",
+                "bone": "middle_02_l",
+                "travel": 0.02352,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_MIDDLE_03",
+                "bone": "middle_03_l",
+                "travel": 0.04332,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_MIDDLE_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_thumb_bend",
+            "group": "hand",
+            "semantic": "LEFT_THUMB_01",
+            "bone": "thumb_01_l",
+            "kind": "finger",
+            "angle_deg": 35.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.074293,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.059708,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_THUMB_02",
+                "bone": "thumb_02_l",
+                "travel": 0.0276,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_THUMB_03",
+                "bone": "thumb_03_l",
+                "travel": 0.04729,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_THUMB_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_all_curl",
+            "group": "hand",
+            "kind": "curl_all",
+            "angle_deg": 30.0,
+            "bones": [
+              {
+                "bone": "index_01_l",
+                "axis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "middle_01_l",
+                "axis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "ring_01_l",
+                "axis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "pinky_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "thumb_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              }
+            ],
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "displacement": {
+              "max_disp": 0.070012,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.053853,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "exploded": false,
+            "pass": true,
+            "required": true
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.001,
+            "volume_ratio": 1.001,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.230835,
+              "p50": 0.0,
+              "p95": 0.147019,
+              "p99": 0.222477,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.10246,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.18455,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 6e-06,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_45",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9997,
+            "volume_ratio": 0.9997,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.341307,
+              "p50": 0.0,
+              "p95": 0.217379,
+              "p99": 0.328948,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.15149,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.27287,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 9e-06,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_60",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0437,
+            "volume_ratio": 1.0437,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.285854,
+              "p50": 0.0,
+              "p95": 0.088033,
+              "p99": 0.268815,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.16504,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 0.9997,
+            "volume_ratio": 0.9997,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.404259,
+              "p50": 0.0,
+              "p95": 0.124497,
+              "p99": 0.380163,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.23341,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_foot_mild",
+            "group": "leg",
+            "semantic": "LEFT_FOOT",
+            "bone": "foot_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0652,
+            "volume_ratio": 1.0652,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.078176,
+              "p50": 0.0,
+              "p95": 0.000389,
+              "p99": 0.074307,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_BALL",
+                "bone": "ball_l",
+                "travel": 0.03488,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_pitch",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "pitch",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0811,
+            "volume_ratio": 1.0811,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.198053,
+              "p50": 0.064783,
+              "p95": 0.178219,
+              "p99": 0.189108,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.11606,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.085969,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_yaw",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0811,
+            "volume_ratio": 1.0811,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.198053,
+              "p50": 0.064783,
+              "p95": 0.178219,
+              "p99": 0.189108,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.11606,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.085969,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_yaw",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 0.9615,
+            "volume_ratio": 0.9615,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.087662,
+              "p50": 0.0,
+              "p95": 0.069888,
+              "p99": 0.079586,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.021886,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_pitch",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "pitch",
+            "angle_deg": 15.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0188,
+            "volume_ratio": 1.0188,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.065893,
+              "p50": 0.0,
+              "p95": 0.052533,
+              "p99": 0.059823,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22492
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.016451,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      },
+      "glb_roundtrip_subset": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0312,
+            "volume_ratio": 1.0312,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.307925,
+              "p50": 0.0,
+              "p95": 0.262871,
+              "p99": 0.292617,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22542
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.1131,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.18277,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.226,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8652,
+            "volume_ratio": 0.8652,
+            "limb_length_error": 1e-06,
+            "displacement": {
+              "max_disp": 0.374374,
+              "p50": 0.0,
+              "p95": 0.307458,
+              "p99": 0.354152,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22542
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.14638,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.25395,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.001,
+            "volume_ratio": 1.001,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.230835,
+              "p50": 0.0,
+              "p95": 0.146599,
+              "p99": 0.222477,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22542
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.10246,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.18455,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 5e-06,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0451,
+            "volume_ratio": 1.0451,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.315482,
+              "p50": 0.0,
+              "p95": 0.122827,
+              "p99": 0.280415,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 22542
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.23341,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      }
+    },
+    "terere": {
+      "native": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_30",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8463,
+            "volume_ratio": 0.8463,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.16486,
+              "p50": 0.0,
+              "p95": 0.124111,
+              "p99": 0.150155,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.03828,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.08103,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.11005,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8317,
+            "volume_ratio": 0.8317,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.318486,
+              "p50": 0.0,
+              "p95": 0.239765,
+              "p99": 0.290078,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.07396,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.15654,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.21259,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_45",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9556,
+            "volume_ratio": 0.9556,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.190697,
+              "p50": 0.0,
+              "p95": 0.117947,
+              "p99": 0.1735,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.07254,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.13236,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9556,
+            "volume_ratio": 0.9556,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.352363,
+              "p50": 0.0,
+              "p95": 0.217938,
+              "p99": 0.320587,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.13403,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.24457,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_wrist_mild",
+            "group": "arm",
+            "semantic": "LEFT_HAND",
+            "bone": "hand_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.002,
+            "volume_ratio": 1.002,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.053992,
+              "p50": 0.0,
+              "p95": 0.025398,
+              "p99": 0.048243,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.02866,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_index_bend",
+            "group": "hand",
+            "semantic": "LEFT_INDEX_01",
+            "bone": "index_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.059156,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.017164,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_02",
+                "bone": "index_02_l",
+                "travel": 0.0269,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_03",
+                "bone": "index_03_l",
+                "travel": 0.0403,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_INDEX_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_MIDDLE_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_middle_bend",
+            "group": "hand",
+            "semantic": "LEFT_MIDDLE_01",
+            "bone": "middle_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.061426,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.010541,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_MIDDLE_02",
+                "bone": "middle_02_l",
+                "travel": 0.02596,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_MIDDLE_03",
+                "bone": "middle_03_l",
+                "travel": 0.04019,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_MIDDLE_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_thumb_bend",
+            "group": "hand",
+            "semantic": "LEFT_THUMB_01",
+            "bone": "thumb_01_l",
+            "kind": "finger",
+            "angle_deg": 35.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.058963,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.024493,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_THUMB_02",
+                "bone": "thumb_02_l",
+                "travel": 0.02,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_THUMB_03",
+                "bone": "thumb_03_l",
+                "travel": 0.03961,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_THUMB_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_all_curl",
+            "group": "hand",
+            "kind": "curl_all",
+            "angle_deg": 30.0,
+            "bones": [
+              {
+                "bone": "index_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "middle_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "pinky_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "thumb_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              }
+            ],
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "displacement": {
+              "max_disp": 0.05075,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.021081,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "exploded": false,
+            "pass": true,
+            "required": true
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.145306,
+              "p50": 0.0,
+              "p95": 0.104361,
+              "p99": 0.122181,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.03876,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.07626,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_45",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.214846,
+              "p50": 0.0,
+              "p95": 0.154305,
+              "p99": 0.180653,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.05731,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.11276,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_60",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0333,
+            "volume_ratio": 1.0333,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.216097,
+              "p50": 0.0,
+              "p95": 0.138297,
+              "p99": 0.172478,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.08365,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.305607,
+              "p50": 0.0,
+              "p95": 0.195582,
+              "p99": 0.24392,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.11829,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_foot_mild",
+            "group": "leg",
+            "semantic": "LEFT_FOOT",
+            "bone": "foot_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0479,
+            "volume_ratio": 1.0479,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.06192,
+              "p50": 0.0,
+              "p95": 0.030001,
+              "p99": 0.049697,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_BALL",
+                "bone": "ball_l",
+                "travel": 0.01096,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_pitch",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "pitch",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.2021,
+            "volume_ratio": 1.2021,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.243718,
+              "p50": 0.069377,
+              "p95": 0.146967,
+              "p99": 0.195162,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.05809,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.055906,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_yaw",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.2021,
+            "volume_ratio": 1.2021,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.243718,
+              "p50": 0.069377,
+              "p95": 0.146967,
+              "p99": 0.195162,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.05809,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.055906,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_yaw",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.087742,
+              "p50": 0.0,
+              "p95": 0.003399,
+              "p99": 0.041781,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.000565,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_pitch",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "pitch",
+            "angle_deg": 15.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.065953,
+              "p50": 0.0,
+              "p95": 0.002555,
+              "p99": 0.031405,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.000425,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      },
+      "after_clean": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_30",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8463,
+            "volume_ratio": 0.8463,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.16486,
+              "p50": 0.0,
+              "p95": 0.124111,
+              "p99": 0.150156,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.03828,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.08103,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.11005,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8317,
+            "volume_ratio": 0.8317,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.318486,
+              "p50": 0.0,
+              "p95": 0.239765,
+              "p99": 0.290078,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.07396,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.15654,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.21259,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_45",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9556,
+            "volume_ratio": 0.9556,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.190697,
+              "p50": 0.0,
+              "p95": 0.117947,
+              "p99": 0.1735,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.07254,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.13236,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9556,
+            "volume_ratio": 0.9556,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.352363,
+              "p50": 0.0,
+              "p95": 0.217938,
+              "p99": 0.320587,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.13403,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.24457,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_wrist_mild",
+            "group": "arm",
+            "semantic": "LEFT_HAND",
+            "bone": "hand_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.002,
+            "volume_ratio": 1.002,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.053992,
+              "p50": 0.0,
+              "p95": 0.025398,
+              "p99": 0.048243,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.02866,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_index_bend",
+            "group": "hand",
+            "semantic": "LEFT_INDEX_01",
+            "bone": "index_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.059156,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.017164,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_INDEX_02",
+                "bone": "index_02_l",
+                "travel": 0.0269,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_03",
+                "bone": "index_03_l",
+                "travel": 0.0403,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_INDEX_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_MIDDLE_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_middle_bend",
+            "group": "hand",
+            "semantic": "LEFT_MIDDLE_01",
+            "bone": "middle_01_l",
+            "kind": "finger",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.061426,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.010541,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_MIDDLE_02",
+                "bone": "middle_02_l",
+                "travel": 0.02596,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_MIDDLE_03",
+                "bone": "middle_03_l",
+                "travel": 0.04019,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_MIDDLE_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_thumb_bend",
+            "group": "hand",
+            "semantic": "LEFT_THUMB_01",
+            "bone": "thumb_01_l",
+            "kind": "finger",
+            "angle_deg": 35.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.058963,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.024493,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_THUMB_02",
+                "bone": "thumb_02_l",
+                "travel": 0.02,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_THUMB_03",
+                "bone": "thumb_03_l",
+                "travel": 0.03961,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_THUMB_01",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [
+              {
+                "semantic": "LEFT_INDEX_01",
+                "travel": 0.0,
+                "affected": false
+              }
+            ],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "hand_all_curl",
+            "group": "hand",
+            "kind": "curl_all",
+            "angle_deg": 30.0,
+            "bones": [
+              {
+                "bone": "index_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "middle_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": 1.0
+              },
+              {
+                "bone": "pinky_01_l",
+                "axis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "sign": -1.0
+              },
+              {
+                "bone": "thumb_01_l",
+                "axis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "sign": 1.0
+              }
+            ],
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "displacement": {
+              "max_disp": 0.04999,
+              "p50": 0.0,
+              "p95": 0.0,
+              "p99": 0.021015,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "exploded": false,
+            "pass": true,
+            "required": true
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0368,
+            "volume_ratio": 1.0368,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.145306,
+              "p50": 0.0,
+              "p95": 0.104361,
+              "p99": 0.122181,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.03876,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.07626,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_45",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.028,
+            "volume_ratio": 1.028,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.214846,
+              "p50": 0.0,
+              "p95": 0.154305,
+              "p99": 0.180653,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.05731,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.11276,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_60",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 60.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0354,
+            "volume_ratio": 1.0354,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.216097,
+              "p50": 0.0,
+              "p95": 0.138297,
+              "p99": 0.172478,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.08365,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": -1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.305607,
+              "p50": 0.0,
+              "p95": 0.195582,
+              "p99": 0.24392,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.11829,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_foot_mild",
+            "group": "leg",
+            "semantic": "LEFT_FOOT",
+            "bone": "foot_l",
+            "kind": "twist",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0273,
+            "volume_ratio": 1.0273,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.06192,
+              "p50": 0.0,
+              "p95": 0.030001,
+              "p99": 0.049697,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_BALL",
+                "bone": "ball_l",
+                "travel": 0.01096,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_pitch",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "pitch",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.1009,
+            "volume_ratio": 1.1009,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.243718,
+              "p50": 0.069377,
+              "p95": 0.146967,
+              "p99": 0.195162,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.05809,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.055906,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "torso_spine_yaw",
+            "group": "torso",
+            "semantic": "SPINE",
+            "bone": "spine_01",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.1009,
+            "volume_ratio": 1.1009,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.243718,
+              "p50": 0.069377,
+              "p95": 0.146967,
+              "p99": 0.195162,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [
+              {
+                "semantic": "HEAD",
+                "bone": "head",
+                "travel": 0.05809,
+                "pass": true
+              }
+            ],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.055906,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_yaw",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "yaw",
+            "angle_deg": 20.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.087742,
+              "p50": 0.0,
+              "p95": 0.003399,
+              "p99": 0.041781,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.000565,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "head_pitch",
+            "group": "head",
+            "semantic": "HEAD",
+            "bone": "head",
+            "kind": "pitch",
+            "angle_deg": 15.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 0.0,
+            "displacement": {
+              "max_disp": 0.065953,
+              "p50": 0.0,
+              "p95": 0.002555,
+              "p99": 0.031405,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26352
+            },
+            "follow": [],
+            "opposite": [],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.000425,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      },
+      "glb_roundtrip_subset": {
+        "pass": true,
+        "group_pass": {
+          "arm": true,
+          "hand": true,
+          "leg": true,
+          "torso": true,
+          "head": true
+        },
+        "tests": [
+          {
+            "id": "arm_upperarm_60",
+            "group": "arm",
+            "semantic": "LEFT_UPPERARM",
+            "bone": "upperarm_l",
+            "kind": "swing",
+            "angle_deg": 45.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.8346,
+            "volume_ratio": 0.8346,
+            "limb_length_error": 4e-06,
+            "displacement": {
+              "max_disp": 0.243759,
+              "p50": 0.0,
+              "p95": 0.183498,
+              "p99": 0.222017,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26454
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOREARM",
+                "bone": "lowerarm_l",
+                "travel": 0.0566,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.11981,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.16271,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "arm_forearm_90",
+            "group": "arm",
+            "semantic": "LEFT_FOREARM",
+            "bone": "lowerarm_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 0.9556,
+            "volume_ratio": 0.9556,
+            "limb_length_error": 2e-06,
+            "displacement": {
+              "max_disp": 0.352364,
+              "p50": 0.0,
+              "p95": 0.217938,
+              "p99": 0.320588,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26454
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_HAND",
+                "bone": "hand_l",
+                "travel": 0.13403,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_INDEX_01",
+                "bone": "index_01_l",
+                "travel": 0.24457,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_HAND",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_thigh_30",
+            "group": "leg",
+            "semantic": "LEFT_THIGH",
+            "bone": "thigh_l",
+            "kind": "swing",
+            "angle_deg": 30.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0368,
+            "volume_ratio": 1.0368,
+            "limb_length_error": 1e-06,
+            "displacement": {
+              "max_disp": 0.145307,
+              "p50": 0.0,
+              "p95": 0.104354,
+              "p99": 0.122182,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26454
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_CALF",
+                "bone": "calf_l",
+                "travel": 0.03876,
+                "pass": true
+              },
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.07627,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          },
+          {
+            "id": "leg_calf_90",
+            "group": "leg",
+            "semantic": "LEFT_CALF",
+            "bone": "calf_l",
+            "kind": "hinge",
+            "angle_deg": 90.0,
+            "axis": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "sign": 1.0,
+            "bbox_ratio": 1.0,
+            "volume_ratio": 1.0,
+            "limb_length_error": 8e-06,
+            "displacement": {
+              "max_disp": 0.277467,
+              "p50": 0.0,
+              "p95": 0.137118,
+              "p99": 0.215847,
+              "nan_count": 0,
+              "inf_count": 0,
+              "count": 26454
+            },
+            "follow": [
+              {
+                "semantic": "LEFT_FOOT",
+                "bone": "foot_l",
+                "travel": 0.11829,
+                "pass": true
+              }
+            ],
+            "opposite": [
+              {
+                "semantic": "RIGHT_FOOT",
+                "travel": 0.0,
+                "cross_side": false
+              }
+            ],
+            "neighbor": [],
+            "locality": {
+              "opposite_mesh_mean_disp": 0.0,
+              "pass": true
+            },
+            "exploded": false,
+            "detached": false,
+            "pass": true,
+            "required": true,
+            "notes": []
+          }
+        ]
+      }
+    }
+  }
+}

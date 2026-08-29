@@ -1,0 +1,38 @@
+{
+	"PASS": false,
+	"body_precontact": false,
+	"first_contact_piece": "",
+	"gap_empty": true,
+	"iteration": 4,
+	"layout": "v5",
+	"result": "FAIL_NO_SETTLE",
+	"runs": [
+		{
+			"first_contact": {},
+			"landing": {
+				"airborne_forces": {},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_NO_SETTLE",
+			"run": 1,
+			"takeoff": {}
+		}
+	],
+	"settle_on_landing_straight_long": false,
+	"v4_expected_fail": false,
+	"valid_takeoff": false
+}

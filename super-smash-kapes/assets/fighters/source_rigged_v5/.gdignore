@@ -1,0 +1,4 @@
+# Godot skips this entire directory. V5 AccuRIG FBX/.fbm stay on disk for
+# Blender and Python (filesystem paths). Do not load these as res:// runtime
+# assets. Clean Rig V5 GLBs are the isolated Godot candidate authority.
+# Do not import this tree. Do not overwrite Clean Rig V1.

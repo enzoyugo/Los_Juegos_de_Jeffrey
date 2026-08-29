@@ -1,0 +1,205 @@
+{
+	"all_ok": true,
+	"godot": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"labs": [
+		{
+			"dump": {
+				"active": "V1_IDLE",
+				"candidates": {
+					"V1_IDLE": {
+						"animations": [
+							"idle"
+						],
+						"bone_count": 101,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.66263139247894,
+							"presentation_height": 2.4,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 1.4434949387198
+						}
+					},
+					"V1_REACTION": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 101,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.66263139247894,
+							"presentation_height": 2.4,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 1.4434949387198
+						}
+					},
+					"V5_IDLE": {
+						"animations": [
+							"idle"
+						],
+						"bone_count": 102,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 0.996918022632599,
+							"presentation_height": 2.4,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 2.40741961276037
+						}
+					},
+					"V5_REACTION": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 102,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 0.996918022632599,
+							"presentation_height": 2.4,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 2.40741961276037
+						}
+					},
+					"V5_REACTION_MEDIUM": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 102,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 0.996918022632599,
+							"presentation_height": 2.4,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 2.40741961276037
+						}
+					}
+				},
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "terere",
+				"load_ok": true,
+				"pipeline": "V5_ANIMATION_COMPATIBILITY",
+				"production_untouched": true,
+				"reaction_medium_frozen": false,
+				"target_height": 2.4,
+				"v5_is_canonical": false
+			},
+			"ok": true,
+			"scene": "res://scenes/debug/TerereV5AnimationCompatibilityLab.tscn"
+		},
+		{
+			"dump": {
+				"active": "V1_IDLE",
+				"candidates": {
+					"V1_IDLE": {
+						"animations": [
+							"idle"
+						],
+						"bone_count": 101,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.73141300678253,
+							"presentation_height": 3.15,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 1.81932328546706
+						}
+					},
+					"V1_REACTION": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 101,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.73141300678253,
+							"presentation_height": 3.15,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 1.81932328546706
+						}
+					},
+					"V5_IDLE": {
+						"animations": [
+							"idle"
+						],
+						"bone_count": 118,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.01693844795227,
+							"presentation_height": 3.15,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 3.09753260518659
+						}
+					},
+					"V5_REACTION": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 118,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.01693844795227,
+							"presentation_height": 3.15,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 3.09753260518659
+						}
+					},
+					"V5_REACTION_MEDIUM": {
+						"animations": [
+							"reaction"
+						],
+						"bone_count": 118,
+						"loaded": true,
+						"presentation": {
+							"mesh_geometry_unmodified": true,
+							"native_height": 1.01693844795227,
+							"presentation_height": 3.15,
+							"presentation_only": true,
+							"rig_rest_unmodified": true,
+							"scale": 3.09753260518659
+						}
+					}
+				},
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "jaguarete",
+				"load_ok": true,
+				"pipeline": "V5_ANIMATION_COMPATIBILITY",
+				"production_untouched": true,
+				"reaction_medium_frozen": false,
+				"target_height": 3.15,
+				"v5_is_canonical": false
+			},
+			"ok": true,
+			"scene": "res://scenes/debug/JaguareteV5AnimationCompatibilityLab.tscn"
+		}
+	],
+	"pipeline": "V5_ANIMATION_COMPATIBILITY",
+	"production_untouched": true,
+	"v5_is_canonical": false
+}

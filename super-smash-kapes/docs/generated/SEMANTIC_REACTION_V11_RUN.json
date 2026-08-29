@@ -1,0 +1,240 @@
+{
+  "pipeline": "SEMANTIC_REACTION_V11",
+  "verdict_token": "SSK_SEMANTIC_REACTION_V11_READY_FOR_HUMAN_SELECTION",
+  "wired_into_battle": false,
+  "auto_selected": false,
+  "v1_frozen": true,
+  "traditional_cob_used": false,
+  "idle_assets_modified": false,
+  "reaction_v1_modified": false,
+  "candidates": {
+    "a": {
+      "label": "LIGHT",
+      "torso_peak_deg": 6.0,
+      "hip_share": 0.38,
+      "spine_share": 0.62,
+      "head_share": 0.42,
+      "head_lag_frames": 3,
+      "knee_extra_deg": 0.8,
+      "compress_extra": 0.012,
+      "band": [
+        4.5,
+        7.5
+      ]
+    },
+    "b": {
+      "label": "MEDIUM",
+      "torso_peak_deg": 9.5,
+      "hip_share": 0.4,
+      "spine_share": 0.6,
+      "head_share": 0.4,
+      "head_lag_frames": 3,
+      "knee_extra_deg": 1.5,
+      "compress_extra": 0.018,
+      "band": [
+        7.5,
+        11.5
+      ]
+    },
+    "c": {
+      "label": "STRONG",
+      "torso_peak_deg": 13.5,
+      "hip_share": 0.42,
+      "spine_share": 0.58,
+      "head_share": 0.38,
+      "head_lag_frames": 3,
+      "knee_extra_deg": 2.2,
+      "compress_extra": 0.024,
+      "band": [
+        11.5,
+        16.0
+      ]
+    }
+  },
+  "fighters": {
+    "terere": {
+      "a": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/terere/terere_semantic_reaction_v11_a.glb",
+        "peak_torso_dev": 5.673,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      },
+      "b": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/terere/terere_semantic_reaction_v11_b.glb",
+        "peak_torso_dev": 9.174,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      },
+      "c": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/terere/terere_semantic_reaction_v11_c.glb",
+        "peak_torso_dev": 13.177,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      }
+    },
+    "jaguarete": {
+      "a": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/jaguarete/jaguarete_semantic_reaction_v11_a.glb",
+        "peak_torso_dev": 5.258,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      },
+      "b": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/jaguarete/jaguarete_semantic_reaction_v11_b.glb",
+        "peak_torso_dev": 8.667,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      },
+      "c": {
+        "healthy": true,
+        "dynamic_classification": "HIT_REACTION",
+        "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v11/jaguarete/jaguarete_semantic_reaction_v11_c.glb",
+        "peak_torso_dev": 12.635,
+        "torso_in_target_band": true,
+        "arm_preserved_vs_v1": true,
+        "max_root_xz": 0.0,
+        "start_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "end_continuity": {
+          "spine_dev": 0.0,
+          "L_upperarm_dev": 0.0,
+          "R_upperarm_dev": 0.0,
+          "L_elbow_dev": 0.0,
+          "R_elbow_dev": 0.0,
+          "L_hand_dev": 0.0,
+          "R_hand_dev": 0.0,
+          "hip_dev": 0.0
+        },
+        "roundtrip_bones": 101
+      }
+    }
+  }
+}

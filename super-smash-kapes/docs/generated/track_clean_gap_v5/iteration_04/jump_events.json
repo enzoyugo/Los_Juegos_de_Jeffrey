@@ -1,0 +1,86 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_ENTRY",
+			"piece": "boost_straight",
+			"pos": [
+				-0.411287039518356,
+				-0.00505980104207993,
+				-34.2085189819336
+			],
+			"speed": 26.0673942565918,
+			"t": 2.7,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_EXIT",
+			"piece": "straight_medium",
+			"pos": [
+				-1.66376602649689,
+				-0.02004574239254,
+				-46.4502182006836
+			],
+			"speed": 35.0116920471191,
+			"t": 3.09999999999999,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "RAMP_ENTRY",
+			"piece": "ramp_takeoff",
+			"pos": [
+				4.5216326713562,
+				0.0985538884997368,
+				-70.1766052246094
+			],
+			"speed": 33.1700401306152,
+			"t": 3.76666666666666,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "FAIL_NO_SETTLE",
+			"piece": "landing_straight_long",
+			"pos": [
+				6.10389375686646,
+				-254.860778808594,
+				-124.037078857422
+			],
+			"speed": 0.684334754943848,
+			"t": 16.0000000000004,
+			"throttle": 1.0
+		}
+	],
+	"runs": [
+		{
+			"first_contact": {},
+			"landing": {
+				"airborne_forces": {},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_NO_SETTLE",
+			"run": 1,
+			"takeoff": {}
+		}
+	]
+}

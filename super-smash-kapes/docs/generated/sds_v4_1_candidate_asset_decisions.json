@@ -1,0 +1,28 @@
+[
+  {
+    "raw": "tripo_sds_facade_kit",
+    "decision": "USE_CANDIDATE",
+    "why": "primary SDS photo-reconstructions scaled into entrance/wings"
+  },
+  {
+    "raw": "vaz/hilux/amarok",
+    "decision": "USE_SHOPPING",
+    "why": "Godot-proven or prior SDS parked cars; clustered not packed",
+    "used": true
+  },
+  {
+    "raw": "suggan",
+    "decision": "REJECT_THIS_PASS",
+    "why": "15 textures; keep out of hero GLB bulk"
+  },
+  {
+    "raw": "sds_warning.glb",
+    "decision": "REFERENCE_ONLY",
+    "why": "generic warning mass; not SDS identity"
+  },
+  {
+    "raw": "custom V4.1 atrium/vault/stairs/sign",
+    "decision": "USE_CANDIDATE",
+    "why": "manual completion of kit; HUMAN_REVIEW_REQUIRED"
+  }
+]

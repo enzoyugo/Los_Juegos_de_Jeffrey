@@ -1,0 +1,52 @@
+[
+  {
+    "part": "sds_facade_arch.glb / arch_shell",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "3-bay cream arch is the primary SDS silhouette"
+  },
+  {
+    "part": "sds_facade_glass.glb / glass_mass",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "atrium grid + doors + embedded sun; scaled into arch cavity"
+  },
+  {
+    "part": "sds_logo.glb / logo_mass",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "readable del Sol sunburst landmark"
+  },
+  {
+    "part": "sds_architectural_doorway.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "right boarded storefront, not a second main door"
+  },
+  {
+    "part": "sds_columns.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "cream frame portals at center-to-wing join"
+  },
+  {
+    "part": "sds_brick_building_facade.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "wing relief with balcony/window rhythm, not a 16m slab"
+  },
+  {
+    "part": "sds_itau.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "left SDS tenant storefront"
+  },
+  {
+    "part": "sds_balcony_planter.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "upper band planters"
+  },
+  {
+    "part": "sds_warning.glb",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "skull banners as zombie dressing; mall still primary"
+  },
+  {
+    "part": "cars",
+    "decision": "USE",
+    "used": 2
+  }
+]

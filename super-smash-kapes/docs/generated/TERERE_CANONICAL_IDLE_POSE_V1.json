@@ -1,0 +1,398 @@
+{
+  "authority": "TERERE_CANONICAL_IDLE_POSE_V1",
+  "status": "CANONICAL_IDLE_CENTER",
+  "selected_by_human": true,
+  "selected_pose": "POSE_B",
+  "label": "GAME READY",
+  "source_pose_b_glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_b.glb",
+  "source_pose_b_blend": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/idle_pose_redesign_v1/terere/terere_idle_pose_redesign_v1_b.blend",
+  "glb_sha256": "358b777da47787368def13d0a8284d162f4e9bd3c52fb6aa3ce42c2a49843cf6",
+  "blend_sha256": "b224099468a5a2344858730c49d407585d9d5f208d97b0dc13400c0612c269a1",
+  "glb_bytes": 12390996,
+  "bone_count": 101,
+  "standing_ops": {
+    "CC_Base_Spine01": {
+      "primary": 7.0,
+      "secondary": 0.0
+    },
+    "CC_Base_Head": {
+      "primary": -4.0,
+      "secondary": 0.0
+    },
+    "CC_Base_L_Clavicle": {
+      "primary": 3.0,
+      "secondary": 1.0
+    },
+    "CC_Base_R_Clavicle": {
+      "primary": 3.0,
+      "secondary": 1.0
+    },
+    "CC_Base_L_Upperarm": {
+      "primary": 50.0,
+      "secondary": 26.0
+    },
+    "CC_Base_R_Upperarm": {
+      "primary": 58.0,
+      "secondary": 20.0
+    },
+    "CC_Base_L_Forearm": {
+      "primary": 90.0,
+      "secondary": 0.0
+    },
+    "CC_Base_R_Forearm": {
+      "primary": 86.0,
+      "secondary": 0.0
+    },
+    "CC_Base_L_Hand": {
+      "primary": 8.0,
+      "secondary": 3.0
+    },
+    "CC_Base_R_Hand": {
+      "primary": 7.0,
+      "secondary": 2.0
+    },
+    "CC_Base_L_Calf": {
+      "primary": 40.0,
+      "secondary": 0.0
+    },
+    "CC_Base_R_Calf": {
+      "primary": 40.0,
+      "secondary": 0.0
+    }
+  },
+  "bone_transforms": {
+    "CC_Base_Hip": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.0,
+        0.0,
+        0.516163
+      ]
+    },
+    "CC_Base_Spine01": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.061049,
+        0.0,
+        0.0,
+        0.998135
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.0,
+        -0.005158,
+        0.592178
+      ]
+    },
+    "CC_Base_Head": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        -0.0349,
+        -0.0,
+        -0.0,
+        0.999391
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -1e-06,
+        0.021818,
+        0.900208
+      ]
+    },
+    "CC_Base_L_Clavicle": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.008723,
+        -0.000228,
+        -0.026176,
+        0.999619
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.217639,
+        0.02562,
+        0.80708
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.008723,
+        0.000228,
+        0.026176,
+        0.999619
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.217641,
+        0.02562,
+        0.807078
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.203875,
+        -0.095068,
+        -0.411787,
+        0.883079
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.42086,
+        0.055969,
+        0.87889
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.151876,
+        0.084186,
+        0.477444,
+        0.861332
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.420863,
+        0.055967,
+        0.878887
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.707107,
+        0.0,
+        0.0,
+        0.707107
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.497677,
+        -0.00339,
+        0.754604
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.681998,
+        0.731354
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.484322,
+        0.014196,
+        0.740685
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.026113,
+        -0.001826,
+        -0.069733,
+        0.997222
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.455075,
+        -0.146335,
+        0.795877
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.01742,
+        0.001065,
+        0.061039,
+        0.997983
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.35451,
+        0.020158,
+        0.65663
+      ]
+    },
+    "CC_Base_L_Calf": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.34202,
+        0.939693
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.220204,
+        0.09001,
+        0.284185
+      ]
+    },
+    "CC_Base_R_Calf": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.34202,
+        0.0,
+        0.0,
+        0.939693
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.220204,
+        0.09001,
+        0.284185
+      ]
+    },
+    "CC_Base_L_Foot": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        0.309501,
+        0.104146,
+        0.171544
+      ]
+    },
+    "CC_Base_R_Foot": {
+      "primary_secondary_pose": true,
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_head": [
+        -0.216379,
+        0.012008,
+        0.162683
+      ]
+    }
+  },
+  "silhouette": {
+    "spine_from_up_deg": 12.968,
+    "L_upperarm_from_down": 36.083,
+    "R_upperarm_from_down": 27.135,
+    "L_elbow_flex": 89.804,
+    "R_elbow_flex": 82.633,
+    "shoulder_width": 0.8417,
+    "L_hand": [
+      0.455075,
+      -0.146335,
+      0.795877
+    ],
+    "R_hand": [
+      -0.35451,
+      0.020158,
+      0.65663
+    ],
+    "L_hand_lateral": 0.4551,
+    "R_hand_lateral": 0.3545,
+    "L_hand_to_torso": 0.5043,
+    "R_hand_to_torso": 0.3548,
+    "hands_below_shoulders": true,
+    "hip": [
+      0.0,
+      0.0,
+      0.516163
+    ],
+    "L_foot": [
+      0.309501,
+      0.104146,
+      0.171544
+    ],
+    "R_foot": [
+      -0.216379,
+      0.012008,
+      0.162683
+    ]
+  },
+  "do_not_use": [
+    "semantic_baseline_standing",
+    "polish_v1",
+    "v2_a",
+    "v2_b",
+    "v2_c",
+    "pose_a",
+    "pose_c"
+  ],
+  "note": "Human-selected Terere idle/standing center. Production Semantic Idle V1 must animate around this pose."
+}

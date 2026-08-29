@@ -1,0 +1,157 @@
+{
+  "shared_by": [
+    "terere",
+    "jaguarete"
+  ],
+  "idle_animates_around": "canonical_standing_not_tpose",
+  "angles_deg_native_axis": {
+    "CC_Base_L_Clavicle": 8.0,
+    "CC_Base_R_Clavicle": 8.0,
+    "CC_Base_L_Upperarm": 62.0,
+    "CC_Base_R_Upperarm": 62.0,
+    "CC_Base_L_Forearm": 12.0,
+    "CC_Base_R_Forearm": 12.0,
+    "CC_Base_L_Hand": 10.0,
+    "CC_Base_R_Hand": 10.0
+  },
+  "quality_on_terere_source": {
+    "L_upperarm_from_down_deg": 17.225,
+    "R_upperarm_from_down_deg": 17.224,
+    "mean_upperarm_from_down_deg": 17.224,
+    "L_hand_from_down_deg": 20.22,
+    "R_hand_from_down_deg": 14.142,
+    "mean_hand_from_down_deg": 17.181,
+    "L_elbow_flexion_deg": 12.646,
+    "R_elbow_flexion_deg": 12.634,
+    "L_thigh_from_down_deg": 22.663,
+    "R_thigh_from_down_deg": 22.662,
+    "L_knee_flexion_deg": 19.758,
+    "R_knee_flexion_deg": 19.758,
+    "torso_lean_deg": 14.336,
+    "head_lean_deg": 7.949,
+    "arms_lowered_from_tpose": true
+  },
+  "note": "Native-axis arm chain. Action assigned before pose keys so standing is not T-pose.",
+  "arm_chain_ops": {
+    "terere": {
+      "CC_Base_L_Clavicle": {
+        "primary": 8.0,
+        "secondary": 5.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Clavicle": {
+        "primary": 8.0,
+        "secondary": 5.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Upperarm": {
+        "primary": 62.0,
+        "secondary": 14.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Upperarm": {
+        "primary": 62.0,
+        "secondary": 14.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Forearm": {
+        "primary": 12.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Forearm": {
+        "primary": 12.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      }
+    },
+    "jaguarete": {
+      "CC_Base_L_Clavicle": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Clavicle": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Upperarm": {
+        "primary": 55.0,
+        "secondary": 18.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Upperarm": {
+        "primary": 55.0,
+        "secondary": 18.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Forearm": {
+        "primary": 16.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Forearm": {
+        "primary": 16.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      }
+    }
+  },
+  "quality_by_character": {
+    "terere": {
+      "L_upperarm_from_down_deg": 17.225,
+      "R_upperarm_from_down_deg": 17.224,
+      "mean_upperarm_from_down_deg": 17.224,
+      "L_hand_from_down_deg": 20.22,
+      "R_hand_from_down_deg": 14.142,
+      "mean_hand_from_down_deg": 17.181,
+      "L_elbow_flexion_deg": 12.646,
+      "R_elbow_flexion_deg": 12.634,
+      "L_thigh_from_down_deg": 22.663,
+      "R_thigh_from_down_deg": 22.662,
+      "L_knee_flexion_deg": 19.758,
+      "R_knee_flexion_deg": 19.758,
+      "torso_lean_deg": 14.336,
+      "head_lean_deg": 7.949,
+      "arms_lowered_from_tpose": true
+    },
+    "jaguarete": {
+      "L_upperarm_from_down_deg": 27.403,
+      "R_upperarm_from_down_deg": 27.403,
+      "mean_upperarm_from_down_deg": 27.403,
+      "L_hand_from_down_deg": 18.615,
+      "R_hand_from_down_deg": 36.189,
+      "mean_hand_from_down_deg": 27.402,
+      "L_elbow_flexion_deg": 18.296,
+      "R_elbow_flexion_deg": 17.529,
+      "L_thigh_from_down_deg": 9.832,
+      "R_thigh_from_down_deg": 9.883,
+      "L_knee_flexion_deg": 7.467,
+      "R_knee_flexion_deg": 7.41,
+      "torso_lean_deg": 0.34,
+      "head_lean_deg": 7.902,
+      "arms_lowered_from_tpose": true
+    }
+  }
+}

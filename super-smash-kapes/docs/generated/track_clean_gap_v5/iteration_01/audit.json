@@ -1,0 +1,87 @@
+{
+	"PASS": false,
+	"body_precontact": false,
+	"first_contact_piece": "jump_small",
+	"gap_empty": true,
+	"iteration": 1,
+	"layout": "v4",
+	"result": "FAIL_FIRST_CONTACT_WRONG_PIECE",
+	"runs": [
+		{
+			"first_contact": {
+				"boost_active": false,
+				"chassis_pitch": 15.5003356797786,
+				"chassis_roll": 3.4809561781821,
+				"distance_from_landing_deck_start": -6.25050354003906,
+				"grounded": 4,
+				"hit_ids": {
+					"jump_small": 4
+				},
+				"landing_piece": "jump_small",
+				"landing_vy": -1.37386274337769,
+				"piece": "jump_small",
+				"pitch_deg": 15.5003356797786,
+				"pos": [
+					-1.08829259872437,
+					6.1725172996521,
+					-95.9494934082031
+				],
+				"roll_deg": 3.4809561781821,
+				"speed": 10.8548612594604,
+				"t": 5.31666666666665,
+				"throttle": 0.0,
+				"vy": -1.37386274337769,
+				"wheel_count": 4
+			},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 34889.3595088607,
+					"tire": 24000.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_FIRST_CONTACT_WRONG_PIECE",
+			"run": 1,
+			"takeoff": {
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"grounded": 0,
+				"piece": "jump_small",
+				"pitch_deg": 29.9116659982903,
+				"pos": [
+					-1.35971224308014,
+					3.64793419837952,
+					-82.7302780151367
+				],
+				"roll_deg": 0.526603369500605,
+				"speed": 14.1714534759521,
+				"t": 4.28333333333332,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vy": 8.02632522583008
+			}
+		}
+	],
+	"settle_on_landing_straight_long": false,
+	"v4_expected_fail": true,
+	"valid_takeoff": true
+}

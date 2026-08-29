@@ -1,0 +1,9 @@
+{
+  "iteration": 1,
+  "note": "No clean-jump landing this iteration. Spawn-drop landings are settle, not jump landings.",
+  "valid_landing": false,
+  "peak_c": null,
+  "peak_f": null,
+  "first_contact_wheel_count": 0,
+  "PASS": false
+}

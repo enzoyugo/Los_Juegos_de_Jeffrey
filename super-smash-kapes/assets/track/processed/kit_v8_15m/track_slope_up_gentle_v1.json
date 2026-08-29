@@ -1,0 +1,120 @@
+{
+  "piece_id": "slope_up_gentle",
+  "family": "elevation",
+  "type": "slope",
+  "road_width": 15.0,
+  "shoulder_width": 0.9,
+  "guardrail_height": 0.9,
+  "centerline_length": 24.043161189826932,
+  "height_delta": 1.44,
+  "yaw_delta": 0.0,
+  "pitch_delta": 0.05992815512120788,
+  "roll_delta": 0.0,
+  "left_guardrail": true,
+  "right_guardrail": true,
+  "estimated_traversal_time": 0.75,
+  "difficulty": "tranqui",
+  "tags": [
+    "slope",
+    "elevation"
+  ],
+  "procedural": true,
+  "entry": {
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.0
+  },
+  "exit": {
+    "origin": [
+      0.0,
+      1.44,
+      -24.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.05992815512120788
+  },
+  "collision": [
+    {
+      "kind": "road",
+      "origin": [
+        0.0,
+        0.6599999999999999,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.05992815512120788,
+      "size": [
+        16.8,
+        0.24,
+        24.363161189826933
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        -8.51,
+        0.45,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.05992815512120788,
+      "size": [
+        0.22,
+        0.9,
+        24.183161189826933
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        8.51,
+        0.45,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.05992815512120788,
+      "size": [
+        0.22,
+        0.9,
+        24.183161189826933
+      ]
+    },
+    {
+      "kind": "shoulder",
+      "origin": [
+        -5.85,
+        0.6699999999999999,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.05992815512120788,
+      "size": [
+        0.7,
+        0.1,
+        24.08316118982693
+      ]
+    },
+    {
+      "kind": "shoulder",
+      "origin": [
+        5.85,
+        0.6699999999999999,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.05992815512120788,
+      "size": [
+        0.7,
+        0.1,
+        24.08316118982693
+      ]
+    }
+  ],
+  "glb": "track_slope_up_gentle_v1.glb",
+  "kit": "kit_v8_15m",
+  "v9_overlap": 0.18
+}

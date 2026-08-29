@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/debug/jaguarete_actorcore_animation_lab.gd" id="1"]
+
+[node name="JaguareteActorCoreAnimationLab" type="Node3D"]
+script = ExtResource("1")
+benchmark_glb = "res://assets/fighters/processed/actorcore_benchmark/jaguarete/jaguarete_actorcore_idle.glb"
+character_label = "JAGUARETÉ"
+camera_height = 2.1
+camera_distance = 7.0

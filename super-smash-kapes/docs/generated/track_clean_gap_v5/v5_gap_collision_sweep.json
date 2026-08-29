@@ -1,0 +1,14 @@
+{
+  "takeoff_edge": [
+    0.0,
+    2.189904,
+    -81.2
+  ],
+  "landing_start": [
+    0.0,
+    0.949904,
+    -88.2
+  ],
+  "road_collision_in_gap_interior": [],
+  "empty": true
+}

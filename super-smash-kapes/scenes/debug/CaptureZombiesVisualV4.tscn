@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_capture_zombies_visual_v4"]
+
+[ext_resource type="Script" path="res://scripts/debug/capture_zombies_visual_v4.gd" id="1"]
+
+[node name="CaptureZombiesVisualV4" type="Node3D"]
+script = ExtResource("1")

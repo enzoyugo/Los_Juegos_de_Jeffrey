@@ -1,0 +1,24 @@
+{
+  "boost_duration": 0.85,
+  "boost_overspeed": 1.22,
+  "controller": "BASELINE",
+  "ok": true,
+  "peak_delta": 11.879997253418,
+  "peak_delta_min": 4.0,
+  "run_a": {
+    "end": 54.0,
+    "entered": true,
+    "entry": 48.2614707946777,
+    "peak": 54.0,
+    "t025": 52.4836502075195,
+    "t050": 54.0
+  },
+  "run_b": {
+    "end": 54.0,
+    "entered": true,
+    "entry": 48.2614707946777,
+    "peak": 65.879997253418,
+    "t025": 65.879997253418,
+    "t050": 65.879997253418
+  }
+}

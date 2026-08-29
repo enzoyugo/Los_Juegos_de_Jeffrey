@@ -1,3 +1,71 @@
-# Godot 4+ specific ignores
+# Godot
 .godot/
 /android/
+*.translation
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+*~
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local secrets / env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Runtime / research outputs (keep outside repo when possible)
+outputs/
+**/outputs/perf/
+**/runtime-review/
+*.crash
+
+# Blender caches / backups
+*.blend1
+*.blend2
+*.blend#
+
+# Large / non-runtime source pipelines (do not push to GitHub)
+assets/raw_models/
+assets/reference/
+assets/fighters/processed/actorcore_benchmark/
+assets/fighters/processed/clean_rig_v1/
+assets/fighters/processed/clean_rig_v5/
+assets/fighters/processed/idle_benchmark_v1/
+assets/fighters/processed/idle_pose_redesign_v1/
+assets/fighters/processed/native_skin_audit/
+assets/fighters/processed/production_semantic_idle_v1/
+assets/fighters/processed/semantic_idle_polish_v1/
+assets/fighters/processed/semantic_idle_polish_v2/
+assets/fighters/processed/semantic_reaction_v1/
+assets/fighters/processed/semantic_reaction_v11/
+assets/fighters/processed/semantic_solver_v2/
+assets/fighters/processed/solver_v1/
+assets/fighters/processed/v5_animation_benchmark/
+assets/environments/shopping_del_sol/blender/
+assets/environments/**/blender/
+**/native_skin_audit/
+**/*_candidate.glb
+**/*_candidate_*.png
+**/*_candidate_*.jpg
+
+# Local audit scratch
+_rig_audit.txt

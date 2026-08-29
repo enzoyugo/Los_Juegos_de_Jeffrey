@@ -1,0 +1,17 @@
+SRC=E:\SuperSmashKapes\super-smash-kapes\assets\vehicles\track\source\track_car_base_v1.glb
+imported verts=24633
+Wheel_FL selected_verts=1756 center=(-0.201, 0.285, 0.085)
+Wheel_FL kept_verts=2356
+Wheel_FL verts=2425 origin=(-0.20100000500679016, 0.2849999964237213, 0.08500000089406967)
+Wheel_FR selected_verts=1657 center=(0.204, 0.285, 0.085)
+Wheel_FR kept_verts=2233
+Wheel_FR verts=2288 origin=(0.20399999618530273, 0.2849999964237213, 0.08500000089406967)
+Wheel_RL selected_verts=1711 center=(-0.202, -0.298, 0.085)
+Wheel_RL kept_verts=2348
+Wheel_RL verts=2427 origin=(-0.20200000703334808, -0.2980000078678131, 0.08500000089406967)
+Wheel_RR selected_verts=1836 center=(0.203, -0.298, 0.085)
+Wheel_RR kept_verts=2319
+Wheel_RR verts=2340 origin=(0.2029999941587448, -0.2980000078678131, 0.08500000089406967)
+mesh_objects=['Body', 'Wheel_FL', 'Wheel_FR', 'Wheel_RL', 'Wheel_RR']
+body_verts_after=15153
+exported E:\SuperSmashKapes\super-smash-kapes\assets\vehicles\track\processed\track_car_base_v2_articulated.glb exists=True size=4177552

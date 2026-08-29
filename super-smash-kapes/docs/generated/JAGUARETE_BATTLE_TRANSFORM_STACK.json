@@ -1,0 +1,1601 @@
+{
+	"candidate_aabb_left": {
+		"position": [
+			-0.774999976158142,
+			-0.0000000176360117620789,
+			-0.389999985694885
+		],
+		"size": [
+			1.54999995231628,
+			0.042380765080452,
+			0.779999971389771
+		]
+	},
+	"candidate_aabb_right": {
+		"position": [
+			-0.774999976158142,
+			-0.0000000176360117620789,
+			-0.389999985694885
+		],
+		"size": [
+			1.54999995231628,
+			0.042380765080452,
+			0.779999971389771
+		]
+	},
+	"candidate_after_idle_air_idle": [
+		{
+			"class": "Node3D",
+			"name": "AuditHost",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "jaguarete_candidate",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "VisualMotionRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "PresentationScaleRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				2.44775581359863,
+				2.44775581359863,
+				2.44775581359863
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "FacingRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				1.0,
+				0.0,
+				-0.0000000437113882867379
+			],
+			"rotation_deg": [
+				0.0,
+				180.000005008956,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ModelRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.5,
+				0.5,
+				0.5,
+				-0.5
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				-90.0000025044782,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ImportedModel",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "Armature",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.707106828689575,
+				0.0,
+				0.0,
+				0.707106709480286
+			],
+			"rotation_deg": [
+				90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				0.00999999977648258,
+				0.00999999977648258,
+				0.00999999977648258
+			]
+		},
+		{
+			"class": "Skeleton3D",
+			"name": "Skeleton3D",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "model",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D/model",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "VisualBoundsDebug",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/VisualBoundsDebug",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "BlobShadow",
+			"path": "BlobShadow",
+			"position": [
+				0.0,
+				0.0199999995529652,
+				0.0
+			],
+			"quaternion": [
+				-0.70710676908493,
+				0.0,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	],
+	"candidate_facing_left": [
+		{
+			"class": "Node3D",
+			"name": "AuditHost",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "jaguarete_candidate",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "VisualMotionRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "PresentationScaleRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				2.44775581359863,
+				2.44775581359863,
+				2.44775581359863
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "FacingRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				1.0,
+				0.0,
+				-0.0000000437113882867379
+			],
+			"rotation_deg": [
+				0.0,
+				180.000005008956,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ModelRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.5,
+				0.5,
+				0.5,
+				-0.5
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				-90.0000025044782,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ImportedModel",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "Armature",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.707106828689575,
+				0.0,
+				0.0,
+				0.707106709480286
+			],
+			"rotation_deg": [
+				90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				0.00999999977648258,
+				0.00999999977648258,
+				0.00999999977648258
+			]
+		},
+		{
+			"class": "Skeleton3D",
+			"name": "Skeleton3D",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "model",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D/model",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "VisualBoundsDebug",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/VisualBoundsDebug",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "BlobShadow",
+			"path": "BlobShadow",
+			"position": [
+				0.0,
+				0.0199999995529652,
+				0.0
+			],
+			"quaternion": [
+				-0.70710676908493,
+				0.0,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	],
+	"candidate_facing_right": [
+		{
+			"class": "Node3D",
+			"name": "AuditHost",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "jaguarete_candidate",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "VisualMotionRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "PresentationScaleRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				2.44775581359863,
+				2.44775581359863,
+				2.44775581359863
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "FacingRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ModelRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.5,
+				0.5,
+				0.5,
+				-0.5
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				-90.0000025044782,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ImportedModel",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "Armature",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.707106828689575,
+				0.0,
+				0.0,
+				0.707106709480286
+			],
+			"rotation_deg": [
+				90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				0.00999999977648258,
+				0.00999999977648258,
+				0.00999999977648258
+			]
+		},
+		{
+			"class": "Skeleton3D",
+			"name": "Skeleton3D",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "model",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D/model",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "VisualBoundsDebug",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/VisualBoundsDebug",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "BlobShadow",
+			"path": "BlobShadow",
+			"position": [
+				0.0,
+				0.0199999995529652,
+				0.0
+			],
+			"quaternion": [
+				-0.70710676908493,
+				0.0,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	],
+	"candidate_spawn": [
+		{
+			"class": "Node3D",
+			"name": "AuditHost",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "jaguarete_candidate",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "VisualMotionRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "PresentationScaleRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				2.44775581359863,
+				2.44775581359863,
+				2.44775581359863
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "FacingRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ModelRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.5,
+				0.5,
+				0.5,
+				-0.5
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				-90.0000025044782,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ImportedModel",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "Armature",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.707106828689575,
+				0.0,
+				0.0,
+				0.707106709480286
+			],
+			"rotation_deg": [
+				90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				0.00999999977648258,
+				0.00999999977648258,
+				0.00999999977648258
+			]
+		},
+		{
+			"class": "Skeleton3D",
+			"name": "Skeleton3D",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "model",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D/model",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "VisualBoundsDebug",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/VisualBoundsDebug",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "BlobShadow",
+			"path": "BlobShadow",
+			"position": [
+				0.0,
+				0.0199999995529652,
+				0.0
+			],
+			"quaternion": [
+				-0.70710676908493,
+				0.0,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	],
+	"candidate_upright_left": {
+		"classification": "UPRIGHT",
+		"delta": [
+			-0.017400149255991,
+			1.32986032962799,
+			0.0000000322761266602356
+		],
+		"dominant_axis": "Y",
+		"head": [
+			-0.0174009278416634,
+			3.16541409492493,
+			0.0000000322871649416356
+		],
+		"hip": [
+			-0.000000778226990405528,
+			1.83555376529694,
+			0.0000000000110370133171722
+		],
+		"ok": true
+	},
+	"candidate_upright_right": {
+		"classification": "UPRIGHT",
+		"delta": [
+			0.0184654649347067,
+			1.32977521419525,
+			-0.0000000263489994267729
+		],
+		"dominant_axis": "Y",
+		"head": [
+			0.0184661373496056,
+			3.16533041000366,
+			-0.0000000263538648681561
+		],
+		"hip": [
+			0.000000671531665830116,
+			1.83555519580841,
+			-0.0000000000048652887274514
+		],
+		"ok": true
+	},
+	"production_spawn": [
+		{
+			"class": "Node3D",
+			"name": "AuditHost",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "jaguarete_production",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "VisualMotionRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "PresentationScaleRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.91507697105408,
+				1.91507697105408,
+				1.91507697105408
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "FacingRoot",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ModelRoot",
+			"position": [
+				-0.291819751262665,
+				0.0000013295115195433,
+				-0.000000228294965154419
+			],
+			"quaternion": [
+				0.0,
+				-0.70710676908493,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				0.0,
+				-90.0000025044782,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "ImportedModel",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "Node3D",
+			"name": "Armature",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.707106828689575,
+				0.0,
+				0.0,
+				0.707106709480286
+			],
+			"rotation_deg": [
+				90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				0.00999999977648258,
+				0.00999999977648258,
+				0.00999999977648258
+			]
+		},
+		{
+			"class": "Skeleton3D",
+			"name": "Skeleton3D",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "model",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/ImportedModel/Armature/Skeleton3D/model",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "VisualBoundsDebug",
+			"path": "VisualMotionRoot/PresentationScaleRoot/FacingRoot/ModelRoot/VisualBoundsDebug",
+			"position": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"quaternion": [
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			],
+			"rotation_deg": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"class": "MeshInstance3D",
+			"name": "BlobShadow",
+			"path": "BlobShadow",
+			"position": [
+				0.0,
+				0.0199999995529652,
+				0.0
+			],
+			"quaternion": [
+				-0.70710676908493,
+				0.0,
+				0.0,
+				0.70710676908493
+			],
+			"rotation_deg": [
+				-90.0000025044782,
+				0.0,
+				0.0
+			],
+			"scale": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	]
+}

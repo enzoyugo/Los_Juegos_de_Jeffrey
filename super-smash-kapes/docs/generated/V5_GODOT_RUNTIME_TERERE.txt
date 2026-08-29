@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 560.94 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2060 SUPER
+
+[CLEAN_RIG_V5_LAB]
+fighter=terere
+pipeline=V5
+target_height=2.4
+asset=res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb
+loaded_path=res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb
+load_ok=true
+fallback=false
+fail_reason=
+skeleton_count=1
+bone_count=102
+mesh_count=1
+animation_count=0
+materials=["res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb::StandardMaterial3D_l5gx6"]
+bones={ "hip": { "found": true, "name": "pelvis", "x": 0.0, "y": 0.28179335594177, "z": 0.0 }, "head": { "found": true, "name": "head", "x": 0.00000063635935, "y": 0.46841323375702, "z": -0.017618117854 }, "l_hand": { "found": true, "name": "hand_l", "x": 0.36442863941193, "y": 0.35282099246979, "z": -0.01919020712376 }, "r_hand": { "found": true, "name": "hand_r", "x": -0.36464881896973, "y": 0.35321575403214, "z": -0.01906128972769 }, "l_foot": { "found": true, "name": "foot_l", "x": 0.12384187430143, "y": 0.08140985667706, "z": -0.035345710814 }, "r_foot": { "found": true, "name": "foot_r", "x": -0.12384080886841, "y": 0.08140613138676, "z": -0.03533773869276 }, "l_upperarm": { "found": true, "name": "upperarm_l", "x": 0.24864414334297, "y": 0.46354606747627, "z": -0.04996958374977 }, "r_upperarm": { "found": true, "name": "upperarm_r", "x": -0.24866652488708, "y": 0.46370249986649, "z": -0.04998111724854 } }

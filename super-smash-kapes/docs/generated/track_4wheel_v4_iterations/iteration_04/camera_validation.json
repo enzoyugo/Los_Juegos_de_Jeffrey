@@ -1,0 +1,7 @@
+{
+	"auto_side_on_takeoff": true,
+	"chase_close_keeps_horizon": true,
+	"lab_only": true,
+	"landing_side_fixed_to_deck": true,
+	"track_main_untouched": true
+}

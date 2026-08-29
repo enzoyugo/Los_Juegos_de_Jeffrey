@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://trackcarplayerv1mat"]
+
+[ext_resource type="Texture2D" uid="uid://c5cf5cw3ckr6g" path="res://assets/vehicles/track/source/track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg" id="1_atlas"]
+
+[resource]
+resource_name = "track_car_player_v1"
+albedo_texture = ExtResource("1_atlas")
+albedo_color = Color(1, 1, 1, 1)
+metallic = 0.0
+roughness = 0.5
+texture_filter = 5

@@ -1,0 +1,6107 @@
+{
+	"chosen_import_correction": {
+		"id": "X-90",
+		"note": "single ImportCorrectionRoot basis; ModelRoot must stay identity for semantic V2",
+		"votes": {
+			"X-90": 2
+		}
+	},
+	"env_SSK_USE_SEMANTIC_V2_CANDIDATE": true,
+	"fighters": {
+		"jaguarete": {
+			"animation_root_tracks": {
+				"idle_clip": "idle",
+				"ok": true,
+				"root_or_armature_or_hip_tracks": [
+					{
+						"keys": 56,
+						"path": "Armature/Skeleton3D:CC_Base_Hip",
+						"type": 1
+					}
+				],
+				"track_count": 35,
+				"whole_body_rotation_track": true
+			},
+			"first_node_where_up_leaves_plus_y": {
+				"dominant": "Y",
+				"status": "world_hip_head_already_plus_y"
+			},
+			"glb": "res://assets/fighters/processed/semantic_solver_v2/jaguarete/jaguarete_idle_semantic_v2.glb",
+			"import_correction_sweep": [
+				{
+					"compose": "identity",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "none",
+					"mapped_hip_head": [
+						-0.0000000198329814793397,
+						0.00570933427661657,
+						0.543386399745941
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.0105063713157619
+				},
+				{
+					"compose": "Rx",
+					"dominant": "Y",
+					"euler_deg": [
+						90.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": true,
+					"id": "X+90",
+					"mapped_hip_head": [
+						-0.0000000198329814793397,
+						-0.543386399745941,
+						0.00570931052789092
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.999944828427378
+				},
+				{
+					"compose": "Rx",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "X-90",
+					"mapped_hip_head": [
+						-0.0000000198329814793397,
+						0.543386399745941,
+						-0.00570935802534223
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.999944828427378
+				},
+				{
+					"compose": "Ry",
+					"dominant": "X",
+					"euler_deg": [
+						0.0,
+						90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Y+90",
+					"mapped_hip_head": [
+						0.543386399745941,
+						0.00570933427661657,
+						-0.00000000391919208198033
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.0105063713157619
+				},
+				{
+					"compose": "Ry",
+					"dominant": "X",
+					"euler_deg": [
+						0.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Y-90",
+					"mapped_hip_head": [
+						-0.543386399745941,
+						0.00570933427661657,
+						-0.0000000435851532643028
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.0105063713157619
+				},
+				{
+					"compose": "Rz",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						90.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": false,
+					"id": "Z+90",
+					"mapped_hip_head": [
+						-0.00570933427661657,
+						-0.0000000200825436280638,
+						0.543386399745941
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.0000000369560880653963
+				},
+				{
+					"compose": "Rz",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						-90.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Z-90",
+					"mapped_hip_head": [
+						0.00570933427661657,
+						0.0000000195834193306155,
+						0.543386399745941
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.000000036037594779202
+				},
+				{
+					"compose": "Node3D.rotation YXZ (yaw then pitch)",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "current_modelroot_euler_YXZ_pitch-90_yaw-90",
+					"mapped_hip_head": [
+						0.00570935802534223,
+						0.543386399745941,
+						-0.0000000195834175542586
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.999944828427378
+				},
+				{
+					"compose": "Ry * Rx (pitch first, then yaw)",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "Rx-90_then_Ry-90",
+					"mapped_hip_head": [
+						0.00570935802534223,
+						0.543386399745941,
+						-0.0000000195834175542586
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.999944828427378
+				},
+				{
+					"compose": "Rx * Ry (yaw first, then pitch)",
+					"dominant": "X",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": false,
+					"id": "Ry-90_then_Rx-90",
+					"mapped_hip_head": [
+						-0.543386399745941,
+						-0.0000000438347171893838,
+						-0.00570933427661657
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.0000000806650640862463
+				}
+			],
+			"load_path": "GLTFDocument.append_from_file (no .import PackedScene)",
+			"native_unparented": {
+				"animation_list": [
+					"canonical_standing",
+					"idle",
+					"rest"
+				],
+				"armature": {
+					"class": "Node3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "Armature",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"local_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"name": "Armature",
+					"scale": [
+						0.00999999977648258,
+						0.00999999977648258,
+						0.00999999977648258
+					]
+				},
+				"glb_root": {
+					"class": "Node3D",
+					"global_basis": {
+						"x": [
+							1.0,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							1.0,
+							0.0
+						],
+						"z": [
+							0.0,
+							0.0,
+							1.0
+						]
+					},
+					"global_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"global_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"label": "NativeGLB",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "NativeGLB",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				},
+				"hip_head": {
+					"delta": [
+						-0.0000000198329814793397,
+						0.00570933427661657,
+						0.543386399745941
+					],
+					"dominant": "Z",
+					"head": [
+						-0.0000000198332141820856,
+						0.0057095498777926,
+						1.29327988624573
+					],
+					"head_above_hips": true,
+					"hip": [
+						-0.000000000000232375859006428,
+						0.000000215781497558964,
+						0.749893486499786
+					],
+					"ok": true
+				},
+				"load_path": "GLTFDocument.append_from_file (no .import PackedScene)",
+				"mesh": {
+					"class": "MeshInstance3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "model",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "model",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				},
+				"native_up_axis": "Z",
+				"ok": true,
+				"skeleton": {
+					"class": "Skeleton3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "Skeleton3D",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "Skeleton3D",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				}
+			},
+			"runtime_chain": {
+				"facing_left": {
+					"facing_root_rotation_deg": [
+						0.0,
+						180.000005008956,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							-0.015969805419445,
+							1.3299732208252,
+							0.0000000380665881039022
+						],
+						"dominant": "Y",
+						"head": [
+							-0.0159707274287939,
+							3.16552472114563,
+							0.0000000380858331539002
+						],
+						"head_above_hips": true,
+						"hip": [
+							-0.000000921473883863655,
+							1.83555150032043,
+							0.0000000000192442225349643
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "jaguarete_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								2.44775581359863,
+								2.44775581359863,
+								2.44775581359863
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-2.44775581359863,
+									0.0,
+									0.000000213989608255361
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									-0.000000213989608255361,
+									0.0,
+									-2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								1.0,
+								0.0,
+								-0.0000000437113882867379
+							],
+							"global_rotation_deg": [
+								0.0,
+								-179.999991348578,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								1.0,
+								0.0,
+								-0.0000000437113882867379
+							],
+							"local_rotation_deg": [
+								0.0,
+								180.000005008956,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									-2.44775581359863
+								],
+								"y": [
+									-2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									-0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									-2.44775581359863
+								],
+								"y": [
+									-2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									-0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									-2.44775581359863
+								],
+								"y": [
+									-2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									-0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									-0.0244775582104921
+								],
+								"y": [
+									0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									-0.0244775582104921
+								],
+								"y": [
+									0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									-0.0244775582104921
+								],
+								"y": [
+									0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"facing_right": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.0184654649347067,
+							1.32977521419525,
+							-0.0000000263489994267729
+						],
+						"dominant": "Y",
+						"head": [
+							0.0184661373496056,
+							3.16533041000366,
+							-0.0000000263538648681561
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.000000671531665830116,
+							1.83555519580841,
+							-0.0000000000048652887274514
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "jaguarete_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								2.44775581359863,
+								2.44775581359863,
+								2.44775581359863
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"idle_frame": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.0215543862432241,
+							1.32951998710632,
+							-0.0000000135710234161479
+						],
+						"dominant": "Y",
+						"head": [
+							0.0215547475963831,
+							3.16507983207703,
+							-0.000000013558186573448
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.000000362093203420955,
+							1.8355598449707,
+							0.0000000000128366700949401
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "jaguarete_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								2.44775581359863,
+								2.44775581359863,
+								2.44775581359863
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"spawn": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.0234550051391125,
+							1.32935690879822,
+							-0.00000000570669866917228
+						],
+						"dominant": "Y",
+						"head": [
+							0.0234551765024662,
+							3.16491961479187,
+							-0.00000000568296742997632
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.000000171647286606458,
+							1.83556270599365,
+							0.0000000000237314577711256
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "jaguarete_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								2.44775581359863,
+								2.44775581359863,
+								2.44775581359863
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									2.44775581359863,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									2.44775581359863,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									2.44775581359863
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000010699480412768,
+									0.0,
+									2.44775581359863
+								],
+								"y": [
+									2.44775581359863,
+									-0.00000010699480412768,
+									0.00000010699480412768
+								],
+								"z": [
+									0.00000010699480412768,
+									2.44775581359863,
+									0.00000000000000467689157123167
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000106994801907234,
+									0.0,
+									0.0244775582104921
+								],
+								"y": [
+									-0.00000000184800452718292,
+									0.0244775582104921,
+									-0.0000000000000000807788454970131
+								],
+								"z": [
+									-0.0244775582104921,
+									-0.00000000184800452718292,
+									-0.00000000106994801907234
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				}
+			}
+		},
+		"terere": {
+			"animation_root_tracks": {
+				"idle_clip": "idle",
+				"ok": true,
+				"root_or_armature_or_hip_tracks": [
+					{
+						"keys": 56,
+						"path": "Armature/Skeleton3D:CC_Base_Hip",
+						"type": 1
+					}
+				],
+				"track_count": 35,
+				"whole_body_rotation_track": true
+			},
+			"first_node_where_up_leaves_plus_y": {
+				"dominant": "Y",
+				"status": "world_hip_head_already_plus_y"
+			},
+			"glb": "res://assets/fighters/processed/semantic_solver_v2/terere/terere_idle_semantic_v2.glb",
+			"import_correction_sweep": [
+				{
+					"compose": "identity",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "none",
+					"mapped_hip_head": [
+						-0.00000000857216431171537,
+						0.0591560080647469,
+						0.378461122512817
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.154431562869508
+				},
+				{
+					"compose": "Rx",
+					"dominant": "Y",
+					"euler_deg": [
+						90.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": true,
+					"id": "X+90",
+					"mapped_hip_head": [
+						-0.00000000857216431171537,
+						-0.378461122512817,
+						0.0591559931635857
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.98800349359329
+				},
+				{
+					"compose": "Rx",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						0.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "X-90",
+					"mapped_hip_head": [
+						-0.00000000857216431171537,
+						0.378461122512817,
+						-0.0591560229659081
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.98800349359329
+				},
+				{
+					"compose": "Ry",
+					"dominant": "X",
+					"euler_deg": [
+						0.0,
+						90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Y+90",
+					"mapped_hip_head": [
+						0.378461122512817,
+						0.0591560080647469,
+						-0.00000000797089594328781
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.154431562869508
+				},
+				{
+					"compose": "Ry",
+					"dominant": "X",
+					"euler_deg": [
+						0.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Y-90",
+					"mapped_hip_head": [
+						-0.378461122512817,
+						0.0591560080647469,
+						-0.0000000251152236785401
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.154431562869508
+				},
+				{
+					"compose": "Rz",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						90.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": false,
+					"id": "Z+90",
+					"mapped_hip_head": [
+						-0.0591560080647469,
+						-0.000000011157955448482,
+						0.378461122512817
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.0000000291287487900032
+				},
+				{
+					"compose": "Rz",
+					"dominant": "Z",
+					"euler_deg": [
+						0.0,
+						0.0,
+						-90.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": false,
+					"id": "Z-90",
+					"mapped_hip_head": [
+						0.0591560080647469,
+						0.00000000598637317494877,
+						0.378461122512817
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": 0.0000000156279133019858
+				},
+				{
+					"compose": "Node3D.rotation YXZ (yaw then pitch)",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "current_modelroot_euler_YXZ_pitch-90_yaw-90",
+					"mapped_hip_head": [
+						0.0591560229659081,
+						0.378461122512817,
+						-0.00000000598637228677035
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.98800349359329
+				},
+				{
+					"compose": "Ry * Rx (pitch first, then yaw)",
+					"dominant": "Y",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": true,
+					"horizontal_forward_ok": true,
+					"id": "Rx-90_then_Ry-90",
+					"mapped_hip_head": [
+						0.0591560229659081,
+						0.378461122512817,
+						-0.00000000598637228677035
+					],
+					"mostly_plus_y": true,
+					"pass": true,
+					"score": 0.98800349359329
+				},
+				{
+					"compose": "Rx * Ry (yaw first, then pitch)",
+					"dominant": "X",
+					"euler_deg": [
+						-90.0,
+						-90.0,
+						0.0
+					],
+					"head_above_hips": false,
+					"horizontal_forward_ok": false,
+					"id": "Ry-90_then_Rx-90",
+					"mapped_hip_head": [
+						-0.378461122512817,
+						-0.0000000277010165916636,
+						-0.0591560080647469
+					],
+					"mostly_plus_y": false,
+					"pass": false,
+					"score": -0.0000000723157532983388
+				}
+			],
+			"load_path": "GLTFDocument.append_from_file (no .import PackedScene)",
+			"native_unparented": {
+				"animation_list": [
+					"canonical_standing",
+					"idle",
+					"rest"
+				],
+				"armature": {
+					"class": "Node3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "Armature",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"local_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"name": "Armature",
+					"scale": [
+						0.00999999977648258,
+						0.00999999977648258,
+						0.00999999977648258
+					]
+				},
+				"glb_root": {
+					"class": "Node3D",
+					"global_basis": {
+						"x": [
+							1.0,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							1.0,
+							0.0
+						],
+						"z": [
+							0.0,
+							0.0,
+							1.0
+						]
+					},
+					"global_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"global_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"label": "NativeGLB",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "NativeGLB",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				},
+				"hip_head": {
+					"delta": [
+						-0.00000000857216431171537,
+						0.0591560080647469,
+						0.378461122512817
+					],
+					"dominant": "Z",
+					"head": [
+						-0.00000000857180015856329,
+						0.059156097471714,
+						0.894624531269073
+					],
+					"head_above_hips": true,
+					"hip": [
+						0.000000000000364363677033894,
+						0.00000009105639264817,
+						0.516163408756256
+					],
+					"ok": true
+				},
+				"load_path": "GLTFDocument.append_from_file (no .import PackedScene)",
+				"mesh": {
+					"class": "MeshInstance3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "model",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "model",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				},
+				"native_up_axis": "Z",
+				"ok": true,
+				"skeleton": {
+					"class": "Skeleton3D",
+					"global_basis": {
+						"x": [
+							0.00999999977648258,
+							0.0,
+							0.0
+						],
+						"y": [
+							0.0,
+							-0.00000000119209297988476,
+							0.00999999977648258
+						],
+						"z": [
+							0.0,
+							-0.00999999977648258,
+							-0.00000000119209297988476
+						]
+					},
+					"global_quaternion": [
+						0.707106828689575,
+						0.0,
+						0.0,
+						0.707106709480286
+					],
+					"global_rotation_deg": [
+						90.0000025044782,
+						0.0,
+						0.0
+					],
+					"label": "Skeleton3D",
+					"local_position": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"local_quaternion": [
+						0.0,
+						0.0,
+						0.0,
+						1.0
+					],
+					"local_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"name": "Skeleton3D",
+					"scale": [
+						1.0,
+						1.0,
+						1.0
+					]
+				}
+			},
+			"runtime_chain": {
+				"facing_left": {
+					"facing_root_rotation_deg": [
+						0.0,
+						180.000005008956,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							-0.18023918569088,
+							1.178631067276,
+							-0.00000000778457387440312
+						],
+						"dominant": "Y",
+						"head": [
+							-0.180240213871002,
+							2.78530406951904,
+							-0.00000000764105489992062
+						],
+						"head_above_hips": true,
+						"hip": [
+							-0.00000102530623280472,
+							1.60667300224304,
+							0.000000000143518544271082
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "terere_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								3.1127598285675,
+								3.1127598285675,
+								3.1127598285675
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-3.1127598285675,
+									0.0,
+									0.000000272126101208414
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									-0.000000272126101208414,
+									0.0,
+									-3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								1.0,
+								0.0,
+								-0.0000000437113882867379
+							],
+							"global_rotation_deg": [
+								0.0,
+								-179.999991348578,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								1.0,
+								0.0,
+								-0.0000000437113882867379
+							],
+							"local_rotation_deg": [
+								0.0,
+								180.000005008956,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									-3.1127598285675
+								],
+								"y": [
+									-3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									-0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									-3.1127598285675
+								],
+								"y": [
+									-3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									-0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									-3.1127598285675
+								],
+								"y": [
+									-3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									-0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								-0.5,
+								0.5,
+								0.5,
+								0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									-0.0311275981366634
+								],
+								"y": [
+									0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									-0.0311275981366634
+								],
+								"y": [
+									0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									-0.0311275981366634
+								],
+								"y": [
+									0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								0.70710676908493,
+								-0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"facing_right": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.181190103292465,
+							1.178462266922,
+							0.0000000370189994214343
+						],
+						"dominant": "Y",
+						"head": [
+							0.181191027164459,
+							2.78513813018799,
+							0.0000000368969921282769
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.000000925172344068415,
+							1.60667586326599,
+							-0.000000000122007515201972
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "terere_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								3.1127598285675,
+								3.1127598285675,
+								3.1127598285675
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"idle_frame": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.182331442832947,
+							1.17825841903687,
+							0.0000000532050066226475
+						],
+						"dominant": "Y",
+						"head": [
+							0.182332247495651,
+							2.78493785858154,
+							0.000000053108717423811
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.0000008049518100961,
+							1.60667943954468,
+							-0.0000000000962889976086068
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "terere_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								3.1127598285675,
+								3.1127598285675,
+								3.1127598285675
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				},
+				"spawn": {
+					"facing_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"hip_head_world": {
+						"delta": [
+							0.183451011776924,
+							1.17806029319763,
+							0.0000000664819239659664
+						],
+						"dominant": "Y",
+						"head": [
+							0.1834517121315,
+							2.78474259376526,
+							0.0000000664064927491381
+						],
+						"head_above_hips": true,
+						"hip": [
+							0.000000707457502358011,
+							1.60668230056763,
+							-0.0000000000754327225682694
+						],
+						"ok": true
+					},
+					"model_root_rotation_deg": [
+						-90.0000025044782,
+						-90.0000025044782,
+						0.0
+					],
+					"motion_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"nodes": [
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FighterVisual",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "terere_semantic_v2_battle_candidate",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									1.0,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									1.0
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "VisualMotionRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualMotionRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									1.0,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									-0.0000000437113882867379,
+									-1.0
+								],
+								"z": [
+									0.0,
+									1.0,
+									-0.0000000437113882867379
+								]
+							},
+							"global_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"label": "BlobShadow",
+							"local_position": [
+								0.0,
+								0.0199999995529652,
+								0.0
+							],
+							"local_quaternion": [
+								-0.70710676908493,
+								0.0,
+								0.0,
+								0.70710676908493
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "BlobShadow",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "PresentationScaleRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "PresentationScaleRoot",
+							"scale": [
+								3.1127598285675,
+								3.1127598285675,
+								3.1127598285675
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									3.1127598285675,
+									0.0,
+									0.0
+								],
+								"y": [
+									0.0,
+									3.1127598285675,
+									0.0
+								],
+								"z": [
+									0.0,
+									0.0,
+									3.1127598285675
+								]
+							},
+							"global_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"global_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"label": "FacingRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "FacingRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ModelRoot",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"local_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"name": "ModelRoot",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "ImportedModel",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "ImportedModel",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.000000136063050604207,
+									0.0,
+									3.1127598285675
+								],
+								"y": [
+									3.1127598285675,
+									-0.000000136063050604207,
+									0.000000136063050604207
+								],
+								"z": [
+									0.000000136063050604207,
+									3.1127598285675,
+									0.00000000000000594750494310064
+								]
+							},
+							"global_quaternion": [
+								0.5,
+								0.5,
+								0.5,
+								-0.5
+							],
+							"global_rotation_deg": [
+								-90.0000025044782,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "VisualBoundsDebug",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "VisualBoundsDebug",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "Node3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Armature",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.707106828689575,
+								0.0,
+								0.0,
+								0.707106709480286
+							],
+							"local_rotation_deg": [
+								90.0000025044782,
+								0.0,
+								0.0
+							],
+							"name": "Armature",
+							"scale": [
+								0.00999999977648258,
+								0.00999999977648258,
+								0.00999999977648258
+							]
+						},
+						{
+							"class": "Skeleton3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "Skeleton3D",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "Skeleton3D",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						},
+						{
+							"class": "MeshInstance3D",
+							"global_basis": {
+								"x": [
+									-0.00000000136063049716029,
+									0.0,
+									0.0311275981366634
+								],
+								"y": [
+									-0.00000000235006858417819,
+									0.0311275981366634,
+									-0.000000000000000102724761093768
+								],
+								"z": [
+									-0.0311275981366634,
+									-0.00000000235006858417819,
+									-0.00000000136063049716029
+								]
+							},
+							"global_quaternion": [
+								0.0000000266925415104424,
+								-0.70710676908493,
+								0.0000000266925415104424,
+								0.70710676908493
+							],
+							"global_rotation_deg": [
+								0.00000432571151163608,
+								-90.0000025044782,
+								0.0
+							],
+							"label": "model",
+							"local_position": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"local_quaternion": [
+								0.0,
+								0.0,
+								0.0,
+								1.0
+							],
+							"local_rotation_deg": [
+								0.0,
+								0.0,
+								0.0
+							],
+							"name": "model",
+							"scale": [
+								1.0,
+								1.0,
+								1.0
+							]
+						}
+					],
+					"ok": true,
+					"presentation_root_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					],
+					"visual_self_rotation_deg": [
+						0.0,
+						0.0,
+						0.0
+					]
+				}
+			}
+		}
+	},
+	"godot_euler_order": "Node3D.rotation is YXZ (yaw applied before pitch on the same node)"
+}

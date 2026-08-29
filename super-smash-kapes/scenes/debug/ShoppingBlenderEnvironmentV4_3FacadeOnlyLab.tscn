@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_sds_blender_v4_3_facade"]
+
+[ext_resource type="Script" path="res://scripts/debug/shopping_blender_environment_v4_3_facade_only_lab.gd" id="1"]
+
+[node name="ShoppingBlenderEnvironmentV4_3FacadeOnlyLab" type="Node3D"]
+script = ExtResource("1")

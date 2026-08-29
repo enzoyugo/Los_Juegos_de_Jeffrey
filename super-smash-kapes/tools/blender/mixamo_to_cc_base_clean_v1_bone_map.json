@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "pipeline": "CLEAN_RIG_IDLE_BENCHMARK_V1",
+  "shared_by": ["terere", "jaguarete"],
+  "target_skeleton": "CC_Base",
+  "mixamo_suffix_discovered_from": "assets/fighters/animations/Idle.fbx",
+  "rest_source": "bind_pose_not_frame_1",
+  "notes": "Mixamo prefix is discovered at bake time (Idle.fbx currently uses mixamorig5:). Do not hardcode a fighter-specific prefix.",
+  "required": [
+    {"mixamo_suffix": "Hips", "target": "CC_Base_Hip", "allow_location_y": true},
+    {"mixamo_suffix": "Spine", "target": "CC_Base_Waist", "allow_location_y": false},
+    {"mixamo_suffix": "Spine1", "target": "CC_Base_Spine01", "allow_location_y": false},
+    {"mixamo_suffix": "Spine2", "target": "CC_Base_Spine02", "allow_location_y": false},
+    {"mixamo_suffix": "Neck", "target": "CC_Base_NeckTwist01", "allow_location_y": false},
+    {"mixamo_suffix": "Head", "target": "CC_Base_Head", "allow_location_y": false},
+    {"mixamo_suffix": "LeftShoulder", "target": "CC_Base_L_Clavicle", "allow_location_y": false},
+    {"mixamo_suffix": "LeftArm", "target": "CC_Base_L_Upperarm", "allow_location_y": false},
+    {"mixamo_suffix": "LeftForeArm", "target": "CC_Base_L_Forearm", "allow_location_y": false},
+    {"mixamo_suffix": "LeftHand", "target": "CC_Base_L_Hand", "allow_location_y": false},
+    {"mixamo_suffix": "RightShoulder", "target": "CC_Base_R_Clavicle", "allow_location_y": false},
+    {"mixamo_suffix": "RightArm", "target": "CC_Base_R_Upperarm", "allow_location_y": false},
+    {"mixamo_suffix": "RightForeArm", "target": "CC_Base_R_Forearm", "allow_location_y": false},
+    {"mixamo_suffix": "RightHand", "target": "CC_Base_R_Hand", "allow_location_y": false},
+    {"mixamo_suffix": "LeftUpLeg", "target": "CC_Base_L_Thigh", "allow_location_y": false},
+    {"mixamo_suffix": "LeftLeg", "target": "CC_Base_L_Calf", "allow_location_y": false},
+    {"mixamo_suffix": "LeftFoot", "target": "CC_Base_L_Foot", "allow_location_y": false},
+    {"mixamo_suffix": "RightUpLeg", "target": "CC_Base_R_Thigh", "allow_location_y": false},
+    {"mixamo_suffix": "RightLeg", "target": "CC_Base_R_Calf", "allow_location_y": false},
+    {"mixamo_suffix": "RightFoot", "target": "CC_Base_R_Foot", "allow_location_y": false}
+  ]
+}

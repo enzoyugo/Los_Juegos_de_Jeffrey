@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://trackboostdeltalabv3"]
+
+[ext_resource type="Script" path="res://scripts/debug/track_boost_delta_lab.gd" id="1"]
+
+[node name="TrackBoostDeltaLab" type="Node3D"]
+script = ExtResource("1")

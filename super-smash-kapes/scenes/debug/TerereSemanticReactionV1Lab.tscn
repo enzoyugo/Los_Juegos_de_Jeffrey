@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/debug/semantic_reaction_v1_lab.gd" id="1"]
+
+[sub_resource type="Environment" id="Environment_idle"]
+background_mode = 1
+background_color = Color(0.13, 0.14, 0.17, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.62, 0.66, 1)
+ambient_light_energy = 0.7
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_floor"]
+albedo_color = Color(0.11, 0.13, 0.16, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_floor"]
+size = Vector2(18, 18)
+
+[sub_resource type="LabelSettings" id="LabelSettings_overlay"]
+font_size = 34
+font_color = Color(0.95, 0.96, 0.98, 1)
+outline_size = 8
+outline_color = Color(0.02, 0.03, 0.06, 0.92)
+
+[node name="TerereSemanticReactionV1Lab" type="Node3D"]
+script = ExtResource("1")
+fighter_id = "terere"
+pipeline_id = "SEMANTIC_REACTION_V1"
+idle_glb = "res://assets/fighters/processed/production_semantic_idle_v1/terere/terere_production_semantic_idle_v1.glb"
+reaction_glb = "res://assets/fighters/processed/semantic_reaction_v1/terere/terere_semantic_reaction_v1.glb"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_idle")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.819152, -0.40558, 0.40558, 0, 0.707107, 0.707107, -0.573577, -0.579228, 0.579228, 4, 8, 6)
+light_energy = 1.15
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.6, 5.5)
+current = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_floor")
+surface_material_override/0 = SubResource("StandardMaterial3D_floor")
+
+[node name="IdleRoot" type="Node3D" parent="."]
+
+[node name="ReactionRoot" type="Node3D" parent="."]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 80
+
+[node name="Overlay" type="Label" parent="CanvasLayer"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 980.0
+offset_bottom = 420.0
+mouse_filter = 2
+text = "TERERE REACTION V1
+
+1 APPROVED IDLE
+2 REACTION LOOP
+3 SINGLE REACTION TRIGGER
+4 skeleton
+5 bbox
+6 reset camera"
+label_settings = SubResource("LabelSettings_overlay")

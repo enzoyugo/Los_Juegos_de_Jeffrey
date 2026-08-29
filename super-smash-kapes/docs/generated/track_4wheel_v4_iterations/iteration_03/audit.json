@@ -1,0 +1,5 @@
+{
+  "iteration": 3,
+  "verdict": "FAIL",
+  "reason": "jump_small land pad shortened to 2 m, but jump-validate released throttle at VALID_TAKEOFF so takeoff speed was 5.9 m/s (underspeed / left miss). Stationary not re-run; iter 02 rest PASS still holds."
+}

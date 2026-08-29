@@ -1,0 +1,90 @@
+{
+  "piece_id": "landing_straight_long",
+  "family": "core",
+  "type": "straight",
+  "road_width": 11.0,
+  "shoulder_width": 0.7,
+  "guardrail_height": 0.9,
+  "centerline_length": 36.0,
+  "height_delta": 0.0,
+  "yaw_delta": 0.0,
+  "pitch_delta": 0.0,
+  "roll_delta": 0.0,
+  "left_guardrail": true,
+  "right_guardrail": true,
+  "estimated_traversal_time": 1.05,
+  "difficulty": "tranqui",
+  "tags": [
+    "straight",
+    "landing"
+  ],
+  "entry": {
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.0
+  },
+  "exit": {
+    "origin": [
+      0.0,
+      0.0,
+      -36.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.0
+  },
+  "boost_strength": 0.0,
+  "has_gap": false,
+  "transition_profile": "",
+  "collision": [
+    {
+      "kind": "road",
+      "origin": [
+        0.0,
+        -0.06,
+        -18.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        12.4,
+        0.12,
+        36.04
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        -6.3100000000000005,
+        0.45,
+        -18.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        36.04
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        6.3100000000000005,
+        0.45,
+        -18.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        36.04
+      ]
+    }
+  ],
+  "glb": "track_landing_straight_long_v1.glb"
+}

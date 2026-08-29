@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_smoke_visual_life"]
+
+[ext_resource type="Script" path="res://scripts/debug/smoke_track_visual_lifetime_v1.gd" id="1"]
+
+[node name="SmokeTrackVisualLifetimeV1" type="Node"]
+script = ExtResource("1")

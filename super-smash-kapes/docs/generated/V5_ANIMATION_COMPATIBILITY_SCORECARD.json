@@ -1,0 +1,100 @@
+{
+  "fighters": {
+    "terere": {
+      "bind_simplicity": {
+        "v5_better": true,
+        "notes": "V5_BIND_SPACE_CLEAN vs V1 compensated Rx90"
+      },
+      "animation_transfer_complexity": {
+        "v5_better": false,
+        "notes": "SEMANTIC_REAPPLICATION required; names/rest differ. Strategy SEMANTIC_REAPPLICATION"
+      },
+      "deformation_quality": {
+        "v5_better": true,
+        "notes": "idle_pass=True reaction_pass=True"
+      },
+      "hand_finger_quality": {
+        "v5_better": null,
+        "notes": "Terer\u00e9 missing ring is recorded, not fatal. Neutral fingers required. Human judges wrists."
+      },
+      "arm_chain_quality": {
+        "v5_better": null,
+        "notes": "Human silhouette authority. Pose match recorded, not auto-optimized."
+      },
+      "leg_chain_quality": {
+        "v5_better": null,
+        "notes": "Knee/foot stance matched as span ratios. Planted feet + root X/Z 0."
+      },
+      "glb_reliability": {
+        "v5_better": true,
+        "notes": "roundtrip_ok=True"
+      },
+      "godot_import_cleanliness": {
+        "v5_better": true,
+        "notes": "Isolated comparison labs load. V5 idle/reaction import without production stack. Gray PBR expected."
+      },
+      "need_for_special_hacks": {
+        "v5_better": true,
+        "notes": "No Traditional CoB. No V1 Rx90 reconstruct. No curve copy."
+      },
+      "idle_technical_pass": true,
+      "reaction_v1_technical_pass": true,
+      "reaction_medium_is_candidate_only": true,
+      "transfer_strategy": "SEMANTIC_REAPPLICATION"
+    },
+    "jaguarete": {
+      "bind_simplicity": {
+        "v5_better": true,
+        "notes": "V5_BIND_SPACE_CLEAN vs V1 compensated Rx90"
+      },
+      "animation_transfer_complexity": {
+        "v5_better": false,
+        "notes": "SEMANTIC_REAPPLICATION required; names/rest differ. Strategy SEMANTIC_REAPPLICATION"
+      },
+      "deformation_quality": {
+        "v5_better": true,
+        "notes": "idle_pass=True reaction_pass=True"
+      },
+      "hand_finger_quality": {
+        "v5_better": null,
+        "notes": "Terer\u00e9 missing ring is recorded, not fatal. Neutral fingers required. Human judges wrists."
+      },
+      "arm_chain_quality": {
+        "v5_better": null,
+        "notes": "Human silhouette authority. Pose match recorded, not auto-optimized."
+      },
+      "leg_chain_quality": {
+        "v5_better": null,
+        "notes": "Knee/foot stance matched as span ratios. Planted feet + root X/Z 0."
+      },
+      "glb_reliability": {
+        "v5_better": true,
+        "notes": "roundtrip_ok=True"
+      },
+      "godot_import_cleanliness": {
+        "v5_better": true,
+        "notes": "Isolated comparison labs load. V5 idle/reaction import without production stack. Gray PBR expected."
+      },
+      "need_for_special_hacks": {
+        "v5_better": true,
+        "notes": "No Traditional CoB. No V1 Rx90 reconstruct. No curve copy."
+      },
+      "idle_technical_pass": true,
+      "reaction_v1_technical_pass": true,
+      "reaction_medium_is_candidate_only": true,
+      "transfer_strategy": "SEMANTIC_REAPPLICATION"
+    }
+  },
+  "do_not_auto_promote": true,
+  "numeric_score_is_not_promotion": true,
+  "verdict_blender": "SSK_V5_ANIMATION_COMPATIBILITY_READY_FOR_HUMAN_SELECTION",
+  "godot_labs_ok": true,
+  "godot_labs_pending": false,
+  "human_must_choose": [
+    "PROMOTE V5",
+    "KEEP V1",
+    "PROMOTE JAGUARETE ONLY",
+    "PROMOTE TERERE ONLY",
+    "NEEDS MORE WORK"
+  ]
+}

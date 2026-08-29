@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_triposr_barong_lab"]
+
+[ext_resource type="Script" path="res://scripts/debug/triposr_barong_validation_lab.gd" id="1"]
+
+[node name="TripoSRBarongValidationLab" type="Node3D"]
+script = ExtResource("1")

@@ -1,0 +1,33 @@
+{
+  "source": "ValidateJeffreyShell headless after V3 import + airborne type fix",
+  "semantic_fwd": [0.0, 0.0, -1.0],
+  "chassis_fwd": [0.0, 0.0, -1.0],
+  "visual_fwd": [0.0, 0.0, -1.0],
+  "body_yaw": 0.0,
+  "mesh_rest": [0.0, 0.0, 0.0],
+  "steer_center_delta": 0.0,
+  "spin_center_fail": false,
+  "suspension_delta": [0.0, 0.08, 0.0],
+  "world_radius": {
+    "FL": 0.4184,
+    "FR": 0.42,
+    "RL": 0.4186,
+    "RR": 0.4196
+  },
+  "atlas": {
+    "loaded": true,
+    "size": "4096x4096",
+    "unique_texture_resources": 1,
+    "fallback": false,
+    "rid_valid": true
+  },
+  "airborne": {
+    "enter_reason": "RESET_SETTLE",
+    "exit_reason": "RESET_SETTLE",
+    "speed_at_enter": 0.0,
+    "landing_vy": -3.34,
+    "note": "Classified spawn/reset settle, not jump spam."
+  },
+  "live_track_car_count": 1,
+  "jeffrey_validate": "OK"
+}

@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://trackcarghostv1mat"]
+
+[resource]
+resource_name = "track_car_ghost_v1"
+transparency = 1
+blend_mode = 1
+cull_mode = 2
+albedo_color = Color(0.7, 0.85, 1, 0.32)
+metallic = 0.0
+roughness = 0.45
+emission_enabled = true
+emission = Color(0.35, 0.6, 1, 1)
+emission_energy_multiplier = 0.35

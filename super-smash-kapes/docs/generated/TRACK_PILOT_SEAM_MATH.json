@@ -1,0 +1,30 @@
+[
+  {
+    "a": "start",
+    "b": "straight_medium",
+    "max_position_m": 0.0,
+    "yaw_delta_deg": 0.0,
+    "up_delta_deg": 0.0
+  },
+  {
+    "a": "straight_medium",
+    "b": "curve_l_45",
+    "max_position_m": 0.0,
+    "yaw_delta_deg": 0.0,
+    "up_delta_deg": 0.0
+  },
+  {
+    "a": "curve_l_45",
+    "b": "curve_r_45",
+    "max_position_m": 0.0,
+    "yaw_delta_deg": 0.0,
+    "up_delta_deg": 0.0
+  },
+  {
+    "a": "curve_r_45",
+    "b": "finish",
+    "max_position_m": 0.0,
+    "yaw_delta_deg": 0.0,
+    "up_delta_deg": 0.0
+  }
+]

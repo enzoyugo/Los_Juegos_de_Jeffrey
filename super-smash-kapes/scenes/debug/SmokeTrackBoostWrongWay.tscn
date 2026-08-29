@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_smoke_track_boost_wrong_way"]
+
+[ext_resource type="Script" path="res://scripts/debug/smoke_track_boost_wrong_way.gd" id="1"]
+
+[node name="SmokeTrackBoostWrongWay" type="Node3D"]
+script = ExtResource("1")

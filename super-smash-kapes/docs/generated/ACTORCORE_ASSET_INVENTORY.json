@@ -1,0 +1,89 @@
+{
+  "generated_utc": "2026-08-22T20:00:13.935722+00:00",
+  "characters": {
+    "terere": {
+      "label": "Terer\u00e9",
+      "fbx_path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/terere/actorcore/autorig_actor.fbx",
+      "json_path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/terere/actorcore/autorig_actor.json",
+      "fbm_dir": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/terere/actorcore/autorig_actor.fbm",
+      "fbx_size_bytes": 4625952,
+      "json_size_bytes": 17087,
+      "fbx_modified_utc": "2026-08-22T22:03:38+00:00",
+      "json_modified_utc": "2026-08-22T22:03:38+00:00",
+      "textures": [
+        {
+          "path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/terere/actorcore/autorig_actor.fbm/model_Pbr_Diffuse.png",
+          "name": "model_Pbr_Diffuse.png",
+          "size_bytes": 4230582,
+          "modified_utc": "2026-08-22T22:03:38+00:00",
+          "resolution": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/terere/actorcore/autorig_actor.fbm/model_Pbr_Normal.png",
+          "name": "model_Pbr_Normal.png",
+          "size_bytes": 4707910,
+          "modified_utc": "2026-08-22T22:03:38+00:00",
+          "resolution": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "fbx_content": {
+        "mesh": true,
+        "armature": true,
+        "skin_weights": true,
+        "animations": true,
+        "blendshapes": false,
+        "mesh_count": 1,
+        "bone_count": 101,
+        "shape_key_count": 0
+      }
+    },
+    "jaguarete": {
+      "label": "Jaguaret\u00e9",
+      "fbx_path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.fbx",
+      "json_path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.json",
+      "fbm_dir": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.fbm",
+      "fbx_size_bytes": 4324160,
+      "json_size_bytes": 17086,
+      "fbx_modified_utc": "2026-08-22T22:13:26+00:00",
+      "json_modified_utc": "2026-08-22T22:13:26+00:00",
+      "textures": [
+        {
+          "path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.fbm/model_Pbr_Diffuse.png",
+          "name": "model_Pbr_Diffuse.png",
+          "size_bytes": 5192546,
+          "modified_utc": "2026-08-22T22:13:26+00:00",
+          "resolution": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "path": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.fbm/model_Pbr_Normal.png",
+          "name": "model_Pbr_Normal.png",
+          "size_bytes": 5270338,
+          "modified_utc": "2026-08-22T22:13:26+00:00",
+          "resolution": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "fbx_content": {
+        "mesh": true,
+        "armature": true,
+        "skin_weights": true,
+        "animations": true,
+        "blendshapes": false,
+        "mesh_count": 1,
+        "bone_count": 101,
+        "shape_key_count": 0
+      }
+    }
+  }
+}

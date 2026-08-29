@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/stages/M0Stage.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/stages/defensores_stage.gd" id="2"]
+
+[node name="DefensoresDelChacoStage" type="Node3D"]
+script = ExtResource("2")
+
+[node name="StageGameplayRoot" parent="." instance=ExtResource("1")]
+
+[node name="ArtRoot" type="Node3D" parent="."]
+
+[node name="FarBackground" type="Node3D" parent="ArtRoot"]
+
+[node name="SkyOverlay" type="Node3D" parent="ArtRoot"]
+
+[node name="CrowdLayerBase" type="Node3D" parent="ArtRoot"]
+
+[node name="CrowdLayerAnimated" type="Node3D" parent="ArtRoot"]
+
+[node name="MosaicLayer" type="Node3D" parent="ArtRoot"]
+
+[node name="ScoreboardLayer" type="Node3D" parent="ArtRoot"]
+
+[node name="PlatformArtLayer" type="Node3D" parent="ArtRoot"]
+
+[node name="DecorativeProps" type="Node3D" parent="ArtRoot"]
+
+[node name="FXLayer" type="Node3D" parent="ArtRoot"]
+
+[node name="ForegroundOverlay" type="Node3D" parent="ArtRoot"]

@@ -1,0 +1,4311 @@
+{
+  "character": "jaguarete",
+  "label": "Jaguaret\u00e9",
+  "source_fbx": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged\\jaguarete\\actorcore\\autorig_actor.fbx",
+  "source_json": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged\\jaguarete\\actorcore\\autorig_actor.json",
+  "source_fbm": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged\\jaguarete\\actorcore\\autorig_actor.fbm",
+  "blender": "2.83.1",
+  "original_fbx_untouched": true,
+  "fbx_axis_metadata": {
+    "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged\\jaguarete\\actorcore\\autorig_actor.fbx",
+    "size_bytes": 4324160,
+    "up_axis": null,
+    "up_axis_sign": null,
+    "front_axis": null,
+    "front_axis_sign": null,
+    "coord_axis": null,
+    "creator": "CreatorS\"   FBX SDK/FBX Plugins version 2012.1d\u0007  \u0002   '   \tSceneInfoS\u0015   GlobalI",
+    "target_hints": [],
+    "binary_fbx": true,
+    "native_up_axis": null,
+    "native_forward_axis": null,
+    "blender_converted_up_axis": "Z",
+    "blender_converted_forward_axis": "-Y",
+    "export_target_inference": "Reallusion AccuRIG FBX with 0.01 object scale matches the Unity centimeter preset (Y-up). Blender 2.83 then stores Armature as Rx+90 * 0.01 and the mesh child as Rx-90, so mesh world is uniform 0.01. Bones stay in armature space."
+  },
+  "raw": {
+    "armature": {
+      "name": "Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "parent_type": "OBJECT",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "rotation_euler_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "matrix_world": [
+        [
+          0.01,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.0,
+          -0.01,
+          0.0
+        ],
+        [
+          0.0,
+          0.01,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_local": [
+        [
+          0.01,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.0,
+          -0.01,
+          0.0
+        ],
+        [
+          0.0,
+          0.01,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_parent_inverse": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matrix_world_rot_quat": [
+        0.707107,
+        0.0,
+        0.0,
+        0.707107
+      ],
+      "matrix_world_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "modifiers": [],
+      "children": [
+        "model"
+      ]
+    },
+    "meshes": [
+      {
+        "name": "model",
+        "type": "MESH",
+        "parent": "Armature",
+        "parent_type": "OBJECT",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler_deg": [
+          -90.0,
+          0.0,
+          0.0
+        ],
+        "rotation_quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix_world": [
+          [
+            0.01,
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            0.01,
+            -0.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            0.01,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_local": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0,
+            1e-06
+          ],
+          [
+            0.0,
+            -1.0,
+            -0.0,
+            -1e-06
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_parent_inverse": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            1.0,
+            -0.0,
+            1e-06
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1e-06
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_loc": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "matrix_world_rot_quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world_scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "modifiers": [
+          {
+            "name": "Armature",
+            "type": "ARMATURE",
+            "target": "Armature"
+          }
+        ],
+        "children": []
+      }
+    ],
+    "mesh_world_bbox": {
+      "min": [
+        -0.933897,
+        -0.347867,
+        -1e-06
+      ],
+      "max": [
+        0.933897,
+        0.694315,
+        1.731412
+      ],
+      "size": [
+        1.867794,
+        1.042182,
+        1.731413
+      ],
+      "center": [
+        0.0,
+        0.173224,
+        0.865706
+      ],
+      "vertex_count": 47292
+    },
+    "armature_world_bbox": {
+      "min": [
+        -0.923515,
+        -1.354625,
+        -0.349466
+      ],
+      "max": [
+        0.918421,
+        0.0,
+        0.749893
+      ],
+      "size": [
+        1.841936,
+        1.354625,
+        1.099359
+      ],
+      "center": [
+        -0.002547,
+        -0.677312,
+        0.200214
+      ],
+      "bone_count": 101
+    },
+    "important_bones": {
+      "CC_Base_Hip": {
+        "present": true,
+        "parent": "root",
+        "head_world": [
+          -0.0,
+          -0.749893,
+          0.0
+        ],
+        "tail_world": [
+          0.0,
+          -0.790138,
+          -0.002726
+        ],
+        "mid_world": [
+          0.0,
+          -0.770016,
+          -0.001363
+        ],
+        "length": 0.040337,
+        "head_local": [
+          -0.0,
+          3.2e-05,
+          74.989349
+        ],
+        "tail_local": [
+          1.6e-05,
+          -0.272632,
+          79.013832
+        ]
+      },
+      "CC_Base_Waist": {
+        "present": true,
+        "parent": "CC_Base_Hip",
+        "head_world": [
+          -0.0,
+          -0.827851,
+          -0.02076
+        ],
+        "tail_world": [
+          0.0,
+          -0.866743,
+          -0.020808
+        ],
+        "mid_world": [
+          0.0,
+          -0.847297,
+          -0.020784
+        ],
+        "length": 0.038892,
+        "head_local": [
+          -0.0,
+          -2.075954,
+          82.785072
+        ],
+        "tail_local": [
+          1.7e-05,
+          -2.08078,
+          86.674286
+        ]
+      },
+      "CC_Base_Spine01": {
+        "present": true,
+        "parent": "CC_Base_Waist",
+        "head_world": [
+          -0.0,
+          -0.866743,
+          -0.020807
+        ],
+        "tail_world": [
+          0.0,
+          -0.963969,
+          -0.020363
+        ],
+        "mid_world": [
+          0.0,
+          -0.915356,
+          -0.020585
+        ],
+        "length": 0.097227,
+        "head_local": [
+          -0.0,
+          -2.080698,
+          86.674286
+        ],
+        "tail_local": [
+          0.0,
+          -2.036312,
+          96.396881
+        ]
+      },
+      "CC_Base_Spine02": {
+        "present": true,
+        "parent": "CC_Base_Spine01",
+        "head_world": [
+          -0.0,
+          -0.963969,
+          -0.020368
+        ],
+        "tail_world": [
+          0.0,
+          -1.131953,
+          0.012422
+        ],
+        "mid_world": [
+          0.0,
+          -1.047961,
+          -0.003973
+        ],
+        "length": 0.171155,
+        "head_local": [
+          -0.0,
+          -2.036772,
+          96.396881
+        ],
+        "tail_local": [
+          2e-06,
+          1.242247,
+          113.195328
+        ]
+      },
+      "CC_Base_NeckTwist01": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          -0.0,
+          -1.158112,
+          0.017547
+        ],
+        "tail_world": [
+          -0.0,
+          -1.225696,
+          0.011627
+        ],
+        "mid_world": [
+          -0.0,
+          -1.191904,
+          0.014587
+        ],
+        "length": 0.067843,
+        "head_local": [
+          -1e-06,
+          1.75471,
+          115.811241
+        ],
+        "tail_local": [
+          -2e-06,
+          1.162749,
+          122.569649
+        ]
+      },
+      "CC_Base_Head": {
+        "present": true,
+        "parent": "CC_Base_NeckTwist02",
+        "head_world": [
+          -0.0,
+          -1.29328,
+          0.00571
+        ],
+        "tail_world": [
+          -0.0,
+          -1.293379,
+          0.005724
+        ],
+        "mid_world": [
+          -0.0,
+          -1.293329,
+          0.005717
+        ],
+        "length": 0.0001,
+        "head_local": [
+          -2e-06,
+          0.570977,
+          129.328003
+        ],
+        "tail_local": [
+          -2e-06,
+          0.572456,
+          129.337891
+        ]
+      },
+      "CC_Base_L_Clavicle": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          0.131578,
+          -1.142694,
+          0.016049
+        ],
+        "tail_world": [
+          0.242884,
+          -1.123525,
+          0.035315
+        ],
+        "mid_world": [
+          0.187231,
+          -1.133109,
+          0.025682
+        ],
+        "length": 0.114576,
+        "head_local": [
+          13.157835,
+          1.604907,
+          114.269394
+        ],
+        "tail_local": [
+          24.288439,
+          3.531492,
+          112.35247
+        ]
+      },
+      "CC_Base_L_Upperarm": {
+        "present": true,
+        "parent": "CC_Base_L_Clavicle",
+        "head_world": [
+          0.242885,
+          -1.123524,
+          0.035313
+        ],
+        "tail_world": [
+          0.355986,
+          -1.107779,
+          0.03444
+        ],
+        "mid_world": [
+          0.299435,
+          -1.115651,
+          0.034876
+        ],
+        "length": 0.114196,
+        "head_local": [
+          24.288456,
+          3.531286,
+          112.352356
+        ],
+        "tail_local": [
+          35.598633,
+          3.443996,
+          110.777924
+        ]
+      },
+      "CC_Base_L_Forearm": {
+        "present": true,
+        "parent": "CC_Base_L_Upperarm",
+        "head_world": [
+          0.469088,
+          -1.092036,
+          0.033566
+        ],
+        "tail_world": [
+          0.542355,
+          -1.095404,
+          0.031234
+        ],
+        "mid_world": [
+          0.505721,
+          -1.09372,
+          0.0324
+        ],
+        "length": 0.073382,
+        "head_local": [
+          46.908768,
+          3.356611,
+          109.203568
+        ],
+        "tail_local": [
+          54.235504,
+          3.123461,
+          109.540352
+        ]
+      },
+      "CC_Base_L_Hand": {
+        "present": true,
+        "parent": "CC_Base_L_Forearm",
+        "head_world": [
+          0.688888,
+          -1.102141,
+          0.026566
+        ],
+        "tail_world": [
+          0.802214,
+          -1.090642,
+          0.10111
+        ],
+        "mid_world": [
+          0.745551,
+          -1.096392,
+          0.063838
+        ],
+        "length": 0.136132,
+        "head_local": [
+          68.888809,
+          2.656598,
+          110.214149
+        ],
+        "tail_local": [
+          80.221367,
+          10.111033,
+          109.064186
+        ]
+      },
+      "CC_Base_R_Clavicle": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          -0.131578,
+          -1.142694,
+          0.016049
+        ],
+        "tail_world": [
+          -0.242884,
+          -1.123525,
+          0.035315
+        ],
+        "mid_world": [
+          -0.187231,
+          -1.133109,
+          0.025682
+        ],
+        "length": 0.114576,
+        "head_local": [
+          -13.157842,
+          1.604907,
+          114.269371
+        ],
+        "tail_local": [
+          -24.288448,
+          3.531488,
+          112.352463
+        ]
+      },
+      "CC_Base_R_Upperarm": {
+        "present": true,
+        "parent": "CC_Base_R_Clavicle",
+        "head_world": [
+          -0.242885,
+          -1.123523,
+          0.035313
+        ],
+        "tail_world": [
+          -0.355986,
+          -1.107778,
+          0.034439
+        ],
+        "mid_world": [
+          -0.299435,
+          -1.115651,
+          0.034876
+        ],
+        "length": 0.114196,
+        "head_local": [
+          -24.288456,
+          3.531284,
+          112.35231
+        ],
+        "tail_local": [
+          -35.59861,
+          3.443901,
+          110.777809
+        ]
+      },
+      "CC_Base_R_Forearm": {
+        "present": true,
+        "parent": "CC_Base_R_Upperarm",
+        "head_world": [
+          -0.469088,
+          -1.092035,
+          0.033566
+        ],
+        "tail_world": [
+          -0.542354,
+          -1.095403,
+          0.031233
+        ],
+        "mid_world": [
+          -0.505721,
+          -1.093719,
+          0.0324
+        ],
+        "length": 0.073381,
+        "head_local": [
+          -46.908764,
+          3.356612,
+          109.203499
+        ],
+        "tail_local": [
+          -54.235447,
+          3.123363,
+          109.540314
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "parent": "CC_Base_R_Forearm",
+        "head_world": [
+          -0.688888,
+          -1.102141,
+          0.026566
+        ],
+        "tail_world": [
+          -0.788612,
+          -1.089604,
+          0.103779
+        ],
+        "mid_world": [
+          -0.73875,
+          -1.095872,
+          0.065172
+        ],
+        "length": 0.126744,
+        "head_local": [
+          -68.888794,
+          2.656599,
+          110.214073
+        ],
+        "tail_local": [
+          -78.861198,
+          10.377928,
+          108.960358
+        ]
+      },
+      "CC_Base_L_Thigh": {
+        "present": true,
+        "parent": "CC_Base_Pelvis",
+        "head_world": [
+          0.113074,
+          -0.699575,
+          0.017066
+        ],
+        "tail_world": [
+          0.133097,
+          -0.552717,
+          0.031191
+        ],
+        "mid_world": [
+          0.123086,
+          -0.626146,
+          0.024129
+        ],
+        "length": 0.148889,
+        "head_local": [
+          11.307426,
+          1.706651,
+          69.957527
+        ],
+        "tail_local": [
+          13.309749,
+          3.119151,
+          55.271667
+        ]
+      },
+      "CC_Base_L_Calf": {
+        "present": true,
+        "parent": "CC_Base_L_Thigh",
+        "head_world": [
+          0.15311,
+          -0.405857,
+          0.045323
+        ],
+        "tail_world": [
+          0.157789,
+          -0.30493,
+          0.045308
+        ],
+        "mid_world": [
+          0.15545,
+          -0.355393,
+          0.045316
+        ],
+        "length": 0.101036,
+        "head_local": [
+          15.311001,
+          4.5323,
+          40.585735
+        ],
+        "tail_local": [
+          15.778915,
+          4.530836,
+          30.492962
+        ]
+      },
+      "CC_Base_L_Foot": {
+        "present": true,
+        "parent": "CC_Base_L_Calf",
+        "head_world": [
+          0.167155,
+          -0.103075,
+          0.045323
+        ],
+        "tail_world": [
+          0.209113,
+          -0.079131,
+          -0.153163
+        ],
+        "mid_world": [
+          0.188134,
+          -0.091103,
+          -0.05392
+        ],
+        "length": 0.204281,
+        "head_local": [
+          16.71545,
+          4.532282,
+          10.307508
+        ],
+        "tail_local": [
+          20.911327,
+          -15.316341,
+          7.913104
+        ]
+      },
+      "CC_Base_R_Thigh": {
+        "present": true,
+        "parent": "CC_Base_Pelvis",
+        "head_world": [
+          -0.113074,
+          -0.699575,
+          0.017066
+        ],
+        "tail_world": [
+          -0.132178,
+          -0.556061,
+          0.031648
+        ],
+        "mid_world": [
+          -0.122626,
+          -0.627818,
+          0.024357
+        ],
+        "length": 0.145513,
+        "head_local": [
+          -11.307419,
+          1.706651,
+          69.95752
+        ],
+        "tail_local": [
+          -13.217813,
+          3.16484,
+          55.606056
+        ]
+      },
+      "CC_Base_R_Calf": {
+        "present": true,
+        "parent": "CC_Base_R_Thigh",
+        "head_world": [
+          -0.151271,
+          -0.412546,
+          0.04624
+        ],
+        "tail_world": [
+          -0.156521,
+          -0.309389,
+          0.046224
+        ],
+        "mid_world": [
+          -0.153896,
+          -0.360967,
+          0.046232
+        ],
+        "length": 0.103291,
+        "head_local": [
+          -15.127131,
+          4.624045,
+          41.254578
+        ],
+        "tail_local": [
+          -15.652147,
+          4.622425,
+          30.938873
+        ]
+      },
+      "CC_Base_R_Foot": {
+        "present": true,
+        "parent": "CC_Base_R_Calf",
+        "head_world": [
+          -0.167029,
+          -0.103075,
+          0.04624
+        ],
+        "tail_world": [
+          -0.191855,
+          -0.080222,
+          -0.141135
+        ],
+        "mid_world": [
+          -0.179442,
+          -0.091649,
+          -0.047448
+        ],
+        "length": 0.19039,
+        "head_local": [
+          -16.702888,
+          4.624032,
+          10.307523
+        ],
+        "tail_local": [
+          -19.18549,
+          -14.113545,
+          8.0222
+        ]
+      }
+    },
+    "empties": [],
+    "other_objects": [],
+    "object_names": [
+      "Armature",
+      "model"
+    ]
+  },
+  "compensation": {
+    "factors": [
+      "B_armature_object_transform",
+      "A_mesh_object_transform",
+      "C_parent_root_transform",
+      "D_fbx_axis_conversion",
+      "E_bind_inverse_keeps_rest_deform_identity"
+    ],
+    "world_separation_bone_center_to_mesh_center": 1.079953,
+    "armature_world": [
+      [
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0,
+        -0.01,
+        0.0
+      ],
+      [
+        0.0,
+        0.01,
+        -0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "meshes": [
+      {
+        "mesh": "model",
+        "Ainv_M": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0,
+            1e-06
+          ],
+          [
+            0.0,
+            -1.0,
+            -0.0,
+            -1e-06
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "Ainv_M_is_identity": false,
+        "Ainv_M_translation": [
+          -0.0,
+          1e-06,
+          -1e-06
+        ],
+        "Ainv_M_rotation_deg": [
+          -90.0,
+          -0.0,
+          -0.0
+        ],
+        "Ainv_M_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent_inverse_is_identity": true,
+        "mesh_basis_is_identity": false
+      }
+    ],
+    "equation": "world_vertex = Mesh.matrix_world * v_mesh\nworld_bone   = Armature.matrix_world * bone_armature\nv_bind_armature = A^-1 * M * v_mesh\nAt rest, pose = bind, so the Armature modifier returns the authored mesh.\nViewport bones are drawn at A*bone. Viewport mesh display uses M*v.\nIf A != M, bones LOOK displaced while skin still hits the correct vertices.\nMeasured converter T = A^-1 * M is the leftover FBX/Blender axis (typically Rx-90).",
+    "combination": true,
+    "primary": "F_combination_axis_parent_and_bind"
+  },
+  "skin_before": {
+    "mesh_count": 1,
+    "vertex_count": 47292,
+    "vertex_group_count": 61,
+    "vertex_group_names_sorted_sample": [
+      "CC_Base_Head",
+      "CC_Base_Hip",
+      "CC_Base_L_CalfTwist01",
+      "CC_Base_L_CalfTwist02",
+      "CC_Base_L_Clavicle",
+      "CC_Base_L_Foot",
+      "CC_Base_L_ForearmTwist01",
+      "CC_Base_L_ForearmTwist02",
+      "CC_Base_L_Hand",
+      "CC_Base_L_Index1",
+      "CC_Base_L_Index2",
+      "CC_Base_L_Index3",
+      "CC_Base_L_Mid1",
+      "CC_Base_L_Mid2",
+      "CC_Base_L_Mid3",
+      "CC_Base_L_Pinky1",
+      "CC_Base_L_Pinky2",
+      "CC_Base_L_Pinky3",
+      "CC_Base_L_Ring1",
+      "CC_Base_L_Ring2",
+      "CC_Base_L_Ring3",
+      "CC_Base_L_ThighTwist01",
+      "CC_Base_L_ThighTwist02",
+      "CC_Base_L_Thumb1",
+      "CC_Base_L_Thumb2",
+      "CC_Base_L_Thumb3",
+      "CC_Base_L_ToeBase",
+      "CC_Base_L_UpperarmTwist01",
+      "CC_Base_L_UpperarmTwist02",
+      "CC_Base_NeckTwist01",
+      "CC_Base_NeckTwist02",
+      "CC_Base_R_CalfTwist01",
+      "CC_Base_R_CalfTwist02",
+      "CC_Base_R_Clavicle",
+      "CC_Base_R_Foot",
+      "CC_Base_R_ForearmTwist01",
+      "CC_Base_R_ForearmTwist02",
+      "CC_Base_R_Hand",
+      "CC_Base_R_Index1",
+      "CC_Base_R_Index2"
+    ],
+    "unweighted_vertices": 0,
+    "mean_influences": 3.0595,
+    "max_influences": 6,
+    "influence_histogram": {
+      "1": 11935,
+      "2": 7124,
+      "4": 8756,
+      "3": 8680,
+      "5": 7338,
+      "6": 3459
+    },
+    "clamped_to_four": false
+  },
+  "regions_before": {
+    "CC_Base_Hip": {
+      "bone_mid_world": [
+        0.0,
+        -0.770016,
+        -0.001363
+      ],
+      "weighted_centroid_world": [
+        0.058115,
+        0.073666,
+        0.583033
+      ],
+      "weighted_vertex_count": 9848,
+      "distance_bone_to_region": 1.027957,
+      "region_spread": 0.651091,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_Waist": {
+      "bone_mid_world": [
+        0.0,
+        -0.847297,
+        -0.020784
+      ],
+      "weighted_centroid_world": [
+        0.05554,
+        0.058083,
+        0.616247
+      ],
+      "weighted_vertex_count": 11373,
+      "distance_bone_to_region": 1.108424,
+      "region_spread": 0.676753,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_Hip",
+        "CC_Base_Spine01"
+      ]
+    },
+    "CC_Base_Spine01": {
+      "bone_mid_world": [
+        0.0,
+        -0.915356,
+        -0.020585
+      ],
+      "weighted_centroid_world": [
+        0.021599,
+        -0.050471,
+        0.872409
+      ],
+      "weighted_vertex_count": 2871,
+      "distance_bone_to_region": 1.243354,
+      "region_spread": 0.273377,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_Spine02": {
+      "bone_mid_world": [
+        0.0,
+        -1.047961,
+        -0.003973
+      ],
+      "weighted_centroid_world": [
+        -0.010511,
+        -0.013639,
+        1.093302
+      ],
+      "weighted_vertex_count": 7363,
+      "distance_bone_to_region": 1.50796,
+      "region_spread": 0.355989,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_NeckTwist01": {
+      "bone_mid_world": [
+        -0.0,
+        -1.191904,
+        0.014587
+      ],
+      "weighted_centroid_world": [
+        0.007993,
+        -0.048536,
+        1.470121
+      ],
+      "weighted_vertex_count": 12049,
+      "distance_bone_to_region": 1.850928,
+      "region_spread": 0.443052,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_Head",
+        "CC_Base_NeckTwist02"
+      ]
+    },
+    "CC_Base_Head": {
+      "bone_mid_world": [
+        -0.0,
+        -1.293329,
+        0.005717
+      ],
+      "weighted_centroid_world": [
+        0.008023,
+        -0.049133,
+        1.471036
+      ],
+      "weighted_vertex_count": 11917,
+      "distance_bone_to_region": 1.922303,
+      "region_spread": 0.377458,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Clavicle": {
+      "bone_mid_world": [
+        0.187231,
+        -1.133109,
+        0.025682
+      ],
+      "weighted_centroid_world": [
+        0.21001,
+        0.027678,
+        1.173486
+      ],
+      "weighted_vertex_count": 852,
+      "distance_bone_to_region": 1.632605,
+      "region_spread": 0.167407,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Upperarm": {
+      "bone_mid_world": [
+        0.299435,
+        -1.115651,
+        0.034876
+      ],
+      "weighted_centroid_world": [
+        0.359089,
+        0.033678,
+        1.097878
+      ],
+      "weighted_vertex_count": 1884,
+      "distance_bone_to_region": 1.566682,
+      "region_spread": 0.218785,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_L_UpperarmTwist01",
+        "CC_Base_L_UpperarmTwist02"
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "bone_mid_world": [
+        0.505721,
+        -1.09372,
+        0.0324
+      ],
+      "weighted_centroid_world": [
+        0.589135,
+        0.026644,
+        1.068756
+      ],
+      "weighted_vertex_count": 2022,
+      "distance_bone_to_region": 1.528465,
+      "region_spread": 0.208222,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_L_ForearmTwist01",
+        "CC_Base_L_ForearmTwist02"
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "bone_mid_world": [
+        0.745551,
+        -1.096392,
+        0.063838
+      ],
+      "weighted_centroid_world": [
+        0.741213,
+        0.034677,
+        1.093367
+      ],
+      "weighted_vertex_count": 1084,
+      "distance_bone_to_region": 1.529466,
+      "region_spread": 0.161658,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Clavicle": {
+      "bone_mid_world": [
+        -0.187231,
+        -1.133109,
+        0.025682
+      ],
+      "weighted_centroid_world": [
+        -0.202543,
+        0.024675,
+        1.190021
+      ],
+      "weighted_vertex_count": 1161,
+      "distance_bone_to_region": 1.642067,
+      "region_spread": 0.182157,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Upperarm": {
+      "bone_mid_world": [
+        -0.299435,
+        -1.115651,
+        0.034876
+      ],
+      "weighted_centroid_world": [
+        -0.355629,
+        0.035068,
+        1.09497
+      ],
+      "weighted_vertex_count": 2073,
+      "distance_bone_to_region": 1.565602,
+      "region_spread": 0.21986,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_R_UpperarmTwist01",
+        "CC_Base_R_UpperarmTwist02"
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "bone_mid_world": [
+        -0.505721,
+        -1.093719,
+        0.0324
+      ],
+      "weighted_centroid_world": [
+        -0.592919,
+        0.019798,
+        1.072986
+      ],
+      "weighted_vertex_count": 2319,
+      "distance_bone_to_region": 1.526546,
+      "region_spread": 0.21391,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_R_ForearmTwist01",
+        "CC_Base_R_ForearmTwist02"
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "bone_mid_world": [
+        -0.73875,
+        -1.095872,
+        0.065172
+      ],
+      "weighted_centroid_world": [
+        -0.74832,
+        0.05228,
+        1.105021
+      ],
+      "weighted_vertex_count": 936,
+      "distance_bone_to_region": 1.549073,
+      "region_spread": 0.165808,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Thigh": {
+      "bone_mid_world": [
+        0.123086,
+        -0.626146,
+        0.024129
+      ],
+      "weighted_centroid_world": [
+        0.14748,
+        0.000712,
+        0.527421
+      ],
+      "weighted_vertex_count": 2289,
+      "distance_bone_to_region": 0.804269,
+      "region_spread": 0.282675,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_L_ThighTwist01",
+        "CC_Base_L_ThighTwist02"
+      ]
+    },
+    "CC_Base_L_Calf": {
+      "bone_mid_world": [
+        0.15545,
+        -0.355393,
+        0.045316
+      ],
+      "weighted_centroid_world": [
+        0.160471,
+        0.04913,
+        0.231326
+      ],
+      "weighted_vertex_count": 2849,
+      "distance_bone_to_region": 0.445269,
+      "region_spread": 0.258142,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_L_CalfTwist01",
+        "CC_Base_L_CalfTwist02"
+      ]
+    },
+    "CC_Base_L_Foot": {
+      "bone_mid_world": [
+        0.188134,
+        -0.091103,
+        -0.05392
+      ],
+      "weighted_centroid_world": [
+        0.198433,
+        -0.06885,
+        0.078849
+      ],
+      "weighted_vertex_count": 2334,
+      "distance_bone_to_region": 0.135014,
+      "region_spread": 0.201291,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Thigh": {
+      "bone_mid_world": [
+        -0.122626,
+        -0.627818,
+        0.024357
+      ],
+      "weighted_centroid_world": [
+        -0.142568,
+        2.8e-05,
+        0.528702
+      ],
+      "weighted_vertex_count": 2274,
+      "distance_bone_to_region": 0.805576,
+      "region_spread": 0.277229,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_R_ThighTwist01",
+        "CC_Base_R_ThighTwist02"
+      ]
+    },
+    "CC_Base_R_Calf": {
+      "bone_mid_world": [
+        -0.153896,
+        -0.360967,
+        0.046232
+      ],
+      "weighted_centroid_world": [
+        -0.160009,
+        0.044709,
+        0.266314
+      ],
+      "weighted_vertex_count": 2481,
+      "distance_bone_to_region": 0.46157,
+      "region_spread": 0.256786,
+      "anatomical_alignment": "DISPLACED",
+      "weight_aliases": [
+        "CC_Base_R_CalfTwist01",
+        "CC_Base_R_CalfTwist02"
+      ]
+    },
+    "CC_Base_R_Foot": {
+      "bone_mid_world": [
+        -0.179442,
+        -0.091649,
+        -0.047448
+      ],
+      "weighted_centroid_world": [
+        -0.19817,
+        -0.033893,
+        0.069003
+      ],
+      "weighted_vertex_count": 2540,
+      "distance_bone_to_region": 0.131329,
+      "region_spread": 0.214654,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    }
+  },
+  "alignment_before": {
+    "inside_count": 2,
+    "total": 20,
+    "missing_weight_regions": 0,
+    "inside_ratio": 0.1,
+    "worst_distance": 1.9223,
+    "pass": false
+  },
+  "hierarchy": [
+    {
+      "name": "root",
+      "parent": null,
+      "children": [
+        "CC_Base_Hip"
+      ]
+    },
+    {
+      "name": "CC_Base_Hip",
+      "parent": "root",
+      "children": [
+        "CC_Base_Pelvis",
+        "CC_Base_Waist"
+      ]
+    },
+    {
+      "name": "CC_Base_Pelvis",
+      "parent": "CC_Base_Hip",
+      "children": [
+        "CC_Base_L_Thigh",
+        "CC_Base_R_Thigh"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Thigh",
+      "parent": "CC_Base_Pelvis",
+      "children": [
+        "CC_Base_L_Calf",
+        "CC_Base_L_ThighTwist01"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Calf",
+      "parent": "CC_Base_L_Thigh",
+      "children": [
+        "CC_Base_L_Foot",
+        "CC_Base_L_CalfTwist01",
+        "CC_Base_L_KneeShareBone"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Foot",
+      "parent": "CC_Base_L_Calf",
+      "children": [
+        "CC_Base_L_ToeBaseShareBone",
+        "CC_Base_L_ToeBase"
+      ]
+    },
+    {
+      "name": "CC_Base_L_ToeBaseShareBone",
+      "parent": "CC_Base_L_Foot",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_ToeBase",
+      "parent": "CC_Base_L_Foot",
+      "children": [
+        "CC_Base_L_PinkyToe1",
+        "CC_Base_L_RingToe1",
+        "CC_Base_L_MidToe1",
+        "CC_Base_L_IndexToe1",
+        "CC_Base_L_BigToe1"
+      ]
+    },
+    {
+      "name": "CC_Base_L_PinkyToe1",
+      "parent": "CC_Base_L_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_RingToe1",
+      "parent": "CC_Base_L_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_MidToe1",
+      "parent": "CC_Base_L_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_IndexToe1",
+      "parent": "CC_Base_L_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_BigToe1",
+      "parent": "CC_Base_L_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_CalfTwist01",
+      "parent": "CC_Base_L_Calf",
+      "children": [
+        "CC_Base_L_CalfTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_L_CalfTwist02",
+      "parent": "CC_Base_L_CalfTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_KneeShareBone",
+      "parent": "CC_Base_L_Calf",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_ThighTwist01",
+      "parent": "CC_Base_L_Thigh",
+      "children": [
+        "CC_Base_L_ThighTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_L_ThighTwist02",
+      "parent": "CC_Base_L_ThighTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Thigh",
+      "parent": "CC_Base_Pelvis",
+      "children": [
+        "CC_Base_R_ThighTwist01",
+        "CC_Base_R_Calf"
+      ]
+    },
+    {
+      "name": "CC_Base_R_ThighTwist01",
+      "parent": "CC_Base_R_Thigh",
+      "children": [
+        "CC_Base_R_ThighTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_R_ThighTwist02",
+      "parent": "CC_Base_R_ThighTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Calf",
+      "parent": "CC_Base_R_Thigh",
+      "children": [
+        "CC_Base_R_Foot",
+        "CC_Base_R_KneeShareBone",
+        "CC_Base_R_CalfTwist01"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Foot",
+      "parent": "CC_Base_R_Calf",
+      "children": [
+        "CC_Base_R_ToeBase",
+        "CC_Base_R_ToeBaseShareBone"
+      ]
+    },
+    {
+      "name": "CC_Base_R_ToeBase",
+      "parent": "CC_Base_R_Foot",
+      "children": [
+        "CC_Base_R_PinkyToe1",
+        "CC_Base_R_BigToe1",
+        "CC_Base_R_IndexToe1",
+        "CC_Base_R_MidToe1",
+        "CC_Base_R_RingToe1"
+      ]
+    },
+    {
+      "name": "CC_Base_R_PinkyToe1",
+      "parent": "CC_Base_R_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_BigToe1",
+      "parent": "CC_Base_R_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_IndexToe1",
+      "parent": "CC_Base_R_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_MidToe1",
+      "parent": "CC_Base_R_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_RingToe1",
+      "parent": "CC_Base_R_ToeBase",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_ToeBaseShareBone",
+      "parent": "CC_Base_R_Foot",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_KneeShareBone",
+      "parent": "CC_Base_R_Calf",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_CalfTwist01",
+      "parent": "CC_Base_R_Calf",
+      "children": [
+        "CC_Base_R_CalfTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_R_CalfTwist02",
+      "parent": "CC_Base_R_CalfTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_Waist",
+      "parent": "CC_Base_Hip",
+      "children": [
+        "CC_Base_Spine01"
+      ]
+    },
+    {
+      "name": "CC_Base_Spine01",
+      "parent": "CC_Base_Waist",
+      "children": [
+        "CC_Base_Spine02"
+      ]
+    },
+    {
+      "name": "CC_Base_Spine02",
+      "parent": "CC_Base_Spine01",
+      "children": [
+        "CC_Base_NeckTwist01",
+        "CC_Base_L_Clavicle",
+        "CC_Base_R_Clavicle",
+        "CC_Base_R_RibsTwist",
+        "CC_Base_L_RibsTwist"
+      ]
+    },
+    {
+      "name": "CC_Base_NeckTwist01",
+      "parent": "CC_Base_Spine02",
+      "children": [
+        "CC_Base_NeckTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_NeckTwist02",
+      "parent": "CC_Base_NeckTwist01",
+      "children": [
+        "CC_Base_Head"
+      ]
+    },
+    {
+      "name": "CC_Base_Head",
+      "parent": "CC_Base_NeckTwist02",
+      "children": [
+        "CC_Base_FacialBone"
+      ]
+    },
+    {
+      "name": "CC_Base_FacialBone",
+      "parent": "CC_Base_Head",
+      "children": [
+        "CC_Base_JawRoot",
+        "CC_Base_R_Eye",
+        "CC_Base_L_Eye",
+        "CC_Base_UpperJaw"
+      ]
+    },
+    {
+      "name": "CC_Base_JawRoot",
+      "parent": "CC_Base_FacialBone",
+      "children": [
+        "CC_Base_Tongue01",
+        "CC_Base_Teeth02"
+      ]
+    },
+    {
+      "name": "CC_Base_Tongue01",
+      "parent": "CC_Base_JawRoot",
+      "children": [
+        "CC_Base_Tongue02"
+      ]
+    },
+    {
+      "name": "CC_Base_Tongue02",
+      "parent": "CC_Base_Tongue01",
+      "children": [
+        "CC_Base_Tongue03"
+      ]
+    },
+    {
+      "name": "CC_Base_Tongue03",
+      "parent": "CC_Base_Tongue02",
+      "children": []
+    },
+    {
+      "name": "CC_Base_Teeth02",
+      "parent": "CC_Base_JawRoot",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Eye",
+      "parent": "CC_Base_FacialBone",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Eye",
+      "parent": "CC_Base_FacialBone",
+      "children": []
+    },
+    {
+      "name": "CC_Base_UpperJaw",
+      "parent": "CC_Base_FacialBone",
+      "children": [
+        "CC_Base_Teeth01"
+      ]
+    },
+    {
+      "name": "CC_Base_Teeth01",
+      "parent": "CC_Base_UpperJaw",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Clavicle",
+      "parent": "CC_Base_Spine02",
+      "children": [
+        "CC_Base_L_Upperarm"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Upperarm",
+      "parent": "CC_Base_L_Clavicle",
+      "children": [
+        "CC_Base_L_Forearm",
+        "CC_Base_L_UpperarmTwist01"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Forearm",
+      "parent": "CC_Base_L_Upperarm",
+      "children": [
+        "CC_Base_L_ForearmTwist01",
+        "CC_Base_L_ElbowShareBone",
+        "CC_Base_L_Hand"
+      ]
+    },
+    {
+      "name": "CC_Base_L_ForearmTwist01",
+      "parent": "CC_Base_L_Forearm",
+      "children": [
+        "CC_Base_L_ForearmTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_L_ForearmTwist02",
+      "parent": "CC_Base_L_ForearmTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_ElbowShareBone",
+      "parent": "CC_Base_L_Forearm",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Hand",
+      "parent": "CC_Base_L_Forearm",
+      "children": [
+        "CC_Base_L_Mid1",
+        "CC_Base_L_Index1",
+        "CC_Base_L_Ring1",
+        "CC_Base_L_Pinky1",
+        "CC_Base_L_Thumb1"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Mid1",
+      "parent": "CC_Base_L_Hand",
+      "children": [
+        "CC_Base_L_Mid2"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Mid2",
+      "parent": "CC_Base_L_Mid1",
+      "children": [
+        "CC_Base_L_Mid3"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Mid3",
+      "parent": "CC_Base_L_Mid2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Index1",
+      "parent": "CC_Base_L_Hand",
+      "children": [
+        "CC_Base_L_Index2"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Index2",
+      "parent": "CC_Base_L_Index1",
+      "children": [
+        "CC_Base_L_Index3"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Index3",
+      "parent": "CC_Base_L_Index2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Ring1",
+      "parent": "CC_Base_L_Hand",
+      "children": [
+        "CC_Base_L_Ring2"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Ring2",
+      "parent": "CC_Base_L_Ring1",
+      "children": [
+        "CC_Base_L_Ring3"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Ring3",
+      "parent": "CC_Base_L_Ring2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Pinky1",
+      "parent": "CC_Base_L_Hand",
+      "children": [
+        "CC_Base_L_Pinky2"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Pinky2",
+      "parent": "CC_Base_L_Pinky1",
+      "children": [
+        "CC_Base_L_Pinky3"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Pinky3",
+      "parent": "CC_Base_L_Pinky2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_Thumb1",
+      "parent": "CC_Base_L_Hand",
+      "children": [
+        "CC_Base_L_Thumb2"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Thumb2",
+      "parent": "CC_Base_L_Thumb1",
+      "children": [
+        "CC_Base_L_Thumb3"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Thumb3",
+      "parent": "CC_Base_L_Thumb2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_UpperarmTwist01",
+      "parent": "CC_Base_L_Upperarm",
+      "children": [
+        "CC_Base_L_UpperarmTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_L_UpperarmTwist02",
+      "parent": "CC_Base_L_UpperarmTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Clavicle",
+      "parent": "CC_Base_Spine02",
+      "children": [
+        "CC_Base_R_Upperarm"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Upperarm",
+      "parent": "CC_Base_R_Clavicle",
+      "children": [
+        "CC_Base_R_UpperarmTwist01",
+        "CC_Base_R_Forearm"
+      ]
+    },
+    {
+      "name": "CC_Base_R_UpperarmTwist01",
+      "parent": "CC_Base_R_Upperarm",
+      "children": [
+        "CC_Base_R_UpperarmTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_R_UpperarmTwist02",
+      "parent": "CC_Base_R_UpperarmTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Forearm",
+      "parent": "CC_Base_R_Upperarm",
+      "children": [
+        "CC_Base_R_ForearmTwist01",
+        "CC_Base_R_ElbowShareBone",
+        "CC_Base_R_Hand"
+      ]
+    },
+    {
+      "name": "CC_Base_R_ForearmTwist01",
+      "parent": "CC_Base_R_Forearm",
+      "children": [
+        "CC_Base_R_ForearmTwist02"
+      ]
+    },
+    {
+      "name": "CC_Base_R_ForearmTwist02",
+      "parent": "CC_Base_R_ForearmTwist01",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_ElbowShareBone",
+      "parent": "CC_Base_R_Forearm",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Hand",
+      "parent": "CC_Base_R_Forearm",
+      "children": [
+        "CC_Base_R_Mid1",
+        "CC_Base_R_Ring1",
+        "CC_Base_R_Thumb1",
+        "CC_Base_R_Index1",
+        "CC_Base_R_Pinky1"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Mid1",
+      "parent": "CC_Base_R_Hand",
+      "children": [
+        "CC_Base_R_Mid2"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Mid2",
+      "parent": "CC_Base_R_Mid1",
+      "children": [
+        "CC_Base_R_Mid3"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Mid3",
+      "parent": "CC_Base_R_Mid2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Ring1",
+      "parent": "CC_Base_R_Hand",
+      "children": [
+        "CC_Base_R_Ring2"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Ring2",
+      "parent": "CC_Base_R_Ring1",
+      "children": [
+        "CC_Base_R_Ring3"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Ring3",
+      "parent": "CC_Base_R_Ring2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Thumb1",
+      "parent": "CC_Base_R_Hand",
+      "children": [
+        "CC_Base_R_Thumb2"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Thumb2",
+      "parent": "CC_Base_R_Thumb1",
+      "children": [
+        "CC_Base_R_Thumb3"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Thumb3",
+      "parent": "CC_Base_R_Thumb2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Index1",
+      "parent": "CC_Base_R_Hand",
+      "children": [
+        "CC_Base_R_Index2"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Index2",
+      "parent": "CC_Base_R_Index1",
+      "children": [
+        "CC_Base_R_Index3"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Index3",
+      "parent": "CC_Base_R_Index2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_Pinky1",
+      "parent": "CC_Base_R_Hand",
+      "children": [
+        "CC_Base_R_Pinky2"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Pinky2",
+      "parent": "CC_Base_R_Pinky1",
+      "children": [
+        "CC_Base_R_Pinky3"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Pinky3",
+      "parent": "CC_Base_R_Pinky2",
+      "children": []
+    },
+    {
+      "name": "CC_Base_R_RibsTwist",
+      "parent": "CC_Base_Spine02",
+      "children": [
+        "CC_Base_R_Breast"
+      ]
+    },
+    {
+      "name": "CC_Base_R_Breast",
+      "parent": "CC_Base_R_RibsTwist",
+      "children": []
+    },
+    {
+      "name": "CC_Base_L_RibsTwist",
+      "parent": "CC_Base_Spine02",
+      "children": [
+        "CC_Base_L_Breast"
+      ]
+    },
+    {
+      "name": "CC_Base_L_Breast",
+      "parent": "CC_Base_L_RibsTwist",
+      "children": []
+    }
+  ],
+  "hierarchy_bone_count": 101,
+  "rest_deform_error_source": 0.0,
+  "strategies_tested": [
+    {
+      "id": "A_preserve_modifier_only",
+      "applied": false,
+      "reason": "Object/parent leftover is the visual offset; leaving it fails identity-object requirement."
+    },
+    {
+      "id": "B_bake_world_into_data",
+      "applied": true,
+      "details": {
+        "strategy": "B_bake_world_into_data",
+        "armature_transform_method": "armature.data.transform"
+      },
+      "alignment": {
+        "inside_count": 2,
+        "total": 20,
+        "missing_weight_regions": 0,
+        "inside_ratio": 0.1,
+        "worst_distance": 1.9223,
+        "pass": false
+      },
+      "note": "Identity objects. Does not move bones onto mesh; converter T=M*A^-1 remains in rest locations."
+    },
+    {
+      "id": "C_reconstruct_rest_from_bind_converter",
+      "applied": true,
+      "details": {
+        "strategy": "C_reconstruct_rest_from_bind_converter",
+        "prior_T_M_Ainv": [
+          [
+            1.0,
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "applied": [
+          [
+            1.0,
+            -0.0,
+            -0.0,
+            0.006409
+          ],
+          [
+            -0.0,
+            -0.0,
+            1.0,
+            -0.002782
+          ],
+          [
+            -0.0,
+            -1.0,
+            -0.0,
+            0.007405
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "pair_error": 0.075022,
+        "source": "rotation_plus_translation",
+        "pair_count": 8,
+        "armature_transform_method": "armature.data.transform",
+        "pairs": [
+          {
+            "bone": "CC_Base_Hip",
+            "bone_mid": [
+              0.0,
+              -0.770016,
+              -0.001363
+            ],
+            "centroid": [
+              0.058115,
+              0.073666,
+              0.583033
+            ]
+          },
+          {
+            "bone": "CC_Base_Head",
+            "bone_mid": [
+              -0.0,
+              -1.293329,
+              0.005717
+            ],
+            "centroid": [
+              0.008023,
+              -0.049133,
+              1.471036
+            ]
+          },
+          {
+            "bone": "CC_Base_L_Hand",
+            "bone_mid": [
+              0.745551,
+              -1.096392,
+              0.063838
+            ],
+            "centroid": [
+              0.741213,
+              0.034677,
+              1.093367
+            ]
+          },
+          {
+            "bone": "CC_Base_R_Hand",
+            "bone_mid": [
+              -0.73875,
+              -1.095872,
+              0.065172
+            ],
+            "centroid": [
+              -0.74832,
+              0.05228,
+              1.105021
+            ]
+          },
+          {
+            "bone": "CC_Base_L_Foot",
+            "bone_mid": [
+              0.188134,
+              -0.091103,
+              -0.05392
+            ],
+            "centroid": [
+              0.198433,
+              -0.06885,
+              0.078849
+            ]
+          },
+          {
+            "bone": "CC_Base_R_Foot",
+            "bone_mid": [
+              -0.179442,
+              -0.091649,
+              -0.047448
+            ],
+            "centroid": [
+              -0.19817,
+              -0.033893,
+              0.069003
+            ]
+          },
+          {
+            "bone": "CC_Base_L_Clavicle",
+            "bone_mid": [
+              0.187231,
+              -1.133109,
+              0.025682
+            ],
+            "centroid": [
+              0.21001,
+              0.027678,
+              1.173486
+            ]
+          },
+          {
+            "bone": "CC_Base_R_Clavicle",
+            "bone_mid": [
+              -0.187231,
+              -1.133109,
+              0.025682
+            ],
+            "centroid": [
+              -0.202543,
+              0.024675,
+              1.190021
+            ]
+          }
+        ]
+      },
+      "floor": {
+        "floor_delta_z": 1e-06
+      },
+      "alignment": {
+        "inside_count": 20,
+        "total": 20,
+        "missing_weight_regions": 0,
+        "inside_ratio": 1.0,
+        "worst_distance": 0.27746,
+        "pass": true
+      },
+      "articulation_pass": true,
+      "rest_deform_error": 0.0
+    },
+    {
+      "id": "D_rebind_by_vertex_group_name",
+      "applied": false,
+      "reason": "Not used unless C broke rest identity or alignment."
+    }
+  ],
+  "winning_strategy": "C_reconstruct_rest_from_bind_converter",
+  "clean": {
+    "armature": {
+      "name": "Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "parent_type": "OBJECT",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_mode": "XYZ",
+      "rotation_euler_deg": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_parent_inverse": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrix_world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matrix_world_rot_quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "matrix_world_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifiers": [],
+      "children": [
+        "model"
+      ]
+    },
+    "meshes": [
+      {
+        "name": "model",
+        "type": "MESH",
+        "parent": "Armature",
+        "parent_type": "OBJECT",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler_deg": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "rotation_quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_parent_inverse": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "matrix_world_loc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "matrix_world_rot_quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrix_world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "modifiers": [
+          {
+            "name": "Armature",
+            "type": "ARMATURE",
+            "target": "Armature"
+          }
+        ],
+        "children": []
+      }
+    ],
+    "mesh_world_bbox": {
+      "min": [
+        -0.933897,
+        -0.347867,
+        0.0
+      ],
+      "max": [
+        0.933897,
+        0.694315,
+        1.731413
+      ],
+      "size": [
+        1.867794,
+        1.042182,
+        1.731413
+      ],
+      "center": [
+        0.0,
+        0.173224,
+        0.865707
+      ],
+      "vertex_count": 47292
+    },
+    "armature_world_bbox": {
+      "min": [
+        -0.917106,
+        -0.352248,
+        0.007406
+      ],
+      "max": [
+        0.924829,
+        0.747111,
+        1.36203
+      ],
+      "size": [
+        1.841935,
+        1.099359,
+        1.354624
+      ],
+      "center": [
+        0.003862,
+        0.197431,
+        0.684718
+      ],
+      "bone_count": 101
+    },
+    "important_bones": {
+      "CC_Base_Hip": {
+        "present": true,
+        "parent": "root",
+        "head_world": [
+          0.006409,
+          -0.002782,
+          0.757299
+        ],
+        "tail_world": [
+          0.006409,
+          -0.005509,
+          0.797544
+        ],
+        "mid_world": [
+          0.006409,
+          -0.004146,
+          0.777421
+        ],
+        "length": 0.040337,
+        "head_local": [
+          0.006409,
+          -0.002782,
+          0.757299
+        ],
+        "tail_local": [
+          0.006409,
+          -0.005509,
+          0.797544
+        ]
+      },
+      "CC_Base_Waist": {
+        "present": true,
+        "parent": "CC_Base_Hip",
+        "head_world": [
+          0.006409,
+          -0.023542,
+          0.835256
+        ],
+        "tail_world": [
+          0.006409,
+          -0.02359,
+          0.874148
+        ],
+        "mid_world": [
+          0.006409,
+          -0.023566,
+          0.854702
+        ],
+        "length": 0.038892,
+        "head_local": [
+          0.006409,
+          -0.023542,
+          0.835256
+        ],
+        "tail_local": [
+          0.006409,
+          -0.02359,
+          0.874148
+        ]
+      },
+      "CC_Base_Spine01": {
+        "present": true,
+        "parent": "CC_Base_Waist",
+        "head_world": [
+          0.006409,
+          -0.02359,
+          0.874148
+        ],
+        "tail_world": [
+          0.006409,
+          -0.023146,
+          0.971374
+        ],
+        "mid_world": [
+          0.006409,
+          -0.023368,
+          0.922761
+        ],
+        "length": 0.097227,
+        "head_local": [
+          0.006409,
+          -0.02359,
+          0.874148
+        ],
+        "tail_local": [
+          0.006409,
+          -0.023146,
+          0.971374
+        ]
+      },
+      "CC_Base_Spine02": {
+        "present": true,
+        "parent": "CC_Base_Spine01",
+        "head_world": [
+          0.006409,
+          -0.02315,
+          0.971374
+        ],
+        "tail_world": [
+          0.006409,
+          0.00964,
+          1.139359
+        ],
+        "mid_world": [
+          0.006409,
+          -0.006755,
+          1.055366
+        ],
+        "length": 0.171155,
+        "head_local": [
+          0.006409,
+          -0.02315,
+          0.971374
+        ],
+        "tail_local": [
+          0.006409,
+          0.00964,
+          1.139359
+        ]
+      },
+      "CC_Base_NeckTwist01": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          0.006409,
+          0.014764,
+          1.165518
+        ],
+        "tail_world": [
+          0.006408,
+          0.008845,
+          1.233102
+        ],
+        "mid_world": [
+          0.006408,
+          0.011805,
+          1.19931
+        ],
+        "length": 0.067843,
+        "head_local": [
+          0.006409,
+          0.014764,
+          1.165518
+        ],
+        "tail_local": [
+          0.006408,
+          0.008845,
+          1.233102
+        ]
+      },
+      "CC_Base_Head": {
+        "present": true,
+        "parent": "CC_Base_NeckTwist02",
+        "head_world": [
+          0.006408,
+          0.002927,
+          1.300685
+        ],
+        "tail_world": [
+          0.006408,
+          0.002942,
+          1.300784
+        ],
+        "mid_world": [
+          0.006408,
+          0.002935,
+          1.300735
+        ],
+        "length": 0.0001,
+        "head_local": [
+          0.006408,
+          0.002927,
+          1.300685
+        ],
+        "tail_local": [
+          0.006408,
+          0.002942,
+          1.300784
+        ]
+      },
+      "CC_Base_L_Clavicle": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          0.137987,
+          0.013266,
+          1.150099
+        ],
+        "tail_world": [
+          0.249293,
+          0.032532,
+          1.13093
+        ],
+        "mid_world": [
+          0.19364,
+          0.022899,
+          1.140515
+        ],
+        "length": 0.114576,
+        "head_local": [
+          0.137987,
+          0.013266,
+          1.150099
+        ],
+        "tail_local": [
+          0.249293,
+          0.032532,
+          1.13093
+        ]
+      },
+      "CC_Base_L_Upperarm": {
+        "present": true,
+        "parent": "CC_Base_L_Clavicle",
+        "head_world": [
+          0.249293,
+          0.03253,
+          1.130929
+        ],
+        "tail_world": [
+          0.362395,
+          0.031657,
+          1.115185
+        ],
+        "mid_world": [
+          0.305844,
+          0.032094,
+          1.123057
+        ],
+        "length": 0.114196,
+        "head_local": [
+          0.249293,
+          0.03253,
+          1.130929
+        ],
+        "tail_local": [
+          0.362395,
+          0.031657,
+          1.115185
+        ]
+      },
+      "CC_Base_L_Forearm": {
+        "present": true,
+        "parent": "CC_Base_L_Upperarm",
+        "head_world": [
+          0.475496,
+          0.030783,
+          1.099441
+        ],
+        "tail_world": [
+          0.548763,
+          0.028452,
+          1.102809
+        ],
+        "mid_world": [
+          0.51213,
+          0.029618,
+          1.101125
+        ],
+        "length": 0.073382,
+        "head_local": [
+          0.475496,
+          0.030783,
+          1.099441
+        ],
+        "tail_local": [
+          0.548763,
+          0.028452,
+          1.102809
+        ]
+      },
+      "CC_Base_L_Hand": {
+        "present": true,
+        "parent": "CC_Base_L_Forearm",
+        "head_world": [
+          0.695297,
+          0.023783,
+          1.109547
+        ],
+        "tail_world": [
+          0.808622,
+          0.098328,
+          1.098047
+        ],
+        "mid_world": [
+          0.751959,
+          0.061056,
+          1.103797
+        ],
+        "length": 0.136131,
+        "head_local": [
+          0.695297,
+          0.023783,
+          1.109547
+        ],
+        "tail_local": [
+          0.808622,
+          0.098328,
+          1.098047
+        ]
+      },
+      "CC_Base_R_Clavicle": {
+        "present": true,
+        "parent": "CC_Base_Spine02",
+        "head_world": [
+          -0.12517,
+          0.013266,
+          1.150099
+        ],
+        "tail_world": [
+          -0.236476,
+          0.032532,
+          1.13093
+        ],
+        "mid_world": [
+          -0.180823,
+          0.022899,
+          1.140514
+        ],
+        "length": 0.114576,
+        "head_local": [
+          -0.12517,
+          0.013266,
+          1.150099
+        ],
+        "tail_local": [
+          -0.236476,
+          0.032532,
+          1.13093
+        ]
+      },
+      "CC_Base_R_Upperarm": {
+        "present": true,
+        "parent": "CC_Base_R_Clavicle",
+        "head_world": [
+          -0.236476,
+          0.03253,
+          1.130929
+        ],
+        "tail_world": [
+          -0.349578,
+          0.031656,
+          1.115183
+        ],
+        "mid_world": [
+          -0.293027,
+          0.032093,
+          1.123056
+        ],
+        "length": 0.114196,
+        "head_local": [
+          -0.236476,
+          0.03253,
+          1.130929
+        ],
+        "tail_local": [
+          -0.349578,
+          0.031656,
+          1.115183
+        ]
+      },
+      "CC_Base_R_Forearm": {
+        "present": true,
+        "parent": "CC_Base_R_Upperarm",
+        "head_world": [
+          -0.462679,
+          0.030783,
+          1.09944
+        ],
+        "tail_world": [
+          -0.535946,
+          0.028451,
+          1.102808
+        ],
+        "mid_world": [
+          -0.499312,
+          0.029617,
+          1.101124
+        ],
+        "length": 0.073381,
+        "head_local": [
+          -0.462679,
+          0.030783,
+          1.09944
+        ],
+        "tail_local": [
+          -0.535946,
+          0.028451,
+          1.102808
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "parent": "CC_Base_R_Forearm",
+        "head_world": [
+          -0.682479,
+          0.023783,
+          1.109546
+        ],
+        "tail_world": [
+          -0.782203,
+          0.100997,
+          1.097009
+        ],
+        "mid_world": [
+          -0.732341,
+          0.06239,
+          1.103277
+        ],
+        "length": 0.126744,
+        "head_local": [
+          -0.682479,
+          0.023783,
+          1.109546
+        ],
+        "tail_local": [
+          -0.782203,
+          0.100997,
+          1.097009
+        ]
+      },
+      "CC_Base_L_Thigh": {
+        "present": true,
+        "parent": "CC_Base_Pelvis",
+        "head_world": [
+          0.119483,
+          0.014284,
+          0.706981
+        ],
+        "tail_world": [
+          0.139506,
+          0.028409,
+          0.560122
+        ],
+        "mid_world": [
+          0.129494,
+          0.021346,
+          0.633551
+        ],
+        "length": 0.148889,
+        "head_local": [
+          0.119483,
+          0.014284,
+          0.706981
+        ],
+        "tail_local": [
+          0.139506,
+          0.028409,
+          0.560122
+        ]
+      },
+      "CC_Base_L_Calf": {
+        "present": true,
+        "parent": "CC_Base_L_Thigh",
+        "head_world": [
+          0.159518,
+          0.04254,
+          0.413263
+        ],
+        "tail_world": [
+          0.164198,
+          0.042526,
+          0.312335
+        ],
+        "mid_world": [
+          0.161858,
+          0.042533,
+          0.362799
+        ],
+        "length": 0.101036,
+        "head_local": [
+          0.159518,
+          0.04254,
+          0.413263
+        ],
+        "tail_local": [
+          0.164198,
+          0.042526,
+          0.312335
+        ]
+      },
+      "CC_Base_L_Foot": {
+        "present": true,
+        "parent": "CC_Base_L_Calf",
+        "head_world": [
+          0.173563,
+          0.04254,
+          0.110481
+        ],
+        "tail_world": [
+          0.215522,
+          -0.155946,
+          0.086537
+        ],
+        "mid_world": [
+          0.194542,
+          -0.056703,
+          0.098509
+        ],
+        "length": 0.204281,
+        "head_local": [
+          0.173563,
+          0.04254,
+          0.110481
+        ],
+        "tail_local": [
+          0.215522,
+          -0.155946,
+          0.086537
+        ]
+      },
+      "CC_Base_R_Thigh": {
+        "present": true,
+        "parent": "CC_Base_Pelvis",
+        "head_world": [
+          -0.106666,
+          0.014284,
+          0.706981
+        ],
+        "tail_world": [
+          -0.12577,
+          0.028866,
+          0.563466
+        ],
+        "mid_world": [
+          -0.116218,
+          0.021575,
+          0.635223
+        ],
+        "length": 0.145513,
+        "head_local": [
+          -0.106666,
+          0.014284,
+          0.706981
+        ],
+        "tail_local": [
+          -0.12577,
+          0.028866,
+          0.563466
+        ]
+      },
+      "CC_Base_R_Calf": {
+        "present": true,
+        "parent": "CC_Base_R_Thigh",
+        "head_world": [
+          -0.144863,
+          0.043458,
+          0.419951
+        ],
+        "tail_world": [
+          -0.150113,
+          0.043442,
+          0.316794
+        ],
+        "mid_world": [
+          -0.147488,
+          0.04345,
+          0.368373
+        ],
+        "length": 0.103291,
+        "head_local": [
+          -0.144863,
+          0.043458,
+          0.419951
+        ],
+        "tail_local": [
+          -0.150113,
+          0.043442,
+          0.316794
+        ]
+      },
+      "CC_Base_R_Foot": {
+        "present": true,
+        "parent": "CC_Base_R_Calf",
+        "head_world": [
+          -0.16062,
+          0.043458,
+          0.110481
+        ],
+        "tail_world": [
+          -0.185446,
+          -0.143918,
+          0.087627
+        ],
+        "mid_world": [
+          -0.173033,
+          -0.05023,
+          0.099054
+        ],
+        "length": 0.19039,
+        "head_local": [
+          -0.16062,
+          0.043458,
+          0.110481
+        ],
+        "tail_local": [
+          -0.185446,
+          -0.143918,
+          0.087627
+        ]
+      }
+    },
+    "armature_object_identity": true,
+    "mesh_object_identity": true,
+    "rest_deform_error": 0.0
+  },
+  "regions_after": {
+    "CC_Base_Hip": {
+      "bone_mid_world": [
+        0.006409,
+        -0.004146,
+        0.777421
+      ],
+      "weighted_centroid_world": [
+        0.058115,
+        0.073666,
+        0.583034
+      ],
+      "weighted_vertex_count": 9848,
+      "distance_bone_to_region": 0.215673,
+      "region_spread": 0.651091,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_Waist": {
+      "bone_mid_world": [
+        0.006409,
+        -0.023566,
+        0.854702
+      ],
+      "weighted_centroid_world": [
+        0.05554,
+        0.058083,
+        0.616248
+      ],
+      "weighted_vertex_count": 11373,
+      "distance_bone_to_region": 0.25679,
+      "region_spread": 0.676753,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_Hip",
+        "CC_Base_Spine01"
+      ]
+    },
+    "CC_Base_Spine01": {
+      "bone_mid_world": [
+        0.006409,
+        -0.023368,
+        0.922761
+      ],
+      "weighted_centroid_world": [
+        0.021599,
+        -0.050471,
+        0.87241
+      ],
+      "weighted_vertex_count": 2871,
+      "distance_bone_to_region": 0.059166,
+      "region_spread": 0.273377,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_Spine02": {
+      "bone_mid_world": [
+        0.006409,
+        -0.006755,
+        1.055366
+      ],
+      "weighted_centroid_world": [
+        -0.010511,
+        -0.013639,
+        1.093303
+      ],
+      "weighted_vertex_count": 7363,
+      "distance_bone_to_region": 0.042105,
+      "region_spread": 0.355989,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_NeckTwist01": {
+      "bone_mid_world": [
+        0.006408,
+        0.011805,
+        1.19931
+      ],
+      "weighted_centroid_world": [
+        0.007993,
+        -0.048536,
+        1.470121
+      ],
+      "weighted_vertex_count": 12049,
+      "distance_bone_to_region": 0.277457,
+      "region_spread": 0.443052,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_Head",
+        "CC_Base_NeckTwist02"
+      ]
+    },
+    "CC_Base_Head": {
+      "bone_mid_world": [
+        0.006408,
+        0.002935,
+        1.300735
+      ],
+      "weighted_centroid_world": [
+        0.008023,
+        -0.049133,
+        1.471037
+      ],
+      "weighted_vertex_count": 11917,
+      "distance_bone_to_region": 0.178091,
+      "region_spread": 0.377458,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Clavicle": {
+      "bone_mid_world": [
+        0.19364,
+        0.022899,
+        1.140515
+      ],
+      "weighted_centroid_world": [
+        0.21001,
+        0.027678,
+        1.173487
+      ],
+      "weighted_vertex_count": 852,
+      "distance_bone_to_region": 0.037121,
+      "region_spread": 0.167407,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Upperarm": {
+      "bone_mid_world": [
+        0.305844,
+        0.032094,
+        1.123057
+      ],
+      "weighted_centroid_world": [
+        0.359089,
+        0.033678,
+        1.097879
+      ],
+      "weighted_vertex_count": 1884,
+      "distance_bone_to_region": 0.058919,
+      "region_spread": 0.218785,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_L_UpperarmTwist01",
+        "CC_Base_L_UpperarmTwist02"
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "bone_mid_world": [
+        0.51213,
+        0.029618,
+        1.101125
+      ],
+      "weighted_centroid_world": [
+        0.589135,
+        0.026644,
+        1.068758
+      ],
+      "weighted_vertex_count": 2022,
+      "distance_bone_to_region": 0.083584,
+      "region_spread": 0.208222,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_L_ForearmTwist01",
+        "CC_Base_L_ForearmTwist02"
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "bone_mid_world": [
+        0.751959,
+        0.061056,
+        1.103797
+      ],
+      "weighted_centroid_world": [
+        0.741213,
+        0.034677,
+        1.093368
+      ],
+      "weighted_vertex_count": 1084,
+      "distance_bone_to_region": 0.030333,
+      "region_spread": 0.161658,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Clavicle": {
+      "bone_mid_world": [
+        -0.180823,
+        0.022899,
+        1.140514
+      ],
+      "weighted_centroid_world": [
+        -0.202543,
+        0.024675,
+        1.190022
+      ],
+      "weighted_vertex_count": 1161,
+      "distance_bone_to_region": 0.054091,
+      "region_spread": 0.182157,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Upperarm": {
+      "bone_mid_world": [
+        -0.293027,
+        0.032093,
+        1.123056
+      ],
+      "weighted_centroid_world": [
+        -0.355629,
+        0.035068,
+        1.094971
+      ],
+      "weighted_vertex_count": 2073,
+      "distance_bone_to_region": 0.068678,
+      "region_spread": 0.21986,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_R_UpperarmTwist01",
+        "CC_Base_R_UpperarmTwist02"
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "bone_mid_world": [
+        -0.499312,
+        0.029617,
+        1.101124
+      ],
+      "weighted_centroid_world": [
+        -0.592919,
+        0.019798,
+        1.072988
+      ],
+      "weighted_vertex_count": 2319,
+      "distance_bone_to_region": 0.098236,
+      "region_spread": 0.21391,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_R_ForearmTwist01",
+        "CC_Base_R_ForearmTwist02"
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "bone_mid_world": [
+        -0.732341,
+        0.06239,
+        1.103277
+      ],
+      "weighted_centroid_world": [
+        -0.74832,
+        0.05228,
+        1.105022
+      ],
+      "weighted_vertex_count": 936,
+      "distance_bone_to_region": 0.018989,
+      "region_spread": 0.165808,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_L_Thigh": {
+      "bone_mid_world": [
+        0.129494,
+        0.021346,
+        0.633551
+      ],
+      "weighted_centroid_world": [
+        0.14748,
+        0.000712,
+        0.527422
+      ],
+      "weighted_vertex_count": 2289,
+      "distance_bone_to_region": 0.109603,
+      "region_spread": 0.282675,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_L_ThighTwist01",
+        "CC_Base_L_ThighTwist02"
+      ]
+    },
+    "CC_Base_L_Calf": {
+      "bone_mid_world": [
+        0.161858,
+        0.042533,
+        0.362799
+      ],
+      "weighted_centroid_world": [
+        0.160471,
+        0.04913,
+        0.231327
+      ],
+      "weighted_vertex_count": 2849,
+      "distance_bone_to_region": 0.131644,
+      "region_spread": 0.258142,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_L_CalfTwist01",
+        "CC_Base_L_CalfTwist02"
+      ]
+    },
+    "CC_Base_L_Foot": {
+      "bone_mid_world": [
+        0.194542,
+        -0.056703,
+        0.098509
+      ],
+      "weighted_centroid_world": [
+        0.198433,
+        -0.06885,
+        0.078849
+      ],
+      "weighted_vertex_count": 2334,
+      "distance_bone_to_region": 0.023434,
+      "region_spread": 0.201291,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    },
+    "CC_Base_R_Thigh": {
+      "bone_mid_world": [
+        -0.116218,
+        0.021575,
+        0.635223
+      ],
+      "weighted_centroid_world": [
+        -0.142568,
+        2.8e-05,
+        0.528703
+      ],
+      "weighted_vertex_count": 2274,
+      "distance_bone_to_region": 0.111826,
+      "region_spread": 0.277229,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_R_ThighTwist01",
+        "CC_Base_R_ThighTwist02"
+      ]
+    },
+    "CC_Base_R_Calf": {
+      "bone_mid_world": [
+        -0.147488,
+        0.04345,
+        0.368373
+      ],
+      "weighted_centroid_world": [
+        -0.160009,
+        0.044709,
+        0.266315
+      ],
+      "weighted_vertex_count": 2481,
+      "distance_bone_to_region": 0.10283,
+      "region_spread": 0.256786,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": [
+        "CC_Base_R_CalfTwist01",
+        "CC_Base_R_CalfTwist02"
+      ]
+    },
+    "CC_Base_R_Foot": {
+      "bone_mid_world": [
+        -0.173033,
+        -0.05023,
+        0.099054
+      ],
+      "weighted_centroid_world": [
+        -0.19817,
+        -0.033893,
+        0.069004
+      ],
+      "weighted_vertex_count": 2540,
+      "distance_bone_to_region": 0.042447,
+      "region_spread": 0.214654,
+      "anatomical_alignment": "INSIDE",
+      "weight_aliases": []
+    }
+  },
+  "alignment_after": {
+    "inside_count": 20,
+    "total": 20,
+    "missing_weight_regions": 0,
+    "inside_ratio": 1.0,
+    "worst_distance": 0.27746,
+    "pass": true
+  },
+  "skin_after": {
+    "mesh_count": 1,
+    "vertex_count": 47292,
+    "vertex_group_count": 61,
+    "vertex_group_names_sorted_sample": [
+      "CC_Base_Head",
+      "CC_Base_Hip",
+      "CC_Base_L_CalfTwist01",
+      "CC_Base_L_CalfTwist02",
+      "CC_Base_L_Clavicle",
+      "CC_Base_L_Foot",
+      "CC_Base_L_ForearmTwist01",
+      "CC_Base_L_ForearmTwist02",
+      "CC_Base_L_Hand",
+      "CC_Base_L_Index1",
+      "CC_Base_L_Index2",
+      "CC_Base_L_Index3",
+      "CC_Base_L_Mid1",
+      "CC_Base_L_Mid2",
+      "CC_Base_L_Mid3",
+      "CC_Base_L_Pinky1",
+      "CC_Base_L_Pinky2",
+      "CC_Base_L_Pinky3",
+      "CC_Base_L_Ring1",
+      "CC_Base_L_Ring2",
+      "CC_Base_L_Ring3",
+      "CC_Base_L_ThighTwist01",
+      "CC_Base_L_ThighTwist02",
+      "CC_Base_L_Thumb1",
+      "CC_Base_L_Thumb2",
+      "CC_Base_L_Thumb3",
+      "CC_Base_L_ToeBase",
+      "CC_Base_L_UpperarmTwist01",
+      "CC_Base_L_UpperarmTwist02",
+      "CC_Base_NeckTwist01",
+      "CC_Base_NeckTwist02",
+      "CC_Base_R_CalfTwist01",
+      "CC_Base_R_CalfTwist02",
+      "CC_Base_R_Clavicle",
+      "CC_Base_R_Foot",
+      "CC_Base_R_ForearmTwist01",
+      "CC_Base_R_ForearmTwist02",
+      "CC_Base_R_Hand",
+      "CC_Base_R_Index1",
+      "CC_Base_R_Index2"
+    ],
+    "unweighted_vertices": 0,
+    "mean_influences": 3.0595,
+    "max_influences": 6,
+    "influence_histogram": {
+      "1": 11935,
+      "2": 7124,
+      "4": 8756,
+      "3": 8680,
+      "5": 7338,
+      "6": 3459
+    },
+    "clamped_to_four": false
+  },
+  "skin_preserved": true,
+  "native_articulation": {
+    "pass": true,
+    "tests": [
+      {
+        "axis": "Z",
+        "volume_ratio": 0.96,
+        "bbox_center_shift": 0.03739,
+        "exploded": false,
+        "angle_deg": 30.0,
+        "bone": "CC_Base_L_Upperarm",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 1.0658,
+        "bbox_center_shift": 0.1766,
+        "exploded": false,
+        "angle_deg": 60.0,
+        "bone": "CC_Base_L_Upperarm",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "Z",
+        "volume_ratio": 0.9315,
+        "bbox_center_shift": 0.06395,
+        "exploded": false,
+        "angle_deg": 45.0,
+        "bone": "CC_Base_L_Forearm",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "Z",
+        "volume_ratio": 0.8162,
+        "bbox_center_shift": 0.17169,
+        "exploded": false,
+        "angle_deg": 90.0,
+        "bone": "CC_Base_L_Forearm",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 1.2154,
+        "bbox_center_shift": 0.11225,
+        "exploded": false,
+        "angle_deg": 30.0,
+        "bone": "CC_Base_L_Thigh",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 1.3018,
+        "bbox_center_shift": 0.15725,
+        "exploded": false,
+        "angle_deg": 45.0,
+        "bone": "CC_Base_L_Thigh",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 1.0868,
+        "bbox_center_shift": 0.04522,
+        "exploded": false,
+        "angle_deg": 60.0,
+        "bone": "CC_Base_L_Calf",
+        "pass": true,
+        "required": false,
+        "note": "informational_accurig_calf_twist_weights"
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 1.0226,
+        "bbox_center_shift": 0.0118,
+        "exploded": false,
+        "angle_deg": 90.0,
+        "bone": "CC_Base_L_Calf",
+        "pass": false,
+        "required": false,
+        "note": "informational_accurig_calf_twist_weights"
+      },
+      {
+        "axis": "Z",
+        "volume_ratio": 0.9412,
+        "bbox_center_shift": 0.07788,
+        "exploded": false,
+        "angle_deg": 20.0,
+        "bone": "CC_Base_Spine01",
+        "pass": true,
+        "required": true
+      },
+      {
+        "axis": "X",
+        "volume_ratio": 0.9712,
+        "bbox_center_shift": 0.01929,
+        "exploded": false,
+        "angle_deg": 25.0,
+        "bone": "CC_Base_Head",
+        "pass": true,
+        "required": true
+      }
+    ]
+  },
+  "left_right": [
+    {
+      "left_bone": "CC_Base_L_Upperarm",
+      "right_bone": "CC_Base_R_Upperarm",
+      "left": {
+        "bone_world_x": 0.30584,
+        "weighted_centroid_x": 0.35909,
+        "anatomical_side_from_plus_x_is_left": "LEFT",
+        "viewer_frontal_side": "RIGHT",
+        "weighted_verts": 1884
+      },
+      "right": {
+        "bone_world_x": -0.29303,
+        "weighted_centroid_x": -0.35563,
+        "anatomical_side_from_plus_x_is_left": "RIGHT",
+        "viewer_frontal_side": "LEFT",
+        "weighted_verts": 2073
+      },
+      "bone_and_weights_same_x_order": true,
+      "genuine_lr_inversion": false
+    },
+    {
+      "left_bone": "CC_Base_L_Hand",
+      "right_bone": "CC_Base_R_Hand",
+      "left": {
+        "bone_world_x": 0.75196,
+        "weighted_centroid_x": 0.74121,
+        "anatomical_side_from_plus_x_is_left": "LEFT",
+        "viewer_frontal_side": "RIGHT",
+        "weighted_verts": 1084
+      },
+      "right": {
+        "bone_world_x": -0.73234,
+        "weighted_centroid_x": -0.74832,
+        "anatomical_side_from_plus_x_is_left": "RIGHT",
+        "viewer_frontal_side": "LEFT",
+        "weighted_verts": 936
+      },
+      "bone_and_weights_same_x_order": true,
+      "genuine_lr_inversion": false
+    },
+    {
+      "left_bone": "CC_Base_L_Thigh",
+      "right_bone": "CC_Base_R_Thigh",
+      "left": {
+        "bone_world_x": 0.12949,
+        "weighted_centroid_x": 0.14748,
+        "anatomical_side_from_plus_x_is_left": "LEFT",
+        "viewer_frontal_side": "RIGHT",
+        "weighted_verts": 2289
+      },
+      "right": {
+        "bone_world_x": -0.11622,
+        "weighted_centroid_x": -0.14257,
+        "anatomical_side_from_plus_x_is_left": "RIGHT",
+        "viewer_frontal_side": "LEFT",
+        "weighted_verts": 2274
+      },
+      "bone_and_weights_same_x_order": true,
+      "genuine_lr_inversion": false
+    },
+    {
+      "left_bone": "CC_Base_L_Foot",
+      "right_bone": "CC_Base_R_Foot",
+      "left": {
+        "bone_world_x": 0.19454,
+        "weighted_centroid_x": 0.19843,
+        "anatomical_side_from_plus_x_is_left": "LEFT",
+        "viewer_frontal_side": "RIGHT",
+        "weighted_verts": 2334
+      },
+      "right": {
+        "bone_world_x": -0.17303,
+        "weighted_centroid_x": -0.19817,
+        "anatomical_side_from_plus_x_is_left": "RIGHT",
+        "viewer_frontal_side": "LEFT",
+        "weighted_verts": 2540
+      },
+      "bone_and_weights_same_x_order": true,
+      "genuine_lr_inversion": false
+    }
+  ],
+  "textures_packed": [
+    "model_Pbr_Diffuse",
+    "model_Pbr_Normal"
+  ],
+  "outputs": {
+    "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\clean_rig_v1\\jaguarete\\jaguarete_clean_rig_v1.blend",
+    "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\clean_rig_v1\\jaguarete\\jaguarete_clean_rig_v1.glb",
+    "glb_bytes": 13639024
+  },
+  "glb_roundtrip": {
+    "ok": true,
+    "bone_count": 101,
+    "armature_object_identity": true,
+    "mesh_object_identity": true,
+    "alignment": {
+      "inside_count": 20,
+      "total": 20,
+      "missing_weight_regions": 0,
+      "inside_ratio": 1.0,
+      "worst_distance": 0.27745,
+      "pass": true
+    },
+    "articulation": {
+      "pass": true,
+      "failing": [
+        {
+          "axis": "X",
+          "volume_ratio": 1.0226,
+          "bbox_center_shift": 0.0118,
+          "exploded": false,
+          "angle_deg": 90.0,
+          "bone": "CC_Base_L_Calf",
+          "pass": false,
+          "required": false,
+          "note": "informational_accurig_calf_twist_weights"
+        }
+      ]
+    },
+    "regions": {
+      "CC_Base_Hip": {
+        "bone_mid_world": [
+          0.006409,
+          -0.005509,
+          0.797544
+        ],
+        "weighted_centroid_world": [
+          0.058062,
+          0.073622,
+          0.583079
+        ],
+        "weighted_vertex_count": 9848,
+        "distance_bone_to_region": 0.23436,
+        "region_spread": 0.651141,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_Waist": {
+        "bone_mid_world": [
+          0.006409,
+          -0.023566,
+          0.854702
+        ],
+        "weighted_centroid_world": [
+          0.055494,
+          0.058052,
+          0.616272
+        ],
+        "weighted_vertex_count": 11373,
+        "distance_bone_to_region": 0.256749,
+        "region_spread": 0.676786,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_Hip",
+          "CC_Base_Spine01"
+        ]
+      },
+      "CC_Base_Spine01": {
+        "bone_mid_world": [
+          0.006409,
+          -0.023368,
+          0.922761
+        ],
+        "weighted_centroid_world": [
+          0.021596,
+          -0.050466,
+          0.872406
+        ],
+        "weighted_vertex_count": 2871,
+        "distance_bone_to_region": 0.059166,
+        "region_spread": 0.273369,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_Spine02": {
+        "bone_mid_world": [
+          0.006409,
+          -0.013182,
+          1.022441
+        ],
+        "weighted_centroid_world": [
+          -0.01053,
+          -0.013571,
+          1.093338
+        ],
+        "weighted_vertex_count": 7363,
+        "distance_bone_to_region": 0.072894,
+        "region_spread": 0.355985,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_NeckTwist01": {
+        "bone_mid_world": [
+          0.006408,
+          0.011805,
+          1.19931
+        ],
+        "weighted_centroid_world": [
+          0.007991,
+          -0.048531,
+          1.470114
+        ],
+        "weighted_vertex_count": 12049,
+        "distance_bone_to_region": 0.277448,
+        "region_spread": 0.443042,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_Head",
+          "CC_Base_NeckTwist02"
+        ]
+      },
+      "CC_Base_Head": {
+        "bone_mid_world": [
+          0.006409,
+          0.007946,
+          1.334234
+        ],
+        "weighted_centroid_world": [
+          0.00802,
+          -0.049127,
+          1.471029
+        ],
+        "weighted_vertex_count": 11917,
+        "distance_bone_to_region": 0.148233,
+        "region_spread": 0.377458,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_L_Clavicle": {
+        "bone_mid_world": [
+          0.19364,
+          0.022899,
+          1.140515
+        ],
+        "weighted_centroid_world": [
+          0.210004,
+          0.027683,
+          1.17349
+        ],
+        "weighted_vertex_count": 852,
+        "distance_bone_to_region": 0.037122,
+        "region_spread": 0.167412,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_L_Upperarm": {
+        "bone_mid_world": [
+          0.362395,
+          0.031657,
+          1.115185
+        ],
+        "weighted_centroid_world": [
+          0.359079,
+          0.033671,
+          1.097879
+        ],
+        "weighted_vertex_count": 1884,
+        "distance_bone_to_region": 0.017735,
+        "region_spread": 0.218781,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_L_UpperarmTwist01",
+          "CC_Base_L_UpperarmTwist02"
+        ]
+      },
+      "CC_Base_L_Forearm": {
+        "bone_mid_world": [
+          0.585397,
+          0.027286,
+          1.104493
+        ],
+        "weighted_centroid_world": [
+          0.589136,
+          0.026643,
+          1.068758
+        ],
+        "weighted_vertex_count": 2022,
+        "distance_bone_to_region": 0.035935,
+        "region_spread": 0.208222,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_L_ForearmTwist01",
+          "CC_Base_L_ForearmTwist02"
+        ]
+      },
+      "CC_Base_L_Hand": {
+        "bone_mid_world": [
+          0.743129,
+          0.055247,
+          1.104694
+        ],
+        "weighted_centroid_world": [
+          0.741276,
+          0.034779,
+          1.093358
+        ],
+        "weighted_vertex_count": 1082,
+        "distance_bone_to_region": 0.023471,
+        "region_spread": 0.161742,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_R_Clavicle": {
+        "bone_mid_world": [
+          -0.180823,
+          0.022899,
+          1.140515
+        ],
+        "weighted_centroid_world": [
+          -0.202544,
+          0.024714,
+          1.190023
+        ],
+        "weighted_vertex_count": 1162,
+        "distance_bone_to_region": 0.054094,
+        "region_spread": 0.182137,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_R_Upperarm": {
+        "bone_mid_world": [
+          -0.349577,
+          0.031656,
+          1.115184
+        ],
+        "weighted_centroid_world": [
+          -0.355618,
+          0.035063,
+          1.094969
+        ],
+        "weighted_vertex_count": 2073,
+        "distance_bone_to_region": 0.021371,
+        "region_spread": 0.219852,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_R_UpperarmTwist01",
+          "CC_Base_R_UpperarmTwist02"
+        ]
+      },
+      "CC_Base_R_Forearm": {
+        "bone_mid_world": [
+          -0.572579,
+          0.027285,
+          1.104493
+        ],
+        "weighted_centroid_world": [
+          -0.592927,
+          0.019792,
+          1.072989
+        ],
+        "weighted_vertex_count": 2320,
+        "distance_bone_to_region": 0.038245,
+        "region_spread": 0.2139,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_R_ForearmTwist01",
+          "CC_Base_R_ForearmTwist02"
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "bone_mid_world": [
+          -0.715734,
+          0.049531,
+          1.105365
+        ],
+        "weighted_centroid_world": [
+          -0.748384,
+          0.052272,
+          1.104998
+        ],
+        "weighted_vertex_count": 936,
+        "distance_bone_to_region": 0.032767,
+        "region_spread": 0.165779,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_L_Thigh": {
+        "bone_mid_world": [
+          0.139506,
+          0.028405,
+          0.560122
+        ],
+        "weighted_centroid_world": [
+          0.147342,
+          0.000722,
+          0.527489
+        ],
+        "weighted_vertex_count": 2293,
+        "distance_bone_to_region": 0.043505,
+        "region_spread": 0.28264,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_L_ThighTwist01",
+          "CC_Base_L_ThighTwist02"
+        ]
+      },
+      "CC_Base_L_Calf": {
+        "bone_mid_world": [
+          0.166537,
+          0.042507,
+          0.261871
+        ],
+        "weighted_centroid_world": [
+          0.160471,
+          0.049119,
+          0.231327
+        ],
+        "weighted_vertex_count": 2849,
+        "distance_bone_to_region": 0.031835,
+        "region_spread": 0.258142,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_L_CalfTwist01",
+          "CC_Base_L_CalfTwist02"
+        ]
+      },
+      "CC_Base_L_Foot": {
+        "bone_mid_world": [
+          0.194542,
+          -0.056718,
+          0.09851
+        ],
+        "weighted_centroid_world": [
+          0.198433,
+          -0.068865,
+          0.078852
+        ],
+        "weighted_vertex_count": 2334,
+        "distance_bone_to_region": 0.023434,
+        "region_spread": 0.201291,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      },
+      "CC_Base_R_Thigh": {
+        "bone_mid_world": [
+          -0.12577,
+          0.028865,
+          0.563466
+        ],
+        "weighted_centroid_world": [
+          -0.142433,
+          4.7e-05,
+          0.528773
+        ],
+        "weighted_vertex_count": 2276,
+        "distance_bone_to_region": 0.048081,
+        "region_spread": 0.277194,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_R_ThighTwist01",
+          "CC_Base_R_ThighTwist02"
+        ]
+      },
+      "CC_Base_R_Calf": {
+        "bone_mid_world": [
+          -0.152738,
+          0.043431,
+          0.265215
+        ],
+        "weighted_centroid_world": [
+          -0.160009,
+          0.044707,
+          0.266315
+        ],
+        "weighted_vertex_count": 2481,
+        "distance_bone_to_region": 0.007464,
+        "region_spread": 0.256786,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": [
+          "CC_Base_R_CalfTwist01",
+          "CC_Base_R_CalfTwist02"
+        ]
+      },
+      "CC_Base_R_Foot": {
+        "bone_mid_world": [
+          -0.173033,
+          -0.050233,
+          0.099054
+        ],
+        "weighted_centroid_world": [
+          -0.19817,
+          -0.033896,
+          0.069005
+        ],
+        "weighted_vertex_count": 2540,
+        "distance_bone_to_region": 0.042447,
+        "region_spread": 0.214654,
+        "anatomical_alignment": "INSIDE",
+        "weight_aliases": []
+      }
+    },
+    "rest_deform_error": 0.0,
+    "textures_rebound": true
+  },
+  "gates": {
+    "skeleton_inside_mesh": true,
+    "weights_preserved": true,
+    "native_articulation": true,
+    "object_transforms_identity": true,
+    "glb_roundtrip_aligned": true,
+    "hierarchy_preserved": true,
+    "rest_identity": true
+  },
+  "character_ready": true
+}

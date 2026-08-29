@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_smoke_hud_tel"]
+
+[ext_resource type="Script" path="res://scripts/debug/smoke_track_hud_telemetry.gd" id="1"]
+
+[node name="SmokeTrackHudTelemetry" type="Node3D"]
+script = ExtResource("1")

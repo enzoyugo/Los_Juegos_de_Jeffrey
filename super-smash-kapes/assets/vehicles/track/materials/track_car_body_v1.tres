@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://trackcarbodyv1mat"]
+
+[resource]
+resource_name = "track_car_body_v1"
+metallic = 0.0
+roughness = 0.5
+albedo_color = Color(1, 1, 1, 1)

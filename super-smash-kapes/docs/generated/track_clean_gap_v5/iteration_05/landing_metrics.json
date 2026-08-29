@@ -1,0 +1,32 @@
+{
+	"airborne_forces": {
+		"damper": 0.0,
+		"spring": 0.0,
+		"tire": 0.0
+	},
+	"became_airborne_again": false,
+	"body_contact_before_wheel": false,
+	"bounce": "",
+	"curve_before_settle": false,
+	"fell_below_deck": false,
+	"left_boundary_crossed": true,
+	"max_c": 0.0848624122142791,
+	"max_f": 18000.0,
+	"peak_c": {
+		"FL": 0.0334207129478454,
+		"FR": 0.0,
+		"RL": 0.0,
+		"RR": 0.0848624122142791
+	},
+	"peak_f": {
+		"FL": 17879.5235116003,
+		"FR": 1969.70977047109,
+		"RL": 0.0,
+		"RR": 18000.0
+	},
+	"right_boundary_crossed": false,
+	"settle_piece": "",
+	"time_on_deck": 0.316666666666667,
+	"time_to_2": 5.96666666666665,
+	"time_to_4": -1.0
+}

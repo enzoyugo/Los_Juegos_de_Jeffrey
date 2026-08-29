@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-08-22T17:57:00-03:00",
+  "git_head": "f5b73e2eb39d9d30493d7f44305d0522557d4c8a",
+  "note": "Most project files are untracked at repo root; only super-smash-kapes/project.godot is modified in git.",
+  "godot": "4.7.2-stable",
+  "blender": "2.83 at C:\\Program Files\\Blender Foundation\\Blender 2.83\\blender.exe",
+  "test_baseline": 90,
+  "canonical_sizes": {
+    "terere": {"size_class": "SHORT", "target_visual_height": 2.40},
+    "jaguarete": {"size_class": "TALL", "target_visual_height": 3.15}
+  },
+  "production_models": {
+    "terere": "assets/fighters/processed/terere/terere_game_ready_v3.glb",
+    "jaguarete": "assets/fighters/processed/jaguarete/jaguarete_game_ready_v3.glb"
+  },
+  "benchmark_models": {
+    "terere": "assets/fighters/processed/actorcore_benchmark/terere/terere_actorcore_idle.glb",
+    "jaguarete": "assets/fighters/processed/actorcore_benchmark/jaguarete/jaguarete_actorcore_idle.glb"
+  },
+  "source_rigs": {
+    "terere": "assets/fighters/source_rigged/terere/actorcore/autorig_actor.fbx",
+    "jaguarete": "assets/fighters/source_rigged/jaguarete/actorcore/autorig_actor.fbx"
+  },
+  "human_failure": "Catastrophic skeletal deformation in battle; textures possibly cross-contaminated. Idle not accepted."
+}

@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-08-25T20:27:05.877583",
+  "root": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5",
+  "gdignore": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\.gdignore",
+  "gdignore_exists": true,
+  "fighters": {
+    "jaguarete": {
+      "character": "jaguarete",
+      "label": "Jaguaret\u00e9",
+      "source_dir": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\jaguarete",
+      "fbx_path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\jaguarete\\jaguarete_rigged_v5.fbx",
+      "json_path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\jaguarete\\jaguarete_rigged_v5.json",
+      "texture_folders": [
+        "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\jaguarete\\textures",
+        "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\jaguarete\\jaguarete_rigged_v5.fbm"
+      ],
+      "texture_files": [],
+      "fbm_files": [],
+      "fbx_exists": true,
+      "json_exists": true,
+      "fbx_size_bytes": 22926672,
+      "json_size_bytes": 16256,
+      "fbx_sha256": "730263d6158b9a2b1f0b9c6a55ce9296b73bd32d8c21c44898dec310e2804b0b",
+      "json_sha256": "34a8f520faf217d528b19a0ec481feffef84b719e48dbd43ea6679fe17203d81",
+      "fbx_modified": "2026-08-25T19:03:22.455709",
+      "json_modified": "2026-08-25T19:03:22.593609",
+      "texture_file_count": 0,
+      "fbm_file_count": 0,
+      "source_vertex_count": 22492,
+      "source_material_count": 1,
+      "source_skeleton_count": 1,
+      "source_collision_bone_count": 118,
+      "json_mesh_names": [
+        "meshes_0_"
+      ],
+      "json_material_names": [
+        "tripo_node_fb7d2ebd_985e_457f_8cf4_7d53f1681274_material"
+      ],
+      "json_texture_entries": {
+        "tripo_node_fb7d2ebd_985e_457f_8cf4_7d53f1681274_material": {
+          "Textures": {},
+          "Resource Textures": {}
+        }
+      },
+      "blender_material_count": 1,
+      "blender_skeleton_count": 1,
+      "blender_bone_count": 118
+    },
+    "terere": {
+      "character": "terere",
+      "label": "Terer\u00e9",
+      "source_dir": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\terere",
+      "fbx_path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\terere\\terere_rigged_v5.fbx",
+      "json_path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\terere\\terere_rigged_v5.json",
+      "texture_folders": [
+        "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\terere\\textures",
+        "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged_v5\\terere\\terere_rigged_v5.fbm"
+      ],
+      "texture_files": [],
+      "fbm_files": [],
+      "fbx_exists": true,
+      "json_exists": true,
+      "fbx_size_bytes": 14611920,
+      "json_size_bytes": 15483,
+      "fbx_sha256": "a219c9b0dd9c382edef41eb6e19c6b5c7225f53b9bbdda9abf77ce270e44387b",
+      "json_sha256": "b67571d7531a4880a15690efcdbfacd467645a50d0b974a0977ae549754b4cff",
+      "fbx_modified": "2026-08-25T19:45:02.906394",
+      "json_modified": "2026-08-25T19:45:02.980388",
+      "texture_file_count": 0,
+      "fbm_file_count": 0,
+      "source_vertex_count": 26352,
+      "source_material_count": 1,
+      "source_skeleton_count": 1,
+      "source_collision_bone_count": 102,
+      "json_mesh_names": [
+        "meshes_0_"
+      ],
+      "json_material_names": [
+        "tripo_node_c9f1418c_caf6_4626_b20c_4f0d4f52ab61_material"
+      ],
+      "json_texture_entries": {
+        "tripo_node_c9f1418c_caf6_4626_b20c_4f0d4f52ab61_material": {
+          "Textures": {},
+          "Resource Textures": {}
+        }
+      },
+      "blender_material_count": 1,
+      "blender_skeleton_count": 1,
+      "blender_bone_count": 102
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+	"all_ok": true,
+	"godot": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"labs": [
+		{
+			"dump": {
+				"animation_count": 0,
+				"asset": "res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb",
+				"bone_count": 102,
+				"bones": {
+					"head": {
+						"found": true,
+						"name": "head",
+						"x": 0.00000063635934566264,
+						"y": 0.468413233757019,
+						"z": -0.0176181178539991
+					},
+					"hip": {
+						"found": true,
+						"name": "pelvis",
+						"x": 0.0,
+						"y": 0.281793355941772,
+						"z": 0.0
+					},
+					"l_foot": {
+						"found": true,
+						"name": "foot_l",
+						"x": 0.123841874301434,
+						"y": 0.0814098566770554,
+						"z": -0.0353457108139992
+					},
+					"l_hand": {
+						"found": true,
+						"name": "hand_l",
+						"x": 0.364428639411926,
+						"y": 0.352820992469788,
+						"z": -0.0191902071237564
+					},
+					"l_upperarm": {
+						"found": true,
+						"name": "upperarm_l",
+						"x": 0.248644143342972,
+						"y": 0.463546067476273,
+						"z": -0.0499695837497711
+					},
+					"r_foot": {
+						"found": true,
+						"name": "foot_r",
+						"x": -0.123840808868408,
+						"y": 0.0814061313867569,
+						"z": -0.0353377386927605
+					},
+					"r_hand": {
+						"found": true,
+						"name": "hand_r",
+						"x": -0.364648818969727,
+						"y": 0.353215754032135,
+						"z": -0.0190612897276878
+					},
+					"r_upperarm": {
+						"found": true,
+						"name": "upperarm_r",
+						"x": -0.248666524887085,
+						"y": 0.463702499866486,
+						"z": -0.0499811172485352
+					}
+				},
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "terere",
+				"load_ok": true,
+				"loaded_path": "res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb",
+				"materials": [
+					"res://assets/fighters/processed/clean_rig_v5/terere/terere_clean_rig_v5.glb::StandardMaterial3D_l5gx6"
+				],
+				"mesh_count": 1,
+				"pipeline": "V5",
+				"skeleton_count": 1,
+				"target_height": 2.4
+			},
+			"feet_below_hip": true,
+			"ok": true,
+			"scene": "res://scenes/debug/TerereCleanRigV5Lab.tscn",
+			"upright": true
+		},
+		{
+			"dump": {
+				"animation_count": 0,
+				"asset": "res://assets/fighters/processed/clean_rig_v5/jaguarete/jaguarete_clean_rig_v5.glb",
+				"bone_count": 118,
+				"bones": {
+					"head": {
+						"found": true,
+						"name": "head",
+						"x": -0.0000172469754033955,
+						"y": 0.780232012271881,
+						"z": -0.0214156601577997
+					},
+					"hip": {
+						"found": true,
+						"name": "pelvis",
+						"x": -0.0000117888685053913,
+						"y": 0.422118663787842,
+						"z": -0.0366478078067303
+					},
+					"l_foot": {
+						"found": true,
+						"name": "foot_l",
+						"x": 0.0904939025640488,
+						"y": 0.0536961853504181,
+						"z": -0.00147226452827454
+					},
+					"l_hand": {
+						"found": true,
+						"name": "hand_l",
+						"x": 0.288519948720932,
+						"y": 0.458782970905304,
+						"z": 0.0215049795806408
+					},
+					"l_upperarm": {
+						"found": true,
+						"name": "upperarm_l",
+						"x": 0.147819221019745,
+						"y": 0.639496147632599,
+						"z": -0.0462147779762745
+					},
+					"r_foot": {
+						"found": true,
+						"name": "foot_r",
+						"x": -0.0904615074396133,
+						"y": 0.0537285059690475,
+						"z": -0.00188685208559036
+					},
+					"r_hand": {
+						"found": true,
+						"name": "hand_r",
+						"x": -0.288620114326477,
+						"y": 0.459054350852966,
+						"z": 0.0215467475354671
+					},
+					"r_upperarm": {
+						"found": true,
+						"name": "upperarm_r",
+						"x": -0.147897779941559,
+						"y": 0.639696300029755,
+						"z": -0.0461571924388409
+					}
+				},
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "jaguarete",
+				"load_ok": true,
+				"loaded_path": "res://assets/fighters/processed/clean_rig_v5/jaguarete/jaguarete_clean_rig_v5.glb",
+				"materials": [
+					"res://assets/fighters/processed/clean_rig_v5/jaguarete/jaguarete_clean_rig_v5.glb::StandardMaterial3D_4wa2e"
+				],
+				"mesh_count": 1,
+				"pipeline": "V5",
+				"skeleton_count": 1,
+				"target_height": 3.15
+			},
+			"feet_below_hip": true,
+			"ok": true,
+			"scene": "res://scenes/debug/JaguareteCleanRigV5Lab.tscn",
+			"upright": true
+		}
+	],
+	"pipeline": "V5"
+}

@@ -1,0 +1,8 @@
+{
+  "iteration": 1,
+  "route": ["start", "straight_medium", "boost_straight", "straight_medium", "ramp_small", "jump_small", "curve_l_45", "curve_r_45", "finish"],
+  "has_landing_straight_long": false,
+  "landing_before_curves": false,
+  "PASS": false,
+  "reason": "jump_small is followed immediately by curve_l_45"
+}

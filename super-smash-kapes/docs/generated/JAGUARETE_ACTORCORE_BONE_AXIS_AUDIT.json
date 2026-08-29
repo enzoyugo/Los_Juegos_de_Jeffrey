@@ -1,0 +1,282 @@
+[
+  {
+    "label": "hip",
+    "bone": "CC_Base_Hip",
+    "rest_tail": [
+      0.0,
+      -0.790138,
+      -0.002726
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          -0.0,
+          0.001085,
+          -0.006947
+        ],
+        "delta_length": 0.007031
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          -0.007004,
+          0.000611,
+          4.2e-05
+        ],
+        "delta_length": 0.007031
+      }
+    }
+  },
+  {
+    "label": "spine",
+    "bone": "CC_Base_Spine01",
+    "rest_tail": [
+      0.0,
+      -0.963969,
+      -0.020363
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          -0.0,
+          0.0014,
+          -0.01689
+        ],
+        "delta_length": 0.016948
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          -0.016883,
+          0.001477,
+          -7e-06
+        ],
+        "delta_length": 0.016948
+      }
+    }
+  },
+  {
+    "label": "head",
+    "bone": "CC_Base_Head",
+    "rest_tail": [
+      -0.0,
+      -1.293379,
+      0.005724
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          0.0,
+          -1e-06,
+          -1.7e-05
+        ],
+        "delta_length": 1.7e-05
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          -1.7e-05,
+          1e-06,
+          -0.0
+        ],
+        "delta_length": 1.7e-05
+      }
+    }
+  },
+  {
+    "label": "l_upperarm",
+    "bone": "CC_Base_L_Upperarm",
+    "rest_tail": [
+      0.355986,
+      -1.107779,
+      0.03444
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          -0.00187,
+          -0.000252,
+          -0.019816
+        ],
+        "delta_length": 0.019906
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          0.001016,
+          -0.01988,
+          5e-06
+        ],
+        "delta_length": 0.019906
+      }
+    }
+  },
+  {
+    "label": "l_forearm",
+    "bone": "CC_Base_L_Forearm",
+    "rest_tail": [
+      0.542355,
+      -1.095404,
+      0.031234
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          -0.001497,
+          0.000516,
+          -0.012693
+        ],
+        "delta_length": 0.012791
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          -0.001712,
+          -0.012669,
+          -0.000411
+        ],
+        "delta_length": 0.012791
+      }
+    }
+  },
+  {
+    "label": "r_upperarm",
+    "bone": "CC_Base_R_Upperarm",
+    "rest_tail": [
+      -0.355986,
+      -1.107778,
+      0.034439
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          0.00187,
+          -0.000252,
+          -0.019816
+        ],
+        "delta_length": 0.019906
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          0.004452,
+          0.019401,
+          2.2e-05
+        ],
+        "delta_length": 0.019906
+      }
+    }
+  },
+  {
+    "label": "r_thigh",
+    "bone": "CC_Base_R_Thigh",
+    "rest_tail": [
+      -0.132178,
+      -0.556061,
+      0.031648
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          0.000128,
+          0.000353,
+          -0.025362
+        ],
+        "delta_length": 0.025365
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          0.025339,
+          0.001137,
+          -4.9e-05
+        ],
+        "delta_length": 0.025365
+      }
+    }
+  },
+  {
+    "label": "r_calf",
+    "bone": "CC_Base_R_Calf",
+    "rest_tail": [
+      -0.156521,
+      -0.309389,
+      0.046224
+    ],
+    "plus_10deg_local": {
+      "x": {
+        "tail_delta": [
+          9.8e-05,
+          -0.001569,
+          -0.017936
+        ],
+        "delta_length": 0.018005
+      },
+      "y": {
+        "tail_delta": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "delta_length": 0.0
+      },
+      "z": {
+        "tail_delta": [
+          0.017993,
+          -0.000655,
+          1.8e-05
+        ],
+        "delta_length": 0.018005
+      }
+    }
+  }
+]

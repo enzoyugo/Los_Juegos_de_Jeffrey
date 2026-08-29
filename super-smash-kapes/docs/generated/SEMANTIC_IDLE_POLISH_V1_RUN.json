@@ -1,0 +1,37 @@
+{
+  "pipeline": "SEMANTIC_IDLE_POLISH_V1",
+  "overwrote_idle_benchmark_v1": false,
+  "overwrote_clean_rig_v1": false,
+  "fighters": {
+    "terere": {
+      "technical_pass": true,
+      "pose_classification": "STANDING_IDLE",
+      "max_volume_ratio": 0.7748,
+      "max_extreme_verts": 0,
+      "max_limb_length_rel_error": 0.0,
+      "max_root_xz": 0.00573,
+      "max_foot_drift": 0.06926,
+      "left_foot_intra_travel": 0.02942,
+      "right_foot_intra_travel": 0.02996,
+      "pelvis_correction_max": 0.00573,
+      "roundtrip_ok": true,
+      "roundtrip_bones": 101,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/terere/terere_idle_semantic_polished_v1.glb"
+    },
+    "jaguarete": {
+      "technical_pass": true,
+      "pose_classification": "STANDING_IDLE",
+      "max_volume_ratio": 0.9203,
+      "max_extreme_verts": 0,
+      "max_limb_length_rel_error": 0.0,
+      "max_root_xz": 0.01005,
+      "max_foot_drift": 0.22142,
+      "left_foot_intra_travel": 0.03438,
+      "right_foot_intra_travel": 0.03484,
+      "pelvis_correction_max": 0.01005,
+      "roundtrip_ok": true,
+      "roundtrip_bones": 101,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/jaguarete/jaguarete_idle_semantic_polished_v1.glb"
+    }
+  }
+}

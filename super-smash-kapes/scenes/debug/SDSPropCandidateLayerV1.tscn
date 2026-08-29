@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://jeffrey_sds_prop_candidate_v1"]
+
+[ext_resource type="Script" path="res://scripts/debug/sds_prop_candidate_layer_v1.gd" id="1"]
+
+[node name="SDSPropCandidateLayerV1" type="Node3D"]
+script = ExtResource("1")

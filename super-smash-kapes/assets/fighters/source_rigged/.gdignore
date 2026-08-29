@@ -1,0 +1,3 @@
+# Godot skips this entire directory. AccuRIG FBX/.fbm stay on disk for Blender
+# and Python (filesystem paths). Do not load these as res:// runtime assets.
+# Clean Rig V1 GLBs are the Godot authority.

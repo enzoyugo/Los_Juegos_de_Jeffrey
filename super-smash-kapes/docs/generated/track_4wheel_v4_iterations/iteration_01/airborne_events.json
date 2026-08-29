@@ -1,0 +1,7 @@
+{
+  "iteration": 1,
+  "note": "Harness-only. No jump drive this iteration. RESET_SETTLE noise and landing peak_c=0 deferred to later iterations.",
+  "events": [],
+  "PASS": false,
+  "reason": "jump route architecture FAIL; airborne/reset not re-measured this iteration"
+}

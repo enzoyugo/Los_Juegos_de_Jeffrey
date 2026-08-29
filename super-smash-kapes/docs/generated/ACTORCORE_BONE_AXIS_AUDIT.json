@@ -1,0 +1,10 @@
+{
+  "note": "Combined bone-axis diagnostic. Per-character dumps: TERERE_ACTORCORE_BONE_AXIS_AUDIT.json and JAGUARETE_ACTORCORE_BONE_AXIS_AUDIT.json.",
+  "method": "+10 deg local Euler XYZ on pose bones; tail world delta recorded.",
+  "anatomical_reading": {
+    "hip": "local Y is bone length (tail delta 0). Local X/Z swing the pelvis.",
+    "limbs": "AccuRIG CC_Base_* bones are Y-along-bone. Mixamo mapped bones share FBX Y-up convention but rest quats differ ~60–93 deg, so the same Mixamo local X is not AccuRIG local X.",
+    "implication": "Copying Mixamo local rotations (rest-relative or clip-relative) does not guarantee anatomical axis correspondence. Clip-relative is used to prevent explosion, not to claim perfect Mixamo standing."
+  },
+  "terere_source": "docs/generated/TERERE_ACTORCORE_BONE_AXIS_AUDIT.json"
+}

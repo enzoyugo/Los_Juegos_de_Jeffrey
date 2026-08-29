@@ -1,0 +1,16 @@
+{
+  "source_action": "Armature.001|mixamo.com|Layer0",
+  "target_action": "idle",
+  "frame_start": 1,
+  "frame_end": 110,
+  "fps": 30,
+  "mapped_bones": 22,
+  "unmapped_bones": 0,
+  "keyed_target_bones": 22,
+  "root_translation_max_x": 0.0,
+  "root_translation_max_y": 0.20550300180912018,
+  "root_translation_max_z": 0.0,
+  "validation_errors": [],
+  "export_glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\jaguarete\\jaguarete_game_ready_idle.glb",
+  "preview_blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\jaguarete\\jaguarete_idle_preview.blend"
+}

@@ -1,0 +1,69 @@
+{
+  "pipeline": "SEMANTIC_REACTION_V1",
+  "verdict_token": "SSK_SEMANTIC_REACTION_V1_READY_FOR_HUMAN_PLAYTEST",
+  "wired_into_battle": false,
+  "traditional_cob_used": false,
+  "idle_assets_modified": false,
+  "fighters": {
+    "terere": {
+      "healthy": true,
+      "dynamic_classification": "HIT_REACTION",
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v1/terere/terere_semantic_reaction_v1.glb",
+      "roundtrip_bones": 101,
+      "technical_pass": true,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "peak_torso_dev": 1.104,
+      "start_continuity": {
+        "spine_dev": 0.0,
+        "L_upperarm_dev": 0.0,
+        "R_upperarm_dev": 0.0,
+        "L_elbow_dev": 0.0,
+        "R_elbow_dev": 0.0,
+        "L_hand_dev": 0.0,
+        "R_hand_dev": 0.0,
+        "hip_dev": 0.0
+      },
+      "end_continuity": {
+        "spine_dev": 0.0,
+        "L_upperarm_dev": 0.0,
+        "R_upperarm_dev": 0.0,
+        "L_elbow_dev": 0.0,
+        "R_elbow_dev": 0.0,
+        "L_hand_dev": 0.0,
+        "R_hand_dev": 0.0,
+        "hip_dev": 0.0
+      }
+    },
+    "jaguarete": {
+      "healthy": true,
+      "dynamic_classification": "HIT_REACTION",
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_reaction_v1/jaguarete/jaguarete_semantic_reaction_v1.glb",
+      "roundtrip_bones": 101,
+      "technical_pass": true,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "peak_torso_dev": 1.202,
+      "start_continuity": {
+        "spine_dev": 0.0,
+        "L_upperarm_dev": 0.0,
+        "R_upperarm_dev": 0.0,
+        "L_elbow_dev": 0.0,
+        "R_elbow_dev": 0.0,
+        "L_hand_dev": 0.0,
+        "R_hand_dev": 0.0,
+        "hip_dev": 0.0
+      },
+      "end_continuity": {
+        "spine_dev": 0.0,
+        "L_upperarm_dev": 0.0,
+        "R_upperarm_dev": 0.0,
+        "L_elbow_dev": 0.0,
+        "R_elbow_dev": 0.0,
+        "L_hand_dev": 0.0,
+        "R_hand_dev": 0.0,
+        "hip_dev": 0.0
+      }
+    }
+  }
+}

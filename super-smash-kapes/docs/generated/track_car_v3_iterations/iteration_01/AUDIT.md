@@ -1,0 +1,89 @@
+# AUDIT V2
+
+## PRIMARY VERDICT
+
+FAIL
+
+## SEMANTIC ORIENTATION
+
+True
+
+## BODY
+
+{
+  "vertices": 15245,
+  "faces": 10081,
+  "aabb": {
+    "min": [
+      -0.2431640625,
+      2.9802322387695312e-08,
+      -0.4990234375
+    ],
+    "max": [
+      0.2431640625,
+      0.322265625,
+      0.4990234375
+    ],
+    "size": [
+      0.486328125,
+      0.3222655951976776,
+      0.998046875
+    ],
+    "center": [
+      0.0,
+      0.1611328274011612,
+      0.0
+    ]
+  },
+  "centroid": [
+    0.00561,
+    0.14878,
+    -0.05734
+  ],
+  "z_min": -0.49902,
+  "z_max": 0.49902
+}
+
+## WHEELS
+
+### FL
+verts=2510 faces=2034 max_r=0.47206 aabb=[0.11523, 0.22656, 0.65234] comps=314 stray=4 sweep=False pass=False
+
+### FR
+verts=2380 faces=1970 max_r=0.47212 aabb=[0.11914, 0.19336, 0.57617] comps=268 stray=5 sweep=False pass=False
+
+### RL
+verts=2516 faces=2104 max_r=0.48813 aabb=[0.11914, 0.20898, 0.63672] comps=291 stray=5 sweep=False pass=False
+
+### RR
+verts=2429 faces=1980 max_r=0.1674 aabb=[0.11719, 0.18164, 0.26172] comps=285 stray=3 sweep=False pass=False
+
+## DEFECTS TO FIX NEXT
+
+- WHEEL_FL_GEOMETRY
+- WHEEL_FL_AABB_COMPACT
+- WHEEL_FL_RADIUS
+- WHEEL_FL_NO_STRAY_COMPONENT
+- WHEEL_FL_NO_LONG_FACE
+- WHEEL_FL_NO_THIN_SHEET
+- WHEEL_FL_SPIN_SWEEP
+- WHEEL_FR_GEOMETRY
+- WHEEL_FR_AABB_COMPACT
+- WHEEL_FR_RADIUS
+- WHEEL_FR_NO_STRAY_COMPONENT
+- WHEEL_FR_NO_LONG_FACE
+- WHEEL_FR_NO_THIN_SHEET
+- WHEEL_FR_SPIN_SWEEP
+- WHEEL_RL_GEOMETRY
+- WHEEL_RL_AABB_COMPACT
+- WHEEL_RL_RADIUS
+- WHEEL_RL_NO_STRAY_COMPONENT
+- WHEEL_RL_NO_THIN_SHEET
+- WHEEL_RL_SPIN_SWEEP
+- WHEEL_RR_GEOMETRY
+- WHEEL_RR_AABB_COMPACT
+- WHEEL_RR_RADIUS
+- WHEEL_RR_NO_STRAY_COMPONENT
+- WHEEL_RR_NO_THIN_SHEET
+- WHEEL_RR_SPIN_SWEEP
+- EMBEDDED_IMAGES

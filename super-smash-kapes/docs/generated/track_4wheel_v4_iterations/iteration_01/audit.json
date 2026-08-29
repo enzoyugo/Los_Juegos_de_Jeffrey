@@ -1,0 +1,15 @@
+{
+  "iteration": 1,
+  "overall": "FAIL",
+  "stationary_pass": false,
+  "jump_route_pass": false,
+  "harness_detects_current_creep": true,
+  "physics_changed": false,
+  "defects": [
+    "STATIONARY_LATERAL_CREEP",
+    "STATIONARY_YAW_DRIFT",
+    "NEAR_ZERO_SLIP_FORCE_CHATTER",
+    "JUMP_LANDS_ON_CURVE",
+    "NO_LANDING_STRAIGHT_LONG"
+  ]
+}

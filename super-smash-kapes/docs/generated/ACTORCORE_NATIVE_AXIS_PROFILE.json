@@ -1,0 +1,639 @@
+{
+  "shared_by": [
+    "terere",
+    "jaguarete"
+  ],
+  "skeleton": "CC_Base",
+  "derived_from": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\source_rigged\\terere\\actorcore\\autorig_actor.fbx",
+  "twist_bones_not_directly_animated": true,
+  "no_mixamo_quaternion_copy": true,
+  "bones": {
+    "CC_Base_Hip": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.012232,
+      "kind": "flex_spine",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -8,
+        8
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -8,
+          8
+        ]
+      }
+    },
+    "CC_Base_Spine01": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.023961,
+      "kind": "flex_spine",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -12,
+        12
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -12,
+          12
+        ]
+      }
+    },
+    "CC_Base_Spine02": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.063273,
+      "kind": "flex_spine",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -12,
+        12
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -12,
+          12
+        ]
+      }
+    },
+    "CC_Base_NeckTwist01": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.035765,
+      "kind": "nod_head",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_Head": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 4.3e-05,
+      "kind": "nod_head",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -12,
+        12
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -12,
+          12
+        ]
+      }
+    },
+    "CC_Base_L_Clavicle": {
+      "primary_flexion_axis": "LOCAL_Z",
+      "lowering_axis": "LOCAL_Z",
+      "primary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.091505,
+      "kind": "lower_arm",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_R_Clavicle": {
+      "primary_flexion_axis": "LOCAL_Z",
+      "lowering_axis": "LOCAL_Z",
+      "primary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.091505,
+      "kind": "lower_arm",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_L_Upperarm": {
+      "primary_flexion_axis": "LOCAL_Z",
+      "lowering_axis": "LOCAL_Z",
+      "primary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.032544,
+      "kind": "lower_arm",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -80,
+        80
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -80,
+          80
+        ]
+      }
+    },
+    "CC_Base_R_Upperarm": {
+      "primary_flexion_axis": "LOCAL_Z",
+      "lowering_axis": "LOCAL_Z",
+      "primary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.032545,
+      "kind": "lower_arm",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -80,
+        80
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -80,
+          80
+        ]
+      }
+    },
+    "CC_Base_L_Forearm": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.015778,
+      "kind": "bend_elbow",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -90,
+        90
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -90,
+          90
+        ]
+      }
+    },
+    "CC_Base_R_Forearm": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.009359,
+      "kind": "bend_elbow",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -90,
+        90
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -90,
+          90
+        ]
+      }
+    },
+    "CC_Base_L_Hand": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": -1.0,
+      "sign": -1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.016101,
+      "kind": "bend_elbow",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_R_Hand": {
+      "primary_flexion_axis": "LOCAL_Z",
+      "lowering_axis": "LOCAL_Z",
+      "primary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_X",
+      "forward_back_axis": "LOCAL_X",
+      "secondary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.006212,
+      "kind": "bend_elbow",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_L_Thigh": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.032648,
+      "kind": "flex_hip",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_R_Thigh": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.032649,
+      "kind": "flex_hip",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_L_Calf": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.036088,
+      "kind": "bend_knee",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -40,
+        40
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -40,
+          40
+        ]
+      }
+    },
+    "CC_Base_R_Calf": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.036082,
+      "kind": "bend_knee",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -40,
+        40
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -40,
+          40
+        ]
+      }
+    },
+    "CC_Base_L_Foot": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": 1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.052573,
+      "kind": "bend_knee",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    },
+    "CC_Base_R_Foot": {
+      "primary_flexion_axis": "LOCAL_X",
+      "lowering_axis": "LOCAL_X",
+      "primary_axis_vec": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lowering_sign": 1.0,
+      "sign": 1.0,
+      "secondary_swing_axis": "LOCAL_Z",
+      "forward_back_axis": "LOCAL_Z",
+      "secondary_axis_vec": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "secondary_sign": -1.0,
+      "twist_axis": "LOCAL_Y",
+      "probe_score": 0.052563,
+      "kind": "bend_knee",
+      "derived_by": "controlled_native_articulation",
+      "safe_range": [
+        -20,
+        20
+      ],
+      "safe_range_labeled": {
+        "primary": [
+          -20,
+          20
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "note": "AccuRIG files are both named model_Pbr_Diffuse.png. Authority is SHA256 of embedded PNG bytes, not filename.",
+  "source_fbm": {
+    "terere_diffuse": "29aedd817e4fbf69",
+    "terere_normal": "e07a78960e4e29af",
+    "jaguarete_diffuse": "654179021409871a",
+    "jaguarete_normal": "d21a232eda6d9a1a"
+  },
+  "production_v3_was_contaminated": {
+    "both_fighters_embedded_jaguarete_maps": true,
+    "terere_v3_diffuse": "654179021409871a",
+    "jaguarete_v3_diffuse": "654179021409871a"
+  },
+  "production_v4_after_rebind": {
+    "terere_diffuse": "29aedd817e4fbf69",
+    "terere_normal": "e07a78960e4e29af",
+    "jaguarete_diffuse": "654179021409871a",
+    "jaguarete_normal": "d21a232eda6d9a1a",
+    "match_source_fbm": true,
+    "cross_character_identical": false
+  }
+}

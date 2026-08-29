@@ -1,0 +1,2 @@
+# Ignore captured review PNGs. Keep this folder in version control via README if needed.
+*.png

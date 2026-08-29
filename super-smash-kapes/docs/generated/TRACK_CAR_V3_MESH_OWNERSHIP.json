@@ -1,0 +1,512 @@
+{
+  "source_sha256": "b1dd649b39b0c701ccb5b11062b7087579702caa930d8a0b436dd4d581e725af",
+  "source_faces": 18169,
+  "r_max": 0.09526811079545454,
+  "half_width": 0.048,
+  "axles": {
+    "FL": [
+      -0.204,
+      0.085,
+      -0.285
+    ],
+    "FR": [
+      0.201,
+      0.085,
+      -0.285
+    ],
+    "RL": [
+      -0.203,
+      0.085,
+      0.298
+    ],
+    "RR": [
+      0.202,
+      0.085,
+      0.298
+    ]
+  },
+  "reassigned_to_body": 0,
+  "reassigned_sample": [],
+  "discarded": 0,
+  "parts": {
+    "Body": {
+      "vertices": 11191,
+      "faces": 7655,
+      "aabb": {
+        "min": [
+          -0.24316,
+          0.0332,
+          -0.49902
+        ],
+        "max": [
+          0.24316,
+          0.32227,
+          0.49902
+        ],
+        "size": [
+          0.48633,
+          0.28906,
+          0.99805
+        ],
+        "center": [
+          0.0,
+          0.17773,
+          0.0
+        ]
+      },
+      "centroid": [
+        -0.00267,
+        0.17223,
+        0.07328
+      ],
+      "translation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_radius": 0.61376,
+      "vertex_components": 1951
+    },
+    "FL": {
+      "vertices": 3374,
+      "faces": 2636,
+      "aabb": {
+        "min": [
+          -0.02159,
+          -0.085,
+          -0.09293
+        ],
+        "max": [
+          0.03505,
+          0.08297,
+          0.09262
+        ],
+        "size": [
+          0.05664,
+          0.16797,
+          0.18555
+        ],
+        "center": [
+          0.00673,
+          -0.00102,
+          -0.00016
+        ]
+      },
+      "centroid": [
+        -0.00045,
+        -0.0008,
+        0.00048
+      ],
+      "translation": [
+        -0.204,
+        0.085,
+        -0.285
+      ],
+      "max_radius": 0.09491,
+      "vertex_components": 463,
+      "metrics": {
+        "name": "Wheel_FL",
+        "vertices": 3374,
+        "used_vertices": 3374,
+        "faces": 2636,
+        "aabb": {
+          "min": [
+            -0.02159,
+            -0.085,
+            -0.09293
+          ],
+          "max": [
+            0.03505,
+            0.08297,
+            0.09262
+          ],
+          "size": [
+            0.05664,
+            0.16797,
+            0.18555
+          ],
+          "center": [
+            0.00673,
+            -0.00102,
+            -0.00016
+          ]
+        },
+        "centroid": [
+          -0.00045,
+          -0.0008,
+          0.00048
+        ],
+        "max_radius": 0.09491,
+        "max_radius_yz": 0.09439,
+        "max_axial": 0.03505,
+        "max_face_edge": 0.06341,
+        "long_faces": [],
+        "thin_faces": [],
+        "vertex_components": 463,
+        "face_components": 463,
+        "dominant_component_faces": 88,
+        "stray_components": [],
+        "outlier_count": 0,
+        "outliers_sample": [],
+        "spin_sweep": {
+          "samples": 24,
+          "max_r": 0.09491,
+          "min_r": 0.09491,
+          "delta_r": 0.0,
+          "aabb_delta": [
+            0.0,
+            0.01982,
+            0.01982
+          ],
+          "pass": true
+        },
+        "gates": {
+          "aabb_compact": true,
+          "radius": true,
+          "no_stray_component": true,
+          "no_long_face": true,
+          "no_thin_sheet": true,
+          "spin_sweep": true,
+          "pass": true
+        }
+      }
+    },
+    "FR": {
+      "vertices": 3303,
+      "faces": 2568,
+      "aabb": {
+        "min": [
+          -0.03401,
+          -0.08305,
+          -0.09293
+        ],
+        "max": [
+          0.02263,
+          0.08297,
+          0.09262
+        ],
+        "size": [
+          0.05664,
+          0.16602,
+          0.18555
+        ],
+        "center": [
+          -0.00569,
+          -4e-05,
+          -0.00016
+        ]
+      },
+      "centroid": [
+        0.00025,
+        0.00097,
+        0.00118
+      ],
+      "translation": [
+        0.201,
+        0.085,
+        -0.285
+      ],
+      "max_radius": 0.09527,
+      "vertex_components": 477,
+      "metrics": {
+        "name": "Wheel_FR",
+        "vertices": 3303,
+        "used_vertices": 3303,
+        "faces": 2568,
+        "aabb": {
+          "min": [
+            -0.03401,
+            -0.08305,
+            -0.09293
+          ],
+          "max": [
+            0.02263,
+            0.08297,
+            0.09262
+          ],
+          "size": [
+            0.05664,
+            0.16602,
+            0.18555
+          ],
+          "center": [
+            -0.00569,
+            -4e-05,
+            -0.00016
+          ]
+        },
+        "centroid": [
+          0.00025,
+          0.00097,
+          0.00118
+        ],
+        "max_radius": 0.09527,
+        "max_radius_yz": 0.09439,
+        "max_axial": 0.03401,
+        "max_face_edge": 0.08243,
+        "long_faces": [],
+        "thin_faces": [],
+        "vertex_components": 477,
+        "face_components": 477,
+        "dominant_component_faces": 181,
+        "stray_components": [],
+        "outlier_count": 0,
+        "outliers_sample": [],
+        "spin_sweep": {
+          "samples": 24,
+          "max_r": 0.09527,
+          "min_r": 0.09527,
+          "delta_r": 0.0,
+          "aabb_delta": [
+            0.0,
+            0.01953,
+            0.01953
+          ],
+          "pass": true
+        },
+        "gates": {
+          "aabb_compact": true,
+          "radius": true,
+          "no_stray_component": true,
+          "no_long_face": true,
+          "no_thin_sheet": true,
+          "spin_sweep": true,
+          "pass": true
+        }
+      }
+    },
+    "RL": {
+      "vertices": 3371,
+      "faces": 2674,
+      "aabb": {
+        "min": [
+          -0.02063,
+          -0.085,
+          -0.07437
+        ],
+        "max": [
+          0.03796,
+          0.08297,
+          0.09165
+        ],
+        "size": [
+          0.05859,
+          0.16797,
+          0.16602
+        ],
+        "center": [
+          0.00866,
+          -0.00102,
+          0.00864
+        ]
+      },
+      "centroid": [
+        0.00263,
+        -9e-05,
+        0.00938
+      ],
+      "translation": [
+        -0.203,
+        0.085,
+        0.298
+      ],
+      "max_radius": 0.09495,
+      "vertex_components": 450,
+      "metrics": {
+        "name": "Wheel_RL",
+        "vertices": 3371,
+        "used_vertices": 3371,
+        "faces": 2674,
+        "aabb": {
+          "min": [
+            -0.02063,
+            -0.085,
+            -0.07437
+          ],
+          "max": [
+            0.03796,
+            0.08297,
+            0.09165
+          ],
+          "size": [
+            0.05859,
+            0.16797,
+            0.16602
+          ],
+          "center": [
+            0.00866,
+            -0.00102,
+            0.00864
+          ]
+        },
+        "centroid": [
+          0.00263,
+          -9e-05,
+          0.00938
+        ],
+        "max_radius": 0.09495,
+        "max_radius_yz": 0.09228,
+        "max_axial": 0.03796,
+        "max_face_edge": 0.06365,
+        "long_faces": [],
+        "thin_faces": [],
+        "vertex_components": 450,
+        "face_components": 450,
+        "dominant_component_faces": 104,
+        "stray_components": [],
+        "outlier_count": 0,
+        "outliers_sample": [],
+        "spin_sweep": {
+          "samples": 24,
+          "max_r": 0.09495,
+          "min_r": 0.09495,
+          "delta_r": 0.0,
+          "aabb_delta": [
+            0.0,
+            0.0026,
+            0.0026
+          ],
+          "pass": true
+        },
+        "gates": {
+          "aabb_compact": true,
+          "radius": true,
+          "no_stray_component": true,
+          "no_long_face": true,
+          "no_thin_sheet": true,
+          "spin_sweep": true,
+          "pass": true
+        }
+      }
+    },
+    "RR": {
+      "vertices": 3414,
+      "faces": 2636,
+      "aabb": {
+        "min": [
+          -0.03501,
+          -0.085,
+          -0.07632
+        ],
+        "max": [
+          0.02163,
+          0.08297,
+          0.09165
+        ],
+        "size": [
+          0.05664,
+          0.16797,
+          0.16797
+        ],
+        "center": [
+          -0.00669,
+          -0.00102,
+          0.00766
+        ]
+      },
+      "centroid": [
+        -0.00296,
+        0.00075,
+        0.01021
+      ],
+      "translation": [
+        0.202,
+        0.085,
+        0.298
+      ],
+      "max_radius": 0.09517,
+      "vertex_components": 485,
+      "metrics": {
+        "name": "Wheel_RR",
+        "vertices": 3414,
+        "used_vertices": 3414,
+        "faces": 2636,
+        "aabb": {
+          "min": [
+            -0.03501,
+            -0.085,
+            -0.07632
+          ],
+          "max": [
+            0.02163,
+            0.08297,
+            0.09165
+          ],
+          "size": [
+            0.05664,
+            0.16797,
+            0.16797
+          ],
+          "center": [
+            -0.00669,
+            -0.00102,
+            0.00766
+          ]
+        },
+        "centroid": [
+          -0.00296,
+          0.00075,
+          0.01021
+        ],
+        "max_radius": 0.09517,
+        "max_radius_yz": 0.09246,
+        "max_axial": 0.03501,
+        "max_face_edge": 0.1115,
+        "long_faces": [],
+        "thin_faces": [],
+        "vertex_components": 485,
+        "face_components": 485,
+        "dominant_component_faces": 168,
+        "stray_components": [],
+        "outlier_count": 0,
+        "outliers_sample": [],
+        "spin_sweep": {
+          "samples": 24,
+          "max_r": 0.09517,
+          "min_r": 0.09517,
+          "delta_r": 0.0,
+          "aabb_delta": [
+            0.0,
+            0.00178,
+            0.00178
+          ],
+          "pass": true
+        },
+        "gates": {
+          "aabb_compact": true,
+          "radius": true,
+          "no_stray_component": true,
+          "no_long_face": true,
+          "no_thin_sheet": true,
+          "spin_sweep": true,
+          "pass": true
+        }
+      }
+    }
+  },
+  "semantic": {
+    "z_min": -0.49902,
+    "z_max": 0.49902,
+    "y_at_zmin": 0.10417,
+    "y_at_zmax": 0.18026,
+    "high_y_mean_z": 0.21582,
+    "pass": true
+  },
+  "nose_marker": [
+    0.0,
+    0.08,
+    -0.4990234375
+  ],
+  "rear_marker": [
+    0.0,
+    0.1738281399011612,
+    0.4970703125
+  ],
+  "semantic_forward": [
+    0.0,
+    -0.09383,
+    -0.99609
+  ],
+  "output": "assets/vehicles/track/processed/track_car_base_v3_articulated_clean.glb",
+  "bytes": 1011772
+}

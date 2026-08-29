@@ -1,0 +1,50 @@
+[
+  {
+    "raw": "vaz_2104_-_raw_scan.glb",
+    "decision": "USE_SHOPPING",
+    "why": "real wagon silhouette in parking",
+    "used": true
+  },
+  {
+    "raw": "toyota-hilux-revo-prerunner-2021",
+    "decision": "USE_SHOPPING",
+    "why": "Paraguay-typical pickup in lot",
+    "used": true
+  },
+  {
+    "raw": "wrecked-car",
+    "decision": "REJECT_THIS_PASS",
+    "why": "26MB unique textures; wrecks fight 'mall open at night' identity. Atmosphere later, not in hero lot."
+  },
+  {
+    "raw": "psx_industrial_pack.glb",
+    "decision": "REJECT_THIS_PASS",
+    "why": "processed pack exists but merging it into the hero GLB introduced a 1x1 dummy texture that broke D3D12 import",
+    "note": "SKIP not merged into hero GLB (1x1/dummy tex risk); pack remains processed for optional later use"
+  },
+  {
+    "raw": "cement_bags_low-poly.glb",
+    "decision": "REJECT_THIS_PASS",
+    "why": "service clutter; would dilute facade-first composition"
+  },
+  {
+    "raw": "market-al-danube",
+    "decision": "REJECT_THIS_PASS",
+    "why": "child extract is mixed vegetation/branding; palms are custom to match SDS silhouette instead of dumping H&M-era props"
+  },
+  {
+    "raw": "ice_scream_3_shopping_center_map.glb",
+    "decision": "REJECT",
+    "why": "unrelated branded mall"
+  },
+  {
+    "raw": "portal-gate-sci-fi",
+    "decision": "REJECT",
+    "why": "sci-fi, not SDS"
+  },
+  {
+    "raw": "custom Blender V4 candidate",
+    "decision": "USE_CANDIDATE",
+    "why": "deeper vestibule, atrium well, mezzanine, lateral branches \u2014 HUMAN_REVIEW_REQUIRED, not V3 replacement"
+  }
+]

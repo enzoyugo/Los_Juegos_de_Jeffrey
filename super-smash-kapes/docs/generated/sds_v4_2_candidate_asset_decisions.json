@@ -1,0 +1,52 @@
+[
+  {
+    "part": "sds_facade_arch_kit",
+    "decision": "REJECT",
+    "why": "VISUALLY_WORSE_THAN_MANUAL vs target cream arch; competed with 3 shells in V4.1"
+  },
+  {
+    "part": "sds_facade_glass_kit",
+    "decision": "REJECT",
+    "why": "opaque blob; one clean vestibule instead"
+  },
+  {
+    "part": "architectural_doorway_kit",
+    "decision": "REJECT",
+    "why": "stacked with manual doors"
+  },
+  {
+    "part": "sds_collumns_kit",
+    "decision": "REJECT",
+    "why": "competed with cream frames"
+  },
+  {
+    "part": "brick_building_facade_kit",
+    "decision": "REJECT",
+    "why": "BAD_PROPORTIONS 16m slab vs subordinate wings in target"
+  },
+  {
+    "part": "sds_logo_kit",
+    "decision": "REJECT",
+    "why": "competed with sun landmark"
+  },
+  {
+    "part": "sds_itau_kit",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "left tenant in target; placed in wing opening"
+  },
+  {
+    "part": "balcony_planter_kit",
+    "decision": "KEEP_AFTER_CLEANUP",
+    "why": "balcony band only, not driveway clutter"
+  },
+  {
+    "part": "sds_warning_kit",
+    "decision": "REFERENCE_ONLY",
+    "why": "REFERENCE_MISMATCH"
+  },
+  {
+    "part": "cars",
+    "decision": "USE",
+    "used": 4
+  }
+]

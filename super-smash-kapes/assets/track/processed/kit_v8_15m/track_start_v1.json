@@ -1,0 +1,86 @@
+{
+  "piece_id": "start",
+  "family": "core",
+  "type": "start",
+  "road_width": 15.0,
+  "shoulder_width": 0.9,
+  "guardrail_height": 0.9,
+  "centerline_length": 8.0,
+  "height_delta": 0.0,
+  "yaw_delta": 0.0,
+  "pitch_delta": 0.0,
+  "roll_delta": 0.0,
+  "left_guardrail": true,
+  "right_guardrail": true,
+  "estimated_traversal_time": 0.35,
+  "difficulty": "tranqui",
+  "tags": [
+    "start",
+    "gate"
+  ],
+  "entry": {
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0
+  },
+  "exit": {
+    "origin": [
+      0.0,
+      0.0,
+      -8.0
+    ],
+    "yaw": 0.0
+  },
+  "collision": [
+    {
+      "kind": "road",
+      "origin": [
+        0.0,
+        -0.1,
+        -4.0
+      ],
+      "yaw": 0.0,
+      "size": [
+        16.8,
+        0.24,
+        8.319999999999999
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        -8.51,
+        0.45,
+        -4.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        8.139999999999999
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        8.51,
+        0.45,
+        -4.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        8.139999999999999
+      ]
+    }
+  ],
+  "glb": "track_start_v1.glb",
+  "kit": "kit_v8_15m",
+  "v9_overlap": 0.18
+}

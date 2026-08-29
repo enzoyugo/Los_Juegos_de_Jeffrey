@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dwx333v4qndsv"
+
+[deps]
+
+files=["res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.variant.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.bone.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.axis.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sign.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.angle.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.volume.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sx.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sy.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sz.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.volume.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.max.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.max.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p50.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p95.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p99.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.nan.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.inf.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.extreme.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.verdict.translation"]
+
+source_file="res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.csv"
+dest_files=["res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.variant.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.bone.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.axis.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sign.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.angle.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.volume.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sx.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sy.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.sz.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.volume.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.max.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.max.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p50.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p95.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.p99.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.nan.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.inf.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.extreme.translation", "res://docs/generated/JAGUARETE_NATIVE_SKIN_DEFORMATION.verdict.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,539 @@
+{
+  "version": 1,
+  "shared_by": [
+    "terere",
+    "jaguarete"
+  ],
+  "mixamo_prefix": "mixamorig5:",
+  "actorcore_prefix": "CC_Base_",
+  "bones": [
+    {
+      "source": "mixamorig5:Hips",
+      "target": "CC_Base_Hip",
+      "class": "REQUIRED",
+      "allow_location_y": true
+    },
+    {
+      "source": "mixamorig5:Spine",
+      "target": "CC_Base_Waist",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:Spine1",
+      "target": "CC_Base_Spine01",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:Spine2",
+      "target": "CC_Base_Spine02",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:Neck",
+      "target": "CC_Base_NeckTwist01",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:Head",
+      "target": "CC_Base_Head",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftShoulder",
+      "target": "CC_Base_L_Clavicle",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftArm",
+      "target": "CC_Base_L_Upperarm",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftForeArm",
+      "target": "CC_Base_L_Forearm",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftHand",
+      "target": "CC_Base_L_Hand",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightShoulder",
+      "target": "CC_Base_R_Clavicle",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightArm",
+      "target": "CC_Base_R_Upperarm",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightForeArm",
+      "target": "CC_Base_R_Forearm",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightHand",
+      "target": "CC_Base_R_Hand",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftUpLeg",
+      "target": "CC_Base_L_Thigh",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftLeg",
+      "target": "CC_Base_L_Calf",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftFoot",
+      "target": "CC_Base_L_Foot",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:LeftToeBase",
+      "target": "CC_Base_L_ToeBase",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightUpLeg",
+      "target": "CC_Base_R_Thigh",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightLeg",
+      "target": "CC_Base_R_Calf",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightFoot",
+      "target": "CC_Base_R_Foot",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "source": "mixamorig5:RightToeBase",
+      "target": "CC_Base_R_ToeBase",
+      "class": "REQUIRED",
+      "allow_location_y": false
+    },
+    {
+      "target": "CC_Base_FacialBone",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_JawRoot",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_L_BigToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Breast",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_L_CalfTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_CalfTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_ElbowShareBone",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_L_Eye",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_L_ForearmTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_ForearmTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Index1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Index2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Index3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_IndexToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_KneeShareBone",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_L_Mid1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Mid2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Mid3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_MidToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Pinky1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Pinky2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Pinky3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_PinkyToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_RibsTwist",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Ring1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Ring2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Ring3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_RingToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_ThighTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_ThighTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Thumb1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Thumb2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_Thumb3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_ToeBaseShareBone",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_UpperarmTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_L_UpperarmTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_NeckTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_Pelvis",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_R_BigToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Breast",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_R_CalfTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_CalfTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_ElbowShareBone",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_R_Eye",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_R_ForearmTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_ForearmTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Index1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Index2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Index3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_IndexToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_KneeShareBone",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_R_Mid1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Mid2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Mid3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_MidToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Pinky1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Pinky2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Pinky3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_PinkyToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_RibsTwist",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Ring1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Ring2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Ring3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_RingToe1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_ThighTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_ThighTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Thumb1",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Thumb2",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_Thumb3",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_ToeBaseShareBone",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_UpperarmTwist01",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_R_UpperarmTwist02",
+      "source": null,
+      "class": "OPTIONAL"
+    },
+    {
+      "target": "CC_Base_Teeth01",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_Teeth02",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_Tongue01",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_Tongue02",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_Tongue03",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "CC_Base_UpperJaw",
+      "source": null,
+      "class": "UNMAPPED"
+    },
+    {
+      "target": "root",
+      "source": null,
+      "class": "OPTIONAL"
+    }
+  ],
+  "required_count": 22
+}

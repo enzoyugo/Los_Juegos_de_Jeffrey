@@ -1,0 +1,246 @@
+{
+  "terere": {
+    "A_arms": {
+      "volume_ratio": 0.6294,
+      "max_axis_ratio": 0.8758,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 18.557,
+        "R_upperarm_from_down_deg": 18.286,
+        "mean_upperarm_from_down_deg": 18.422,
+        "L_hand_from_down_deg": 21.523,
+        "R_hand_from_down_deg": 14.443,
+        "mean_hand_from_down_deg": 17.983,
+        "L_elbow_flexion_deg": 13.354,
+        "R_elbow_flexion_deg": 12.138,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "L_knee_flexion_deg": 19.758,
+        "R_knee_flexion_deg": 19.758,
+        "torso_lean_deg": 14.336,
+        "head_lean_deg": 7.949,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "B_torso_head": {
+      "volume_ratio": 0.6477,
+      "max_axis_ratio": 0.8763,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 17.103,
+        "R_upperarm_from_down_deg": 17.103,
+        "mean_upperarm_from_down_deg": 17.103,
+        "L_hand_from_down_deg": 20.43,
+        "R_hand_from_down_deg": 14.334,
+        "mean_hand_from_down_deg": 17.382,
+        "L_elbow_flexion_deg": 12.646,
+        "R_elbow_flexion_deg": 12.634,
+        "L_thigh_from_down_deg": 22.347,
+        "R_thigh_from_down_deg": 22.346,
+        "L_knee_flexion_deg": 19.758,
+        "R_knee_flexion_deg": 19.758,
+        "torso_lean_deg": 14.817,
+        "head_lean_deg": 8.256,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "C_legs": {
+      "volume_ratio": 0.6483,
+      "max_axis_ratio": 0.8799,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 17.225,
+        "R_upperarm_from_down_deg": 17.224,
+        "mean_upperarm_from_down_deg": 17.224,
+        "L_hand_from_down_deg": 20.22,
+        "R_hand_from_down_deg": 14.142,
+        "mean_hand_from_down_deg": 17.181,
+        "L_elbow_flexion_deg": 12.646,
+        "R_elbow_flexion_deg": 12.634,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "L_knee_flexion_deg": 19.666,
+        "R_knee_flexion_deg": 19.666,
+        "torso_lean_deg": 14.336,
+        "head_lean_deg": 7.949,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "D_combined": {
+      "volume_ratio": 0.6347,
+      "max_axis_ratio": 0.8804,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 18.441,
+        "R_upperarm_from_down_deg": 18.17,
+        "mean_upperarm_from_down_deg": 18.306,
+        "L_hand_from_down_deg": 21.727,
+        "R_hand_from_down_deg": 14.62,
+        "mean_hand_from_down_deg": 18.174,
+        "L_elbow_flexion_deg": 13.354,
+        "R_elbow_flexion_deg": 12.138,
+        "L_thigh_from_down_deg": 22.347,
+        "R_thigh_from_down_deg": 22.346,
+        "L_knee_flexion_deg": 19.666,
+        "R_knee_flexion_deg": 19.666,
+        "torso_lean_deg": 14.817,
+        "head_lean_deg": 8.256,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "jaguarete": {
+    "A_arms": {
+      "volume_ratio": 0.9134,
+      "max_axis_ratio": 0.927,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 28.327,
+        "R_upperarm_from_down_deg": 28.137,
+        "mean_upperarm_from_down_deg": 28.232,
+        "L_hand_from_down_deg": 19.929,
+        "R_hand_from_down_deg": 35.688,
+        "mean_hand_from_down_deg": 27.809,
+        "L_elbow_flexion_deg": 18.895,
+        "R_elbow_flexion_deg": 17.122,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "L_knee_flexion_deg": 7.467,
+        "R_knee_flexion_deg": 7.41,
+        "torso_lean_deg": 0.34,
+        "head_lean_deg": 7.902,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "B_torso_head": {
+      "volume_ratio": 0.9465,
+      "max_axis_ratio": 0.9329,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 27.151,
+        "R_upperarm_from_down_deg": 27.151,
+        "mean_upperarm_from_down_deg": 27.151,
+        "L_hand_from_down_deg": 18.85,
+        "R_hand_from_down_deg": 36.489,
+        "mean_hand_from_down_deg": 27.669,
+        "L_elbow_flexion_deg": 18.296,
+        "R_elbow_flexion_deg": 17.529,
+        "L_thigh_from_down_deg": 9.542,
+        "R_thigh_from_down_deg": 9.579,
+        "L_knee_flexion_deg": 7.467,
+        "R_knee_flexion_deg": 7.41,
+        "torso_lean_deg": 0.095,
+        "head_lean_deg": 8.164,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "C_legs": {
+      "volume_ratio": 0.9411,
+      "max_axis_ratio": 0.9338,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 27.403,
+        "R_upperarm_from_down_deg": 27.403,
+        "mean_upperarm_from_down_deg": 27.403,
+        "L_hand_from_down_deg": 18.615,
+        "R_hand_from_down_deg": 36.189,
+        "mean_hand_from_down_deg": 27.402,
+        "L_elbow_flexion_deg": 18.296,
+        "R_elbow_flexion_deg": 17.529,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "L_knee_flexion_deg": 8.951,
+        "R_knee_flexion_deg": 9.054,
+        "torso_lean_deg": 0.34,
+        "head_lean_deg": 7.902,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    },
+    "D_combined": {
+      "volume_ratio": 0.9252,
+      "max_axis_ratio": 0.934,
+      "max_limb_length_rel_error": 0.0,
+      "extreme_vertex_count": 0,
+      "volume_pass": true,
+      "length_pass": true,
+      "idle_pose_classification": "STANDING_IDLE",
+      "quality": {
+        "L_upperarm_from_down_deg": 28.082,
+        "R_upperarm_from_down_deg": 27.89,
+        "mean_upperarm_from_down_deg": 27.986,
+        "L_hand_from_down_deg": 20.157,
+        "R_hand_from_down_deg": 35.986,
+        "mean_hand_from_down_deg": 28.072,
+        "L_elbow_flexion_deg": 18.895,
+        "R_elbow_flexion_deg": 17.122,
+        "L_thigh_from_down_deg": 9.542,
+        "R_thigh_from_down_deg": 9.579,
+        "L_knee_flexion_deg": 8.951,
+        "R_knee_flexion_deg": 9.054,
+        "torso_lean_deg": 0.095,
+        "head_lean_deg": 8.164,
+        "arms_lowered_from_tpose": true
+      },
+      "hip_xz": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "jump_small",
+			"t": 4.64999999999999
+		},
+		{
+			"extra": "x=-6.22",
+			"grounded": 0,
+			"kind": "MISSED_LANDING_LEFT",
+			"piece": "landing_straight_long",
+			"t": 6.96666666666665
+		}
+	]
+}

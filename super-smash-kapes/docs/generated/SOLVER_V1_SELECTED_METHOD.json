@@ -1,0 +1,48 @@
+{
+  "method": "constraint_world_arms",
+  "shared_by": [
+    "terere",
+    "jaguarete"
+  ],
+  "rest_source": "edit_bone.matrix_local_with_pose_cleared",
+  "uses_frame_1_as_bind": false,
+  "probes": [
+    {
+      "method": "constraint_world_arms",
+      "max_volume_ratio": 7.7122,
+      "max_axis_ratio": 1.7775,
+      "max_limb_length_rel_error": 0.0,
+      "idle_pose_classification": "DEFORMATION_INVALID",
+      "mid_frame_angles": {
+        "L_upperarm_from_down_deg": 113.951,
+        "R_upperarm_from_down_deg": 81.497,
+        "L_forearm_from_down_deg": 151.058,
+        "R_forearm_from_down_deg": 164.976,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "torso_lean_deg": 14.336,
+        "mean_upperarm_from_down_deg": 97.724
+      },
+      "accepted": false
+    },
+    {
+      "method": "arm_y_aim_only",
+      "max_volume_ratio": 6.9255,
+      "max_axis_ratio": 1.5758,
+      "max_limb_length_rel_error": 0.0,
+      "idle_pose_classification": "DEFORMATION_INVALID",
+      "mid_frame_angles": {
+        "L_upperarm_from_down_deg": 113.951,
+        "R_upperarm_from_down_deg": 81.497,
+        "L_forearm_from_down_deg": 151.058,
+        "R_forearm_from_down_deg": 164.976,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "torso_lean_deg": 14.336,
+        "mean_upperarm_from_down_deg": 97.724
+      },
+      "accepted": false
+    }
+  ],
+  "note": "Same method for both fighters. User CoB tried first; world-delta is fallback."
+}

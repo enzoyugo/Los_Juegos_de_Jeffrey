@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-08-25T20:35:25.454275",
+  "note": "Rig quality only. No animation comparison. No Mixamo.",
+  "fighters": {
+    "jaguarete": {
+      "v1": {
+        "bone_count": 101,
+        "max_influences": 6,
+        "vertex_count": 47292,
+        "bind_space": "COMPENSATED (AccuRIG Rx90 * 0.01 typical)",
+        "normalization_required": true,
+        "native_articulation_pass": true,
+        "finger_rig": "CC_Base Index/Middle/Ring/Pinky/Thumb 1-3",
+        "glb_roundtrip_ok": true
+      },
+      "v5": {
+        "bone_count": 118,
+        "max_influences": 6,
+        "vertex_count": 22492,
+        "bind_space": "V5_BIND_SPACE_CLEAN",
+        "normalization": "V5_NATIVE_BIND_PRESERVED",
+        "native_articulation_pass": true,
+        "fingers": {
+          "index": true,
+          "middle": true,
+          "ring": true,
+          "pinky": true,
+          "thumb": true,
+          "metacarpals": true
+        },
+        "glb_roundtrip_ok": true,
+        "left_right_pass": true,
+        "weight_major_reweight": false
+      },
+      "deltas": {
+        "bone_count_delta": 17,
+        "v5_has_ring_fingers": true,
+        "v5_has_metacarpals": true,
+        "v5_cleaner_bind_space": true
+      }
+    },
+    "terere": {
+      "v1": {
+        "bone_count": 101,
+        "max_influences": 6,
+        "vertex_count": 50382,
+        "bind_space": "COMPENSATED (AccuRIG Rx90 * 0.01 typical)",
+        "normalization_required": true,
+        "native_articulation_pass": true,
+        "finger_rig": "CC_Base Index/Middle/Ring/Pinky/Thumb 1-3",
+        "glb_roundtrip_ok": true
+      },
+      "v5": {
+        "bone_count": 102,
+        "max_influences": 6,
+        "vertex_count": 26352,
+        "bind_space": "V5_BIND_SPACE_CLEAN",
+        "normalization": "V5_NATIVE_BIND_PRESERVED",
+        "native_articulation_pass": true,
+        "fingers": {
+          "index": true,
+          "middle": true,
+          "ring": false,
+          "pinky": true,
+          "thumb": true,
+          "metacarpals": false
+        },
+        "glb_roundtrip_ok": true,
+        "left_right_pass": true,
+        "weight_major_reweight": false
+      },
+      "deltas": {
+        "bone_count_delta": 1,
+        "v5_has_ring_fingers": false,
+        "v5_has_metacarpals": false,
+        "v5_cleaner_bind_space": true
+      }
+    }
+  },
+  "do_not_auto_promote": true,
+  "human_must_choose": [
+    "KEEP CLEAN RIG V1",
+    "PROMOTE CLEAN RIG V5"
+  ]
+}

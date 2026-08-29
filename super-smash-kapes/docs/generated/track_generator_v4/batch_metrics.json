@@ -1,0 +1,78 @@
+{
+  "configs": {
+    "LONG_DEMENTE": {
+      "accepted": 100,
+      "median_attempt": 1.0,
+      "p95_attempt": 7.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "LONG_PICANTE": {
+      "accepted": 100,
+      "median_attempt": 2.0,
+      "p95_attempt": 7.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "LONG_TRANQUI": {
+      "accepted": 100,
+      "median_attempt": 2.0,
+      "p95_attempt": 9.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "MEDIUM_DEMENTE": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 3.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "MEDIUM_PICANTE": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 3.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "MEDIUM_TRANQUI": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 4.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "SHORT_DEMENTE": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 1.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "SHORT_PICANTE": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 1.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    },
+    "SHORT_TRANQUI": {
+      "accepted": 100,
+      "median_attempt": 0.0,
+      "p95_attempt": 1.0,
+      "reasons": {},
+      "success_rate": 1.0,
+      "top_rejection": ""
+    }
+  },
+  "ok": true,
+  "seeds": 100
+}

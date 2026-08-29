@@ -1,0 +1,925 @@
+{
+  "policy": "Bake with clip_relative only. Reject rest_relative. If frame1 is T-pose AND intra-clip > 35deg, treat as explosion risk.",
+  "clips": [
+    {
+      "file": "Falling Back Death.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Falling Back Death.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        79
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 97.31,
+      "max_intra_clip_deg": 138.7281,
+      "max_intra_clip_bone": "mixamorig5:Hips",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 54.9527,
+          "location": [
+            -0.1729,
+            -13.9249,
+            0.0949
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 8.677,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 3.3701,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 48.6643,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 51.9978,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 76.8655,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 51.2414,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Hit To Body.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Hit To Body.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        36
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 106.3581,
+      "max_intra_clip_deg": 46.9696,
+      "max_intra_clip_bone": "mixamorig5:RightArm",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 46.5342,
+          "location": [
+            -0.5552,
+            -13.2053,
+            0.2797
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 11.9268,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 13.9577,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 74.6562,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 87.0056,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 39.5865,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 39.4236,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Idle.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Idle.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        110
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 100.3568,
+      "max_intra_clip_deg": 24.9953,
+      "max_intra_clip_bone": "mixamorig5:LeftArm",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 51.316,
+          "location": [
+            -3.2657,
+            -17.6431,
+            0.9123
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 6.2571,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 6.3755,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 61.4781,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 69.7632,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 65.1084,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 44.6519,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Jump Attack.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Jump Attack.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        115
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 69.1353,
+      "max_intra_clip_deg": 110.9931,
+      "max_intra_clip_bone": "mixamorig5:RightHandThumb1",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 1.293,
+          "location": [
+            -0.1326,
+            -11.2205,
+            0.2113
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 16.5936,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 1.0378,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 48.5256,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 50.9258,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 48.0253,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 48.4161,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Knocked Out.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Knocked Out.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        149
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 111.5554,
+      "max_intra_clip_deg": 118.3429,
+      "max_intra_clip_bone": "mixamorig5:Hips",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 36.7286,
+          "location": [
+            2.6526,
+            -10.2514,
+            -8.7316
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 10.723,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 3.3657,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 79.0468,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 86.9425,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 48.2159,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 32.4574,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Mutant Punch.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Mutant Punch.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        34
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 69.1355,
+      "max_intra_clip_deg": 94.1254,
+      "max_intra_clip_bone": "mixamorig5:Hips",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 1.0631,
+          "location": [
+            -0.1299,
+            -11.2205,
+            0.213
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 16.5936,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 1.04,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 48.5256,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 50.9258,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 48.0253,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 48.4169,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Reaction.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Reaction.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        56
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 104.0009,
+      "max_intra_clip_deg": 49.961,
+      "max_intra_clip_bone": "mixamorig5:LeftArm",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 55.4949,
+          "location": [
+            4.1804,
+            -7.5511,
+            4.1001
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 4.1252,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 7.5664,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 68.0529,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 86.4824,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 32.6221,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 36.197,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Rib Hit.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Rib Hit.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        31
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 106.3581,
+      "max_intra_clip_deg": 71.5838,
+      "max_intra_clip_bone": "mixamorig5:LeftArm",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 46.5342,
+          "location": [
+            -0.5552,
+            -13.2053,
+            0.2797
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 11.9268,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 13.9577,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 74.6562,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 87.0056,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 39.5866,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 39.4236,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Standing Melee Attack Downward.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Standing Melee Attack Downward.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        69
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 73.8972,
+      "max_intra_clip_deg": 124.281,
+      "max_intra_clip_bone": "mixamorig5:RightHand",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 50.7609,
+          "location": [
+            -0.5664,
+            -13.7147,
+            0.5596
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 11.4572,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 3.2148,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 46.9116,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 65.0486,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 73.8972,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 44.4681,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "file": "Unarmed Jump.fbx",
+      "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\animations\\Unarmed Jump.fbx",
+      "action": "Armature|mixamo.com|Layer0",
+      "fps": 30,
+      "frame_range": [
+        1,
+        71
+      ],
+      "armature_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "armature_rotation_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "bone_count": 65,
+      "max_frame1_basis_deg": 73.0834,
+      "max_intra_clip_deg": 97.8024,
+      "max_intra_clip_bone": "mixamorig5:RightLeg",
+      "frame1_looks_like_standing": true,
+      "clip_relative_safe": true,
+      "note": "Frame 1 already holds T-pose\u2192stand. Clip-relative bake stays on AccuRIG bind.",
+      "sample_frame1": {
+        "mixamorig5:Hips": {
+          "name": "mixamorig5:Hips",
+          "frame1_basis_deg": 12.2283,
+          "location": [
+            -0.253,
+            -2.4201,
+            0.9628
+          ]
+        },
+        "mixamorig5:Spine": {
+          "name": "mixamorig5:Spine",
+          "frame1_basis_deg": 9.6501,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:Head": {
+          "name": "mixamorig5:Head",
+          "frame1_basis_deg": 2.7704,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftArm": {
+          "name": "mixamorig5:LeftArm",
+          "frame1_basis_deg": 73.0834,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:RightArm": {
+          "name": "mixamorig5:RightArm",
+          "frame1_basis_deg": 68.2617,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mixamorig5:LeftUpLeg": {
+          "name": "mixamorig5:LeftUpLeg",
+          "frame1_basis_deg": 27.6585,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "mixamorig5:RightUpLeg": {
+          "name": "mixamorig5:RightUpLeg",
+          "frame1_basis_deg": 18.7867,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  ]
+}

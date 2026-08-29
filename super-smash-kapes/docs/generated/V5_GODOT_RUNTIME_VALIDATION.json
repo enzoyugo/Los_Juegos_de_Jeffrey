@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-08-25T20:45:00",
+  "rendering_method": "gl_compatibility",
+  "audio_driver": "Dummy",
+  "godot": "4.7.2-stable",
+  "labs": {
+    "jaguarete": {
+      "scene": "res://scenes/debug/JaguareteCleanRigV5Lab.tscn",
+      "window_alive_62s": true,
+      "load_ok": true,
+      "fallback": false,
+      "script_error": false,
+      "renderer_error": false,
+      "opengl": "3.3.0 NVIDIA 560.94",
+      "bone_count": 118,
+      "mesh_count": 1,
+      "animation_count": 0
+    },
+    "terere": {
+      "scene": "res://scenes/debug/TerereCleanRigV5Lab.tscn",
+      "window_alive_62s": true,
+      "load_ok": true,
+      "fallback": false,
+      "script_error": false,
+      "renderer_error": false,
+      "opengl": "3.3.0 NVIDIA 560.94",
+      "bone_count": 102,
+      "mesh_count": 1,
+      "animation_count": 0
+    }
+  },
+  "all_ok": true
+}

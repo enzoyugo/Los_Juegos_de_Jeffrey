@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/debug/track_environment_kit_v1_capture.gd" id="1"]
+
+[node name="TrackEnvironmentKitV1Capture" type="Node"]
+script = ExtResource("1")

@@ -1,0 +1,60 @@
+{
+	"boost": {
+		"basis_z": [
+			0.0,
+			0.0,
+			1.0
+		],
+		"origin": [
+			0.0,
+			0.0,
+			-32.0
+		]
+	},
+	"deck_length": 36.0,
+	"gap_empty": true,
+	"gap_length": 10.0,
+	"gap_road_collision": [],
+	"landing_extra": 0.0,
+	"landing_start": [
+		0.0,
+		0.949903726577759,
+		-91.1999969482422
+	],
+	"layout": "v6",
+	"mode": "full",
+	"ramp_entry": {
+		"basis_z": [
+			0.0,
+			0.0,
+			1.0
+		],
+		"origin": [
+			0.0,
+			0.0,
+			-68.0
+		]
+	},
+	"ramp_max_normal_discontinuity_deg": 2.46864637077511,
+	"ramp_segment_count": 9,
+	"sequence": [
+		"start",
+		"straight_medium",
+		"boost_straight",
+		"straight_medium",
+		"ramp_takeoff",
+		"gap_logical",
+		"landing_straight_long",
+		"straight_medium",
+		"curve_l_45",
+		"curve_r_45",
+		"finish"
+	],
+	"steer": "v5",
+	"sym_mounts": false,
+	"takeoff_edge": [
+		0.0,
+		2.1899037361145,
+		-81.1999969482422
+	]
+}

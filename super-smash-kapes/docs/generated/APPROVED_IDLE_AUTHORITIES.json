@@ -1,0 +1,34 @@
+{
+  "authority": "APPROVED_IDLE_AUTHORITIES",
+  "immutable": true,
+  "fighters": {
+    "terere": {
+      "fighter": "terere",
+      "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\production_semantic_idle_v1\\terere\\terere_production_semantic_idle_v1.glb",
+      "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\production_semantic_idle_v1\\terere\\terere_production_semantic_idle_v1.blend",
+      "glb_sha256": "9306cfad82cd9a2c0daca67f12be5a4cfc10497061d405982db4647ba47bc7f6",
+      "glb_bytes": 12828952,
+      "blend_sha256": "7af781e54a2ce3eb3f2d39c003c02197c1fa574741d6af553cca1dbdb4d731c6",
+      "blend_bytes": 23162252,
+      "canonical_pose": "POSE_B_GAME_READY",
+      "approval_status": "HUMAN_APPROVED",
+      "bone_count": 101,
+      "animation_name": "idle",
+      "do_not_rebake": true
+    },
+    "jaguarete": {
+      "fighter": "jaguarete",
+      "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_idle_polish_v1\\jaguarete\\jaguarete_idle_semantic_polished_v1.glb",
+      "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_idle_polish_v1\\jaguarete\\jaguarete_idle_semantic_polished_v1.blend",
+      "glb_sha256": "e5e4dd145cc454bab39c456a3fbe8f194f56ceab0e9deb8fbb4a87d1686943a4",
+      "glb_bytes": 14151672,
+      "blend_sha256": "dcecb1673ddf52dc41a8719ab61091e0b660e35de022928f4cfad19590eeebec",
+      "blend_bytes": 23923560,
+      "canonical_pose": "APPROVED_SEMANTIC_IDLE_V1",
+      "approval_status": "HUMAN_APPROVED_FROZEN",
+      "bone_count": 101,
+      "animation_name": "idle",
+      "do_not_rebake": true
+    }
+  }
+}

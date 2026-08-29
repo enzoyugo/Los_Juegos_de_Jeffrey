@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AttackDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/attack_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+attack_id = "basic_capsule_strike"
+display_name = "Capsule Strike"
+startup_seconds = 0.1
+active_seconds = 0.12
+recovery_seconds = 0.24
+damage = 8.0
+base_knockback = 7.0
+knockback_growth = 0.105
+angle_degrees = 42.0
+ground_steering = 0.55
+air_steering = 0.7
+hitstun_scale = 0.018

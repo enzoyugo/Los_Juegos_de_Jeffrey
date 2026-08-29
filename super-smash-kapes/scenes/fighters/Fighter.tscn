@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/fighters/fighter.gd" id="1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fighter"]
+radius = 0.65
+height = 2.4
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape_body"]
+radius = 0.65
+height = 2.4
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape_hurt"]
+radius = 0.78
+height = 2.6
+
+[sub_resource type="BoxShape3D" id="BoxShape_hit"]
+size = Vector3(1.55, 1.15, 1.0)
+
+[node name="Fighter" type="CharacterBody3D"]
+script = ExtResource("1")
+collision_layer = 2
+collision_mask = 1
+
+[node name="Visual" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CapsuleMesh_fighter")
+position = Vector3(0, 1.2, 0)
+
+[node name="VisualRoot" type="Node3D" parent="."]
+
+[node name="BodyCollision" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape_body")
+position = Vector3(0, 1.2, 0)
+
+[node name="Hurtbox" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 8
+monitorable = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape_hurt")
+position = Vector3(0, 1.2, 0)
+
+[node name="AttackHitbox" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 4
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AttackHitbox"]
+shape = SubResource("BoxShape_hit")
+position = Vector3(0, 1.25, 0)

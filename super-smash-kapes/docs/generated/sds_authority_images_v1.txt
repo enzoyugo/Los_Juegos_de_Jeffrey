@@ -1,0 +1,6 @@
+HUMAN_REVIEW_PENDING
+REFERENCE_ONLY — never imported into Godot runtime.
+assets/reference/shopping del sol/photos/references/shopping-del-sol.jpg
+assets/reference/shopping del sol/photos/references/shopping-del-sol (1).jpg
+assets/reference/shopping del sol/photos/references/shopping-del-sol (2).jpg
+coverage: parking_center parking_left parking_right facade_wide entrance_wide entrance_close islands lamps vehicles street_edge towers

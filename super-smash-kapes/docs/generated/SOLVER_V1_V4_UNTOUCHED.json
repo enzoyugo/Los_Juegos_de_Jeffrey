@@ -1,0 +1,7 @@
+{
+  "note": "SHA256 of production V4 GLBs captured before solver_v1 work. Solver must not rewrite these files.",
+  "terere_game_ready_v4_sha256": "D880B8E9FE03F8F0169728259A0C51F0A931AED401B4AA30A32BCED94EA0CEBE",
+  "jaguarete_game_ready_v4_sha256": "460BEE0AF4CF0CE3F9550948E3E69D349A9E3C1D1EFADE786178C8E5D639553C",
+  "terere_bytes": 15224632,
+  "jaguarete_bytes": 16547056
+}

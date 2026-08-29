@@ -1,0 +1,28 @@
+{
+	"fighter": "jaguarete",
+	"glb": "res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb",
+	"materials": [
+		{
+			"albedo_color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"albedo_texture": "model_Pbr_Diffuse",
+			"class": "StandardMaterial3D",
+			"material_name": "model_Pbr",
+			"material_path": "",
+			"mesh": "model",
+			"metallic_texture": "",
+			"normal_texture": "model_Pbr_Normal",
+			"resource_local_to_scene": false,
+			"roughness_texture": "",
+			"surface": 0
+		}
+	],
+	"texture_paths": [
+		"model_Pbr_Diffuse",
+		"model_Pbr_Normal"
+	]
+}

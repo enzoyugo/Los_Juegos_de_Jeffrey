@@ -1,0 +1,2114 @@
+{
+  "world_and_local": {
+    "ENTRY": {
+      "local": [
+        0,
+        0,
+        0
+      ],
+      "world": [
+        0.0,
+        1.8,
+        -80.0
+      ]
+    },
+    "TAKEOFF_EDGE": {
+      "local": [
+        0.0,
+        0.389904,
+        -1.2
+      ],
+      "world": [
+        0.0,
+        2.189904,
+        -81.2
+      ],
+      "along": 1.2
+    },
+    "GAP_START": {
+      "local": [
+        0.0,
+        0.389904,
+        -1.2
+      ],
+      "along": 1.2
+    },
+    "GAP_END": {
+      "local": [
+        0.0,
+        -0.85,
+        -8.2
+      ],
+      "along": 8.2
+    },
+    "LANDING_PAD_START": {
+      "local": [
+        0.0,
+        -0.85,
+        -8.2
+      ],
+      "along": 8.2
+    },
+    "EXIT": {
+      "local": [
+        0.0,
+        -0.85,
+        -22.2
+      ],
+      "world": [
+        0.0,
+        0.95,
+        -102.2
+      ],
+      "along": 22.2
+    },
+    "lip_m": 1.2,
+    "gap_m": 7.0,
+    "land_length_m": 14.0,
+    "sample_count": 57
+  },
+  "boxes": [
+    {
+      "id": "jump_small_road_0",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        0.007921,
+        -0.218541
+      ],
+      "origin_world": [
+        0.0,
+        1.807921,
+        -80.218541
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.44
+      ],
+      "pitch_deg": 18.0,
+      "along_local": 0.2185,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          1.6829,
+          -80.4463
+        ],
+        "max": [
+          6.2,
+          1.933,
+          -79.9908
+        ]
+      },
+      "top_height_world": 1.933,
+      "center_world": [
+        0.0,
+        1.807921,
+        -80.218541
+      ],
+      "distance_from_takeoff_edge_along": -0.9815
+    },
+    {
+      "id": "jump_small_road_1",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        0.137888,
+        -0.618541
+      ],
+      "origin_world": [
+        0.0,
+        1.937888,
+        -80.618541
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.44
+      ],
+      "pitch_deg": 18.0,
+      "along_local": 0.6185,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          1.8128,
+          -80.8463
+        ],
+        "max": [
+          6.2,
+          2.0629,
+          -80.3908
+        ]
+      },
+      "top_height_world": 2.0629,
+      "center_world": [
+        0.0,
+        1.937888,
+        -80.618541
+      ],
+      "distance_from_takeoff_edge_along": -0.5815
+    },
+    {
+      "id": "jump_small_road_2",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        0.267856,
+        -1.018541
+      ],
+      "origin_world": [
+        0.0,
+        2.067856,
+        -81.018541
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.44
+      ],
+      "pitch_deg": 18.0,
+      "along_local": 1.0185,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          1.9428,
+          -81.2463
+        ],
+        "max": [
+          6.2,
+          2.1929,
+          -80.7908
+        ]
+      },
+      "top_height_world": 2.1929,
+      "center_world": [
+        0.0,
+        2.067856,
+        -81.018541
+      ],
+      "distance_from_takeoff_edge_along": -0.1815
+    },
+    {
+      "id": "jump_small_road_3",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -8.491667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -88.491667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 8.4917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -88.8033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -88.18
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -88.491667
+      ],
+      "distance_from_takeoff_edge_along": 7.2917
+    },
+    {
+      "id": "jump_small_road_4",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -9.075
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -89.075
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 9.075,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -89.3867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -88.7633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -89.075
+      ],
+      "distance_from_takeoff_edge_along": 7.875
+    },
+    {
+      "id": "jump_small_road_5",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -9.658333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -89.658333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 9.6583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -89.97
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -89.3467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -89.658333
+      ],
+      "distance_from_takeoff_edge_along": 8.4583
+    },
+    {
+      "id": "jump_small_road_6",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -10.241667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -90.241667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 10.2417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -90.5533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -89.93
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -90.241667
+      ],
+      "distance_from_takeoff_edge_along": 9.0417
+    },
+    {
+      "id": "jump_small_road_7",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -10.825
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -90.825
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 10.825,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -91.1367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -90.5133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -90.825
+      ],
+      "distance_from_takeoff_edge_along": 9.625
+    },
+    {
+      "id": "jump_small_road_8",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -11.408333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -91.408333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 11.4083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -91.72
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -91.0967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -91.408333
+      ],
+      "distance_from_takeoff_edge_along": 10.2083
+    },
+    {
+      "id": "jump_small_road_9",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -11.991667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -91.991667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 11.9917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -92.3033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -91.68
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -91.991667
+      ],
+      "distance_from_takeoff_edge_along": 10.7917
+    },
+    {
+      "id": "jump_small_road_10",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -12.575
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -92.575
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 12.575,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -92.8867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -92.2633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -92.575
+      ],
+      "distance_from_takeoff_edge_along": 11.375
+    },
+    {
+      "id": "jump_small_road_11",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -13.158333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -93.158333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 13.1583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -93.47
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -92.8467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -93.158333
+      ],
+      "distance_from_takeoff_edge_along": 11.9583
+    },
+    {
+      "id": "jump_small_road_12",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -13.741667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -93.741667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 13.7417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -94.0533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -93.43
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -93.741667
+      ],
+      "distance_from_takeoff_edge_along": 12.5417
+    },
+    {
+      "id": "jump_small_road_13",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -14.325
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -94.325
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 14.325,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -94.6367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -94.0133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -94.325
+      ],
+      "distance_from_takeoff_edge_along": 13.125
+    },
+    {
+      "id": "jump_small_road_14",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -14.908333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -94.908333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 14.9083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -95.22
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -94.5967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -94.908333
+      ],
+      "distance_from_takeoff_edge_along": 13.7083
+    },
+    {
+      "id": "jump_small_road_15",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -15.491667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -95.491667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 15.4917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -95.8033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -95.18
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -95.491667
+      ],
+      "distance_from_takeoff_edge_along": 14.2917
+    },
+    {
+      "id": "jump_small_road_16",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -16.075
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -96.075
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 16.075,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -96.3867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -95.7633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -96.075
+      ],
+      "distance_from_takeoff_edge_along": 14.875
+    },
+    {
+      "id": "jump_small_road_17",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -16.658333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -96.658333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 16.6583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -96.97
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -96.3467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -96.658333
+      ],
+      "distance_from_takeoff_edge_along": 15.4583
+    },
+    {
+      "id": "jump_small_road_18",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -17.241667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -97.241667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 17.2417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -97.5533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -96.93
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -97.241667
+      ],
+      "distance_from_takeoff_edge_along": 16.0417
+    },
+    {
+      "id": "jump_small_road_19",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -17.825
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -97.825
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 17.825,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -98.1367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -97.5133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -97.825
+      ],
+      "distance_from_takeoff_edge_along": 16.625
+    },
+    {
+      "id": "jump_small_road_20",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -18.408333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -98.408333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 18.4083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -98.72
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -98.0967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -98.408333
+      ],
+      "distance_from_takeoff_edge_along": 17.2083
+    },
+    {
+      "id": "jump_small_road_21",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -18.991667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -98.991667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 18.9917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -99.3033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -98.68
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -98.991667
+      ],
+      "distance_from_takeoff_edge_along": 17.7917
+    },
+    {
+      "id": "jump_small_road_22",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -19.575
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -99.575
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 19.575,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -99.8867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -99.2633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -99.575
+      ],
+      "distance_from_takeoff_edge_along": 18.375
+    },
+    {
+      "id": "jump_small_road_23",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -20.158333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -100.158333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 20.1583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -100.47
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -99.8467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -100.158333
+      ],
+      "distance_from_takeoff_edge_along": 18.9583
+    },
+    {
+      "id": "jump_small_road_24",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -20.741667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -100.741667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 20.7417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -101.0533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -100.43
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -100.741667
+      ],
+      "distance_from_takeoff_edge_along": 19.5417
+    },
+    {
+      "id": "jump_small_road_25",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -21.325
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -101.325
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 21.325,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -101.6367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -101.0133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -101.325
+      ],
+      "distance_from_takeoff_edge_along": 20.125
+    },
+    {
+      "id": "jump_small_road_26",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -21.908333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -101.908333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 21.9083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -102.22
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -101.5967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -101.908333
+      ],
+      "distance_from_takeoff_edge_along": 20.7083
+    }
+  ],
+  "road_after_takeoff": [
+    {
+      "id": "jump_small_road_3",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -8.491667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -88.491667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 8.4917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -88.8033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -88.18
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -88.491667
+      ],
+      "distance_from_takeoff_edge_along": 7.2917
+    },
+    {
+      "id": "jump_small_road_4",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -9.075
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -89.075
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 9.075,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -89.3867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -88.7633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -89.075
+      ],
+      "distance_from_takeoff_edge_along": 7.875
+    },
+    {
+      "id": "jump_small_road_5",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -9.658333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -89.658333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 9.6583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -89.97
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -89.3467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -89.658333
+      ],
+      "distance_from_takeoff_edge_along": 8.4583
+    },
+    {
+      "id": "jump_small_road_6",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -10.241667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -90.241667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 10.2417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -90.5533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -89.93
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -90.241667
+      ],
+      "distance_from_takeoff_edge_along": 9.0417
+    },
+    {
+      "id": "jump_small_road_7",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -10.825
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -90.825
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 10.825,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -91.1367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -90.5133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -90.825
+      ],
+      "distance_from_takeoff_edge_along": 9.625
+    },
+    {
+      "id": "jump_small_road_8",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -11.408333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -91.408333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 11.4083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -91.72
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -91.0967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -91.408333
+      ],
+      "distance_from_takeoff_edge_along": 10.2083
+    },
+    {
+      "id": "jump_small_road_9",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -11.991667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -91.991667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 11.9917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -92.3033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -91.68
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -91.991667
+      ],
+      "distance_from_takeoff_edge_along": 10.7917
+    },
+    {
+      "id": "jump_small_road_10",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -12.575
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -92.575
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 12.575,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -92.8867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -92.2633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -92.575
+      ],
+      "distance_from_takeoff_edge_along": 11.375
+    },
+    {
+      "id": "jump_small_road_11",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -13.158333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -93.158333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 13.1583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -93.47
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -92.8467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -93.158333
+      ],
+      "distance_from_takeoff_edge_along": 11.9583
+    },
+    {
+      "id": "jump_small_road_12",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -13.741667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -93.741667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 13.7417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -94.0533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -93.43
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -93.741667
+      ],
+      "distance_from_takeoff_edge_along": 12.5417
+    },
+    {
+      "id": "jump_small_road_13",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -14.325
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -94.325
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 14.325,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -94.6367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -94.0133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -94.325
+      ],
+      "distance_from_takeoff_edge_along": 13.125
+    },
+    {
+      "id": "jump_small_road_14",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -14.908333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -94.908333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 14.9083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -95.22
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -94.5967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -94.908333
+      ],
+      "distance_from_takeoff_edge_along": 13.7083
+    },
+    {
+      "id": "jump_small_road_15",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -15.491667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -95.491667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 15.4917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -95.8033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -95.18
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -95.491667
+      ],
+      "distance_from_takeoff_edge_along": 14.2917
+    },
+    {
+      "id": "jump_small_road_16",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -16.075
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -96.075
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 16.075,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -96.3867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -95.7633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -96.075
+      ],
+      "distance_from_takeoff_edge_along": 14.875
+    },
+    {
+      "id": "jump_small_road_17",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -16.658333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -96.658333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 16.6583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -96.97
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -96.3467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -96.658333
+      ],
+      "distance_from_takeoff_edge_along": 15.4583
+    },
+    {
+      "id": "jump_small_road_18",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -17.241667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -97.241667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 17.2417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -97.5533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -96.93
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -97.241667
+      ],
+      "distance_from_takeoff_edge_along": 16.0417
+    },
+    {
+      "id": "jump_small_road_19",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -17.825
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -97.825
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 17.825,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -98.1367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -97.5133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -97.825
+      ],
+      "distance_from_takeoff_edge_along": 16.625
+    },
+    {
+      "id": "jump_small_road_20",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -18.408333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -98.408333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 18.4083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -98.72
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -98.0967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -98.408333
+      ],
+      "distance_from_takeoff_edge_along": 17.2083
+    },
+    {
+      "id": "jump_small_road_21",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -18.991667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -98.991667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 18.9917,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -99.3033
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -98.68
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -98.991667
+      ],
+      "distance_from_takeoff_edge_along": 17.7917
+    },
+    {
+      "id": "jump_small_road_22",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -19.575
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -99.575
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 19.575,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -99.8867
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -99.2633
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -99.575
+      ],
+      "distance_from_takeoff_edge_along": 18.375
+    },
+    {
+      "id": "jump_small_road_23",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -20.158333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -100.158333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 20.1583,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -100.47
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -99.8467
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -100.158333
+      ],
+      "distance_from_takeoff_edge_along": 18.9583
+    },
+    {
+      "id": "jump_small_road_24",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -20.741667
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -100.741667
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 20.7417,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -101.0533
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -100.43
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -100.741667
+      ],
+      "distance_from_takeoff_edge_along": 19.5417
+    },
+    {
+      "id": "jump_small_road_25",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -21.325
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -101.325
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 21.325,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -101.6367
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -101.0133
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -101.325
+      ],
+      "distance_from_takeoff_edge_along": 20.125
+    },
+    {
+      "id": "jump_small_road_26",
+      "kind": "road",
+      "origin_local": [
+        0.0,
+        -0.91,
+        -21.908333
+      ],
+      "origin_world": [
+        0.0,
+        0.89,
+        -101.908333
+      ],
+      "size": [
+        12.4,
+        0.12,
+        0.6233
+      ],
+      "pitch_deg": 0.0,
+      "along_local": 21.9083,
+      "aabb_world": {
+        "min": [
+          -6.2,
+          0.83,
+          -102.22
+        ],
+        "max": [
+          6.2,
+          0.95,
+          -101.5967
+        ]
+      },
+      "top_height_world": 0.95,
+      "center_world": [
+        0.0,
+        0.89,
+        -101.908333
+      ],
+      "distance_from_takeoff_edge_along": 20.7083
+    }
+  ]
+}

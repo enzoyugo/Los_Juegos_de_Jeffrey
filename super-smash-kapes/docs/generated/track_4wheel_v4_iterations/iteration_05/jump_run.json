@@ -1,0 +1,53 @@
+{
+	"PASS": false,
+	"cam_mode": "LANDING_SIDE",
+	"deck_retained": false,
+	"events": [
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "jump_small",
+			"t": 4.28333333333332
+		},
+		{
+			"extra": "wheel_count=4 peak_c=0.022",
+			"grounded": 4,
+			"kind": "FIRST_CONTACT",
+			"piece": "jump_small",
+			"t": 5.31666666666665
+		},
+		{
+			"extra": "peak_c=0.000 peak_f=15451",
+			"grounded": 2,
+			"kind": "NO_VALID_CONTACT",
+			"piece": "landing_straight_long",
+			"t": 7.43333333333331
+		}
+	],
+	"fail_logged": true,
+	"final_piece": "landing_straight_long",
+	"first_contact": true,
+	"first_contact_wheel_count": 4,
+	"has_landing_straight_long": true,
+	"iteration": 5,
+	"landing_before_curves": true,
+	"route": [
+		"start",
+		"straight_medium",
+		"boost_straight",
+		"straight_medium",
+		"ramp_small",
+		"jump_small",
+		"landing_straight_long",
+		"straight_medium",
+		"curve_l_45",
+		"curve_r_45",
+		"finish"
+	],
+	"settled": false,
+	"time_to_2_contacts": 5.31666666666665,
+	"time_to_4_contacts": 5.31666666666665,
+	"valid_landing": false,
+	"valid_takeoff": true
+}

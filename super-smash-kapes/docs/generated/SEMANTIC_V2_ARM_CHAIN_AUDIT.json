@@ -1,0 +1,1114 @@
+{
+  "terere": {
+    "character": "terere",
+    "root_cause_fixed": "canonical_standing_was_keyed_after_empty_action_reset_to_rest",
+    "standing_applied_before_idle_deltas": true,
+    "twist_helper_bones_keyed": false,
+    "arm_chain_keyed": [
+      "CC_Base_L_Clavicle",
+      "CC_Base_R_Clavicle",
+      "CC_Base_L_Upperarm",
+      "CC_Base_R_Upperarm",
+      "CC_Base_L_Forearm",
+      "CC_Base_R_Forearm",
+      "CC_Base_L_Hand",
+      "CC_Base_R_Hand"
+    ],
+    "standing_ops": {
+      "CC_Base_L_Clavicle": {
+        "primary": 8.0,
+        "secondary": 5.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Clavicle": {
+        "primary": 8.0,
+        "secondary": 5.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Upperarm": {
+        "primary": 62.0,
+        "secondary": 14.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Upperarm": {
+        "primary": 62.0,
+        "secondary": 14.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Forearm": {
+        "primary": 12.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Forearm": {
+        "primary": 12.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      }
+    },
+    "rest": {
+      "label": "REST",
+      "quality": {
+        "L_upperarm_from_down_deg": 87.303,
+        "R_upperarm_from_down_deg": 87.303,
+        "mean_upperarm_from_down_deg": 87.303,
+        "L_hand_from_down_deg": 89.835,
+        "R_hand_from_down_deg": 89.581,
+        "mean_hand_from_down_deg": 89.708,
+        "L_elbow_flexion_deg": 3.372,
+        "R_elbow_flexion_deg": 3.373,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "L_knee_flexion_deg": 19.758,
+        "R_knee_flexion_deg": 19.758,
+        "torso_lean_deg": 14.336,
+        "head_lean_deg": 7.949,
+        "arms_lowered_from_tpose": false
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 112.659,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 112.659,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 87.303,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 87.303,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 90.666,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 90.666,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 89.835,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 89.581,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "canonical_standing": {
+      "label": "CANONICAL_STANDING",
+      "quality": {
+        "L_upperarm_from_down_deg": 17.225,
+        "R_upperarm_from_down_deg": 17.224,
+        "mean_upperarm_from_down_deg": 17.224,
+        "L_hand_from_down_deg": 20.22,
+        "R_hand_from_down_deg": 14.142,
+        "mean_hand_from_down_deg": 17.181,
+        "L_elbow_flexion_deg": 12.646,
+        "R_elbow_flexion_deg": 12.634,
+        "L_thigh_from_down_deg": 22.663,
+        "R_thigh_from_down_deg": 22.662,
+        "L_knee_flexion_deg": 19.758,
+        "R_knee_flexion_deg": 19.758,
+        "torso_lean_deg": 14.336,
+        "head_lean_deg": 7.949,
+        "arms_lowered_from_tpose": true
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0435,
+            -0.003,
+            -0.0697,
+            0.9966
+          ],
+          "quat_angle_deg": 9.432,
+          "from_down_deg": 103.903,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0435,
+            0.003,
+            0.0697,
+            0.9966
+          ],
+          "quat_angle_deg": 9.432,
+          "from_down_deg": 103.903,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1045,
+            -0.0628,
+            -0.5112,
+            0.8508
+          ],
+          "quat_angle_deg": 63.407,
+          "from_down_deg": 17.225,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1045,
+            0.0628,
+            0.5112,
+            0.8508
+          ],
+          "quat_angle_deg": 63.407,
+          "from_down_deg": 17.224,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1045,
+            -0.0,
+            -0.0,
+            0.9945
+          ],
+          "quat_angle_deg": 12.0,
+          "from_down_deg": 20.371,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1045,
+            -0.0,
+            -0.0,
+            0.9945
+          ],
+          "quat_angle_deg": 12.0,
+          "from_down_deg": 20.33,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0927,
+            0.1258,
+            -0.0411,
+            0.9869
+          ],
+          "quat_angle_deg": 18.598,
+          "from_down_deg": 20.22,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.0411,
+            -0.1258,
+            0.0927,
+            0.9869
+          ],
+          "quat_angle_deg": 18.598,
+          "from_down_deg": 14.142,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "idle_mid": {
+      "label": "IDLE_MID",
+      "quality": {
+        "L_upperarm_from_down_deg": 17.786,
+        "R_upperarm_from_down_deg": 18.118,
+        "mean_upperarm_from_down_deg": 17.952,
+        "L_hand_from_down_deg": 21.314,
+        "R_hand_from_down_deg": 14.477,
+        "mean_hand_from_down_deg": 17.895,
+        "L_elbow_flexion_deg": 13.212,
+        "R_elbow_flexion_deg": 11.937,
+        "L_thigh_from_down_deg": 22.283,
+        "R_thigh_from_down_deg": 22.283,
+        "L_knee_flexion_deg": 19.666,
+        "R_knee_flexion_deg": 19.666,
+        "torso_lean_deg": 14.891,
+        "head_lean_deg": 8.296,
+        "arms_lowered_from_tpose": true
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0435,
+            -0.003,
+            -0.0697,
+            0.9966
+          ],
+          "quat_angle_deg": 9.432,
+          "from_down_deg": 103.927,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0435,
+            0.003,
+            0.0697,
+            0.9966
+          ],
+          "quat_angle_deg": 9.432,
+          "from_down_deg": 103.927,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1049,
+            -0.0621,
+            -0.5055,
+            0.8542
+          ],
+          "quat_angle_deg": 62.667,
+          "from_down_deg": 17.786,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1051,
+            0.0617,
+            0.5029,
+            0.8557
+          ],
+          "quat_angle_deg": 62.319,
+          "from_down_deg": 18.118,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1096,
+            -0.0,
+            -0.0,
+            0.994
+          ],
+          "quat_angle_deg": 12.587,
+          "from_down_deg": 21.321,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.0982,
+            -0.0,
+            -0.0,
+            0.9952
+          ],
+          "quat_angle_deg": 11.275,
+          "from_down_deg": 21.251,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0927,
+            0.1258,
+            -0.0411,
+            0.9869
+          ],
+          "quat_angle_deg": 18.598,
+          "from_down_deg": 21.314,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.0411,
+            -0.1258,
+            0.0927,
+            0.9869
+          ],
+          "quat_angle_deg": 18.598,
+          "from_down_deg": 14.477,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "jaguarete": {
+    "character": "jaguarete",
+    "root_cause_fixed": "canonical_standing_was_keyed_after_empty_action_reset_to_rest",
+    "standing_applied_before_idle_deltas": true,
+    "twist_helper_bones_keyed": false,
+    "arm_chain_keyed": [
+      "CC_Base_L_Clavicle",
+      "CC_Base_R_Clavicle",
+      "CC_Base_L_Upperarm",
+      "CC_Base_R_Upperarm",
+      "CC_Base_L_Forearm",
+      "CC_Base_R_Forearm",
+      "CC_Base_L_Hand",
+      "CC_Base_R_Hand"
+    ],
+    "standing_ops": {
+      "CC_Base_L_Clavicle": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Clavicle": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Upperarm": {
+        "primary": 55.0,
+        "secondary": 18.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Upperarm": {
+        "primary": 55.0,
+        "secondary": 18.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Forearm": {
+        "primary": 16.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_R_Forearm": {
+        "primary": 16.0,
+        "secondary": 0.0,
+        "palm": 0.0
+      },
+      "CC_Base_L_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      }
+    },
+    "rest": {
+      "label": "REST",
+      "quality": {
+        "L_upperarm_from_down_deg": 82.071,
+        "R_upperarm_from_down_deg": 82.071,
+        "mean_upperarm_from_down_deg": 82.071,
+        "L_hand_from_down_deg": 85.485,
+        "R_hand_from_down_deg": 84.692,
+        "mean_hand_from_down_deg": 85.088,
+        "L_elbow_flexion_deg": 10.645,
+        "R_elbow_flexion_deg": 10.645,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "L_knee_flexion_deg": 7.467,
+        "R_knee_flexion_deg": 7.41,
+        "torso_lean_deg": 0.34,
+        "head_lean_deg": 7.902,
+        "arms_lowered_from_tpose": false
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 80.472,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 80.472,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 82.071,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 82.071,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 92.611,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 92.611,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 85.485,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "quat_angle_deg": 0.0,
+          "from_down_deg": 84.692,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "canonical_standing": {
+      "label": "CANONICAL_STANDING",
+      "quality": {
+        "L_upperarm_from_down_deg": 27.403,
+        "R_upperarm_from_down_deg": 27.403,
+        "mean_upperarm_from_down_deg": 27.403,
+        "L_hand_from_down_deg": 18.615,
+        "R_hand_from_down_deg": 36.189,
+        "mean_hand_from_down_deg": 27.402,
+        "L_elbow_flexion_deg": 18.296,
+        "R_elbow_flexion_deg": 17.529,
+        "L_thigh_from_down_deg": 9.832,
+        "R_thigh_from_down_deg": 9.883,
+        "L_knee_flexion_deg": 7.467,
+        "R_knee_flexion_deg": 7.41,
+        "torso_lean_deg": 0.34,
+        "head_lean_deg": 7.902,
+        "arms_lowered_from_tpose": true
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0521,
+            -0.0046,
+            -0.087,
+            0.9948
+          ],
+          "quat_angle_deg": 11.658,
+          "from_down_deg": 70.541,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0521,
+            0.0046,
+            0.087,
+            0.9948
+          ],
+          "quat_angle_deg": 11.658,
+          "from_down_deg": 70.541,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1388,
+            -0.0722,
+            -0.4561,
+            0.8761
+          ],
+          "quat_angle_deg": 57.651,
+          "from_down_deg": 27.403,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1388,
+            0.0722,
+            0.4561,
+            0.8761
+          ],
+          "quat_angle_deg": 57.651,
+          "from_down_deg": 27.403,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1392,
+            -0.0,
+            -0.0,
+            0.9903
+          ],
+          "quat_angle_deg": 16.0,
+          "from_down_deg": 29.105,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1392,
+            -0.0,
+            -0.0,
+            0.9903
+          ],
+          "quat_angle_deg": 16.0,
+          "from_down_deg": 27.867,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1129,
+            0.1453,
+            -0.0542,
+            0.9814
+          ],
+          "quat_angle_deg": 22.118,
+          "from_down_deg": 18.615,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.0832,
+            0.1309,
+            0.0936,
+            0.9835
+          ],
+          "quat_angle_deg": 20.871,
+          "from_down_deg": 36.189,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "idle_mid": {
+      "label": "IDLE_MID",
+      "quality": {
+        "L_upperarm_from_down_deg": 27.591,
+        "R_upperarm_from_down_deg": 27.824,
+        "mean_upperarm_from_down_deg": 27.708,
+        "L_hand_from_down_deg": 19.721,
+        "R_hand_from_down_deg": 35.856,
+        "mean_hand_from_down_deg": 27.788,
+        "L_elbow_flexion_deg": 18.775,
+        "R_elbow_flexion_deg": 16.957,
+        "L_thigh_from_down_deg": 9.484,
+        "R_thigh_from_down_deg": 9.518,
+        "L_knee_flexion_deg": 9.03,
+        "R_knee_flexion_deg": 9.054,
+        "torso_lean_deg": 0.162,
+        "head_lean_deg": 8.196,
+        "arms_lowered_from_tpose": true
+      },
+      "bones": {
+        "CC_Base_L_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0521,
+            -0.0046,
+            -0.087,
+            0.9948
+          ],
+          "quat_angle_deg": 11.658,
+          "from_down_deg": 70.564,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.0521,
+            0.0046,
+            0.087,
+            0.9948
+          ],
+          "quat_angle_deg": 11.658,
+          "from_down_deg": 70.564,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1392,
+            -0.0713,
+            -0.4502,
+            0.8791
+          ],
+          "quat_angle_deg": 56.932,
+          "from_down_deg": 27.591,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1395,
+            0.0709,
+            0.4475,
+            0.8805
+          ],
+          "quat_angle_deg": 56.594,
+          "from_down_deg": 27.824,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1442,
+            -0.0,
+            -0.0,
+            0.9895
+          ],
+          "quat_angle_deg": 16.587,
+          "from_down_deg": 29.62,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.1329,
+            -0.0,
+            -0.0,
+            0.9911
+          ],
+          "quat_angle_deg": 15.275,
+          "from_down_deg": 29.072,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            0.1129,
+            0.1453,
+            -0.0542,
+            0.9814
+          ],
+          "quat_angle_deg": 22.118,
+          "from_down_deg": 19.721,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "present": true,
+          "keyed_candidate": true,
+          "rotation_mode": "QUATERNION",
+          "quat": [
+            -0.0832,
+            0.1309,
+            0.0936,
+            0.9835
+          ],
+          "quat_angle_deg": 20.871,
+          "from_down_deg": 35.856,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

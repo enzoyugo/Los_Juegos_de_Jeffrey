@@ -1,0 +1,13 @@
+case	status	create_resource	exit	first_error	log
+A	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_A.log
+B	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_B.log
+C	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_C.log
+D	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_D.log
+E	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_E.log
+F	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_F.log
+G	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_G.log
+H	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_H.log
+I	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_I.log
+J	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_J.log
+K	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_K.log
+L	PASS	False	0		docs/generated/STABILITY_forward_plus_d3d12_L.log

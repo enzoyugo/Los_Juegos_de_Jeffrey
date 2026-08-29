@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://track4wheelextendedphysicslabv1"]
+
+[ext_resource type="Script" path="res://scripts/track/track_4wheel_extended_physics_lab.gd" id="1"]
+
+[node name="Track4WheelExtendedPhysicsLab" type="Node3D"]
+script = ExtResource("1")

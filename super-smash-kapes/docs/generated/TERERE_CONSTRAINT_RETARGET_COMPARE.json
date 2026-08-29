@@ -1,0 +1,678 @@
+{
+  "mixamo_basis": [
+    {
+      "frame": 1,
+      "bones": [
+        {
+          "bone": "mixamorig5:Hips",
+          "basis_deg": 51.316,
+          "location": [
+            -3.2657,
+            -17.6431,
+            0.9123
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine",
+          "basis_deg": 6.257,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine1",
+          "basis_deg": 11.887,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine2",
+          "basis_deg": 11.887,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Neck",
+          "basis_deg": 6.376,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Head",
+          "basis_deg": 6.376,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftShoulder",
+          "basis_deg": 7.348,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftArm",
+          "basis_deg": 61.478,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftForeArm",
+          "basis_deg": 80.598,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftHand",
+          "basis_deg": 25.328,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightShoulder",
+          "basis_deg": 6.207,
+          "location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightArm",
+          "basis_deg": 69.763,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightForeArm",
+          "basis_deg": 100.357,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightHand",
+          "basis_deg": 22.31,
+          "location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftUpLeg",
+          "basis_deg": 65.108,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftLeg",
+          "basis_deg": 49.412,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftFoot",
+          "basis_deg": 32.162,
+          "location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftToeBase",
+          "basis_deg": 0.0,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightUpLeg",
+          "basis_deg": 44.652,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightLeg",
+          "basis_deg": 50.463,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightFoot",
+          "basis_deg": 34.559,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightToeBase",
+          "basis_deg": 0.0,
+          "location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 55,
+      "bones": [
+        {
+          "bone": "mixamorig5:Hips",
+          "basis_deg": 51.38,
+          "location": [
+            -2.2987,
+            -20.2212,
+            -1.2583
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine",
+          "basis_deg": 7.11,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine1",
+          "basis_deg": 13.403,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Spine2",
+          "basis_deg": 13.403,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Neck",
+          "basis_deg": 7.462,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:Head",
+          "basis_deg": 7.462,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftShoulder",
+          "basis_deg": 5.652,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftArm",
+          "basis_deg": 66.624,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftForeArm",
+          "basis_deg": 81.902,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftHand",
+          "basis_deg": 25.571,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightShoulder",
+          "basis_deg": 1.04,
+          "location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightArm",
+          "basis_deg": 70.522,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightForeArm",
+          "basis_deg": 98.745,
+          "location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightHand",
+          "basis_deg": 21.068,
+          "location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftUpLeg",
+          "basis_deg": 67.52,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftLeg",
+          "basis_deg": 53.948,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftFoot",
+          "basis_deg": 34.698,
+          "location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:LeftToeBase",
+          "basis_deg": 0.0,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightUpLeg",
+          "basis_deg": 46.265,
+          "location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightLeg",
+          "basis_deg": 59.253,
+          "location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightFoot",
+          "basis_deg": 35.833,
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "bone": "mixamorig5:RightToeBase",
+          "basis_deg": 0.0,
+          "location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ],
+  "rest": {
+    "size": [
+      189.833,
+      75.601,
+      166.263
+    ],
+    "volume": 2386139.89,
+    "max_axis": 189.833
+  },
+  "copy_rotation_local_offset": {
+    "aabb": {
+      "size": [
+        265.68,
+        265.563,
+        280.934
+      ],
+      "volume": 19821194.72,
+      "max_axis": 280.934
+    },
+    "volume_ratio": 8.3068,
+    "max_ratio": 1.4799
+  },
+  "copy_rotation_world_replace": {
+    "aabb": {
+      "size": [
+        310.46,
+        330.28,
+        233.609
+      ],
+      "volume": 23953907.9,
+      "max_axis": 330.28
+    },
+    "volume_ratio": 10.0388,
+    "max_ratio": 1.7398
+  },
+  "copy_rotation_pose_offset": {
+    "aabb": {
+      "size": [
+        303.475,
+        267.892,
+        234.819
+      ],
+      "volume": 19090479.54,
+      "max_axis": 303.475
+    },
+    "volume_ratio": 8.0006,
+    "max_ratio": 1.5986
+  }
+}

@@ -1,0 +1,8 @@
+HUMAN_REVIEW_REQUIRED
+CANDIDATE shopping_del_sol_zombies_environment_v4_1_candidate
+NOT_CANONICAL
+MAIN_ENTRANCE_NIGHT_ARCH	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_034_EXTERIOR_FRONT_SPHERE_NIGHT/angle_000.png
+INTERIOR_WOOD_VAULT	assets/reference/shopping del sol/photos/references/shopping-del-sol.jpg
+INTERIOR_HALL_TILES	assets/reference/shopping del sol/streetview/INTERIOR/INTERIOR_STATION_032_INTERIOR_HALL_1/angle_000.png
+INTERIOR_ATRIUM	assets/reference/shopping del sol/streetview/INTERIOR/INTERIOR_STATION_035_INTERIOR_HALL_2/angle_000.png
+PARKING_APPROACH	assets/reference/shopping del sol/streetview/EXTERIOR/EXTERIOR_STATION_007_ENTRADA_PARKING_1/contact_sheet.jpg

@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/debug/jaguarete_idle_retarget_benchmark_v1_lab.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/fighters/processed/clean_rig_v1/jaguarete/jaguarete_clean_rig_v1.glb" id="2"]
+[ext_resource type="PackedScene" path="res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_traditional_v1.glb" id="3"]
+[ext_resource type="PackedScene" path="res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_semantic_clean_v1.glb" id="4"]
+
+[sub_resource type="Environment" id="Environment_idle"]
+background_mode = 1
+background_color = Color(0.13, 0.14, 0.17, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.62, 0.66, 1)
+ambient_light_energy = 0.7
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_floor"]
+albedo_color = Color(0.11, 0.13, 0.16, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_floor"]
+size = Vector2(18, 18)
+
+[node name="JaguareteIdleRetargetBenchmarkV1Lab" type="Node3D"]
+script = ExtResource("1")
+fighter_id = "jaguarete"
+pipeline_id = "CLEAN_RIG_IDLE_BENCHMARK_V1"
+target_height = 3.15
+rest_glb = "res://assets/fighters/processed/clean_rig_v1/jaguarete/jaguarete_clean_rig_v1.glb"
+traditional_glb = "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_traditional_v1.glb"
+semantic_glb = "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_semantic_clean_v1.glb"
+camera_height = 2.1
+camera_distance = 7.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_idle")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.819152, -0.40558, 0.40558, 0, 0.707107, 0.707107, -0.573577, -0.579228, 0.579228, 4, 10, 6)
+light_energy = 1.15
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 2.1, 7)
+current = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_floor")
+surface_material_override/0 = SubResource("StandardMaterial3D_floor")
+
+[node name="RestRoot" type="Node3D" parent="."]
+
+[node name="JaguareteCleanRest" parent="RestRoot" instance=ExtResource("2")]
+
+[node name="TraditionalRoot" type="Node3D" parent="."]
+visible = false
+
+[node name="JaguareteTraditionalIdle" parent="TraditionalRoot" instance=ExtResource("3")]
+
+[node name="SemanticRoot" type="Node3D" parent="."]
+visible = false
+
+[node name="JaguareteSemanticIdle" parent="SemanticRoot" instance=ExtResource("4")]

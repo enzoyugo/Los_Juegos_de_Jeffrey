@@ -1,0 +1,114 @@
+{
+  "classification_policy": {
+    "processed/terere": "PRODUCTION",
+    "processed/jaguarete": "PRODUCTION",
+    "processed/clean_rig_v1": "CLEAN_CANDIDATE",
+    "processed/actorcore_benchmark": "DEBUG_ONLY",
+    "processed/native_skin_audit": "DEBUG_ONLY",
+    "processed/solver_v1": "DEPRECATED_EXPERIMENT",
+    "processed/semantic_solver_v2": "DEPRECATED_EXPERIMENT",
+    "source_rigged": "SOURCE_ONLY",
+    "animations": "SOURCE_ONLY",
+    "models": "DEPRECATED_EXPERIMENT"
+  },
+  "directories": [
+    {
+      "path": "res://assets/fighters/animations",
+      "class": "SOURCE_ONLY",
+      "note": "top-level"
+    },
+    {
+      "path": "res://assets/fighters/models",
+      "class": "DEBUG_ONLY",
+      "note": "top-level"
+    },
+    {
+      "path": "res://assets/fighters/processed\\actorcore_benchmark",
+      "class": "DEBUG_ONLY",
+      "glb_or_fbx_count": 2,
+      "examples": [
+        "jaguarete_actorcore_idle.glb",
+        "terere_actorcore_idle.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\animation_library",
+      "class": "DEBUG_ONLY",
+      "glb_or_fbx_count": 0,
+      "examples": []
+    },
+    {
+      "path": "res://assets/fighters/processed\\clean_rig_v1",
+      "class": "CLEAN_CANDIDATE",
+      "glb_or_fbx_count": 2,
+      "examples": [
+        "jaguarete_clean_rig_v1.glb",
+        "terere_clean_rig_v1.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\jaguarete",
+      "class": "PRODUCTION",
+      "glb_or_fbx_count": 4,
+      "examples": [
+        "jaguarete_game_ready_idle.glb",
+        "jaguarete_game_ready_v3.glb",
+        "jaguarete_game_ready_v4.glb",
+        "jaguarete_game_ready_v4_idle_only.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\native_skin_audit",
+      "class": "DEBUG_ONLY",
+      "glb_or_fbx_count": 2,
+      "examples": [
+        "jaguarete_native_standing_test.glb",
+        "terere_native_standing_test.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\semantic_solver_v2",
+      "class": "DEPRECATED_EXPERIMENT",
+      "glb_or_fbx_count": 2,
+      "examples": [
+        "jaguarete_idle_semantic_v2.glb",
+        "terere_idle_semantic_v2.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\solver_v1",
+      "class": "DEPRECATED_EXPERIMENT",
+      "glb_or_fbx_count": 2,
+      "examples": [
+        "jaguarete_idle_solver_v1.glb",
+        "terere_idle_solver_v1.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/processed\\terere",
+      "class": "PRODUCTION",
+      "glb_or_fbx_count": 3,
+      "examples": [
+        "terere_game_ready_v3.glb",
+        "terere_game_ready_v4.glb",
+        "terere_game_ready_v4_idle_only.glb"
+      ]
+    },
+    {
+      "path": "res://assets/fighters/raw_design",
+      "class": "DEBUG_ONLY",
+      "note": "top-level"
+    },
+    {
+      "path": "res://assets/fighters/source_rigged",
+      "class": "SOURCE_ONLY",
+      "note": "top-level"
+    }
+  ],
+  "clean_texture_hashes": {
+    "terere_diffuse": "29aedd817e4fbf69d5c5b7a3f03b45055bd7e676f2e678fd577d73d2af6ce650",
+    "jaguarete_diffuse": "654179021409871a14420bdc74d7d39914741584ae3f1e7b4f324d87ea4139be",
+    "distinct": true
+  },
+  "recommendation": "Add .gdignore under assets/fighters/source_rigged and deprecated experiment folders so Godot stops importing FBX/.fbm. Do not mass-move files in this milestone."
+}

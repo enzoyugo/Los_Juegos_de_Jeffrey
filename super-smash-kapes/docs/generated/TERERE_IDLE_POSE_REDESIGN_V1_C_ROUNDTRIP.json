@@ -1,0 +1,455 @@
+{
+  "method": "canonical_static_roundtrip",
+  "frame_start": 0,
+  "frame_end": 1,
+  "max_volume_ratio": 0.5892,
+  "max_axis_ratio": 0.8776,
+  "max_limb_length_rel_error": 0.0,
+  "max_extreme_verts": 0,
+  "max_root_xz": 0.0,
+  "max_foot_drift": 0.0988,
+  "max_hand_drift": 0.44693,
+  "hip_z_variance": 0.0,
+  "pose_classification": "STANDING_IDLE",
+  "technical_pass": true,
+  "rest_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 112.659,
+      "world_head": [
+        0.21764,
+        0.05158,
+        0.801727
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 87.303,
+      "world_head": [
+        0.416378,
+        0.093318,
+        0.88007
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 90.666,
+      "world_head": [
+        0.57385,
+        0.087846,
+        0.873416
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 89.835,
+      "world_head": [
+        0.728522,
+        0.083189,
+        0.875964
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 112.659,
+      "world_head": [
+        -0.21764,
+        0.05158,
+        0.801726
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 87.303,
+      "world_head": [
+        -0.416378,
+        0.093318,
+        0.880071
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 90.666,
+      "world_head": [
+        -0.57385,
+        0.087846,
+        0.873416
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 89.581,
+      "world_head": [
+        -0.728522,
+        0.083189,
+        0.875964
+      ]
+    },
+    "L_elbow_flex_deg": 3.372,
+    "R_elbow_flex_deg": 3.373
+  },
+  "first_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756484
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.442731,
+        -0.163089,
+        0.800235
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "mid_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756484
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.442731,
+        -0.163089,
+        0.800235
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "last_arm": {
+    "CC_Base_L_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        0.217639,
+        0.014331,
+        0.808397
+      ]
+    },
+    "CC_Base_L_Upperarm": {
+      "from_down_deg": 34.737,
+      "world_head": [
+        0.419679,
+        0.039986,
+        0.885195
+      ]
+    },
+    "CC_Base_L_Forearm": {
+      "from_down_deg": 105.616,
+      "world_head": [
+        0.487033,
+        -0.021403,
+        0.756484
+      ]
+    },
+    "CC_Base_L_Hand": {
+      "from_down_deg": 84.581,
+      "world_head": [
+        0.442731,
+        -0.163089,
+        0.800235
+      ]
+    },
+    "CC_Base_R_Clavicle": {
+      "from_down_deg": 110.765,
+      "world_head": [
+        -0.217641,
+        0.01433,
+        0.808394
+      ]
+    },
+    "CC_Base_R_Upperarm": {
+      "from_down_deg": 24.782,
+      "world_head": [
+        -0.419683,
+        0.039984,
+        0.88519
+      ]
+    },
+    "CC_Base_R_Forearm": {
+      "from_down_deg": 56.534,
+      "world_head": [
+        -0.475014,
+        0.001711,
+        0.742553
+      ]
+    },
+    "CC_Base_R_Hand": {
+      "from_down_deg": 62.881,
+      "world_head": [
+        -0.346137,
+        0.008145,
+        0.657107
+      ]
+    },
+    "L_elbow_flex_deg": 89.804,
+    "R_elbow_flex_deg": 78.633
+  },
+  "principal_axis_ratios": {
+    "x": 0.5684,
+    "y": 1.0345,
+    "z": 1.002
+  },
+  "grounding": {
+    "l_foot_xz_span": 0.0,
+    "r_foot_xz_span": 0.0,
+    "visible_foot_slide": false
+  },
+  "samples": [
+    {
+      "frame": 0,
+      "volume_ratio": 0.5892,
+      "axis_ratio": 0.8776,
+      "limb_length_rel_error": 0.0,
+      "extreme_verts": 0,
+      "root_xz": 0.0,
+      "classification": "STANDING_IDLE",
+      "arm": {
+        "CC_Base_L_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            0.217639,
+            0.014331,
+            0.808397
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "from_down_deg": 34.737,
+          "world_head": [
+            0.419679,
+            0.039986,
+            0.885195
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "from_down_deg": 105.616,
+          "world_head": [
+            0.487033,
+            -0.021403,
+            0.756484
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "from_down_deg": 84.581,
+          "world_head": [
+            0.442731,
+            -0.163089,
+            0.800235
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            -0.217641,
+            0.01433,
+            0.808394
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "from_down_deg": 24.782,
+          "world_head": [
+            -0.419683,
+            0.039984,
+            0.88519
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "from_down_deg": 56.534,
+          "world_head": [
+            -0.475014,
+            0.001711,
+            0.742553
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "from_down_deg": 62.881,
+          "world_head": [
+            -0.346137,
+            0.008145,
+            0.657107
+          ]
+        },
+        "L_elbow_flex_deg": 89.804,
+        "R_elbow_flex_deg": 78.633
+      }
+    },
+    {
+      "frame": 1,
+      "volume_ratio": 0.5892,
+      "axis_ratio": 0.8776,
+      "limb_length_rel_error": 0.0,
+      "extreme_verts": 0,
+      "root_xz": 0.0,
+      "classification": "STANDING_IDLE",
+      "arm": {
+        "CC_Base_L_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            0.217639,
+            0.014331,
+            0.808397
+          ]
+        },
+        "CC_Base_L_Upperarm": {
+          "from_down_deg": 34.737,
+          "world_head": [
+            0.419679,
+            0.039986,
+            0.885195
+          ]
+        },
+        "CC_Base_L_Forearm": {
+          "from_down_deg": 105.616,
+          "world_head": [
+            0.487033,
+            -0.021403,
+            0.756484
+          ]
+        },
+        "CC_Base_L_Hand": {
+          "from_down_deg": 84.581,
+          "world_head": [
+            0.442731,
+            -0.163089,
+            0.800235
+          ]
+        },
+        "CC_Base_R_Clavicle": {
+          "from_down_deg": 110.765,
+          "world_head": [
+            -0.217641,
+            0.01433,
+            0.808394
+          ]
+        },
+        "CC_Base_R_Upperarm": {
+          "from_down_deg": 24.782,
+          "world_head": [
+            -0.419683,
+            0.039984,
+            0.88519
+          ]
+        },
+        "CC_Base_R_Forearm": {
+          "from_down_deg": 56.534,
+          "world_head": [
+            -0.475014,
+            0.001711,
+            0.742553
+          ]
+        },
+        "CC_Base_R_Hand": {
+          "from_down_deg": 62.881,
+          "world_head": [
+            -0.346137,
+            0.008145,
+            0.657107
+          ]
+        },
+        "L_elbow_flex_deg": 89.804,
+        "R_elbow_flex_deg": 78.633
+      }
+    }
+  ],
+  "bone_count": 101,
+  "ok": true
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_v9_capture"]
+
+[ext_resource type="Script" path="res://scripts/debug/capture_v9_visual_review.gd" id="1"]
+
+[node name="CaptureV9VisualReview" type="Node3D"]
+script = ExtResource("1")

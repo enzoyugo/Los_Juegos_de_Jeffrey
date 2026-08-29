@@ -1,0 +1,44 @@
+{
+  "piece_id": "gap_logical",
+  "family": "special",
+  "type": "gap",
+  "road_width": 15.0,
+  "shoulder_width": 0.9,
+  "guardrail_height": 0.9,
+  "centerline_length": 7.0,
+  "height_delta": -1.24,
+  "yaw_delta": 0.0,
+  "pitch_delta": 0.0,
+  "roll_delta": 0.0,
+  "left_guardrail": false,
+  "right_guardrail": false,
+  "estimated_traversal_time": 0.55,
+  "difficulty": "demente",
+  "tags": [
+    "gap"
+  ],
+  "entry": {
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.3141592653589793
+  },
+  "exit": {
+    "origin": [
+      0.0,
+      -1.24,
+      -7.0
+    ],
+    "yaw": 0.0,
+    "pitch": 0.0
+  },
+  "boost_strength": 0.0,
+  "has_gap": true,
+  "transition_profile": "",
+  "collision": [],
+  "glb": "track_gap_logical_v1.glb",
+  "kit": "kit_v8_15m"
+}

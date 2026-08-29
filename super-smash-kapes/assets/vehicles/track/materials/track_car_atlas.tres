@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="" load_steps=3 format=3 uid="uid://trackcaratlasauthv1"]
+
+[ext_resource type="Script" path="res://scripts/track/track_car_atlas_authority.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://c5cf5cw3ckr6g" path="res://assets/vehicles/track/source/track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg" id="2_atlas"]
+
+[resource]
+script = ExtResource("1_script")
+texture = ExtResource("2_atlas")

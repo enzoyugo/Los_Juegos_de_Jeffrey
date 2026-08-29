@@ -1,0 +1,26 @@
+{
+  "authority": "FROZEN_SEMANTIC_REACTION_V1",
+  "immutable": true,
+  "do_not_rebake": true,
+  "note": "Human-approved technically healthy baseline. V1.1 overlays torso/hip/head only.",
+  "fighters": {
+    "terere": {
+      "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_reaction_v1\\terere\\terere_semantic_reaction_v1.glb",
+      "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_reaction_v1\\terere\\terere_semantic_reaction_v1.blend",
+      "glb_sha256": "cbc7397f3e5ab48c9d8a3f02e249f228aa9cf3125d72bc9db39ff88157f0deaf",
+      "animation_name": "reaction",
+      "peak_torso_dev": 1.104,
+      "peak_upperarm_dev": 12.588,
+      "max_upperarm_from_down": 36.294
+    },
+    "jaguarete": {
+      "glb": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_reaction_v1\\jaguarete\\jaguarete_semantic_reaction_v1.glb",
+      "blend": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\semantic_reaction_v1\\jaguarete\\jaguarete_semantic_reaction_v1.blend",
+      "glb_sha256": "782028a8c484ee32648c3d2b30bff45e6161871ad087a6a83f3efd21936a5dd1",
+      "animation_name": "reaction",
+      "peak_torso_dev": 1.202,
+      "peak_upperarm_dev": 19.417,
+      "max_upperarm_from_down": 38.867
+    }
+  }
+}

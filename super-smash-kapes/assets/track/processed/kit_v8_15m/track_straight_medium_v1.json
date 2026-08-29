@@ -1,0 +1,85 @@
+{
+  "piece_id": "straight_medium",
+  "family": "core",
+  "type": "straight",
+  "road_width": 15.0,
+  "shoulder_width": 0.9,
+  "guardrail_height": 0.9,
+  "centerline_length": 24.0,
+  "height_delta": 0.0,
+  "yaw_delta": 0.0,
+  "pitch_delta": 0.0,
+  "roll_delta": 0.0,
+  "left_guardrail": true,
+  "right_guardrail": true,
+  "estimated_traversal_time": 0.7,
+  "difficulty": "tranqui",
+  "tags": [
+    "straight"
+  ],
+  "entry": {
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0
+  },
+  "exit": {
+    "origin": [
+      0.0,
+      0.0,
+      -24.0
+    ],
+    "yaw": 0.0
+  },
+  "collision": [
+    {
+      "kind": "road",
+      "origin": [
+        0.0,
+        -0.1,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "size": [
+        16.8,
+        0.24,
+        24.32
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        -8.51,
+        0.45,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        24.14
+      ]
+    },
+    {
+      "kind": "rail",
+      "origin": [
+        8.51,
+        0.45,
+        -12.0
+      ],
+      "yaw": 0.0,
+      "pitch": 0.0,
+      "size": [
+        0.22,
+        0.9,
+        24.14
+      ]
+    }
+  ],
+  "glb": "track_straight_medium_v1.glb",
+  "kit": "kit_v8_15m",
+  "v9_overlap": 0.18
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_d3d12_repeat_launch_v1"]
+
+[ext_resource type="Script" path="res://scripts/debug/d3d12_repeat_launch_harness.gd" id="1"]
+
+[node name="D3D12RepeatLaunchLab" type="Node"]
+script = ExtResource("1")

@@ -1,0 +1,18 @@
+[
+  {
+    "mesh": "model",
+    "vertices": 50382,
+    "weighted_vertices": 50382,
+    "unweighted_vertices": 0,
+    "unweighted_ratio": 0.0,
+    "max_influences": 6,
+    "average_influences": 3.0831,
+    "vertices_over_4_influences": 7583,
+    "over_4_ratio": 0.15051,
+    "max_total_weight_deviation_from_1": 2.1e-05,
+    "vertices_weight_sum_error": 0,
+    "deform_bones_in_armature": 101,
+    "suspicious_influence_samples": [],
+    "suspicious_count": 0
+  }
+]

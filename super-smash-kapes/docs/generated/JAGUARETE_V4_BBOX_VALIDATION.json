@@ -1,0 +1,18 @@
+{
+  "character": "jaguarete",
+  "rest_size": [
+    186.7794,
+    104.2183,
+    173.1413
+  ],
+  "idle_mid_size": [
+    202.7607,
+    99.9595,
+    168.5686
+  ],
+  "volume_ratio": 1.0137,
+  "max_axis_ratio": 1.0856,
+  "pass": true,
+  "vertices_over_4_before": 10797,
+  "vertices_over_4_after": 0
+}

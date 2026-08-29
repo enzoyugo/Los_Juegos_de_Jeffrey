@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://trackmarkerv1"]
+
+[resource]
+resource_name = "track_marker_v1"
+albedo_color = Color(0.93, 0.86, 0.18, 1)
+metallic = 0.0
+roughness = 0.55

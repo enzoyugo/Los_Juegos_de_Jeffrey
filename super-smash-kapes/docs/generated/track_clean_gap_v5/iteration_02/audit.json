@@ -1,0 +1,87 @@
+{
+	"PASS": false,
+	"body_precontact": true,
+	"first_contact_piece": "landing_straight_long",
+	"gap_empty": true,
+	"iteration": 2,
+	"layout": "v5",
+	"result": "FAIL_BODY_CONTACT_BEFORE_WHEEL",
+	"runs": [
+		{
+			"first_contact": {
+				"boost_active": false,
+				"chassis_pitch": 11.4687046778309,
+				"chassis_roll": -30.0693101794288,
+				"distance_from_landing_deck_start": 35.6599197387695,
+				"grounded": 1,
+				"hit_ids": {
+					"landing_straight_long": 1
+				},
+				"landing_piece": "landing_straight_long",
+				"landing_vy": 0.423769026994705,
+				"piece": "landing_straight_long",
+				"pitch_deg": 11.4687046778309,
+				"pos": [
+					-6.19036293029785,
+					1.7369213104248,
+					-123.859916687012
+				],
+				"roll_deg": -30.0693101794288,
+				"speed": 9.38329124450684,
+				"t": 5.99999999999998,
+				"throttle": 0.0,
+				"vy": 0.423769026994705,
+				"wheel_count": 1
+			},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 0.0,
+					"tire": 0.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": true,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0
+			},
+			"result": "FAIL_BODY_CONTACT_BEFORE_WHEEL",
+			"run": 1,
+			"takeoff": {
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"grounded": 0,
+				"piece": "gap_logical",
+				"pitch_deg": 13.2156553316559,
+				"pos": [
+					-2.0704939365387,
+					2.86580610275269,
+					-83.7070922851563
+				],
+				"roll_deg": 2.12926857162575,
+				"speed": 27.7323551177979,
+				"t": 4.18333333333332,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vy": 7.63824987411499
+			}
+		}
+	],
+	"settle_on_landing_straight_long": false,
+	"v4_expected_fail": false,
+	"valid_takeoff": true
+}

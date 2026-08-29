@@ -1,0 +1,9 @@
+{
+  "iteration": 2,
+  "verdict": "FAIL",
+  "reason": "stationary PASS; jump first contact on long deck with real compression, then bounce/left miss before SETTLED",
+  "stationary_overall_rest_pass": true,
+  "jump_pass": false,
+  "v3_untouched": true,
+  "atlas": { "loaded": true, "size": "4096x4096", "unique": 1, "fallback": false }
+}

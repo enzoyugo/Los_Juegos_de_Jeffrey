@@ -1,0 +1,5969 @@
+{
+  "sequence": [
+    "start",
+    "straight_medium",
+    "boost_straight",
+    "straight_medium",
+    "ramp_takeoff",
+    "gap_logical",
+    "landing_straight_long",
+    "straight_medium",
+    "curve_l_45",
+    "curve_r_45",
+    "finish"
+  ],
+  "pieces": [
+    {
+      "piece_id": "start",
+      "centerline_length": 8.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -8.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "start_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -4.0
+          ],
+          "origin_world": [
+            0.0,
+            -0.06,
+            -4.0
+          ],
+          "size": [
+            12.4,
+            0.12,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.12,
+              -8.02
+            ],
+            "max": [
+              6.2,
+              0.0,
+              0.02
+            ]
+          },
+          "top_height_world": 0.0,
+          "center_world": [
+            0.0,
+            -0.06,
+            -4.0
+          ]
+        },
+        {
+          "id": "start_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -4.0
+          ],
+          "origin_world": [
+            -6.31,
+            0.45,
+            -4.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.0,
+              -8.02
+            ],
+            "max": [
+              -6.2,
+              0.9,
+              0.02
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            -6.31,
+            0.45,
+            -4.0
+          ]
+        },
+        {
+          "id": "start_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -4.0
+          ],
+          "origin_world": [
+            6.31,
+            0.45,
+            -4.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.0,
+              -8.02
+            ],
+            "max": [
+              6.42,
+              0.9,
+              0.02
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            6.31,
+            0.45,
+            -4.0
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "straight_medium",
+      "centerline_length": 24.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -8.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -32.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.0,
+          -8.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "straight_medium_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -12.0
+          ],
+          "origin_world": [
+            0.0,
+            -0.06,
+            -20.0
+          ],
+          "size": [
+            12.4,
+            0.12,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.12,
+              -32.02
+            ],
+            "max": [
+              6.2,
+              0.0,
+              -7.98
+            ]
+          },
+          "top_height_world": 0.0,
+          "center_world": [
+            0.0,
+            -0.06,
+            -20.0
+          ]
+        },
+        {
+          "id": "straight_medium_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            -6.31,
+            0.45,
+            -20.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.0,
+              -32.02
+            ],
+            "max": [
+              -6.2,
+              0.9,
+              -7.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            -6.31,
+            0.45,
+            -20.0
+          ]
+        },
+        {
+          "id": "straight_medium_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            6.31,
+            0.45,
+            -20.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.0,
+              -32.02
+            ],
+            "max": [
+              6.42,
+              0.9,
+              -7.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            6.31,
+            0.45,
+            -20.0
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "boost_straight",
+      "centerline_length": 12.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -32.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -44.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.0,
+          -32.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "boost_straight_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -6.0
+          ],
+          "origin_world": [
+            0.0,
+            -0.06,
+            -38.0
+          ],
+          "size": [
+            12.4,
+            0.12,
+            12.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.12,
+              -44.02
+            ],
+            "max": [
+              6.2,
+              0.0,
+              -31.98
+            ]
+          },
+          "top_height_world": 0.0,
+          "center_world": [
+            0.0,
+            -0.06,
+            -38.0
+          ]
+        },
+        {
+          "id": "boost_straight_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -6.0
+          ],
+          "origin_world": [
+            -6.31,
+            0.45,
+            -38.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            12.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.0,
+              -44.02
+            ],
+            "max": [
+              -6.2,
+              0.9,
+              -31.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            -6.31,
+            0.45,
+            -38.0
+          ]
+        },
+        {
+          "id": "boost_straight_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -6.0
+          ],
+          "origin_world": [
+            6.31,
+            0.45,
+            -38.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            12.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.0,
+              -44.02
+            ],
+            "max": [
+              6.42,
+              0.9,
+              -31.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            6.31,
+            0.45,
+            -38.0
+          ]
+        }
+      ],
+      "semantics": {
+        "BOOST_ENTRY": {
+          "world": [
+            0.0,
+            0.0,
+            -32.0
+          ]
+        },
+        "BOOST_EXIT": {
+          "world": [
+            0.0,
+            0.0,
+            -44.0
+          ]
+        },
+        "BOOST_MID": {
+          "world": [
+            0.0,
+            0.0,
+            -38.0
+          ]
+        }
+      }
+    },
+    {
+      "piece_id": "straight_medium",
+      "centerline_length": 24.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -44.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -68.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.0,
+          -44.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "straight_medium_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -12.0
+          ],
+          "origin_world": [
+            0.0,
+            -0.06,
+            -56.0
+          ],
+          "size": [
+            12.4,
+            0.12,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.12,
+              -68.02
+            ],
+            "max": [
+              6.2,
+              0.0,
+              -43.98
+            ]
+          },
+          "top_height_world": 0.0,
+          "center_world": [
+            0.0,
+            -0.06,
+            -56.0
+          ]
+        },
+        {
+          "id": "straight_medium_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            -6.31,
+            0.45,
+            -56.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.0,
+              -68.02
+            ],
+            "max": [
+              -6.2,
+              0.9,
+              -43.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            -6.31,
+            0.45,
+            -56.0
+          ]
+        },
+        {
+          "id": "straight_medium_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            6.31,
+            0.45,
+            -56.0
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.0,
+              -68.02
+            ],
+            "max": [
+              6.42,
+              0.9,
+              -43.98
+            ]
+          },
+          "top_height_world": 0.9,
+          "center_world": [
+            6.31,
+            0.45,
+            -56.0
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "ramp_takeoff",
+      "centerline_length": 13.2,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.0,
+          -68.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          2.189904,
+          -81.2
+        ],
+        "pitch_deg": 18.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.0,
+          -68.0
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 18.0,
+      "collision": [
+        {
+          "id": "ramp_takeoff_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.054319,
+            -0.734267
+          ],
+          "origin_world": [
+            0.0,
+            -0.054319,
+            -68.734267
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 0.8918,
+          "along_local": 0.7343,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.126,
+              -69.4884
+            ],
+            "max": [
+              6.2,
+              0.0174,
+              -67.9801
+            ]
+          },
+          "top_height_world": 0.0174,
+          "center_world": [
+            0.0,
+            -0.054319,
+            -68.734267
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.455619,
+            -0.726329
+          ],
+          "origin_world": [
+            -6.31,
+            0.455619,
+            -68.726329
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 0.8918,
+          "along_local": 0.7263,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              -0.0061,
+              -69.4866
+            ],
+            "max": [
+              -6.2,
+              0.9173,
+              -67.9661
+            ]
+          },
+          "top_height_world": 0.9173,
+          "center_world": [
+            -6.31,
+            0.455619,
+            -68.726329
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.455619,
+            -0.726329
+          ],
+          "origin_world": [
+            6.31,
+            0.455619,
+            -68.726329
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 0.8918,
+          "along_local": 0.7263,
+          "aabb_world": {
+            "min": [
+              6.2,
+              -0.0061,
+              -69.4866
+            ],
+            "max": [
+              6.42,
+              0.9173,
+              -67.9661
+            ]
+          },
+          "top_height_world": 0.9173,
+          "center_world": [
+            6.31,
+            0.455619,
+            -68.726329
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_3",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.007638,
+            -2.202899
+          ],
+          "origin_world": [
+            0.0,
+            -0.007638,
+            -70.202899
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 2.7696,
+          "along_local": 2.2029,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.104,
+              -70.9583
+            ],
+            "max": [
+              6.2,
+              0.0887,
+              -69.4475
+            ]
+          },
+          "top_height_world": 0.0887,
+          "center_world": [
+            0.0,
+            -0.007638,
+            -70.202899
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_4",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.501766,
+            -2.178256
+          ],
+          "origin_world": [
+            -6.31,
+            0.501766,
+            -70.178256
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 2.7696,
+          "along_local": 2.1783,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.0159,
+              -70.9525
+            ],
+            "max": [
+              -6.2,
+              0.9876,
+              -69.4041
+            ]
+          },
+          "top_height_world": 0.9876,
+          "center_world": [
+            -6.31,
+            0.501766,
+            -70.178256
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_5",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.501766,
+            -2.178256
+          ],
+          "origin_world": [
+            6.31,
+            0.501766,
+            -70.178256
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 2.7696,
+          "along_local": 2.1783,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.0159,
+              -70.9525
+            ],
+            "max": [
+              6.42,
+              0.9876,
+              -69.4041
+            ]
+          },
+          "top_height_world": 0.9876,
+          "center_world": [
+            6.31,
+            0.501766,
+            -70.178256
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_6",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            0.088875,
+            -3.671654
+          ],
+          "origin_world": [
+            0.0,
+            0.088875,
+            -71.671654
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 4.7684,
+          "along_local": 3.6717,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              -0.0335,
+              -72.4274
+            ],
+            "max": [
+              6.2,
+              0.2113,
+              -70.9159
+            ]
+          },
+          "top_height_world": 0.2113,
+          "center_world": [
+            0.0,
+            0.088875,
+            -71.671654
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_7",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.59711,
+            -3.629259
+          ],
+          "origin_world": [
+            -6.31,
+            0.59711,
+            -71.629259
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 4.7684,
+          "along_local": 3.6293,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.086,
+              -72.4174
+            ],
+            "max": [
+              -6.2,
+              1.1082,
+              -70.8411
+            ]
+          },
+          "top_height_world": 1.1082,
+          "center_world": [
+            -6.31,
+            0.59711,
+            -71.629259
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_8",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.59711,
+            -3.629259
+          ],
+          "origin_world": [
+            6.31,
+            0.59711,
+            -71.629259
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 4.7684,
+          "along_local": 3.6293,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.086,
+              -72.4174
+            ],
+            "max": [
+              6.42,
+              1.1082,
+              -70.8411
+            ]
+          },
+          "top_height_world": 1.1082,
+          "center_world": [
+            6.31,
+            0.59711,
+            -71.629259
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_9",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            0.238508,
+            -5.140523
+          ],
+          "origin_world": [
+            0.0,
+            0.238508,
+            -73.140523
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 6.8819,
+          "along_local": 5.1405,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.0887,
+              -73.8956
+            ],
+            "max": [
+              6.2,
+              0.3883,
+              -72.3854
+            ]
+          },
+          "top_height_world": 0.3883,
+          "center_world": [
+            0.0,
+            0.238508,
+            -73.140523
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_10",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.744834,
+            -5.079413
+          ],
+          "origin_world": [
+            -6.31,
+            0.744834,
+            -73.079413
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 6.8819,
+          "along_local": 5.0794,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.2078,
+              -73.8812
+            ],
+            "max": [
+              -6.2,
+              1.2819,
+              -72.2776
+            ]
+          },
+          "top_height_world": 1.2819,
+          "center_world": [
+            -6.31,
+            0.744834,
+            -73.079413
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_11",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.744834,
+            -5.079413
+          ],
+          "origin_world": [
+            6.31,
+            0.744834,
+            -73.079413
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 6.8819,
+          "along_local": 5.0794,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.2078,
+              -73.8812
+            ],
+            "max": [
+              6.42,
+              1.2819,
+              -72.2776
+            ]
+          },
+          "top_height_world": 1.2819,
+          "center_world": [
+            6.31,
+            0.744834,
+            -73.079413
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_12",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            0.444549,
+            -6.609491
+          ],
+          "origin_world": [
+            0.0,
+            0.444549,
+            -74.609491
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 9.1016,
+          "along_local": 6.6095,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.2661,
+              -75.3628
+            ],
+            "max": [
+              6.2,
+              0.623,
+              -73.8562
+            ]
+          },
+          "top_height_world": 0.623,
+          "center_world": [
+            0.0,
+            0.444549,
+            -74.609491
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_13",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.948128,
+            -6.528816
+          ],
+          "origin_world": [
+            -6.31,
+            0.948128,
+            -74.528816
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 9.1016,
+          "along_local": 6.5288,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.3846,
+              -75.3438
+            ],
+            "max": [
+              -6.2,
+              1.5116,
+              -73.7138
+            ]
+          },
+          "top_height_world": 1.5116,
+          "center_world": [
+            -6.31,
+            0.948128,
+            -74.528816
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_14",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.948128,
+            -6.528816
+          ],
+          "origin_world": [
+            6.31,
+            0.948128,
+            -74.528816
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 9.1016,
+          "along_local": 6.5288,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.3846,
+              -75.3438
+            ],
+            "max": [
+              6.42,
+              1.5116,
+              -73.7138
+            ]
+          },
+          "top_height_world": 1.5116,
+          "center_world": [
+            6.31,
+            0.948128,
+            -74.528816
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_15",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            0.710284,
+            -8.078544
+          ],
+          "origin_world": [
+            0.0,
+            0.710284,
+            -76.078544
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 11.4171,
+          "along_local": 8.0785,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.5023,
+              -76.8288
+            ],
+            "max": [
+              6.2,
+              0.9182,
+              -75.3282
+            ]
+          },
+          "top_height_world": 0.9182,
+          "center_world": [
+            0.0,
+            0.710284,
+            -76.078544
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_16",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            1.210192,
+            -7.977589
+          ],
+          "origin_world": [
+            -6.31,
+            1.210192,
+            -75.977589
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 11.4171,
+          "along_local": 7.9776,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.62,
+              -76.8051
+            ],
+            "max": [
+              -6.2,
+              1.8004,
+              -75.1501
+            ]
+          },
+          "top_height_world": 1.8004,
+          "center_world": [
+            -6.31,
+            1.210192,
+            -75.977589
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_17",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            1.210192,
+            -7.977589
+          ],
+          "origin_world": [
+            6.31,
+            1.210192,
+            -75.977589
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 11.4171,
+          "along_local": 7.9776,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.62,
+              -76.8051
+            ],
+            "max": [
+              6.42,
+              1.8004,
+              -75.1501
+            ]
+          },
+          "top_height_world": 1.8004,
+          "center_world": [
+            6.31,
+            1.210192,
+            -75.977589
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_18",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            1.038996,
+            -9.547662
+          ],
+          "origin_world": [
+            0.0,
+            1.038996,
+            -77.547662
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 13.8161,
+          "along_local": 9.5477,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.8008,
+              -78.2935
+            ],
+            "max": [
+              6.2,
+              1.2772,
+              -76.8018
+            ]
+          },
+          "top_height_world": 1.2772,
+          "center_world": [
+            0.0,
+            1.038996,
+            -77.547662
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_19",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            1.53424,
+            -9.42587
+          ],
+          "origin_world": [
+            -6.31,
+            1.53424,
+            -77.42587
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 13.8161,
+          "along_local": 9.4259,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.9174,
+              -78.2649
+            ],
+            "max": [
+              -6.2,
+              2.1511,
+              -76.5869
+            ]
+          },
+          "top_height_world": 2.1511,
+          "center_world": [
+            -6.31,
+            1.53424,
+            -77.42587
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_20",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            1.53424,
+            -9.42587
+          ],
+          "origin_world": [
+            6.31,
+            1.53424,
+            -77.42587
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 13.8161,
+          "along_local": 9.4259,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.9174,
+              -78.2649
+            ],
+            "max": [
+              6.42,
+              2.1511,
+              -76.5869
+            ]
+          },
+          "top_height_world": 2.1511,
+          "center_world": [
+            6.31,
+            1.53424,
+            -77.42587
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_21",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            1.433968,
+            -11.016825
+          ],
+          "origin_world": [
+            0.0,
+            1.433968,
+            -79.016825
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 16.2848,
+          "along_local": 11.0168,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              1.1651,
+              -79.7568
+            ],
+            "max": [
+              6.2,
+              1.7028,
+              -78.2769
+            ]
+          },
+          "top_height_world": 1.7028,
+          "center_world": [
+            0.0,
+            1.433968,
+            -79.016825
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_22",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            1.923506,
+            -10.873815
+          ],
+          "origin_world": [
+            -6.31,
+            1.923506,
+            -78.873815
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 16.2848,
+          "along_local": 10.8738,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              1.2803,
+              -79.7231
+            ],
+            "max": [
+              -6.2,
+              2.5667,
+              -78.0245
+            ]
+          },
+          "top_height_world": 2.5667,
+          "center_world": [
+            -6.31,
+            1.923506,
+            -78.873815
+          ]
+        },
+        {
+          "id": "ramp_takeoff_rail_23",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            1.923506,
+            -10.873815
+          ],
+          "origin_world": [
+            6.31,
+            1.923506,
+            -78.873815
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5067
+          ],
+          "pitch_deg": 16.2848,
+          "along_local": 10.8738,
+          "aabb_world": {
+            "min": [
+              6.2,
+              1.2803,
+              -79.7231
+            ],
+            "max": [
+              6.42,
+              2.5667,
+              -78.0245
+            ]
+          },
+          "top_height_world": 2.5667,
+          "center_world": [
+            6.31,
+            1.923506,
+            -78.873815
+          ]
+        },
+        {
+          "id": "ramp_takeoff_road_24",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            1.894566,
+            -12.485208
+          ],
+          "origin_world": [
+            0.0,
+            1.894566,
+            -80.485208
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5067
+          ],
+          "pitch_deg": 18.0,
+          "along_local": 12.4852,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              1.6047,
+              -81.2202
+            ],
+            "max": [
+              6.2,
+              2.1844,
+              -79.7502
+            ]
+          },
+          "top_height_world": 2.1844,
+          "center_world": [
+            0.0,
+            1.894566,
+            -80.485208
+          ]
+        }
+      ],
+      "semantics": {
+        "RAMP_ENTRY": {
+          "world": [
+            0.0,
+            0.0,
+            -68.0
+          ]
+        },
+        "TAKEOFF_EDGE": {
+          "world": [
+            0.0,
+            2.189904,
+            -81.2
+          ],
+          "local": [
+            0.0,
+            2.189904,
+            -13.2
+          ]
+        },
+        "EXIT_IS_TAKEOFF_EDGE": true
+      }
+    },
+    {
+      "piece_id": "gap_logical",
+      "centerline_length": 7.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          2.189904,
+          -81.2
+        ],
+        "pitch_deg": 18.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -88.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          2.189904,
+          -81.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 18.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [],
+      "semantics": {
+        "GAP_START": {
+          "world": [
+            0.0,
+            2.189904,
+            -81.2
+          ]
+        },
+        "GAP_END": {
+          "world": [
+            0.0,
+            0.949904,
+            -88.2
+          ]
+        },
+        "gap_m": 7.0,
+        "road_collision_count": 0
+      }
+    },
+    {
+      "piece_id": "landing_straight_long",
+      "centerline_length": 36.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -88.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -124.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.949904,
+          -88.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "landing_straight_long_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -18.0
+          ],
+          "origin_world": [
+            0.0,
+            0.889904,
+            -106.2
+          ],
+          "size": [
+            12.4,
+            0.12,
+            36.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 18.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.8299,
+              -124.22
+            ],
+            "max": [
+              6.2,
+              0.9499,
+              -88.18
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            0.0,
+            0.889904,
+            -106.2
+          ]
+        },
+        {
+          "id": "landing_straight_long_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -18.0
+          ],
+          "origin_world": [
+            -6.31,
+            1.399904,
+            -106.2
+          ],
+          "size": [
+            0.22,
+            0.9,
+            36.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 18.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.9499,
+              -124.22
+            ],
+            "max": [
+              -6.2,
+              1.8499,
+              -88.18
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.31,
+            1.399904,
+            -106.2
+          ]
+        },
+        {
+          "id": "landing_straight_long_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -18.0
+          ],
+          "origin_world": [
+            6.31,
+            1.399904,
+            -106.2
+          ],
+          "size": [
+            0.22,
+            0.9,
+            36.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 18.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.9499,
+              -124.22
+            ],
+            "max": [
+              6.42,
+              1.8499,
+              -88.18
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            6.31,
+            1.399904,
+            -106.2
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "straight_medium",
+      "centerline_length": 24.0,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -124.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -148.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.949904,
+          -124.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "straight_medium_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -12.0
+          ],
+          "origin_world": [
+            0.0,
+            0.889904,
+            -136.2
+          ],
+          "size": [
+            12.4,
+            0.12,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.2,
+              0.8299,
+              -148.22
+            ],
+            "max": [
+              6.2,
+              0.9499,
+              -124.18
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            0.0,
+            0.889904,
+            -136.2
+          ]
+        },
+        {
+          "id": "straight_medium_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            -6.31,
+            1.399904,
+            -136.2
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              -6.42,
+              0.9499,
+              -148.22
+            ],
+            "max": [
+              -6.2,
+              1.8499,
+              -124.18
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.31,
+            1.399904,
+            -136.2
+          ]
+        },
+        {
+          "id": "straight_medium_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -12.0
+          ],
+          "origin_world": [
+            6.31,
+            1.399904,
+            -136.2
+          ],
+          "size": [
+            0.22,
+            0.9,
+            24.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.0,
+          "aabb_world": {
+            "min": [
+              6.2,
+              0.9499,
+              -148.22
+            ],
+            "max": [
+              6.42,
+              1.8499,
+              -124.18
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            6.31,
+            1.399904,
+            -136.2
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "curve_l_45",
+      "centerline_length": 23.561944901923447,
+      "entry_world": {
+        "origin": [
+          0.0,
+          0.949904,
+          -148.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          -8.786797,
+          0.949904,
+          -169.413203
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          0.0,
+          0.949904,
+          -148.2
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "curve_l_45_road_0",
+          "kind": "road",
+          "origin_local": [
+            -0.009035,
+            -0.06,
+            -0.736237
+          ],
+          "origin_world": [
+            -0.009035,
+            0.889904,
+            -148.936237
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.7362,
+          "aabb_world": {
+            "min": [
+              -6.2257,
+              0.8299,
+              -149.8445
+            ],
+            "max": [
+              6.2077,
+              0.9499,
+              -148.028
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -0.009035,
+            0.889904,
+            -148.936237
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.317135,
+            0.45,
+            -0.581382
+          ],
+          "origin_world": [
+            -6.317135,
+            1.399904,
+            -148.781382
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.5814,
+          "aabb_world": {
+            "min": [
+              -6.4457,
+              0.9499,
+              -149.5402
+            ],
+            "max": [
+              -6.1886,
+              1.8499,
+              -148.0226
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.317135,
+            1.399904,
+            -148.781382
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.299064,
+            0.45,
+            -0.891092
+          ],
+          "origin_world": [
+            6.299064,
+            1.399904,
+            -149.091092
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.8911,
+          "aabb_world": {
+            "min": [
+              6.1705,
+              0.9499,
+              -149.8499
+            ],
+            "max": [
+              6.4276,
+              1.8499,
+              -148.3323
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            6.299064,
+            1.399904,
+            -149.091092
+          ]
+        },
+        {
+          "id": "curve_l_45_road_3",
+          "kind": "road",
+          "origin_local": [
+            -0.081286,
+            -0.06,
+            -2.206937
+          ],
+          "origin_world": [
+            -0.081286,
+            0.889904,
+            -150.406937
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.2069,
+          "aabb_world": {
+            "min": [
+              -6.3201,
+              0.8299,
+              -151.6173
+            ],
+            "max": [
+              6.1576,
+              0.9499,
+              -149.1966
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -0.081286,
+            0.889904,
+            -150.406937
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_4",
+          "kind": "rail",
+          "origin_local": [
+            -6.374189,
+            0.45,
+            -1.742745
+          ],
+          "origin_world": [
+            -6.374189,
+            1.399904,
+            -149.942745
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 1.7427,
+          "aabb_world": {
+            "min": [
+              -6.5395,
+              0.9499,
+              -150.7051
+            ],
+            "max": [
+              -6.2088,
+              1.8499,
+              -149.1804
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.374189,
+            1.399904,
+            -149.942745
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_5",
+          "kind": "rail",
+          "origin_local": [
+            6.211616,
+            0.45,
+            -2.671129
+          ],
+          "origin_world": [
+            6.211616,
+            1.399904,
+            -150.871129
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.6711,
+          "aabb_world": {
+            "min": [
+              6.0463,
+              0.9499,
+              -151.6335
+            ],
+            "max": [
+              6.377,
+              1.8499,
+              -150.1088
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            6.211616,
+            1.399904,
+            -150.871129
+          ]
+        },
+        {
+          "id": "curve_l_45_road_6",
+          "kind": "road",
+          "origin_local": [
+            -0.225614,
+            -0.06,
+            -3.67232
+          ],
+          "origin_world": [
+            -0.225614,
+            0.889904,
+            -151.87232
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 3.6723,
+          "aabb_world": {
+            "min": [
+              -6.4716,
+              0.8299,
+              -153.3819
+            ],
+            "max": [
+              6.0203,
+              0.9499,
+              -150.3628
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -0.225614,
+            0.889904,
+            -151.87232
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_7",
+          "kind": "rail",
+          "origin_local": [
+            -6.48816,
+            0.45,
+            -2.899909
+          ],
+          "origin_world": [
+            -6.48816,
+            1.399904,
+            -151.099909
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.8999,
+          "aabb_world": {
+            "min": [
+              -6.6899,
+              0.9499,
+              -151.864
+            ],
+            "max": [
+              -6.2864,
+              1.8499,
+              -150.3358
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.48816,
+            1.399904,
+            -151.099909
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_8",
+          "kind": "rail",
+          "origin_local": [
+            6.036932,
+            0.45,
+            -4.444732
+          ],
+          "origin_world": [
+            6.036932,
+            1.399904,
+            -152.644732
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.4447,
+          "aabb_world": {
+            "min": [
+              5.8352,
+              0.9499,
+              -153.4088
+            ],
+            "max": [
+              6.2387,
+              1.8499,
+              -151.8806
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            6.036932,
+            1.399904,
+            -152.644732
+          ]
+        },
+        {
+          "id": "curve_l_45_road_9",
+          "kind": "road",
+          "origin_local": [
+            -0.441671,
+            -0.06,
+            -5.128857
+          ],
+          "origin_world": [
+            -0.441671,
+            0.889904,
+            -153.328857
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 5.1289,
+          "aabb_world": {
+            "min": [
+              -6.6797,
+              0.8299,
+              -155.134
+            ],
+            "max": [
+              5.7964,
+              0.9499,
+              -151.5237
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -0.441671,
+            0.889904,
+            -153.328857
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_10",
+          "kind": "rail",
+          "origin_local": [
+            -6.658773,
+            0.45,
+            -4.050087
+          ],
+          "origin_world": [
+            -6.658773,
+            1.399904,
+            -152.250087
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0501,
+          "aabb_world": {
+            "min": [
+              -6.8965,
+              0.9499,
+              -153.0141
+            ],
+            "max": [
+              -6.4211,
+              1.8499,
+              -151.4861
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.658773,
+            1.399904,
+            -152.250087
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_11",
+          "kind": "rail",
+          "origin_local": [
+            5.775431,
+            0.45,
+            -6.207626
+          ],
+          "origin_world": [
+            5.775431,
+            1.399904,
+            -154.407626
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.2076,
+          "aabb_world": {
+            "min": [
+              5.5378,
+              0.9499,
+              -155.1716
+            ],
+            "max": [
+              6.0131,
+              1.8499,
+              -153.6436
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            5.775431,
+            1.399904,
+            -154.407626
+          ]
+        },
+        {
+          "id": "curve_l_45_road_12",
+          "kind": "road",
+          "origin_local": [
+            -0.728936,
+            -0.06,
+            -6.573037
+          ],
+          "origin_world": [
+            -0.728936,
+            0.889904,
+            -154.773037
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.573,
+          "aabb_world": {
+            "min": [
+              -6.944,
+              0.8299,
+              -156.8694
+            ],
+            "max": [
+              5.4861,
+              0.9499,
+              -152.6767
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -0.728936,
+            0.889904,
+            -154.773037
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_13",
+          "kind": "rail",
+          "origin_local": [
+            -6.885617,
+            0.45,
+            -5.190508
+          ],
+          "origin_world": [
+            -6.885617,
+            1.399904,
+            -153.390508
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 5.1905,
+          "aabb_world": {
+            "min": [
+              -7.1587,
+              0.9499,
+              -154.1525
+            ],
+            "max": [
+              -6.6126,
+              1.8499,
+              -152.6285
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.885617,
+            1.399904,
+            -153.390508
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_14",
+          "kind": "rail",
+          "origin_local": [
+            5.427744,
+            0.45,
+            -7.955566
+          ],
+          "origin_world": [
+            5.427744,
+            1.399904,
+            -156.155566
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 7.9556,
+          "aabb_world": {
+            "min": [
+              5.1547,
+              0.9499,
+              -156.9176
+            ],
+            "max": [
+              5.7008,
+              1.8499,
+              -155.3935
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            5.427744,
+            1.399904,
+            -156.155566
+          ]
+        },
+        {
+          "id": "curve_l_45_road_15",
+          "kind": "road",
+          "origin_local": [
+            -1.086718,
+            -0.06,
+            -8.001383
+          ],
+          "origin_world": [
+            -1.086718,
+            0.889904,
+            -156.201383
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 8.0014,
+          "aabb_world": {
+            "min": [
+              -7.2638,
+              0.8299,
+              -158.5839
+            ],
+            "max": [
+              5.0904,
+              0.9499,
+              -153.8188
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -1.086718,
+            0.889904,
+            -156.201383
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_16",
+          "kind": "rail",
+          "origin_local": [
+            -7.168145,
+            0.45,
+            -6.318425
+          ],
+          "origin_world": [
+            -7.168145,
+            1.399904,
+            -154.518425
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.3184,
+          "aabb_world": {
+            "min": [
+              -7.4759,
+              0.9499,
+              -155.2767
+            ],
+            "max": [
+              -6.8604,
+              1.8499,
+              -153.7602
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -7.168145,
+            1.399904,
+            -154.518425
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_17",
+          "kind": "rail",
+          "origin_local": [
+            4.994709,
+            0.45,
+            -9.68434
+          ],
+          "origin_world": [
+            4.994709,
+            1.399904,
+            -157.88434
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.6843,
+          "aabb_world": {
+            "min": [
+              4.687,
+              0.9499,
+              -158.6426
+            ],
+            "max": [
+              5.3024,
+              1.8499,
+              -157.1261
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            4.994709,
+            1.399904,
+            -157.88434
+          ]
+        },
+        {
+          "id": "curve_l_45_road_18",
+          "kind": "road",
+          "origin_local": [
+            -1.514155,
+            -0.06,
+            -9.410452
+          ],
+          "origin_world": [
+            -1.514155,
+            0.889904,
+            -157.610452
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.4105,
+          "aabb_world": {
+            "min": [
+              -7.6385,
+              0.8299,
+              -160.2734
+            ],
+            "max": [
+              4.6102,
+              0.9499,
+              -154.9475
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -1.514155,
+            0.889904,
+            -157.610452
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_19",
+          "kind": "rail",
+          "origin_local": [
+            -7.505677,
+            0.45,
+            -7.43112
+          ],
+          "origin_world": [
+            -7.505677,
+            1.399904,
+            -155.63112
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 7.4311,
+          "aabb_world": {
+            "min": [
+              -7.8474,
+              0.9499,
+              -156.3838
+            ],
+            "max": [
+              -7.164,
+              1.8499,
+              -154.8785
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -7.505677,
+            1.399904,
+            -155.63112
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_20",
+          "kind": "rail",
+          "origin_local": [
+            4.477368,
+            0.45,
+            -11.389784
+          ],
+          "origin_world": [
+            4.477368,
+            1.399904,
+            -159.589784
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 11.3898,
+          "aabb_world": {
+            "min": [
+              4.1357,
+              0.9499,
+              -160.3424
+            ],
+            "max": [
+              4.8191,
+              1.8499,
+              -158.8371
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            4.477368,
+            1.399904,
+            -159.589784
+          ]
+        },
+        {
+          "id": "curve_l_45_road_21",
+          "kind": "road",
+          "origin_local": [
+            -2.010216,
+            -0.06,
+            -10.796851
+          ],
+          "origin_world": [
+            -2.010216,
+            0.889904,
+            -158.996851
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 10.7969,
+          "aabb_world": {
+            "min": [
+              -8.067,
+              0.8299,
+              -161.9338
+            ],
+            "max": [
+              4.0465,
+              0.9499,
+              -156.0599
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -2.010216,
+            0.889904,
+            -158.996851
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_22",
+          "kind": "rail",
+          "origin_local": [
+            -7.897401,
+            0.45,
+            -8.525913
+          ],
+          "origin_world": [
+            -7.897401,
+            1.399904,
+            -156.725913
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 8.5259,
+          "aabb_world": {
+            "min": [
+              -8.2722,
+              0.9499,
+              -157.4711
+            ],
+            "max": [
+              -7.5226,
+              1.8499,
+              -155.9807
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -7.897401,
+            1.399904,
+            -156.725913
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_23",
+          "kind": "rail",
+          "origin_local": [
+            3.876969,
+            0.45,
+            -13.067789
+          ],
+          "origin_world": [
+            3.876969,
+            1.399904,
+            -161.267789
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.0678,
+          "aabb_world": {
+            "min": [
+              3.5021,
+              0.9499,
+              -162.013
+            ],
+            "max": [
+              4.2518,
+              1.8499,
+              -160.5226
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            3.876969,
+            1.399904,
+            -161.267789
+          ]
+        },
+        {
+          "id": "curve_l_45_road_24",
+          "kind": "road",
+          "origin_local": [
+            -2.573707,
+            -0.06,
+            -12.157239
+          ],
+          "origin_world": [
+            -2.573707,
+            0.889904,
+            -160.357239
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.1572,
+          "aabb_world": {
+            "min": [
+              -8.5483,
+              0.8299,
+              -163.5612
+            ],
+            "max": [
+              3.4009,
+              0.9499,
+              -157.1533
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -2.573707,
+            0.889904,
+            -160.357239
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_25",
+          "kind": "rail",
+          "origin_local": [
+            -8.342371,
+            0.45,
+            -9.600167
+          ],
+          "origin_world": [
+            -8.342371,
+            1.399904,
+            -157.800167
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.6002,
+          "aabb_world": {
+            "min": [
+              -8.7494,
+              0.9499,
+              -158.5362
+            ],
+            "max": [
+              -7.9353,
+              1.8499,
+              -157.0642
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -8.342371,
+            1.399904,
+            -157.800167
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_26",
+          "kind": "rail",
+          "origin_local": [
+            3.194956,
+            0.45,
+            -14.714312
+          ],
+          "origin_world": [
+            3.194956,
+            1.399904,
+            -162.914312
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.7143,
+          "aabb_world": {
+            "min": [
+              2.7879,
+              0.9499,
+              -163.6503
+            ],
+            "max": [
+              3.602,
+              1.8499,
+              -162.1783
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            3.194956,
+            1.399904,
+            -162.914312
+          ]
+        },
+        {
+          "id": "curve_l_45_road_27",
+          "kind": "road",
+          "origin_local": [
+            -3.203271,
+            -0.06,
+            -13.48834
+          ],
+          "origin_world": [
+            -3.203271,
+            0.889904,
+            -161.68834
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.4883,
+          "aabb_world": {
+            "min": [
+              -9.0813,
+              0.8299,
+              -165.1515
+            ],
+            "max": [
+              2.6748,
+              0.9499,
+              -158.2252
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -3.203271,
+            0.889904,
+            -161.68834
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_28",
+          "kind": "rail",
+          "origin_local": [
+            -8.839516,
+            0.45,
+            -10.651292
+          ],
+          "origin_world": [
+            -8.839516,
+            1.399904,
+            -158.851292
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 10.6513,
+          "aabb_world": {
+            "min": [
+              -9.2778,
+              0.9499,
+              -159.5763
+            ],
+            "max": [
+              -8.4012,
+              1.8499,
+              -158.1263
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -8.839516,
+            1.399904,
+            -158.851292
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_29",
+          "kind": "rail",
+          "origin_local": [
+            2.432974,
+            0.45,
+            -16.325387
+          ],
+          "origin_world": [
+            2.432974,
+            1.399904,
+            -164.525387
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.3254,
+          "aabb_world": {
+            "min": [
+              1.9947,
+              0.9499,
+              -165.2504
+            ],
+            "max": [
+              2.8713,
+              1.8499,
+              -163.8004
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            2.432974,
+            1.399904,
+            -164.525387
+          ]
+        },
+        {
+          "id": "curve_l_45_road_30",
+          "kind": "road",
+          "origin_local": [
+            -3.89739,
+            -0.06,
+            -14.786946
+          ],
+          "origin_world": [
+            -3.89739,
+            0.889904,
+            -162.986946
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.7869,
+          "aabb_world": {
+            "min": [
+              -9.6647,
+              0.8299,
+              -166.701
+            ],
+            "max": [
+              1.8699,
+              0.9499,
+              -159.2729
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -3.89739,
+            0.889904,
+            -162.986946
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_31",
+          "kind": "rail",
+          "origin_local": [
+            -9.387639,
+            0.45,
+            -11.676758
+          ],
+          "origin_world": [
+            -9.387639,
+            1.399904,
+            -159.876758
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 11.6768,
+          "aabb_world": {
+            "min": [
+              -9.8561,
+              0.9499,
+              -160.589
+            ],
+            "max": [
+              -8.9191,
+              1.8499,
+              -159.1645
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -9.387639,
+            1.399904,
+            -159.876758
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_32",
+          "kind": "rail",
+          "origin_local": [
+            1.592859,
+            0.45,
+            -17.897133
+          ],
+          "origin_world": [
+            1.592859,
+            1.399904,
+            -166.097133
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 17.8971,
+          "aabb_world": {
+            "min": [
+              1.1244,
+              0.9499,
+              -166.8094
+            ],
+            "max": [
+              2.0614,
+              1.8499,
+              -165.3849
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            1.592859,
+            1.399904,
+            -166.097133
+          ]
+        },
+        {
+          "id": "curve_l_45_road_33",
+          "kind": "road",
+          "origin_local": [
+            -4.654393,
+            -0.06,
+            -16.049929
+          ],
+          "origin_world": [
+            -4.654393,
+            0.889904,
+            -164.249929
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.0499,
+          "aabb_world": {
+            "min": [
+              -10.2971,
+              0.8299,
+              -168.2059
+            ],
+            "max": [
+              0.9883,
+              0.9499,
+              -160.294
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -4.654393,
+            0.889904,
+            -164.249929
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_34",
+          "kind": "rail",
+          "origin_local": [
+            -9.985419,
+            0.45,
+            -12.674094
+          ],
+          "origin_world": [
+            -9.985419,
+            1.399904,
+            -160.874094
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.6741,
+          "aabb_world": {
+            "min": [
+              -10.483,
+              0.9499,
+              -161.5719
+            ],
+            "max": [
+              -9.4879,
+              1.8499,
+              -160.1763
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -9.985419,
+            1.399904,
+            -160.874094
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_35",
+          "kind": "rail",
+          "origin_local": [
+            0.676633,
+            0.45,
+            -19.425764
+          ],
+          "origin_world": [
+            0.676633,
+            1.399904,
+            -167.625764
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 19.4258,
+          "aabb_world": {
+            "min": [
+              0.1791,
+              0.9499,
+              -168.3236
+            ],
+            "max": [
+              1.1742,
+              1.8499,
+              -166.9279
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            0.676633,
+            1.399904,
+            -167.625764
+          ]
+        },
+        {
+          "id": "curve_l_45_road_36",
+          "kind": "road",
+          "origin_local": [
+            -5.472456,
+            -0.06,
+            -17.274246
+          ],
+          "origin_world": [
+            -5.472456,
+            0.889904,
+            -165.474246
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 17.2742,
+          "aabb_world": {
+            "min": [
+              -10.977,
+              0.8299,
+              -169.6626
+            ],
+            "max": [
+              0.0321,
+              0.9499,
+              -161.2859
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -5.472456,
+            0.889904,
+            -165.474246
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_37",
+          "kind": "rail",
+          "origin_local": [
+            -10.631416,
+            0.45,
+            -13.640896
+          ],
+          "origin_world": [
+            -10.631416,
+            1.399904,
+            -161.840896
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.6409,
+          "aabb_world": {
+            "min": [
+              -11.1568,
+              0.9499,
+              -162.5226
+            ],
+            "max": [
+              -10.106,
+              1.8499,
+              -161.1592
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -10.631416,
+            1.399904,
+            -161.840896
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_38",
+          "kind": "rail",
+          "origin_local": [
+            -0.313495,
+            0.45,
+            -20.907595
+          ],
+          "origin_world": [
+            -0.313495,
+            1.399904,
+            -169.107595
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 20.9076,
+          "aabb_world": {
+            "min": [
+              -0.8389,
+              0.9499,
+              -169.7893
+            ],
+            "max": [
+              0.2119,
+              1.8499,
+              -168.4259
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -0.313495,
+            1.399904,
+            -169.107595
+          ]
+        },
+        {
+          "id": "curve_l_45_road_39",
+          "kind": "road",
+          "origin_local": [
+            -6.349607,
+            -0.06,
+            -18.456948
+          ],
+          "origin_world": [
+            -6.349607,
+            0.889904,
+            -166.656948
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 18.4569,
+          "aabb_world": {
+            "min": [
+              -11.7027,
+              0.8299,
+              -171.0676
+            ],
+            "max": [
+              -0.9966,
+              0.9499,
+              -162.2463
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -6.349607,
+            0.889904,
+            -166.656948
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_40",
+          "kind": "rail",
+          "origin_local": [
+            -11.324073,
+            0.45,
+            -14.574836
+          ],
+          "origin_world": [
+            -11.324073,
+            1.399904,
+            -162.774836
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.5748,
+          "aabb_world": {
+            "min": [
+              -11.8761,
+              0.9499,
+              -163.4387
+            ],
+            "max": [
+              -10.772,
+              1.8499,
+              -162.1109
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -11.324073,
+            1.399904,
+            -162.774836
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_41",
+          "kind": "rail",
+          "origin_local": [
+            -1.375141,
+            0.45,
+            -22.339059
+          ],
+          "origin_world": [
+            -1.375141,
+            1.399904,
+            -170.539059
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 22.3391,
+          "aabb_world": {
+            "min": [
+              -1.9272,
+              0.9499,
+              -171.203
+            ],
+            "max": [
+              -0.8231,
+              1.8499,
+              -169.8751
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -1.375141,
+            1.399904,
+            -170.539059
+          ]
+        },
+        {
+          "id": "curve_l_45_road_42",
+          "kind": "road",
+          "origin_local": [
+            -7.283735,
+            -0.06,
+            -19.595185
+          ],
+          "origin_world": [
+            -7.283735,
+            0.889904,
+            -167.795185
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 19.5952,
+          "aabb_world": {
+            "min": [
+              -12.4724,
+              0.8299,
+              -172.4175
+            ],
+            "max": [
+              -2.095,
+              0.9499,
+              -163.1728
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -7.283735,
+            0.889904,
+            -167.795185
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_43",
+          "kind": "rail",
+          "origin_local": [
+            -12.061722,
+            0.45,
+            -15.473665
+          ],
+          "origin_world": [
+            -12.061722,
+            1.399904,
+            -163.673665
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 15.4737,
+          "aabb_world": {
+            "min": [
+              -12.639,
+              0.9499,
+              -164.3182
+            ],
+            "max": [
+              -11.4844,
+              1.8499,
+              -163.0291
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -12.061722,
+            1.399904,
+            -163.673665
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_44",
+          "kind": "rail",
+          "origin_local": [
+            -2.505747,
+            0.45,
+            -23.716706
+          ],
+          "origin_world": [
+            -2.505747,
+            1.399904,
+            -171.916706
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 23.7167,
+          "aabb_world": {
+            "min": [
+              -3.083,
+              0.9499,
+              -172.5612
+            ],
+            "max": [
+              -1.9285,
+              1.8499,
+              -171.2722
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -2.505747,
+            1.399904,
+            -171.916706
+          ]
+        },
+        {
+          "id": "curve_l_45_road_45",
+          "kind": "road",
+          "origin_local": [
+            -8.272588,
+            -0.06,
+            -20.686216
+          ],
+          "origin_world": [
+            -8.272588,
+            0.889904,
+            -168.886216
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 20.6862,
+          "aabb_world": {
+            "min": [
+              -13.2844,
+              0.8299,
+              -173.7091
+            ],
+            "max": [
+              -3.2607,
+              0.9499,
+              -164.0633
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -8.272588,
+            0.889904,
+            -168.886216
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_46",
+          "kind": "rail",
+          "origin_local": [
+            -12.842587,
+            0.45,
+            -16.335216
+          ],
+          "origin_world": [
+            -12.842587,
+            1.399904,
+            -164.535216
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.3352,
+          "aabb_world": {
+            "min": [
+              -13.4438,
+              0.9499,
+              -165.1588
+            ],
+            "max": [
+              -12.2414,
+              1.8499,
+              -163.9116
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -12.842587,
+            1.399904,
+            -164.535216
+          ]
+        },
+        {
+          "id": "curve_l_45_rail_47",
+          "kind": "rail",
+          "origin_local": [
+            -3.702588,
+            0.45,
+            -25.037217
+          ],
+          "origin_world": [
+            -3.702588,
+            1.399904,
+            -173.237217
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 25.0372,
+          "aabb_world": {
+            "min": [
+              -4.3038,
+              0.9499,
+              -173.8608
+            ],
+            "max": [
+              -3.1014,
+              1.8499,
+              -172.6136
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -3.702588,
+            1.399904,
+            -173.237217
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "curve_r_45",
+      "centerline_length": 23.561944901923447,
+      "entry_world": {
+        "origin": [
+          -8.786797,
+          0.949904,
+          -169.413203
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          -17.573593,
+          0.949904,
+          -190.626407
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          -8.786797,
+          0.949904,
+          -169.413203
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "curve_r_45_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.009035,
+            -0.06,
+            -0.736237
+          ],
+          "origin_world": [
+            -9.301006,
+            0.889904,
+            -169.940191
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.7362,
+          "aabb_world": {
+            "min": [
+              -14.3128,
+              0.8299,
+              -174.7631
+            ],
+            "max": [
+              -4.2892,
+              0.9499,
+              -165.1173
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -9.301006,
+            0.889904,
+            -169.940191
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.299064,
+            0.45,
+            -0.891092
+          ],
+          "origin_world": [
+            -13.871005,
+            1.399904,
+            -165.58919
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.8911,
+          "aabb_world": {
+            "min": [
+              -14.4722,
+              0.9499,
+              -166.2128
+            ],
+            "max": [
+              -13.2698,
+              1.8499,
+              -164.9656
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -13.871005,
+            1.399904,
+            -165.58919
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.317135,
+            0.45,
+            -0.581382
+          ],
+          "origin_world": [
+            -4.731007,
+            1.399904,
+            -174.291191
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 0.5814,
+          "aabb_world": {
+            "min": [
+              -5.3322,
+              0.9499,
+              -174.9148
+            ],
+            "max": [
+              -4.1298,
+              1.8499,
+              -173.6676
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -4.731007,
+            1.399904,
+            -174.291191
+          ]
+        },
+        {
+          "id": "curve_r_45_road_3",
+          "kind": "road",
+          "origin_local": [
+            0.081286,
+            -0.06,
+            -2.206937
+          ],
+          "origin_world": [
+            -10.289859,
+            0.889904,
+            -171.031222
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.2069,
+          "aabb_world": {
+            "min": [
+              -15.4786,
+              0.8299,
+              -175.6536
+            ],
+            "max": [
+              -5.1012,
+              0.9499,
+              -166.4089
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -10.289859,
+            0.889904,
+            -171.031222
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_4",
+          "kind": "rail",
+          "origin_local": [
+            -6.211616,
+            0.45,
+            -2.671129
+          ],
+          "origin_world": [
+            -15.067846,
+            1.399904,
+            -166.909701
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.6711,
+          "aabb_world": {
+            "min": [
+              -15.6451,
+              0.9499,
+              -167.5542
+            ],
+            "max": [
+              -14.4906,
+              1.8499,
+              -166.2652
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -15.067846,
+            1.399904,
+            -166.909701
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_5",
+          "kind": "rail",
+          "origin_local": [
+            6.374189,
+            0.45,
+            -1.742745
+          ],
+          "origin_world": [
+            -5.511871,
+            1.399904,
+            -175.152742
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 1.7427,
+          "aabb_world": {
+            "min": [
+              -6.0892,
+              0.9499,
+              -175.7973
+            ],
+            "max": [
+              -4.9346,
+              1.8499,
+              -174.5082
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -5.511871,
+            1.399904,
+            -175.152742
+          ]
+        },
+        {
+          "id": "curve_r_45_road_6",
+          "kind": "road",
+          "origin_local": [
+            0.225614,
+            -0.06,
+            -3.67232
+          ],
+          "origin_world": [
+            -11.223986,
+            0.889904,
+            -172.169459
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 3.6723,
+          "aabb_world": {
+            "min": [
+              -16.577,
+              0.8299,
+              -176.5801
+            ],
+            "max": [
+              -5.8709,
+              0.9499,
+              -167.7588
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -11.223986,
+            0.889904,
+            -172.169459
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_7",
+          "kind": "rail",
+          "origin_local": [
+            -6.036932,
+            0.45,
+            -4.444732
+          ],
+          "origin_world": [
+            -16.198452,
+            1.399904,
+            -168.287348
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.4447,
+          "aabb_world": {
+            "min": [
+              -16.7505,
+              0.9499,
+              -168.9513
+            ],
+            "max": [
+              -15.6464,
+              1.8499,
+              -167.6234
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -16.198452,
+            1.399904,
+            -168.287348
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_8",
+          "kind": "rail",
+          "origin_local": [
+            6.48816,
+            0.45,
+            -2.899909
+          ],
+          "origin_world": [
+            -6.24952,
+            1.399904,
+            -176.05157
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 2.8999,
+          "aabb_world": {
+            "min": [
+              -6.8015,
+              0.9499,
+              -176.7155
+            ],
+            "max": [
+              -5.6975,
+              1.8499,
+              -175.3877
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.24952,
+            1.399904,
+            -176.05157
+          ]
+        },
+        {
+          "id": "curve_r_45_road_9",
+          "kind": "road",
+          "origin_local": [
+            0.441671,
+            -0.06,
+            -5.128857
+          ],
+          "origin_world": [
+            -12.101138,
+            0.889904,
+            -173.352161
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 5.1289,
+          "aabb_world": {
+            "min": [
+              -17.6057,
+              0.8299,
+              -177.5405
+            ],
+            "max": [
+              -6.5966,
+              0.9499,
+              -169.1638
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -12.101138,
+            0.889904,
+            -173.352161
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_10",
+          "kind": "rail",
+          "origin_local": [
+            -5.775431,
+            0.45,
+            -6.207626
+          ],
+          "origin_world": [
+            -17.260098,
+            1.399904,
+            -169.718811
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.2076,
+          "aabb_world": {
+            "min": [
+              -17.7855,
+              0.9499,
+              -170.4005
+            ],
+            "max": [
+              -16.7347,
+              1.8499,
+              -169.0371
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -17.260098,
+            1.399904,
+            -169.718811
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_11",
+          "kind": "rail",
+          "origin_local": [
+            6.658773,
+            0.45,
+            -4.050087
+          ],
+          "origin_world": [
+            -6.942177,
+            1.399904,
+            -176.985511
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0501,
+          "aabb_world": {
+            "min": [
+              -7.4676,
+              0.9499,
+              -177.6672
+            ],
+            "max": [
+              -6.4168,
+              1.8499,
+              -176.3038
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -6.942177,
+            1.399904,
+            -176.985511
+          ]
+        },
+        {
+          "id": "curve_r_45_road_12",
+          "kind": "road",
+          "origin_local": [
+            0.728936,
+            -0.06,
+            -6.573037
+          ],
+          "origin_world": [
+            -12.9192,
+            0.889904,
+            -174.576478
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.573,
+          "aabb_world": {
+            "min": [
+              -18.5619,
+              0.8299,
+              -178.5324
+            ],
+            "max": [
+              -7.2765,
+              0.9499,
+              -170.6205
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -12.9192,
+            0.889904,
+            -174.576478
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_13",
+          "kind": "rail",
+          "origin_local": [
+            -5.427744,
+            0.45,
+            -7.955566
+          ],
+          "origin_world": [
+            -18.250226,
+            1.399904,
+            -171.200643
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 7.9556,
+          "aabb_world": {
+            "min": [
+              -18.7478,
+              0.9499,
+              -171.8985
+            ],
+            "max": [
+              -17.7527,
+              1.8499,
+              -170.5028
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -18.250226,
+            1.399904,
+            -171.200643
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_14",
+          "kind": "rail",
+          "origin_local": [
+            6.885617,
+            0.45,
+            -5.190508
+          ],
+          "origin_world": [
+            -7.588174,
+            1.399904,
+            -177.952313
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 5.1905,
+          "aabb_world": {
+            "min": [
+              -8.0857,
+              0.9499,
+              -178.6501
+            ],
+            "max": [
+              -7.0906,
+              1.8499,
+              -177.2545
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -7.588174,
+            1.399904,
+            -177.952313
+          ]
+        },
+        {
+          "id": "curve_r_45_road_15",
+          "kind": "road",
+          "origin_local": [
+            1.086718,
+            -0.06,
+            -8.001383
+          ],
+          "origin_world": [
+            -13.676203,
+            0.889904,
+            -175.839461
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 8.0014,
+          "aabb_world": {
+            "min": [
+              -19.4435,
+              0.8299,
+              -179.5535
+            ],
+            "max": [
+              -7.9089,
+              0.9499,
+              -172.1254
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -13.676203,
+            0.889904,
+            -175.839461
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_16",
+          "kind": "rail",
+          "origin_local": [
+            -4.994709,
+            0.45,
+            -9.68434
+          ],
+          "origin_world": [
+            -19.166452,
+            1.399904,
+            -172.729274
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.6843,
+          "aabb_world": {
+            "min": [
+              -19.6349,
+              0.9499,
+              -173.4415
+            ],
+            "max": [
+              -18.698,
+              1.8499,
+              -172.017
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -19.166452,
+            1.399904,
+            -172.729274
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_17",
+          "kind": "rail",
+          "origin_local": [
+            7.168145,
+            0.45,
+            -6.318425
+          ],
+          "origin_world": [
+            -8.185954,
+            1.399904,
+            -178.949649
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 6.3184,
+          "aabb_world": {
+            "min": [
+              -8.6544,
+              0.9499,
+              -179.6619
+            ],
+            "max": [
+              -7.7175,
+              1.8499,
+              -178.2374
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -8.185954,
+            1.399904,
+            -178.949649
+          ]
+        },
+        {
+          "id": "curve_r_45_road_18",
+          "kind": "road",
+          "origin_local": [
+            1.514155,
+            -0.06,
+            -9.410452
+          ],
+          "origin_world": [
+            -14.370322,
+            0.889904,
+            -177.138067
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.4105,
+          "aabb_world": {
+            "min": [
+              -20.2484,
+              0.8299,
+              -180.6012
+            ],
+            "max": [
+              -8.4923,
+              0.9499,
+              -173.6749
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -14.370322,
+            0.889904,
+            -177.138067
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_19",
+          "kind": "rail",
+          "origin_local": [
+            -4.477368,
+            0.45,
+            -11.389784
+          ],
+          "origin_world": [
+            -20.006568,
+            1.399904,
+            -174.301019
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 11.3898,
+          "aabb_world": {
+            "min": [
+              -20.4449,
+              0.9499,
+              -175.026
+            ],
+            "max": [
+              -19.5683,
+              1.8499,
+              -173.576
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -20.006568,
+            1.399904,
+            -174.301019
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_20",
+          "kind": "rail",
+          "origin_local": [
+            7.505677,
+            0.45,
+            -7.43112
+          ],
+          "origin_world": [
+            -8.734077,
+            1.399904,
+            -179.975114
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 7.4311,
+          "aabb_world": {
+            "min": [
+              -9.1724,
+              0.9499,
+              -180.7001
+            ],
+            "max": [
+              -8.2958,
+              1.8499,
+              -179.2501
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -8.734077,
+            1.399904,
+            -179.975114
+          ]
+        },
+        {
+          "id": "curve_r_45_road_21",
+          "kind": "road",
+          "origin_local": [
+            2.010216,
+            -0.06,
+            -10.796851
+          ],
+          "origin_world": [
+            -14.999886,
+            0.889904,
+            -178.469167
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 10.7969,
+          "aabb_world": {
+            "min": [
+              -20.9745,
+              0.8299,
+              -181.6731
+            ],
+            "max": [
+              -9.0253,
+              0.9499,
+              -175.2652
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -14.999886,
+            0.889904,
+            -178.469167
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_22",
+          "kind": "rail",
+          "origin_local": [
+            -3.876969,
+            0.45,
+            -13.067789
+          ],
+          "origin_world": [
+            -20.768549,
+            1.399904,
+            -175.912095
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.0678,
+          "aabb_world": {
+            "min": [
+              -21.1756,
+              0.9499,
+              -176.6481
+            ],
+            "max": [
+              -20.3615,
+              1.8499,
+              -175.1761
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -20.768549,
+            1.399904,
+            -175.912095
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_23",
+          "kind": "rail",
+          "origin_local": [
+            7.897401,
+            0.45,
+            -8.525913
+          ],
+          "origin_world": [
+            -9.231222,
+            1.399904,
+            -181.02624
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 8.5259,
+          "aabb_world": {
+            "min": [
+              -9.6383,
+              0.9499,
+              -181.7622
+            ],
+            "max": [
+              -8.8242,
+              1.8499,
+              -180.2902
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -9.231222,
+            1.399904,
+            -181.02624
+          ]
+        },
+        {
+          "id": "curve_r_45_road_24",
+          "kind": "road",
+          "origin_local": [
+            2.573707,
+            -0.06,
+            -12.157239
+          ],
+          "origin_world": [
+            -15.563377,
+            0.889904,
+            -179.829556
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.1572,
+          "aabb_world": {
+            "min": [
+              -21.6201,
+              0.8299,
+              -182.7665
+            ],
+            "max": [
+              -9.5066,
+              0.9499,
+              -176.8926
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -15.563377,
+            0.889904,
+            -179.829556
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_25",
+          "kind": "rail",
+          "origin_local": [
+            -3.194956,
+            0.45,
+            -14.714312
+          ],
+          "origin_world": [
+            -21.450562,
+            1.399904,
+            -177.558618
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.7143,
+          "aabb_world": {
+            "min": [
+              -21.8254,
+              0.9499,
+              -178.3038
+            ],
+            "max": [
+              -21.0757,
+              1.8499,
+              -176.8134
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -21.450562,
+            1.399904,
+            -177.558618
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_26",
+          "kind": "rail",
+          "origin_local": [
+            8.342371,
+            0.45,
+            -9.600167
+          ],
+          "origin_world": [
+            -9.676193,
+            1.399904,
+            -182.100493
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 9.6002,
+          "aabb_world": {
+            "min": [
+              -10.051,
+              0.9499,
+              -182.8457
+            ],
+            "max": [
+              -9.3014,
+              1.8499,
+              -181.3553
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -9.676193,
+            1.399904,
+            -182.100493
+          ]
+        },
+        {
+          "id": "curve_r_45_road_27",
+          "kind": "road",
+          "origin_local": [
+            3.203271,
+            -0.06,
+            -13.48834
+          ],
+          "origin_world": [
+            -16.059439,
+            0.889904,
+            -181.215955
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.4883,
+          "aabb_world": {
+            "min": [
+              -22.1838,
+              0.8299,
+              -183.8789
+            ],
+            "max": [
+              -9.9351,
+              0.9499,
+              -178.553
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -16.059439,
+            0.889904,
+            -181.215955
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_28",
+          "kind": "rail",
+          "origin_local": [
+            -2.432974,
+            0.45,
+            -16.325387
+          ],
+          "origin_world": [
+            -22.050961,
+            1.399904,
+            -179.236623
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.3254,
+          "aabb_world": {
+            "min": [
+              -22.3927,
+              0.9499,
+              -179.9893
+            ],
+            "max": [
+              -21.7093,
+              1.8499,
+              -178.484
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -22.050961,
+            1.399904,
+            -179.236623
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_29",
+          "kind": "rail",
+          "origin_local": [
+            8.839516,
+            0.45,
+            -10.651292
+          ],
+          "origin_world": [
+            -10.067916,
+            1.399904,
+            -183.195286
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 10.6513,
+          "aabb_world": {
+            "min": [
+              -10.4096,
+              0.9499,
+              -183.9479
+            ],
+            "max": [
+              -9.7262,
+              1.8499,
+              -182.4426
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -10.067916,
+            1.399904,
+            -183.195286
+          ]
+        },
+        {
+          "id": "curve_r_45_road_30",
+          "kind": "road",
+          "origin_local": [
+            3.89739,
+            -0.06,
+            -14.786946
+          ],
+          "origin_world": [
+            -16.486875,
+            0.889904,
+            -182.625024
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.7869,
+          "aabb_world": {
+            "min": [
+              -22.664,
+              0.8299,
+              -185.0076
+            ],
+            "max": [
+              -10.3097,
+              0.9499,
+              -180.2425
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -16.486875,
+            0.889904,
+            -182.625024
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_31",
+          "kind": "rail",
+          "origin_local": [
+            -1.592859,
+            0.45,
+            -17.897133
+          ],
+          "origin_world": [
+            -22.568302,
+            1.399904,
+            -180.942067
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 17.8971,
+          "aabb_world": {
+            "min": [
+              -22.876,
+              0.9499,
+              -181.7003
+            ],
+            "max": [
+              -22.2606,
+              1.8499,
+              -180.1838
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -22.568302,
+            1.399904,
+            -180.942067
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_32",
+          "kind": "rail",
+          "origin_local": [
+            9.387639,
+            0.45,
+            -11.676758
+          ],
+          "origin_world": [
+            -10.405448,
+            1.399904,
+            -184.307982
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 11.6768,
+          "aabb_world": {
+            "min": [
+              -10.7132,
+              0.9499,
+              -185.0662
+            ],
+            "max": [
+              -10.0977,
+              1.8499,
+              -183.5497
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -10.405448,
+            1.399904,
+            -184.307982
+          ]
+        },
+        {
+          "id": "curve_r_45_road_33",
+          "kind": "road",
+          "origin_local": [
+            4.654393,
+            -0.06,
+            -16.049929
+          ],
+          "origin_world": [
+            -16.844657,
+            0.889904,
+            -184.05337
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.0499,
+          "aabb_world": {
+            "min": [
+              -23.0597,
+              0.8299,
+              -186.1497
+            ],
+            "max": [
+              -10.6296,
+              0.9499,
+              -181.957
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -16.844657,
+            0.889904,
+            -184.05337
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_34",
+          "kind": "rail",
+          "origin_local": [
+            -0.676633,
+            0.45,
+            -19.425764
+          ],
+          "origin_world": [
+            -23.001337,
+            1.399904,
+            -182.670841
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 19.4258,
+          "aabb_world": {
+            "min": [
+              -23.2744,
+              0.9499,
+              -183.4329
+            ],
+            "max": [
+              -22.7283,
+              1.8499,
+              -181.9088
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.001337,
+            1.399904,
+            -182.670841
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_35",
+          "kind": "rail",
+          "origin_local": [
+            9.985419,
+            0.45,
+            -12.674094
+          ],
+          "origin_world": [
+            -10.687977,
+            1.399904,
+            -185.435898
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 12.6741,
+          "aabb_world": {
+            "min": [
+              -10.961,
+              0.9499,
+              -186.1979
+            ],
+            "max": [
+              -10.4149,
+              1.8499,
+              -184.6739
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -10.687977,
+            1.399904,
+            -185.435898
+          ]
+        },
+        {
+          "id": "curve_r_45_road_36",
+          "kind": "road",
+          "origin_local": [
+            5.472456,
+            -0.06,
+            -17.274246
+          ],
+          "origin_world": [
+            -17.131922,
+            0.889904,
+            -185.49755
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 17.2742,
+          "aabb_world": {
+            "min": [
+              -23.3699,
+              0.8299,
+              -187.3027
+            ],
+            "max": [
+              -10.8939,
+              0.9499,
+              -183.6924
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -17.131922,
+            0.889904,
+            -185.49755
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_37",
+          "kind": "rail",
+          "origin_local": [
+            0.313495,
+            0.45,
+            -20.907595
+          ],
+          "origin_world": [
+            -23.349024,
+            1.399904,
+            -184.418781
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 20.9076,
+          "aabb_world": {
+            "min": [
+              -23.5867,
+              0.9499,
+              -185.1828
+            ],
+            "max": [
+              -23.1113,
+              1.8499,
+              -183.6548
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.349024,
+            1.399904,
+            -184.418781
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_38",
+          "kind": "rail",
+          "origin_local": [
+            10.631416,
+            0.45,
+            -13.640896
+          ],
+          "origin_world": [
+            -10.91482,
+            1.399904,
+            -186.57632
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 13.6409,
+          "aabb_world": {
+            "min": [
+              -11.1525,
+              0.9499,
+              -187.3403
+            ],
+            "max": [
+              -10.6771,
+              1.8499,
+              -185.8123
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -10.91482,
+            1.399904,
+            -186.57632
+          ]
+        },
+        {
+          "id": "curve_r_45_road_39",
+          "kind": "road",
+          "origin_local": [
+            6.349607,
+            -0.06,
+            -18.456948
+          ],
+          "origin_world": [
+            -17.347979,
+            0.889904,
+            -186.954087
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 18.4569,
+          "aabb_world": {
+            "min": [
+              -23.5939,
+              0.8299,
+              -188.4637
+            ],
+            "max": [
+              -11.102,
+              0.9499,
+              -185.4445
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -17.347979,
+            0.889904,
+            -186.954087
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_40",
+          "kind": "rail",
+          "origin_local": [
+            1.375141,
+            0.45,
+            -22.339059
+          ],
+          "origin_world": [
+            -23.610525,
+            1.399904,
+            -186.181675
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 22.3391,
+          "aabb_world": {
+            "min": [
+              -23.8123,
+              0.9499,
+              -186.9458
+            ],
+            "max": [
+              -23.4088,
+              1.8499,
+              -185.4176
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.610525,
+            1.399904,
+            -186.181675
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_41",
+          "kind": "rail",
+          "origin_local": [
+            11.324073,
+            0.45,
+            -14.574836
+          ],
+          "origin_world": [
+            -11.085433,
+            1.399904,
+            -187.726498
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 14.5748,
+          "aabb_world": {
+            "min": [
+              -11.2872,
+              0.9499,
+              -188.4906
+            ],
+            "max": [
+              -10.8837,
+              1.8499,
+              -186.9624
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -11.085433,
+            1.399904,
+            -187.726498
+          ]
+        },
+        {
+          "id": "curve_r_45_road_42",
+          "kind": "road",
+          "origin_local": [
+            7.283735,
+            -0.06,
+            -19.595185
+          ],
+          "origin_world": [
+            -17.492307,
+            0.889904,
+            -188.41947
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 19.5952,
+          "aabb_world": {
+            "min": [
+              -23.7311,
+              0.8299,
+              -189.6298
+            ],
+            "max": [
+              -11.2535,
+              0.9499,
+              -187.2091
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -17.492307,
+            0.889904,
+            -188.41947
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_43",
+          "kind": "rail",
+          "origin_local": [
+            2.505747,
+            0.45,
+            -23.716706
+          ],
+          "origin_world": [
+            -23.78521,
+            1.399904,
+            -187.955278
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 23.7167,
+          "aabb_world": {
+            "min": [
+              -23.9505,
+              0.9499,
+              -188.7176
+            ],
+            "max": [
+              -23.6199,
+              1.8499,
+              -187.1929
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.78521,
+            1.399904,
+            -187.955278
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_44",
+          "kind": "rail",
+          "origin_local": [
+            12.061722,
+            0.45,
+            -15.473665
+          ],
+          "origin_world": [
+            -11.199404,
+            1.399904,
+            -188.883662
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 15.4737,
+          "aabb_world": {
+            "min": [
+              -11.3647,
+              0.9499,
+              -189.646
+            ],
+            "max": [
+              -11.0341,
+              1.8499,
+              -188.1213
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -11.199404,
+            1.399904,
+            -188.883662
+          ]
+        },
+        {
+          "id": "curve_r_45_road_45",
+          "kind": "road",
+          "origin_local": [
+            8.272588,
+            -0.06,
+            -20.686216
+          ],
+          "origin_world": [
+            -17.564558,
+            0.889904,
+            -189.89017
+          ],
+          "size": [
+            12.4,
+            0.12,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 20.6862,
+          "aabb_world": {
+            "min": [
+              -23.7813,
+              0.8299,
+              -190.7984
+            ],
+            "max": [
+              -11.3479,
+              0.9499,
+              -188.9819
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -17.564558,
+            0.889904,
+            -189.89017
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_46",
+          "kind": "rail",
+          "origin_local": [
+            3.702588,
+            0.45,
+            -25.037217
+          ],
+          "origin_world": [
+            -23.872657,
+            1.399904,
+            -189.735315
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 25.0372,
+          "aabb_world": {
+            "min": [
+              -24.0012,
+              0.9499,
+              -190.4941
+            ],
+            "max": [
+              -23.7441,
+              1.8499,
+              -188.9765
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.872657,
+            1.399904,
+            -189.735315
+          ]
+        },
+        {
+          "id": "curve_r_45_rail_47",
+          "kind": "rail",
+          "origin_local": [
+            12.842587,
+            0.45,
+            -16.335216
+          ],
+          "origin_world": [
+            -11.256458,
+            1.399904,
+            -190.045025
+          ],
+          "size": [
+            0.22,
+            0.9,
+            1.5126
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 16.3352,
+          "aabb_world": {
+            "min": [
+              -11.385,
+              0.9499,
+              -190.8038
+            ],
+            "max": [
+              -11.1279,
+              1.8499,
+              -189.2862
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -11.256458,
+            1.399904,
+            -190.045025
+          ]
+        }
+      ]
+    },
+    {
+      "piece_id": "finish",
+      "centerline_length": 8.0,
+      "entry_world": {
+        "origin": [
+          -17.573593,
+          0.949904,
+          -190.626407
+        ],
+        "pitch_deg": -0.0
+      },
+      "exit_world": {
+        "origin": [
+          -17.573593,
+          0.949904,
+          -198.626407
+        ],
+        "pitch_deg": -0.0
+      },
+      "piece_root": {
+        "origin": [
+          -17.573593,
+          0.949904,
+          -190.626407
+        ],
+        "pitch_deg": -0.0
+      },
+      "entry_pitch_deg": 0.0,
+      "exit_pitch_deg": 0.0,
+      "collision": [
+        {
+          "id": "finish_road_0",
+          "kind": "road",
+          "origin_local": [
+            0.0,
+            -0.06,
+            -4.0
+          ],
+          "origin_world": [
+            -17.573593,
+            0.889904,
+            -194.626407
+          ],
+          "size": [
+            12.4,
+            0.12,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              -23.7736,
+              0.8299,
+              -198.6464
+            ],
+            "max": [
+              -11.3736,
+              0.9499,
+              -190.6064
+            ]
+          },
+          "top_height_world": 0.9499,
+          "center_world": [
+            -17.573593,
+            0.889904,
+            -194.626407
+          ]
+        },
+        {
+          "id": "finish_rail_1",
+          "kind": "rail",
+          "origin_local": [
+            -6.31,
+            0.45,
+            -4.0
+          ],
+          "origin_world": [
+            -23.883593,
+            1.399904,
+            -194.626407
+          ],
+          "size": [
+            0.22,
+            0.9,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              -23.9936,
+              0.9499,
+              -198.6464
+            ],
+            "max": [
+              -23.7736,
+              1.8499,
+              -190.6064
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -23.883593,
+            1.399904,
+            -194.626407
+          ]
+        },
+        {
+          "id": "finish_rail_2",
+          "kind": "rail",
+          "origin_local": [
+            6.31,
+            0.45,
+            -4.0
+          ],
+          "origin_world": [
+            -11.263593,
+            1.399904,
+            -194.626407
+          ],
+          "size": [
+            0.22,
+            0.9,
+            8.04
+          ],
+          "pitch_deg": 0.0,
+          "along_local": 4.0,
+          "aabb_world": {
+            "min": [
+              -11.3736,
+              0.9499,
+              -198.6464
+            ],
+            "max": [
+              -11.1536,
+              1.8499,
+              -190.6064
+            ]
+          },
+          "top_height_world": 1.8499,
+          "center_world": [
+            -11.263593,
+            1.399904,
+            -194.626407
+          ]
+        }
+      ]
+    }
+  ]
+}

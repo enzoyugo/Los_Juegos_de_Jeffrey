@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_track_cam_v7"]
+
+[ext_resource type="Script" path="res://scripts/debug/track_camera_lab.gd" id="1"]
+
+[node name="TrackCameraLab" type="Node3D"]
+script = ExtResource("1")

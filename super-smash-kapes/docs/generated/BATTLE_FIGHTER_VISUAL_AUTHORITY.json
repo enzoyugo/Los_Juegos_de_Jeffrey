@@ -1,0 +1,265 @@
+{
+	"audit_host": "packed_scene",
+	"catalog_default_pipeline": "ACTORCORE_V4",
+	"catalog_swapped": false,
+	"env_SSK_USE_SEMANTIC_V2_CANDIDATE": false,
+	"jaguarete": {
+		"animation": "idle",
+		"candidate": {
+			"aabb": {
+				"position": [
+					-0.774999976158142,
+					-0.0000000176360117620789,
+					-0.389999985694885
+				],
+				"size": [
+					1.54999995231628,
+					0.042380765080452,
+					0.779999971389771
+				]
+			},
+			"clips": [
+				"canonical_standing",
+				"idle",
+				"rest"
+			],
+			"expected_glb": "res://assets/fighters/processed/semantic_solver_v2/jaguarete/jaguarete_idle_semantic_v2.glb",
+			"fallback": false,
+			"glb": "res://assets/fighters/processed/semantic_solver_v2/jaguarete/jaguarete_idle_semantic_v2.glb",
+			"glb_matches_expected": true,
+			"model_yaw_deg": -90.0,
+			"ok": true,
+			"pipeline": "ACTORCORE_SEMANTIC_V2_CANDIDATE",
+			"playing": "idle",
+			"script": "res://fighters/jaguarete/jaguarete_semantic_v2_battle_candidate.gd",
+			"skeleton_bones": 101,
+			"skeleton_upright": {
+				"classification": "UPRIGHT",
+				"delta": [
+					0.0214926395565271,
+					1.32952487468719,
+					-0.00000001382747161216
+				],
+				"dominant_axis": "Y",
+				"head": [
+					0.0214930083602667,
+					3.16508460044861,
+					-0.0000000138149891526496
+				],
+				"hip": [
+					0.000000368281831697459,
+					1.83555972576141,
+					0.0000000000124826416564305
+				],
+				"ok": true
+			},
+			"upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"catalog_pipeline_id": "ACTORCORE_V4",
+		"catalog_production_glb": "res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb",
+		"catalog_visual_script": "res://fighters/jaguarete/jaguarete_actorcore_visual.gd",
+		"experimental_semantic_v2": false,
+		"glb": "res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb",
+		"pipeline": "ACTORCORE_V4",
+		"production": {
+			"aabb": {
+				"position": [
+					-0.774999976158142,
+					-0.00665938621386886,
+					-0.389999985694885
+				],
+				"size": [
+					1.54999995231628,
+					0.0266594029963017,
+					0.779999971389771
+				]
+			},
+			"clips": [
+				"Armature|0_T-Pose|0_T-Pose",
+				"air_attack",
+				"attack_heavy",
+				"attack_neutral",
+				"hit_heavy",
+				"hit_light",
+				"idle",
+				"jump",
+				"ko"
+			],
+			"expected_glb": "res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb",
+			"fallback": false,
+			"glb": "res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb",
+			"glb_matches_expected": true,
+			"model_yaw_deg": -90.0,
+			"ok": true,
+			"pipeline": "ACTORCORE_V4",
+			"playing": "idle",
+			"script": "res://fighters/jaguarete/jaguarete_actorcore_visual.gd",
+			"skeleton_bones": 101,
+			"skeleton_upright": {
+				"classification": "UPRIGHT",
+				"delta": [
+					-0.0379943251609802,
+					1.03689026832581,
+					0.0769233927130699
+				],
+				"dominant_axis": "Y",
+				"head": [
+					-0.596851229667664,
+					2.47300004959106,
+					0.0769229531288147
+				],
+				"hip": [
+					-0.558856904506683,
+					1.43610978126526,
+					-0.000000437190522006858
+				],
+				"ok": true
+			},
+			"upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"sideways_root_cause": {
+			"candidate_classification": "UPRIGHT",
+			"candidate_upright_hint": "SIDEWAYS_OR_FLAT",
+			"candidate_uses_semantic_v2_glb": true,
+			"cause": "production_spawn_is_upright_human_sideways_is_not_the_current_identity_spawn_stack",
+			"evidence": [
+				"current production hip-head is Y-dominant",
+				"default battle GLB is production V4 not semantic_solver_v2"
+			],
+			"production_classification": "UPRIGHT",
+			"production_still_v4": true,
+			"production_upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"visual_script": "res://fighters/jaguarete/jaguarete_actorcore_visual.gd"
+	},
+	"spawn_path": "Fighter._setup_visual -> FighterDefinition.create_visual -> visual_script.new -> ActorCoreFighterVisual._ready",
+	"terere": {
+		"animation": "idle",
+		"candidate": {
+			"aabb": {
+				"position": [
+					-0.675000011920929,
+					-0.00000000680085054938218,
+					-0.340000003576279
+				],
+				"size": [
+					1.35000002384186,
+					0.0517537221312523,
+					0.680000007152557
+				]
+			},
+			"clips": [
+				"canonical_standing",
+				"idle",
+				"rest"
+			],
+			"expected_glb": "res://assets/fighters/processed/semantic_solver_v2/terere/terere_idle_semantic_v2.glb",
+			"fallback": false,
+			"glb": "res://assets/fighters/processed/semantic_solver_v2/terere/terere_idle_semantic_v2.glb",
+			"glb_matches_expected": true,
+			"model_yaw_deg": -90.0,
+			"ok": true,
+			"pipeline": "ACTORCORE_SEMANTIC_V2_CANDIDATE",
+			"playing": "idle",
+			"script": "res://fighters/terere/terere_semantic_v2_battle_candidate.gd",
+			"skeleton_bones": 101,
+			"skeleton_upright": {
+				"classification": "UPRIGHT",
+				"delta": [
+					0.182333946228027,
+					1.17825818061829,
+					0.0000000532393436003531
+				],
+				"dominant_axis": "Y",
+				"head": [
+					0.182334750890732,
+					2.78493762016296,
+					0.0000000531431112449354
+				],
+				"hip": [
+					0.000000804691467237717,
+					1.60667943954468,
+					-0.000000000096233306046134
+				],
+				"ok": true
+			},
+			"upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"catalog_pipeline_id": "ACTORCORE_V4",
+		"catalog_production_glb": "res://assets/fighters/processed/terere/terere_game_ready_v4.glb",
+		"catalog_visual_script": "res://fighters/terere/terere_actorcore_visual.gd",
+		"experimental_semantic_v2": false,
+		"glb": "res://assets/fighters/processed/terere/terere_game_ready_v4.glb",
+		"pipeline": "ACTORCORE_V4",
+		"production": {
+			"aabb": {
+				"position": [
+					-0.675000011920929,
+					-0.00574753200635314,
+					-0.340000003576279
+				],
+				"size": [
+					1.35000002384186,
+					0.0257475469261408,
+					0.680000007152557
+				]
+			},
+			"clips": [
+				"Armature|0_T-Pose|0_T-Pose",
+				"air_attack",
+				"attack_heavy",
+				"attack_neutral",
+				"hit_heavy",
+				"hit_light",
+				"idle",
+				"jump",
+				"ko"
+			],
+			"expected_glb": "res://assets/fighters/processed/terere/terere_game_ready_v4.glb",
+			"fallback": false,
+			"glb": "res://assets/fighters/processed/terere/terere_game_ready_v4.glb",
+			"glb_matches_expected": true,
+			"model_yaw_deg": -90.0,
+			"ok": true,
+			"pipeline": "ACTORCORE_V4",
+			"playing": "idle",
+			"script": "res://fighters/terere/terere_actorcore_visual.gd",
+			"skeleton_bones": 101,
+			"skeleton_upright": {
+				"classification": "UPRIGHT",
+				"delta": [
+					0.0781733468174934,
+					0.667756080627441,
+					0.0585362985730171
+				],
+				"dominant_axis": "Y",
+				"head": [
+					-0.081336610019207,
+					1.57637429237366,
+					0.0585362985730171
+				],
+				"hip": [
+					-0.1595099568367,
+					0.908618211746216,
+					-0.000000000113605486129487
+				],
+				"ok": true
+			},
+			"upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"sideways_root_cause": {
+			"candidate_classification": "UPRIGHT",
+			"candidate_upright_hint": "SIDEWAYS_OR_FLAT",
+			"candidate_uses_semantic_v2_glb": true,
+			"cause": "production_spawn_is_upright_human_sideways_is_not_the_current_identity_spawn_stack",
+			"evidence": [
+				"current production hip-head is Y-dominant",
+				"default battle GLB is production V4 not semantic_solver_v2"
+			],
+			"production_classification": "UPRIGHT",
+			"production_still_v4": true,
+			"production_upright_hint": "SIDEWAYS_OR_FLAT"
+		},
+		"visual_script": "res://fighters/terere/terere_actorcore_visual.gd"
+	}
+}

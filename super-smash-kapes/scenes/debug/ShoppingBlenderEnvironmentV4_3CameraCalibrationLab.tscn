@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_sds_v4_3_cam_calib"]
+
+[ext_resource type="Script" path="res://scripts/debug/shopping_blender_environment_v4_3_camera_calibration_lab.gd" id="1"]
+
+[node name="ShoppingBlenderEnvironmentV4_3CameraCalibrationLab" type="Node3D"]
+script = ExtResource("1")

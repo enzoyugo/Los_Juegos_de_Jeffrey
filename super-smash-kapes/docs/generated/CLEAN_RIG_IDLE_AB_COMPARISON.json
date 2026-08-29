@@ -1,0 +1,153 @@
+{
+  "pipeline": "CLEAN_RIG_V1",
+  "animation": "Idle.fbx",
+  "fighters": {
+    "terere": {
+      "traditional": {
+        "classification": "DEFORMATION_INVALID",
+        "max_volume_ratio": 1.0429,
+        "extreme_verts": 421,
+        "limb_length_error": 0.0,
+        "foot_drift": 0.39134,
+        "root_xz": 0.12752,
+        "technical_pass": false,
+        "per_character_hacks": 0,
+        "complexity": "shared rest-space CoB + hip vertical only",
+        "upperarm_from_down_L": 43.877,
+        "upperarm_from_down_R": 40.719,
+        "elbow_L": 81.684,
+        "elbow_R": 98.51,
+        "hand_from_down_L": 95.004,
+        "hand_from_down_R": 128.494,
+        "hand_drift": 0.77315,
+        "hip_z_variance": 0.00107,
+        "animation_amplitude": "mixamo_intra_idle_ptp"
+      },
+      "semantic_clean": {
+        "classification": "STANDING_IDLE",
+        "max_volume_ratio": 0.655,
+        "extreme_verts": 0,
+        "limb_length_error": 0.0,
+        "foot_drift": 0.10529,
+        "root_xz": 0.01806,
+        "technical_pass": true,
+        "per_character_hacks": 0,
+        "complexity": "native-axis standing solved from Mixamo world channels + intra-idle deltas",
+        "upperarm_from_down_L": 37.097,
+        "upperarm_from_down_R": 30.279,
+        "elbow_L": 81.123,
+        "elbow_R": 75.021,
+        "hand_from_down_L": 52.799,
+        "hand_from_down_R": 56.613,
+        "hand_drift": 0.44084,
+        "hip_z_variance": 0.00107,
+        "animation_amplitude": "mixamo_intra_idle_ptp"
+      },
+      "automatic_winner": "HUMAN_REQUIRED"
+    },
+    "jaguarete": {
+      "traditional": {
+        "classification": "DEFORMATION_INVALID",
+        "max_volume_ratio": 0.6821,
+        "extreme_verts": 1293,
+        "limb_length_error": 0.0,
+        "foot_drift": 0.56981,
+        "root_xz": 0.18059,
+        "technical_pass": false,
+        "per_character_hacks": 0,
+        "complexity": "shared rest-space CoB + hip vertical only",
+        "upperarm_from_down_L": 42.619,
+        "upperarm_from_down_R": 42.451,
+        "elbow_L": 83.719,
+        "elbow_R": 100.386,
+        "hand_from_down_L": 91.72,
+        "hand_from_down_R": 101.089,
+        "hand_drift": 0.80422,
+        "hip_z_variance": 0.00301,
+        "animation_amplitude": "mixamo_intra_idle_ptp"
+      },
+      "semantic_clean": {
+        "classification": "STANDING_IDLE",
+        "max_volume_ratio": 0.9249,
+        "extreme_verts": 0,
+        "limb_length_error": 0.0,
+        "foot_drift": 0.23669,
+        "root_xz": 0.02557,
+        "technical_pass": true,
+        "per_character_hacks": 0,
+        "complexity": "native-axis standing solved from Mixamo world channels + intra-idle deltas",
+        "upperarm_from_down_L": 40.138,
+        "upperarm_from_down_R": 32.941,
+        "elbow_L": 79.905,
+        "elbow_R": 88.876,
+        "hand_from_down_L": 97.854,
+        "hand_from_down_R": 93.606,
+        "hand_drift": 0.18686,
+        "hip_z_variance": 0.00301,
+        "animation_amplitude": "mixamo_intra_idle_ptp"
+      },
+      "automatic_winner": "HUMAN_REQUIRED"
+    }
+  },
+  "traditional_generic_mapping_likely": false,
+  "semantic_clip_specific": true,
+  "at_least_one_method_both_fighters": true,
+  "mixamo_intra_idle_amplitude": {
+    "L_shoulder_lowering": {
+      "min": -6.7715,
+      "max": 19.7153,
+      "ptp": 26.4868
+    },
+    "R_shoulder_lowering": {
+      "min": -5.1494,
+      "max": 15.7587,
+      "ptp": 20.9081
+    },
+    "L_elbow_flexion": {
+      "min": -5.8516,
+      "max": 5.7406,
+      "ptp": 11.5922
+    },
+    "R_elbow_flexion": {
+      "min": -3.7588,
+      "max": 2.5143,
+      "ptp": 6.2731
+    },
+    "L_knee_flexion": {
+      "min": -11.3912,
+      "max": 12.4373,
+      "ptp": 23.8285
+    },
+    "R_knee_flexion": {
+      "min": -10.3384,
+      "max": 11.5081,
+      "ptp": 21.8465
+    },
+    "torso_lean": {
+      "min": -0.6186,
+      "max": 0.742,
+      "ptp": 1.3606
+    },
+    "head_lean": {
+      "min": -6.8729,
+      "max": 0.4371,
+      "ptp": 7.31
+    },
+    "hip_y": {
+      "min": -2.9072,
+      "max": 2.1407,
+      "ptp": 5.0479
+    },
+    "hip_world_z": {
+      "min": -0.0291,
+      "max": 0.0214,
+      "ptp": 0.0505
+    }
+  },
+  "traditional_failure_mode": "extreme_verts despite volume_ratio<=1.35 and limb_length_error=0; rest-space CoB still spikes skin on Clean Rig V1 Idle",
+  "semantic_generalizability": "Idle channels (torso/head/shoulder/elbow/knee/hip Y) can transfer to other standing clips, but clip-specific standing targets and safe clamps are required. Punch/jump/KO need additional channels and cannot reuse Idle standing blindly.",
+  "traditional_library_assessment": "Do not process remaining Mixamo library with this traditional path until extreme_verts is solved. Shared bone map is reusable; the CoB still produces localized spikes on Clean Rig V1.",
+  "verdict_token": "SSK_CLEAN_RIG_IDLE_RETARGET_BENCHMARK_V1_READY_FOR_HUMAN_PLAYTEST",
+  "human_visual_approval_required": true,
+  "production_winner": "NOT_CHOSEN"
+}

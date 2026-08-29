@@ -1,0 +1,397 @@
+{
+	"all_ok": true,
+	"godot": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"hud_isolation": true,
+	"input_actions": {
+		"benchmark_bbox": true,
+		"benchmark_camera_reset": true,
+		"benchmark_rest": true,
+		"benchmark_semantic": true,
+		"benchmark_skeleton": true,
+		"benchmark_traditional": true
+	},
+	"labs": [
+		{
+			"blocking_errors": [],
+			"dump": {
+				"animation_name": "rest",
+				"animation_names": [
+					"idle"
+				],
+				"battle_hud_instanced": false,
+				"bone_count": 101,
+				"exactly_one_visible": true,
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "terere",
+				"idle_tracks": 21,
+				"legacy_orientation_hack": false,
+				"load_ok": true,
+				"method": "CLEAN_REST",
+				"pipeline": "CLEAN_RIG_IDLE_BENCHMARK_V1",
+				"playing": false,
+				"proxy_idle": false,
+				"rest_glb": "res://assets/fighters/processed/clean_rig_v1/terere/terere_clean_rig_v1.glb",
+				"runtime_retarget": false,
+				"semantic_glb": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_semantic_clean_v1.glb",
+				"traditional_glb": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_traditional_v1.glb"
+			},
+			"hud_script_in_scene": false,
+			"methods": {
+				"CLEAN_REST": {
+					"advanced": false,
+					"animation_length": 0.0,
+					"animation_name": "rest",
+					"camera_unchanged": true,
+					"end_position": 0.0,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": false,
+					"rest_visible": true,
+					"semantic_visible": false,
+					"snapshot_start": {
+						"animation_length": 0.0,
+						"animation_list": [],
+						"animation_name": "rest",
+						"asset": "res://assets/fighters/processed/clean_rig_v1/terere/terere_clean_rig_v1.glb",
+						"camera_position": [
+							0.0,
+							1.60000002384186,
+							5.5
+						],
+						"candidate_visible": true,
+						"current_position": 0.0,
+						"exactly_one_visible": true,
+						"fighter": "terere",
+						"has_animation_tree": false,
+						"method": "CLEAN_REST",
+						"playing": false,
+						"rest_visible": true,
+						"semantic_visible": false,
+						"traditional_visible": false
+					},
+					"start_position": 0.0,
+					"traditional_visible": false
+				},
+				"SEMANTIC": {
+					"advanced": true,
+					"animation_length": 3.66666674613953,
+					"animation_name": "idle",
+					"camera_unchanged": true,
+					"end_position": 1.000501,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": true,
+					"rest_visible": false,
+					"semantic_visible": true,
+					"snapshot_end": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_semantic_clean_v1.glb",
+						"camera_position": [
+							0.0,
+							1.60000002384186,
+							5.5
+						],
+						"candidate_visible": true,
+						"current_position": 1.000501,
+						"exactly_one_visible": true,
+						"fighter": "terere",
+						"has_animation_tree": false,
+						"method": "SEMANTIC",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": true,
+						"traditional_visible": false
+					},
+					"snapshot_start": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_semantic_clean_v1.glb",
+						"camera_position": [
+							0.0,
+							1.60000002384186,
+							5.5
+						],
+						"candidate_visible": true,
+						"current_position": 0.0,
+						"exactly_one_visible": true,
+						"fighter": "terere",
+						"has_animation_tree": false,
+						"method": "SEMANTIC",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": true,
+						"traditional_visible": false
+					},
+					"start_position": 0.0,
+					"traditional_visible": false
+				},
+				"TRADITIONAL": {
+					"advanced": true,
+					"animation_length": 3.66666674613953,
+					"animation_name": "idle",
+					"camera_unchanged": true,
+					"end_position": 1.014299,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": true,
+					"rest_visible": false,
+					"semantic_visible": false,
+					"snapshot_end": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_traditional_v1.glb",
+						"camera_position": [
+							0.0,
+							1.60000002384186,
+							5.5
+						],
+						"candidate_visible": true,
+						"current_position": 1.014299,
+						"exactly_one_visible": true,
+						"fighter": "terere",
+						"has_animation_tree": false,
+						"method": "TRADITIONAL",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": false,
+						"traditional_visible": true
+					},
+					"snapshot_start": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/terere/terere_idle_traditional_v1.glb",
+						"camera_position": [
+							0.0,
+							1.60000002384186,
+							5.5
+						],
+						"candidate_visible": true,
+						"current_position": 0.00998766666666666,
+						"exactly_one_visible": true,
+						"fighter": "terere",
+						"has_animation_tree": false,
+						"method": "TRADITIONAL",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": false,
+						"traditional_visible": true
+					},
+					"start_position": 0.00998766666666666,
+					"traditional_visible": true
+				}
+			},
+			"ok": true,
+			"scene": "res://scenes/debug/TerereIdleRetargetBenchmarkV1Lab.tscn"
+		},
+		{
+			"blocking_errors": [],
+			"dump": {
+				"animation_name": "rest",
+				"animation_names": [
+					"idle"
+				],
+				"battle_hud_instanced": false,
+				"bone_count": 101,
+				"exactly_one_visible": true,
+				"fail_reason": "",
+				"fallback": false,
+				"fighter": "jaguarete",
+				"idle_tracks": 21,
+				"legacy_orientation_hack": false,
+				"load_ok": true,
+				"method": "CLEAN_REST",
+				"pipeline": "CLEAN_RIG_IDLE_BENCHMARK_V1",
+				"playing": false,
+				"proxy_idle": false,
+				"rest_glb": "res://assets/fighters/processed/clean_rig_v1/jaguarete/jaguarete_clean_rig_v1.glb",
+				"runtime_retarget": false,
+				"semantic_glb": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_semantic_clean_v1.glb",
+				"traditional_glb": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_traditional_v1.glb"
+			},
+			"hud_script_in_scene": false,
+			"methods": {
+				"CLEAN_REST": {
+					"advanced": false,
+					"animation_length": 0.0,
+					"animation_name": "rest",
+					"camera_unchanged": true,
+					"end_position": 0.0,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": false,
+					"rest_visible": true,
+					"semantic_visible": false,
+					"snapshot_start": {
+						"animation_length": 0.0,
+						"animation_list": [],
+						"animation_name": "rest",
+						"asset": "res://assets/fighters/processed/clean_rig_v1/jaguarete/jaguarete_clean_rig_v1.glb",
+						"camera_position": [
+							0.0,
+							2.09999990463257,
+							7.0
+						],
+						"candidate_visible": true,
+						"current_position": 0.0,
+						"exactly_one_visible": true,
+						"fighter": "jaguarete",
+						"has_animation_tree": false,
+						"method": "CLEAN_REST",
+						"playing": false,
+						"rest_visible": true,
+						"semantic_visible": false,
+						"traditional_visible": false
+					},
+					"start_position": 0.0,
+					"traditional_visible": false
+				},
+				"SEMANTIC": {
+					"advanced": true,
+					"animation_length": 3.66666674613953,
+					"animation_name": "idle",
+					"camera_unchanged": true,
+					"end_position": 1.000498,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": true,
+					"rest_visible": false,
+					"semantic_visible": true,
+					"snapshot_end": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_semantic_clean_v1.glb",
+						"camera_position": [
+							0.0,
+							2.09999990463257,
+							7.0
+						],
+						"candidate_visible": true,
+						"current_position": 1.000498,
+						"exactly_one_visible": true,
+						"fighter": "jaguarete",
+						"has_animation_tree": false,
+						"method": "SEMANTIC",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": true,
+						"traditional_visible": false
+					},
+					"snapshot_start": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_semantic_clean_v1.glb",
+						"camera_position": [
+							0.0,
+							2.09999990463257,
+							7.0
+						],
+						"candidate_visible": true,
+						"current_position": 0.0,
+						"exactly_one_visible": true,
+						"fighter": "jaguarete",
+						"has_animation_tree": false,
+						"method": "SEMANTIC",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": true,
+						"traditional_visible": false
+					},
+					"start_position": 0.0,
+					"traditional_visible": false
+				},
+				"TRADITIONAL": {
+					"advanced": true,
+					"animation_length": 3.66666674613953,
+					"animation_name": "idle",
+					"camera_unchanged": true,
+					"end_position": 1.010529,
+					"exactly_one_visible": true,
+					"ok": true,
+					"playing": true,
+					"rest_visible": false,
+					"semantic_visible": false,
+					"snapshot_end": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_traditional_v1.glb",
+						"camera_position": [
+							0.0,
+							2.09999990463257,
+							7.0
+						],
+						"candidate_visible": true,
+						"current_position": 1.010529,
+						"exactly_one_visible": true,
+						"fighter": "jaguarete",
+						"has_animation_tree": false,
+						"method": "TRADITIONAL",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": false,
+						"traditional_visible": true
+					},
+					"snapshot_start": {
+						"animation_length": 3.66666674613953,
+						"animation_list": [
+							"idle"
+						],
+						"animation_name": "idle",
+						"asset": "res://assets/fighters/processed/idle_benchmark_v1/jaguarete/jaguarete_idle_traditional_v1.glb",
+						"camera_position": [
+							0.0,
+							2.09999990463257,
+							7.0
+						],
+						"candidate_visible": true,
+						"current_position": 0.00833333333333333,
+						"exactly_one_visible": true,
+						"fighter": "jaguarete",
+						"has_animation_tree": false,
+						"method": "TRADITIONAL",
+						"playing": true,
+						"rest_visible": false,
+						"semantic_visible": false,
+						"traditional_visible": true
+					},
+					"start_position": 0.00833333333333333,
+					"traditional_visible": true
+				}
+			},
+			"ok": true,
+			"scene": "res://scenes/debug/JaguareteIdleRetargetBenchmarkV1Lab.tscn"
+		}
+	]
+}

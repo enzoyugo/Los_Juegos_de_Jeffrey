@@ -1,0 +1,130 @@
+{
+  "character": "terere",
+  "results": [
+    {
+      "method": "direct_quat",
+      "rest": {
+        "size": [
+          189.833054,
+          75.601089,
+          166.263153
+        ],
+        "max_axis": 189.8331,
+        "volume": 2386139.89
+      },
+      "idle_mid": {
+        "size": [
+          287.035126,
+          301.859772,
+          273.373901
+        ],
+        "max_axis": 301.8598,
+        "volume": 23686306.05
+      },
+      "volume_ratio": 9.9266,
+      "max_axis_ratio": 1.5901,
+      "non_unit_pose_scales": [],
+      "verdict": "FAIL"
+    },
+    {
+      "method": "direct_basis",
+      "rest": {
+        "size": [
+          189.833054,
+          75.601089,
+          166.263153
+        ],
+        "max_axis": 189.8331,
+        "volume": 2386139.89
+      },
+      "idle_mid": {
+        "size": [
+          287.035126,
+          301.859772,
+          273.373901
+        ],
+        "max_axis": 301.8598,
+        "volume": 23686306.05
+      },
+      "volume_ratio": 9.9266,
+      "max_axis_ratio": 1.5901,
+      "non_unit_pose_scales": [],
+      "verdict": "FAIL"
+    },
+    {
+      "method": "parent_rel",
+      "rest": {
+        "size": [
+          189.833054,
+          75.601089,
+          166.263153
+        ],
+        "max_axis": 189.8331,
+        "volume": 2386139.89
+      },
+      "idle_mid": {
+        "size": [
+          247.717316,
+          322.57666,
+          296.698853
+        ],
+        "max_axis": 322.5767,
+        "volume": 23708559.79
+      },
+      "volume_ratio": 9.9359,
+      "max_axis_ratio": 1.6993,
+      "non_unit_pose_scales": [],
+      "verdict": "FAIL"
+    },
+    {
+      "method": "current_world",
+      "rest": {
+        "size": [
+          189.833054,
+          75.601089,
+          166.263153
+        ],
+        "max_axis": 189.8331,
+        "volume": 2386139.89
+      },
+      "idle_mid": {
+        "size": [
+          307.265289,
+          270.431671,
+          313.397827
+        ],
+        "max_axis": 313.3978,
+        "volume": 26041562.31
+      },
+      "volume_ratio": 10.9137,
+      "max_axis_ratio": 1.6509,
+      "non_unit_pose_scales": [],
+      "verdict": "FAIL"
+    },
+    {
+      "method": "current_raw_3x3",
+      "rest": {
+        "size": [
+          189.833054,
+          75.601089,
+          166.263153
+        ],
+        "max_axis": 189.8331,
+        "volume": 2386139.89
+      },
+      "idle_mid": {
+        "size": [
+          307.265442,
+          270.431274,
+          313.398499
+        ],
+        "max_axis": 313.3985,
+        "volume": 26041592.83
+      },
+      "volume_ratio": 10.9137,
+      "max_axis_ratio": 1.6509,
+      "non_unit_pose_scales": [],
+      "verdict": "FAIL"
+    }
+  ]
+}

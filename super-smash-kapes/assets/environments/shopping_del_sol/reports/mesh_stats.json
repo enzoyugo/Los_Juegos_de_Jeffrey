@@ -1,0 +1,71 @@
+{
+  "blender": "2.83.1",
+  "units": "meters",
+  "blockout": {
+    "triangles": 2368,
+    "vertices": 1532,
+    "objects": 174,
+    "glb": "e:\\SuperSmashKapes\\super-smash-kapes\\assets\\environments\\shopping_del_sol\\models\\blockout\\shopping_del_sol_blockout.glb"
+  },
+  "final_visual": {
+    "triangles": 5088,
+    "vertices": 3316,
+    "objects": 386,
+    "glb": "e:\\SuperSmashKapes\\super-smash-kapes\\assets\\environments\\shopping_del_sol\\models\\final\\shopping_del_sol_exterior_v01.glb"
+  },
+  "collision": {
+    "triangles": 96,
+    "vertices": 64,
+    "objects": 8
+  },
+  "materials": [
+    "MAT_ACCENT",
+    "MAT_ASPHALT",
+    "MAT_COLLISION",
+    "MAT_CONCRETE",
+    "MAT_FOLIAGE",
+    "MAT_GLASS",
+    "MAT_INTERIOR_PROXY",
+    "MAT_METAL",
+    "MAT_PAVER_DARK",
+    "MAT_PAVER_LIGHT",
+    "MAT_ROOF",
+    "MAT_ROOF_FLAT",
+    "MAT_SIGN_PLACEHOLDER",
+    "MAT_STRIPE",
+    "MAT_WALL_DARK",
+    "MAT_WALL_LIGHT"
+  ],
+  "textures": [
+    "tex_asphalt.png",
+    "tex_concrete.png",
+    "tex_glass.png",
+    "tex_metal.png",
+    "tex_roof_tile.png",
+    "tex_sign_sun.png",
+    "tex_wall_light.png",
+    "tex_wall_terracotta.png"
+  ],
+  "cameras": [
+    "CAM_AERIAL",
+    "CAM_FRONT",
+    "CAM_FRONT_3Q_LEFT",
+    "CAM_FRONT_3Q_RIGHT",
+    "CAM_LEFT",
+    "CAM_RIGHT"
+  ],
+  "blend": "e:\\SuperSmashKapes\\super-smash-kapes\\assets\\environments\\shopping_del_sol\\source\\blender\\shopping_del_sol_v01.blend",
+  "dimensions_m": {
+    "arc_radius": 180.0,
+    "arc_half_deg": 28.0,
+    "wing_height": 13.0,
+    "arch_w": 24.0,
+    "arch_h": 20.0,
+    "building_depth": 42.0,
+    "pavilion_d": 28.0,
+    "parking": [
+      156.0,
+      64.0
+    ]
+  }
+}

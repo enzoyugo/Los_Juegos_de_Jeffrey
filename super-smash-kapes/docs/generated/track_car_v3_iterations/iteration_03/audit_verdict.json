@@ -1,0 +1,31 @@
+{
+  "label": "V3",
+  "overall": "PASS",
+  "semantic_orientation_pass": true,
+  "body_integrity_pass": true,
+  "wheel_fl_geometry_pass": true,
+  "wheel_fr_geometry_pass": true,
+  "wheel_rl_geometry_pass": true,
+  "wheel_rr_geometry_pass": true,
+  "wheel_spin_sweep_pass": true,
+  "wheel_aabb_pass": true,
+  "wheel_radius_pass": true,
+  "pivot_center_pass": true,
+  "airborne_state_pass": true,
+  "landing_telemetry_pass": true,
+  "atlas_pass": true,
+  "d3d12_pass": true,
+  "validator_pass": true,
+  "source_hash_pass": true,
+  "embedded_images_pass": true,
+  "defects": [],
+  "visual_audit": {
+    "source_vs_v3_front": "BOTH bumper/headlights. PASS",
+    "source_vs_v3_rear": "BOTH wing/exhaust. PASS",
+    "FL_000_along_axle": "Circular tire + 5-spoke rim. Compact. PASS",
+    "FR_090": "Circular. No sheet. PASS",
+    "RL_180": "Circular. No sheet. PASS",
+    "RR_270": "Circular. Low-poly faceting only. PASS",
+    "body_only_front": "Front of car, no fused wheels. PASS"
+  }
+}

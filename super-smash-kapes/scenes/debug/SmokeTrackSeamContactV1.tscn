@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ssk_smoke_seam_v1"]
+
+[ext_resource type="Script" path="res://scripts/debug/smoke_track_seam_contact_v1.gd" id="1"]
+
+[node name="SmokeTrackSeamContactV1" type="Node3D"]
+script = ExtResource("1")

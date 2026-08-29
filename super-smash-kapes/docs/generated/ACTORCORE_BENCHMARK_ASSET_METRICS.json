@@ -1,0 +1,48 @@
+{
+  "characters": {
+    "terere": {
+      "polygon_count": 87067,
+      "vertex_count": 50382,
+      "bones": 101,
+      "material_count": 1,
+      "texture_count": 2,
+      "texture_dimensions": [
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ]
+      ],
+      "source_fbx_size_bytes": 4625952,
+      "exported_glb_size_bytes": 14353408,
+      "preview_blend_size_bytes": 14830048,
+      "motion_accepted": true,
+      "roundtrip_accepted": true
+    },
+    "jaguarete": {
+      "polygon_count": 82268,
+      "vertex_count": 47292,
+      "bones": 101,
+      "material_count": 1,
+      "texture_count": 2,
+      "texture_dimensions": [
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ]
+      ],
+      "source_fbx_size_bytes": 4324160,
+      "exported_glb_size_bytes": 14151708,
+      "preview_blend_size_bytes": 14059740,
+      "motion_accepted": true,
+      "roundtrip_accepted": true
+    }
+  }
+}

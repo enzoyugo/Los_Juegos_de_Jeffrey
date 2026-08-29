@@ -1,0 +1,24 @@
+{
+  "FIRST_BROKEN_STAGE_TERERE": "C_target_rig_after_retarget",
+  "FIRST_BROKEN_STAGE_JAGUARETE": "C_after_retarget_one_frame",
+  "repair": {
+    "method": "clip_relative_to_mixamo_frame_1",
+    "terere_v4_volume_ratio": 1.0642,
+    "jaguarete_v4_volume_ratio": 1.0137,
+    "idle_bbox_pass": true
+  },
+  "classifier_note": "Original classify_bbox used max(axis) as height/width and a 2.4x gate, so 10x volume explosions were labelled HEALTHY. Volume classifier is now authoritative.",
+  "terere": {
+    "A_source_ActorCore_FBX_rest": "HEALTHY",
+    "B_source_ActorCore_FBX_pose": "HEALTHY",
+    "C_after_mixamo_actorcore_retarget": "BROKEN",
+    "E_exported_v3_GLB": "BROKEN",
+    "v4_clip_relative_idle": "HEALTHY_TECHNICAL"
+  },
+  "jaguarete": {
+    "A_source_ActorCore_FBX_rest": "HEALTHY",
+    "C_after_mixamo_actorcore_retarget": "BROKEN",
+    "E_exported_v3_GLB": "BROKEN",
+    "v4_clip_relative_idle": "HEALTHY_TECHNICAL"
+  }
+}

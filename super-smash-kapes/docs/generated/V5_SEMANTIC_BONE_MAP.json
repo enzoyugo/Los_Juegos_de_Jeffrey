@@ -1,0 +1,1227 @@
+{
+  "generated_at": "2026-08-25T20:35:25.322473",
+  "fighters": {
+    "jaguarete": {
+      "PELVIS": {
+        "bone": "pelvis",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pelvis",
+          "CC_Base_Hip",
+          "hip",
+          "root"
+        ]
+      },
+      "HIP": {
+        "bone": "pelvis",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pelvis",
+          "CC_Base_Hip",
+          "hip"
+        ]
+      },
+      "SPINE": {
+        "bone": "spine_01",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_01",
+          "CC_Base_Spine01",
+          "spine01",
+          "spine"
+        ]
+      },
+      "SPINE_02": {
+        "bone": "spine_02",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_02",
+          "CC_Base_Spine02",
+          "spine02"
+        ]
+      },
+      "SPINE_03": {
+        "bone": "spine_03",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_03",
+          "spine03"
+        ]
+      },
+      "CHEST": {
+        "bone": "spine_03",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_03",
+          "spine_02",
+          "CC_Base_Spine02",
+          "chest"
+        ]
+      },
+      "NECK": {
+        "bone": "neck_01",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "neck_01",
+          "CC_Base_NeckTwist01",
+          "neck"
+        ]
+      },
+      "HEAD": {
+        "bone": "head",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "head",
+          "CC_Base_Head"
+        ]
+      },
+      "LEFT_CLAVICLE": {
+        "bone": "clavicle_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "clavicle_l",
+          "CC_Base_L_Clavicle"
+        ]
+      },
+      "RIGHT_CLAVICLE": {
+        "bone": "clavicle_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "clavicle_r",
+          "CC_Base_R_Clavicle"
+        ]
+      },
+      "LEFT_UPPERARM": {
+        "bone": "upperarm_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "upperarm_l",
+          "CC_Base_L_Upperarm"
+        ]
+      },
+      "RIGHT_UPPERARM": {
+        "bone": "upperarm_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "upperarm_r",
+          "CC_Base_R_Upperarm"
+        ]
+      },
+      "LEFT_FOREARM": {
+        "bone": "lowerarm_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "lowerarm_l",
+          "CC_Base_L_Forearm",
+          "forearm_l"
+        ]
+      },
+      "RIGHT_FOREARM": {
+        "bone": "lowerarm_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "lowerarm_r",
+          "CC_Base_R_Forearm",
+          "forearm_r"
+        ]
+      },
+      "LEFT_HAND": {
+        "bone": "hand_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "hand_l",
+          "CC_Base_L_Hand"
+        ]
+      },
+      "RIGHT_HAND": {
+        "bone": "hand_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "hand_r",
+          "CC_Base_R_Hand"
+        ]
+      },
+      "LEFT_THIGH": {
+        "bone": "thigh_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thigh_l",
+          "CC_Base_L_Thigh"
+        ]
+      },
+      "RIGHT_THIGH": {
+        "bone": "thigh_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thigh_r",
+          "CC_Base_R_Thigh"
+        ]
+      },
+      "LEFT_CALF": {
+        "bone": "calf_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "calf_l",
+          "CC_Base_L_Calf"
+        ]
+      },
+      "RIGHT_CALF": {
+        "bone": "calf_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "calf_r",
+          "CC_Base_R_Calf"
+        ]
+      },
+      "LEFT_FOOT": {
+        "bone": "foot_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "foot_l",
+          "CC_Base_L_Foot"
+        ]
+      },
+      "RIGHT_FOOT": {
+        "bone": "foot_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "foot_r",
+          "CC_Base_R_Foot"
+        ]
+      },
+      "LEFT_BALL": {
+        "bone": "ball_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ball_l",
+          "CC_Base_L_ToeBase",
+          "toe_l"
+        ]
+      },
+      "RIGHT_BALL": {
+        "bone": "ball_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ball_r",
+          "CC_Base_R_ToeBase",
+          "toe_r"
+        ]
+      },
+      "LEFT_INDEX_01": {
+        "bone": "index_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_01_l",
+          "CC_Base_L_Index1",
+          "CC_Base_L_Index1"
+        ]
+      },
+      "LEFT_INDEX_02": {
+        "bone": "index_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_02_l",
+          "CC_Base_L_Index2",
+          "CC_Base_L_Index2"
+        ]
+      },
+      "LEFT_INDEX_03": {
+        "bone": "index_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_03_l",
+          "CC_Base_L_Index3",
+          "CC_Base_L_Index3"
+        ]
+      },
+      "LEFT_INDEX_METACARPAL": {
+        "bone": "index_metacarpal_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_metacarpal_l"
+        ]
+      },
+      "LEFT_MIDDLE_01": {
+        "bone": "middle_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_01_l",
+          "CC_Base_L_Middle1",
+          "CC_Base_L_Middle1"
+        ]
+      },
+      "LEFT_MIDDLE_02": {
+        "bone": "middle_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_02_l",
+          "CC_Base_L_Middle2",
+          "CC_Base_L_Middle2"
+        ]
+      },
+      "LEFT_MIDDLE_03": {
+        "bone": "middle_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_03_l",
+          "CC_Base_L_Middle3",
+          "CC_Base_L_Middle3"
+        ]
+      },
+      "LEFT_MIDDLE_METACARPAL": {
+        "bone": "middle_metacarpal_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_metacarpal_l"
+        ]
+      },
+      "LEFT_RING_01": {
+        "bone": "ring_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_01_l",
+          "CC_Base_L_Ring1",
+          "CC_Base_L_Ring1"
+        ]
+      },
+      "LEFT_RING_02": {
+        "bone": "ring_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_02_l",
+          "CC_Base_L_Ring2",
+          "CC_Base_L_Ring2"
+        ]
+      },
+      "LEFT_RING_03": {
+        "bone": "ring_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_03_l",
+          "CC_Base_L_Ring3",
+          "CC_Base_L_Ring3"
+        ]
+      },
+      "LEFT_RING_METACARPAL": {
+        "bone": "ring_metacarpal_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_metacarpal_l"
+        ]
+      },
+      "LEFT_PINKY_01": {
+        "bone": "pinky_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_01_l",
+          "CC_Base_L_Pinky1",
+          "CC_Base_L_Pinky1"
+        ]
+      },
+      "LEFT_PINKY_02": {
+        "bone": "pinky_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_02_l",
+          "CC_Base_L_Pinky2",
+          "CC_Base_L_Pinky2"
+        ]
+      },
+      "LEFT_PINKY_03": {
+        "bone": "pinky_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_03_l",
+          "CC_Base_L_Pinky3",
+          "CC_Base_L_Pinky3"
+        ]
+      },
+      "LEFT_PINKY_METACARPAL": {
+        "bone": "pinky_metacarpal_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_metacarpal_l"
+        ]
+      },
+      "LEFT_THUMB_01": {
+        "bone": "thumb_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_01_l",
+          "CC_Base_L_Thumb1",
+          "CC_Base_L_Thumb1"
+        ]
+      },
+      "LEFT_THUMB_02": {
+        "bone": "thumb_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_02_l",
+          "CC_Base_L_Thumb2",
+          "CC_Base_L_Thumb2"
+        ]
+      },
+      "LEFT_THUMB_03": {
+        "bone": "thumb_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_03_l",
+          "CC_Base_L_Thumb3",
+          "CC_Base_L_Thumb3"
+        ]
+      },
+      "LEFT_THUMB_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "thumb_metacarpal_l"
+        ]
+      },
+      "RIGHT_INDEX_01": {
+        "bone": "index_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_01_r",
+          "CC_Base_R_Index1",
+          "CC_Base_R_Index1"
+        ]
+      },
+      "RIGHT_INDEX_02": {
+        "bone": "index_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_02_r",
+          "CC_Base_R_Index2",
+          "CC_Base_R_Index2"
+        ]
+      },
+      "RIGHT_INDEX_03": {
+        "bone": "index_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_03_r",
+          "CC_Base_R_Index3",
+          "CC_Base_R_Index3"
+        ]
+      },
+      "RIGHT_INDEX_METACARPAL": {
+        "bone": "index_metacarpal_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_metacarpal_r"
+        ]
+      },
+      "RIGHT_MIDDLE_01": {
+        "bone": "middle_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_01_r",
+          "CC_Base_R_Middle1",
+          "CC_Base_R_Middle1"
+        ]
+      },
+      "RIGHT_MIDDLE_02": {
+        "bone": "middle_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_02_r",
+          "CC_Base_R_Middle2",
+          "CC_Base_R_Middle2"
+        ]
+      },
+      "RIGHT_MIDDLE_03": {
+        "bone": "middle_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_03_r",
+          "CC_Base_R_Middle3",
+          "CC_Base_R_Middle3"
+        ]
+      },
+      "RIGHT_MIDDLE_METACARPAL": {
+        "bone": "middle_metacarpal_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_metacarpal_r"
+        ]
+      },
+      "RIGHT_RING_01": {
+        "bone": "ring_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_01_r",
+          "CC_Base_R_Ring1",
+          "CC_Base_R_Ring1"
+        ]
+      },
+      "RIGHT_RING_02": {
+        "bone": "ring_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_02_r",
+          "CC_Base_R_Ring2",
+          "CC_Base_R_Ring2"
+        ]
+      },
+      "RIGHT_RING_03": {
+        "bone": "ring_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_03_r",
+          "CC_Base_R_Ring3",
+          "CC_Base_R_Ring3"
+        ]
+      },
+      "RIGHT_RING_METACARPAL": {
+        "bone": "ring_metacarpal_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ring_metacarpal_r"
+        ]
+      },
+      "RIGHT_PINKY_01": {
+        "bone": "pinky_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_01_r",
+          "CC_Base_R_Pinky1",
+          "CC_Base_R_Pinky1"
+        ]
+      },
+      "RIGHT_PINKY_02": {
+        "bone": "pinky_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_02_r",
+          "CC_Base_R_Pinky2",
+          "CC_Base_R_Pinky2"
+        ]
+      },
+      "RIGHT_PINKY_03": {
+        "bone": "pinky_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_03_r",
+          "CC_Base_R_Pinky3",
+          "CC_Base_R_Pinky3"
+        ]
+      },
+      "RIGHT_PINKY_METACARPAL": {
+        "bone": "pinky_metacarpal_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_metacarpal_r"
+        ]
+      },
+      "RIGHT_THUMB_01": {
+        "bone": "thumb_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_01_r",
+          "CC_Base_R_Thumb1",
+          "CC_Base_R_Thumb1"
+        ]
+      },
+      "RIGHT_THUMB_02": {
+        "bone": "thumb_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_02_r",
+          "CC_Base_R_Thumb2",
+          "CC_Base_R_Thumb2"
+        ]
+      },
+      "RIGHT_THUMB_03": {
+        "bone": "thumb_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_03_r",
+          "CC_Base_R_Thumb3",
+          "CC_Base_R_Thumb3"
+        ]
+      },
+      "RIGHT_THUMB_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "thumb_metacarpal_r"
+        ]
+      }
+    },
+    "terere": {
+      "PELVIS": {
+        "bone": "pelvis",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pelvis",
+          "CC_Base_Hip",
+          "hip",
+          "root"
+        ]
+      },
+      "HIP": {
+        "bone": "pelvis",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pelvis",
+          "CC_Base_Hip",
+          "hip"
+        ]
+      },
+      "SPINE": {
+        "bone": "spine_01",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_01",
+          "CC_Base_Spine01",
+          "spine01",
+          "spine"
+        ]
+      },
+      "SPINE_02": {
+        "bone": "spine_02",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_02",
+          "CC_Base_Spine02",
+          "spine02"
+        ]
+      },
+      "SPINE_03": {
+        "bone": "spine_03",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_03",
+          "spine03"
+        ]
+      },
+      "CHEST": {
+        "bone": "spine_03",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "spine_03",
+          "spine_02",
+          "CC_Base_Spine02",
+          "chest"
+        ]
+      },
+      "NECK": {
+        "bone": "neck_01",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "neck_01",
+          "CC_Base_NeckTwist01",
+          "neck"
+        ]
+      },
+      "HEAD": {
+        "bone": "head",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "head",
+          "CC_Base_Head"
+        ]
+      },
+      "LEFT_CLAVICLE": {
+        "bone": "clavicle_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "clavicle_l",
+          "CC_Base_L_Clavicle"
+        ]
+      },
+      "RIGHT_CLAVICLE": {
+        "bone": "clavicle_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "clavicle_r",
+          "CC_Base_R_Clavicle"
+        ]
+      },
+      "LEFT_UPPERARM": {
+        "bone": "upperarm_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "upperarm_l",
+          "CC_Base_L_Upperarm"
+        ]
+      },
+      "RIGHT_UPPERARM": {
+        "bone": "upperarm_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "upperarm_r",
+          "CC_Base_R_Upperarm"
+        ]
+      },
+      "LEFT_FOREARM": {
+        "bone": "lowerarm_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "lowerarm_l",
+          "CC_Base_L_Forearm",
+          "forearm_l"
+        ]
+      },
+      "RIGHT_FOREARM": {
+        "bone": "lowerarm_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "lowerarm_r",
+          "CC_Base_R_Forearm",
+          "forearm_r"
+        ]
+      },
+      "LEFT_HAND": {
+        "bone": "hand_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "hand_l",
+          "CC_Base_L_Hand"
+        ]
+      },
+      "RIGHT_HAND": {
+        "bone": "hand_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "hand_r",
+          "CC_Base_R_Hand"
+        ]
+      },
+      "LEFT_THIGH": {
+        "bone": "thigh_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thigh_l",
+          "CC_Base_L_Thigh"
+        ]
+      },
+      "RIGHT_THIGH": {
+        "bone": "thigh_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thigh_r",
+          "CC_Base_R_Thigh"
+        ]
+      },
+      "LEFT_CALF": {
+        "bone": "calf_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "calf_l",
+          "CC_Base_L_Calf"
+        ]
+      },
+      "RIGHT_CALF": {
+        "bone": "calf_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "calf_r",
+          "CC_Base_R_Calf"
+        ]
+      },
+      "LEFT_FOOT": {
+        "bone": "foot_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "foot_l",
+          "CC_Base_L_Foot"
+        ]
+      },
+      "RIGHT_FOOT": {
+        "bone": "foot_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "foot_r",
+          "CC_Base_R_Foot"
+        ]
+      },
+      "LEFT_BALL": {
+        "bone": "ball_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ball_l",
+          "CC_Base_L_ToeBase",
+          "toe_l"
+        ]
+      },
+      "RIGHT_BALL": {
+        "bone": "ball_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "ball_r",
+          "CC_Base_R_ToeBase",
+          "toe_r"
+        ]
+      },
+      "LEFT_INDEX_01": {
+        "bone": "index_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_01_l",
+          "CC_Base_L_Index1",
+          "CC_Base_L_Index1"
+        ]
+      },
+      "LEFT_INDEX_02": {
+        "bone": "index_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_02_l",
+          "CC_Base_L_Index2",
+          "CC_Base_L_Index2"
+        ]
+      },
+      "LEFT_INDEX_03": {
+        "bone": "index_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_03_l",
+          "CC_Base_L_Index3",
+          "CC_Base_L_Index3"
+        ]
+      },
+      "LEFT_INDEX_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "index_metacarpal_l"
+        ]
+      },
+      "LEFT_MIDDLE_01": {
+        "bone": "middle_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_01_l",
+          "CC_Base_L_Middle1",
+          "CC_Base_L_Middle1"
+        ]
+      },
+      "LEFT_MIDDLE_02": {
+        "bone": "middle_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_02_l",
+          "CC_Base_L_Middle2",
+          "CC_Base_L_Middle2"
+        ]
+      },
+      "LEFT_MIDDLE_03": {
+        "bone": "middle_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_03_l",
+          "CC_Base_L_Middle3",
+          "CC_Base_L_Middle3"
+        ]
+      },
+      "LEFT_MIDDLE_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "middle_metacarpal_l"
+        ]
+      },
+      "LEFT_RING_01": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_01_l",
+          "CC_Base_L_Ring1",
+          "CC_Base_L_Ring1"
+        ]
+      },
+      "LEFT_RING_02": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_02_l",
+          "CC_Base_L_Ring2",
+          "CC_Base_L_Ring2"
+        ]
+      },
+      "LEFT_RING_03": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_03_l",
+          "CC_Base_L_Ring3",
+          "CC_Base_L_Ring3"
+        ]
+      },
+      "LEFT_RING_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_metacarpal_l"
+        ]
+      },
+      "LEFT_PINKY_01": {
+        "bone": "pinky_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_01_l",
+          "CC_Base_L_Pinky1",
+          "CC_Base_L_Pinky1"
+        ]
+      },
+      "LEFT_PINKY_02": {
+        "bone": "pinky_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_02_l",
+          "CC_Base_L_Pinky2",
+          "CC_Base_L_Pinky2"
+        ]
+      },
+      "LEFT_PINKY_03": {
+        "bone": "pinky_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_03_l",
+          "CC_Base_L_Pinky3",
+          "CC_Base_L_Pinky3"
+        ]
+      },
+      "LEFT_PINKY_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "pinky_metacarpal_l"
+        ]
+      },
+      "LEFT_THUMB_01": {
+        "bone": "thumb_01_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_01_l",
+          "CC_Base_L_Thumb1",
+          "CC_Base_L_Thumb1"
+        ]
+      },
+      "LEFT_THUMB_02": {
+        "bone": "thumb_02_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_02_l",
+          "CC_Base_L_Thumb2",
+          "CC_Base_L_Thumb2"
+        ]
+      },
+      "LEFT_THUMB_03": {
+        "bone": "thumb_03_l",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_03_l",
+          "CC_Base_L_Thumb3",
+          "CC_Base_L_Thumb3"
+        ]
+      },
+      "LEFT_THUMB_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "thumb_metacarpal_l"
+        ]
+      },
+      "RIGHT_INDEX_01": {
+        "bone": "index_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_01_r",
+          "CC_Base_R_Index1",
+          "CC_Base_R_Index1"
+        ]
+      },
+      "RIGHT_INDEX_02": {
+        "bone": "index_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_02_r",
+          "CC_Base_R_Index2",
+          "CC_Base_R_Index2"
+        ]
+      },
+      "RIGHT_INDEX_03": {
+        "bone": "index_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "index_03_r",
+          "CC_Base_R_Index3",
+          "CC_Base_R_Index3"
+        ]
+      },
+      "RIGHT_INDEX_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "index_metacarpal_r"
+        ]
+      },
+      "RIGHT_MIDDLE_01": {
+        "bone": "middle_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_01_r",
+          "CC_Base_R_Middle1",
+          "CC_Base_R_Middle1"
+        ]
+      },
+      "RIGHT_MIDDLE_02": {
+        "bone": "middle_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_02_r",
+          "CC_Base_R_Middle2",
+          "CC_Base_R_Middle2"
+        ]
+      },
+      "RIGHT_MIDDLE_03": {
+        "bone": "middle_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "middle_03_r",
+          "CC_Base_R_Middle3",
+          "CC_Base_R_Middle3"
+        ]
+      },
+      "RIGHT_MIDDLE_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "middle_metacarpal_r"
+        ]
+      },
+      "RIGHT_RING_01": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_01_r",
+          "CC_Base_R_Ring1",
+          "CC_Base_R_Ring1"
+        ]
+      },
+      "RIGHT_RING_02": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_02_r",
+          "CC_Base_R_Ring2",
+          "CC_Base_R_Ring2"
+        ]
+      },
+      "RIGHT_RING_03": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_03_r",
+          "CC_Base_R_Ring3",
+          "CC_Base_R_Ring3"
+        ]
+      },
+      "RIGHT_RING_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "ring_metacarpal_r"
+        ]
+      },
+      "RIGHT_PINKY_01": {
+        "bone": "pinky_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_01_r",
+          "CC_Base_R_Pinky1",
+          "CC_Base_R_Pinky1"
+        ]
+      },
+      "RIGHT_PINKY_02": {
+        "bone": "pinky_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_02_r",
+          "CC_Base_R_Pinky2",
+          "CC_Base_R_Pinky2"
+        ]
+      },
+      "RIGHT_PINKY_03": {
+        "bone": "pinky_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "pinky_03_r",
+          "CC_Base_R_Pinky3",
+          "CC_Base_R_Pinky3"
+        ]
+      },
+      "RIGHT_PINKY_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "pinky_metacarpal_r"
+        ]
+      },
+      "RIGHT_THUMB_01": {
+        "bone": "thumb_01_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_01_r",
+          "CC_Base_R_Thumb1",
+          "CC_Base_R_Thumb1"
+        ]
+      },
+      "RIGHT_THUMB_02": {
+        "bone": "thumb_02_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_02_r",
+          "CC_Base_R_Thumb2",
+          "CC_Base_R_Thumb2"
+        ]
+      },
+      "RIGHT_THUMB_03": {
+        "bone": "thumb_03_r",
+        "present": true,
+        "is_helper": false,
+        "candidates": [
+          "thumb_03_r",
+          "CC_Base_R_Thumb3",
+          "CC_Base_R_Thumb3"
+        ]
+      },
+      "RIGHT_THUMB_METACARPAL": {
+        "bone": null,
+        "present": false,
+        "is_helper": false,
+        "candidates": [
+          "thumb_metacarpal_r"
+        ]
+      }
+    }
+  }
+}

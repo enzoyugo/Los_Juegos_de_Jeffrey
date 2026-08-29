@@ -1,0 +1,27 @@
+=== ActorCore Production Godot Validation ===
+
+--- terere ---
+path=res://assets/fighters/processed/terere/terere_game_ready_v4.glb exists=true
+LOAD_MODE=GLTFDocument
+Skeleton3D_count=1
+bone_count=101
+triangles=87067
+AnimationPlayer=true
+clips=Armature|0_T-Pose|0_T-Pose,air_attack,attack_heavy,attack_neutral,hit_heavy,hit_light,idle,jump,ko
+idle=idle
+idle_track_count=78
+idle_skeletal_tracks=21
+pipeline=ACTORCORE_V4
+
+--- jaguarete ---
+path=res://assets/fighters/processed/jaguarete/jaguarete_game_ready_v4.glb exists=true
+LOAD_MODE=GLTFDocument
+Skeleton3D_count=1
+bone_count=101
+triangles=82268
+AnimationPlayer=true
+clips=Armature|0_T-Pose|0_T-Pose,air_attack,attack_heavy,attack_neutral,hit_heavy,hit_light,idle,jump,ko
+idle=idle
+idle_track_count=80
+idle_skeletal_tracks=21
+pipeline=ACTORCORE_V4

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b3onwenxdgyeq"]
+
+[ext_resource type="Script" path="res://scripts/debug/track_boost_reset_lab.gd" id="1"]
+
+[node name="TrackBoostResetLab" type="Node3D"]
+script = ExtResource("1")

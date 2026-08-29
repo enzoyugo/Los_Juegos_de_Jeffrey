@@ -1,0 +1,32 @@
+{
+  "primary_verdict": "SSK_ACTORCORE_NATIVE_SKIN_HEALTHY_RETARGET_STILL_BLOCKED",
+  "phase4_branch": "NATIVE_SKIN_HEALTHY_RETARGET_BROKEN",
+  "decision_tree_case": 3,
+  "mixamo_used_in_primary_experiment": false,
+  "native_skin_withstands_ordinary_articulation": true,
+  "native_7_to_11x_explosion": false,
+  "weight_clamp_is_root_cause": false,
+  "gltf_bind_is_root_cause_of_7x": false,
+  "earliest_failing_stage": "C_Mixamo_to_ActorCore_retarget",
+  "note": "Native AccuRIG skin accepts 60–75° upperarm and a constructed standing pose without 5x–10x mesh growth. Original and 4-influence variants match. The rest-axis Mixamo bake explosion is therefore still retarget/bind conversion, not source skin or the 4-weight clamp.",
+  "terere": {
+    "upperarm_60_volume_ratio": 0.8143,
+    "standing_volume_ratio": 0.864,
+    "standing_class": "HEALTHY",
+    "max_volume_ratio_any_pose": 2.9367,
+    "max_volume_note": "R_Forearm 90° on a poorly chosen local Z axis; 0 extreme vertices; not a 7-11x vertex explosion",
+    "extreme_vertices_on_standing": 0,
+    "original_matches_4inf": true
+  },
+  "jaguarete": {
+    "upperarm_60_volume_ratio": 0.7924,
+    "standing_volume_ratio": 1.7281,
+    "standing_class": "STRESSED",
+    "standing_note": "bbox expansion only; max_axis_ratio 1.06; 0 extreme vertices",
+    "max_volume_ratio_any_pose": 2.2133,
+    "max_volume_note": "Head 30° nod grows bbox; 0 extreme vertices",
+    "extreme_vertices_on_standing": 0,
+    "original_matches_4inf": true
+  },
+  "production_v4_sha256_unchanged": true
+}

@@ -1,0 +1,12 @@
+# Monorepo root hygiene
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+
+# Nested project owns its detailed ignore rules

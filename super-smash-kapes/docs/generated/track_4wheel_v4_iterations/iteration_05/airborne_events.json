@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "jump_small",
+			"t": 4.28333333333332
+		},
+		{
+			"extra": "wheel_count=4 peak_c=0.022",
+			"grounded": 4,
+			"kind": "FIRST_CONTACT",
+			"piece": "jump_small",
+			"t": 5.31666666666665
+		},
+		{
+			"extra": "peak_c=0.000 peak_f=15451",
+			"grounded": 2,
+			"kind": "NO_VALID_CONTACT",
+			"piece": "landing_straight_long",
+			"t": 7.43333333333331
+		}
+	]
+}

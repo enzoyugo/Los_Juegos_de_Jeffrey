@@ -1,0 +1,8 @@
+{
+  "iteration": 5,
+  "verdict": "FAIL",
+  "reason": "Restored 14 m jump pad: takeoff 14.2 m/s, FIRST_CONTACT on jump_small with 4-wheel compression, then bounce onto landing_straight_long without SETTLED. Max iterations reached.",
+  "stationary_overall_rest_pass": true,
+  "stationary_source": "iteration_02",
+  "jump_pass": false
+}

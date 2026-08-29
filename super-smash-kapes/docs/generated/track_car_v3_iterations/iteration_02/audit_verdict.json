@@ -1,0 +1,35 @@
+{
+  "label": "V3",
+  "overall": "FAIL",
+  "semantic_orientation_pass": true,
+  "body_integrity_pass": true,
+  "wheel_fl_geometry_pass": true,
+  "wheel_fr_geometry_pass": true,
+  "wheel_rl_geometry_pass": true,
+  "wheel_rr_geometry_pass": true,
+  "wheel_spin_sweep_pass": true,
+  "wheel_aabb_pass": true,
+  "wheel_radius_pass": true,
+  "pivot_center_pass": null,
+  "airborne_state_pass": null,
+  "landing_telemetry_pass": null,
+  "atlas_pass": null,
+  "d3d12_pass": null,
+  "validator_pass": null,
+  "source_hash_pass": true,
+  "embedded_images_pass": true,
+    "KEEP_IN_ENVELOPE_WHEEL_COMPONENTS",
+    "RENDER_WHEELS_ALONG_AXLE"
+  ],
+  "visual_audit": {
+    "source_vs_v3_front": "BOTH show car front (bumper/headlights). Orientation improved vs V2.",
+    "source_vs_v3_rear": "BOTH show car rear (wing/exhaust).",
+    "wheel_FL_000_FRONT_camera": "Edge-on I-profile; harness camera was along Z not axle. Inconclusive for circularity.",
+    "wheel_SIDE": "Circular tire/rim visible. Low-poly faceting. Possible hub holes from over-reassignment of 908 in-envelope islands to Body.",
+    "body_verts_in_wheel_envelopes": "FL259 FR296 RL217 RR306 — mix of inner fender + stolen hub faces.",
+    "named_defects_for_builder": [
+      "KEEP_IN_ENVELOPE_WHEEL_COMPONENTS",
+      "RENDER_WHEELS_ALONG_AXLE"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "authority": "JAGUARETE_SEMANTIC_IDLE_APPROVED_V1",
+  "status": "FROZEN",
+  "do_not_rebake": true,
+  "do_not_modify": true,
+  "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/jaguarete/jaguarete_idle_semantic_polished_v1.glb",
+  "glb_sha256": "e5e4dd145cc454bab39c456a3fbe8f194f56ceab0e9deb8fbb4a87d1686943a4",
+  "glb_bytes": 14151672,
+  "blend": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/semantic_idle_polish_v1/jaguarete/jaguarete_idle_semantic_polished_v1.blend",
+  "blend_sha256": "dcecb1673ddf52dc41a8719ab61091e0b660e35de022928f4cfad19590eeebec",
+  "note": "Human approved near-production. V2 does not regenerate Jaguarete."
+}

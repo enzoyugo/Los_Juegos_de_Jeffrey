@@ -1,0 +1,548 @@
+{
+	"events": [
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "STATION_SPAWN",
+			"piece": "",
+			"pos": [
+				0.0,
+				1.14999997615814,
+				-2.59999990463257
+			],
+			"speed": 0.0,
+			"t": 0.0,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "STATION_BOOST_ENTRY",
+			"piece": "boost_straight",
+			"pos": [
+				-0.613737940788269,
+				-0.00489281862974167,
+				-34.308952331543
+			],
+			"speed": 26.1064414978027,
+			"t": 2.7,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_ENTRY",
+			"piece": "boost_straight",
+			"pos": [
+				-0.613737940788269,
+				-0.00489281862974167,
+				-34.308952331543
+			],
+			"speed": 26.1064414978027,
+			"t": 2.7,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "STATION_BOOST_EXIT",
+			"piece": "straight_medium",
+			"pos": [
+				-0.820640206336975,
+				-0.0187454298138618,
+				-46.0959053039551
+			],
+			"speed": 34.8045692443848,
+			"t": 3.08333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "BOOST_EXIT",
+			"piece": "straight_medium",
+			"pos": [
+				-0.820640206336975,
+				-0.0187454298138618,
+				-46.0959053039551
+			],
+			"speed": 34.8045692443848,
+			"t": 3.08333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "STATION_STRAIGHT_ENTRY",
+			"piece": "straight_medium",
+			"pos": [
+				-0.820640206336975,
+				-0.0187454298138618,
+				-46.0959053039551
+			],
+			"speed": 34.8045692443848,
+			"t": 3.08333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "STATION_RAMP_ENTRY",
+			"piece": "ramp_takeoff",
+			"pos": [
+				-1.24738895893097,
+				0.0325867235660553,
+				-70.5123596191406
+			],
+			"speed": 37.854907989502,
+			"t": 3.73333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "RAMP_ENTRY",
+			"piece": "ramp_takeoff",
+			"pos": [
+				-1.24738895893097,
+				0.0325867235660553,
+				-70.5123596191406
+			],
+			"speed": 37.854907989502,
+			"t": 3.73333333333333,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 4,
+			"kind": "STATION_RAMP_MID",
+			"piece": "ramp_takeoff",
+			"pos": [
+				-1.35157132148743,
+				0.552975535392761,
+				-74.1514587402344
+			],
+			"speed": 30.2366523742676,
+			"t": 3.84999999999999,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "STATION_TAKEOFF_EDGE",
+			"piece": "gap_logical",
+			"pos": [
+				-2.0704939365387,
+				2.86580610275269,
+				-83.7070922851563
+			],
+			"speed": 27.7323551177979,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "VALID_TAKEOFF",
+			"piece": "gap_logical",
+			"pos": [
+				-2.0704939365387,
+				2.86580610275269,
+				-83.7070922851563
+			],
+			"speed": 27.7323551177979,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "TAKEOFF_ZONE",
+			"piece": "gap_logical",
+			"pos": [
+				-2.0704939365387,
+				2.86580610275269,
+				-83.7070922851563
+			],
+			"speed": 27.7323551177979,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "",
+			"grounded": 0,
+			"kind": "AIRBORNE_ENTER",
+			"piece": "gap_logical",
+			"pos": [
+				-2.0704939365387,
+				2.86580610275269,
+				-83.7070922851563
+			],
+			"speed": 27.7323551177979,
+			"t": 4.18333333333332,
+			"throttle": 1.0
+		},
+		{
+			"extra": "piece=landing_straight_long wheels=1 station=32.66",
+			"grounded": 1,
+			"kind": "FIRST_CONTACT",
+			"piece": "landing_straight_long",
+			"pos": [
+				-6.19344663619995,
+				1.73751711845398,
+				-123.858032226563
+			],
+			"speed": 9.36047458648682,
+			"t": 5.99999999999998,
+			"throttle": 0.0
+		},
+		{
+			"extra": "",
+			"grounded": 1,
+			"kind": "FAIL_OFFTRACK",
+			"piece": "landing_straight_long",
+			"pos": [
+				-6.19344663619995,
+				1.73751711845398,
+				-123.858032226563
+			],
+			"speed": 9.36047458648682,
+			"t": 5.99999999999998,
+			"throttle": 0.0
+		}
+	],
+	"runs": [
+		{
+			"first_contact": {
+				"ang": [
+					0.304396897554398,
+					0.536341071128845,
+					-2.55345964431763
+				],
+				"boost_active": false,
+				"boost_torque_y": 0.0,
+				"chassis_fwd": [
+					-0.319027781486511,
+					0.197656482458115,
+					-0.926905155181885
+				],
+				"chassis_pitch": 11.3999511398719,
+				"chassis_roll": -30.0665883490445,
+				"distance_from_landing_deck_start": 32.6580352783203,
+				"grounded": 1,
+				"hit_ids": {
+					"landing_straight_long": 1
+				},
+				"impulse_x": {
+					"antiroll": 0.0,
+					"boost": 0.0,
+					"downforce": 2.23470256208299,
+					"lat": -1395.46380739296,
+					"long": -353.664867098038,
+					"rest": 0.0,
+					"susp": 0.0,
+					"tire": -1749.12866778697
+				},
+				"landing_piece": "landing_straight_long",
+				"landing_vy": 0.445074647665024,
+				"left_lat_imp": -426.656165595301,
+				"left_n": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"local_vx": 2.23144793510437,
+				"local_vy": -0.302916467189789,
+				"local_vz": -9.0964527130127,
+				"piece": "landing_straight_long",
+				"pitch_deg": 11.3999511398719,
+				"pos": [
+					-6.19344663619995,
+					1.73751711845398,
+					-123.858032226563
+				],
+				"pred_vs_act_dz": -1.10931396484375,
+				"remaining_deck_m": 3.34196472167969,
+				"right_lat_imp": -968.80764179766,
+				"right_n": [
+					0.0,
+					1.0,
+					0.0
+				],
+				"roll_deg": -30.0665883490445,
+				"semantic_fwd": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"speed": 9.36047458648682,
+				"steer": 0.0,
+				"steer_smoothed": 0.0,
+				"t": 5.99999999999998,
+				"throttle": 0.0,
+				"vx": -1.30824339389801,
+				"vy": 0.445074647665024,
+				"vz": -9.2686014175415,
+				"wheel_count": 1,
+				"wheels": [
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.899356484413147
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FR",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": 0.886130690574646
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "RL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.89494788646698
+					},
+					{
+						"c": 0.0,
+						"fx": -9770.21875,
+						"grounded": true,
+						"id": "RR",
+						"kind": "road",
+						"lat": 12000.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 1.0,
+						"nz": 0.0,
+						"piece": "landing_straight_long",
+						"steer": 0.0,
+						"susp": 9461.35411985607,
+						"x": 0.890539348125458
+					}
+				],
+				"yaw_assist": 0.0,
+				"yaw_deg": 18.9927462986422,
+				"yaw_impulse": {
+					"air_control": 0.0,
+					"antiroll": -25.1644167566754,
+					"boost": 0.0,
+					"collision": 0.0,
+					"tire": 597.416346363581,
+					"yaw_assist": 0.0
+				},
+				"yaw_rate": 0.536341071128845
+			},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 0.0,
+					"tire": 0.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": true,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"rail_contact": false,
+				"remaining_after_contact": 3.34196472167969,
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0,
+				"x_first": [
+					-6.19344663619995,
+					1.73751711845398,
+					-123.858032226563
+				],
+				"x_peak": 6.19344663619995
+			},
+			"result": "FAIL_OFFTRACK",
+			"run": 1,
+			"takeoff": {
+				"ang": [
+					-0.915235877037048,
+					0.0568114072084427,
+					0.0835644081234932
+				],
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"boost_torque_y": 0.0,
+				"chassis_fwd": [
+					-0.086884893476963,
+					0.228616878390312,
+					-0.969631552696228
+				],
+				"grounded": 0,
+				"impulse_x": {
+					"antiroll": 0.0,
+					"boost": 0.0,
+					"downforce": 10.7762916000908,
+					"lat": -1080.76462105825,
+					"long": -353.664867098038,
+					"rest": 0.0,
+					"susp": 0.0,
+					"tire": -1434.42948145225
+				},
+				"left_lat_imp": -426.656165595301,
+				"left_n": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"local_vx": -0.320013284683228,
+				"local_vy": 1.10907077789307,
+				"local_vz": -28.741849899292,
+				"piece": "gap_logical",
+				"pitch_deg": 13.2156553316559,
+				"pos": [
+					-2.0704939365387,
+					2.86580610275269,
+					-83.7070922851563
+				],
+				"ramp_tangent": [
+					0.0,
+					0.30901700258255,
+					-0.95105654001236
+				],
+				"right_lat_imp": -654.108455462944,
+				"right_n": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"roll_deg": 2.12926857162575,
+				"semantic_fwd": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"speed": 27.7323551177979,
+				"steer": 0.0,
+				"steer_smoothed": 0.0,
+				"t": 4.18333333333332,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vx": -2.83441972732544,
+				"vy": 7.63824987411499,
+				"vz": -27.5871276855469,
+				"wheels": [
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.899356484413147
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FR",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": 0.886130690574646
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "RL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.89494788646698
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "RR",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": 0.890539348125458
+					}
+				],
+				"yaw_assist": 0.0,
+				"yaw_deg": 5.12037553536559,
+				"yaw_impulse": {
+					"air_control": 0.0,
+					"antiroll": -25.1644167566754,
+					"boost": 0.0,
+					"collision": 0.0,
+					"tire": 979.135425516573,
+					"yaw_assist": 0.0
+				},
+				"yaw_rate": 0.0568114072084427
+			}
+		}
+	]
+}

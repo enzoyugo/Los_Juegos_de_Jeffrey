@@ -1,0 +1,25 @@
+{
+	"boost_active": false,
+	"chassis_pitch": 11.4687046778309,
+	"chassis_roll": -30.0693101794288,
+	"distance_from_landing_deck_start": 35.6599197387695,
+	"grounded": 1,
+	"hit_ids": {
+		"landing_straight_long": 1
+	},
+	"landing_piece": "landing_straight_long",
+	"landing_vy": 0.423769026994705,
+	"piece": "landing_straight_long",
+	"pitch_deg": 11.4687046778309,
+	"pos": [
+		-6.19036293029785,
+		1.7369213104248,
+		-123.859916687012
+	],
+	"roll_deg": -30.0693101794288,
+	"speed": 9.38329124450684,
+	"t": 5.99999999999998,
+	"throttle": 0.0,
+	"vy": 0.423769026994705,
+	"wheel_count": 1
+}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cmyqnlodr2e34"
+
+[deps]
+
+files=["res://docs/references/track/block_preview_inventory.folder.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.notes.translation"]
+
+source_file="res://docs/references/track/block_preview_inventory.csv"
+dest_files=["res://docs/references/track/block_preview_inventory.folder.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.inferred.translation", "res://docs/references/track/block_preview_inventory.notes.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

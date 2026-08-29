@@ -1,0 +1,41 @@
+{
+  "canonical_controller": "BASELINE",
+  "contact_loss": [],
+  "controller": "4WHEEL_V1",
+  "elapsed": 0.854166666666665,
+  "estimated_traversal_time": 2.85,
+  "finish_time": -1.0,
+  "gpu": "",
+  "grounded": 4,
+  "phase": "end",
+  "renderer": "forward_plus",
+  "seams": [
+    {
+      "id": "start->straight_medium",
+      "position_m": 0.0,
+      "up_delta_deg": 0.0,
+      "yaw_delta_deg": 0.0
+    },
+    {
+      "id": "straight_medium->curve_l_45",
+      "position_m": 0.0,
+      "up_delta_deg": 0.0,
+      "yaw_delta_deg": 0.0
+    },
+    {
+      "id": "curve_l_45->curve_r_45",
+      "position_m": 0.0,
+      "up_delta_deg": 0.0,
+      "yaw_delta_deg": 0.0
+    },
+    {
+      "id": "curve_r_45->finish",
+      "position_m": 0.0,
+      "up_delta_deg": 0.0,
+      "yaw_delta_deg": 0.0
+    }
+  ],
+  "spikes": [],
+  "texture_mem": 0.0,
+  "video_mem": 0.0
+}

@@ -1,0 +1,14 @@
+{
+  "terere": {
+    "traditional_pass": false,
+    "semantic_pass": true,
+    "traditional_class": "DEFORMATION_INVALID",
+    "semantic_class": "STANDING_IDLE"
+  },
+  "jaguarete": {
+    "traditional_pass": false,
+    "semantic_pass": true,
+    "traditional_class": "DEFORMATION_INVALID",
+    "semantic_class": "STANDING_IDLE"
+  }
+}

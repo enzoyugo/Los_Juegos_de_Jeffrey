@@ -1,0 +1,215 @@
+{
+	"PASS": false,
+	"body_precontact": false,
+	"capture_ok": false,
+	"deck_station": -1.0,
+	"first_contact_piece": "",
+	"gap_empty": true,
+	"gates": {
+		"TRACK_APPROACH_FORCE_BALANCE": true,
+		"TRACK_BALLISTIC_PREDICTION": true,
+		"TRACK_LANDING_CAPTURE_MARGIN": false,
+		"TRACK_NOMINAL_3X_SETTLE": false,
+		"TRACK_RAMP_NORMAL_SYMMETRY": true,
+		"TRACK_TAKEOFF_LATERAL_STATE": true,
+		"TRACK_TAKEOFF_YAW_STATE": true
+	},
+	"iteration": 1,
+	"lateral_ok": true,
+	"mode": "ramp_control",
+	"rail_contact": false,
+	"remaining_deck_m": -1.0,
+	"result": "FAIL_UNDERSHOOT",
+	"runs": [
+		{
+			"first_contact": {},
+			"landing": {
+				"airborne_forces": {
+					"damper": 0.0,
+					"spring": 0.0,
+					"tire": 0.0
+				},
+				"became_airborne_again": false,
+				"body_contact_before_wheel": false,
+				"bounce": "",
+				"curve_before_settle": false,
+				"fell_below_deck": false,
+				"left_boundary_crossed": false,
+				"max_c": 0.0,
+				"max_f": 0.0,
+				"peak_c": {},
+				"peak_f": {},
+				"rail_contact": false,
+				"remaining_after_contact": -1.0,
+				"right_boundary_crossed": false,
+				"settle_piece": "",
+				"time_on_deck": 0.0,
+				"time_to_2": -1.0,
+				"time_to_4": -1.0,
+				"x_first": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"x_peak": 0.92344331741333
+			},
+			"result": "FAIL_UNDERSHOOT",
+			"run": 1,
+			"takeoff": {
+				"ang": [
+					-0.936745643615723,
+					-0.0199370719492435,
+					0.137112066149712
+				],
+				"boost_active": false,
+				"boost_duration": 0.55,
+				"boost_torque_y": 0.0,
+				"chassis_fwd": [
+					-0.0282142050564289,
+					0.0993530079722404,
+					-0.994652152061462
+				],
+				"grounded": 0,
+				"impulse_x": {
+					"antiroll": 0.0,
+					"boost": 0.0,
+					"downforce": 1.51361872065185,
+					"lat": -40.8503917323008,
+					"long": -52.9043591701369,
+					"rest": 0.0,
+					"susp": 0.0,
+					"tire": -93.7547160620154
+				},
+				"left_lat_imp": 230.465230106735,
+				"left_n": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"local_vx": -0.182222843170166,
+				"local_vy": 0.476341605186462,
+				"local_vz": -10.061897277832,
+				"piece": "gap_logical",
+				"pitch_deg": 5.7019149167734,
+				"pos": [
+					-0.228351473808289,
+					2.49810862541199,
+					-38.9349174499512
+				],
+				"ramp_tangent": [
+					0.0,
+					0.30901700258255,
+					-0.95105654001236
+				],
+				"right_lat_imp": -271.315621839036,
+				"right_n": [
+					0.0,
+					0.0,
+					0.0
+				],
+				"roll_deg": 3.92812546149167,
+				"semantic_fwd": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"speed": 9.96844577789307,
+				"steer": 0.0,
+				"steer_smoothed": 0.0,
+				"t": 1.66666666666667,
+				"throttle": 1.0,
+				"track_forward": [
+					0.0,
+					0.0,
+					-1.0
+				],
+				"vx": -0.496925175189972,
+				"vy": 1.46012961864471,
+				"vz": -9.95605278015137,
+				"wheels": [
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.899356484413147
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "FR",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": 0.886130690574646
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "RL",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": -0.89494788646698
+					},
+					{
+						"c": 0.0,
+						"fx": 0.0,
+						"grounded": false,
+						"id": "RR",
+						"kind": "",
+						"lat": 0.0,
+						"long": 0.0,
+						"nx": 0.0,
+						"ny": 0.95105654001236,
+						"nz": 0.309017062187195,
+						"piece": "",
+						"steer": 0.0,
+						"susp": 0.0,
+						"x": 0.890539348125458
+					}
+				],
+				"yaw_assist": 0.0,
+				"yaw_deg": 1.6248108632093,
+				"yaw_impulse": {
+					"air_control": 0.0,
+					"antiroll": -7.97653415434417,
+					"boost": 0.0,
+					"collision": 0.0,
+					"tire": 84.3024814942281,
+					"yaw_assist": 0.0
+				},
+				"yaw_rate": -0.0199370719492435
+			}
+		}
+	],
+	"steer": "zero",
+	"takeoff_speed": 9.96844577789307,
+	"takeoff_vx": -0.496925175189972,
+	"takeoff_yaw_deg": 1.6248108632093,
+	"valid_takeoff": true,
+	"yaw_ok": true
+}

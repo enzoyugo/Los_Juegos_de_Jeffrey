@@ -1,0 +1,13 @@
+{
+  "apply_count": 3,
+  "hits": 3,
+  "ok": true,
+  "runs": 3,
+  "sequence": [
+    "start",
+    "straight_medium",
+    "boost_straight",
+    "straight_medium",
+    "finish"
+  ]
+}

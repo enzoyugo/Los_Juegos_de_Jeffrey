@@ -1,0 +1,68 @@
+{
+  "pipeline": "TERERE_PRODUCTION_SEMANTIC_IDLE_V1",
+  "verdict_token": "SSK_TERERE_PRODUCTION_SEMANTIC_IDLE_V1_READY_FOR_HUMAN_APPROVAL",
+  "animation_name": "idle",
+  "wired_into_battle": false,
+  "jaguarete_rebaked": false,
+  "auto_selected_candidate": null,
+  "canonical": "POSE_B",
+  "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/production_semantic_idle_v1/terere/terere_production_semantic_idle_v1.glb",
+  "roundtrip_ok": true,
+  "roundtrip_bones": 101,
+  "technical_pass": true,
+  "pose_classification": "STANDING_IDLE",
+  "pose_similarity": {
+    "L_upperarm_from_down_dev": {
+      "max": 4.976,
+      "mean": 1.9169
+    },
+    "R_upperarm_from_down_dev": {
+      "max": 4.51,
+      "mean": 2.1763
+    },
+    "L_elbow_flex_dev": {
+      "max": 1.752,
+      "mean": 0.231
+    },
+    "R_elbow_flex_dev": {
+      "max": 1.128,
+      "mean": 0.3846
+    },
+    "shoulder_width_dev": {
+      "max": 0.0043,
+      "mean": 0.003
+    },
+    "L_hand_pos_dev": {
+      "max": 0.0127,
+      "mean": 0.0057
+    },
+    "R_hand_pos_dev": {
+      "max": 0.0189,
+      "mean": 0.0097
+    },
+    "spine_dev": {
+      "max": 0.055,
+      "mean": 0.0212
+    },
+    "hands_below_shoulders_all_frames": true,
+    "upperarm_never_near_tpose": true
+  },
+  "jaguarete": {
+    "ok": true,
+    "rebaked": false,
+    "glb_sha256": "e5e4dd145cc454bab39c456a3fbe8f194f56ceab0e9deb8fbb4a87d1686943a4",
+    "status": "HUMAN_APPROVED_PENDING_PRODUCTION_INTEGRATION",
+    "authority": "JAGUARETE_IDLE_APPROVED_AUTHORITY"
+  },
+  "gains": {
+    "torso_sway_gain": 0.45,
+    "spine_gain": 0.38,
+    "shoulder_gain": 0.32,
+    "upperarm_gain": 0.22,
+    "elbow_gain": 0.3,
+    "wrist_gain": 0.1,
+    "head_gain": 0.32,
+    "hip_vertical_gain": 0.4,
+    "knee_gain": 0.16
+  }
+}

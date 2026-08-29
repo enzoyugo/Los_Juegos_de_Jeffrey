@@ -1,0 +1,581 @@
+{
+  "character": "jaguarete",
+  "source_mesh": "model",
+  "source_armature": "Armature",
+  "mixamo": {
+    "armature": {
+      "name": "Armature",
+      "type": "ARMATURE",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler": [
+        90.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "world_location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_scale": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "negative_scale": false,
+      "non_unit_scale": true,
+      "unapplied_rotation": true
+    },
+    "bone_count": 65,
+    "action": "Armature|mixamo.com|Layer0",
+    "fps": 30,
+    "frame_range": [
+      1,
+      110
+    ],
+    "namespace_sample": [
+      {
+        "name": "mixamorig5:Hips",
+        "matrix_local": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          93.014725,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "head": [
+          0.0,
+          93.014725,
+          0.0
+        ]
+      }
+    ],
+    "hip_prefix_guess": "mixamorig5:",
+    "unit_scale_armature": [
+      0.01,
+      0.01,
+      0.01
+    ]
+  },
+  "retarget_math_samples": [
+    {
+      "source": "mixamorig5:Hips",
+      "target": "CC_Base_Hip",
+      "source_basis_angle_deg": 48.9759,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:Spine",
+      "target": "CC_Base_Waist",
+      "source_basis_angle_deg": 5.8169,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:Spine1",
+      "target": "CC_Base_Spine01",
+      "source_basis_angle_deg": 10.4648,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:Spine2",
+      "target": "CC_Base_Spine02",
+      "source_basis_angle_deg": 10.4646,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:Neck",
+      "target": "CC_Base_NeckTwist01",
+      "source_basis_angle_deg": 8.0478,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:Head",
+      "target": "CC_Base_Head",
+      "source_basis_angle_deg": 8.0478,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:LeftShoulder",
+      "target": "CC_Base_L_Clavicle",
+      "source_basis_angle_deg": 6.6298,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:LeftArm",
+      "target": "CC_Base_L_Upperarm",
+      "source_basis_angle_deg": 66.5444,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:LeftForeArm",
+      "target": "CC_Base_L_Forearm",
+      "source_basis_angle_deg": 83.2232,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:LeftHand",
+      "target": "CC_Base_L_Hand",
+      "source_basis_angle_deg": 25.7588,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:RightShoulder",
+      "target": "CC_Base_R_Clavicle",
+      "source_basis_angle_deg": 4.0592,
+      "expected_vs_applied_angle_deg": 0.0
+    },
+    {
+      "source": "mixamorig5:RightArm",
+      "target": "CC_Base_R_Upperarm",
+      "source_basis_angle_deg": 64.5993,
+      "expected_vs_applied_angle_deg": 0.0
+    }
+  ],
+  "stages": {
+    "A_source_ActorCore_FBX_rest": {
+      "stage": "A_source_fbx_rest_vs_default_pose",
+      "status": "HEALTHY",
+      "rest_height": 186.779388,
+      "idle_height": 186.779388,
+      "rest_width": 186.779388,
+      "idle_width": 186.779388,
+      "height_ratio": 1.0,
+      "width_ratio": 1.0,
+      "volume_ratio": 1.0,
+      "max_axis_ratio": 1.0,
+      "broken_reason": ""
+    },
+    "C_after_retarget_one_frame": {
+      "stage": "C_target_rig_after_single_frame_retarget",
+      "status": "BROKEN",
+      "rest_height": 186.779388,
+      "idle_height": 364.01062,
+      "rest_width": 186.779388,
+      "idle_width": 364.01062,
+      "height_ratio": 1.9489,
+      "width_ratio": 1.9489,
+      "volume_ratio": 9.676,
+      "max_axis_ratio": 1.9489,
+      "broken_reason": "volume_ratio_9.68"
+    },
+    "F_benchmark_glb": {
+      "stage": "F_benchmark_glb_reimport",
+      "status": "BROKEN",
+      "rest_height": 186.779373,
+      "idle_height": 364.278381,
+      "rest_width": 186.779373,
+      "idle_width": 357.578827,
+      "height_ratio": 1.9503,
+      "width_ratio": 1.9144,
+      "volume_ratio": 10.4579,
+      "max_axis_ratio": 1.9503,
+      "broken_reason": "volume_ratio_10.46"
+    },
+    "E_production_v3_glb": {
+      "stage": "E_production_v3_glb_reimport",
+      "status": "BROKEN",
+      "rest_height": 186.779373,
+      "idle_height": 364.278381,
+      "rest_width": 186.779373,
+      "idle_width": 357.578827,
+      "height_ratio": 1.9503,
+      "width_ratio": 1.9144,
+      "volume_ratio": 10.4579,
+      "max_axis_ratio": 1.9503,
+      "broken_reason": "volume_ratio_10.46"
+    }
+  },
+  "source_rest_bbox": {
+    "min": [
+      -93.389694,
+      -34.786736,
+      -7e-05
+    ],
+    "max": [
+      93.389702,
+      69.431526,
+      173.141266
+    ],
+    "size": [
+      186.779388,
+      104.218262,
+      173.141342
+    ],
+    "height": 186.779388,
+    "width": 186.779388,
+    "axis_size": [
+      186.779388,
+      104.218262,
+      173.141342
+    ],
+    "volume": 3370338.752877
+  },
+  "benchmark_glb": {
+    "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\actorcore_benchmark\\jaguarete\\jaguarete_actorcore_idle.glb",
+    "armature": "Armature",
+    "mesh": "model",
+    "objects": [
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "parent": null,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "world_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "world_scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "negative_scale": false,
+        "non_unit_scale": true,
+        "unapplied_rotation": false
+      },
+      {
+        "name": "BenchmarkCamera",
+        "type": "EMPTY",
+        "parent": null,
+        "location": [
+          0.0,
+          -4.2,
+          3.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "world_location": [
+          0.0,
+          -4.2,
+          3.0
+        ],
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "negative_scale": false,
+        "non_unit_scale": false,
+        "unapplied_rotation": false
+      },
+      {
+        "name": "model",
+        "type": "MESH",
+        "parent": "Armature",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "world_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "world_scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "negative_scale": false,
+        "non_unit_scale": false,
+        "unapplied_rotation": false
+      }
+    ],
+    "actions": [
+      "idle_Armature"
+    ],
+    "rest_bbox": {
+      "min": [
+        -93.389694,
+        -0.00221,
+        -69.431526
+      ],
+      "max": [
+        93.389679,
+        173.141266,
+        34.786728
+      ],
+      "size": [
+        186.779373,
+        173.143478,
+        104.218254
+      ],
+      "height": 186.779373,
+      "width": 186.779373,
+      "axis_size": [
+        186.779373,
+        173.143478,
+        104.218254
+      ],
+      "volume": 3370379.814289
+    },
+    "idle_mid_bbox": {
+      "min": [
+        -214.944305,
+        -82.355087,
+        -73.25737
+      ],
+      "max": [
+        142.634521,
+        188.2397,
+        291.021027
+      ],
+      "size": [
+        357.578827,
+        270.594788,
+        364.278381
+      ],
+      "height": 364.278381,
+      "width": 357.578827,
+      "axis_size": [
+        357.578827,
+        270.594788,
+        364.278381
+      ],
+      "volume": 35247199.776026
+    },
+    "classification": {
+      "stage": "F_benchmark_glb_reimport",
+      "status": "BROKEN",
+      "rest_height": 186.779373,
+      "idle_height": 364.278381,
+      "rest_width": 186.779373,
+      "idle_width": 357.578827,
+      "height_ratio": 1.9503,
+      "width_ratio": 1.9144,
+      "volume_ratio": 10.4579,
+      "max_axis_ratio": 1.9503,
+      "broken_reason": "volume_ratio_10.46"
+    },
+    "bind_pose_not_identity": 20
+  },
+  "production_glb": {
+    "path": "E:\\SuperSmashKapes\\super-smash-kapes\\assets\\fighters\\processed\\jaguarete\\jaguarete_game_ready_v3.glb",
+    "armature": "Armature",
+    "mesh": "model",
+    "objects": [
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "parent": null,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "world_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "world_scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "negative_scale": false,
+        "non_unit_scale": true,
+        "unapplied_rotation": false
+      },
+      {
+        "name": "BenchmarkCamera",
+        "type": "EMPTY",
+        "parent": null,
+        "location": [
+          0.0,
+          -4.2,
+          3.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "world_location": [
+          0.0,
+          -4.2,
+          3.0
+        ],
+        "world_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "negative_scale": false,
+        "non_unit_scale": false,
+        "unapplied_rotation": false
+      },
+      {
+        "name": "model",
+        "type": "MESH",
+        "parent": "Armature",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "world_location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "world_scale": [
+          0.01,
+          0.01,
+          0.01
+        ],
+        "negative_scale": false,
+        "non_unit_scale": false,
+        "unapplied_rotation": false
+      }
+    ],
+    "actions": [
+      "idle_Armature"
+    ],
+    "rest_bbox": {
+      "min": [
+        -93.389694,
+        -0.00221,
+        -69.431526
+      ],
+      "max": [
+        93.389679,
+        173.141266,
+        34.786728
+      ],
+      "size": [
+        186.779373,
+        173.143478,
+        104.218254
+      ],
+      "height": 186.779373,
+      "width": 186.779373,
+      "axis_size": [
+        186.779373,
+        173.143478,
+        104.218254
+      ],
+      "volume": 3370379.814289
+    },
+    "idle_mid_bbox": {
+      "min": [
+        -214.944305,
+        -82.355087,
+        -73.25737
+      ],
+      "max": [
+        142.634521,
+        188.2397,
+        291.021027
+      ],
+      "size": [
+        357.578827,
+        270.594788,
+        364.278381
+      ],
+      "height": 364.278381,
+      "width": 357.578827,
+      "axis_size": [
+        357.578827,
+        270.594788,
+        364.278381
+      ],
+      "volume": 35247199.776026
+    },
+    "classification": {
+      "stage": "E_production_v3_glb_reimport",
+      "status": "BROKEN",
+      "rest_height": 186.779373,
+      "idle_height": 364.278381,
+      "rest_width": 186.779373,
+      "idle_width": 357.578827,
+      "height_ratio": 1.9503,
+      "width_ratio": 1.9144,
+      "volume_ratio": 10.4579,
+      "max_axis_ratio": 1.9503,
+      "broken_reason": "volume_ratio_10.46"
+    },
+    "bind_pose_not_identity": 20
+  },
+  "FIRST_BROKEN_STAGE": "C_after_retarget_one_frame"
+}

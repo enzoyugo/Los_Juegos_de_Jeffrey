@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-08-26T01:21:12.494160Z",
+  "human_silhouette_is_authority": true,
+  "fighters": {
+    "terere": {
+      "v1_approved_idle": {
+        "spine_from_up_deg": 3.251,
+        "L_upperarm_from_down": 36.083,
+        "R_upperarm_from_down": 27.135,
+        "L_elbow_flex": 89.804,
+        "R_elbow_flex": 82.632,
+        "L_knee_flex": 20.402,
+        "R_knee_flex": 42.145,
+        "L_hand_from_down": 80.177,
+        "R_hand_from_down": 65.609,
+        "L_hand": [
+          0.455075,
+          -0.146336,
+          0.795876
+        ],
+        "R_hand": [
+          -0.35451,
+          0.020158,
+          0.65663
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.516163
+        ],
+        "L_foot": [
+          0.309501,
+          0.104147,
+          0.171544
+        ],
+        "R_foot": [
+          -0.216379,
+          0.012008,
+          0.162682
+        ],
+        "shoulder_width": 0.84172,
+        "shoulder_width_over_span": 2.1882,
+        "L_hand_height": 0.79588,
+        "R_hand_height": 0.65663,
+        "L_hand_height_over_span": 0.7272,
+        "R_hand_height_over_span": 0.3652,
+        "L_hand_to_torso": 0.48977,
+        "R_hand_to_torso": 0.35658,
+        "L_hand_to_torso_over_span": 1.2732,
+        "R_hand_to_torso_over_span": 0.927,
+        "foot_stance": 0.53396,
+        "foot_stance_over_span": 1.3881,
+        "head_hip_span": 0.38466,
+        "hands_below_shoulders": true,
+        "root_xz": 0.0
+      },
+      "v5_canonical": {
+        "spine_from_up_deg": 1.827,
+        "L_upperarm_from_down": 37.127,
+        "R_upperarm_from_down": 26.384,
+        "L_elbow_flex": 88.104,
+        "R_elbow_flex": 81.436,
+        "L_knee_flex": 22.015,
+        "R_knee_flex": 29.986,
+        "L_hand_from_down": 34.775,
+        "R_hand_from_down": 131.276,
+        "L_hand": [
+          0.335022,
+          -0.09909,
+          0.437008
+        ],
+        "R_hand": [
+          -0.301147,
+          0.17229,
+          0.385325
+        ],
+        "hip": [
+          0.0,
+          0.0,
+          0.281793
+        ],
+        "L_foot": [
+          0.124116,
+          0.0241,
+          0.078305
+        ],
+        "R_foot": [
+          -0.123831,
+          0.035335,
+          0.081404
+        ],
+        "shoulder_width": 0.4973,
+        "shoulder_width_over_span": 2.6497,
+        "L_hand_height": 0.43701,
+        "R_hand_height": 0.38533,
+        "L_hand_height_over_span": 0.827,
+        "R_hand_height_over_span": 0.5516,
+        "L_hand_to_torso": 0.35646,
+        "R_hand_to_torso": 0.34747,
+        "L_hand_to_torso_over_span": 1.8993,
+        "R_hand_to_torso_over_span": 1.8514,
+        "foot_stance": 0.24822,
+        "foot_stance_over_span": 1.3225,
+        "head_hip_span": 0.18768,
+        "hands_below_shoulders": true,
+        "root_xz": 0.0
+      },
+      "match": {
+        "shoulder_width_over_span_dev": 0.4615,
+        "L_upperarm_from_down_dev": 1.044,
+        "R_upperarm_from_down_dev": 0.751,
+        "L_elbow_flex_dev": 1.7,
+        "R_elbow_flex_dev": 1.196,
+        "L_hand_to_torso_over_span_dev": 0.6261,
+        "R_hand_to_torso_over_span_dev": 0.9244,
+        "L_hand_height_over_span_dev": 0.0998,
+        "R_hand_height_over_span_dev": 0.1864,
+        "spine_from_up_dev": 1.424,
+        "L_knee_flex_dev": 1.613,
+        "R_knee_flex_dev": 12.159,
+        "foot_stance_over_span_dev": 0.0656,
+        "hands_below_shoulders_v5": true,
+        "root_xz_v5": 0.0,
+        "v1": {
+          "spine_from_up_deg": 3.251,
+          "L_upperarm_from_down": 36.083,
+          "R_upperarm_from_down": 27.135,
+          "L_elbow_flex": 89.804,
+          "R_elbow_flex": 82.632,
+          "L_knee_flex": 20.402,
+          "R_knee_flex": 42.145,
+          "L_hand_from_down": 80.177,
+          "R_hand_from_down": 65.609,
+          "L_hand": [
+            0.455075,
+            -0.146336,
+            0.795876
+          ],
+          "R_hand": [
+            -0.35451,
+            0.020158,
+            0.65663
+          ],
+          "hip": [
+            0.0,
+            0.0,
+            0.516163
+          ],
+          "L_foot": [
+            0.309501,
+            0.104147,
+            0.171544
+          ],
+          "R_foot": [
+            -0.216379,
+            0.012008,
+            0.162682
+          ],
+          "shoulder_width": 0.84172,
+          "shoulder_width_over_span": 2.1882,
+          "L_hand_height": 0.79588,
+          "R_hand_height": 0.65663,
+          "L_hand_height_over_span": 0.7272,
+          "R_hand_height_over_span": 0.3652,
+          "L_hand_to_torso": 0.48977,
+          "R_hand_to_torso": 0.35658,
+          "L_hand_to_torso_over_span": 1.2732,
+          "R_hand_to_torso_over_span": 0.927,
+          "foot_stance": 0.53396,
+          "foot_stance_over_span": 1.3881,
+          "head_hip_span": 0.38466,
+          "hands_below_shoulders": true,
+          "root_xz": 0.0
+        },
+        "v5": {
+          "spine_from_up_deg": 1.827,
+          "L_upperarm_from_down": 37.127,
+          "R_upperarm_from_down": 26.384,
+          "L_elbow_flex": 88.104,
+          "R_elbow_flex": 81.436,
+          "L_knee_flex": 22.015,
+          "R_knee_flex": 29.986,
+          "L_hand_from_down": 34.775,
+          "R_hand_from_down": 131.276,
+          "L_hand": [
+            0.335022,
+            -0.09909,
+            0.437008
+          ],
+          "R_hand": [
+            -0.301147,
+            0.17229,
+            0.385325
+          ],
+          "hip": [
+            0.0,
+            0.0,
+            0.281793
+          ],
+          "L_foot": [
+            0.124116,
+            0.0241,
+            0.078305
+          ],
+          "R_foot": [
+            -0.123831,
+            0.035335,
+            0.081404
+          ],
+          "shoulder_width": 0.4973,
+          "shoulder_width_over_span": 2.6497,
+          "L_hand_height": 0.43701,
+          "R_hand_height": 0.38533,
+          "L_hand_height_over_span": 0.827,
+          "R_hand_height_over_span": 0.5516,
+          "L_hand_to_torso": 0.35646,
+          "R_hand_to_torso": 0.34747,
+          "L_hand_to_torso_over_span": 1.8993,
+          "R_hand_to_torso_over_span": 1.8514,
+          "foot_stance": 0.24822,
+          "foot_stance_over_span": 1.3225,
+          "head_hip_span": 0.18768,
+          "hands_below_shoulders": true,
+          "root_xz": 0.0
+        },
+        "note": "Angular metrics compared directly. Linear metrics compared as ratios to head-hip span. Do not optimize blindly."
+      },
+      "human_silhouette_is_authority": true,
+      "not_blindly_optimized": true
+    },
+    "jaguarete": {
+      "v1_approved_idle": {
+        "spine_from_up_deg": 2.537,
+        "L_upperarm_from_down": 38.443,
+        "R_upperarm_from_down": 30.452,
+        "L_elbow_flex": 78.601,
+        "R_elbow_flex": 90.487,
+        "L_knee_flex": 34.846,
+        "R_knee_flex": 34.49,
+        "L_hand_from_down": 95.188,
+        "R_hand_from_down": 93.03,
+        "L_hand": [
+          0.582392,
+          -0.033108,
+          1.037604
+        ],
+        "R_hand": [
+          -0.537827,
+          -0.011803,
+          1.033152
+        ],
+        "hip": [
+          0.006409,
+          -0.002782,
+          0.757299
+        ],
+        "L_foot": [
+          0.170463,
+          0.237363,
+          0.181321
+        ],
+        "R_foot": [
+          -0.157136,
+          0.242638,
+          0.182892
+        ],
+        "shoulder_width": 0.48096,
+        "shoulder_width_over_span": 0.8829,
+        "L_hand_height": 1.0376,
+        "R_hand_height": 1.03315,
+        "L_hand_height_over_span": 0.5146,
+        "R_hand_height_over_span": 0.5064,
+        "L_hand_to_torso": 0.58439,
+        "R_hand_to_torso": 0.53883,
+        "L_hand_to_torso_over_span": 1.0728,
+        "R_hand_to_torso_over_span": 0.9892,
+        "foot_stance": 0.32765,
+        "foot_stance_over_span": 0.6015,
+        "head_hip_span": 0.54473,
+        "hands_below_shoulders": true,
+        "root_xz": 0.00699
+      },
+      "v5_canonical": {
+        "spine_from_up_deg": 2.436,
+        "L_upperarm_from_down": 37.946,
+        "R_upperarm_from_down": 38.168,
+        "L_elbow_flex": 76.805,
+        "R_elbow_flex": 91.732,
+        "L_knee_flex": 24.15,
+        "R_knee_flex": 35.973,
+        "L_hand_from_down": 50.62,
+        "R_hand_from_down": 40.525,
+        "L_hand": [
+          0.165894,
+          -0.157059,
+          0.666755
+        ],
+        "R_hand": [
+          -0.185824,
+          0.280689,
+          0.57853
+        ],
+        "hip": [
+          -1.2e-05,
+          0.036648,
+          0.422119
+        ],
+        "L_foot": [
+          0.096219,
+          -0.10979,
+          0.071959
+        ],
+        "R_foot": [
+          -0.086607,
+          0.05562,
+          0.073979
+        ],
+        "shoulder_width": 0.29597,
+        "shoulder_width_over_span": 0.8257,
+        "L_hand_height": 0.66676,
+        "R_hand_height": 0.57853,
+        "L_hand_height_over_span": 0.6825,
+        "R_hand_height_over_span": 0.4364,
+        "L_hand_to_torso": 0.24317,
+        "R_hand_to_torso": 0.33666,
+        "L_hand_to_torso_over_span": 0.6784,
+        "R_hand_to_torso_over_span": 0.9392,
+        "foot_stance": 0.24656,
+        "foot_stance_over_span": 0.6879,
+        "head_hip_span": 0.35844,
+        "hands_below_shoulders": false,
+        "root_xz": 0.03665
+      },
+      "match": {
+        "shoulder_width_over_span_dev": 0.0572,
+        "L_upperarm_from_down_dev": 0.497,
+        "R_upperarm_from_down_dev": 7.716,
+        "L_elbow_flex_dev": 1.796,
+        "R_elbow_flex_dev": 1.245,
+        "L_hand_to_torso_over_span_dev": 0.3944,
+        "R_hand_to_torso_over_span_dev": 0.05,
+        "L_hand_height_over_span_dev": 0.1679,
+        "R_hand_height_over_span_dev": 0.07,
+        "spine_from_up_dev": 0.101,
+        "L_knee_flex_dev": 10.696,
+        "R_knee_flex_dev": 1.483,
+        "foot_stance_over_span_dev": 0.0864,
+        "hands_below_shoulders_v5": false,
+        "root_xz_v5": 0.03665,
+        "v1": {
+          "spine_from_up_deg": 2.537,
+          "L_upperarm_from_down": 38.443,
+          "R_upperarm_from_down": 30.452,
+          "L_elbow_flex": 78.601,
+          "R_elbow_flex": 90.487,
+          "L_knee_flex": 34.846,
+          "R_knee_flex": 34.49,
+          "L_hand_from_down": 95.188,
+          "R_hand_from_down": 93.03,
+          "L_hand": [
+            0.582392,
+            -0.033108,
+            1.037604
+          ],
+          "R_hand": [
+            -0.537827,
+            -0.011803,
+            1.033152
+          ],
+          "hip": [
+            0.006409,
+            -0.002782,
+            0.757299
+          ],
+          "L_foot": [
+            0.170463,
+            0.237363,
+            0.181321
+          ],
+          "R_foot": [
+            -0.157136,
+            0.242638,
+            0.182892
+          ],
+          "shoulder_width": 0.48096,
+          "shoulder_width_over_span": 0.8829,
+          "L_hand_height": 1.0376,
+          "R_hand_height": 1.03315,
+          "L_hand_height_over_span": 0.5146,
+          "R_hand_height_over_span": 0.5064,
+          "L_hand_to_torso": 0.58439,
+          "R_hand_to_torso": 0.53883,
+          "L_hand_to_torso_over_span": 1.0728,
+          "R_hand_to_torso_over_span": 0.9892,
+          "foot_stance": 0.32765,
+          "foot_stance_over_span": 0.6015,
+          "head_hip_span": 0.54473,
+          "hands_below_shoulders": true,
+          "root_xz": 0.00699
+        },
+        "v5": {
+          "spine_from_up_deg": 2.436,
+          "L_upperarm_from_down": 37.946,
+          "R_upperarm_from_down": 38.168,
+          "L_elbow_flex": 76.805,
+          "R_elbow_flex": 91.732,
+          "L_knee_flex": 24.15,
+          "R_knee_flex": 35.973,
+          "L_hand_from_down": 50.62,
+          "R_hand_from_down": 40.525,
+          "L_hand": [
+            0.165894,
+            -0.157059,
+            0.666755
+          ],
+          "R_hand": [
+            -0.185824,
+            0.280689,
+            0.57853
+          ],
+          "hip": [
+            -1.2e-05,
+            0.036648,
+            0.422119
+          ],
+          "L_foot": [
+            0.096219,
+            -0.10979,
+            0.071959
+          ],
+          "R_foot": [
+            -0.086607,
+            0.05562,
+            0.073979
+          ],
+          "shoulder_width": 0.29597,
+          "shoulder_width_over_span": 0.8257,
+          "L_hand_height": 0.66676,
+          "R_hand_height": 0.57853,
+          "L_hand_height_over_span": 0.6825,
+          "R_hand_height_over_span": 0.4364,
+          "L_hand_to_torso": 0.24317,
+          "R_hand_to_torso": 0.33666,
+          "L_hand_to_torso_over_span": 0.6784,
+          "R_hand_to_torso_over_span": 0.9392,
+          "foot_stance": 0.24656,
+          "foot_stance_over_span": 0.6879,
+          "head_hip_span": 0.35844,
+          "hands_below_shoulders": false,
+          "root_xz": 0.03665
+        },
+        "note": "Angular metrics compared directly. Linear metrics compared as ratios to head-hip span. Do not optimize blindly."
+      },
+      "human_silhouette_is_authority": true,
+      "not_blindly_optimized": true
+    }
+  }
+}

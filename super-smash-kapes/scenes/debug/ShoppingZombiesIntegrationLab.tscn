@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://sskshoppingzombiesintegrationlabv3"]
+
+[ext_resource type="Script" path="res://scripts/debug/shopping_zombies_integration_lab.gd" id="1"]
+
+[node name="ShoppingZombiesIntegrationLab" type="Node3D"]
+script = ExtResource("1")

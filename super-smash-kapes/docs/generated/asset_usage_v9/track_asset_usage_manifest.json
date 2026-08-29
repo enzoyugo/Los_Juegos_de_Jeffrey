@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/vaz_2104_-_raw_scan.glb",
+      "raw_file": "vaz_2104_-_raw_scan.glb",
+      "source_format": ".glb",
+      "source_size": 24910620,
+      "classification": "USE_BOTH",
+      "why": "scan wagon; process parked derivative"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/toyota-hilux-revo-prerunner-2021.zip",
+      "raw_file": "toyota-hilux-revo-prerunner-2021.zip",
+      "source_format": ".zip",
+      "source_size": 64409809,
+      "classification": "USE_BOTH",
+      "why": "Paraguayan-appropriate pickup"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/wrecked-car.zip",
+      "raw_file": "wrecked-car.zip",
+      "source_format": ".zip",
+      "source_size": 62727963,
+      "classification": "USE_SHOPPING",
+      "why": "one atmospheric wreck only"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/psx_industrial_pack.glb",
+      "raw_file": "psx_industrial_pack.glb",
+      "source_format": ".glb",
+      "source_size": 1361848,
+      "classification": "USE_BOTH",
+      "why": "industrial clutter already processed"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/cement_bags_low-poly.glb",
+      "raw_file": "cement_bags_low-poly.glb",
+      "source_format": ".glb",
+      "source_size": 13675684,
+      "classification": "USE_BOTH",
+      "why": "service-area prop"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/market-al-danube.zip",
+      "raw_file": "market-al-danube.zip",
+      "source_format": ".zip",
+      "source_size": 59711247,
+      "classification": "USE_BOTH",
+      "why": "inspect children; extract generic urban parts"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/ice_scream_3_shopping_center_map.glb",
+      "raw_file": "ice_scream_3_shopping_center_map.glb",
+      "source_format": ".glb",
+      "source_size": 19693824,
+      "classification": "REJECT",
+      "why": "unrelated branded shopping map"
+    },
+    {
+      "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/portal-gate-sci-fi.zip",
+      "raw_file": "portal-gate-sci-fi.zip",
+      "source_format": ".zip",
+      "source_size": 94950010,
+      "classification": "REJECT",
+      "why": "sci-fi, not SDS/Track"
+    }
+  ]
+}

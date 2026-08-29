@@ -1,0 +1,276 @@
+{
+  "terere": {
+    "character": "terere",
+    "hands_keyed": [
+      "CC_Base_L_Hand",
+      "CC_Base_R_Hand"
+    ],
+    "twist_helper_bones_keyed": false,
+    "finger_bones_keyed": false,
+    "standing_hand_differs_from_rest": true,
+    "rest": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quat_angle_deg": 0.0,
+        "from_down_deg": 89.835,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quat_angle_deg": 0.0,
+        "from_down_deg": 89.581,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "canonical_standing": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0927,
+          0.1258,
+          -0.0411,
+          0.9869
+        ],
+        "quat_angle_deg": 18.598,
+        "from_down_deg": 20.22,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          -0.0411,
+          -0.1258,
+          0.0927,
+          0.9869
+        ],
+        "quat_angle_deg": 18.598,
+        "from_down_deg": 14.142,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "idle_mid": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0927,
+          0.1258,
+          -0.0411,
+          0.9869
+        ],
+        "quat_angle_deg": 18.598,
+        "from_down_deg": 21.314,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          -0.0411,
+          -0.1258,
+          0.0927,
+          0.9869
+        ],
+        "quat_angle_deg": 18.598,
+        "from_down_deg": 14.477,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "standing_ops": {
+      "CC_Base_L_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 10.0,
+        "secondary": 6.0,
+        "palm": 14.0
+      }
+    },
+    "key_order": "assign_action_then_apply_standing_including_hands_then_key"
+  },
+  "jaguarete": {
+    "character": "jaguarete",
+    "hands_keyed": [
+      "CC_Base_L_Hand",
+      "CC_Base_R_Hand"
+    ],
+    "twist_helper_bones_keyed": false,
+    "finger_bones_keyed": false,
+    "standing_hand_differs_from_rest": true,
+    "rest": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quat_angle_deg": 0.0,
+        "from_down_deg": 85.485,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quat_angle_deg": 0.0,
+        "from_down_deg": 84.692,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "canonical_standing": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.1129,
+          0.1453,
+          -0.0542,
+          0.9814
+        ],
+        "quat_angle_deg": 22.118,
+        "from_down_deg": 18.615,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          -0.0832,
+          0.1309,
+          0.0936,
+          0.9835
+        ],
+        "quat_angle_deg": 20.871,
+        "from_down_deg": 36.189,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "idle_mid": {
+      "CC_Base_L_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          0.1129,
+          0.1453,
+          -0.0542,
+          0.9814
+        ],
+        "quat_angle_deg": 22.118,
+        "from_down_deg": 19.721,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "CC_Base_R_Hand": {
+        "present": true,
+        "keyed_candidate": true,
+        "rotation_mode": "QUATERNION",
+        "quat": [
+          -0.0832,
+          0.1309,
+          0.0936,
+          0.9835
+        ],
+        "quat_angle_deg": 20.871,
+        "from_down_deg": 35.856,
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "standing_ops": {
+      "CC_Base_L_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      },
+      "CC_Base_R_Hand": {
+        "primary": 12.0,
+        "secondary": 8.0,
+        "palm": 16.0
+      }
+    },
+    "key_order": "assign_action_then_apply_standing_including_hands_then_key"
+  }
+}

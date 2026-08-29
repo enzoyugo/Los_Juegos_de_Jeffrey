@@ -1,0 +1,25 @@
+=== ActorCore Rest-Axis Solver V1 Godot Lab ===
+
+--- terere ---
+path=res://assets/fighters/processed/solver_v1/terere/terere_idle_solver_v1.glb exists=true
+lab_scene_exists=true
+LOAD_MODE=GLTFDocument
+Skeleton3D_count=1
+bone_count=101
+AnimationPlayer=true
+clips=idle
+idle=idle
+idle_skeletal_tracks=5
+solver_lab=PASS
+
+--- jaguarete ---
+path=res://assets/fighters/processed/solver_v1/jaguarete/jaguarete_idle_solver_v1.glb exists=true
+lab_scene_exists=true
+LOAD_MODE=GLTFDocument
+Skeleton3D_count=1
+bone_count=101
+AnimationPlayer=true
+clips=idle
+idle=idle
+idle_skeletal_tracks=5
+solver_lab=PASS

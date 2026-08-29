@@ -1,0 +1,16 @@
+{
+  "hits": [
+    true,
+    true,
+    true
+  ],
+  "logs": [
+    "[TRACK_BOOST_RESET] BOOST_ENTRY run=1 source=body_entered",
+    "[TRACK_BOOST_RESET] BOOST_ENTRY run=2 source=body_entered",
+    "[TRACK_BOOST_RESET] BOOST_ENTRY run=3 source=body_entered"
+  ],
+  "ok": true,
+  "ok_count": 3,
+  "runs": 3,
+  "status": "TRACK_BOOST_RESET_OK"
+}

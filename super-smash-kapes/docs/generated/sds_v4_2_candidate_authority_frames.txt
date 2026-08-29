@@ -1,0 +1,5 @@
+HUMAN_REVIEW_REQUIRED
+CANDIDATE shopping_del_sol_zombies_environment_v4_2_candidate
+NOT_CANONICAL
+PRIMARY_FACADE	E:\JeffreyAIResearch\references\shopping_del_sol\facade\sds_facade_target_v1.png
+PART_MAP	E:\JeffreyAIResearch\docs\SDS_REFERENCE_FACADE_PART_MAP_V1.md

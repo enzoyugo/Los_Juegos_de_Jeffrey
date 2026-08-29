@@ -1,0 +1,36 @@
+{
+  "captured_at": "2026-08-26 19:52:39",
+  "jpg": {
+    "path": "e:\\SuperSmashKapes\\super-smash-kapes\\assets\\vehicles\\track\\source\\track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg",
+    "bytes": 3261217,
+    "mtime": "2026-08-26 16:10:41",
+    "sha256": "9a6da40900f00829cd4ec5f996d5270a70edfd07f2c7aeebd07fa3a705ab8bca",
+    "md5": "f5fff8a37bf77a68ed3c927f3144995e"
+  },
+  "import": {
+    "path": "e:\\SuperSmashKapes\\super-smash-kapes\\assets\\vehicles\\track\\source\\track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg.import",
+    "bytes": 1222,
+    "mtime": "2026-08-26 18:01:59",
+    "sha256": "0c91b94e27cf58587029dc0f973051b2ca869599f79d8bd37d356f68389f8459",
+    "md5": "32ec3c2785f568483999915532aa889b"
+  },
+  "ctex": {
+    "path": "e:\\SuperSmashKapes\\super-smash-kapes\\.godot\\imported\\track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg-4ebf91ec52d9a986b1bd6a86b83c994a.s3tc.ctex",
+    "bytes": 11184876,
+    "mtime": "2026-08-26 18:01:59",
+    "sha256": "f1761c4791510dc74af6eb6dbe3ee32a9528ddee9276a442f018c512b9d6d9a6",
+    "md5": "2e483b49a979eaf52b9deb4274c71145"
+  },
+  "md5_sidecar": {
+    "path": "e:\\SuperSmashKapes\\super-smash-kapes\\.godot\\imported\\track_car_base_v1_Modelo+3D+de+coche+de+carreras_basecolor.jpg-4ebf91ec52d9a986b1bd6a86b83c994a.md5",
+    "bytes": 91,
+    "mtime": "2026-08-26 18:01:59",
+    "sha256": "557d39bcdefced02691735767f8d2fdd19071abc1db9332c0bc7b80412f44a21",
+    "md5": "44d9385288d217ebdc15a10ec51b0f73"
+  },
+  "md5_sidecar_text": "source_md5=\"f5fff8a37bf77a68ed3c927f3144995e\"\ndest_md5=\"2e483b49a979eaf52b9deb4274c71145\"\n\n",
+  "ctex_magic": "GST2",
+  "ctex_header_hex": "475354320100000000100000001000000000800dffffffff00000000000000000000000000000000001000100c00000011000000",
+  "expected_dxt1_payload": 11184824,
+  "header_slack": 52
+}

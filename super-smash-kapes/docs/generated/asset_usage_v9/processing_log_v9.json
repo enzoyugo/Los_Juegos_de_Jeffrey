@@ -1,0 +1,65 @@
+[
+  {
+    "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/vaz_2104_-_raw_scan.glb",
+    "raw_file": "vaz_2104_-_raw_scan.glb",
+    "source_format": ".glb",
+    "source_size": 24910620,
+    "classification": "USE_BOTH",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/vehicles/vaz_parked.glb",
+    "final_triangles": 22000,
+    "kind": "wagon"
+  },
+  {
+    "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/_extracted/wrecked-car/source/export_002.glb",
+    "raw_file": "export_002.glb",
+    "source_format": ".glb",
+    "source_size": 37667412,
+    "classification": "USE_SHOPPING",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/vehicles/wreck_parked.glb",
+    "final_triangles": 28000,
+    "kind": "wreck"
+  },
+  {
+    "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/_extracted/toyota-hilux-revo-prerunner-2021/source/hilux_revo_21.fbx",
+    "raw_file": "hilux_revo_21.fbx",
+    "source_format": ".fbx",
+    "source_size": 42364944,
+    "classification": "USE_BOTH",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/vehicles/hilux_parked.glb",
+    "final_triangles": 29998,
+    "kind": "pickup"
+  },
+  {
+    "raw_file": "psx_industrial_pack.glb",
+    "classification": "USE_BOTH",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/industrial/psx_industrial_pack.glb",
+    "kind": "industrial"
+  },
+  {
+    "raw_source_path": "E:/SuperSmashKapes/super-smash-kapes/assets/raw_models/cement_bags_low-poly.glb",
+    "raw_file": "cement_bags_low-poly.glb",
+    "source_format": ".glb",
+    "source_size": 13675684,
+    "classification": "USE_BOTH",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/industrial/cement_bags.glb",
+    "final_triangles": 1929,
+    "kind": "prop"
+  },
+  {
+    "raw_file": "ice_scream_3_shopping_center_map.glb",
+    "classification": "REJECT",
+    "rejection_reason": "unrelated third-party shopping map / branding"
+  },
+  {
+    "raw_file": "portal-gate-sci-fi.zip",
+    "classification": "REJECT",
+    "rejection_reason": "sci-fi aesthetic, not SDS/Track urban"
+  },
+  {
+    "raw_file": "Market AL_DANUBE.fbx",
+    "classification": "USE_BOTH",
+    "processed_glb_path": "E:/SuperSmashKapes/super-smash-kapes/assets/environments/shared/urban/processed/street_props/market_extracted_cluster.glb",
+    "kind": "extracted_cluster",
+    "runtime_note": "child objects inspected"
+  }
+]

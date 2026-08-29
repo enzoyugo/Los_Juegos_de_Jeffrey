@@ -1,0 +1,25 @@
+{
+	"boost_torque_y": 0.0,
+	"first_vx": {},
+	"first_yaw": {},
+	"impulse_x": {
+		"antiroll": 0.0,
+		"boost": 0.0,
+		"downforce": -0.0000596932819672032,
+		"lat": 0.0249993629229388,
+		"long": 0.00227205507937656,
+		"rest": 0.0,
+		"susp": 0.0,
+		"tire": 0.02727141541071
+	},
+	"left_lat": 0.0124958992555228,
+	"right_lat": 0.0125034636674159,
+	"yaw_impulse": {
+		"air_control": 0.0,
+		"antiroll": 0.000439159688660922,
+		"boost": 0.0,
+		"collision": 0.0,
+		"tire": 0.0336428421400408,
+		"yaw_assist": 0.0
+	}
+}

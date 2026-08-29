@@ -1,0 +1,1908 @@
+{
+  "terere": {
+    "idle": {
+      "method": "v5_idle_roundtrip",
+      "clip_kind": "idle",
+      "frame_start": 0,
+      "frame_end": 88,
+      "max_volume_ratio": 0.9364,
+      "max_axis_ratio": 1.0249,
+      "max_limb_length_rel_error": 3e-05,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.00593,
+      "pose_classification": "STANDING_IDLE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.00527,
+        "r_foot_xz_span": 0.00496
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 0.9313,
+          "axis_ratio": 1.0212,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 0.931,
+          "axis_ratio": 1.0208,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 0.9301,
+          "axis_ratio": 1.0207,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 0.9304,
+          "axis_ratio": 1.022,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.9317,
+          "axis_ratio": 1.0234,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.9345,
+          "axis_ratio": 1.0233,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.9327,
+          "axis_ratio": 1.0215,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.9312,
+          "axis_ratio": 1.0191,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.9296,
+          "axis_ratio": 1.0183,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 0.9291,
+          "axis_ratio": 1.0194,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 0.9331,
+          "axis_ratio": 1.0211,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 0.9337,
+          "axis_ratio": 1.0218,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "T_POSE_LIKE"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 0.9324,
+          "axis_ratio": 1.0215,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "T_POSE_LIKE"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 0.9326,
+          "axis_ratio": 1.0219,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 0.9327,
+          "axis_ratio": 1.0231,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 0.9341,
+          "axis_ratio": 1.0239,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 0.9364,
+          "axis_ratio": 1.0235,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 0.9361,
+          "axis_ratio": 1.0216,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 0.9348,
+          "axis_ratio": 1.0195,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 0.9298,
+          "axis_ratio": 1.0191,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 0.9286,
+          "axis_ratio": 1.0201,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.9321,
+          "axis_ratio": 1.0217,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 0.9308,
+          "axis_ratio": 1.0225,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 46,
+          "volume_ratio": 0.9273,
+          "axis_ratio": 1.0223,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 48,
+          "volume_ratio": 0.9276,
+          "axis_ratio": 1.0227,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 50,
+          "volume_ratio": 0.9295,
+          "axis_ratio": 1.024,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 52,
+          "volume_ratio": 0.9319,
+          "axis_ratio": 1.0249,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 54,
+          "volume_ratio": 0.9339,
+          "axis_ratio": 1.0245,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 56,
+          "volume_ratio": 0.9287,
+          "axis_ratio": 1.0225,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 58,
+          "volume_ratio": 0.9255,
+          "axis_ratio": 1.02,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 60,
+          "volume_ratio": 0.9233,
+          "axis_ratio": 1.019,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 62,
+          "volume_ratio": 0.9245,
+          "axis_ratio": 1.0198,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 64,
+          "volume_ratio": 0.9272,
+          "axis_ratio": 1.0211,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 66,
+          "volume_ratio": 0.9233,
+          "axis_ratio": 1.022,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 68,
+          "volume_ratio": 0.9198,
+          "axis_ratio": 1.022,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 70,
+          "volume_ratio": 0.9194,
+          "axis_ratio": 1.0223,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 72,
+          "volume_ratio": 0.9211,
+          "axis_ratio": 1.0234,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 74,
+          "volume_ratio": 0.9244,
+          "axis_ratio": 1.0241,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 76,
+          "volume_ratio": 0.931,
+          "axis_ratio": 1.0233,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 78,
+          "volume_ratio": 0.9344,
+          "axis_ratio": 1.0211,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 80,
+          "volume_ratio": 0.9318,
+          "axis_ratio": 1.0187,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 82,
+          "volume_ratio": 0.9298,
+          "axis_ratio": 1.0181,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 84,
+          "volume_ratio": 0.9286,
+          "axis_ratio": 1.0197,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 86,
+          "volume_ratio": 0.9309,
+          "axis_ratio": 1.0212,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        },
+        {
+          "frame": 88,
+          "volume_ratio": 0.9313,
+          "axis_ratio": 1.0212,
+          "limb_length_rel_error": 3e-05,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "STANDING_IDLE"
+        }
+      ],
+      "rest_mode": "bind_tpose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 102,
+      "action_name": "idle_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/terere/terere_v5_idle_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "calf_twist_01_l",
+        "calf_twist_01_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone"
+      ]
+    },
+    "reaction_v1": {
+      "method": "v5_reaction_v1_roundtrip",
+      "clip_kind": "reaction",
+      "frame_start": 0,
+      "frame_end": 44,
+      "max_volume_ratio": 1.0652,
+      "max_axis_ratio": 1.0032,
+      "max_limb_length_rel_error": 0.0,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.00885,
+      "pose_classification": "HIT_REACTION_CANDIDATE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.0142,
+        "r_foot_xz_span": 0.0099
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 1.0041,
+          "axis_ratio": 0.9999,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 1.0332,
+          "axis_ratio": 1.0027,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 1.0586,
+          "axis_ratio": 1.0032,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.9914,
+          "axis_ratio": 0.9864,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.9589,
+          "axis_ratio": 0.9862,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.9738,
+          "axis_ratio": 0.9903,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.9748,
+          "axis_ratio": 0.9878,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.9871,
+          "axis_ratio": 0.9906,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 1.0171,
+          "axis_ratio": 1.0016,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 1.0328,
+          "axis_ratio": 1.0021,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 1.049,
+          "axis_ratio": 0.999,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 1.0457,
+          "axis_ratio": 0.9967,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 1.0579,
+          "axis_ratio": 0.9998,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 1.0652,
+          "axis_ratio": 1.0011,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 1.062,
+          "axis_ratio": 1.0005,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 1.0299,
+          "axis_ratio": 0.9993,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 0.9842,
+          "axis_ratio": 0.997,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 1.0283,
+          "axis_ratio": 0.996,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 1.0141,
+          "axis_ratio": 0.9977,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 0.9981,
+          "axis_ratio": 0.9996,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.9998,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        }
+      ],
+      "rest_mode": "canonical_idle_pose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 102,
+      "action_name": "reaction_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/terere/terere_v5_reaction_v1_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "calf_twist_01_l",
+        "calf_twist_01_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone"
+      ]
+    },
+    "reaction_medium_candidate": {
+      "method": "v5_reaction_medium_roundtrip",
+      "clip_kind": "reaction",
+      "frame_start": 0,
+      "frame_end": 44,
+      "max_volume_ratio": 1.0393,
+      "max_axis_ratio": 1.0025,
+      "max_limb_length_rel_error": 0.0,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.02035,
+      "pose_classification": "HIT_REACTION_CANDIDATE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.01629,
+        "r_foot_xz_span": 0.01996
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 1.0038,
+          "axis_ratio": 0.9999,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 1.0322,
+          "axis_ratio": 1.0025,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 1.0252,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.9287,
+          "axis_ratio": 0.9743,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.9384,
+          "axis_ratio": 0.9699,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.9331,
+          "axis_ratio": 0.978,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.9437,
+          "axis_ratio": 0.9794,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.9645,
+          "axis_ratio": 0.9866,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 0.9879,
+          "axis_ratio": 0.9967,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 0.9845,
+          "axis_ratio": 0.9925,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 0.9898,
+          "axis_ratio": 0.9898,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 0.9825,
+          "axis_ratio": 0.9863,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 1.0114,
+          "axis_ratio": 0.9924,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 1.0332,
+          "axis_ratio": 0.9966,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 1.0393,
+          "axis_ratio": 0.9981,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 1.0163,
+          "axis_ratio": 0.9982,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 0.9792,
+          "axis_ratio": 0.9965,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 1.027,
+          "axis_ratio": 0.9958,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 1.0129,
+          "axis_ratio": 0.9975,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 0.9956,
+          "axis_ratio": 0.9995,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.9991,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        }
+      ],
+      "rest_mode": "canonical_idle_pose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 102,
+      "action_name": "reaction_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/terere/terere_v5_reaction_medium_candidate_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "calf_twist_01_l",
+        "calf_twist_01_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone"
+      ]
+    }
+  },
+  "jaguarete": {
+    "idle": {
+      "method": "v5_idle_roundtrip",
+      "clip_kind": "idle",
+      "frame_start": 0,
+      "frame_end": 88,
+      "max_volume_ratio": 0.836,
+      "max_axis_ratio": 1.0379,
+      "max_limb_length_rel_error": 1e-05,
+      "max_extreme_verts": 3019,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.02832,
+      "pose_classification": "STANDING_IDLE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.02163,
+        "r_foot_xz_span": 0.04272
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 0.7762,
+          "axis_ratio": 1.0306,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2917,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 0.7757,
+          "axis_ratio": 1.0228,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2927,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 0.7957,
+          "axis_ratio": 1.0138,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2563,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 0.8175,
+          "axis_ratio": 1.0124,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2149,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.8257,
+          "axis_ratio": 1.0238,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1948,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.781,
+          "axis_ratio": 1.0319,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2685,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.7653,
+          "axis_ratio": 1.0279,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 3010,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.7643,
+          "axis_ratio": 1.0192,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2958,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.8038,
+          "axis_ratio": 1.0225,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2378,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 0.823,
+          "axis_ratio": 1.0303,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2022,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 0.8048,
+          "axis_ratio": 1.0347,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2354,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 0.7822,
+          "axis_ratio": 1.0355,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2909,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 0.7701,
+          "axis_ratio": 1.027,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 3019,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 0.775,
+          "axis_ratio": 1.0179,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2798,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 0.81,
+          "axis_ratio": 1.0206,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2199,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 0.807,
+          "axis_ratio": 1.0291,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2181,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 0.7736,
+          "axis_ratio": 1.0339,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2766,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 0.762,
+          "axis_ratio": 1.0311,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2997,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 0.7806,
+          "axis_ratio": 1.0266,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2811,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 0.8136,
+          "axis_ratio": 1.0283,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2215,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 0.8335,
+          "axis_ratio": 1.0335,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1874,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.8202,
+          "axis_ratio": 1.0347,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2011,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 0.7969,
+          "axis_ratio": 1.0379,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2448,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 46,
+          "volume_ratio": 0.8005,
+          "axis_ratio": 1.0313,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2383,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 48,
+          "volume_ratio": 0.8183,
+          "axis_ratio": 1.0203,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2109,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 50,
+          "volume_ratio": 0.8284,
+          "axis_ratio": 1.0215,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1890,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 52,
+          "volume_ratio": 0.8349,
+          "axis_ratio": 1.0269,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1702,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 54,
+          "volume_ratio": 0.8016,
+          "axis_ratio": 1.0326,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2306,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 56,
+          "volume_ratio": 0.7949,
+          "axis_ratio": 1.0302,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2431,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 58,
+          "volume_ratio": 0.817,
+          "axis_ratio": 1.0277,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2156,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 60,
+          "volume_ratio": 0.8267,
+          "axis_ratio": 1.0312,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1968,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 62,
+          "volume_ratio": 0.836,
+          "axis_ratio": 1.0326,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1791,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 64,
+          "volume_ratio": 0.8297,
+          "axis_ratio": 1.0326,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1874,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 66,
+          "volume_ratio": 0.8005,
+          "axis_ratio": 1.0354,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2325,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 68,
+          "volume_ratio": 0.7874,
+          "axis_ratio": 1.0273,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2516,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 70,
+          "volume_ratio": 0.7875,
+          "axis_ratio": 1.0155,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2496,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 72,
+          "volume_ratio": 0.7962,
+          "axis_ratio": 1.0186,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2317,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 74,
+          "volume_ratio": 0.795,
+          "axis_ratio": 1.026,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2176,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 76,
+          "volume_ratio": 0.7845,
+          "axis_ratio": 1.0277,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2468,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 78,
+          "volume_ratio": 0.7874,
+          "axis_ratio": 1.0247,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 2698,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 80,
+          "volume_ratio": 0.7993,
+          "axis_ratio": 1.0189,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2510,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 82,
+          "volume_ratio": 0.8127,
+          "axis_ratio": 1.0212,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2212,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 84,
+          "volume_ratio": 0.836,
+          "axis_ratio": 1.0296,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 1803,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 86,
+          "volume_ratio": 0.8141,
+          "axis_ratio": 1.0326,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2179,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        },
+        {
+          "frame": 88,
+          "volume_ratio": 0.7762,
+          "axis_ratio": 1.0306,
+          "limb_length_rel_error": 1e-05,
+          "extreme_verts": 2917,
+          "root_xz": 0.0,
+          "classification": "DEFORMATION_INVALID"
+        }
+      ],
+      "rest_mode": "bind_tpose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 118,
+      "action_name": "idle_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/jaguarete/jaguarete_v5_idle_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist01",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone",
+        "cc_base_l_eye"
+      ]
+    },
+    "reaction_v1": {
+      "method": "v5_reaction_v1_roundtrip",
+      "clip_kind": "reaction",
+      "frame_start": 0,
+      "frame_end": 44,
+      "max_volume_ratio": 1.1006,
+      "max_axis_ratio": 1.0163,
+      "max_limb_length_rel_error": 0.0,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.01843,
+      "pose_classification": "HIT_REACTION_CANDIDATE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.01748,
+        "r_foot_xz_span": 0.02025
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 1.044,
+          "axis_ratio": 1.0009,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 1.1006,
+          "axis_ratio": 1.013,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 0.9251,
+          "axis_ratio": 1.0163,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.9114,
+          "axis_ratio": 1.0108,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.9009,
+          "axis_ratio": 0.9942,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.9025,
+          "axis_ratio": 0.9907,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.9009,
+          "axis_ratio": 0.9901,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.9203,
+          "axis_ratio": 1.0081,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 0.937,
+          "axis_ratio": 1.0143,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 0.9415,
+          "axis_ratio": 1.0143,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 0.9392,
+          "axis_ratio": 1.0138,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 0.9338,
+          "axis_ratio": 1.0122,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 0.9329,
+          "axis_ratio": 1.0145,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 0.9339,
+          "axis_ratio": 1.016,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 0.9285,
+          "axis_ratio": 1.0126,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 0.9508,
+          "axis_ratio": 1.0106,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 1.0311,
+          "axis_ratio": 1.0053,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 1.0774,
+          "axis_ratio": 1.0004,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 1.0534,
+          "axis_ratio": 0.9981,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 1.0099,
+          "axis_ratio": 0.9987,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.9993,
+          "axis_ratio": 0.9997,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 1.0002,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        }
+      ],
+      "rest_mode": "canonical_idle_pose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 118,
+      "action_name": "reaction_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/jaguarete/jaguarete_v5_reaction_v1_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist01",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone",
+        "cc_base_l_eye"
+      ]
+    },
+    "reaction_medium_candidate": {
+      "method": "v5_reaction_medium_roundtrip",
+      "clip_kind": "reaction",
+      "frame_start": 0,
+      "frame_end": 44,
+      "max_volume_ratio": 1.1003,
+      "max_axis_ratio": 1.0139,
+      "max_limb_length_rel_error": 0.0,
+      "max_extreme_verts": 0,
+      "max_root_xz": 0.0,
+      "hip_z_variance": 0.02979,
+      "pose_classification": "HIT_REACTION_CANDIDATE",
+      "technical_pass": true,
+      "grounding": {
+        "l_foot_xz_span": 0.03487,
+        "r_foot_xz_span": 0.0364
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "volume_ratio": 1.0,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 2,
+          "volume_ratio": 1.0439,
+          "axis_ratio": 1.0008,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 4,
+          "volume_ratio": 1.1003,
+          "axis_ratio": 1.0129,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 6,
+          "volume_ratio": 0.9197,
+          "axis_ratio": 1.0127,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 8,
+          "volume_ratio": 0.9231,
+          "axis_ratio": 0.9986,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 10,
+          "volume_ratio": 0.9158,
+          "axis_ratio": 0.9905,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 12,
+          "volume_ratio": 0.9069,
+          "axis_ratio": 0.9892,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 14,
+          "volume_ratio": 0.9013,
+          "axis_ratio": 0.9909,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 16,
+          "volume_ratio": 0.9177,
+          "axis_ratio": 1.0074,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 18,
+          "volume_ratio": 0.9321,
+          "axis_ratio": 1.0115,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 20,
+          "volume_ratio": 0.9358,
+          "axis_ratio": 1.0059,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 22,
+          "volume_ratio": 0.9348,
+          "axis_ratio": 1.007,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 24,
+          "volume_ratio": 0.9341,
+          "axis_ratio": 1.0044,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 26,
+          "volume_ratio": 0.9257,
+          "axis_ratio": 1.0098,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 28,
+          "volume_ratio": 0.9297,
+          "axis_ratio": 1.0139,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 30,
+          "volume_ratio": 0.9262,
+          "axis_ratio": 1.0118,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 32,
+          "volume_ratio": 0.9503,
+          "axis_ratio": 1.0109,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 34,
+          "volume_ratio": 1.0315,
+          "axis_ratio": 1.0061,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 36,
+          "volume_ratio": 1.0778,
+          "axis_ratio": 1.001,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 38,
+          "volume_ratio": 1.0532,
+          "axis_ratio": 0.9981,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 40,
+          "volume_ratio": 1.0099,
+          "axis_ratio": 0.9988,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 42,
+          "volume_ratio": 0.9994,
+          "axis_ratio": 0.9998,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        },
+        {
+          "frame": 44,
+          "volume_ratio": 1.0002,
+          "axis_ratio": 1.0,
+          "limb_length_rel_error": 0.0,
+          "extreme_verts": 0,
+          "root_xz": 0.0,
+          "classification": "HIT_REACTION_CANDIDATE"
+        }
+      ],
+      "rest_mode": "canonical_idle_pose",
+      "gray_pbr_expected": true,
+      "texture_does_not_block": true,
+      "ok": true,
+      "bone_count": 118,
+      "action_name": "reaction_Armature",
+      "pelvis_present": true,
+      "animation_survives": true,
+      "orientation_drift": false,
+      "glb": "E:/SuperSmashKapes/super-smash-kapes/assets/fighters/processed/v5_animation_benchmark/jaguarete/jaguarete_v5_reaction_medium_candidate_benchmark.glb",
+      "sample_bones": [
+        "ball_l",
+        "ball_r",
+        "calf_l",
+        "calf_r",
+        "cc_base_facialbone",
+        "cc_base_jawroot",
+        "cc_base_l_bigtoe1",
+        "cc_base_l_breast",
+        "cc_base_l_calftwist01",
+        "cc_base_l_calftwist02",
+        "cc_base_l_elbowsharebone",
+        "cc_base_l_eye"
+      ]
+    }
+  }
+}

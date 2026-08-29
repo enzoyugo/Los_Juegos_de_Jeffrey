@@ -1,0 +1,81 @@
+{
+  "land_14": {
+    "takeoff": {
+      "local": [
+        0.0,
+        0.389904,
+        -1.2
+      ],
+      "world": [
+        0.0,
+        2.189904,
+        -81.2
+      ],
+      "along": 1.2
+    },
+    "exit": {
+      "origin": [
+        0.0,
+        0.95,
+        -102.2
+      ],
+      "pitch_deg": -0.0
+    },
+    "sample_count": 57,
+    "centerline": 22.2
+  },
+  "land_2": {
+    "takeoff": {
+      "local": [
+        0.0,
+        0.389904,
+        -1.2
+      ],
+      "world": [
+        0.0,
+        2.189904,
+        -81.2
+      ],
+      "along": 1.2
+    },
+    "exit": {
+      "origin": [
+        0.0,
+        0.95,
+        -90.2
+      ],
+      "pitch_deg": -0.0
+    },
+    "sample_count": 27,
+    "centerline": 10.2
+  },
+  "answers": {
+    "pad_is_before_takeoff": false,
+    "pad_is_after_takeoff": true,
+    "pad_is_part_of_landing": true,
+    "pad_is_part_of_approach": false,
+    "pad_contributes_to_piece_EXIT": true,
+    "shortening_moves_next_piece": true,
+    "shortening_moves_TAKEOFF_EDGE": false,
+    "shortening_moves_boost": false,
+    "shortening_moves_ramp_entry": false,
+    "shortening_changes_piece_local_entry": false,
+    "shortening_reduces_acceleration_distance_to_lip": false,
+    "takeoff_edge_delta_m": 0.0,
+    "boost_entry_delta_m": 0.0,
+    "ramp_entry_delta_m": 0.0,
+    "exit_delta_m": 12.0,
+    "landing_deck_start_delta_m": 12.0,
+    "expected_exit_shift_m": 12.0,
+    "lip_box_count_14": 3,
+    "lip_box_count_2": 3,
+    "pad_box_count_14": 24,
+    "pad_box_count_2": 4,
+    "sample_count_14": 57,
+    "sample_count_2": 27,
+    "all_pad_boxes_after_takeoff_14": true,
+    "all_pad_boxes_after_takeoff_2": true,
+    "approach_geometry_coupled_to_jump_exit": true,
+    "causal_speed_geometry": "TAKEOFF_EDGE / boost / ramp world transforms are identical when land_length changes. The 14 m pad is AFTER takeoff (along > 1.2 m) and is the piece EXIT, so shortening it only moves jump EXIT and therefore landing_straight_long. It cannot change velocity AT takeoff via extra acceleration distance. V4 14.2\u21925.9 m/s coincided with a harness change: iter_03 released throttle at VALID_TAKEOFF and logged 5.9 m/s; iter_05 held throttle until FIRST_CONTACT and logged 14.2 m/s. Geometry after the lip is not the takeoff-speed cause."
+  }
+}

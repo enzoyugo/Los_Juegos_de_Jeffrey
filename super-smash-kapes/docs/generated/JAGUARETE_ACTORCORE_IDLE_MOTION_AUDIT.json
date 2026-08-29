@@ -1,0 +1,133 @@
+{
+  "bake_metrics": {
+    "target_action": "idle",
+    "frame_start": 1,
+    "frame_end": 110,
+    "fps": 30,
+    "mapped_bones": 22,
+    "keyed_target_bones": 22,
+    "root_translation_max_x": 0.0,
+    "root_translation_max_y": 0.020550301298499107,
+    "root_translation_max_z": 0.0
+  },
+  "motion_audit": {
+    "action": "idle",
+    "frame_start": 1,
+    "frame_end": 110,
+    "fps": 30,
+    "metric": "intra_clip_local_rotation_from_first_frame",
+    "bones": {
+      "Hip": {
+        "bone": "CC_Base_Hip",
+        "rotation_delta_degrees": 5.8554,
+        "location_delta": 0.005048,
+        "key_count": 770
+      },
+      "Spine": {
+        "bone": "CC_Base_Spine01",
+        "rotation_delta_degrees": 5.1133,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "UpperSpine": {
+        "bone": "CC_Base_Spine02",
+        "rotation_delta_degrees": 5.0994,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "Head": {
+        "bone": "CC_Base_Head",
+        "rotation_delta_degrees": 5.8817,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Clavicle": {
+        "bone": "CC_Base_L_Clavicle",
+        "rotation_delta_degrees": 6.6373,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_UpperArm": {
+        "bone": "CC_Base_L_Upperarm",
+        "rotation_delta_degrees": 24.9953,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Forearm": {
+        "bone": "CC_Base_L_Forearm",
+        "rotation_delta_degrees": 5.8514,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Hand": {
+        "bone": "CC_Base_L_Hand",
+        "rotation_delta_degrees": 9.0628,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Clavicle": {
+        "bone": "CC_Base_R_Clavicle",
+        "rotation_delta_degrees": 6.6629,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_UpperArm": {
+        "bone": "CC_Base_R_Upperarm",
+        "rotation_delta_degrees": 24.4362,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Forearm": {
+        "bone": "CC_Base_R_Forearm",
+        "rotation_delta_degrees": 3.7586,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Hand": {
+        "bone": "CC_Base_R_Hand",
+        "rotation_delta_degrees": 10.1871,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Thigh": {
+        "bone": "CC_Base_L_Thigh",
+        "rotation_delta_degrees": 9.7088,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Calf": {
+        "bone": "CC_Base_L_Calf",
+        "rotation_delta_degrees": 12.4554,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "L_Foot": {
+        "bone": "CC_Base_L_Foot",
+        "rotation_delta_degrees": 8.088,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Thigh": {
+        "bone": "CC_Base_R_Thigh",
+        "rotation_delta_degrees": 8.0028,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Calf": {
+        "bone": "CC_Base_R_Calf",
+        "rotation_delta_degrees": 11.7647,
+        "location_delta": 0.0,
+        "key_count": 440
+      },
+      "R_Foot": {
+        "bone": "CC_Base_R_Foot",
+        "rotation_delta_degrees": 7.1262,
+        "location_delta": 0.0,
+        "key_count": 440
+      }
+    },
+    "branches_with_motion": 18,
+    "rotation_threshold_degrees": 0.35,
+    "accepted": true
+  }
+}

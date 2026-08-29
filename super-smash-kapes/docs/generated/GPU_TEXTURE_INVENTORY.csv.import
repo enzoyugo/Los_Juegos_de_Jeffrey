@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://102k3qj0anke"
+
+[deps]
+
+files=["res://docs/generated/GPU_TEXTURE_INVENTORY.width.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.height.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.mips.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.rgba8.translation"]
+
+source_file="res://docs/generated/GPU_TEXTURE_INVENTORY.csv"
+dest_files=["res://docs/generated/GPU_TEXTURE_INVENTORY.width.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.height.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.mips.translation", "res://docs/generated/GPU_TEXTURE_INVENTORY.rgba8.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

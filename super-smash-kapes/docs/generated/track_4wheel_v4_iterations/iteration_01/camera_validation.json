@@ -1,0 +1,9 @@
+{
+  "iteration": 1,
+  "note": "Stationary lab used FixedWorldCam as required. Jump camera not evaluated this iteration.",
+  "fixed_world_cam_stationary": true,
+  "chase_used_for_stationary": false,
+  "landing_side_fixed_to_deck": false,
+  "PASS": false,
+  "reason": "camera validation deferred until clean jump route exists"
+}

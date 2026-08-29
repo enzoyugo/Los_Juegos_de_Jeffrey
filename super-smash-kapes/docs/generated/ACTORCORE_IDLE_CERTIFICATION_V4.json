@@ -1,0 +1,24 @@
+{
+  "ACTORCORE_IDLE_TECHNICALLY_CERTIFIED": true,
+  "human_visual_approval": false,
+  "pipeline": "ACTORCORE_V4",
+  "retarget": "clip_relative_to_mixamo_frame_1",
+  "runtime_retarget": false,
+  "proxy_idle": false,
+  "fallback": false,
+  "canonical_sizes": {
+    "terere": {"size_class": "SHORT", "target_visual_height": 2.40},
+    "jaguarete": {"size_class": "TALL", "target_visual_height": 3.15}
+  },
+  "bbox": {
+    "terere_volume_ratio": 1.0642,
+    "jaguarete_volume_ratio": 1.0137,
+    "idle_limit": 1.35,
+    "pass": true
+  },
+  "honest_limitation": "Idle is AccuRIG T-pose plus Mixamo intra-clip sway, not Mixamo standing. Human must approve silhouette.",
+  "labs": [
+    "res://scenes/debug/TerereProductionAnimationLab.tscn",
+    "res://scenes/debug/JaguareteProductionAnimationLab.tscn"
+  ]
+}
