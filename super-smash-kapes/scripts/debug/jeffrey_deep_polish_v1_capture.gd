@@ -156,23 +156,30 @@ func _track() -> void:
 	await get_tree().process_frame
 	if track.has_method("_on_play"):
 		track.call("_on_play", "media", "picante")
+	var car = track.get("_car")
+	if car != null:
+		car.set("control_enabled", true)
 	## Hold the production throttle through the countdown and into the first
 	## lap so the capture reviews the moving world, not the preview settle.
 	if InputMap.has_action("accelerate"):
 		Input.action_press("accelerate")
-	for _i in 220:
+	## Let the countdown fully clear and capture deep enough into the first
+	## straight for speed/world readability.
+	for _i in 420:
 		await get_tree().process_frame
 	if InputMap.has_action("accelerate"):
 		Input.action_release("accelerate")
+	## The capture runs without a focused physical keyboard. Seed a bounded
+	## production-equivalent straight-line velocity after the countdown so the
+	## rendered plate proves camera/world/speed presentation, not input focus.
+	if car is RigidBody3D:
+		(car as RigidBody3D).linear_velocity = Vector3(0.0, (car as RigidBody3D).linear_velocity.y, -18.0)
+	for _i in 36:
+		await get_tree().process_frame
 	await _save(OUT + "/TRACK/12_track_gameplay.png")
 	_copy(OUT + "/TRACK/12_track_gameplay.png", FINAL + "/track_gameplay.png")
 
 	## Steering visual — nudge car input if present
-	var car = null
-	for c in track.get_children():
-		if c.is_in_group("track_runtime_car") or c.has_method("apply_track_boost"):
-			car = c
-			break
 	if car != null:
 		car.set("control_enabled", true)
 	for _i in 45:

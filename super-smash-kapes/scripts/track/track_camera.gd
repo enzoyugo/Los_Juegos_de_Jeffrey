@@ -58,9 +58,10 @@ func _physics_process(delta: float) -> void:
 	var camera_height := Config.CAM_HEIGHT
 	if car_node is RigidBody3D:
 		## The articulated chassis is physically wider/taller in frame than the
-		## legacy CharacterBody3D car; keep the same readable road context.
-		camera_distance = 10.5
-		camera_height = 2.8
+		## legacy CharacterBody3D car. Give the road and dressed world room to read
+		## at arcade speed while retaining a confident car silhouette.
+		camera_distance = 12.6
+		camera_height = 3.15
 	var back: Vector3 = _yaw_basis.z * camera_distance
 	var desired: Vector3 = rear + Vector3(0, camera_height, 0) + back
 	var alpha: float = 1.0 - exp(-Config.CAM_FOLLOW * delta)

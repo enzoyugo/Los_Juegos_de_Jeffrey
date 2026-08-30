@@ -134,6 +134,7 @@ func _process(delta: float) -> void:
 	if _paused or not _running:
 		return
 	if _clock.is_countdown():
+		_hud.set_speed(_car_speed())
 		if _clock.countdown_left > 0.05:
 			_hud.set_status(str(maxi(ceili(_clock.countdown_left), 1)))
 		else:
@@ -152,7 +153,8 @@ func _process(delta: float) -> void:
 	var pid: String = _turns.current_profile_id() if _turns != null else ""
 	if _turns != null:
 		_turns.consume_fuel(pid, delta)
-	_hud.set_timer(_timer)
+		_hud.set_timer(_timer)
+	_hud.set_speed(_car_speed())
 	_sync_ghosts(_timer)
 	if _turns != null:
 		var ld: bool = str(_turns.last_dance.get(pid, "none")) == "active"
@@ -420,6 +422,18 @@ func _driver_name() -> String:
 	if profile != null:
 		return str(profile.display_name)
 	return str(row.get("profile_id", ""))
+
+
+func _car_speed() -> float:
+	if _car == null:
+		return 0.0
+	if _car is RigidBody3D:
+		var v: Vector3 = (_car as RigidBody3D).linear_velocity
+		return Vector3(v.x, 0.0, v.z).length()
+	if _car is CharacterBody3D:
+		var v2: Vector3 = (_car as CharacterBody3D).velocity
+		return Vector3(v2.x, 0.0, v2.z).length()
+	return 0.0
 
 
 func _show_results() -> void:

@@ -25,6 +25,7 @@ var _status: Label
 var _board: Label
 var _prompt: Control
 var _rank: Label
+var _speed: Label
 var _seed: Label
 var _setup: Control
 var _pause: Control
@@ -133,6 +134,11 @@ func set_fuel(seconds: float, last_dance: bool, player_name: String = "") -> voi
 func set_rank(rank: int, total: int) -> void:
 	if _rank != null:
 		_rank.text = "PUESTO  %d / %d" % [rank, total] if rank > 0 else ""
+
+
+func set_speed(meters_per_second: float) -> void:
+	if _speed != null:
+		_speed.text = "VELOCIDAD  %03d" % maxi(int(round(maxf(meters_per_second, 0.0) * 3.6)), 0)
 
 
 func set_seed(seed_value: int) -> void:
@@ -251,6 +257,12 @@ func _build_hud() -> void:
 	Layout.apply_frac(rank_chip, 0.02, 0.115, 0.18, 0.036)
 	_rank = Layout.outlined_label("", 13, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_LEFT)
 	rank_chip.add_child(_rank)
+
+	var speed_chip = Chrome.make_side_chip(ThemeRef.GOLD)
+	root.add_child(speed_chip)
+	Layout.apply_frac(speed_chip, 0.02, 0.158, 0.22, 0.036)
+	_speed = Layout.outlined_label("VELOCIDAD 000", 13, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
+	speed_chip.add_child(_speed)
 
 	_seed = Layout.outlined_label("", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
 	root.add_child(_seed)
@@ -385,7 +397,7 @@ func _build_pause() -> void:
 	box.add_child(Layout.outlined_label("PAUSA", 34, Color("#f5c542"), HORIZONTAL_ALIGNMENT_CENTER))
 	box.add_child(Layout.outlined_label("TRACK", 14, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
 	var resume = GoldButton.new()
-	resume.configure("SEGUIR", Vector2(220, 48))
+	resume.configure("CONTINUAR", Vector2(220, 48))
 	resume.pressed.connect(func():
 		show_pause(false)
 		resume_pressed.emit()
@@ -403,7 +415,7 @@ func _build_pause() -> void:
 	)
 	box.add_child(nxt)
 	var otra = GoldButton.new()
-	otra.configure("OTRA PISTA", Vector2(220, 44))
+	otra.configure("REINTENTAR", Vector2(220, 44))
 	otra.pressed.connect(func():
 		show_pause(false)
 		otra_pressed.emit()
