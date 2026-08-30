@@ -62,6 +62,14 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	for x in [-31.0, 31.0]:
 		_box(detail, bridge, Vector3(0.45, 6.0, 0.45), Vector3(x, 5.0, 1.5))
 		_box(detail, palm, Vector3(3.0, 1.0, 0.35), Vector3(x, 8.2, 1.5))
+	# A near-water band and warm promenade lights make the waterfront read as
+	# Costanera instead of a generic grey skyline, without adding collision.
+	var water := StandardMaterial3D.new()
+	water.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	water.albedo_color = Color("#2c7891")
+	_box(detail, water, Vector3(70, 1.0, 0.28), Vector3(0, 3.8, 1.25))
+	for x in range(-28, 29, 7):
+		_box(detail, window, Vector3(0.45, 0.45, 0.24), Vector3(float(x), 6.8, 1.72))
 
 
 func _box(parent: Node3D, mat: Material, size: Vector3, pos: Vector3) -> void:

@@ -68,6 +68,13 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 		_box(detail, light, Vector3(1.6, 2.2, 0.22), Vector3(x, 11.0, 1.8))
 	for x in [-13.0, 13.0]:
 		_box(detail, stone, Vector3(1.0, 13.0, 0.35), Vector3(x, 11.0, 1.7))
+	# A second, lower colonnade and lit roofline add depth at fighter scale while
+	# remaining a camera-only presentation layer.
+	for x in [-10.5, -7.0, 7.0, 10.5]:
+		_box(detail, stone, Vector3(0.55, 7.0, 0.3), Vector3(x, 8.8, 1.78))
+	_box(detail, shadow, Vector3(9.0, 0.45, 0.3), Vector3(0, 18.2, 1.75))
+	for x in [-4.0, 0.0, 4.0]:
+		_box(detail, light, Vector3(1.0, 0.55, 0.22), Vector3(x, 18.8, 1.8))
 
 
 func _box(parent: Node3D, mat: Material, size: Vector3, pos: Vector3) -> void:
