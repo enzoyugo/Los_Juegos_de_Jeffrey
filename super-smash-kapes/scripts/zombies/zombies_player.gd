@@ -77,6 +77,34 @@ func current_weapon():
 	return gun
 
 
+func switch_weapon(id: String) -> bool:
+	if not owned.has(id):
+		return false
+	var next = owned.get(id)
+	if next == null:
+		return false
+	gun = next
+	if _viewmodel != null and _viewmodel.has_method("set_weapon"):
+		_viewmodel.call("set_weapon", id)
+	return true
+
+
+func switch_next_weapon() -> bool:
+	var ids: Array[String] = []
+	for key in owned.keys():
+		ids.append(str(key))
+	ids.sort()
+	if ids.size() < 2:
+		return false
+	var current_id: String = ""
+	if gun != null and gun.data != null:
+		current_id = str(gun.data.id)
+	var index: int = ids.find(current_id)
+	if index < 0:
+		index = 0
+	return switch_weapon(ids[(index + 1) % ids.size()])
+
+
 func owns_weapon(id: String) -> bool:
 	return owned.has(id)
 
@@ -215,6 +243,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 	if event.is_action_pressed("z_interact"):
 		try_interact()
+		get_viewport().set_input_as_handled()
+	if event.is_action_pressed("z_weapon_next"):
+		switch_next_weapon()
 		get_viewport().set_input_as_handled()
 
 

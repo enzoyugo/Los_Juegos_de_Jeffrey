@@ -54,6 +54,7 @@ static func ensure_actions() -> void:
 	_bind("z_fire", [MOUSE_BUTTON_LEFT])
 	_bind("z_interact", [KEY_E])
 	_bind("z_reload", [KEY_G])
+	_bind("z_weapon_next", [KEY_Q])
 
 
 static func _bind(action: String, codes: Array) -> void:
