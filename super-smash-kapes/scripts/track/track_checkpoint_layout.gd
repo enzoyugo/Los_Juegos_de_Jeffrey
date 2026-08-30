@@ -3,6 +3,8 @@ extends RefCounted
 
 ## Post-process checkpoints on a generated V2 sequence. Does not change Generator V4.
 
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
+
 
 static func plan(sequence: Array, length_id: String) -> PackedInt32Array:
 	var n: int = sequence.size()
@@ -64,6 +66,7 @@ static func _gantry(road_w: float, finish: bool, index: int) -> Node3D:
 				_strip_col(glb)
 				_attach_cp_area(glb, road_w, finish, index)
 				var lab := Label3D.new()
+				Typography.apply_label3d(lab, Typography.TRACK)
 				lab.text = "CP %d" % (index + 1)
 				lab.position = Vector3(0.0, 4.55, 0.0)
 				lab.font_size = 48
@@ -96,6 +99,7 @@ static func _gantry(road_w: float, finish: bool, index: int) -> Node3D:
 	bar.set_surface_override_material(0, mat)
 	root.add_child(bar)
 	var lab := Label3D.new()
+	Typography.apply_label3d(lab, Typography.TRACK)
 	lab.text = "META" if finish else "CP %d" % (index + 1)
 	lab.position = Vector3(0.0, 4.55, 0.0)
 	lab.font_size = 48

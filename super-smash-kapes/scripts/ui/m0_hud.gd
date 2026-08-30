@@ -3,6 +3,7 @@ extends CanvasLayer
 const PLAYER_CARD := preload("res://scripts/ui/kapes_player_hud.gd")
 const UI_LAYERS := preload("res://scripts/ui/kapes_layers.gd")
 const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 var p1_card: KapesPlayerHUD
 var p2_card: KapesPlayerHUD
@@ -34,6 +35,7 @@ func _ready() -> void:
 	intro_accent.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	intro_layer.add_child(intro_accent)
 	message_label = Label.new()
+	Typography.apply_label(message_label, Typography.SOCO)
 	message_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	message_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	message_label.add_theme_color_override("font_color", KapesVisual.WHITE)
@@ -92,6 +94,7 @@ func _apply_layout() -> void:
 
 func _make_label(pos: Vector2, font_size: int, color: Color) -> Label:
 	var label := Label.new()
+	Typography.apply_label(label, Typography.SOCO)
 	label.position = pos
 	label.add_theme_font_size_override("font_size", font_size)
 	label.add_theme_color_override("font_color", color)

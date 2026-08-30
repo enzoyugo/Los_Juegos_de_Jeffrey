@@ -4,6 +4,7 @@ extends RefCounted
 ## Shared runtime art for Shopping del Sol exterior. Materials/meshes are reused.
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 const ASPHALT := Color("#3a3d42")
 const LINE := Color("#e8e2d4")
@@ -240,6 +241,7 @@ static func add_skyline(parent: Node) -> void:
 	## Lower hotel-like mass.
 	box(parent, Vector3(-32.0, 6.0, 46.0), Vector3(14.0, 12.0, 8.0), color_mat(Color("#e8e4dc"), 0.68), false)
 	var ibis := Label3D.new()
+	Typography.apply_label3d(ibis, Typography.ZOMBIES)
 	ibis.text = "ibis"
 	ibis.position = Vector3(-32.0, 12.2, 50.2)
 	ibis.font_size = 64
@@ -278,6 +280,7 @@ static func _tower(parent: Node, pos: Vector3, size: Vector3, body: Material, wi
 		mesh_box(parent, pos + Vector3(0, 4.0 + float(y) * (size.y / 9.0), size.z * 0.51), Vector3(size.x * 0.72, 0.9, 0.08), win)
 	if not tag.is_empty():
 		var lab := Label3D.new()
+		Typography.apply_label3d(lab, Typography.ZOMBIES)
 		lab.text = tag
 		lab.position = pos + Vector3(0, size.y + 1.2, size.z * 0.52)
 		lab.font_size = 48

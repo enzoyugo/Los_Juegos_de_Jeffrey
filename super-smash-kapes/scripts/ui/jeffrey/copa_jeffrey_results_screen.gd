@@ -5,6 +5,7 @@ signal revancha_pressed
 signal hub_pressed
 
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const ThemeRef := preload("res://scripts/ui/jeffrey/system/jeffrey_theme.gd")
 const JeffreyBtn := preload("res://scripts/ui/jeffrey/components/jeffrey_button.gd")
 const TitleScript := preload("res://scripts/ui/jeffrey/components/jeffrey_title.gd")
@@ -24,6 +25,7 @@ func _build(result: Dictionary) -> void:
 	Layout.bind_full(self)
 	var mode_id := str(result.get("mode", ""))
 	var is_track := mode_id == ThemeRef.MODE_RACING or mode_id == "racing" or mode_id == "track"
+	theme = Typography.theme_for(Typography.TRACK if is_track else (Typography.ZOMBIES if mode_id == Typography.ZOMBIES else Typography.GLOBAL))
 
 	var wash := ColorRect.new()
 	if is_track:

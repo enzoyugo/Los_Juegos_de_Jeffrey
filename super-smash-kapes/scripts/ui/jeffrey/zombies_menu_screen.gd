@@ -11,6 +11,7 @@ signal back_pressed
 
 const Assets := preload("res://scripts/ui/jeffrey/global_ui_assets.gd")
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const AudioHooks := preload("res://scripts/ui/jeffrey/global_ui_audio.gd")
 const ZAssets := preload("res://scripts/ui/jeffrey/zombies_ui_assets.gd")
 const ZombiesBtn := preload("res://scripts/ui/jeffrey/zombies_menu_button.gd")
@@ -29,6 +30,7 @@ func _ready() -> void:
 	name = "ZombiesMenu"
 	set_process_unhandled_input(true)
 	Layout.bind_full(self)
+	theme = Typography.theme_for(Typography.ZOMBIES)
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	_build()
 	call_deferred("_focus_play")

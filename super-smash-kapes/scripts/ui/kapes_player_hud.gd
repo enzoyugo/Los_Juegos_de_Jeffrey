@@ -6,6 +6,7 @@ const P2_PLATE_PATH := "res://assets/ui/hud/hud_p2.png"
 const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
 const HUD_LAYOUT := preload("res://scripts/ui/kapes_hud_layout.gd")
 const PORTRAIT_UTIL := preload("res://scripts/ui/kapes_portrait.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 @export var player_id: int = 1
 @export var accent_color: Color = KapesVisual.P1_COLOR
@@ -22,6 +23,7 @@ var _damage_tween: Tween
 var _stock_tween: Tween
 
 func _ready() -> void:
+	theme = Typography.theme_for(Typography.SOCO)
 	focus_mode = Control.FOCUS_NONE
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	plate = TextureRect.new()

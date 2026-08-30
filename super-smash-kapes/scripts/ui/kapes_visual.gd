@@ -20,6 +20,7 @@ const KAPES_GOLD := GOLD
 const KAPES_NAVY := NIGHT
 const KAPES_BLACK := Color("#02040a")
 const KAPES_MUTED := MUTED
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 const P1_COLOR := RED_BRIGHT
 const P2_COLOR := BLUE_BRIGHT
@@ -86,6 +87,7 @@ static func button_styles() -> Dictionary:
 	}
 
 static func apply_button_theme(button: Button, font_size: int) -> void:
+	Typography.apply_button(button, Typography.SOCO)
 	button.add_theme_font_size_override("font_size", font_size)
 	button.add_theme_color_override("font_color", WHITE)
 	button.add_theme_color_override("font_hover_color", Color.WHITE)

@@ -3,6 +3,7 @@ extends "res://scripts/zombies/zombies_interactable.gd"
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
 const Props := preload("res://scripts/zombies/zombies_mall_props.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 var weapon_id: String = "smg"
 var cost: int = Config.WALL_SMG_COST
@@ -37,6 +38,7 @@ func _ready() -> void:
 	col.position = Vector3(0, 1.2, 0)
 	add_child(col)
 	_label = Label3D.new()
+	Typography.apply_label3d(_label, Typography.ZOMBIES)
 	_label.position = Vector3(0.2, 2.15, 0)
 	_label.font_size = 36
 	_label.modulate = Config.COLOR_CREAM

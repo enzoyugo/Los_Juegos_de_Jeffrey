@@ -8,6 +8,7 @@ signal back_pressed
 
 const Assets := preload("res://scripts/ui/jeffrey/track_ui_assets.gd")
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const AudioHooks := preload("res://scripts/ui/jeffrey/global_ui_audio.gd")
 const InputHint := preload("res://scripts/ui/jeffrey/components/jeffrey_input_hint.gd")
 const Config := preload("res://scripts/track/track_config.gd")
@@ -38,6 +39,7 @@ func _ready() -> void:
 	name = "TrackMenu"
 	set_process_unhandled_input(true)
 	Layout.bind_full(self)
+	theme = Typography.theme_for(Typography.TRACK)
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	_build()
 	call_deferred("_grab_initial_focus")

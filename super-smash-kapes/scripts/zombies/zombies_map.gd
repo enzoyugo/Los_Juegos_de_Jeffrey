@@ -8,6 +8,7 @@ signal door_opened
 signal shopping_opened
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const DoorScript := preload("res://scripts/zombies/zombies_buyable_door.gd")
 const WallBuyScript := preload("res://scripts/zombies/zombies_weapon_wall_buy.gd")
 const Props := preload("res://scripts/zombies/zombies_mall_props.gd")
@@ -246,6 +247,7 @@ func _add_main_entrance() -> void:
 	glow2.shadow_enabled = false
 	add_child(glow2)
 	var tag := Label3D.new()
+	Typography.apply_label3d(tag, Typography.ZOMBIES)
 	tag.text = "SHOPPING del SOL"
 	tag.position = Vector3(0, 7.15, 8.95)
 	tag.font_size = 96
@@ -295,6 +297,7 @@ func _omni(pos: Vector3, energy: float, rng: float, color: Color) -> void:
 
 func _add_sign() -> void:
 	var sign := Label3D.new()
+	Typography.apply_label3d(sign, Typography.ZOMBIES)
 	sign.text = "PLAZA"
 	sign.position = Vector3(0, 3.45, -7.55)
 	sign.font_size = 48

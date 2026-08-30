@@ -7,6 +7,7 @@ const MENU_BACKGROUND := "res://assets/ui/menu/main_menu_bg.png"
 const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
 const FIGHTER_CATALOG := preload("res://scripts/fighters/fighter_catalog.gd")
 const MATCH_SETUP := preload("res://scripts/core/match_setup.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 const KEY_P1_LEFT := KEY_A
 const KEY_P1_RIGHT := KEY_D
@@ -29,6 +30,7 @@ var _stage_id: String = "defensores"
 const StageCatalog := preload("res://scripts/stages/stage_catalog.gd")
 
 func _ready() -> void:
+	theme = Typography.theme_for(Typography.SOCO)
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	set_process_input(true)
 	set_process_unhandled_input(true)

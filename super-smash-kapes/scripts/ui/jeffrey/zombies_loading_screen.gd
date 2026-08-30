@@ -7,6 +7,7 @@ signal finished(mode_id: String, context: Dictionary)
 
 const Assets := preload("res://scripts/ui/jeffrey/global_ui_assets.gd")
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const Styles := preload("res://scripts/ui/jeffrey/global_ui_styles.gd")
 const ThemeRef := preload("res://scripts/ui/jeffrey/global_shell_theme.gd")
 const AudioHooks := preload("res://scripts/ui/jeffrey/global_ui_audio.gd")
@@ -31,6 +32,7 @@ var _built: bool = false
 func _ready() -> void:
 	name = "ZombiesLoading"
 	Layout.bind_full(self)
+	theme = Typography.theme_for(Typography.ZOMBIES)
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	set_process_unhandled_input(true)
 	if not _built:

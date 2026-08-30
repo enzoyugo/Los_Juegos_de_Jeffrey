@@ -2,6 +2,7 @@ class_name KapesPauseOverlay
 extends Control
 
 const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 signal resume_pressed
 signal restart_pressed
@@ -63,6 +64,7 @@ func _apply_layout() -> void:
 func _label(text: String, design_size: int, color: Color, pos: Vector2) -> Label:
 	var label := Label.new()
 	label.text = text
+	Typography.apply_label(label, Typography.SOCO)
 	label.position = pos
 	label.add_theme_font_size_override("font_size", UILayout.font_size(get_viewport(), design_size))
 	label.add_theme_color_override("font_color", color)
@@ -74,6 +76,7 @@ func _label(text: String, design_size: int, color: Color, pos: Vector2) -> Label
 func _button(text: String, pos: Vector2, size: Vector2, design_size: int) -> Button:
 	var button := Button.new()
 	button.text = text
+	Typography.apply_button(button, Typography.SOCO)
 	button.position = pos
 	button.size = size
 	button.focus_mode = Control.FOCUS_ALL

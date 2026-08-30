@@ -22,6 +22,7 @@ const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
 const ShellTransition := preload("res://scripts/ui/jeffrey/system/jeffrey_shell_transition.gd")
 const ModeRegistry := preload("res://scripts/core/jeffrey/game_mode_registry.gd")
 const MATCH_SETUP := preload("res://scripts/core/match_setup.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 var ui: CanvasLayer
 var screen_root: Control
@@ -548,6 +549,7 @@ func _present(screen: Control) -> void:
 	screen_root = Control.new()
 	screen_root.name = "ScreenRoot"
 	UILayout.bind_full_rect(screen_root)
+	screen_root.theme = Typography.theme_for(Typography.GLOBAL)
 	ui.add_child(screen_root)
 	UILayout.bind_full_rect(screen)
 	screen_root.add_child(screen)

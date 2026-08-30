@@ -4,6 +4,7 @@ extends RefCounted
 ## Additive Shopping del Sol interior dressing. No exterior GLB.
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 const CREAM := Color("#e8dcc8")
 const FRAME := Color("#d8cbb4")
@@ -45,6 +46,7 @@ static func add_storefront(parent: Node, pos: Vector3, rot_y: float, width: floa
 	_box(root, Vector3(0, 0.18, 0.10), Vector3(width - 0.1, 0.36, 0.18), FRAME, true)
 	if not title.is_empty():
 		var tag := Label3D.new()
+		Typography.apply_label3d(tag, Typography.ZOMBIES)
 		tag.text = title
 		tag.position = Vector3(0, 3.05, 0.12)
 		tag.font_size = 42
@@ -61,6 +63,7 @@ static func add_directory(parent: Node, pos: Vector3) -> void:
 	_box(root, Vector3(0, 1.15, 0), Vector3(0.12, 2.3, 0.12), METAL, true)
 	_box(root, Vector3(0, 2.15, 0.04), Vector3(1.35, 1.15, 0.08), FRAME, false)
 	var title := Label3D.new()
+	Typography.apply_label3d(title, Typography.ZOMBIES)
 	title.text = "SHOPPING del SOL"
 	title.position = Vector3(0, 2.35, 0.10)
 	title.font_size = 36
@@ -69,6 +72,7 @@ static func add_directory(parent: Node, pos: Vector3) -> void:
 	title.outline_modulate = Color(0, 0, 0, 0.9)
 	root.add_child(title)
 	var sub := Label3D.new()
+	Typography.apply_label3d(sub, Typography.ZOMBIES)
 	sub.text = "DIRECTORIO"
 	sub.position = Vector3(0, 1.85, 0.10)
 	sub.font_size = 22
@@ -138,6 +142,7 @@ static func add_kiosk(parent: Node, pos: Vector3) -> void:
 	_box(root, Vector3(-1.05, 1.5, 0), Vector3(0.08, 0.7, 1.1), FRAME, false)
 	_box(root, Vector3(1.05, 1.5, 0), Vector3(0.08, 0.7, 1.1), FRAME, false)
 	var tag := Label3D.new()
+	Typography.apply_label3d(tag, Typography.ZOMBIES)
 	tag.text = "KIOSCO"
 	tag.position = Vector3(0, 1.55, 0.72)
 	tag.font_size = 28

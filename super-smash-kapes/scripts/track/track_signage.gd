@@ -3,6 +3,8 @@ extends Node3D
 
 ## Speed-readable signs. Distinct from BOOST / START / FINISH.
 
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
+
 
 static func decorate(parent: Node, pieces: Array) -> void:
 	var root := Node3D.new()
@@ -35,6 +37,7 @@ static func _sign(parent: Node, xf: Transform3D, text: String, color: Color, big
 	parent.add_child(pole)
 	pole.global_position = pos + Vector3(0, -0.6, 0)
 	var lab := Label3D.new()
+	Typography.apply_label3d(lab, Typography.TRACK)
 	lab.text = text
 	lab.font_size = 72 if big else 42
 	lab.modulate = color

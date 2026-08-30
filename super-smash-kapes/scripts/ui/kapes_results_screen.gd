@@ -6,6 +6,7 @@ signal change_kapes_pressed
 signal menu_pressed
 
 const UILayout := preload("res://scripts/ui/kapes_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const FIGHTER_CATALOG := preload("res://scripts/fighters/fighter_catalog.gd")
 
 const VICTORY_BG := "res://assets/ui/victory/common/victory_bg_defensores.png"
@@ -19,6 +20,7 @@ var _intro_tween: Tween
 
 
 func _ready() -> void:
+	theme = Typography.theme_for(Typography.SOCO)
 	UILayout.bind_full_rect(self)
 	focus_mode = Control.FOCUS_NONE
 	mouse_filter = Control.MOUSE_FILTER_IGNORE

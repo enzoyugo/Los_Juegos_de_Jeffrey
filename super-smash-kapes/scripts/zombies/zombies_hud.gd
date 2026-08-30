@@ -2,6 +2,7 @@ class_name ZombiesHUD
 extends CanvasLayer
 
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const ThemeRef := preload("res://scripts/ui/jeffrey/global_shell_theme.gd")
 const GoldButton := preload("res://scripts/ui/jeffrey/gold_action_button.gd")
 const Config := preload("res://scripts/zombies/zombies_config.gd")
@@ -49,6 +50,7 @@ func _ready() -> void:
 	layer = 20
 	var root := Control.new()
 	Layout.bind_full(root)
+	root.theme = Typography.theme_for(Typography.ZOMBIES)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
 	_vignette = ColorRect.new()

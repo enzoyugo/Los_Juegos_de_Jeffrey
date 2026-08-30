@@ -4,6 +4,7 @@ extends "res://scripts/zombies/zombies_interactable.gd"
 signal opened
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 var display_name: String = Config.DOOR_NAME
 var cost: int = Config.DOOR_COST
@@ -63,6 +64,7 @@ func _ready() -> void:
 	_col.position = Vector3(0, 1.8, 0)
 	add_child(_col)
 	_label = Label3D.new()
+	Typography.apply_label3d(_label, Typography.ZOMBIES)
 	_label.position = Vector3(0, 3.15, 0.22)
 	_label.font_size = 48
 	_label.modulate = Config.COLOR_CREAM

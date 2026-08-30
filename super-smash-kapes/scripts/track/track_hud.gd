@@ -2,6 +2,7 @@ class_name TrackHUD
 extends CanvasLayer
 
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 const ThemeRef := preload("res://scripts/ui/jeffrey/global_shell_theme.gd")
 const Styles := preload("res://scripts/ui/jeffrey/global_ui_styles.gd")
 const GoldButton := preload("res://scripts/ui/jeffrey/gold_action_button.gd")
@@ -213,6 +214,7 @@ func _build_hud() -> void:
 	set_process(true)
 	var root := Control.new()
 	Layout.bind_full(root)
+	root.theme = Typography.theme_for(Typography.TRACK)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
 	var timer_panel = Chrome.make_timer_frame()

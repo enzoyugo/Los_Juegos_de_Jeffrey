@@ -3,6 +3,9 @@ extends Button
 
 const ThemeRef := preload("res://scripts/ui/jeffrey/global_shell_theme.gd")
 const AudioHooks := preload("res://scripts/ui/jeffrey/global_ui_audio.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
+
+var typography_mode: String = Typography.GLOBAL
 
 
 func _ready() -> void:
@@ -25,6 +28,8 @@ func configure(text_value: String, min_size: Vector2 = Vector2(140, 40)) -> void
 
 
 func _paint() -> void:
+	if typography_mode != Typography.GLOBAL:
+		Typography.apply_button(self, typography_mode)
 	var lit: bool = has_focus() or is_hovered()
 	add_theme_color_override("font_color", ThemeRef.GOLD_HOT if lit else ThemeRef.GOLD)
 	add_theme_color_override("font_hover_color", ThemeRef.GOLD_HOT)

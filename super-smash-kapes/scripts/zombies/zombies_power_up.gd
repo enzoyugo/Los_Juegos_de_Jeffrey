@@ -4,6 +4,7 @@ extends Area3D
 signal collected
 
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.gd")
 
 var kind: String = "max_ammo"
 var _taken: bool = false
@@ -35,6 +36,7 @@ func _ready() -> void:
 	col.position = Vector3(0, 0.35, 0)
 	add_child(col)
 	var tag := Label3D.new()
+	Typography.apply_label3d(tag, Typography.ZOMBIES)
 	tag.text = "MAX AMMO"
 	tag.position = Vector3(0, 1.15, 0)
 	tag.font_size = 36
