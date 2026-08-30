@@ -53,10 +53,10 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	camera.add_child(detail)
 	var stone := StandardMaterial3D.new()
 	stone.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	stone.albedo_color = Color("#e4c77c")
+	stone.albedo_color = Color("#d8bb78")
 	var shadow := StandardMaterial3D.new()
 	shadow.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	shadow.albedo_color = Color("#5b3f3c")
+	shadow.albedo_color = Color("#47343a")
 	var light := StandardMaterial3D.new()
 	light.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	light.albedo_color = Color("#ffe9a8")

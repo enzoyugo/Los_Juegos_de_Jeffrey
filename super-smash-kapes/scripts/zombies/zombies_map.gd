@@ -159,7 +159,7 @@ func _add_world() -> void:
 	env.ambient_light_color = Color("#7a8498")
 	env.ambient_light_energy = 1.05
 	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
-	env.tonemap_exposure = 1.12
+	env.tonemap_exposure = 0.96
 	env.fog_enabled = true
 	env.fog_light_color = Color(0.32, 0.36, 0.46)
 	env.fog_density = 0.0035
@@ -233,14 +233,14 @@ func _add_main_entrance() -> void:
 	)
 	var glow := OmniLight3D.new()
 	glow.position = Vector3(0, 3.4, 9.3)
-	glow.light_energy = 1.55
+	glow.light_energy = 0.92
 	glow.omni_range = 14.0
 	glow.light_color = Color("#ffe0a8")
 	glow.shadow_enabled = false
 	add_child(glow)
 	var glow2 := OmniLight3D.new()
 	glow2.position = Vector3(0, 5.6, 8.9)
-	glow2.light_energy = 1.05
+	glow2.light_energy = 0.68
 	glow2.omni_range = 10.0
 	glow2.light_color = Color("#fff0c8")
 	glow2.shadow_enabled = false
@@ -286,7 +286,7 @@ func _add_lights() -> void:
 func _omni(pos: Vector3, energy: float, rng: float, color: Color) -> void:
 	var light := OmniLight3D.new()
 	light.position = pos
-	light.light_energy = energy * 1.35
+	light.light_energy = energy
 	light.omni_range = rng
 	light.light_color = color
 	light.shadow_enabled = false

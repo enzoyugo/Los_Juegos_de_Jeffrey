@@ -54,8 +54,8 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	var window := StandardMaterial3D.new()
 	window.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	window.albedo_color = Color("#f6c96b")
-	for x in [-28.0, -21.0, -14.0, -7.0, 0.0, 7.0, 14.0, 21.0, 28.0]:
-		_box(detail, window, Vector3(1.1, 1.2, 0.22), Vector3(x, 7.8 + fmod(absf(x), 3.0), 1.7))
+	for x in [-28.0, -24.0, -19.0, -14.0, -9.0, -4.0, 2.0, 7.0, 12.0, 18.0, 23.0, 28.0]:
+		_box(detail, window, Vector3(0.75, 0.55, 0.22), Vector3(x, 11.0 + fmod(absf(x), 5.0), 1.72))
 	var palm := StandardMaterial3D.new()
 	palm.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	palm.albedo_color = Color("#2b6b62")
@@ -66,8 +66,13 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	# Costanera instead of a generic grey skyline, without adding collision.
 	var water := StandardMaterial3D.new()
 	water.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-	water.albedo_color = Color("#2c7891")
-	_box(detail, water, Vector3(70, 1.0, 0.28), Vector3(0, 3.8, 1.25))
+	water.albedo_color = Color("#237c98")
+	_box(detail, water, Vector3(76, 1.5, 0.28), Vector3(0, 3.5, 1.25))
+	var reflection := StandardMaterial3D.new()
+	reflection.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	reflection.albedo_color = Color("#65bed0")
+	for x in [-23.0, -11.0, 0.0, 12.0, 25.0]:
+		_box(detail, reflection, Vector3(5.5, 0.12, 0.24), Vector3(x, 3.7, 1.58))
 	for x in range(-28, 29, 7):
 		_box(detail, window, Vector3(0.45, 0.45, 0.24), Vector3(float(x), 6.8, 1.72))
 

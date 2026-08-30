@@ -49,7 +49,8 @@ def test_signage_atlas_wired() -> None:
 
 def test_results_compact_track() -> None:
     text = (ROOT / "scripts/ui/jeffrey/copa_jeffrey_results_screen.gd").read_text(encoding="utf-8")
-    assert "offset_top = -200" in text
+    assert "offset_top = -240" in text
+    assert "RESULTADO FINAL" in text
     assert "make_result_banner" in text
 
 

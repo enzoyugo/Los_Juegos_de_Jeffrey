@@ -38,11 +38,11 @@ func _build(result: Dictionary) -> void:
 	shell.configure(ThemeRef.mode_accent(mode_id), 0.95)
 	shell.set_anchors_preset(Control.PRESET_CENTER)
 	if is_track:
-		## Compact Track result card — less empty vertical waste.
-		shell.offset_left = -380
-		shell.offset_top = -200
-		shell.offset_right = 380
-		shell.offset_bottom = 200
+		## Stronger 16:9 hierarchy while retaining a compact race-results card.
+		shell.offset_left = -440
+		shell.offset_top = -240
+		shell.offset_right = 440
+		shell.offset_bottom = 240
 	else:
 		shell.offset_left = -440
 		shell.offset_top = -320
@@ -68,9 +68,9 @@ func _build(result: Dictionary) -> void:
 		banner_col.add_theme_constant_override("separation", 2)
 		banner.add_child(banner_col)
 		banner_col.add_child(Layout.outlined_label("TRACK", 16, ThemeRef.mode_accent(ThemeRef.MODE_RACING), HORIZONTAL_ALIGNMENT_CENTER))
-		banner_col.add_child(Layout.outlined_label("RESULTADO", 26, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER))
+		banner_col.add_child(Layout.outlined_label("RESULTADO FINAL", 30, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER))
 		title.configure("COPA JEFFREY", 2, HORIZONTAL_ALIGNMENT_CENTER)
-		title.custom_minimum_size = Vector2(0, 28)
+		title.custom_minimum_size = Vector2(0, 36)
 		root.add_child(title)
 	else:
 		title.configure("COPA JEFFREY", 1, HORIZONTAL_ALIGNMENT_CENTER)
@@ -102,7 +102,8 @@ func _build(result: Dictionary) -> void:
 		if not (row is Dictionary):
 			continue
 		var profile = JeffreyCore.profiles.get_profile(str(row.get("profile_id", "")))
-		var name_text: String = profile.display_name if profile != null else str(row.get("profile_id", "?"))
+		var fallback_id := str(row.get("profile_id", "?"))
+		var name_text: String = profile.display_name if profile != null else _friendly_fallback_name(fallback_id)
 		var placement := int(row.get("placement", 0))
 		var points := int(row.get("points", 0))
 		var total := int(row.get("total_points", 0))
@@ -131,6 +132,13 @@ func _build(result: Dictionary) -> void:
 	actions.add_child(hub)
 
 	call_deferred("_focus_first", revancha)
+
+
+func _friendly_fallback_name(profile_id: String) -> String:
+	var upper := profile_id.strip_edges().to_upper()
+	if upper.begins_with("P") and upper.substr(1).is_valid_int():
+		return "JUGADOR %d" % int(upper.substr(1))
+	return profile_id
 
 
 func _focus_first(button: Button) -> void:
