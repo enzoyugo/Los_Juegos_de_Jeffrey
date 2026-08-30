@@ -162,7 +162,7 @@ func set_fuel(seconds: float, last_dance: bool, player_name: String = "") -> voi
 	else:
 		label.text = "%s  %s" % [key, _fmt(seconds)]
 	if fill != null:
-		fill.size.x = 110.0 * clampf(seconds / 30.0, 0.0, 1.0)
+		fill.size.x = 150.0 * clampf(seconds / 30.0, 0.0, 1.0)
 
 
 func set_rank(rank: int, total: int) -> void:
@@ -254,7 +254,7 @@ func _build_hud() -> void:
 	root.theme = Typography.theme_for(Typography.TRACK)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
-	var timer_panel := _asset(root, HUD_TIMER, Vector2(620, 12), Vector2(370, 105))
+	var timer_panel := _asset(root, HUD_TIMER, Vector2(760, -42), Vector2(400, 300))
 	var timer_col := VBoxContainer.new()
 	timer_col.add_theme_constant_override("separation", 2)
 	timer_panel.add_child(timer_col)
@@ -269,19 +269,19 @@ func _build_hud() -> void:
 	_best = Layout.outlined_label("MEJOR  —", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
 	timer_col.add_child(_best)
 
-	var position_panel := _asset(root, HUD_POSITION, Vector2(18, 12), Vector2(260, 82))
+	var position_panel := _asset(root, HUD_POSITION, Vector2(18, -42), Vector2(360, 270))
 	_position_value = Layout.outlined_label("— / —", 26, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
-	_position_value.position = Vector2(108, 31)
-	_position_value.size = Vector2(140, 40)
+	_position_value.position = Vector2(155, 102)
+	_position_value.size = Vector2(170, 42)
 	position_panel.add_child(_position_value)
 	_driver = Layout.outlined_label("", 12, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
-	_driver.position = Vector2(24, 66)
-	_driver.size = Vector2(215, 22)
+	_driver.position = Vector2(24, 184)
+	_driver.size = Vector2(300, 28)
 	position_panel.add_child(_driver)
 	_fuel_stack = VBoxContainer.new()
-	_fuel_stack.position = Vector2(1570, 14)
-	_fuel_stack.size = Vector2(330, 160)
-	_fuel_stack.add_theme_constant_override("separation", -22)
+	_fuel_stack.position = Vector2(1545, -42)
+	_fuel_stack.size = Vector2(360, 1080)
+	_fuel_stack.add_theme_constant_override("separation", -154)
 	root.add_child(_fuel_stack)
 
 	_check = Layout.outlined_label("", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
@@ -294,10 +294,10 @@ func _build_hud() -> void:
 	_rank.position = Vector2(150, 102)
 	_rank.size = Vector2(260, 30)
 	root.add_child(_rank)
-	var speed_panel := _asset(root, HUD_SPEED, Vector2(1630, 875), Vector2(260, 105))
+	var speed_panel := _asset(root, HUD_SPEED, Vector2(1542, 818), Vector2(360, 270))
 	_speed_value = Layout.outlined_label("000", 28, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
-	_speed_value.position = Vector2(112, 40)
-	_speed_value.size = Vector2(130, 42)
+	_speed_value.position = Vector2(128, 124)
+	_speed_value.size = Vector2(150, 48)
 	speed_panel.add_child(_speed_value)
 	_speed = _speed_value
 
@@ -349,7 +349,7 @@ func _asset(parent: Control, path: String, pos: Vector2, size: Vector2) -> Contr
 	image.texture = load(path)
 	image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	image.stretch_mode = TextureRect.STRETCH_SCALE
+	image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	host.add_child(image)
 	return host
@@ -363,22 +363,22 @@ func _ensure_fuel_row(player_name: String, color: Color) -> void:
 	if _fuel_rows.has(player_name) or _fuel_stack == null:
 		return
 	var card := Control.new()
-	card.custom_minimum_size = Vector2(330, 86)
+	card.custom_minimum_size = Vector2(360, 270)
 	var image := TextureRect.new()
 	image.texture = load(HUD_FUEL)
 	image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	image.stretch_mode = TextureRect.STRETCH_SCALE
+	image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(image)
 	var label := Layout.outlined_label(player_name, 15, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	label.position = Vector2(86, 22)
-	label.size = Vector2(225, 26)
+	label.position = Vector2(86, 91)
+	label.size = Vector2(250, 30)
 	card.add_child(label)
 	var fill := ColorRect.new()
 	fill.color = color
-	fill.position = Vector2(93, 57)
-	fill.size = Vector2(110, 8)
+	fill.position = Vector2(93, 154)
+	fill.size = Vector2(150, 10)
 	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(fill)
 	_fuel_stack.add_child(card)
@@ -459,40 +459,59 @@ func _build_pause() -> void:
 	_pause.add_child(wash)
 	var card := Control.new()
 	_pause.add_child(card)
-	Layout.apply_frac(card, 0.35, 0.24, 0.30, 0.52)
-	var panel_art := _asset(card, PAUSE_PANEL, Vector2.ZERO, Vector2(576, 562))
-	var title_art := _asset(card, PAUSE_TITLE, Vector2(92, 36), Vector2(392, 112))
+	Layout.apply_frac(card, 0.30, 0.18, 0.40, 0.64)
+	var panel_art := _asset(card, PAUSE_PANEL, Vector2.ZERO, Vector2(768, 576))
+	var title_art := _asset(card, PAUSE_TITLE, Vector2(86, 34), Vector2(596, 199))
 	var box := VBoxContainer.new()
-	box.position = Vector2(148, 150)
-	box.size = Vector2(280, 350)
+	box.position = Vector2(190, 192)
+	box.size = Vector2(388, 350)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
-	box.add_theme_constant_override("separation", 12)
+	box.add_theme_constant_override("separation", 3)
 	card.add_child(box)
-	box.add_child(Layout.outlined_label("TRACK", 14, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
-	var resume = GoldButton.new()
-	resume.configure("CONTINUAR", Vector2(220, 48))
+	box.add_child(Layout.outlined_label("TRACK", 18, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
+	var resume := _pause_button("CONTINUAR", 0)
 	resume.pressed.connect(func():
 		show_pause(false)
 		resume_pressed.emit()
 	)
 	box.add_child(resume)
-	var otra = GoldButton.new()
-	otra.configure("REINTENTAR", Vector2(220, 44))
+	var otra := _pause_button("REINTENTAR", 1)
 	otra.pressed.connect(func():
 		show_pause(false)
 		otra_pressed.emit()
 	)
 	box.add_child(otra)
-	var nxt = GoldButton.new()
-	nxt.configure("SIGUIENTE TURNO", Vector2(220, 44))
+	var nxt := _pause_button("SIGUIENTE TURNO", 2)
 	nxt.pressed.connect(func():
 		show_pause(false)
 		next_pressed.emit()
 	)
 	box.add_child(nxt)
-	var hub = GoldButton.new()
-	hub.configure("VOLVER AL HUB", Vector2(220, 44))
+	var hub := _pause_button("VOLVER AL HUB", 3)
 	hub.pressed.connect(func(): hub_pressed.emit())
 	box.add_child(hub)
 	panel_art.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	title_art.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+
+func _pause_button(text_value: String, region_index: int) -> Button:
+	var button := Button.new()
+	button.text = text_value
+	button.custom_minimum_size = Vector2(320, 120)
+	button.focus_mode = Control.FOCUS_ALL
+	var atlas := load(PAUSE_BUTTON)
+	for state_name in ["normal", "hover", "pressed", "focus"]:
+		var region := AtlasTexture.new()
+		region.atlas = atlas
+		region.region = Rect2(0, region_index * 384, 1024, 384)
+		var style := StyleBoxTexture.new()
+		style.texture = region
+		style.texture_margin_left = 150
+		style.texture_margin_right = 150
+		style.texture_margin_top = 60
+		style.texture_margin_bottom = 60
+		button.add_theme_stylebox_override(state_name, style)
+	button.add_theme_font_size_override("font_size", 21)
+	button.add_theme_color_override("font_color", ThemeRef.TEXT)
+	button.add_theme_color_override("font_hover_color", ThemeRef.TEXT)
+	return button

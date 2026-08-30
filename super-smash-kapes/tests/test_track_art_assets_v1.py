@@ -25,7 +25,9 @@ def test_hud_chrome_wired() -> None:
 
 def test_results_track_banner() -> None:
     text = (ROOT / "scripts/ui/jeffrey/copa_jeffrey_results_screen.gd").read_text(encoding="utf-8")
-    assert "make_result_banner" in text
+    assert "RESULT_TITLE" in text
+    assert "_add_score_template" in text
+    assert "STRETCH_KEEP_ASPECT_CENTERED" in text
 
 
 def test_art_lab_pass() -> None:

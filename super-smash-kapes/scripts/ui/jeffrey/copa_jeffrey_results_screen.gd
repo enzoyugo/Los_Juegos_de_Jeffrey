@@ -28,71 +28,26 @@ func setup(result: Dictionary) -> void:
 func _build(result: Dictionary) -> void:
 	Layout.bind_full(self)
 	var mode_id := str(result.get("mode", ""))
-	var is_track := mode_id == ThemeRef.MODE_RACING or mode_id == "racing" or mode_id == "track"
-	## Copa Jeffrey is shared/global presentation: Borsok remains authoritative even
-	## when the result was reached from Track or Zombies.
 	theme = Typography.theme_for(Typography.GLOBAL)
-
+	var backdrop := _raster(RESULT_BG, Vector2.ZERO, Vector2(1920, 1080), true)
+	backdrop.modulate.a = 1.0
+	add_child(backdrop)
 	var wash := ColorRect.new()
-	if is_track:
-		## Dim Track wash — connects race → result without a live 3D backdrop.
-		wash.color = Color(0.03, 0.08, 0.1, 0.88)
-	else:
-		wash.color = Color(0.02, 0.03, 0.06, 0.92)
+	wash.color = Color(0.01, 0.01, 0.03, 0.16)
 	Layout.bind_full(wash)
+	wash.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(wash)
-
-	var shell = PanelScript.new()
-	shell.configure(ThemeRef.mode_accent(mode_id), 0.95)
-	shell.set_anchors_preset(Control.PRESET_CENTER)
-	if is_track:
-		## Stronger 16:9 hierarchy while retaining a compact race-results card.
-		shell.offset_left = -440
-		shell.offset_top = -240
-		shell.offset_right = 440
-		shell.offset_bottom = 240
-	else:
-		shell.offset_left = -440
-		shell.offset_top = -320
-		shell.offset_right = 440
-		shell.offset_bottom = 320
-	add_child(shell)
-	_add_result_art(shell)
-	Motion.modal_pop(shell)
-
-	var root := VBoxContainer.new()
-	root.add_theme_constant_override("separation", 8 if is_track else ThemeRef.SPACE_MD)
-	Layout.bind_full(root)
-	root.offset_left = ThemeRef.SPACE_XL
-	root.offset_top = ThemeRef.SPACE_MD if is_track else ThemeRef.SPACE_LG
-	root.offset_right = -ThemeRef.SPACE_XL
-	root.offset_bottom = -ThemeRef.SPACE_MD if is_track else -ThemeRef.SPACE_LG
-	shell.add_child(root)
-
-	var title = TitleScript.new()
-	if is_track:
-		var banner = preload("res://scripts/track/track_hud_chrome_v1.gd").make_result_banner()
-		root.add_child(banner)
-		var banner_col := VBoxContainer.new()
-		banner_col.add_theme_constant_override("separation", 2)
-		banner.add_child(banner_col)
-		banner_col.add_child(Layout.outlined_label("TRACK", 16, ThemeRef.mode_accent(ThemeRef.MODE_RACING), HORIZONTAL_ALIGNMENT_CENTER))
-		banner_col.add_child(Layout.outlined_label("RESULTADO FINAL", 30, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER))
-		title.configure("COPA JEFFREY", 2, HORIZONTAL_ALIGNMENT_CENTER)
-		title.custom_minimum_size = Vector2(0, 36)
-		root.add_child(title)
-	else:
-		title.configure("COPA JEFFREY", 1, HORIZONTAL_ALIGNMENT_CENTER)
-		title.custom_minimum_size = Vector2(0, 48)
-		root.add_child(title)
-		var mode_label := Assets.mode_fallback_label(mode_id) if not mode_id.is_empty() else "PARTIDA"
-		var subtitle := Layout.outlined_label("RESULTADO  ·  %s" % mode_label.to_upper(), 20, ThemeRef.mode_accent(mode_id), HORIZONTAL_ALIGNMENT_CENTER)
-		subtitle.custom_minimum_size = Vector2(0, 28)
-		root.add_child(subtitle)
-
+	_add_result_art(self)
+	var mode_label := Assets.mode_fallback_label(mode_id) if not mode_id.is_empty() else "PARTIDA"
+	var subtitle := Layout.outlined_label("RESULTADO  ·  %s" % mode_label.to_upper(), 20, ThemeRef.mode_accent(mode_id), HORIZONTAL_ALIGNMENT_CENTER)
+	subtitle.position = Vector2(690, 285)
+	subtitle.size = Vector2(540, 38)
+	add_child(subtitle)
 	var table := VBoxContainer.new()
-	table.add_theme_constant_override("separation", 6 if is_track else 8)
-	root.add_child(table)
+	table.position = Vector2(410, 365)
+	table.size = Vector2(1400, 420)
+	table.add_theme_constant_override("separation", 12)
+	add_child(table)
 
 	var awarded: Array = result.get("awarded", [])
 	var sorted_awarded := awarded.duplicate()
@@ -116,27 +71,20 @@ func _build(result: Dictionary) -> void:
 		var placement := int(row.get("placement", 0))
 		var points := int(row.get("points", 0))
 		var total := int(row.get("total_points", 0))
-		var score_row = ScoreRow.new()
-		table.add_child(score_row)
-		score_row.configure(placement if placement > 0 else 0, name_text, points, total, placement == 1, str(row.get("profile_id", "")))
-		score_row.emphasize_points()
-
-	var spacer := Control.new()
-	spacer.custom_minimum_size = Vector2(0, 6 if is_track else 24)
-	root.add_child(spacer)
+		_add_score_template(table, placement if placement > 0 else 0, name_text, points, total, placement == 1)
 
 	var actions := HBoxContainer.new()
+	actions.position = Vector2(650, 870)
+	actions.size = Vector2(620, 90)
 	actions.alignment = BoxContainer.ALIGNMENT_CENTER
-	actions.add_theme_constant_override("separation", ThemeRef.SPACE_LG)
-	root.add_child(actions)
+	actions.add_theme_constant_override("separation", 18)
+	add_child(actions)
 
-	var revancha = JeffreyBtn.new()
-	revancha.configure("REVANCHA", JeffreyBtn.Kind.PRIMARY, ThemeRef.BTN_PRIMARY)
+	var revancha := _copa_button("REVANCHA", "res://assets/ui/shared/copa_jeffrey_v2/08_button_gold.png")
 	revancha.pressed.connect(func(): revancha_pressed.emit())
 	actions.add_child(revancha)
 
-	var hub = JeffreyBtn.new()
-	hub.configure("VOLVER AL HUB", JeffreyBtn.Kind.SECONDARY, Vector2(220, 52))
+	var hub := _copa_button("VOLVER AL HUB", "res://assets/ui/shared/copa_jeffrey_v2/09_button_purple.png")
 	hub.pressed.connect(func(): hub_pressed.emit())
 	actions.add_child(hub)
 
@@ -144,38 +92,58 @@ func _build(result: Dictionary) -> void:
 
 
 func _add_result_art(shell: Control) -> void:
-	var bg := TextureRect.new()
-	bg.texture = load(RESULT_BG)
-	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	bg.stretch_mode = TextureRect.STRETCH_SCALE
-	bg.modulate.a = 0.42
-	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	shell.add_child(bg)
-	var logo := TextureRect.new()
-	logo.texture = load(RESULT_LOGO)
-	logo.position = Vector2(28, -22)
-	logo.size = Vector2(120, 86)
-	logo.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	logo.stretch_mode = TextureRect.STRETCH_SCALE
-	logo.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	shell.add_child(logo)
-	var copa := TextureRect.new()
-	copa.texture = load(RESULT_COPA)
-	copa.position = Vector2(740, -28)
-	copa.size = Vector2(120, 96)
-	copa.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	copa.stretch_mode = TextureRect.STRETCH_SCALE
-	copa.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	shell.add_child(copa)
-	var title := TextureRect.new()
-	title.texture = load(RESULT_TITLE)
-	title.position = Vector2(190, -8)
-	title.size = Vector2(540, 104)
-	title.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	title.stretch_mode = TextureRect.STRETCH_SCALE
-	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	shell.add_child(title)
+	shell.add_child(_raster(RESULT_LOGO, Vector2(92, 38), Vector2(210, 149)))
+	shell.add_child(_raster(RESULT_COPA, Vector2(1610, 30), Vector2(218, 177)))
+	shell.add_child(_raster(RESULT_TITLE, Vector2(633, 64), Vector2(654, 222)))
+
+
+func _raster(path: String, pos: Vector2, size: Vector2, ignore_size: bool = true) -> TextureRect:
+	var image := TextureRect.new()
+	image.texture = load(path)
+	image.position = pos
+	image.size = size
+	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE if ignore_size else TextureRect.EXPAND_KEEP_SIZE
+	image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	return image
+
+
+func _add_score_template(parent: Control, placement: int, player_name: String, points: int, total: int, winner: bool) -> void:
+	var row := Control.new()
+	row.custom_minimum_size = Vector2(1400, 106)
+	parent.add_child(row)
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/05_player_stack_template.png", Vector2.ZERO, Vector2(580, 106)))
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/06_puntos_sumados_template.png", Vector2(610, 0), Vector2(273, 107)))
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/07_puntos_totales_template.png", Vector2(900, 0), Vector2(484, 106)))
+	var place := Layout.outlined_label("%d" % placement, 34, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	place.position = Vector2(26, 29); place.size = Vector2(54, 48); row.add_child(place)
+	var name := Layout.outlined_label(player_name.to_upper(), 24, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
+	name.position = Vector2(104, 30); name.size = Vector2(440, 44); row.add_child(name)
+	var gained := Layout.outlined_label("+%d" % points, 27, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	gained.position = Vector2(650, 30); gained.size = Vector2(190, 44); row.add_child(gained)
+	var sum := Layout.outlined_label("%d" % total, 27, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	sum.position = Vector2(1050, 30); sum.size = Vector2(260, 44); row.add_child(sum)
+	if winner:
+		name.add_theme_color_override("font_color", ThemeRef.Base.GOLD)
+
+
+func _copa_button(text_value: String, path: String) -> Button:
+	var button := Button.new()
+	button.text = text_value
+	button.custom_minimum_size = Vector2(278, 64)
+	button.add_theme_font_size_override("font_size", 19)
+	button.add_theme_color_override("font_color", ThemeRef.Base.TEXT)
+	button.add_theme_color_override("font_hover_color", ThemeRef.Base.TEXT)
+	var texture := load(path)
+	for state_name in ["normal", "hover", "pressed", "focus"]:
+		var style := StyleBoxTexture.new()
+		style.texture = texture
+		style.texture_margin_left = 60
+		style.texture_margin_right = 60
+		style.texture_margin_top = 16
+		style.texture_margin_bottom = 16
+		button.add_theme_stylebox_override(state_name, style)
+	return button
 
 
 func _friendly_fallback_name(profile_id: String) -> String:

@@ -32,7 +32,8 @@ const SAFE_MARGIN_Y := 0.05
 const TITLE_SCALE := 0.40
 const BUTTON_SCALE := 0.38
 const HUD_WIDTH_RATIO := 0.29
-const HUD_HEIGHT_RATIO := 0.162
+## HUD raster master art is 2172x724 (3:1). Keep the runtime card at that ratio.
+const HUD_HEIGHT_RATIO := 0.172
 const RESULTS_HERO_RATIO := 0.46
 const RESULTS_STATS_RATIO := 0.24
 const RESULTS_WINNER_HEIGHT_RATIO := 0.63

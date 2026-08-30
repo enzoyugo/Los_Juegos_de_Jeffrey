@@ -596,7 +596,7 @@ def test_hud_portrait_clipping_and_scale() -> None:
     assert "p1_portrait_region" in layout
     assert "p2_portrait_region" in layout
     assert "HUD_WIDTH_RATIO := 0.29" in visual
-    assert "HUD_HEIGHT_RATIO := 0.162" in visual
+    assert "HUD_HEIGHT_RATIO := 0.172" in visual
 
 
 def test_transparent_portrait_assets_exist() -> None:

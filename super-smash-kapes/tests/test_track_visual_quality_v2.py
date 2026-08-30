@@ -49,9 +49,11 @@ def test_signage_atlas_wired() -> None:
 
 def test_results_compact_track() -> None:
     text = (ROOT / "scripts/ui/jeffrey/copa_jeffrey_results_screen.gd").read_text(encoding="utf-8")
-    assert "offset_top = -240" in text
-    assert "RESULTADO FINAL" in text
-    assert "make_result_banner" in text
+    assert "Vector2(1920, 1080)" in text
+    assert "01_result_background.png" in text
+    assert "Vector2(410, 365)" in text
+    assert "RESULTADO  ·  %s" in text
+    assert "_add_result_art" in text
 
 
 def test_vq2_lab_pass() -> None:
