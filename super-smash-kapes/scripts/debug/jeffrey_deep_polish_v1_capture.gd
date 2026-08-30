@@ -85,6 +85,8 @@ func _smash() -> void:
 		["defensores", OUT + "/SMASH/06_defensores.png", FINAL + "/smash_defensores.png"],
 		["palacio", OUT + "/SMASH/07_palacio.png", FINAL + "/smash_palacio.png"],
 		["costanera", OUT + "/SMASH/08_costanera.png", FINAL + "/smash_costanera.png"],
+		["el_cuarto", OUT + "/SMASH/11_el_cuarto.png", FINAL + "/smash_el_cuarto.png"],
+		["colegio_internacional", OUT + "/SMASH/12_colegio_internacional.png", FINAL + "/smash_colegio_internacional.png"],
 	]:
 		await _smash_stage(str(pair[0]), str(pair[1]), str(pair[2]))
 

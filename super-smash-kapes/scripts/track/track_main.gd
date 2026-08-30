@@ -202,6 +202,8 @@ func _build_and_start() -> void:
 	if _turns == null:
 		_turns = TurnsScript.new()
 		_turns.setup(participants, float(data.get("estimated_time", 20.0)))
+	if _hud.has_method("set_racer_roster"):
+		_hud.set_racer_roster(participants)
 	_hud.set_seed(_seed)
 	_hud.hide_setup()
 	_hud.set_status("")

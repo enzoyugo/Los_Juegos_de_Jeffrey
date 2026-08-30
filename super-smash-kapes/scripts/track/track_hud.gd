@@ -9,6 +9,15 @@ const GoldButton := preload("res://scripts/ui/jeffrey/gold_action_button.gd")
 const Chrome := preload("res://scripts/track/track_hud_chrome_v1.gd")
 const InputHint := preload("res://scripts/ui/jeffrey/components/jeffrey_input_hint.gd")
 
+const HUD_POSITION := "res://assets/ui/track/hud_v2/position_block.png"
+const HUD_TIMER := "res://assets/ui/track/hud_v2/timer_block.png"
+const HUD_FUEL := "res://assets/ui/track/hud_v2/fuel_player_block.png"
+const HUD_SPEED := "res://assets/ui/track/hud_v2/speedometer_block.png"
+const PAUSE_PANEL := "res://assets/ui/track/pause_v2/pause_panel.png"
+const PAUSE_TITLE := "res://assets/ui/track/pause_v2/pause_title.png"
+const PAUSE_BUTTON := "res://assets/ui/track/pause_v2/pause_button.png"
+const FUEL_LABEL := "COMBUSTIBLE"
+
 const TRACK_ACCENT := Color("#3db8c9")
 
 signal play_pressed(length_id: String, difficulty_id: String)
@@ -36,6 +45,10 @@ var _diff: String = "picante"
 var _seed_label: Label
 var _status_pulse: float = 0.0
 var _check_flash: float = 0.0
+var _position_value: Label
+var _speed_value: Label
+var _fuel_stack: VBoxContainer
+var _fuel_rows: Dictionary = {}
 
 
 func _ready() -> void:
@@ -87,6 +100,19 @@ func set_driver(name_text: String, character_name: String, slot: int) -> void:
 		_driver.text = "%s  ·  %s" % [slot_tag, kape]
 	else:
 		_driver.text = "%s  %s  ·  %s" % [slot_tag, person, kape]
+	_ensure_fuel_row(person if not person.is_empty() else slot_tag, _fuel_color(maxi(slot - 1, 0)))
+
+
+func set_racer_roster(rows: Array) -> void:
+	for i in rows.size():
+		var row = rows[i]
+		if not (row is Dictionary):
+			continue
+		var name_text := str(row.get("display_name", row.get("name", row.get("profile_id", "P%d" % (i + 1))))).strip_edges().to_upper()
+		if name_text.is_empty():
+			name_text = "P%d" % (i + 1)
+		var slot := int(row.get("player_slot", i + 1))
+		_ensure_fuel_row(name_text, _fuel_color(maxi(slot - 1, 0)))
 
 
 func set_timer(seconds: float) -> void:
@@ -122,24 +148,35 @@ func flash_finish(seconds: float) -> void:
 
 
 func set_fuel(seconds: float, last_dance: bool, player_name: String = "") -> void:
-	if _fuel == null:
+	if _fuel == null and _fuel_stack == null:
 		return
+	var key := player_name.strip_edges().to_upper()
+	if key.is_empty():
+		key = "PLAYER"
+	_ensure_fuel_row(key, _fuel_color(_fuel_rows.size()))
+	var row: Dictionary = _fuel_rows.get(key, {})
+	var label: Label = row.get("label")
+	var fill: ColorRect = row.get("fill")
 	if last_dance:
-		_fuel.text = "RENDICIÓN"
-		_fuel.add_theme_color_override("font_color", ThemeRef.GOLD_HOT)
+		label.text = "%s  ·  RENDICIÓN" % key
 	else:
-		_fuel.text = "COMBUSTIBLE  %s" % _fmt(seconds)
-		_fuel.add_theme_color_override("font_color", ThemeRef.TEXT)
+		label.text = "%s  %s" % [key, _fmt(seconds)]
+	if fill != null:
+		fill.size.x = 110.0 * clampf(seconds / 30.0, 0.0, 1.0)
 
 
 func set_rank(rank: int, total: int) -> void:
 	if _rank != null:
 		_rank.text = "PUESTO  %d / %d" % [rank, total] if rank > 0 else ""
+	if _position_value != null:
+		_position_value.text = "%d / %d" % [rank, total] if rank > 0 else "— / %d" % total
 
 
 func set_speed(meters_per_second: float) -> void:
 	if _speed != null:
-		_speed.text = "VELOCIDAD  %03d" % maxi(int(round(maxf(meters_per_second, 0.0) * 3.6)), 0)
+		_speed.text = "%03d" % maxi(int(round(maxf(meters_per_second, 0.0) * 3.6)), 0)
+	if _speed_value != null:
+		_speed_value.text = "%03d" % maxi(int(round(maxf(meters_per_second, 0.0) * 3.6)), 0)
 
 
 func set_seed(seed_value: int) -> void:
@@ -217,9 +254,7 @@ func _build_hud() -> void:
 	root.theme = Typography.theme_for(Typography.TRACK)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
-	var timer_panel = Chrome.make_timer_frame()
-	root.add_child(timer_panel)
-	Layout.apply_frac(timer_panel, 0.36, 0.018, 0.28, 0.12)
+	var timer_panel := _asset(root, HUD_TIMER, Vector2(620, 12), Vector2(370, 105))
 	var timer_col := VBoxContainer.new()
 	timer_col.add_theme_constant_override("separation", 2)
 	timer_panel.add_child(timer_col)
@@ -227,44 +262,44 @@ func _build_hud() -> void:
 	brand_row.alignment = BoxContainer.ALIGNMENT_CENTER
 	brand_row.add_theme_constant_override("separation", 8)
 	timer_col.add_child(brand_row)
-	brand_row.add_child(Layout.outlined_label("▸", 14, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
 	brand_row.add_child(Layout.outlined_label("TRACK", 15, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
-	brand_row.add_child(Layout.outlined_label("◂", 14, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
 	timer_col.add_child(Chrome.make_accent_bar())
 	_timer = Layout.outlined_label("0:00.00", 38, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER)
 	timer_col.add_child(_timer)
 	_best = Layout.outlined_label("MEJOR  —", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
 	timer_col.add_child(_best)
 
-	var driver_chip = Chrome.make_side_chip()
-	root.add_child(driver_chip)
-	Layout.apply_frac(driver_chip, 0.02, 0.022, 0.20, 0.042)
-	_driver = Layout.outlined_label("", 15, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	driver_chip.add_child(_driver)
+	var position_panel := _asset(root, HUD_POSITION, Vector2(18, 12), Vector2(260, 82))
+	_position_value = Layout.outlined_label("— / —", 26, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	_position_value.position = Vector2(108, 31)
+	_position_value.size = Vector2(140, 40)
+	position_panel.add_child(_position_value)
+	_driver = Layout.outlined_label("", 12, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
+	_driver.position = Vector2(24, 66)
+	_driver.size = Vector2(215, 22)
+	position_panel.add_child(_driver)
+	_fuel_stack = VBoxContainer.new()
+	_fuel_stack.position = Vector2(1570, 14)
+	_fuel_stack.size = Vector2(330, 160)
+	_fuel_stack.add_theme_constant_override("separation", -22)
+	root.add_child(_fuel_stack)
 
-	var fuel_chip = Chrome.make_side_chip(ThemeRef.GOLD)
-	root.add_child(fuel_chip)
-	Layout.apply_frac(fuel_chip, 0.80, 0.022, 0.18, 0.042)
-	_fuel = Layout.outlined_label("", 14, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_RIGHT)
-	fuel_chip.add_child(_fuel)
-
-	var check_chip = Chrome.make_side_chip()
-	root.add_child(check_chip)
-	Layout.apply_frac(check_chip, 0.02, 0.072, 0.12, 0.036)
 	_check = Layout.outlined_label("", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
-	check_chip.add_child(_check)
-
-	var rank_chip = Chrome.make_side_chip(TRACK_ACCENT)
-	root.add_child(rank_chip)
-	Layout.apply_frac(rank_chip, 0.145, 0.072, 0.105, 0.036)
+	_check.visible = false
+	_check.position = Vector2(24, 102)
+	_check.size = Vector2(260, 30)
+	root.add_child(_check)
 	_rank = Layout.outlined_label("", 13, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_LEFT)
-	rank_chip.add_child(_rank)
-
-	var speed_chip = Chrome.make_side_chip(ThemeRef.GOLD)
-	root.add_child(speed_chip)
-	Layout.apply_frac(speed_chip, 0.02, 0.115, 0.15, 0.036)
-	_speed = Layout.outlined_label("VELOCIDAD 000", 13, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
-	speed_chip.add_child(_speed)
+	_rank.visible = false
+	_rank.position = Vector2(150, 102)
+	_rank.size = Vector2(260, 30)
+	root.add_child(_rank)
+	var speed_panel := _asset(root, HUD_SPEED, Vector2(1630, 875), Vector2(260, 105))
+	_speed_value = Layout.outlined_label("000", 28, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_speed_value.position = Vector2(112, 40)
+	_speed_value.size = Vector2(130, 42)
+	speed_panel.add_child(_speed_value)
+	_speed = _speed_value
 
 	_seed = Layout.outlined_label("", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_LEFT)
 	root.add_child(_seed)
@@ -302,6 +337,52 @@ func _build_hud() -> void:
 	row.add_child(InputHint.make("drift", "DRIFT", TRACK_ACCENT))
 	row.add_child(InputHint.make("pause", "PAUSA", TRACK_ACCENT))
 	_prompt = row
+
+
+func _asset(parent: Control, path: String, pos: Vector2, size: Vector2) -> Control:
+	var host := Control.new()
+	host.position = pos
+	host.size = size
+	host.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(host)
+	var image := TextureRect.new()
+	image.texture = load(path)
+	image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	image.stretch_mode = TextureRect.STRETCH_SCALE
+	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	host.add_child(image)
+	return host
+
+
+func _fuel_color(index: int) -> Color:
+	return [Color("#e34845"), Color("#73c86b"), Color("#e8c34c"), Color("#58bfe0")][mini(index, 3)]
+
+
+func _ensure_fuel_row(player_name: String, color: Color) -> void:
+	if _fuel_rows.has(player_name) or _fuel_stack == null:
+		return
+	var card := Control.new()
+	card.custom_minimum_size = Vector2(330, 86)
+	var image := TextureRect.new()
+	image.texture = load(HUD_FUEL)
+	image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	image.stretch_mode = TextureRect.STRETCH_SCALE
+	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	card.add_child(image)
+	var label := Layout.outlined_label(player_name, 15, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
+	label.position = Vector2(86, 22)
+	label.size = Vector2(225, 26)
+	card.add_child(label)
+	var fill := ColorRect.new()
+	fill.color = color
+	fill.position = Vector2(93, 57)
+	fill.size = Vector2(110, 8)
+	fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	card.add_child(fill)
+	_fuel_stack.add_child(card)
+	_fuel_rows[player_name] = {"label": label, "fill": fill}
 
 
 func _build_setup() -> void:
@@ -376,27 +457,17 @@ func _build_pause() -> void:
 	wash.color = Color(0.02, 0.01, 0.05, 0.82)
 	Layout.bind_full(wash)
 	_pause.add_child(wash)
-	var card := PanelContainer.new()
-	var card_style := StyleBoxFlat.new()
-	card_style.bg_color = Color(0.05, 0.04, 0.09, 0.96)
-	card_style.border_color = Color("#c084fc")
-	card_style.set_border_width_all(2)
-	card_style.corner_radius_top_left = 8
-	card_style.corner_radius_top_right = 18
-	card_style.corner_radius_bottom_right = 8
-	card_style.corner_radius_bottom_left = 18
-	card_style.content_margin_left = 28
-	card_style.content_margin_right = 28
-	card_style.content_margin_top = 22
-	card_style.content_margin_bottom = 22
-	card.add_theme_stylebox_override("panel", card_style)
+	var card := Control.new()
 	_pause.add_child(card)
-	Layout.apply_frac(card, 0.35, 0.29, 0.30, 0.42)
+	Layout.apply_frac(card, 0.35, 0.24, 0.30, 0.52)
+	var panel_art := _asset(card, PAUSE_PANEL, Vector2.ZERO, Vector2(576, 562))
+	var title_art := _asset(card, PAUSE_TITLE, Vector2(92, 36), Vector2(392, 112))
 	var box := VBoxContainer.new()
+	box.position = Vector2(148, 150)
+	box.size = Vector2(280, 350)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
 	box.add_theme_constant_override("separation", 12)
 	card.add_child(box)
-	box.add_child(Layout.outlined_label("PAUSA", 34, Color("#f5c542"), HORIZONTAL_ALIGNMENT_CENTER))
 	box.add_child(Layout.outlined_label("TRACK", 14, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
 	var resume = GoldButton.new()
 	resume.configure("CONTINUAR", Vector2(220, 48))
@@ -423,3 +494,5 @@ func _build_pause() -> void:
 	hub.configure("VOLVER AL HUB", Vector2(220, 44))
 	hub.pressed.connect(func(): hub_pressed.emit())
 	box.add_child(hub)
+	panel_art.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	title_art.mouse_filter = Control.MOUSE_FILTER_IGNORE

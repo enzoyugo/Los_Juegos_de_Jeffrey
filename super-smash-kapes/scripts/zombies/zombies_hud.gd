@@ -6,6 +6,10 @@ const Typography := preload("res://scripts/ui/jeffrey/system/jeffrey_typography.
 const ThemeRef := preload("res://scripts/ui/jeffrey/global_shell_theme.gd")
 const GoldButton := preload("res://scripts/ui/jeffrey/gold_action_button.gd")
 const Config := preload("res://scripts/zombies/zombies_config.gd")
+const HUD_HEALTH := "res://assets/ui/zombies/hud_v2/health_block.png"
+const HUD_POINTS := "res://assets/ui/zombies/hud_v2/points_block.png"
+const HUD_ROUND := "res://assets/ui/zombies/hud_v2/round_block.png"
+const HUD_WEAPON := "res://assets/ui/zombies/hud_v2/weapon_ammo_block.png"
 
 signal hub_pressed
 signal resume_pressed
@@ -59,25 +63,29 @@ func _ready() -> void:
 	_vignette.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	Layout.bind_full(_vignette)
 	root.add_child(_vignette)
-	_wave_caption = Layout.outlined_label("RONDA", 22, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
-	root.add_child(_wave_caption)
-	Layout.apply_frac(_wave_caption, 0.35, 0.015, 0.30, 0.04)
-	_wave = Layout.outlined_label("1", 56, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
-	root.add_child(_wave)
-	Layout.apply_frac(_wave, 0.35, 0.045, 0.30, 0.10)
+	var round_panel := _asset(root, HUD_ROUND, Vector2(720, 8), Vector2(480, 160))
+	_wave = Layout.outlined_label("1", 52, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_wave.position = Vector2(174, 69)
+	_wave.size = Vector2(132, 70)
+	round_panel.add_child(_wave)
 	_left = Layout.outlined_label("ZOMBIES  0", 18, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_RIGHT)
+	_left.visible = false
 	root.add_child(_left)
 	Layout.apply_frac(_left, 0.70, 0.03, 0.26, 0.05)
-	_points = Layout.outlined_label("0", 36, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
-	root.add_child(_points)
-	Layout.apply_frac(_points, 0.04, 0.04, 0.22, 0.07)
+	var points_panel := _asset(root, HUD_POINTS, Vector2(18, 12), Vector2(330, 110))
+	_points = Layout.outlined_label("0", 30, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_points.position = Vector2(150, 39)
+	_points.size = Vector2(150, 42)
+	points_panel.add_child(_points)
 	_points_toast = Layout.outlined_label("", 26, ThemeRef.GOLD_HOT, HORIZONTAL_ALIGNMENT_LEFT)
 	root.add_child(_points_toast)
 	Layout.apply_frac(_points_toast, 0.04, 0.105, 0.18, 0.05)
+	var health_panel := _asset(root, HUD_HEALTH, Vector2(18, 890), Vector2(380, 126))
 	var hp_wrap := Control.new()
 	_hp_wrap = hp_wrap
 	root.add_child(hp_wrap)
-	Layout.apply_frac(hp_wrap, 0.04, 0.855, 0.22, 0.035)
+	hp_wrap.position = Vector2(120, 76)
+	hp_wrap.size = Vector2(225, 16)
 	var hp_track := ColorRect.new()
 	hp_track.color = Color(0.08, 0.09, 0.12, 0.85)
 	hp_track.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -91,18 +99,20 @@ func _ready() -> void:
 	_hp_fill.anchor_right = 1.0
 	_hp_fill.anchor_bottom = 1.0
 	hp_wrap.add_child(_hp_fill)
-	_hp_caption = Layout.outlined_label("SALUD", 16, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	root.add_child(_hp_caption)
-	Layout.apply_frac(_hp_caption, 0.04, 0.815, 0.12, 0.035)
+	_hp_caption = null
 	_hp = Layout.outlined_label("100", 22, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	root.add_child(_hp)
-	Layout.apply_frac(_hp, 0.04, 0.895, 0.12, 0.04)
-	_gun = Layout.outlined_label("PISTOLA", 22, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_RIGHT)
-	root.add_child(_gun)
-	Layout.apply_frac(_gun, 0.62, 0.80, 0.34, 0.05)
-	_ammo = Layout.outlined_label("10 / 80", 34, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_RIGHT)
-	root.add_child(_ammo)
-	Layout.apply_frac(_ammo, 0.55, 0.85, 0.41, 0.08)
+	_hp.position = Vector2(292, 38)
+	_hp.size = Vector2(65, 40)
+	health_panel.add_child(_hp)
+	var weapon_panel := _asset(root, HUD_WEAPON, Vector2(1510, 872), Vector2(390, 130))
+	_gun = Layout.outlined_label("PISTOLA", 21, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_LEFT)
+	_gun.position = Vector2(78, 42)
+	_gun.size = Vector2(170, 38)
+	weapon_panel.add_child(_gun)
+	_ammo = Layout.outlined_label("10 / 80", 28, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	_ammo.position = Vector2(210, 42)
+	_ammo.size = Vector2(150, 42)
+	weapon_panel.add_child(_ammo)
 	_prompt = Layout.outlined_label("", 28, ThemeRef.GOLD_HOT, HORIZONTAL_ALIGNMENT_CENTER)
 	root.add_child(_prompt)
 	Layout.apply_frac(_prompt, 0.18, 0.62, 0.64, 0.10)
@@ -149,6 +159,22 @@ func _process(delta: float) -> void:
 	if _hp_fill != null:
 		_hp_fill.modulate = Color(1.4, 1.2, 1.2) if _hp_flash > 0.0 else Color.WHITE
 	_tick_vignette()
+
+
+func _asset(parent: Control, path: String, pos: Vector2, size: Vector2) -> Control:
+	var host := Control.new()
+	host.position = pos
+	host.size = size
+	host.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(host)
+	var image := TextureRect.new()
+	image.texture = load(path)
+	image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	image.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	image.stretch_mode = TextureRect.STRETCH_SCALE
+	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	host.add_child(image)
+	return host
 
 
 func set_hp(value: float) -> void:
@@ -199,7 +225,8 @@ func set_status(text: String) -> void:
 
 
 func announce_round(wave: int) -> void:
-	announce("RONDA  %d" % wave, 2.4)
+	if _wave != null:
+		_wave.text = "%d" % wave
 
 
 func announce(text: String, seconds: float = 2.0) -> void:

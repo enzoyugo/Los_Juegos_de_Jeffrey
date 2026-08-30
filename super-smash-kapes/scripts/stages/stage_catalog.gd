@@ -6,6 +6,8 @@ extends RefCounted
 const DEFENSORES := "defensores"
 const PALACIO := "palacio"
 const COSTANERA := "costanera"
+const EL_CUARTO := "el_cuarto"
+const COLEGIO_INTERNACIONAL := "colegio_internacional"
 
 static var _loaded: bool = false
 static var _stages: Dictionary = {}
@@ -69,4 +71,16 @@ static func _ensure() -> void:
 		"spawn_p2": Vector3(6.0, 1.7, 0.0),
 		"blast_min": Vector3(-26.0, -10.0, -8.0),
 		"blast_max": Vector3(26.0, 18.0, 8.0),
+	}
+	_stages[EL_CUARTO] = {
+		"id": EL_CUARTO, "display_name": "EL CUARTO",
+		"scene_path": "res://scenes/stages/ElCuartoStage.tscn",
+		"spawn_p1": Vector3(-4.0, 1.7, 0.0), "spawn_p2": Vector3(4.0, 1.7, 0.0),
+		"blast_min": Vector3(-19.0, -10.0, -8.0), "blast_max": Vector3(19.0, 18.0, 8.0),
+	}
+	_stages[COLEGIO_INTERNACIONAL] = {
+		"id": COLEGIO_INTERNACIONAL, "display_name": "COLEGIO INTERNACIONAL",
+		"scene_path": "res://scenes/stages/ColegioInternacionalStage.tscn",
+		"spawn_p1": Vector3(-4.0, 1.7, 0.0), "spawn_p2": Vector3(4.0, 1.7, 0.0),
+		"blast_min": Vector3(-19.0, -10.0, -8.0), "blast_max": Vector3(19.0, 18.0, 8.0),
 	}

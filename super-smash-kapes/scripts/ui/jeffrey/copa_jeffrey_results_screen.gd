@@ -13,6 +13,10 @@ const ScoreRow := preload("res://scripts/ui/jeffrey/components/jeffrey_score_row
 const Motion := preload("res://scripts/ui/jeffrey/system/jeffrey_ui_motion.gd")
 const Assets := preload("res://scripts/ui/jeffrey/global_ui_assets.gd")
 const PanelScript := preload("res://scripts/ui/jeffrey/components/jeffrey_panel.gd")
+const RESULT_BG := "res://assets/ui/shared/copa_jeffrey_v2/01_result_background.png"
+const RESULT_TITLE := "res://assets/ui/shared/copa_jeffrey_v2/02_resultado_final_title.png"
+const RESULT_LOGO := "res://assets/ui/shared/copa_jeffrey_v2/03_logo_los_juegos_de_jeffrey.png"
+const RESULT_COPA := "res://assets/ui/shared/copa_jeffrey_v2/04_logo_copa_jeffrey.png"
 
 
 func setup(result: Dictionary) -> void:
@@ -25,7 +29,9 @@ func _build(result: Dictionary) -> void:
 	Layout.bind_full(self)
 	var mode_id := str(result.get("mode", ""))
 	var is_track := mode_id == ThemeRef.MODE_RACING or mode_id == "racing" or mode_id == "track"
-	theme = Typography.theme_for(Typography.TRACK if is_track else (Typography.ZOMBIES if mode_id == Typography.ZOMBIES else Typography.GLOBAL))
+	## Copa Jeffrey is shared/global presentation: Borsok remains authoritative even
+	## when the result was reached from Track or Zombies.
+	theme = Typography.theme_for(Typography.GLOBAL)
 
 	var wash := ColorRect.new()
 	if is_track:
@@ -51,6 +57,7 @@ func _build(result: Dictionary) -> void:
 		shell.offset_right = 440
 		shell.offset_bottom = 320
 	add_child(shell)
+	_add_result_art(shell)
 	Motion.modal_pop(shell)
 
 	var root := VBoxContainer.new()
@@ -134,6 +141,41 @@ func _build(result: Dictionary) -> void:
 	actions.add_child(hub)
 
 	call_deferred("_focus_first", revancha)
+
+
+func _add_result_art(shell: Control) -> void:
+	var bg := TextureRect.new()
+	bg.texture = load(RESULT_BG)
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	bg.stretch_mode = TextureRect.STRETCH_SCALE
+	bg.modulate.a = 0.42
+	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	shell.add_child(bg)
+	var logo := TextureRect.new()
+	logo.texture = load(RESULT_LOGO)
+	logo.position = Vector2(28, -22)
+	logo.size = Vector2(120, 86)
+	logo.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	logo.stretch_mode = TextureRect.STRETCH_SCALE
+	logo.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	shell.add_child(logo)
+	var copa := TextureRect.new()
+	copa.texture = load(RESULT_COPA)
+	copa.position = Vector2(740, -28)
+	copa.size = Vector2(120, 96)
+	copa.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	copa.stretch_mode = TextureRect.STRETCH_SCALE
+	copa.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	shell.add_child(copa)
+	var title := TextureRect.new()
+	title.texture = load(RESULT_TITLE)
+	title.position = Vector2(190, -8)
+	title.size = Vector2(540, 104)
+	title.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	title.stretch_mode = TextureRect.STRETCH_SCALE
+	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	shell.add_child(title)
 
 
 func _friendly_fallback_name(profile_id: String) -> String:

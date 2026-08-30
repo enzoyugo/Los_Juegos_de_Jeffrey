@@ -32,3 +32,20 @@ def test_player_facing_roots_bind_typography_authority():
     }
     for path, token in bindings.items():
         assert token in (ROOT / path).read_text(encoding="utf-8")
+
+
+def test_final_ui_asset_sets_and_authored_stage_candidates_exist():
+    assets = [
+        "assets/ui/track/hud_v2/position_block.png",
+        "assets/ui/track/hud_v2/timer_block.png",
+        "assets/ui/track/hud_v2/fuel_player_block.png",
+        "assets/ui/track/hud_v2/speedometer_block.png",
+        "assets/ui/zombies/hud_v2/health_block.png",
+        "assets/ui/zombies/hud_v2/points_block.png",
+        "assets/ui/zombies/hud_v2/round_block.png",
+        "assets/ui/zombies/hud_v2/weapon_ammo_block.png",
+        "assets/ui/shared/copa_jeffrey_v2/01_result_background.png",
+    ]
+    assert all((ROOT / path).is_file() for path in assets)
+    assert "EL_CUARTO" in (ROOT / "scripts/stages/stage_catalog.gd").read_text(encoding="utf-8")
+    assert "COLEGIO_INTERNACIONAL" in (ROOT / "scripts/stages/stage_catalog.gd").read_text(encoding="utf-8")
