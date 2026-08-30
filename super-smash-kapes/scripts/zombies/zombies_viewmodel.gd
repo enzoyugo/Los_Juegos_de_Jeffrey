@@ -3,8 +3,8 @@ extends Node3D
 
 ## First-person pistol / SMG. Shared materials. Slide, barrel, sights, mag.
 
-const METAL := Color("#1a1d22")
-const METAL_DARK := Color("#121417")
+const METAL := Color("#586574")
+const METAL_DARK := Color("#202a35")
 const ACCENT := Color("#c9a227")
 const FLASH := Color("#ffe8a0")
 

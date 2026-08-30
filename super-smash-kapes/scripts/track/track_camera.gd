@@ -32,11 +32,21 @@ func _physics_process(delta: float) -> void:
 	var parent = target.get_parent()
 	if parent is CharacterBody3D or parent is RigidBody3D:
 		car_basis = (parent as Node3D).global_transform.basis
+	## Chase framing follows heading, not transient chassis pitch/roll. The
+	## articulated controller can settle or land while the camera remains a
+	## stable horizon-facing spectator view.
+	var forward := -car_basis.z
+	forward.y = 0.0
+	if forward.length() < 0.001:
+		forward = Vector3(0, 0, -1)
+	else:
+		forward = forward.normalized()
+	var yaw_basis := Basis.looking_at(forward, Vector3.UP)
 	if not _locked:
-		_yaw_basis = car_basis
+		_yaw_basis = yaw_basis
 		_locked = true
 	var yaw_alpha: float = 1.0 - exp(-Config.CAM_YAW_LAG * delta)
-	_yaw_basis = _yaw_basis.slerp(car_basis, yaw_alpha)
+	_yaw_basis = _yaw_basis.slerp(yaw_basis, yaw_alpha)
 	var car_node: Node = target
 	if parent is CharacterBody3D or parent is RigidBody3D:
 		car_node = parent
@@ -44,13 +54,20 @@ func _physics_process(delta: float) -> void:
 	if car_node.has_method("rear_axle_midpoint_global"):
 		rear = car_node.call("rear_axle_midpoint_global")
 	## Chassis +Z is rear (forward is -Z). Never a source-mesh +Z offset.
-	var back: Vector3 = _yaw_basis.z * Config.CAM_DISTANCE
-	var desired: Vector3 = rear + Vector3(0, Config.CAM_HEIGHT, 0) + back
+	var camera_distance := Config.CAM_DISTANCE
+	var camera_height := Config.CAM_HEIGHT
+	if car_node is RigidBody3D:
+		## The articulated chassis is physically wider/taller in frame than the
+		## legacy CharacterBody3D car; keep the same readable road context.
+		camera_distance = 10.5
+		camera_height = 2.8
+	var back: Vector3 = _yaw_basis.z * camera_distance
+	var desired: Vector3 = rear + Vector3(0, camera_height, 0) + back
 	var alpha: float = 1.0 - exp(-Config.CAM_FOLLOW * delta)
 	global_position = global_position.lerp(desired, alpha)
-	var look: Vector3 = target.global_position + (-car_basis.z) * Config.CAM_LOOK_AHEAD + Vector3(0, Config.CAM_LOOK_Y, 0)
+	var look: Vector3 = target.global_position + forward * Config.CAM_LOOK_AHEAD + Vector3(0, Config.CAM_LOOK_Y, 0)
 	if car_node.has_method("front_axle_midpoint_global"):
-		look = car_node.call("front_axle_midpoint_global") + (-car_basis.z) * Config.CAM_LOOK_AHEAD + Vector3(0, Config.CAM_LOOK_Y, 0)
+		look = car_node.call("front_axle_midpoint_global") + forward * Config.CAM_LOOK_AHEAD + Vector3(0, Config.CAM_LOOK_Y, 0)
 	if look.distance_to(global_position) > 0.05:
 		look_at(look, Vector3.UP)
 	var speed := 0.0

@@ -125,7 +125,9 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _setup_stage() -> void:
 	var stage_id := "defensores"
-	if match_setup != null and str(match_setup.stage_id) != "":
+	if OS.get_environment("SSK_CAPTURE_STAGE_OVERRIDE") == "1" and OS.get_environment("SSK_STAGE_ID") != "":
+		stage_id = OS.get_environment("SSK_STAGE_ID")
+	elif match_setup != null and str(match_setup.stage_id) != "":
 		stage_id = str(match_setup.stage_id)
 	elif OS.get_environment("SSK_STAGE_ID") != "":
 		stage_id = OS.get_environment("SSK_STAGE_ID")

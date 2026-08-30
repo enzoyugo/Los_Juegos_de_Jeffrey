@@ -43,6 +43,31 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	blue.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	blue.albedo_color = Color("#2875b9")
 	_box(root, blue, Vector3(3.2, 1.4, 0.2), Vector3(4, 22, 1.2))
+	# A shallow, camera-facing landmark layer remains visible when the GLB is used.
+	# It gives the otherwise broad facade a readable Palacio rhythm without adding
+	# collision or touching the authored gameplay stage.
+	var detail := Node3D.new()
+	detail.name = "PalacioLandmarkDetails"
+	# The imported facade sits around camera-relative Z -28; keep details in front.
+	detail.position = Vector3(0.0, root.position.y, -25.5)
+	camera.add_child(detail)
+	var stone := StandardMaterial3D.new()
+	stone.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	stone.albedo_color = Color("#e4c77c")
+	var shadow := StandardMaterial3D.new()
+	shadow.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	shadow.albedo_color = Color("#5b3f3c")
+	var light := StandardMaterial3D.new()
+	light.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	light.albedo_color = Color("#ffe9a8")
+	# Main cornice, entrance, and six warm windows read as a landmark at game distance.
+	_box(detail, stone, Vector3(27, 0.9, 0.35), Vector3(0, 17.0, 1.65))
+	_box(detail, stone, Vector3(10.5, 0.7, 0.4), Vector3(0, 7.0, 1.65))
+	_box(detail, shadow, Vector3(4.0, 6.0, 0.25), Vector3(0, 10.0, 1.72))
+	for x in [-9.0, -5.5, 5.5, 9.0]:
+		_box(detail, light, Vector3(1.6, 2.2, 0.22), Vector3(x, 11.0, 1.8))
+	for x in [-13.0, 13.0]:
+		_box(detail, stone, Vector3(1.0, 13.0, 0.35), Vector3(x, 11.0, 1.7))
 
 
 func _box(parent: Node3D, mat: Material, size: Vector3, pos: Vector3) -> void:

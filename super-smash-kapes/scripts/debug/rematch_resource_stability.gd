@@ -2,7 +2,6 @@ extends SceneTree
 
 ## Bounded rematch lifecycle: instantiate battle, free, repeat.
 
-const PLAYGROUND := preload("res://scenes/core/M0Playground.tscn")
 const OUTPUT := "res://docs/generated/OVERNIGHT_REMATCH_STABILITY.csv"
 const CYCLES := 20
 
@@ -12,11 +11,20 @@ func _initialize() -> void:
 
 
 func _run() -> void:
+	## Direct --script launches compile this harness before autoloads have
+	## registered their global names. Resolve the scene after one frame so the
+	## lifecycle result exercises the same authority as a normal project run.
+	await process_frame
+	var playground_scene := load("res://scenes/core/M0Playground.tscn") as PackedScene
+	if playground_scene == null:
+		push_error("REMATCH_RESOURCE_STABILITY=FAIL unable to load M0Playground")
+		quit(1)
+		return
 	var rows: PackedStringArray = PackedStringArray([
 		"cycle,nodes,objects,resources,video_mem,texture_mem"
 	])
 	for cycle in range(CYCLES):
-		var playground: Node = PLAYGROUND.instantiate()
+		var playground: Node = playground_scene.instantiate()
 		root.add_child(playground)
 		for _i in range(8):
 			await process_frame

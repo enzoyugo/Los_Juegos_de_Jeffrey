@@ -71,10 +71,12 @@ func _ready() -> void:
 	Layout.apply_frac(summary, 0.68, 0.12, 0.30, 0.66)
 	summary.set_texture(Assets.texture(Assets.MODE_PLAYERS_SUMMARY))
 	var cover := ColorRect.new()
-	cover.color = Color(0.04, 0.04, 0.05, 0.92)
+	## The source illustration contains a stale "0/4" label. The live
+	## counter and roster below are the authority for this screen.
+	cover.color = Color(0.04, 0.04, 0.05, 1.0)
 	cover.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	summary.art_space.add_child(cover)
-	Layout.bind_frac_rect(cover, 0.12, 0.68, 0.88, 0.97)
+	Layout.bind_full(cover)
 	var summary_box := VBoxContainer.new()
 	summary_box.add_theme_constant_override("separation", 8)
 	var summary_margin := MarginContainer.new()
@@ -94,10 +96,12 @@ func _ready() -> void:
 	Styles.apply(_limits_label, "small_helper")
 	summary_box.add_child(_limits_label)
 	var list_scroll := ScrollContainer.new()
+	list_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	list_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	list_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	summary_box.add_child(list_scroll)
 	_list = VBoxContainer.new()
+	_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_list.add_theme_constant_override("separation", 4)
 	list_scroll.add_child(_list)
 

@@ -11,6 +11,7 @@ signal resume_pressed
 signal restart_pressed
 
 var _hp: Label
+var _hp_caption: Label
 var _hp_fill: ColorRect
 var _hp_wrap: Control
 var _hp_flash: float = 0.0
@@ -88,6 +89,9 @@ func _ready() -> void:
 	_hp_fill.anchor_right = 1.0
 	_hp_fill.anchor_bottom = 1.0
 	hp_wrap.add_child(_hp_fill)
+	_hp_caption = Layout.outlined_label("SALUD", 16, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
+	root.add_child(_hp_caption)
+	Layout.apply_frac(_hp_caption, 0.04, 0.785, 0.16, 0.04)
 	_hp = Layout.outlined_label("100", 22, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
 	root.add_child(_hp)
 	Layout.apply_frac(_hp, 0.04, 0.90, 0.16, 0.05)
@@ -307,7 +311,7 @@ func hide_game_over() -> void:
 
 
 func _set_play_hud_visible(on: bool) -> void:
-	for node in [_wave, _wave_caption, _left, _points, _points_toast, _hp, _hp_wrap, _gun, _ammo, _prompt, _crosshair, _banner, _toast, _hit_marker]:
+	for node in [_wave, _wave_caption, _left, _points, _points_toast, _hp_caption, _hp, _hp_wrap, _gun, _ammo, _prompt, _crosshair, _banner, _toast, _hit_marker]:
 		if node != null:
 			node.visible = on
 	if _vignette != null and not on:

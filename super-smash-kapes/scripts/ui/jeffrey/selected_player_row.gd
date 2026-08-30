@@ -8,6 +8,7 @@ const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
 
 func setup(display_name: String, color: Color) -> void:
 	custom_minimum_size = Vector2(0, 28)
+	size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	add_theme_constant_override("separation", 10)
 	alignment = BoxContainer.ALIGNMENT_CENTER
 	var dot := ColorRect.new()

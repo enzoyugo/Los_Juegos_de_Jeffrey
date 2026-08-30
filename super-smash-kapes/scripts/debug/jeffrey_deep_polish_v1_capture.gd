@@ -62,6 +62,9 @@ func _shell() -> void:
 	await _ui(HUB.new(), OUT + "/SHELL/02_hub.png")
 	var mp = MODE_PLAYERS.new()
 	mp.mode_id = ModeRegistry.MODE_SMASH
+	## The capture is a real two-player Smash route; make the live summary
+	## agree with the roster rather than leaving the screen in its empty state.
+	mp.preselected_ids = _ids().slice(0, 2)
 	await _ui(mp, OUT + "/SHELL/03_mode_player_select.png")
 	await _ui(OPTIONS.new(), OUT + "/SHELL/04_options.png")
 	## Final copies
@@ -115,12 +118,19 @@ func _smash() -> void:
 
 func _smash_stage(stage_id: String, path: String, final_path: String) -> void:
 	OS.set_environment("SSK_STAGE_ID", stage_id)
+	OS.set_environment("SSK_CAPTURE_STAGE_OVERRIDE", "1")
 	OS.set_environment("SSK_AUTO_START_BATTLE", "1")
 	var packed := load("res://scenes/core/M0Playground.tscn") as PackedScene
 	if packed == null:
 		print("[DEEP_POLISH] M0Playground missing")
 		return
 	var host = packed.instantiate()
+	## M0Playground owns a MatchSetup with a default stage. Set the capture
+	## setup before entering the tree so each rendered route is deterministic.
+	if host.get("match_setup") != null:
+		host.match_setup.stage_id = stage_id
+		host.match_setup.player_1_fighter_id = "terere"
+		host.match_setup.player_2_fighter_id = "jaguarete"
 	add_child(host)
 	for _i in 40:
 		await get_tree().process_frame
@@ -130,6 +140,7 @@ func _smash_stage(stage_id: String, path: String, final_path: String) -> void:
 	await get_tree().process_frame
 	OS.set_environment("SSK_AUTO_START_BATTLE", "")
 	OS.set_environment("SSK_STAGE_ID", "")
+	OS.set_environment("SSK_CAPTURE_STAGE_OVERRIDE", "")
 
 
 func _track() -> void:
@@ -145,8 +156,14 @@ func _track() -> void:
 	await get_tree().process_frame
 	if track.has_method("_on_play"):
 		track.call("_on_play", "media", "picante")
-	for _i in 45:
+	## Hold the production throttle through the countdown and into the first
+	## lap so the capture reviews the moving world, not the preview settle.
+	if InputMap.has_action("accelerate"):
+		Input.action_press("accelerate")
+	for _i in 220:
 		await get_tree().process_frame
+	if InputMap.has_action("accelerate"):
+		Input.action_release("accelerate")
 	await _save(OUT + "/TRACK/12_track_gameplay.png")
 	_copy(OUT + "/TRACK/12_track_gameplay.png", FINAL + "/track_gameplay.png")
 
@@ -220,12 +237,39 @@ func _zombies() -> void:
 	add_child(host)
 	for _i in 50:
 		await get_tree().process_frame
+	## The production V3 shell is an exterior asset. Use a short, deterministic
+	## authority camera for the environment plate, then return to the player's
+	## real first-person camera for gameplay/combat/end-state captures.
+	var player = host.get("_player")
+	var gameplay_camera = player.camera() if player != null and player.has_method("camera") else null
+	var showcase_camera := Camera3D.new()
+	showcase_camera.name = "ZombiesEnvironmentReviewCamera"
+	showcase_camera.fov = 60.0
+	host.add_child(showcase_camera)
+	showcase_camera.global_position = Vector3(0, 8, 42)
+	showcase_camera.look_at(Vector3(0, 4, 0), Vector3.UP)
+	showcase_camera.current = true
+	await get_tree().process_frame
 	await _save(OUT + "/ZOMBIES/17_shopping_environment.png")
 	_copy(OUT + "/ZOMBIES/17_shopping_environment.png", FINAL + "/zombies_environment.png")
+	showcase_camera.current = false
+	if gameplay_camera != null:
+		gameplay_camera.current = true
+	showcase_camera.queue_free()
+	await get_tree().process_frame
 	await _save(OUT + "/ZOMBIES/18_zombies_gameplay.png")
 	_copy(OUT + "/ZOMBIES/18_zombies_gameplay.png", FINAL + "/zombies_gameplay.png")
 	## Allow spawn frames
 	for _i in 90:
+		await get_tree().process_frame
+	## Make the combat plate visually inspectable without changing production AI or
+	## spawn rules: frame one live enemy in the player's forward lane.
+	var enemies = host.get("_enemies")
+	if enemies != null and player != null:
+		for enemy in enemies.get_children():
+			if enemy != null and bool(enemy.get("alive")):
+				enemy.global_position = player.global_position + Vector3(0.0, 0.05, -8.0)
+				break
 		await get_tree().process_frame
 	await _save(OUT + "/ZOMBIES/19_zombies_combat.png")
 	_copy(OUT + "/ZOMBIES/19_zombies_combat.png", FINAL + "/zombies_combat.png")
@@ -296,7 +340,7 @@ func _write_meta() -> void:
 		f.store_string(JSON.stringify({
 			"sprint": "JEFFREY_OVERNIGHT_TOTAL_REPAIR_V1_CONTINUE_DEEP_POLISH",
 			"resolution": "1920x1080",
-			"head": "9dabf79+",
+			"head": "bbb3b93+",
 			"rendered": true,
 		}, "\t"))
 		f.close()

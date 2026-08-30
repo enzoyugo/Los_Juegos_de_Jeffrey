@@ -11,7 +11,7 @@ const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
 ## Portrait profile cards (1122×1402): painted nameplate sits near the bottom edge.
 const NAMEPLATE_LEFT := 0.16
 const NAMEPLATE_RIGHT := 0.84
-const NAMEPLATE_TOP := 0.865
+const NAMEPLATE_TOP := 0.888
 const NAMEPLATE_BOTTOM := 0.955
 const PORTRAIT_LEFT := 0.26
 const PORTRAIT_RIGHT := 0.74

@@ -38,6 +38,30 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	lamp.albedo_color = Color("#f5d76e")
 	for x in [-18.0, -9.0, 0.0, 9.0, 18.0]:
 		_box(root, lamp, Vector3(0.35, 0.35, 0.35), Vector3(x, 8.5, 1.0))
+	# Keep a readable waterfront layer over the GLB blockout: bridge rail,
+	# sunset windows, and palms are visual-only and do not affect the stage body.
+	var detail := Node3D.new()
+	detail.name = "CostaneraLandmarkDetails"
+	# The imported skyline sits around camera-relative Z -28; keep details in front.
+	detail.position = Vector3(0.0, root.position.y, -25.5)
+	camera.add_child(detail)
+	var bridge := StandardMaterial3D.new()
+	bridge.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	bridge.albedo_color = Color("#d3a35a")
+	_box(detail, bridge, Vector3(72, 0.55, 0.3), Vector3(0, 7.0, 1.55))
+	for x in range(-32, 33, 4):
+		_box(detail, bridge, Vector3(0.22, 2.1, 0.22), Vector3(float(x), 6.0, 1.7))
+	var window := StandardMaterial3D.new()
+	window.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	window.albedo_color = Color("#f6c96b")
+	for x in [-28.0, -21.0, -14.0, -7.0, 0.0, 7.0, 14.0, 21.0, 28.0]:
+		_box(detail, window, Vector3(1.1, 1.2, 0.22), Vector3(x, 7.8 + fmod(absf(x), 3.0), 1.7))
+	var palm := StandardMaterial3D.new()
+	palm.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	palm.albedo_color = Color("#2b6b62")
+	for x in [-31.0, 31.0]:
+		_box(detail, bridge, Vector3(0.45, 6.0, 0.45), Vector3(x, 5.0, 1.5))
+		_box(detail, palm, Vector3(3.0, 1.0, 0.35), Vector3(x, 8.2, 1.5))
 
 
 func _box(parent: Node3D, mat: Material, size: Vector3, pos: Vector3) -> void:
