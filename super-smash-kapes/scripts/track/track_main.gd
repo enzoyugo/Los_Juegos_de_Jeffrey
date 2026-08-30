@@ -40,6 +40,9 @@ var _clock = ClockScript.new()
 var _go_banner: float = 0.0
 var _copa_match_id: String = ""
 var _copa_recorded: bool = false
+var _reset_count: int = 0
+## Read-only runtime snapshot for deterministic gameplay validation.
+var jeffrey_debug_state: Dictionary = {}
 
 
 func _spawn_player_car():
@@ -132,6 +135,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _process(delta: float) -> void:
 	if _paused or not _running:
+		_refresh_jeffrey_debug_state()
 		return
 	if _clock.is_countdown():
 		_hud.set_speed(_car_speed())
@@ -141,8 +145,10 @@ func _process(delta: float) -> void:
 			_hud.set_status("DALE")
 		if str(_clock.tick(delta)) == "started":
 			_on_race_started()
+		_refresh_jeffrey_debug_state()
 		return
 	if not _clock.is_active():
+		_refresh_jeffrey_debug_state()
 		return
 	_clock.tick(delta)
 	_timer = _clock.elapsed
@@ -161,6 +167,7 @@ func _process(delta: float) -> void:
 		_hud.set_fuel(float(_turns.fuel.get(pid, 0.0)), ld, _driver_name())
 		_hud.set_rank(_turns.alive_rank(pid), _turns.alive.size())
 	_refresh_board()
+	_refresh_jeffrey_debug_state()
 
 
 func _on_play(length_id: String, difficulty_id: String) -> void:
@@ -350,6 +357,8 @@ func _reset_checkpoint() -> void:
 	if _next_check > 0 and _next_check - 1 < marks.size():
 		xform = marks[_next_check - 1]["transform"]
 	_car.reset_to(xform)
+	_reset_count += 1
+	_refresh_jeffrey_debug_state()
 
 
 func _restart_or_surrender() -> void:
@@ -434,6 +443,31 @@ func _car_speed() -> float:
 		var v2: Vector3 = (_car as CharacterBody3D).velocity
 		return Vector3(v2.x, 0.0, v2.z).length()
 	return 0.0
+
+
+func _refresh_jeffrey_debug_state() -> void:
+	var car_state: Dictionary = {}
+	if _car != null and is_instance_valid(_car):
+		var candidate: Variant = _car.get("jeffrey_debug_state")
+		if typeof(candidate) == TYPE_DICTIONARY:
+			car_state = candidate.duplicate(true)
+	var profile_id := str(_turns.current_profile_id()) if _turns != null else ""
+	jeffrey_debug_state = {
+		"scene": "res://scenes/track/TrackMain.tscn",
+		"running": _running,
+		"paused": _paused,
+		"turn_state": _turn_state,
+		"length_id": _length_id,
+		"difficulty_id": _difficulty_id,
+		"checkpoint_index": _next_check,
+		"checkpoint_total": _check_total,
+		"elapsed": _timer,
+		"reset_count": _reset_count,
+		"active_profile_id": profile_id,
+		"car_speed": _car_speed(),
+		"car_telemetry": car_state,
+		"mutating": false,
+	}
 
 
 func _show_results() -> void:

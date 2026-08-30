@@ -30,6 +30,11 @@ var audit_last_match_over: bool = false
 var freeze_audit_enabled: bool = OS.get_environment("SSK_FREEZE_AUDIT") == "1"
 var combined_runtime_enabled: bool = OS.get_environment("SSK_DISABLE_STAGE_VISUALS") != "1" and OS.get_environment("SSK_DISABLE_HUD") != "1"
 var combined_action_logged: Dictionary = {}
+var match_elapsed: float = 0.0
+var ko_events: int = 0
+var respawn_events: int = 0
+var last_ko_player: int = 0
+var last_hit_knockback: float = 0.0
 var match_setup = MATCH_SETUP.new()
 ## Read-only MCP snapshot. Does not change match rules.
 var jeffrey_match_debug_state: Dictionary = {}
@@ -60,6 +65,8 @@ func _ready() -> void:
 	call_deferred("_audit_combined_battle_focus")
 
 func _physics_process(_delta: float) -> void:
+	if not match_over:
+		match_elapsed += _delta
 	if freeze_audit_enabled:
 		audit_elapsed += _delta
 		if not audit_first_physics_logged:
@@ -107,6 +114,7 @@ func _physics_process(_delta: float) -> void:
 		respawn_timers.erase(fighter_id)
 		if fighter != null and fighter.stocks > 0 and not match_over:
 			fighter.respawn()
+			respawn_events += 1
 			SmashAudio.play_respawn(self)
 			print("P%d respawned" % fighter.player_id)
 	_refresh_jeffrey_match_debug_state()
@@ -203,6 +211,11 @@ func _make_attack(fighter_id: String) -> AttackDefinition:
 	return attack
 
 func _handle_ko(fighter: Fighter) -> void:
+	## Fighter.ko() is idempotent, but keep the match-level event accounting
+	## explicit so KO/respawn regression probes can distinguish one event from
+	## repeated signal delivery.
+	ko_events += 1
+	last_ko_player = fighter.player_id
 	print("KO: P%d | stocks remaining: %d | damage: %.0f%%" % [fighter.player_id, fighter.stocks, fighter.damage_percent])
 	match_stats[fighter.player_id]["falls"] += 1
 	SmashAudio.play_ko(self)
@@ -235,6 +248,7 @@ func _on_damage_changed(fighter: Fighter) -> void:
 	hud.update_fighter(fighter)
 
 func _on_attack_connected(attacker: Fighter, victim: Fighter, knockback: float) -> void:
+	last_hit_knockback = knockback
 	print("P%d hit P%d: %.0f%% damage, %.2f knockback" % [attacker.player_id, victim.player_id, victim.damage_percent, knockback])
 	match_stats[attacker.player_id]["damage_dealt"] += BASIC_ATTACK.damage
 	match_stats[victim.player_id]["damage_taken"] += BASIC_ATTACK.damage
@@ -300,6 +314,11 @@ func _refresh_jeffrey_match_debug_state() -> void:
 		"match_phase": phase,
 		"ko_state": ko_map,
 		"winner": winner,
+		"match_elapsed": match_elapsed,
+		"ko_events": ko_events,
+		"respawn_events": respawn_events,
+		"last_ko_player": last_ko_player,
+		"last_hit_knockback": last_hit_knockback,
 		"mutating": false,
 	}
 

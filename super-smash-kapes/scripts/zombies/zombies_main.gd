@@ -32,6 +32,10 @@ var _phase: String = "idle"
 var _spawn_i: int = 0
 var _copa_match_id: String = ""
 var _copa_recorded: bool = false
+var _wave_elapsed: float = 0.0
+var _active_integral: float = 0.0
+var _active_samples: int = 0
+var _time_to_first_contact: float = -1.0
 ## Read-only MCP snapshot. Never written by gameplay systems other than this adapter.
 var jeffrey_debug_state: Dictionary = {}
 
@@ -119,6 +123,11 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _process(delta: float) -> void:
+	## This host is PROCESS_MODE_ALWAYS for pause/menu input, but gameplay must
+	## not advance while the scene tree is paused.
+	if _paused or get_tree().paused:
+		_refresh_jeffrey_debug_state()
+		return
 	if _lost:
 		_refresh_hud()
 		_refresh_jeffrey_debug_state()
@@ -131,6 +140,9 @@ func _process(delta: float) -> void:
 		_tick_spawns(delta)
 	_refresh_hud()
 	_tick_debug_stuck(delta)
+	_wave_elapsed += delta
+	_active_integral += float(_count_alive()) * delta
+	_active_samples += 1
 	_refresh_jeffrey_debug_state()
 
 
@@ -140,6 +152,10 @@ func _start_wave() -> void:
 	var count: int = _waves.next_count()
 	_pending_spawn = count
 	_remaining = count
+	_wave_elapsed = 0.0
+	_active_integral = 0.0
+	_active_samples = 0
+	_time_to_first_contact = -1.0
 	_state.round_number = _waves.wave
 	_spawn_cd = 0.12
 	_phase = "spawning"
@@ -261,6 +277,8 @@ func _on_fired() -> void:
 
 
 func _on_damaged() -> void:
+	if _time_to_first_contact < 0.0:
+		_time_to_first_contact = _wave_elapsed
 	if _hud != null:
 		_hud.pulse_damage()
 	if _audio != null:
@@ -399,6 +417,9 @@ func _refresh_jeffrey_debug_state() -> void:
 		"player_threat": "UNAVAILABLE",
 		"stuck_zombie_count": _debug_stuck_count(),
 		"DEBUG_HEURISTIC_STUCK": _debug_stuck_count(),
+		"wave_elapsed": _wave_elapsed,
+		"time_to_first_contact": _time_to_first_contact if _time_to_first_contact >= 0.0 else "UNAVAILABLE",
+		"average_active_zombies": _active_integral / float(_active_samples) if _active_samples > 0 else 0.0,
 		"mutating": false,
 	}
 
