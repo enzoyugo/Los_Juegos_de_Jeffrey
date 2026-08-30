@@ -16,7 +16,9 @@ const ModeRegistry := preload("res://scripts/core/jeffrey/game_mode_registry.gd"
 const Layout := preload("res://scripts/ui/jeffrey/global_ui_layout.gd")
 const PauseOverlay := preload("res://scripts/ui/kapes_pause_overlay.gd")
 
-const OUT := "E:/JeffreyAIResearch/outputs/runtime-review/jeffrey_overnight_total_repair_v1/DEEP_POLISH"
+## Canonical production-context proof runner. Launch its scene, never this script directly,
+## so project autoloads (including JeffreyCore) are initialized before capture.
+const OUT := "E:/JeffreyAIResearch/outputs/runtime-review/jeffrey_visual_proof_v2"
 const FINAL := OUT + "/FINAL"
 
 
@@ -312,11 +314,14 @@ func _save(path: String) -> void:
 	RenderingServer.force_draw()
 	await get_tree().process_frame
 	var img: Image = get_viewport().get_texture().get_image()
-	if img == null:
-		print("[DEEP_POLISH] FAIL capture %s" % path)
+	if img == null or img.get_width() <= 0 or img.get_height() <= 0:
+		print("JEFFREY_CAPTURE_FAILURE screen=%s reason=empty_viewport" % path.get_file())
 		return
-	img.save_png(path)
-	print("[DEEP_POLISH_SHOT] %s (%dx%d)" % [path.get_file(), img.get_width(), img.get_height()])
+	var err := img.save_png(path)
+	if err != OK or not FileAccess.file_exists(path) or FileAccess.get_file_as_bytes(path).is_empty():
+		print("JEFFREY_CAPTURE_FAILURE screen=%s reason=save_failed error=%d" % [path.get_file(), err])
+		return
+	print("JEFFREY_CAPTURE_SUCCESS screen=%s path=%s size=%dx%d" % [path.get_file(), path, img.get_width(), img.get_height()])
 
 
 func _copy(src: String, dst: String) -> void:

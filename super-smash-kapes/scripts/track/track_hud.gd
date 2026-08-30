@@ -16,6 +16,12 @@ const HUD_SPEED := "res://assets/ui/track/hud_v2/speedometer_block.png"
 const PAUSE_PANEL := "res://assets/ui/track/pause_v2/pause_panel.png"
 const PAUSE_TITLE := "res://assets/ui/track/pause_v2/pause_title.png"
 const PAUSE_BUTTON := "res://assets/ui/track/pause_v2/pause_button.png"
+const PAUSE_BUTTON_REGIONS := [
+	Rect2(48, 393, 929, 169),
+	Rect2(49, 577, 927, 166),
+	Rect2(49, 757, 928, 169),
+	Rect2(49, 943, 927, 167),
+]
 const FUEL_LABEL := "COMBUSTIBLE"
 
 const TRACK_ACCENT := Color("#3db8c9")
@@ -254,7 +260,7 @@ func _build_hud() -> void:
 	root.theme = Typography.theme_for(Typography.TRACK)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
-	var timer_panel := _asset(root, HUD_TIMER, Vector2(760, -42), Vector2(400, 300))
+	var timer_panel := _asset(root, HUD_TIMER, Vector2(760, 0), Vector2(400, 300))
 	var timer_col := VBoxContainer.new()
 	timer_col.add_theme_constant_override("separation", 2)
 	timer_panel.add_child(timer_col)
@@ -269,7 +275,7 @@ func _build_hud() -> void:
 	_best = Layout.outlined_label("MEJOR  —", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
 	timer_col.add_child(_best)
 
-	var position_panel := _asset(root, HUD_POSITION, Vector2(18, -42), Vector2(360, 270))
+	var position_panel := _asset(root, HUD_POSITION, Vector2(18, 0), Vector2(360, 270))
 	_position_value = Layout.outlined_label("— / —", 26, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
 	_position_value.position = Vector2(155, 102)
 	_position_value.size = Vector2(170, 42)
@@ -279,7 +285,7 @@ func _build_hud() -> void:
 	_driver.size = Vector2(300, 28)
 	position_panel.add_child(_driver)
 	_fuel_stack = VBoxContainer.new()
-	_fuel_stack.position = Vector2(1545, -42)
+	_fuel_stack.position = Vector2(1545, 0)
 	_fuel_stack.size = Vector2(360, 1080)
 	_fuel_stack.add_theme_constant_override("separation", -154)
 	root.add_child(_fuel_stack)
@@ -294,7 +300,7 @@ func _build_hud() -> void:
 	_rank.position = Vector2(150, 102)
 	_rank.size = Vector2(260, 30)
 	root.add_child(_rank)
-	var speed_panel := _asset(root, HUD_SPEED, Vector2(1542, 818), Vector2(360, 270))
+	var speed_panel := _asset(root, HUD_SPEED, Vector2(1542, 790), Vector2(360, 270))
 	_speed_value = Layout.outlined_label("000", 28, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
 	_speed_value.position = Vector2(128, 124)
 	_speed_value.size = Vector2(150, 48)
@@ -463,8 +469,8 @@ func _build_pause() -> void:
 	var panel_art := _asset(card, PAUSE_PANEL, Vector2.ZERO, Vector2(768, 576))
 	var title_art := _asset(card, PAUSE_TITLE, Vector2(86, 34), Vector2(596, 199))
 	var box := VBoxContainer.new()
-	box.position = Vector2(190, 192)
-	box.size = Vector2(388, 350)
+	box.position = Vector2(234, 164)
+	box.size = Vector2(300, 270)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
 	box.add_theme_constant_override("separation", 3)
 	card.add_child(box)
@@ -496,22 +502,26 @@ func _build_pause() -> void:
 
 func _pause_button(text_value: String, region_index: int) -> Button:
 	var button := Button.new()
-	button.text = text_value
-	button.custom_minimum_size = Vector2(320, 120)
+	button.custom_minimum_size = Vector2(300, 55)
+	button.clip_contents = true
 	button.focus_mode = Control.FOCUS_ALL
 	var atlas := load(PAUSE_BUTTON)
+	var frame := AtlasTexture.new()
+	frame.atlas = atlas
+	frame.region = PAUSE_BUTTON_REGIONS[region_index]
+	var background := TextureRect.new()
+	background.texture = frame
+	background.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	background.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	background.z_index = 0
+	button.add_child(background)
 	for state_name in ["normal", "hover", "pressed", "focus"]:
-		var region := AtlasTexture.new()
-		region.atlas = atlas
-		region.region = Rect2(0, region_index * 384, 1024, 384)
-		var style := StyleBoxTexture.new()
-		style.texture = region
-		style.texture_margin_left = 150
-		style.texture_margin_right = 150
-		style.texture_margin_top = 60
-		style.texture_margin_bottom = 60
-		button.add_theme_stylebox_override(state_name, style)
-	button.add_theme_font_size_override("font_size", 21)
-	button.add_theme_color_override("font_color", ThemeRef.TEXT)
-	button.add_theme_color_override("font_hover_color", ThemeRef.TEXT)
+		button.add_theme_stylebox_override(state_name, StyleBoxEmpty.new())
+	var label := Layout.outlined_label(text_value, 16, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	label.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	label.z_index = 1
+	button.add_child(label)
 	return button
