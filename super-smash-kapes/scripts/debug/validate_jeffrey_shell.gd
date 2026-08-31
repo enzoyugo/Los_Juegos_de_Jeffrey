@@ -437,8 +437,8 @@ func _check_texture_sharing(errors: PackedStringArray) -> void:
 
 func _check_modular_kit_pilot(errors: PackedStringArray) -> void:
 	var cfg = load("res://scripts/track/track_config.gd")
-	if cfg == null or str(cfg.CONTROLLER_MODE) != "BASELINE":
-		errors.append("Track production CONTROLLER_MODE must remain BASELINE")
+	if cfg == null or str(cfg.CONTROLLER_MODE) != "FOUR_WHEEL_V1":
+		errors.append("Track production CONTROLLER_MODE must remain FOUR_WHEEL_V1")
 	if not FileAccess.file_exists("res://data/track/modules/track_kit_v1.json"):
 		errors.append("track_kit_v1.json missing")
 		return
@@ -570,8 +570,8 @@ func _check_modular_kit_pilot(errors: PackedStringArray) -> void:
 
 func _check_generator_v2(errors: PackedStringArray) -> void:
 	var cfg = load("res://scripts/track/track_config.gd")
-	if cfg == null or str(cfg.CONTROLLER_MODE) != "BASELINE":
-		errors.append("Track production CONTROLLER_MODE must remain BASELINE")
+	if cfg == null or str(cfg.CONTROLLER_MODE) != "FOUR_WHEEL_V1":
+		errors.append("Track production CONTROLLER_MODE must remain FOUR_WHEEL_V1")
 	var race_src := FileAccess.get_file_as_string("res://scripts/track/track_race.gd")
 	if race_src.find("track_generator.gd") < 0:
 		errors.append("TrackMain race path missing V1 TrackGenerator")
@@ -944,8 +944,8 @@ func _check_articulated_extended(errors: PackedStringArray) -> void:
 
 func _check_four_wheel_rnd(errors: PackedStringArray) -> void:
 	var cfg = load("res://scripts/track/track_config.gd")
-	if cfg == null or str(cfg.CONTROLLER_MODE) != "BASELINE":
-		errors.append("Track production CONTROLLER_MODE must remain BASELINE")
+	if cfg == null or str(cfg.CONTROLLER_MODE) != "FOUR_WHEEL_V1":
+		errors.append("Track production CONTROLLER_MODE must remain FOUR_WHEEL_V1")
 	var baseline_src := FileAccess.get_file_as_string("res://scripts/track/track_car_controller.gd")
 	if baseline_src.find("BASELINE_TRACK_CONTROLLER") < 0:
 		errors.append("baseline controller marker missing")
