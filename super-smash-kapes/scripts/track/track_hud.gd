@@ -55,6 +55,7 @@ var _position_value: Label
 var _speed_value: Label
 var _fuel_stack: VBoxContainer
 var _fuel_rows: Dictionary = {}
+var _active_fuel_key: String = ""
 
 
 func _ready() -> void:
@@ -106,7 +107,14 @@ func set_driver(name_text: String, character_name: String, slot: int) -> void:
 		_driver.text = "%s  ·  %s" % [slot_tag, kape]
 	else:
 		_driver.text = "%s  %s  ·  %s" % [slot_tag, person, kape]
-	_ensure_fuel_row(person if not person.is_empty() else slot_tag, _fuel_color(maxi(slot - 1, 0)))
+	## PUESTO owns the identity area; the fuel cards are the single racer roster.
+	_driver.visible = false
+	_active_fuel_key = person if not person.is_empty() else slot_tag
+	if not _fuel_rows.has(_active_fuel_key) and not _fuel_rows.is_empty():
+		var keys: Array = _fuel_rows.keys()
+		_active_fuel_key = str(keys[mini(maxi(slot - 1, 0), keys.size() - 1)])
+	if _fuel_rows.is_empty():
+		_ensure_fuel_row(_active_fuel_key, _fuel_color(maxi(slot - 1, 0)))
 
 
 func set_racer_roster(rows: Array) -> void:
@@ -130,9 +138,9 @@ func set_best(seconds: float) -> void:
 	if _best == null:
 		return
 	if seconds < 0.0:
-		_best.text = "MEJOR  —"
+		_best.text = "—"
 	else:
-		_best.text = "MEJOR  %s" % _fmt(seconds)
+		_best.text = _fmt(seconds)
 
 
 func flash_checkpoint(current: int, total: int) -> void:
@@ -156,19 +164,20 @@ func flash_finish(seconds: float) -> void:
 func set_fuel(seconds: float, last_dance: bool, player_name: String = "") -> void:
 	if _fuel == null and _fuel_stack == null:
 		return
-	var key := player_name.strip_edges().to_upper()
+	var key := _active_fuel_key
+	if key.is_empty():
+		key = player_name.strip_edges().to_upper()
 	if key.is_empty():
 		key = "PLAYER"
-	_ensure_fuel_row(key, _fuel_color(_fuel_rows.size()))
+	if not _fuel_rows.has(key) and _fuel_rows.is_empty():
+		_ensure_fuel_row(key, _fuel_color(_fuel_rows.size()))
 	var row: Dictionary = _fuel_rows.get(key, {})
 	var label: Label = row.get("label")
 	var fill: ColorRect = row.get("fill")
-	if last_dance:
-		label.text = "%s  ·  RENDICIÓN" % key
-	else:
-		label.text = "%s  %s" % [key, _fmt(seconds)]
+	if label != null:
+		label.text = key if not last_dance else "%s  ·  RENDICIÓN" % key
 	if fill != null:
-		fill.size.x = 150.0 * clampf(seconds / 30.0, 0.0, 1.0)
+		fill.size.x = 117.0 * clampf(seconds / 30.0, 0.0, 1.0)
 
 
 func set_rank(rank: int, total: int) -> void:
@@ -261,19 +270,24 @@ func _build_hud() -> void:
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(root)
 	var timer_panel := _asset(root, HUD_TIMER, Vector2(720, 0), Vector2(480, 360))
-	var timer_col := VBoxContainer.new()
-	timer_col.add_theme_constant_override("separation", 2)
-	timer_panel.add_child(timer_col)
-	var brand_row := HBoxContainer.new()
-	brand_row.alignment = BoxContainer.ALIGNMENT_CENTER
-	brand_row.add_theme_constant_override("separation", 8)
-	timer_col.add_child(brand_row)
-	brand_row.add_child(Layout.outlined_label("TRACK", 15, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER))
-	timer_col.add_child(Chrome.make_accent_bar())
+	var brand := Layout.outlined_label("TRACK", 15, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER)
+	brand.position = Vector2(150, 34)
+	brand.size = Vector2(180, 24)
+	timer_panel.add_child(brand)
+	var accent_bar := Chrome.make_accent_bar()
+	accent_bar.position = Vector2(110, 68)
+	accent_bar.size = Vector2(260, 6)
+	timer_panel.add_child(accent_bar)
 	_timer = Layout.outlined_label("0:00.00", 38, TRACK_ACCENT, HORIZONTAL_ALIGNMENT_CENTER)
-	timer_col.add_child(_timer)
-	_best = Layout.outlined_label("MEJOR  —", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
-	timer_col.add_child(_best)
+	_timer.add_theme_font_size_override("font_size", 48)
+	_timer.position = Vector2(50, 112)
+	_timer.size = Vector2(380, 76)
+	timer_panel.add_child(_timer)
+	_best = Layout.outlined_label("—", 13, ThemeRef.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
+	_best.add_theme_font_size_override("font_size", 16)
+	_best.position = Vector2(50, 220)
+	_best.size = Vector2(380, 34)
+	timer_panel.add_child(_best)
 
 	var position_panel := _asset(root, HUD_POSITION, Vector2(40, 24), Vector2(260, 195))
 	_position_value = Layout.outlined_label("— / —", 26, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
@@ -467,14 +481,14 @@ func _build_pause() -> void:
 	_pause.add_child(card)
 	Layout.apply_frac(card, 0.32, 0.22, 0.36, 0.56)
 	var panel_art := _asset(card, PAUSE_PANEL, Vector2.ZERO, Vector2(680, 510))
-	var title_art := _asset(card, PAUSE_TITLE, Vector2(70, 30), Vector2(540, 180))
+	var title_art := _asset(card, PAUSE_TITLE, Vector2(90, 18), Vector2(500, 145))
 	var box := VBoxContainer.new()
-	box.position = Vector2(100, 190)
-	box.size = Vector2(480, 330)
+	box.position = Vector2(100, 154)
+	box.size = Vector2(480, 292)
 	box.alignment = BoxContainer.ALIGNMENT_CENTER
-	box.add_theme_constant_override("separation", 12)
+	box.add_theme_constant_override("separation", 4)
 	card.add_child(box)
-	box.add_child(Layout.outlined_label("TRACK", 18, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
+	box.add_child(Layout.outlined_label("TRACK", 16, Color("#c084fc"), HORIZONTAL_ALIGNMENT_CENTER))
 	var resume := _pause_button("CONTINUAR", 0)
 	resume.pressed.connect(func():
 		show_pause(false)
@@ -502,7 +516,7 @@ func _build_pause() -> void:
 
 func _pause_button(text_value: String, region_index: int) -> Button:
 	var button := Button.new()
-	button.custom_minimum_size = Vector2(480, 68)
+	button.custom_minimum_size = Vector2(480, 50)
 	button.clip_contents = true
 	button.focus_mode = Control.FOCUS_ALL
 	var atlas := load(PAUSE_BUTTON)

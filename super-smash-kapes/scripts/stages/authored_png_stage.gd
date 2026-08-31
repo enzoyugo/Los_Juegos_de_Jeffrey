@@ -14,7 +14,8 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 		root.add_child(background)
 	var positions := [Vector3(0.0, 0.9, -22.0), Vector3(-7.0, 3.3, -21.5), Vector3(7.0, 3.3, -21.5)]
 	for i in mini(platform_paths.size(), positions.size()):
-		var platform := _sprite(platform_paths[i], positions[i], 0.018)
+		var platform_scale := 0.009 if i == 0 else 0.004
+		var platform := _sprite(platform_paths[i], positions[i], platform_scale)
 		if platform != null:
 			root.add_child(platform)
 

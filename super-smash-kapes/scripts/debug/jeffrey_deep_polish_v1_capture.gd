@@ -106,7 +106,7 @@ func _smash() -> void:
 	add_child(results)
 	Layout.bind_full(results)
 	results.setup({
-		"mode": "smash",
+		"mode": "track",
 		"awarded": [
 			{"profile_id": _ids()[0], "placement": 1, "points": 5, "total_points": 5, "fighter_id": "terere"},
 			{"profile_id": _ids()[1], "placement": 2, "points": 3, "total_points": 3, "fighter_id": "jaguarete"},

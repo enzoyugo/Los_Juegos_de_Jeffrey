@@ -158,7 +158,9 @@ func _tint_meshes(node: Node, color: Color) -> void:
 			mat.albedo_color = color
 			mat.roughness = 0.72
 			(child as MeshInstance3D).material_override = mat
-			(child as MeshInstance3D).visible = true
+			## Authored PNG stages keep collision bodies for gameplay, but their
+			## gray primitive meshes are debug proxies and must not ship visibly.
+			(child as MeshInstance3D).visible = not stage_id in ["el_cuarto", "colegio_internacional"]
 		_tint_meshes(child, color)
 
 

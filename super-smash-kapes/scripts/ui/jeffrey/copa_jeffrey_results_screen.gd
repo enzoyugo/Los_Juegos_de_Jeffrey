@@ -38,7 +38,7 @@ func _build(result: Dictionary) -> void:
 	wash.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(wash)
 	_add_result_art(self)
-	var mode_label := Assets.mode_fallback_label(mode_id) if not mode_id.is_empty() else "PARTIDA"
+	var mode_label := _authoritative_mode_label(mode_id)
 	var subtitle := Layout.outlined_label("RESULTADO  ·  %s" % mode_label.to_upper(), 20, ThemeRef.mode_accent(mode_id), HORIZONTAL_ALIGNMENT_CENTER)
 	subtitle.position = Vector2(690, 285)
 	subtitle.size = Vector2(540, 38)
@@ -110,7 +110,7 @@ func _raster(path: String, pos: Vector2, size: Vector2, ignore_size: bool = true
 
 func _add_score_template(parent: Control, placement: int, player_name: String, points: int, total: int, winner: bool) -> void:
 	var row := Control.new()
-	row.custom_minimum_size = Vector2(1400, 106)
+	row.custom_minimum_size = Vector2(1150, 90)
 	parent.add_child(row)
 	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/05_player_stack_template.png", Vector2.ZERO, Vector2(475, 87)))
 	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/06_puntos_sumados_template.png", Vector2(495, 0), Vector2(224, 88)))
@@ -119,7 +119,9 @@ func _add_score_template(parent: Control, placement: int, player_name: String, p
 	place.position = Vector2(21, 24); place.size = Vector2(44, 40); row.add_child(place)
 	var name := Layout.outlined_label(player_name.to_upper(), 22, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
 	name.position = Vector2(85, 24); name.size = Vector2(360, 38); row.add_child(name)
-	var gained := Layout.outlined_label("+%d" % points, 25, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	## The approved gained-points template already supplies the plus glyph;
+	## render one dynamic numeric value beside it, avoiding a duplicate sign.
+	var gained := Layout.outlined_label("%d" % points, 25, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
 	gained.position = Vector2(532, 24); gained.size = Vector2(155, 38); row.add_child(gained)
 	var sum := Layout.outlined_label("%d" % total, 25, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
 	sum.position = Vector2(800, 24); sum.size = Vector2(210, 38); row.add_child(sum)
@@ -151,6 +153,18 @@ func _friendly_fallback_name(profile_id: String) -> String:
 	if upper.begins_with("P") and upper.substr(1).is_valid_int():
 		return "JUGADOR %d" % int(upper.substr(1))
 	return profile_id
+
+
+func _authoritative_mode_label(mode_id: String) -> String:
+	match mode_id.strip_edges().to_lower():
+		"track", "racing", "copa":
+			return "TRACK"
+		"smash", "soco":
+			return "SOCO"
+		"zombies", "zombie":
+			return "ZOMBIES"
+		_:
+			return mode_id.strip_edges().to_upper() if not mode_id.strip_edges().is_empty() else "PARTIDA"
 
 
 func _focus_first(button: Button) -> void:
