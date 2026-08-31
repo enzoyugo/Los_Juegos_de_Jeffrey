@@ -44,8 +44,8 @@ func _build(result: Dictionary) -> void:
 	subtitle.size = Vector2(540, 38)
 	add_child(subtitle)
 	var table := VBoxContainer.new()
-	table.position = Vector2(410, 365)
-	table.size = Vector2(1400, 420)
+	table.position = Vector2(385, 365)
+	table.size = Vector2(1150, 420)
 	table.add_theme_constant_override("separation", 12)
 	add_child(table)
 
@@ -92,9 +92,9 @@ func _build(result: Dictionary) -> void:
 
 
 func _add_result_art(shell: Control) -> void:
-	shell.add_child(_raster(RESULT_LOGO, Vector2(92, 38), Vector2(210, 149)))
-	shell.add_child(_raster(RESULT_COPA, Vector2(1610, 30), Vector2(218, 177)))
-	shell.add_child(_raster(RESULT_TITLE, Vector2(633, 64), Vector2(654, 222)))
+	shell.add_child(_raster(RESULT_LOGO, Vector2(70, 34), Vector2(280, 198)))
+	shell.add_child(_raster(RESULT_COPA, Vector2(1600, 28), Vector2(260, 211)))
+	shell.add_child(_raster(RESULT_TITLE, Vector2(670, 68), Vector2(580, 197)))
 
 
 func _raster(path: String, pos: Vector2, size: Vector2, ignore_size: bool = true) -> TextureRect:
@@ -112,17 +112,17 @@ func _add_score_template(parent: Control, placement: int, player_name: String, p
 	var row := Control.new()
 	row.custom_minimum_size = Vector2(1400, 106)
 	parent.add_child(row)
-	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/05_player_stack_template.png", Vector2.ZERO, Vector2(580, 106)))
-	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/06_puntos_sumados_template.png", Vector2(610, 0), Vector2(273, 107)))
-	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/07_puntos_totales_template.png", Vector2(900, 0), Vector2(484, 106)))
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/05_player_stack_template.png", Vector2.ZERO, Vector2(475, 87)))
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/06_puntos_sumados_template.png", Vector2(495, 0), Vector2(224, 88)))
+	row.add_child(_raster("res://assets/ui/shared/copa_jeffrey_v2/07_puntos_totales_template.png", Vector2(727, 0), Vector2(397, 87)))
 	var place := Layout.outlined_label("%d" % placement, 34, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
-	place.position = Vector2(26, 29); place.size = Vector2(54, 48); row.add_child(place)
-	var name := Layout.outlined_label(player_name.to_upper(), 24, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	name.position = Vector2(104, 30); name.size = Vector2(440, 44); row.add_child(name)
-	var gained := Layout.outlined_label("+%d" % points, 27, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
-	gained.position = Vector2(650, 30); gained.size = Vector2(190, 44); row.add_child(gained)
-	var sum := Layout.outlined_label("%d" % total, 27, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
-	sum.position = Vector2(1050, 30); sum.size = Vector2(260, 44); row.add_child(sum)
+	place.position = Vector2(21, 24); place.size = Vector2(44, 40); row.add_child(place)
+	var name := Layout.outlined_label(player_name.to_upper(), 22, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
+	name.position = Vector2(85, 24); name.size = Vector2(360, 38); row.add_child(name)
+	var gained := Layout.outlined_label("+%d" % points, 25, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	gained.position = Vector2(532, 24); gained.size = Vector2(155, 38); row.add_child(gained)
+	var sum := Layout.outlined_label("%d" % total, 25, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	sum.position = Vector2(800, 24); sum.size = Vector2(210, 38); row.add_child(sum)
 	if winner:
 		name.add_theme_color_override("font_color", ThemeRef.Base.GOLD)
 

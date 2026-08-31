@@ -325,8 +325,21 @@ func _save(path: String) -> void:
 
 
 func _copy(src: String, dst: String) -> void:
-	if FileAccess.file_exists(src):
-		DirAccess.copy_absolute(src, dst)
+	if not FileAccess.file_exists(src):
+		print("JEFFREY_CAPTURE_COPY_FAILURE source_missing=%s" % src)
+		return
+	var parent := dst.get_base_dir()
+	DirAccess.make_dir_recursive_absolute(parent)
+	var input := FileAccess.open(src, FileAccess.READ)
+	var output := FileAccess.open(dst, FileAccess.WRITE)
+	if input == null or output == null:
+		print("JEFFREY_CAPTURE_COPY_FAILURE src=%s dst=%s reason=open_failed" % [src, dst])
+		return
+	output.store_buffer(input.get_buffer(input.get_length()))
+	input.close()
+	output.close()
+	if not FileAccess.file_exists(dst) or FileAccess.get_file_as_bytes(dst).is_empty():
+		print("JEFFREY_CAPTURE_COPY_FAILURE src=%s dst=%s reason=write_failed" % [src, dst])
 
 
 func _ids() -> Array[String]:

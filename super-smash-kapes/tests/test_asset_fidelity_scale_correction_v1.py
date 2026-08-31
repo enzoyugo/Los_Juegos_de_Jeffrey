@@ -15,7 +15,8 @@ def test_track_and_zombies_use_aspect_preserving_art() -> None:
     zombies = _read("scripts/zombies/zombies_hud.gd")
     assert track.count("STRETCH_KEEP_ASPECT_CENTERED") >= 2
     assert zombies.count("STRETCH_KEEP_ASPECT_CENTERED") >= 1
-    assert "Vector2(360, 270)" in track
+    assert "Vector2(260, 195)" in track
+    assert "Vector2(480, 360)" in track
     assert "Vector2(520, 173)" in zombies
 
 
