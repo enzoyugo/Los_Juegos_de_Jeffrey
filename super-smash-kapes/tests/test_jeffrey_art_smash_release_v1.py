@@ -65,6 +65,12 @@ def test_smash_audio_wired() -> None:
     assert "play_match_start" in playground
 
 
+def test_smash_audio_defers_scene_tree_player_from_ready() -> None:
+    audio = (ROOT / "scripts/core/smash_audio_v1.gd").read_text(encoding="utf-8")
+    assert "add_child.call_deferred(player)" in audio
+    assert 'player.call_deferred("play")' in audio
+
+
 def test_input_hint_component() -> None:
     hint = (ROOT / "scripts/ui/jeffrey/components/jeffrey_input_hint.gd").read_text(encoding="utf-8")
     assert "class_name JeffreyInputHint" in hint

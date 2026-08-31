@@ -49,9 +49,13 @@ static func _play(from: Node, stem: String, cooldown: float) -> void:
 	player.stream = stream
 	player.bus = "Master"
 	player.volume_db = _volume_db()
-	from.get_tree().root.add_child(player)
+	## Match hosts can emit the intro SFX from their own _ready(). Adding a
+	## player directly during that callback makes SceneTree reject the child
+	## and leaves play() outside the tree. Defer both operations as one ordered
+	## scene-tree handoff; gameplay callers remain fire-and-forget.
+	from.get_tree().root.add_child.call_deferred(player)
 	player.finished.connect(player.queue_free)
-	player.play()
+	player.call_deferred("play")
 
 
 static func _volume_db() -> float:
