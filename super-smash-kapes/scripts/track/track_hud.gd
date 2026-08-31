@@ -398,12 +398,12 @@ func _ensure_fuel_row(player_name: String, color: Color) -> void:
 	## readable name on the card.
 	var name_backdrop := ColorRect.new()
 	name_backdrop.color = Color(0.015, 0.02, 0.035, 0.88)
-	name_backdrop.position = Vector2(60, 58)
-	name_backdrop.size = Vector2(210, 46)
+	name_backdrop.position = Vector2(52, 34)
+	name_backdrop.size = Vector2(220, 72)
 	name_backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(name_backdrop)
 	var label := Layout.outlined_label(player_name, 20, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	label.position = Vector2(72, 68)
+	label.position = Vector2(72, 54)
 	label.size = Vector2(190, 28)
 	card.add_child(label)
 	var fill := ColorRect.new()
