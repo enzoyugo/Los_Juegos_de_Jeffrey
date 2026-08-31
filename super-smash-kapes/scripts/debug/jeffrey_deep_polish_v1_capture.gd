@@ -175,13 +175,18 @@ func _smash_stage_pair(stage_id: String, intro_path: String, gameplay_path: Stri
 
 
 func _track() -> void:
+	var racers := _participants(["gallo", "chick_hicks"])
+	if racers.size() > 0:
+		racers[0]["display_name"] = "JEFFREY"
+	if racers.size() > 1:
+		racers[1]["display_name"] = "ENZO"
 	var menu = TRACK_MENU.new()
-	menu.configure(_participants(["gallo", "chick_hicks"]))
+	menu.configure(racers)
 	await _ui(menu, OUT + "/TRACK/11_track_menu.png")
 	_copy(OUT + "/TRACK/11_track_menu.png", FINAL + "/track_menu.png")
 
 	var track = TrackMainScript.new()
-	track.setup(_participants(["gallo", "chick_hicks"]), 424242, "media", "picante")
+	track.setup(racers, 424242, "media", "picante")
 	add_child(track)
 	await get_tree().process_frame
 	await get_tree().process_frame
