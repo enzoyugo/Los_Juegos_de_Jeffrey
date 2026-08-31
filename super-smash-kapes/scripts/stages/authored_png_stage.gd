@@ -9,7 +9,9 @@ func _build_silhouette_props(camera: Camera3D) -> void:
 	root.name = "AuthoredStageArtwork"
 	root.add_to_group("jeffrey_stage_silhouette")
 	camera.add_child(root)
-	var background := _sprite(background_path, Vector3(0.0, 9.0, -88.0), 0.055)
+	## Cover the 16:9 gameplay camera uniformly; edge crop is preferable to
+	## exposing the procedural sky-color placeholder around authored art.
+	var background := _sprite(background_path, Vector3(0.0, 9.0, -88.0), 0.09)
 	if background != null:
 		root.add_child(background)
 	var positions := [Vector3(0.0, 0.9, -22.0), Vector3(-7.0, 3.3, -21.5), Vector3(7.0, 3.3, -21.5)]

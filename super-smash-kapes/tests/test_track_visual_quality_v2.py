@@ -53,7 +53,8 @@ def test_results_compact_track() -> None:
     assert "01_result_background.png" in text
     assert "Vector2(385, 365)" in text
     assert "Vector2(1150, 420)" in text
-    assert "RESULTADO  ·  %s" in text
+    assert "RESULTADO  ·  %s" not in text
+    assert 'row.get("display_name", row.get("player_name", ""))' in text
     assert "_add_result_art" in text
 
 

@@ -87,10 +87,10 @@ func _smash() -> void:
 		["defensores", OUT + "/SMASH/06_defensores.png", FINAL + "/smash_defensores.png"],
 		["palacio", OUT + "/SMASH/07_palacio.png", FINAL + "/smash_palacio.png"],
 		["costanera", OUT + "/SMASH/08_costanera.png", FINAL + "/smash_costanera.png"],
-		["el_cuarto", OUT + "/SMASH/11_el_cuarto.png", FINAL + "/smash_el_cuarto.png"],
-		["colegio_internacional", OUT + "/SMASH/12_colegio_internacional.png", FINAL + "/smash_colegio_internacional.png"],
 	]:
 		await _smash_stage(str(pair[0]), str(pair[1]), str(pair[2]))
+	await _smash_stage_pair("el_cuarto", OUT + "/SMASH/11_el_cuarto.png", OUT + "/SMASH/13_el_cuarto_gameplay.png", FINAL + "/smash_el_cuarto.png")
+	await _smash_stage_pair("colegio_internacional", OUT + "/SMASH/12_colegio_internacional.png", OUT + "/SMASH/14_colegio_gameplay.png", FINAL + "/smash_colegio_internacional.png")
 
 	var pause = PauseOverlay.new()
 	add_child(pause)
@@ -108,8 +108,8 @@ func _smash() -> void:
 	results.setup({
 		"mode": "track",
 		"awarded": [
-			{"profile_id": _ids()[0], "placement": 1, "points": 5, "total_points": 5, "fighter_id": "terere"},
-			{"profile_id": _ids()[1], "placement": 2, "points": 3, "total_points": 3, "fighter_id": "jaguarete"},
+			{"profile_id": _ids()[0], "display_name": "JEFFREY", "placement": 1, "points": 5, "total_points": 5, "fighter_id": "terere"},
+			{"profile_id": _ids()[1], "display_name": "ENZO", "placement": 2, "points": 3, "total_points": 3, "fighter_id": "jaguarete"},
 		],
 	})
 	await get_tree().process_frame
@@ -140,6 +140,33 @@ func _smash_stage(stage_id: String, path: String, final_path: String) -> void:
 		await get_tree().process_frame
 	await _save(path)
 	_copy(path, final_path)
+	host.queue_free()
+	await get_tree().process_frame
+	OS.set_environment("SSK_AUTO_START_BATTLE", "")
+	OS.set_environment("SSK_STAGE_ID", "")
+	OS.set_environment("SSK_CAPTURE_STAGE_OVERRIDE", "")
+
+
+func _smash_stage_pair(stage_id: String, intro_path: String, gameplay_path: String, final_path: String) -> void:
+	OS.set_environment("SSK_STAGE_ID", stage_id)
+	OS.set_environment("SSK_CAPTURE_STAGE_OVERRIDE", "1")
+	OS.set_environment("SSK_AUTO_START_BATTLE", "1")
+	var packed := load("res://scenes/core/M0Playground.tscn") as PackedScene
+	if packed == null:
+		return
+	var host = packed.instantiate()
+	if host.get("match_setup") != null:
+		host.match_setup.stage_id = stage_id
+		host.match_setup.player_1_fighter_id = "terere"
+		host.match_setup.player_2_fighter_id = "jaguarete"
+	add_child(host)
+	for _i in 40:
+		await get_tree().process_frame
+	await _save(intro_path)
+	for _i in 150:
+		await get_tree().process_frame
+	await _save(gameplay_path)
+	_copy(gameplay_path, final_path)
 	host.queue_free()
 	await get_tree().process_frame
 	OS.set_environment("SSK_AUTO_START_BATTLE", "")
@@ -222,8 +249,8 @@ func _track() -> void:
 	results.setup({
 		"mode": "racing",
 		"awarded": [
-			{"profile_id": _ids()[0], "placement": 1, "points": 5, "total_points": 12},
-			{"profile_id": _ids()[1], "placement": 2, "points": 3, "total_points": 8},
+			{"profile_id": _ids()[0], "display_name": "JEFFREY", "placement": 1, "points": 5, "total_points": 12},
+			{"profile_id": _ids()[1], "display_name": "ENZO", "placement": 2, "points": 3, "total_points": 8},
 		],
 	})
 	await get_tree().process_frame

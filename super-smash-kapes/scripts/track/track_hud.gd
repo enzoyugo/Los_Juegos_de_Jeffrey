@@ -314,10 +314,10 @@ func _build_hud() -> void:
 	_rank.position = Vector2(148, 97)
 	_rank.size = Vector2(188, 22)
 	root.add_child(_rank)
-	var speed_panel := _asset(root, HUD_SPEED, Vector2(1670, 885), Vector2(200, 150))
-	_speed_value = Layout.outlined_label("000", 28, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
-	_speed_value.position = Vector2(71, 69)
-	_speed_value.size = Vector2(83, 30)
+	var speed_panel := _asset(root, HUD_SPEED, Vector2(1645, 865), Vector2(230, 170))
+	_speed_value = Layout.outlined_label("000", 30, ThemeRef.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	_speed_value.position = Vector2(82, 78)
+	_speed_value.size = Vector2(70, 34)
 	speed_panel.add_child(_speed_value)
 	_speed = _speed_value
 
@@ -347,6 +347,9 @@ func _build_hud() -> void:
 	_board_panel.visible = false
 	var hint = Chrome.make_hint_strip()
 	root.add_child(hint)
+	## Active races should read as gameplay, not a debug/tutorial overlay. Input
+	## actions remain registered and are still available to setup/tutorial UI.
+	hint.visible = false
 	Layout.apply_frac(hint, 0.18, 0.935, 0.64, 0.045)
 	var row := HBoxContainer.new()
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -391,9 +394,17 @@ func _ensure_fuel_row(player_name: String, color: Color) -> void:
 	image.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	image.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	card.add_child(image)
-	var label := Layout.outlined_label(player_name, 15, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
-	label.position = Vector2(67, 71)
-	label.size = Vector2(195, 24)
+	## Mask the template's sample copy so the live player identity is the only
+	## readable name on the card.
+	var name_backdrop := ColorRect.new()
+	name_backdrop.color = Color(0.015, 0.02, 0.035, 0.88)
+	name_backdrop.position = Vector2(60, 58)
+	name_backdrop.size = Vector2(210, 46)
+	name_backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	card.add_child(name_backdrop)
+	var label := Layout.outlined_label(player_name, 20, ThemeRef.TEXT, HORIZONTAL_ALIGNMENT_LEFT)
+	label.position = Vector2(72, 68)
+	label.size = Vector2(190, 28)
 	card.add_child(label)
 	var fill := ColorRect.new()
 	fill.color = color

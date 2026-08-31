@@ -38,11 +38,6 @@ func _build(result: Dictionary) -> void:
 	wash.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(wash)
 	_add_result_art(self)
-	var mode_label := _authoritative_mode_label(mode_id)
-	var subtitle := Layout.outlined_label("RESULTADO  ·  %s" % mode_label.to_upper(), 20, ThemeRef.mode_accent(mode_id), HORIZONTAL_ALIGNMENT_CENTER)
-	subtitle.position = Vector2(690, 285)
-	subtitle.size = Vector2(540, 38)
-	add_child(subtitle)
 	var table := VBoxContainer.new()
 	table.position = Vector2(385, 365)
 	table.size = Vector2(1150, 420)
@@ -67,7 +62,8 @@ func _build(result: Dictionary) -> void:
 			continue
 		var profile = JeffreyCore.profiles.get_profile(str(row.get("profile_id", "")))
 		var fallback_id := str(row.get("profile_id", "?"))
-		var name_text: String = profile.display_name if profile != null else _friendly_fallback_name(fallback_id)
+		var supplied_name := str(row.get("display_name", row.get("player_name", ""))).strip_edges()
+		var name_text: String = supplied_name if not supplied_name.is_empty() else (profile.display_name if profile != null else _friendly_fallback_name(fallback_id))
 		var placement := int(row.get("placement", 0))
 		var points := int(row.get("points", 0))
 		var total := int(row.get("total_points", 0))
@@ -121,9 +117,9 @@ func _add_score_template(parent: Control, placement: int, player_name: String, p
 	name.position = Vector2(85, 24); name.size = Vector2(360, 38); row.add_child(name)
 	## The approved gained-points template already supplies the plus glyph;
 	## render one dynamic numeric value beside it, avoiding a duplicate sign.
-	var gained := Layout.outlined_label("%d" % points, 25, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
+	var gained := Layout.outlined_label("%d" % points, 34, ThemeRef.Base.GOLD, HORIZONTAL_ALIGNMENT_CENTER)
 	gained.position = Vector2(532, 24); gained.size = Vector2(155, 38); row.add_child(gained)
-	var sum := Layout.outlined_label("%d" % total, 25, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
+	var sum := Layout.outlined_label("%d" % total, 34, ThemeRef.Base.TEXT, HORIZONTAL_ALIGNMENT_CENTER)
 	sum.position = Vector2(800, 24); sum.size = Vector2(210, 38); row.add_child(sum)
 	if winner:
 		name.add_theme_color_override("font_color", ThemeRef.Base.GOLD)
@@ -132,7 +128,7 @@ func _add_score_template(parent: Control, placement: int, player_name: String, p
 func _copa_button(text_value: String, path: String) -> Button:
 	var button := Button.new()
 	button.text = text_value
-	button.custom_minimum_size = Vector2(278, 64)
+	button.custom_minimum_size = Vector2(330, 76)
 	button.add_theme_font_size_override("font_size", 19)
 	button.add_theme_color_override("font_color", ThemeRef.Base.TEXT)
 	button.add_theme_color_override("font_hover_color", ThemeRef.Base.TEXT)
