@@ -3,7 +3,7 @@ extends Node3D
 ## SDS V4 structural-identity CANDIDATE lab. Does not replace V3 canonical.
 ## State: HUMAN_REVIEW_REQUIRED. Not SDS_V4_CANONICAL.
 
-const ENV_V4 := "res://assets/environments/shopping_del_sol/processed/shopping_del_sol_zombies_environment_v4_candidate.glb"
+const ENV_V4 := "res://assets/environments/zombies/shopping_del_sol/runtime/shopping_del_sol_v4_candidate.glb"
 const ENV_V3 := "res://assets/environments/shopping_del_sol/processed/shopping_del_sol_zombies_environment_v3.glb"
 const Probe := preload("res://scripts/debug/jeffrey_resource_probe.gd")
 
