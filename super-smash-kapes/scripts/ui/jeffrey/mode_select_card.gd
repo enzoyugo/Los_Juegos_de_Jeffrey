@@ -9,7 +9,9 @@ var mode_id: String = ""
 func setup_mode(id: String, art_path: String, fallback: String, status: String) -> void:
 	mode_id = id
 	setup(art_path, fallback, Vector2(280, 90))
-	var badge := Layout.outlined_label(status, 15, ThemeRef.GOLD_HOT, HORIZONTAL_ALIGNMENT_RIGHT)
+	## Playable modes already communicate the action through the authored card art.
+	## Do not duplicate the legacy/debug "JUGAR" badge beside the button.
+	var badge := Layout.outlined_label("" if status.strip_edges().to_upper() == "JUGAR" else status, 15, ThemeRef.GOLD_HOT, HORIZONTAL_ALIGNMENT_RIGHT)
 	Styles.apply(badge, "mode_badge")
 	badge.add_theme_font_size_override("font_size", 15)
 	badge.add_theme_color_override("font_color", ThemeRef.GOLD_HOT)
@@ -28,6 +30,7 @@ func setup_mode(id: String, art_path: String, fallback: String, status: String) 
 	var plate := ColorRect.new()
 	plate.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	plate.color = Color(0.02, 0.02, 0.03, 0.72)
+	plate.visible = badge.text != ""
 	add_child(plate)
 	move_child(plate, badge.get_index())
 	plate.anchor_left = 0.58
