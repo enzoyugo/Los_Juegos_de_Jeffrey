@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/integration/pharos_track_s018/PharosTrackS018DrivingLab.gd" id="1_lab"]
+
+[node name="PharosTrackS018DrivingLab" type="Node3D"]
+script = ExtResource("1_lab")
