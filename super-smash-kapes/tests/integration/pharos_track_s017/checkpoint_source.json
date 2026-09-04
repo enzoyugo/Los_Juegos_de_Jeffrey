@@ -1,0 +1,8 @@
+{
+  "schema": "pharos_track_spec_derived_v2",
+  "source": "E:/PharosVisualization/experiments/track_generation/sprint_016/outputs/S016_SHORT_SEED_1601_track_spec.json",
+  "source_sha256": "EB403A2E4FADAA1A74902FF94C4115342DA43573C848B05C58747D20815D5E28",
+  "points_pharos_xy": [[0,0],[0,-12],[0,-24],[-8,-32],[-20,-32],[-32,-32],[-40,-24],[-40,-12],[-40,0]],
+  "conversion": "Godot=(x*SCALE,0,-y*SCALE)",
+  "order": "sequence/instances entry points; no duration/count inference"
+}
