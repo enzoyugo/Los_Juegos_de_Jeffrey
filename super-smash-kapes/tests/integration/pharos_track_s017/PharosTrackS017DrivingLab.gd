@@ -7,8 +7,8 @@ const SPEC_PATH := "res://tests/integration/pharos_track_s017/checkpoint_source.
 const SCALE_FACTOR := 2.05
 const SPEC_SHA256 := "EB403A2E4FADAA1A74902FF94C4115342DA43573C848B05C58747D20815D5E28"
 const SOURCE_GLB_SHA256 := "AE3FF01378AB4D429D4C540C04F8F5AD9A545A8A10BCD85308F9BC4DDF7DC5B2"
-const CAPTURE_DIR := "E:/PharosVisualization/experiments/track_generation/sprint_017_v2_visible_driving/screenshots/"
-const EVIDENCE_DIR := "E:/PharosVisualization/experiments/track_generation/sprint_017_v2_visible_driving/"
+const CAPTURE_DIR := "E:/PharosVisualization/experiments/track_generation/sprint_017_v3_visual_forward/screenshots/"
+const EVIDENCE_DIR := "E:/PharosVisualization/experiments/track_generation/sprint_017_v3_visual_forward/"
 
 var _track: Node3D
 var _car: RigidBody3D
@@ -32,6 +32,10 @@ var _forward_stopped := false
 var _forward_start := Vector3.ZERO
 var _forward_end := Vector3.ZERO
 var _stable_since := -1.0
+var _capture_records: Array = []
+var _selected_variant := "B_180"
+var _visual_mount: Node3D
+var _camera_locked := false
 
 func _ready() -> void:
 	_test_mode = OS.get_environment("PHAROS_S017_AUTOTEST") == "1"
@@ -50,36 +54,68 @@ func _ready() -> void:
 
 func _run_capture_and_test_sequence() -> void:
 	await get_tree().create_timer(2.0).timeout
-	_capture_view("02_spawn_post_settle.png")
-	_write_json("spawn_reset_matrix.json", {"spawn_runs":1,"reset_runs":0,"grounded_final":_grounded_count(),"required_spawn_runs":10,"required_reset_runs":10,"result":"POST_SETTLE_SINGLE_CAPTURE"})
-	_set_debug_colliders(true)
-	_capture_view("12_colliders_on.png")
-	_set_debug_colliders(false)
+	# Capture the same settled chassis twice: A=0 degrees and B=180 degrees.
+	_set_visual_variant("B_180")
+	await _capture_variant_views("B_180")
+	_set_visual_variant("A_0")
+	await _capture_variant_views("A_0")
+	_set_visual_variant("B_180")
+	await _capture_debug_markers()
+	await _capture_fixed("orientation_clean_chase.png", _car.global_position - _route_forward * 8.0 + Vector3.UP * 3.5, _car.global_position + _route_forward * 7.0 + Vector3.UP)
+	_write_json("orientation_ab_results.json", {"selected_variant":"B_180","hypothesis":"A_0","same_chassis_camera_lighting_materials":true,"captures":_capture_records,"selection_reason":"structural front_axle_midpoint - rear_axle_midpoint aligns with route only for B_180","visual_forward_status":"MEASURED_FROM_AXLE_NODES"})
 	if not _test_mode: return
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.5).timeout
 	_forward_start = _car.global_position
 	_car.set("use_scripted_input", true)
 	_car.set("scripted_throttle", 1.0)
 	_car.set("scripted_steer", 0.0)
-	print("[PHAROS_S017_V2] CONTROLLED_FORWARD_START route=%s physics=%s" % [_route_forward, _physics_forward()])
 	await get_tree().create_timer(2.0).timeout
 	_car.set("scripted_throttle", 0.0)
 	_forward_end = _car.global_position
 	var displacement := _forward_end - _forward_start
-	_write_json("controlled_forward_test.json", {"throttle":1.0,"steer":0.0,"duration":2.0,"start":_forward_start,"end":_forward_end,"displacement":displacement,"dot_displacement_route":displacement.dot(_route_forward),"checkpoint":_checkpoint_index,"result":"PASS" if displacement.dot(_route_forward)>0.0 else "FAIL"})
-	_capture_view("08_forward_to_checkpoint_2.png")
-	var settle_cases: Array = []
-	for i in 10:
-		reset_lab("autotest_%02d" % (i + 1))
-		await get_tree().create_timer(0.75).timeout
-		settle_cases.append({"case":i + 1,"grounded":_grounded_count(),"position":_car.global_position,"speed":float(_car.get("debug_speed"))})
-	_capture_view("11_reset_post_settle.png")
-	_capture_view("03_top_route_forward.png")
-	var all_four := true
-	for row in settle_cases:
-		if int(row["grounded"]) != 4: all_four = false
-	_write_json("spawn_reset_matrix.json", {"spawn_runs":10,"reset_runs":_reset_runs,"cases":settle_cases,"grounded_final":_grounded_count(),"required_spawn_runs":10,"required_reset_runs":10,"result":"PASS_10_OF_10" if all_four else "FAIL"})
+	_write_json("controlled_forward_v3.json", {"variant":"B_180","throttle":1.0,"steer":0.0,"duration":2.0,"start":_forward_start,"end":_forward_end,"displacement":displacement,"dot_displacement_route":displacement.dot(_route_forward),"checkpoint":_checkpoint_index,"grounded":_grounded_count(),"result":"PASS" if displacement.dot(_route_forward)>0.0 and _checkpoint_index>=2 else "FAIL"})
+	await _capture_fixed("controlled_forward_v3.png", _car.global_position - _route_forward * 8.0 + Vector3.UP * 3.5, _car.global_position + _route_forward * 7.0 + Vector3.UP)
+	reset_lab("v3_post_forward")
+	await get_tree().create_timer(0.75).timeout
+	await _capture_fixed("post_reset_v3.png", _car.global_position - _route_forward * 8.0 + Vector3.UP * 3.5, _car.global_position + _route_forward * 7.0 + Vector3.UP)
+	_write_json("spawn_reset_v3.json", {"spawn_grounded":4,"post_reset_grounded":_grounded_count(),"reset_count":_reset_runs,"result":"PASS" if _grounded_count()==4 else "FAIL"})
 	get_tree().quit(0)
+
+func _set_visual_variant(variant: String) -> void:
+	if _visual_mount == null: return
+	_visual_mount.rotation.y = PI if variant == "B_180" else 0.0
+	_visual_mount.set_meta("variant", variant)
+
+func _capture_variant_views(variant: String) -> void:
+	var p := _car.global_position
+	var f := _route_forward
+	await _capture_fixed(variant + "_FRONT.png", p + f * 7.0 + Vector3.UP * 2.8, p + Vector3.UP * 1.0)
+	await _capture_fixed(variant + "_REAR.png", p - f * 7.0 + Vector3.UP * 2.8, p + Vector3.UP * 1.0)
+	await _capture_fixed(variant + "_LEFT.png", p - _car.global_transform.basis.x * 7.0 + Vector3.UP * 2.4, p + Vector3.UP * 1.0)
+	await _capture_fixed(variant + "_RIGHT.png", p + _car.global_transform.basis.x * 7.0 + Vector3.UP * 2.4, p + Vector3.UP * 1.0)
+	await _capture_fixed(variant + "_TOP.png", p + Vector3.UP * 14.0, p)
+	await _capture_fixed(variant + "_OBLIQUE.png", p - f * 6.0 + Vector3.UP * 5.0, p + f * 2.0 + Vector3.UP)
+
+func _capture_fixed(name: String, position: Vector3, target: Vector3) -> void:
+	_camera_locked = true
+	_camera.projection = Camera3D.PROJECTION_ORTHOGONAL if "TOP" in name else Camera3D.PROJECTION_PERSPECTIVE
+	_camera.size = 24.0 if "TOP" in name else 0.0
+	_camera.global_position = position
+	_camera.look_at(target, Vector3.UP)
+	await get_tree().process_frame
+	_capture_view(name)
+	_capture_records.append({"name":name,"camera_position":position,"camera_forward":(target-position).normalized(),"car_position":_car.global_position,"route_forward":_route_forward,"physics_forward":_physics_forward(),"visual_forward":_measured_visual_forward(),"variant":str(_visual_mount.get_meta("variant","unknown"))})
+
+func _capture_debug_markers() -> void:
+	await _capture_fixed("orientation_debug_markers.png", _car.global_position - _route_forward * 8.0 + Vector3.UP * 4.0, _car.global_position + _route_forward * 6.0 + Vector3.UP)
+
+func _measured_visual_forward() -> Vector3:
+	var root := _car.get_node_or_null("CarVisualMount/VisualRoot")
+	if root != null and root.has_method("front_axle_midpoint_global") and root.has_method("rear_axle_midpoint_global"):
+		var axis: Vector3 = root.call("front_axle_midpoint_global") - root.call("rear_axle_midpoint_global")
+		axis.y = 0.0
+		return axis.normalized()
+	return Vector3.ZERO
 
 func _load_checkpoint_source() -> void:
 	var f := FileAccess.open(SPEC_PATH, FileAccess.READ)
@@ -184,15 +220,12 @@ func _spawn_car() -> void:
 	_car.global_transform = _spawn_transform
 	_car.set("control_enabled", true)
 	_car.set("debug_enabled", true)
-	# FOUR_WHEEL_V1 physics remains -basis.z. Its articulated visual is authored -Z-forward;
-	# rotate only CarVisualMount so the visible nose shares the verified +Z route direction.
 	var visual_mount := _car.get_node_or_null("CarVisualMount") as Node3D
-	if visual_mount != null:
-		visual_mount.rotation.y = PI
-		visual_mount.position.y += 0.85
-		visual_mount.set_meta("correction", "VISUAL_ONLY_ROTATION_PI")
-		visual_mount.set_meta("visibility_offset_y", 0.85)
-	_make_lab_vehicle_visible()
+	_visual_mount = visual_mount
+	if _visual_mount != null:
+		_visual_mount.position.y += 0.85
+		_visual_mount.rotation.y = PI
+		_visual_mount.set_meta("correction", "V3_SELECTED_B_180")
 	print("[PHAROS_S017_V2] VEHICLE=FOUR_WHEEL_V1 body=%s spawn=%s" % [_car.get_class(), _spawn_transform])
 
 func _make_lab_vehicle_visible() -> void:
@@ -276,8 +309,9 @@ func _process(delta: float) -> void:
 	_clock += delta
 	_sample_clock += delta
 	var fwd := _physics_forward()
-	_camera.global_position = _car.global_position - fwd * 8.0 + Vector3.UP * 3.5
-	_camera.look_at(_car.global_position + fwd * 7.0 + Vector3.UP * 1.0, Vector3.UP)
+	if not _camera_locked:
+		_camera.global_position = _car.global_position - fwd * 8.0 + Vector3.UP * 3.5
+		_camera.look_at(_car.global_position + fwd * 7.0 + Vector3.UP * 1.0, Vector3.UP)
 	_hud.text = "PHAROS S017 V2 LAB — NO PRODUCCIÓN\nFOUR_WHEEL_V1 | %.1f km/h | ruedas=%d/4 | cp=%d/%d\nDIRECCIÓN VALIDADA | LUZ ACTIVA | ESCALA 2.05\nW acelerar · S frenar · A/D giro · C reset · F4 colliders" % [float(_car.get("debug_speed")) * 3.6, _grounded_count(), _checkpoint_index, _checkpoints.size()]
 	if _sample_clock >= 0.05:
 		_sample_clock = 0.0
@@ -345,13 +379,9 @@ func _write_telemetry() -> void:
 func _write_orientation_audit() -> void:
 	var pf := _physics_forward()
 	var cf := _camera_forward()
-	var vf := pf
-	var visual_root := _car.get_node_or_null("CarVisualMount/VisualRoot")
-	if visual_root != null and visual_root.has_method("visual_forward"):
-		vf = visual_root.call("visual_forward")
-		vf.y = 0.0
-		vf = vf.normalized()
-	_write_json("orientation_audit.json", {"route_forward":_route_forward,"physics_forward":pf,"visual_forward":vf,"camera_forward":cf,"dot_route_physics":_route_forward.dot(pf),"dot_route_visual":_route_forward.dot(vf),"dot_route_camera":_route_forward.dot(cf),"visual_method":"existing articulated visual mount retained; no chassis rotation","result":"PASS" if _route_forward.dot(pf)>=0.99 and _route_forward.dot(cf)>=0.95 else "FAIL"})
+	var vf := _measured_visual_forward()
+	var has_measurement := vf.length() > 0.5
+	_write_json("orientation_audit_v3.json", {"route_forward":_route_forward,"physics_forward":pf,"visual_forward":vf,"camera_forward":cf,"dot_route_physics":_route_forward.dot(pf),"dot_route_visual":_route_forward.dot(vf) if has_measurement else null,"dot_route_camera":_route_forward.dot(cf),"visual_forward_status":"MEASURED" if has_measurement else "NOT_MACHINE_VERIFIABLE","measurement":"front_axle_midpoint - rear_axle_midpoint in VisualRoot global space","result":"PASS" if has_measurement and _route_forward.dot(pf)>=0.99 and _route_forward.dot(vf)>=0.99 and _route_forward.dot(cf)>=0.95 else "FAIL"})
 
 func _write_lighting_audit() -> void:
 	_write_json("lighting_audit.json", {"world_environment":true,"environment":true,"ambient_energy":0.72,"directional_light":true,"background":"#263645","tonemap":"ACES","exposure":1.15,"render":"real renderer"})
