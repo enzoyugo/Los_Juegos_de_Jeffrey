@@ -1,0 +1,21 @@
+[
+  {
+    "checkpoints_reached": 10,
+    "checkpoints_total": 10,
+    "completed_distance_m": 821.863881826401,
+    "detail": "",
+    "difficulty": "TRANQUI",
+    "elapsed_s": 50.1499999999984,
+    "length": "LARGA",
+    "max_centerline_deviation_m": 0.822765588760376,
+    "progress_pct": 100.0,
+    "recovery_attempts": 0,
+    "result": "PASS_FINISH",
+    "route_distance_m": 821.863881826401,
+    "route_points": 118,
+    "run_id": "larga_tranqui_1_run_001",
+    "seed": 1,
+    "steering_reversals": 808,
+    "suspected_subsystem": "NONE"
+  }
+]

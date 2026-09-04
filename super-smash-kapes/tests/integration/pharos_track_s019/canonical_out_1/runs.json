@@ -1,0 +1,21 @@
+[
+  {
+    "checkpoints_reached": 3,
+    "checkpoints_total": 3,
+    "completed_distance_m": 203.119165897369,
+    "detail": "",
+    "difficulty": "TRANQUI",
+    "elapsed_s": 13.8833333333336,
+    "length": "CORTA",
+    "max_centerline_deviation_m": 0.842590630054474,
+    "progress_pct": 100.0,
+    "recovery_attempts": 0,
+    "result": "PASS_FINISH",
+    "route_distance_m": 203.119165897369,
+    "route_points": 39,
+    "run_id": "corta_tranqui_1_run_001",
+    "seed": 1,
+    "steering_reversals": 123,
+    "suspected_subsystem": "NONE"
+  }
+]

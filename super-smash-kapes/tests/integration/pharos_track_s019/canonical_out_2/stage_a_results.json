@@ -1,0 +1,21 @@
+[
+  {
+    "checkpoints_reached": 6,
+    "checkpoints_total": 6,
+    "completed_distance_m": 462.678733944893,
+    "detail": "",
+    "difficulty": "TRANQUI",
+    "elapsed_s": 29.083333333333,
+    "length": "MEDIA",
+    "max_centerline_deviation_m": 1.21293783187866,
+    "progress_pct": 100.0,
+    "recovery_attempts": 0,
+    "result": "PASS_FINISH",
+    "route_distance_m": 462.678733944893,
+    "route_points": 62,
+    "run_id": "media_tranqui_1_run_001",
+    "seed": 1,
+    "steering_reversals": 430,
+    "suspected_subsystem": "NONE"
+  }
+]

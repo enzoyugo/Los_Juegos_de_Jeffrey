@@ -1,0 +1,21 @@
+{
+  "classes": {
+    "PASS_FINISH": 1
+  },
+  "driver_failures": 0,
+  "finish_rate": 1.0,
+  "limitations": [
+    "bounded QA driver",
+    "no respawn injection matrix",
+    "no physical checkpoint adversarial matrix",
+    "headless runtime"
+  ],
+  "physics_failures": 0,
+  "qa_time_scale": 1.0,
+  "respawn_failures": 0,
+  "runtime_finishes": 1,
+  "runtime_runs": 1,
+  "schema": "TRACK_AUTONOMOUS_RUNTIME_VALIDATION_V1",
+  "track_failures": 0,
+  "unknown_failures": 0
+}
